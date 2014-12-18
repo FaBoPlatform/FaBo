@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration>
+    <service uuid="1800">
+      <description>Generic Access Profile</description>
+
+      <characteristic uuid="2a00">
+        <properties read="true" const="true" />
+        <value>Templature Demo</value>
+      </characteristic>
+
+      <characteristic uuid="2a01">
+        <properties read="true" const="true" />
+        <value type="hex">4142</value>
+      </characteristic>
+    </service>
+
+    <service type="primary" uuid="180A" id="manufacturer">
+        <characteristic uuid="2A25">
+            <properties read="true" const="true" />
+            <value type="hex">BLE</value>
+        </characteristic>
+        <characteristic uuid="2A24">
+            <properties read="true" const="true" />
+            <value>FaBo</value>
+        </characteristic>
+        <characteristic uuid="2A29">
+            <properties read="true" const="true" />
+            <value>GClue</value>
+        </characteristic>
+    </service>
+	
+    <service uuid="e309b9c0-2417-11e3-8224-0800200c9a66" advertise="true">
+        <description>Templature Service</description>
+    
+		<characteristic uuid="02159230-2418-11e3-8224-0800200c9a66" id="xgatt_rx">
+            <properties read="true" notify="true"/>
+			<value length="16" value="hex" variable_length="false"></value>
+			<description>RX</description>
+        </characteristic>
+
+				
+    </service>
+
+</configuration>

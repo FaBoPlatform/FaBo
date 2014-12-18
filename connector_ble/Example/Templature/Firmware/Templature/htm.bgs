@@ -1,0 +1,45 @@
+dim in(16)
+dim in_len
+dim result
+
+#init gap mod, bonding and start freerunning times on system boot
+event system_boot(major ,minor ,patch ,build ,ll_version ,protocol_version ,hw )	
+	# BLE LED Off
+	call hardware_io_port_config_direction(0, $f)
+	call hardware_io_port_write(0, $1, $0)
+	
+	# rx: enable(10 byes), tx: disable
+	call system_endpoint_set_watermarks(system_endpoint_uart1,16,0)
+	
+	call gap_set_mode(gap_general_discoverable,gap_undirected_connectable)
+end
+
+event system_endpoint_watermark_rx(endpoint, size)
+	
+	if endpoint=system_endpoint_uart1 then 
+
+		in_len = size
+		# rx: disable, tx: not modified
+		call system_endpoint_set_watermarks(system_endpoint_uart1,0,$ff)		# read data from rx
+		call system_endpoint_rx(system_endpoint_uart1, in_len)(result, in_len, in(0:in_len))
+		# rx: enable(16 bytes), tx: not modified
+		call system_endpoint_set_watermarks(system_endpoint_uart1,16,$ff)
+		# write to xgatt_rx
+		call attributes_write(xgatt_rx, 0, in_len, in(0:in_len))
+
+	end if
+end
+
+event connection_disconnected(handle,result)
+
+	# BLE LED Off
+	call hardware_io_port_write(0, $1, $0)
+
+	call gap_set_mode(gap_general_discoverable,gap_undirected_connectable)
+end
+
+event connection_status(connection, flags, address, address_type, conn_interval, timeout, latency, bonding)
+	
+	# BLE LED On
+	# call hardware_io_port_write(0,$1,$1)
+end
