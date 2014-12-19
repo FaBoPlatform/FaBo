@@ -6,7 +6,7 @@ Controllers
 - Quadcopter
 
 Shileds
-- BLE for iOS [Increments株式会社](http://increments.co.jp/)
+- BLE for iOS 
 - USB for Android
 - RS-232C
 - AC Motor
