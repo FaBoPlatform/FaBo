@@ -1,6 +1,6 @@
 # FaBo Platform
 
-FaBo Platfom is controllers and shields and bricks of arduino.
+FaBo Platfom is consist of controllers and shields and bricks of arduino.
 
 Controllers
 - Quadcopter
