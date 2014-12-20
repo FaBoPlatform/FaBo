@@ -2,17 +2,17 @@
 
 FaBo Platfom is consist of controllers and shields and bricks of arduino.
 
-Controllers
+#### Controllers
 - Quadcopter
 
-Shileds
+#### Shileds
 - BLE for iOS 
 - USB for Android
 - RS-232C
 - AC Motor
 - Stepping Motor
  
-Bricks
+#### Bricks
 - Angle
 - Bitton
 - Humidity
@@ -24,12 +24,13 @@ Bricks
 - UV
 - Vibrator
 
-Bricks(I2C)
+#### Bricks(I2C)
 - Atomospher
 - RTC
 - Temperlature
+- LCD
 
-Beacon
+#### Beacon
 - Akabeacon Square
 - Akabeacon Nano
 - Akabeacon Mini
