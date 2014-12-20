@@ -1,6 +1,8 @@
 <a href="http://fabo1.github.io/Web/">TOP</a> > CONTROLER> 202
 ## 202
-<img src="https://github.com/FaBo1/controller_motor/blob/master/Image/controler_%23202.jpg?raw=true">
+
+## Parts list
+- TA7291FG ( [DigiKey](http://www.digikey.jp/product-detail/ja/TA7291FG(O,EL)/TA7291FG(OEL)CT-ND/1730107) )
 
 ## Sample
 Motor Sample1[Source](https://github.com/FaBo1/controller_motor/blob/master/Arduino/MotorSample1/MotorSample1.ino) <br>

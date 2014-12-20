@@ -30,6 +30,10 @@ FaBo Platfom is consist of controllers and shields and bricks of arduino.
 - Temperlature
 - LCD
 
+#### Board
+- ATMEGA
+- LPC
+
 #### Beacon
 - Akabeacon Square
 - Akabeacon Nano
