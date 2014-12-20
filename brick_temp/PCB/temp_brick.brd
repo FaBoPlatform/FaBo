@@ -127,7 +127,7 @@
 <board>
 <plain>
 <text x="3.572" y="16.288" size="1.778" layer="21">TEMP Sensor</text>
-<text x="1.016" y="12.684" size="1.27" layer="21">Rev.A</text>
+<text x="1.016" y="12.684" size="1.27" layer="21">Rev.0.1</text>
 </plain>
 <libraries>
 <library name="gclue">

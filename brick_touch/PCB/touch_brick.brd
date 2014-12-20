@@ -124,7 +124,7 @@
 <board>
 <plain>
 <text x="0.508" y="13.462" size="1.27" layer="21">TOUCH</text>
-<text x="0.508" y="11.176" size="1.27" layer="21">Rev.A</text>
+<text x="0.508" y="11.176" size="1.27" layer="21">Rev.0.1</text>
 </plain>
 <libraries>
 <library name="SparkFun">
