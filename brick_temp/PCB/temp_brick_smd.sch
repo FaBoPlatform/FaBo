@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -1037,12 +1037,12 @@ DIN A4, landscape with location and doc. field</description>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="147.32" y="96.52" smashed="yes"/>
-<instance part="GND1" gate="1" x="167.64" y="96.52" smashed="yes" rot="R90">
-<attribute name="VALUE" x="170.18" y="93.98" size="1.778" layer="96" rot="R90"/>
+<instance part="GND1" gate="1" x="167.64" y="93.98" smashed="yes">
+<attribute name="VALUE" x="165.1" y="91.44" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="GND2" gate="1" x="106.68" y="106.68" rot="R180"/>
 <instance part="SUPPLY2" gate="G$1" x="99.06" y="104.14"/>
-<instance part="SUPPLY1" gate="G$1" x="129.54" y="99.06" rot="R90"/>
+<instance part="SUPPLY1" gate="G$1" x="129.54" y="101.6"/>
 <instance part="U$2" gate="G$1" x="99.06" y="88.9"/>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 </instances>
@@ -1058,13 +1058,13 @@ DIN A4, landscape with location and doc. field</description>
 <segment>
 <pinref part="U$1" gate="G$1" pin="P$1"/>
 <pinref part="SUPPLY1" gate="G$1" pin="VCC"/>
-<wire x1="137.16" y1="99.06" x2="132.08" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="99.06" x2="129.54" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="P$3"/>
-<wire x1="165.1" y1="96.52" x2="160.02" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="96.52" x2="160.02" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 </segment>
 <segment>
