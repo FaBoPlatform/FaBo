@@ -1,5 +1,8 @@
 # Shield_motor
 
+## Version
+- 0.1 (2014/12/20)
+
 ## Parts list
 - TA7291FG ( [DigiKey](http://www.digikey.jp/product-detail/ja/TA7291FG(O,EL)/TA7291FG(OEL)CT-ND/1730107) )
 
