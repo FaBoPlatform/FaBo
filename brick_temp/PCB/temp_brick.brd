@@ -127,7 +127,7 @@
 <board>
 <plain>
 <text x="3.572" y="16.288" size="1.778" layer="21">TEMP Sensor</text>
-<text x="1.016" y="12.684" size="1.27" layer="21">Rev.A</text>
+<text x="1.016" y="12.684" size="1.27" layer="21">Rev.0.1</text>
 </plain>
 <libraries>
 <library name="gclue">
@@ -1051,22 +1051,20 @@ design rules under a new name.</description>
 <wire x1="8.5" y1="13.905" x2="8.5" y2="6" width="0.254" layer="16"/>
 </signal>
 <signal name="GND">
-<contactref element="U$1" pad="GND"/>
-<contactref element="U1" pad="GND"/>
-<wire x1="12.27" y1="13" x2="13.58" y2="12" width="0.254" layer="16"/>
-<wire x1="13.58" y1="12" x2="13.58" y2="6" width="0.254" layer="16"/>
 <polygon width="0.254" layer="16">
 <vertex x="-1.27" y="0"/>
 <vertex x="24.13" y="0"/>
 <vertex x="24.13" y="31.75"/>
 <vertex x="-1.27" y="31.75"/>
 </polygon>
+<contactref element="U1" pad="GND"/>
+<contactref element="U$1" pad="GND"/>
+<wire x1="13.58" y1="6" x2="12.27" y2="13" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCC">
-<contactref element="U$1" pad="VCC"/>
 <contactref element="U1" pad="VCC"/>
-<wire x1="9.73" y1="13" x2="11.04" y2="12" width="0.254" layer="16"/>
-<wire x1="11.04" y1="12" x2="11.04" y2="6" width="0.254" layer="16"/>
+<contactref element="U$1" pad="VCC"/>
+<wire x1="11.04" y1="6" x2="9.73" y2="13" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>

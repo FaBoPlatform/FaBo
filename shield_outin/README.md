@@ -1,7 +1,8 @@
-<a href="http://fabo1.github.io/Web/">TOP</a> > CONTROLLER > 201
-## 201
-<img src="https://github.com/FaBo1/controller_outin/blob/master/Image/controller_%23201.jpg?raw=true">
+# Shield outin
 
-## Example
-201 + 401 + Robo Hand Kit<br>
-<img src="https://github.com/FaBo1/module_servo/blob/master/Image/robohand.jpg?raw=true">
+#### Parts list
+
+- EG1218 ( [Mouser] (http://www.mouser.jp/Search/ProductDetail.aspx?R=EG1218virtualkey61200000virtualkey612-EG1218) )
+
+#### Version
+0.1 (2014/12/20)

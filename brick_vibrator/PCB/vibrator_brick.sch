@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -885,6 +885,39 @@ OUT</text>
 </deviceset>
 </devicesets>
 </library>
+<library name="supply1">
+<description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
+ GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
+ Please keep in mind, that these devices are necessary for the
+ automatic wiring of the supply signals.&lt;p&gt;
+ The pin name defined in the symbol is identical to the net which is to be wired automatically.&lt;p&gt;
+ In this library the device names are the same as the pin names of the symbols, therefore the correct signal names appear next to the supply symbols in the schematic.&lt;p&gt;
+ &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="GND">
+<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="GND" prefix="GND">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -897,6 +930,8 @@ OUT</text>
 <parts>
 <part name="U$1" library="gclue" deviceset="VIVRATOR-LA3R5-480H1" device=""/>
 <part name="U$2" library="gclue" deviceset="BRICK-3PIN" device=""/>
+<part name="GND1" library="supply1" deviceset="GND" device=""/>
+<part name="GND2" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -905,6 +940,8 @@ OUT</text>
 <instances>
 <instance part="U$1" gate="G$1" x="12.7" y="81.28" rot="R270"/>
 <instance part="U$2" gate="G$1" x="-10.16" y="81.28" rot="R270"/>
+<instance part="GND1" gate="1" x="-7.62" y="73.66"/>
+<instance part="GND2" gate="1" x="0" y="73.66"/>
 </instances>
 <busses>
 </busses>
@@ -917,12 +954,16 @@ OUT</text>
 <pinref part="U$2" gate="G$1" pin="3"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="GND" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="P$2"/>
-<wire x1="0" y1="78.74" x2="-7.62" y2="78.74" width="0.1524" layer="91"/>
-<junction x="0" y="78.74"/>
 <pinref part="U$2" gate="G$1" pin="1"/>
+<pinref part="GND1" gate="1" pin="GND"/>
+<wire x1="-7.62" y1="78.74" x2="-7.62" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND2" gate="1" pin="GND"/>
+<pinref part="U$1" gate="G$1" pin="P$2"/>
+<wire x1="0" y1="76.2" x2="0" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
