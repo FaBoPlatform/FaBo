@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E5749355-E5CF-4AB3-B570-6847C57CB6E2</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BeaconManager</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>ACFADC421AFC5451E23C90928CA93835BB7A8F1A</key>
+		<string>https://github.com/gclue-tsuchiya/FaBo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>beacon_manager/iOS/BeaconManager/BeaconManager.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>ACFADC421AFC5451E23C90928CA93835BB7A8F1A</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/gclue-tsuchiya/FaBo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>ACFADC421AFC5451E23C90928CA93835BB7A8F1A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>ACFADC421AFC5451E23C90928CA93835BB7A8F1A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FaBo-Tsuchiya</string>
+		</dict>
+	</array>
+</dict>
+</plist>
