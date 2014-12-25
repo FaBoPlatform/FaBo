@@ -1,0 +1,27 @@
+/* 
+  Localizable.strings
+  BeaconManager
+
+  Created by Takashi Tsuchiya on 2014/06/13.
+  Copyright (c) 2014年 GClue, Inc. All rights reserved.
+*/
+
+
+"WriteSuccess" = "Write was successful.";
+"IncorrectPassword" = "The password is incorrect.";
+"Limit65535" = " is limited from 0 to 65535.";
+"LimitTxPower" = "TxPower is limited from 0 to 15.";
+"LimitChannels" = "Please select the Channel at least one.";
+"EnterPassword" = "Please enter a password.";
+"LimitPassword" = "Please enter your 4-digit password.";
+"ErrorWriting" = "Error writing.";
+"EnterURL" = "Please enter a URL.";
+"UploadFailed" = "Upload failed...";
+"UploadComplete" = "Upload is complete!";
+"ErrorOccurred" = "An error occurred.";
+
+"BTNotActive" = "Bluetooth is not active.";
+"InvalidUUID" = "Invalid UUID Format.";
+"AdvertisingStarted" = "Advertising is already started.";
+"FailedRanging" = "Failed to ranging.";
+"FailedMonitoring" = "Failed to monitoring.";
