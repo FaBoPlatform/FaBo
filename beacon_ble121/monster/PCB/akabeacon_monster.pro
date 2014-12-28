@@ -1,9 +1,9 @@
 EAGLE AutoRouter Statistics:
 
-Job           : /Users/sasakiakira/Documents/workspace_fabo_github/FaBo/beacon_ble121/PCB/akabeacon_monster.brd
+Job           : /Users/sasakiakira/Documents/workspace_fabo_github/FaBo/beacon_ble121/monster/PCB/akabeacon_monster.brd
 
-Start at      : 09:21:38 (2014/12/28)
-End at        : 09:21:41 (2014/12/28)
+Start at      : 11:18:12 (2014/12/28)
+End at        : 11:18:15 (2014/12/28)
 Elapsed time  : 00:00:01
 
 Signals       :    28   RoutingGrid: 9.84252 mil  Layers: 2
