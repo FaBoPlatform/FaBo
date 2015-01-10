@@ -546,6 +546,8 @@
 <text x="3.8" y="-1.5" size="0.4064" layer="21">GND</text>
 <hole x="3" y="2.5" drill="0.9"/>
 <hole x="3" y="-2.5" drill="0.9"/>
+<smd name="GND1" x="0.246" y="1.77" dx="2.1" dy="1.1" layer="1"/>
+<smd name="GND2" x="0.246" y="-1.67" dx="2.1" dy="1.1" layer="1"/>
 </package>
 <package name="SO16">
 <wire x1="-3.8" y1="5.25" x2="3.8" y2="5.25" width="0.127" layer="21"/>
@@ -2613,6 +2615,8 @@
 <wire x1="7.62" y1="0" x2="7.62" y2="7.62" width="0.254" layer="94"/>
 <wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="7.62" x2="-7.62" y2="0" width="0.254" layer="94"/>
+<pin name="6" x="-12.7" y="5.08" length="middle"/>
+<pin name="7" x="12.7" y="5.08" length="middle" rot="R180"/>
 </symbol>
 <symbol name="SO16">
 </symbol>
@@ -3415,6 +3419,8 @@ Temperature Sensor</description>
 <connect gate="G$1" pin="3" pad="D+"/>
 <connect gate="G$1" pin="4" pad="ID"/>
 <connect gate="G$1" pin="5" pad="GND"/>
+<connect gate="G$1" pin="6" pad="GND1"/>
+<connect gate="G$1" pin="7" pad="GND2"/>
 </connects>
 <technologies>
 <technology name=""/>
