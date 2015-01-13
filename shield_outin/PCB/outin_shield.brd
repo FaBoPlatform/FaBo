@@ -857,7 +857,7 @@
 <text x="52.705" y="21.59" size="0.8128" layer="21" font="vector" rot="R90">GND</text>
 <text x="52.705" y="17.145" size="1.27" layer="21" font="vector" rot="R270" align="top-right">I2C</text>
 <text x="52.705" y="29.845" size="1.27" layer="21" font="vector" rot="R270" align="top-right">I2C</text>
-<text x="60.325" y="9.525" size="1.016" layer="21" font="vector" rot="R180" align="top-left">REV.0.1</text>
+<text x="60.325" y="9.525" size="1.016" layer="21" font="vector" rot="R180" align="top-left">REV.0.2</text>
 <text x="60.325" y="10.795" size="1.27" layer="21" font="vector" rot="R180" align="top-left">OUT/IN Shield</text>
 </plain>
 <libraries>
