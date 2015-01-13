@@ -300,6 +300,26 @@ Japan: MIC Japan certification ( 209-J00111 )&lt;br&gt;</description>
 <smd name="25" x="6.6" y="-5.2" dx="2" dy="0.5" layer="1" roundness="30"/>
 </package>
 <package name="MICROCHIP-RN4020">
+<description>Microchip RN4020&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Bluetooth&lt;/b&gt;&lt;br&gt;
+Bluetooth 4.1 low energy radio&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Radio&lt;/b&gt;&lt;br&gt;
+Transmit power: +7 dBm&lt;br&gt;
+Receiver sensitivity: -92.5 dBm&lt;br&gt;
+Typical line-of-sight range: &lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Current Consumption&lt;/b&gt;&lt;br&gt;
+Dormant: 700nA&lt;br&gt;
+Deep Sleep:  5.0uA&lt;br&gt;
+Idle: 1.5mA&lt;br&gt;
+Tx/Rx acvtive: 16mA at 0 dBm&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Certifications&lt;/b&gt;&lt;br&gt;
+Japan: MIC Japan&lt;br&gt;
+R201-140392&lt;br&gt;
+&lt;br&gt;</description>
 <smd name="8" x="-3.04" y="-4.03" dx="1.5" dy="0.8" layer="1" roundness="30"/>
 <smd name="6" x="-3.04" y="-1.63" dx="1.5" dy="0.8" layer="1" roundness="30"/>
 <smd name="7" x="-3.04" y="-2.83" dx="1.5" dy="0.8" layer="1" roundness="30"/>
@@ -329,6 +349,82 @@ Japan: MIC Japan certification ( 209-J00111 )&lt;br&gt;</description>
 <text x="-0.6" y="14" size="1.27" layer="21">RN4020</text>
 <smd name="9" x="-3.048" y="-6.604" dx="1.27" dy="1.27" layer="1" roundness="100"/>
 <smd name="16" x="8.382" y="-6.604" dx="1.27" dy="1.27" layer="1" roundness="100"/>
+</package>
+<package name="LAIRD-BL600">
+<description>Laird BL600&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Bluetooth&lt;/b&gt;&lt;br&gt;
+Bluetooth 4.0 low energy radio&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Radio&lt;/b&gt;&lt;br&gt;
+Transmit power: +4 dBm&lt;br&gt;
+Receiver sensitivity: -91 dBm&lt;br&gt;
+Typical line-of-sight range: &lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Current Consumption&lt;/b&gt;&lt;br&gt;
+System Idle: 3.5uA&lt;br&gt;
+Transmit: 10.5mA@0dBm&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Certifications&lt;/b&gt;&lt;br&gt;
+Japan: MIC Japan&lt;br&gt;
+BL600-SA 204-320049 Ceramic&lt;br&gt;
+BL600-SC 204-320050 IPEX MHF4&lt;br&gt;
+BL600-ST 204-320048 Trace Pad&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Reference&lt;/b&gt;&lt;br&gt;
+&lt;a href="http://www.lairdtech.com/brandworld/library/BL600%20Hardware%20Integration%20Guide.pdf"&gt;Hardware Integration Guide&lt;/a&gt;</description>
+<smd name="29" x="-6.14" y="5.21" dx="0.5" dy="1.7" layer="1" rot="R90"/>
+<smd name="30" x="-6.14" y="4.41" dx="0.5" dy="1.7" layer="1" rot="R90"/>
+<smd name="31" x="-6.14" y="3.61" dx="0.5" dy="1.7" layer="1" rot="R90"/>
+<smd name="32" x="-6.14" y="2.81" dx="0.5" dy="1.7" layer="1" rot="R90"/>
+<smd name="33" x="-6.14" y="2.01" dx="0.5" dy="1.7" layer="1" rot="R90"/>
+<smd name="34" x="-6.14" y="1.21" dx="0.5" dy="1.7" layer="1" rot="R90"/>
+<smd name="35" x="-6.14" y="0.41" dx="0.5" dy="1.7" layer="1" rot="R90"/>
+<smd name="36" x="-6.14" y="-0.39" dx="0.5" dy="1.7" layer="1" rot="R90"/>
+<smd name="37" x="-6.14" y="-1.19" dx="0.5" dy="1.7" layer="1" rot="R90"/>
+<smd name="38" x="-6.14" y="-1.99" dx="0.5" dy="1.7" layer="1" rot="R90"/>
+<smd name="39" x="-6.14" y="-2.79" dx="0.5" dy="1.7" layer="1" rot="R90"/>
+<smd name="40" x="-6.14" y="-3.59" dx="0.5" dy="1.7" layer="1" rot="R90"/>
+<smd name="41" x="-6.14" y="-4.39" dx="0.5" dy="1.7" layer="1" rot="R90"/>
+<smd name="42" x="-6.14" y="-5.19" dx="0.5" dy="1.7" layer="1" rot="R90"/>
+<smd name="43" x="-6.14" y="-5.99" dx="0.5" dy="1.7" layer="1" rot="R90"/>
+<smd name="44" x="-6.14" y="-6.79" dx="0.5" dy="1.7" layer="1" rot="R90"/>
+<smd name="28" x="6.36" y="5.21" dx="0.5" dy="1.7" layer="1" rot="R90"/>
+<smd name="27" x="6.36" y="4.41" dx="0.5" dy="1.7" layer="1" rot="R90"/>
+<smd name="26" x="6.36" y="3.61" dx="0.5" dy="1.7" layer="1" rot="R90"/>
+<smd name="25" x="6.36" y="2.81" dx="0.5" dy="1.7" layer="1" rot="R90"/>
+<smd name="24" x="6.36" y="2.01" dx="0.5" dy="1.7" layer="1" rot="R90"/>
+<smd name="23" x="6.36" y="1.21" dx="0.5" dy="1.7" layer="1" rot="R90"/>
+<smd name="22" x="6.36" y="0.41" dx="0.5" dy="1.7" layer="1" rot="R90"/>
+<smd name="21" x="6.36" y="-0.39" dx="0.5" dy="1.7" layer="1" rot="R90"/>
+<smd name="20" x="6.36" y="-1.19" dx="0.5" dy="1.7" layer="1" rot="R90"/>
+<smd name="19" x="6.36" y="-1.99" dx="0.5" dy="1.7" layer="1" rot="R90"/>
+<smd name="18" x="6.36" y="-2.79" dx="0.5" dy="1.7" layer="1" rot="R90"/>
+<smd name="17" x="6.36" y="-3.59" dx="0.5" dy="1.7" layer="1" rot="R90"/>
+<smd name="16" x="6.36" y="-4.39" dx="0.5" dy="1.7" layer="1" rot="R90"/>
+<smd name="15" x="6.36" y="-5.19" dx="0.5" dy="1.7" layer="1" rot="R90"/>
+<smd name="14" x="6.36" y="-5.99" dx="0.5" dy="1.7" layer="1" rot="R90"/>
+<smd name="13" x="6.36" y="-6.79" dx="0.5" dy="1.7" layer="1" rot="R90"/>
+<smd name="1" x="-4.21" y="-9.34" dx="0.5" dy="1.7" layer="1" rot="R180"/>
+<smd name="2" x="-3.41" y="-9.34" dx="0.5" dy="1.7" layer="1" rot="R180"/>
+<smd name="3" x="-2.61" y="-9.34" dx="0.5" dy="1.7" layer="1" rot="R180"/>
+<smd name="4" x="-1.81" y="-9.34" dx="0.5" dy="1.7" layer="1" rot="R180"/>
+<smd name="5" x="-1.01" y="-9.34" dx="0.5" dy="1.7" layer="1" rot="R180"/>
+<smd name="6" x="-0.21" y="-9.34" dx="0.5" dy="1.7" layer="1" rot="R180"/>
+<smd name="7" x="0.59" y="-9.34" dx="0.5" dy="1.7" layer="1" rot="R180"/>
+<smd name="8" x="1.39" y="-9.34" dx="0.5" dy="1.7" layer="1" rot="R180"/>
+<smd name="9" x="2.19" y="-9.34" dx="0.5" dy="1.7" layer="1" rot="R180"/>
+<smd name="10" x="2.99" y="-9.34" dx="0.5" dy="1.7" layer="1" rot="R180"/>
+<smd name="11" x="3.79" y="-9.34" dx="0.5" dy="1.7" layer="1" rot="R180"/>
+<smd name="12" x="4.59" y="-9.34" dx="0.5" dy="1.7" layer="1" rot="R180"/>
+<wire x1="7.2" y1="-10.2" x2="7.2" y2="9.7" width="0.127" layer="21"/>
+<wire x1="7.2" y1="9.7" x2="-3.3" y2="9.7" width="0.127" layer="21"/>
+<wire x1="-3.3" y1="9.7" x2="-3.3" y2="8.9" width="0.127" layer="21"/>
+<wire x1="-3.3" y1="8.9" x2="-4.6" y2="8.9" width="0.127" layer="21"/>
+<wire x1="-4.6" y1="8.9" x2="-4.6" y2="9.7" width="0.127" layer="21"/>
+<wire x1="-4.6" y1="9.7" x2="-7" y2="9.7" width="0.127" layer="21"/>
+<wire x1="-7" y1="9.7" x2="-7" y2="-10.2" width="0.127" layer="21"/>
+<wire x1="-7" y1="-10.2" x2="7.2" y2="-10.2" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -508,7 +604,26 @@ Japan: MIC Japan ( 209-J00111 )&lt;br&gt;</description>
 <text x="-5.08" y="-2.54" size="1.27" layer="94">BLE121LR</text>
 </symbol>
 <symbol name="MICROCHIP-RN4020">
-<description>R201-140392</description>
+<description>Microchip RN4020&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Bluetooth&lt;/b&gt;&lt;br&gt;
+Bluetooth 4.1 low energy radio&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Radio&lt;/b&gt;&lt;br&gt;
+Transmit power: +7 dBm&lt;br&gt;
+Receiver sensitivity: -92.5 dBm&lt;br&gt;
+Typical line-of-sight range: &lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Current Consumption&lt;/b&gt;&lt;br&gt;
+Dormant: 700nA&lt;br&gt;
+Deep Sleep:  5.0uA&lt;br&gt;
+Idle: 1.5mA&lt;br&gt;
+Tx/Rx acvtive: 16mA at 0 dBm&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Certifications&lt;/b&gt;&lt;br&gt;
+Japan: MIC Japan&lt;br&gt;
+R201-140392&lt;br&gt;
+&lt;br&gt;</description>
 <pin name="GND1" x="-20.32" y="15.24" length="middle"/>
 <pin name="AIO2" x="-20.32" y="12.7" length="middle"/>
 <pin name="AIO1" x="-20.32" y="10.16" length="middle"/>
@@ -537,6 +652,78 @@ Japan: MIC Japan ( 209-J00111 )&lt;br&gt;</description>
 <wire x1="-15.24" y1="20.32" x2="-15.24" y2="-12.7" width="0.254" layer="94"/>
 <pin name="VDD" x="20.32" y="12.7" length="middle" rot="R180"/>
 <pin name="GND4" x="20.32" y="15.24" length="middle" rot="R180"/>
+</symbol>
+<symbol name="LAIRD-BL600">
+<description>Laird BL600&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Bluetooth&lt;/b&gt;&lt;br&gt;
+Bluetooth 4.0 low energy radio&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Radio&lt;/b&gt;&lt;br&gt;
+Transmit power: +4 dBm&lt;br&gt;
+Receiver sensitivity: -91 dBm&lt;br&gt;
+Typical line-of-sight range: &lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Current Consumption&lt;/b&gt;&lt;br&gt;
+System Idle: 3.5uA&lt;br&gt;
+Transmit: 10.5mA@0dBm&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Certifications&lt;/b&gt;&lt;br&gt;
+Japan: MIC Japan&lt;br&gt;
+BL600-SA 204-320049 Ceramic&lt;br&gt;
+BL600-SC 204-320050 IPEX MHF4&lt;br&gt;
+BL600-ST 204-320048 Trace Pad&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Reference&lt;/b&gt;&lt;br&gt;
+&lt;a href="http://www.lairdtech.com/brandworld/library/BL600%20Hardware%20Integration%20Guide.pdf"&gt;Hardware Integration Guide&lt;/a&gt;</description>
+<pin name="GND1" x="-12.7" y="-33.02" length="middle" rot="R90"/>
+<pin name="SIO_1" x="-10.16" y="-33.02" length="middle" rot="R90"/>
+<pin name="GND2" x="-7.62" y="-33.02" length="middle" rot="R90"/>
+<pin name="SIO_2" x="-5.08" y="-33.02" length="middle" rot="R90"/>
+<pin name="SIO_3" x="-2.54" y="-33.02" length="middle" rot="R90"/>
+<pin name="SIO_4" x="0" y="-33.02" length="middle" rot="R90"/>
+<pin name="SIO_5" x="2.54" y="-33.02" length="middle" rot="R90"/>
+<pin name="SIO_6" x="5.08" y="-33.02" length="middle" rot="R90"/>
+<pin name="SIO_7" x="7.62" y="-33.02" length="middle" rot="R90"/>
+<pin name="VCC" x="10.16" y="-33.02" length="middle" rot="R90"/>
+<pin name="GND3" x="12.7" y="-33.02" length="middle" rot="R90"/>
+<pin name="SIO_8" x="15.24" y="-33.02" length="middle" rot="R90"/>
+<pin name="SIO_9" x="25.4" y="-17.78" length="middle" rot="R180"/>
+<pin name="SIO_10" x="25.4" y="-15.24" length="middle" rot="R180"/>
+<pin name="SIO_11" x="25.4" y="-12.7" length="middle" rot="R180"/>
+<pin name="SIO_12" x="25.4" y="-10.16" length="middle" rot="R180"/>
+<pin name="GND4" x="25.4" y="-7.62" length="middle" rot="R180"/>
+<pin name="SIO_13" x="25.4" y="-5.08" length="middle" rot="R180"/>
+<pin name="SIO_14" x="25.4" y="-2.54" length="middle" rot="R180"/>
+<pin name="SIO_15" x="25.4" y="0" length="middle" rot="R180"/>
+<pin name="SIO_16" x="25.4" y="2.54" length="middle" rot="R180"/>
+<pin name="RESET" x="25.4" y="5.08" length="middle" rot="R180"/>
+<pin name="NC" x="25.4" y="7.62" length="middle" rot="R180"/>
+<pin name="SIO_17" x="25.4" y="10.16" length="middle" rot="R180"/>
+<pin name="SIO_18" x="25.4" y="12.7" length="middle" rot="R180"/>
+<pin name="SIO_19" x="25.4" y="15.24" length="middle" rot="R180"/>
+<pin name="SIO_20" x="25.4" y="17.78" length="middle" rot="R180"/>
+<pin name="GND5" x="25.4" y="20.32" length="middle" rot="R180"/>
+<pin name="GND6" x="-25.4" y="20.32" length="middle"/>
+<pin name="RF_ANT" x="-25.4" y="17.78" length="middle"/>
+<pin name="GND7" x="-25.4" y="15.24" length="middle"/>
+<pin name="SIO_21" x="-25.4" y="12.7" length="middle"/>
+<pin name="SIO_22" x="-25.4" y="10.16" length="middle"/>
+<pin name="SIO_23" x="-25.4" y="7.62" length="middle"/>
+<pin name="SIO_24" x="-25.4" y="5.08" length="middle"/>
+<pin name="SIO_25" x="-25.4" y="2.54" length="middle"/>
+<pin name="GND8" x="-25.4" y="0" length="middle"/>
+<pin name="SIO_26" x="-25.4" y="-2.54" length="middle"/>
+<pin name="SIO_27" x="-25.4" y="-5.08" length="middle"/>
+<pin name="SIO_28" x="-25.4" y="-7.62" length="middle"/>
+<pin name="SIO_29" x="-25.4" y="-10.16" length="middle"/>
+<pin name="SIO_30" x="-25.4" y="-12.7" length="middle"/>
+<pin name="GND10" x="-25.4" y="-15.24" length="middle"/>
+<pin name="SIO_0" x="-25.4" y="-17.78" length="middle"/>
+<wire x1="-20.32" y1="-27.94" x2="20.32" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-27.94" x2="20.32" y2="25.4" width="0.254" layer="94"/>
+<wire x1="20.32" y1="25.4" x2="-20.32" y2="25.4" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="25.4" x2="-20.32" y2="-27.94" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -737,6 +924,26 @@ Japan: Mic Japan(R 209- J00053)&lt;br&gt;</description>
 </devices>
 </deviceset>
 <deviceset name="MICROCHIP-RN4020" prefix="RN4020">
+<description>Microchip RN4020&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Bluetooth&lt;/b&gt;&lt;br&gt;
+Bluetooth 4.1 low energy radio&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Radio&lt;/b&gt;&lt;br&gt;
+Transmit power: +7 dBm&lt;br&gt;
+Receiver sensitivity: -92.5 dBm&lt;br&gt;
+Typical line-of-sight range: &lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Current Consumption&lt;/b&gt;&lt;br&gt;
+Dormant: 700nA&lt;br&gt;
+Deep Sleep:  5.0uA&lt;br&gt;
+Idle: 1.5mA&lt;br&gt;
+Tx/Rx acvtive: 16mA at 0 dBm&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Certifications&lt;/b&gt;&lt;br&gt;
+Japan: MIC Japan&lt;br&gt;
+R201-140392&lt;br&gt;
+&lt;br&gt;</description>
 <gates>
 <gate name="G$1" symbol="MICROCHIP-RN4020" x="0" y="-5.08"/>
 </gates>
@@ -767,6 +974,86 @@ Japan: Mic Japan(R 209- J00053)&lt;br&gt;</description>
 <connect gate="G$1" pin="WAKE_HW" pad="15"/>
 <connect gate="G$1" pin="WAKE_SW" pad="7"/>
 <connect gate="G$1" pin="WS/PIO3/MOSI" pad="12"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LAIRD-BL600" prefix="BL600">
+<description>Laird BL600&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Bluetooth&lt;/b&gt;&lt;br&gt;
+Bluetooth 4.0 low energy radio&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Radio&lt;/b&gt;&lt;br&gt;
+Transmit power: +4 dBm&lt;br&gt;
+Receiver sensitivity: -91 dBm&lt;br&gt;
+Typical line-of-sight range: &lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Current Consumption&lt;/b&gt;&lt;br&gt;
+System Idle: 3.5uA&lt;br&gt;
+Transmit: 10.5mA@0dBm&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Certifications&lt;/b&gt;&lt;br&gt;
+Japan: MIC Japan&lt;br&gt;
+BL600-SA 204-320049 Ceramic&lt;br&gt;
+BL600-SC 204-320050 IPEX MHF4&lt;br&gt;
+BL600-ST 204-320048 Trace Pad&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Reference&lt;/b&gt;&lt;br&gt;
+&lt;a href="http://www.lairdtech.com/brandworld/library/BL600%20Hardware%20Integration%20Guide.pdf"&gt;Hardware Integration Guide&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="LAIRD-BL600" x="-2.54" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="LAIRD-BL600">
+<connects>
+<connect gate="G$1" pin="GND1" pad="1"/>
+<connect gate="G$1" pin="GND10" pad="43"/>
+<connect gate="G$1" pin="GND2" pad="3"/>
+<connect gate="G$1" pin="GND3" pad="11"/>
+<connect gate="G$1" pin="GND4" pad="17"/>
+<connect gate="G$1" pin="GND5" pad="28"/>
+<connect gate="G$1" pin="GND6" pad="29"/>
+<connect gate="G$1" pin="GND7" pad="31"/>
+<connect gate="G$1" pin="GND8" pad="37"/>
+<connect gate="G$1" pin="NC" pad="23"/>
+<connect gate="G$1" pin="RESET" pad="22"/>
+<connect gate="G$1" pin="RF_ANT" pad="30"/>
+<connect gate="G$1" pin="SIO_0" pad="44"/>
+<connect gate="G$1" pin="SIO_1" pad="2"/>
+<connect gate="G$1" pin="SIO_10" pad="14"/>
+<connect gate="G$1" pin="SIO_11" pad="15"/>
+<connect gate="G$1" pin="SIO_12" pad="16"/>
+<connect gate="G$1" pin="SIO_13" pad="18"/>
+<connect gate="G$1" pin="SIO_14" pad="19"/>
+<connect gate="G$1" pin="SIO_15" pad="20"/>
+<connect gate="G$1" pin="SIO_16" pad="21"/>
+<connect gate="G$1" pin="SIO_17" pad="24"/>
+<connect gate="G$1" pin="SIO_18" pad="25"/>
+<connect gate="G$1" pin="SIO_19" pad="26"/>
+<connect gate="G$1" pin="SIO_2" pad="4"/>
+<connect gate="G$1" pin="SIO_20" pad="27"/>
+<connect gate="G$1" pin="SIO_21" pad="32"/>
+<connect gate="G$1" pin="SIO_22" pad="33"/>
+<connect gate="G$1" pin="SIO_23" pad="34"/>
+<connect gate="G$1" pin="SIO_24" pad="35"/>
+<connect gate="G$1" pin="SIO_25" pad="36"/>
+<connect gate="G$1" pin="SIO_26" pad="38"/>
+<connect gate="G$1" pin="SIO_27" pad="39"/>
+<connect gate="G$1" pin="SIO_28" pad="40"/>
+<connect gate="G$1" pin="SIO_29" pad="41"/>
+<connect gate="G$1" pin="SIO_3" pad="5"/>
+<connect gate="G$1" pin="SIO_30" pad="42"/>
+<connect gate="G$1" pin="SIO_4" pad="6"/>
+<connect gate="G$1" pin="SIO_5" pad="7"/>
+<connect gate="G$1" pin="SIO_6" pad="8"/>
+<connect gate="G$1" pin="SIO_7" pad="9"/>
+<connect gate="G$1" pin="SIO_8" pad="12"/>
+<connect gate="G$1" pin="SIO_9" pad="13"/>
+<connect gate="G$1" pin="VCC" pad="10"/>
 </connects>
 <technologies>
 <technology name=""/>

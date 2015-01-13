@@ -512,48 +512,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <smd name="P$_GND" x="0" y="-16" dx="4.318" dy="3.2512" layer="16" rot="R270"/>
 <text x="-6.19" y="18.73" size="2.54" layer="22">+</text>
 </package>
-<package name="BLE113">
-<smd name="1" x="-5.08" y="5.08" dx="2" dy="0.5" layer="1" roundness="70"/>
-<smd name="3" x="-5.08" y="3.54" dx="2" dy="0.5" layer="1" roundness="70"/>
-<smd name="2" x="-5.08" y="4.31" dx="2" dy="0.5" layer="1" roundness="70"/>
-<smd name="4" x="-5.08" y="2.77" dx="2" dy="0.5" layer="1" roundness="70"/>
-<smd name="5" x="-5.08" y="1.97" dx="2" dy="0.5" layer="1" roundness="70"/>
-<smd name="6" x="-5.08" y="1.17" dx="2" dy="0.5" layer="1" roundness="70"/>
-<smd name="7" x="-5.08" y="0.37" dx="2" dy="0.5" layer="1" roundness="70"/>
-<smd name="8" x="-5.08" y="-0.43" dx="2" dy="0.5" layer="1" roundness="70"/>
-<smd name="9" x="-5.08" y="-1.23" dx="2" dy="0.5" layer="1" roundness="70"/>
-<smd name="10" x="-5.08" y="-2.03" dx="2" dy="0.5" layer="1" roundness="70"/>
-<smd name="11" x="-5.08" y="-2.83" dx="2" dy="0.5" layer="1" roundness="70"/>
-<smd name="12" x="-5.08" y="-3.63" dx="2" dy="0.5" layer="1" roundness="70"/>
-<smd name="13" x="-5.08" y="-4.43" dx="2" dy="0.5" layer="1" roundness="70"/>
-<smd name="14" x="-5.08" y="-5.23" dx="2" dy="0.5" layer="1" roundness="70"/>
-<smd name="15" x="-5.08" y="-6.03" dx="2" dy="0.5" layer="1" roundness="70"/>
-<smd name="16" x="-5.08" y="-6.83" dx="2" dy="0.5" layer="1" roundness="70"/>
-<smd name="17" x="-5.08" y="-7.63" dx="2" dy="0.5" layer="1" roundness="70"/>
-<smd name="18" x="-5.08" y="-8.43" dx="2" dy="0.5" layer="1" roundness="70"/>
-<smd name="19" x="-3.08" y="-9.23" dx="2" dy="0.5" layer="1" roundness="70" rot="R90"/>
-<smd name="20" x="-2.28" y="-9.23" dx="2" dy="0.5" layer="1" roundness="70" rot="R90"/>
-<smd name="21" x="-1.48" y="-9.23" dx="2" dy="0.5" layer="1" roundness="70" rot="R90"/>
-<smd name="22" x="-0.68" y="-9.23" dx="2" dy="0.5" layer="1" roundness="70" rot="R90"/>
-<smd name="23" x="0.12" y="-9.23" dx="2" dy="0.5" layer="1" roundness="70" rot="R90"/>
-<smd name="24" x="0.92" y="-9.23" dx="2" dy="0.5" layer="1" roundness="70" rot="R90"/>
-<smd name="25" x="2.82" y="-8.43" dx="2" dy="0.5" layer="1" roundness="70"/>
-<smd name="26" x="2.82" y="-7.63" dx="2" dy="0.5" layer="1" roundness="70"/>
-<smd name="27" x="2.82" y="-6.83" dx="2" dy="0.5" layer="1" roundness="70"/>
-<smd name="28" x="2.82" y="-6.03" dx="2" dy="0.5" layer="1" roundness="70"/>
-<smd name="29" x="2.82" y="-5.23" dx="2" dy="0.5" layer="1" roundness="70"/>
-<smd name="30" x="2.82" y="-4.43" dx="2" dy="0.5" layer="1" roundness="70"/>
-<smd name="31" x="2.82" y="-3.63" dx="2" dy="0.5" layer="1" roundness="70"/>
-<smd name="32" x="2.82" y="-2.83" dx="2" dy="0.5" layer="1" roundness="70"/>
-<smd name="33" x="2.82" y="-2.03" dx="2" dy="0.5" layer="1" roundness="70"/>
-<smd name="34" x="2.82" y="-1.23" dx="2" dy="0.5" layer="1" roundness="70"/>
-<smd name="35" x="2.82" y="-0.43" dx="2" dy="0.5" layer="1" roundness="70"/>
-<smd name="36" x="2.82" y="0.37" dx="2" dy="0.5" layer="1" roundness="70"/>
-<wire x1="-5.75" y1="5.9" x2="-5.75" y2="-10.05" width="0.127" layer="21"/>
-<wire x1="-5.75" y1="-10.05" x2="3.5" y2="-10.05" width="0.127" layer="21"/>
-<wire x1="3.5" y1="-10.05" x2="3.5" y2="5.9" width="0.127" layer="21"/>
-<wire x1="3.5" y1="5.9" x2="-5.75" y2="5.9" width="0.127" layer="21"/>
-</package>
 <package name="SWITCH-LS6J2M-T">
 <wire x1="-2.6" y1="2.6" x2="2.6" y2="2.6" width="0.127" layer="21"/>
 <wire x1="2.6" y1="2.6" x2="2.6" y2="-2.6" width="0.127" layer="21"/>
@@ -577,49 +535,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <wire x1="-2.54" y1="0" x2="7.62" y2="0" width="0.254" layer="94"/>
 <pin name="P$_GND" x="-2.54" y="0" visible="pad" length="short"/>
 <pin name="P$_VCC" x="7.62" y="0" visible="pad" length="short" rot="R180"/>
-</symbol>
-<symbol name="BLE113">
-<wire x1="-16.764" y1="24.638" x2="16.256" y2="24.638" width="0.254" layer="94"/>
-<wire x1="16.256" y1="24.638" x2="16.256" y2="-28.448" width="0.254" layer="94"/>
-<wire x1="16.256" y1="-28.448" x2="-16.764" y2="-28.448" width="0.254" layer="94"/>
-<wire x1="-16.764" y1="-28.448" x2="-16.764" y2="24.384" width="0.254" layer="94"/>
-<pin name="GND1" x="-20.32" y="20.32" length="middle"/>
-<pin name="GND2" x="-20.32" y="17.78" length="middle"/>
-<pin name="GND3" x="-20.32" y="15.24" length="middle"/>
-<pin name="GND4" x="-20.32" y="12.7" length="middle"/>
-<pin name="GND5" x="-20.32" y="10.16" length="middle"/>
-<pin name="GND6" x="-20.32" y="7.62" length="middle"/>
-<pin name="GND7" x="-20.32" y="5.08" length="middle"/>
-<pin name="AVDD" x="-20.32" y="2.54" length="middle"/>
-<pin name="P2_2" x="-20.32" y="0" length="middle"/>
-<pin name="P2_1" x="-20.32" y="-2.54" length="middle"/>
-<pin name="P2_0" x="-20.32" y="-5.08" length="middle"/>
-<pin name="P1_7" x="-20.32" y="-7.62" length="middle"/>
-<pin name="P1_6" x="-20.32" y="-10.16" length="middle"/>
-<pin name="SCL" x="-20.32" y="-12.7" length="middle"/>
-<pin name="SDA" x="-20.32" y="-15.24" length="middle"/>
-<pin name="NC1" x="-20.32" y="-17.78" length="middle"/>
-<pin name="DVDD" x="-20.32" y="-20.32" length="middle"/>
-<pin name="GND" x="-20.32" y="-22.86" length="middle"/>
-<pin name="P1_5" x="-5.08" y="-33.02" length="middle" rot="R90"/>
-<pin name="P1_4" x="-2.54" y="-33.02" length="middle" rot="R90"/>
-<pin name="P1_3" x="0" y="-33.02" length="middle" rot="R90"/>
-<pin name="P1_2" x="2.54" y="-33.02" length="middle" rot="R90"/>
-<pin name="P1_1" x="5.08" y="-33.02" length="middle" rot="R90"/>
-<pin name="P1_0" x="7.62" y="-33.02" length="middle" rot="R90"/>
-<pin name="GND8" x="20.32" y="-22.86" length="middle" rot="R180"/>
-<pin name="P0_7" x="20.32" y="-20.32" length="middle" rot="R180"/>
-<pin name="P0_6" x="20.32" y="-17.78" length="middle" rot="R180"/>
-<pin name="P0_5" x="20.32" y="-15.24" length="middle" rot="R180"/>
-<pin name="P0_4" x="20.32" y="-12.7" length="middle" rot="R180"/>
-<pin name="P0_3" x="20.32" y="-10.16" length="middle" rot="R180"/>
-<pin name="P0_2" x="20.32" y="-7.62" length="middle" rot="R180"/>
-<pin name="P0_1" x="20.32" y="-5.08" length="middle" rot="R180"/>
-<pin name="P0_0" x="20.32" y="-2.54" length="middle" rot="R180"/>
-<pin name="RESET#" x="20.32" y="0" length="middle" rot="R180"/>
-<pin name="NC2" x="20.32" y="2.54" length="middle" rot="R180"/>
-<pin name="GND9" x="20.32" y="5.08" length="middle" rot="R180"/>
-<text x="2.54" y="20.32" size="1.778" layer="94">BLE113</text>
 </symbol>
 <symbol name="SWITCH-LS6J2M-T">
 <pin name="1" x="-7.62" y="2.54" visible="pad" length="middle"/>
@@ -674,56 +589,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <connects>
 <connect gate="G$1" pin="P$_GND" pad="P$_GND"/>
 <connect gate="G$1" pin="P$_VCC" pad="P$_VCC"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="BLE113">
-<gates>
-<gate name="G$1" symbol="BLE113" x="-2.54" y="2.54"/>
-</gates>
-<devices>
-<device name="" package="BLE113">
-<connects>
-<connect gate="G$1" pin="AVDD" pad="8"/>
-<connect gate="G$1" pin="DVDD" pad="17"/>
-<connect gate="G$1" pin="GND" pad="18"/>
-<connect gate="G$1" pin="GND1" pad="1"/>
-<connect gate="G$1" pin="GND2" pad="2"/>
-<connect gate="G$1" pin="GND3" pad="3"/>
-<connect gate="G$1" pin="GND4" pad="4"/>
-<connect gate="G$1" pin="GND5" pad="5"/>
-<connect gate="G$1" pin="GND6" pad="6"/>
-<connect gate="G$1" pin="GND7" pad="7"/>
-<connect gate="G$1" pin="GND8" pad="25"/>
-<connect gate="G$1" pin="GND9" pad="36"/>
-<connect gate="G$1" pin="NC1" pad="16"/>
-<connect gate="G$1" pin="NC2" pad="35"/>
-<connect gate="G$1" pin="P0_0" pad="33"/>
-<connect gate="G$1" pin="P0_1" pad="32"/>
-<connect gate="G$1" pin="P0_2" pad="31"/>
-<connect gate="G$1" pin="P0_3" pad="30"/>
-<connect gate="G$1" pin="P0_4" pad="29"/>
-<connect gate="G$1" pin="P0_5" pad="28"/>
-<connect gate="G$1" pin="P0_6" pad="27"/>
-<connect gate="G$1" pin="P0_7" pad="26"/>
-<connect gate="G$1" pin="P1_0" pad="24"/>
-<connect gate="G$1" pin="P1_1" pad="23"/>
-<connect gate="G$1" pin="P1_2" pad="22"/>
-<connect gate="G$1" pin="P1_3" pad="21"/>
-<connect gate="G$1" pin="P1_4" pad="20"/>
-<connect gate="G$1" pin="P1_5" pad="19"/>
-<connect gate="G$1" pin="P1_6" pad="13"/>
-<connect gate="G$1" pin="P1_7" pad="12"/>
-<connect gate="G$1" pin="P2_0" pad="11"/>
-<connect gate="G$1" pin="P2_1" pad="10"/>
-<connect gate="G$1" pin="P2_2" pad="9"/>
-<connect gate="G$1" pin="RESET#" pad="34"/>
-<connect gate="G$1" pin="SCL" pad="14"/>
-<connect gate="G$1" pin="SDA" pad="15"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -6621,6 +6486,204 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="gclueBT">
+<packages>
+<package name="BLUEGIGA-BLE121LR">
+<description>&lt;br&gt;
+&lt;b&gt;Bluetooth&lt;/b&gt;&lt;br&gt;
+Bluetooth 4.0 low energy radio&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Radio&lt;/b&gt;&lt;br&gt;
+Transmit power: +8 dBm&lt;br&gt;
+Receiver sensitivity: -98 dBm&lt;br&gt;
+Typical line-of-sight range: up to 450 meters&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Current Consumption&lt;/b&gt;&lt;br&gt;
+TX peak current: 36 mA, 25 mA (with DC/DC)&lt;br&gt;
+RX peak current: 33 mA&lt;br&gt;
+Power mode 1: 2.7 mA&lt;br&gt;
+Power mode 2: 1.3 uA&lt;br&gt;
+Power mode 3: 0.5 uA&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Certifications&lt;/b&gt;&lt;br&gt;
+Japan: MIC Japan certification ( 209-J00111 )&lt;br&gt;</description>
+<wire x1="-7.2" y1="5.4" x2="7.4" y2="5.4" width="0.127" layer="21"/>
+<wire x1="7.4" y1="5.4" x2="7.4" y2="-7.5" width="0.127" layer="21"/>
+<wire x1="7.4" y1="-7.5" x2="-7.2" y2="-7.5" width="0.127" layer="21"/>
+<wire x1="-7.2" y1="-7.5" x2="-7.2" y2="5.4" width="0.127" layer="21"/>
+<text x="-4.5" y="6.5" size="1.27" layer="21">BLE121LR</text>
+<smd name="1" x="-6.4" y="4.8" dx="2" dy="0.5" layer="1" roundness="30"/>
+<smd name="2" x="-6.4" y="3.9" dx="2" dy="0.5" layer="1" roundness="30"/>
+<smd name="3" x="-6.4" y="2.95" dx="2" dy="0.5" layer="1" roundness="30"/>
+<smd name="4" x="-6.4" y="2.05" dx="2" dy="0.5" layer="1" roundness="30"/>
+<smd name="5" x="-6.4" y="1.15" dx="2" dy="0.5" layer="1" roundness="30"/>
+<smd name="6" x="-6.4" y="0.3" dx="2" dy="0.5" layer="1" roundness="30"/>
+<smd name="7" x="-6.4" y="-0.65" dx="2" dy="0.5" layer="1" roundness="30"/>
+<smd name="8" x="-6.4" y="-1.55" dx="2" dy="0.5" layer="1" roundness="30"/>
+<smd name="9" x="-6.4" y="-2.45" dx="2" dy="0.5" layer="1" roundness="30"/>
+<smd name="10" x="-6.4" y="-3.3" dx="2" dy="0.5" layer="1" roundness="30"/>
+<smd name="11" x="-6.4" y="-4.25" dx="2" dy="0.5" layer="1" roundness="30"/>
+<smd name="12" x="-6.4" y="-5.15" dx="2" dy="0.5" layer="1" roundness="30"/>
+<smd name="13" x="-4.9" y="-6.65" dx="2" dy="0.5" layer="1" roundness="30" rot="R90"/>
+<smd name="14" x="-4" y="-6.65" dx="2" dy="0.5" layer="1" roundness="30" rot="R90"/>
+<smd name="15" x="-3.05" y="-6.65" dx="2" dy="0.5" layer="1" roundness="30" rot="R90"/>
+<smd name="16" x="-2.15" y="-6.65" dx="2" dy="0.5" layer="1" roundness="30" rot="R90"/>
+<smd name="17" x="-1.25" y="-6.65" dx="2" dy="0.5" layer="1" roundness="30" rot="R90"/>
+<smd name="18" x="-0.4" y="-6.65" dx="2" dy="0.5" layer="1" roundness="30" rot="R90"/>
+<smd name="19" x="0.55" y="-6.65" dx="2" dy="0.5" layer="1" roundness="30" rot="R90"/>
+<smd name="20" x="1.45" y="-6.65" dx="2" dy="0.5" layer="1" roundness="30" rot="R90"/>
+<smd name="21" x="2.35" y="-6.65" dx="2" dy="0.5" layer="1" roundness="30" rot="R90"/>
+<smd name="22" x="3.2" y="-6.65" dx="2" dy="0.5" layer="1" roundness="30" rot="R90"/>
+<smd name="23" x="4.15" y="-6.65" dx="2" dy="0.5" layer="1" roundness="30" rot="R90"/>
+<smd name="24" x="5.05" y="-6.65" dx="2" dy="0.5" layer="1" roundness="30" rot="R90"/>
+<smd name="36" x="6.6" y="4.75" dx="2" dy="0.5" layer="1" roundness="30"/>
+<smd name="35" x="6.6" y="3.85" dx="2" dy="0.5" layer="1" roundness="30"/>
+<smd name="34" x="6.6" y="2.9" dx="2" dy="0.5" layer="1" roundness="30"/>
+<smd name="33" x="6.6" y="2" dx="2" dy="0.5" layer="1" roundness="30"/>
+<smd name="32" x="6.6" y="1.1" dx="2" dy="0.5" layer="1" roundness="30"/>
+<smd name="31" x="6.6" y="0.25" dx="2" dy="0.5" layer="1" roundness="30"/>
+<smd name="30" x="6.6" y="-0.7" dx="2" dy="0.5" layer="1" roundness="30"/>
+<smd name="29" x="6.6" y="-1.6" dx="2" dy="0.5" layer="1" roundness="30"/>
+<smd name="28" x="6.6" y="-2.5" dx="2" dy="0.5" layer="1" roundness="30"/>
+<smd name="27" x="6.6" y="-3.35" dx="2" dy="0.5" layer="1" roundness="30"/>
+<smd name="26" x="6.6" y="-4.3" dx="2" dy="0.5" layer="1" roundness="30"/>
+<smd name="25" x="6.6" y="-5.2" dx="2" dy="0.5" layer="1" roundness="30"/>
+</package>
+</packages>
+<symbols>
+<symbol name="BLUEGIGA-BLE121LR">
+<description>&lt;br&gt;
+&lt;b&gt;Bluetooth&lt;/b&gt;&lt;br&gt;
+Bluetooth 4.0 low energy radio&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Radio&lt;/b&gt;&lt;br&gt;
+Transmit power: +8 dBm&lt;br&gt;
+Receiver sensitivity: -98 dBm&lt;br&gt;
+Typical line-of-sight range: up to 450 meters&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Current Consumption&lt;/b&gt;&lt;br&gt;
+TX peak current: 36 mA, 25 mA (with DC/DC)&lt;br&gt;
+RX peak current: 33 mA&lt;br&gt;
+Power mode 1: 2.7 mA&lt;br&gt;
+Power mode 2: 1.3 uA&lt;br&gt;
+Power mode 3: 0.5 uA&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Certifications&lt;/b&gt;&lt;br&gt;
+Japan: MIC Japan ( 209-J00111 )&lt;br&gt;</description>
+<pin name="GND1" x="-25.4" y="15.24" length="middle"/>
+<pin name="GND2" x="-25.4" y="12.7" length="middle"/>
+<pin name="GND3" x="-25.4" y="10.16" length="middle"/>
+<pin name="P0_2" x="-25.4" y="7.62" length="middle"/>
+<pin name="P0_1" x="-25.4" y="5.08" length="middle"/>
+<pin name="P0_0" x="-25.4" y="2.54" length="middle"/>
+<pin name="RESET" x="-25.4" y="0" length="middle"/>
+<pin name="P0_3" x="-25.4" y="-2.54" length="middle"/>
+<pin name="P0_4" x="-25.4" y="-5.08" length="middle"/>
+<pin name="P0_5" x="-25.4" y="-7.62" length="middle"/>
+<pin name="P0_6" x="-25.4" y="-10.16" length="middle"/>
+<pin name="P0_7" x="-25.4" y="-12.7" length="middle"/>
+<pin name="AVDD" x="-15.24" y="-27.94" length="middle" rot="R90"/>
+<pin name="GND4" x="-12.7" y="-27.94" length="middle" rot="R90"/>
+<pin name="GND5" x="-10.16" y="-27.94" length="middle" rot="R90"/>
+<pin name="GND6" x="-7.62" y="-27.94" length="middle" rot="R90"/>
+<pin name="P1_6" x="-5.08" y="-27.94" length="middle" rot="R90"/>
+<pin name="DCDC" x="-2.54" y="-27.94" length="middle" rot="R90"/>
+<pin name="P2_0" x="0" y="-27.94" length="middle" rot="R90"/>
+<pin name="P2_1" x="2.54" y="-27.94" length="middle" rot="R90"/>
+<pin name="P2_2" x="5.08" y="-27.94" length="middle" rot="R90"/>
+<pin name="GND7" x="7.62" y="-27.94" length="middle" rot="R90"/>
+<pin name="DVDD" x="10.16" y="-27.94" length="middle" rot="R90"/>
+<pin name="SCL" x="12.7" y="-27.94" length="middle" rot="R90"/>
+<pin name="SDA" x="22.86" y="-12.7" length="middle" rot="R180"/>
+<pin name="NC" x="22.86" y="-10.16" length="middle" rot="R180"/>
+<pin name="P1_5" x="22.86" y="-7.62" length="middle" rot="R180"/>
+<pin name="P1_4" x="22.86" y="-5.08" length="middle" rot="R180"/>
+<pin name="P1_3" x="22.86" y="-2.54" length="middle" rot="R180"/>
+<pin name="P1_2" x="22.86" y="0" length="middle" rot="R180"/>
+<pin name="GND8" x="22.86" y="2.54" length="middle" rot="R180"/>
+<pin name="GND9" x="22.86" y="5.08" length="middle" rot="R180"/>
+<pin name="GND10" x="22.86" y="7.62" length="middle" rot="R180"/>
+<pin name="GND11" x="22.86" y="10.16" length="middle" rot="R180"/>
+<pin name="GND12" x="22.86" y="12.7" length="middle" rot="R180"/>
+<pin name="GND13" x="22.86" y="15.24" length="middle" rot="R180"/>
+<wire x1="-20.32" y1="-22.86" x2="17.78" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-22.86" x2="17.78" y2="17.78" width="0.254" layer="94"/>
+<wire x1="17.78" y1="17.78" x2="-20.32" y2="17.78" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="17.78" x2="-20.32" y2="-22.86" width="0.254" layer="94"/>
+<text x="-5.08" y="-2.54" size="1.27" layer="94">BLE121LR</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="BLUEGIGA-BLE121LR" prefix="BLE121">
+<description>&lt;br&gt;
+&lt;b&gt;Bluetooth&lt;/b&gt;&lt;br&gt;
+Bluetooth 4.0 low energy radio&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Radio&lt;/b&gt;&lt;br&gt;
+Transmit power: +8 dBm&lt;br&gt;
+Receiver sensitivity: -98 dBm&lt;br&gt;
+Typical line-of-sight range: up to 450 meters&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Current Consumption&lt;/b&gt;&lt;br&gt;
+TX peak current: 36 mA, 25 mA (with DC/DC)&lt;br&gt;
+RX peak current: 33 mA&lt;br&gt;
+Power mode 1: 2.7 mA&lt;br&gt;
+Power mode 2: 1.3 uA&lt;br&gt;
+Power mode 3: 0.5 uA&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Certifications&lt;/b&gt;&lt;br&gt;
+Japan: MIC Japan certification ( 209-J00111 )&lt;br&gt;</description>
+<gates>
+<gate name="G$1" symbol="BLUEGIGA-BLE121LR" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="BLUEGIGA-BLE121LR">
+<connects>
+<connect gate="G$1" pin="AVDD" pad="13"/>
+<connect gate="G$1" pin="DCDC" pad="18"/>
+<connect gate="G$1" pin="DVDD" pad="23"/>
+<connect gate="G$1" pin="GND1" pad="1"/>
+<connect gate="G$1" pin="GND10" pad="33"/>
+<connect gate="G$1" pin="GND11" pad="34"/>
+<connect gate="G$1" pin="GND12" pad="35"/>
+<connect gate="G$1" pin="GND13" pad="36"/>
+<connect gate="G$1" pin="GND2" pad="2"/>
+<connect gate="G$1" pin="GND3" pad="3"/>
+<connect gate="G$1" pin="GND4" pad="14"/>
+<connect gate="G$1" pin="GND5" pad="15"/>
+<connect gate="G$1" pin="GND6" pad="16"/>
+<connect gate="G$1" pin="GND7" pad="22"/>
+<connect gate="G$1" pin="GND8" pad="31"/>
+<connect gate="G$1" pin="GND9" pad="32"/>
+<connect gate="G$1" pin="NC" pad="26"/>
+<connect gate="G$1" pin="P0_0" pad="6"/>
+<connect gate="G$1" pin="P0_1" pad="5"/>
+<connect gate="G$1" pin="P0_2" pad="4"/>
+<connect gate="G$1" pin="P0_3" pad="8"/>
+<connect gate="G$1" pin="P0_4" pad="9"/>
+<connect gate="G$1" pin="P0_5" pad="10"/>
+<connect gate="G$1" pin="P0_6" pad="11"/>
+<connect gate="G$1" pin="P0_7" pad="12"/>
+<connect gate="G$1" pin="P1_2" pad="30"/>
+<connect gate="G$1" pin="P1_3" pad="29"/>
+<connect gate="G$1" pin="P1_4" pad="28"/>
+<connect gate="G$1" pin="P1_5" pad="27"/>
+<connect gate="G$1" pin="P1_6" pad="17"/>
+<connect gate="G$1" pin="P2_0" pad="19"/>
+<connect gate="G$1" pin="P2_1" pad="20"/>
+<connect gate="G$1" pin="P2_2" pad="21"/>
+<connect gate="G$1" pin="RESET" pad="7"/>
+<connect gate="G$1" pin="SCL" pad="24"/>
+<connect gate="G$1" pin="SDA" pad="25"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -6645,7 +6708,6 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 <part name="GND10" library="SparkFun" deviceset="GND" device=""/>
 <part name="U$3" library="gclue-test" deviceset="PIN-HEADER-SMT(1.27MM)2X5" device=""/>
 <part name="U$1" library="gclue" deviceset="SMTU2450-BOTTOM-MINI" device=""/>
-<part name="U$4" library="gclue" deviceset="BLE113" device=""/>
 <part name="GND11" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND14" library="SparkFun" deviceset="GND" device=""/>
 <part name="U$2" library="gclue" deviceset="SWITCH-LS6J2M-T" device=""/>
@@ -6654,13 +6716,13 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 <part name="GND3" library="SparkFun" deviceset="GND" device=""/>
 <part name="U$6" library="gclue" deviceset="A4L-LOC" device=""/>
 <part name="GND6" library="SparkFun" deviceset="GND" device=""/>
-<part name="C1" library="rcl" deviceset="C-EU" device="C0603"/>
+<part name="C1" library="rcl" deviceset="C-EU" device="C0603" value="2.2uf"/>
 <part name="TPS1" library="gclueSupply" deviceset="TI-TPS62730" device=""/>
 <part name="GND12" library="SparkFun" deviceset="GND" device=""/>
-<part name="C3" library="rcl" deviceset="C-EU" device="C0603"/>
+<part name="C3" library="rcl" deviceset="C-EU" device="C0603" value="2.2uf"/>
 <part name="GND13" library="SparkFun" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="V+" device=""/>
-<part name="C4" library="rcl" deviceset="C-US" device="C3225"/>
+<part name="C4" library="rcl" deviceset="C-US" device="C3225" value="100uf"/>
 <part name="GND4" library="SparkFun" deviceset="GND" device=""/>
 <part name="P+5" library="supply1" deviceset="V+" device=""/>
 <part name="P+2" library="supply1" deviceset="V+" device=""/>
@@ -6669,6 +6731,7 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 <part name="P+7" library="supply1" deviceset="V+" device=""/>
 <part name="P+8" library="supply1" deviceset="V+" device=""/>
 <part name="INDUCTOR1" library="gclueParts" deviceset="INDUCTOR-0805" device=""/>
+<part name="BLE1" library="gclueBT" deviceset="BLUEGIGA-BLE121LR" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6677,27 +6740,26 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 <text x="7.62" y="167.64" size="3.81" layer="94">Battery</text>
 <text x="215.9" y="167.64" size="3.81" layer="94">Push Button</text>
 <text x="10.16" y="99.06" size="3.81" layer="94">Debug</text>
-<text x="76.2" y="99.06" size="3.81" layer="94">BLE113</text>
-<text x="165.1" y="99.06" size="3.81" layer="94">LED</text>
+<text x="76.2" y="99.06" size="3.81" layer="94">BLE121</text>
+<text x="170.18" y="96.52" size="3.81" layer="94">LED</text>
 </plain>
 <instances>
 <instance part="GND1" gate="1" x="17.78" y="121.92"/>
-<instance part="GND2" gate="1" x="78.74" y="86.36" rot="R270"/>
-<instance part="GND5" gate="1" x="154.94" y="73.66" rot="R90"/>
+<instance part="GND2" gate="1" x="76.2" y="86.36" rot="R270"/>
+<instance part="GND5" gate="1" x="149.86" y="86.36" rot="R90"/>
 <instance part="R3" gate="G$1" x="175.26" y="149.86" rot="R270"/>
 <instance part="GND7" gate="1" x="170.18" y="111.76"/>
 <instance part="R0" gate="G$1" x="182.88" y="88.9"/>
-<instance part="GND8" gate="1" x="213.36" y="73.66"/>
+<instance part="GND8" gate="1" x="213.36" y="71.12"/>
 <instance part="GND9" gate="1" x="12.7" y="88.9" rot="R270"/>
 <instance part="P0_0" gate="G$1" x="208.28" y="88.9" rot="R90"/>
 <instance part="R2" gate="G$1" x="182.88" y="81.28"/>
 <instance part="P0_1" gate="G$1" x="200.66" y="81.28" rot="R90"/>
-<instance part="GND10" gate="1" x="205.74" y="73.66"/>
+<instance part="GND10" gate="1" x="205.74" y="71.12"/>
 <instance part="U$3" gate="G$1" x="35.56" y="86.36" rot="R270"/>
 <instance part="U$1" gate="G$1" x="17.78" y="132.08" rot="R90"/>
-<instance part="U$4" gate="G$1" x="121.92" y="68.58"/>
-<instance part="GND11" gate="1" x="86.36" y="45.72" rot="R270"/>
-<instance part="GND14" gate="1" x="154.94" y="45.72" rot="R90"/>
+<instance part="GND11" gate="1" x="106.68" y="35.56"/>
+<instance part="GND14" gate="1" x="121.92" y="35.56"/>
 <instance part="U$2" gate="G$1" x="172.72" y="132.08" rot="R270"/>
 <instance part="U$5" gate="G$1" x="231.14" y="139.7"/>
 <instance part="R6" gate="G$1" x="223.52" y="152.4" rot="R90"/>
@@ -6716,12 +6778,13 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 </instance>
 <instance part="GND4" gate="1" x="35.56" y="121.92"/>
 <instance part="P+5" gate="1" x="175.26" y="160.02"/>
-<instance part="P+2" gate="1" x="76.2" y="71.12" rot="R90"/>
-<instance part="P+4" gate="1" x="76.2" y="48.26" rot="R90"/>
+<instance part="P+2" gate="1" x="99.06" y="27.94" rot="R180"/>
+<instance part="P+4" gate="1" x="124.46" y="25.4" rot="R180"/>
 <instance part="P+6" gate="1" x="12.7" y="78.74" rot="R90"/>
 <instance part="P+7" gate="1" x="66.04" y="88.9" rot="R270"/>
 <instance part="P+8" gate="1" x="223.52" y="165.1"/>
 <instance part="INDUCTOR1" gate="G$1" x="121.92" y="149.86"/>
+<instance part="BLE1" gate="G$1" x="114.3" y="71.12"/>
 </instances>
 <busses>
 </busses>
@@ -6734,8 +6797,29 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 </segment>
 <segment>
 <pinref part="GND5" gate="1" pin="GND"/>
-<wire x1="152.4" y1="73.66" x2="142.24" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="GND9"/>
+<wire x1="147.32" y1="86.36" x2="139.7" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="BLE1" gate="G$1" pin="GND8"/>
+<wire x1="137.16" y1="73.66" x2="139.7" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="73.66" x2="139.7" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="BLE1" gate="G$1" pin="GND13"/>
+<wire x1="139.7" y1="76.2" x2="139.7" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="78.74" x2="139.7" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="81.28" x2="139.7" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="83.82" x2="139.7" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="86.36" x2="137.16" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="BLE1" gate="G$1" pin="GND12"/>
+<wire x1="137.16" y1="83.82" x2="139.7" y2="83.82" width="0.1524" layer="91"/>
+<junction x="139.7" y="83.82"/>
+<pinref part="BLE1" gate="G$1" pin="GND11"/>
+<wire x1="137.16" y1="81.28" x2="139.7" y2="81.28" width="0.1524" layer="91"/>
+<junction x="139.7" y="81.28"/>
+<pinref part="BLE1" gate="G$1" pin="GND10"/>
+<wire x1="137.16" y1="78.74" x2="139.7" y2="78.74" width="0.1524" layer="91"/>
+<junction x="139.7" y="78.74"/>
+<pinref part="BLE1" gate="G$1" pin="GND9"/>
+<wire x1="137.16" y1="76.2" x2="139.7" y2="76.2" width="0.1524" layer="91"/>
+<junction x="139.7" y="76.2"/>
+<junction x="139.7" y="86.36"/>
 </segment>
 <segment>
 <pinref part="GND9" gate="1" pin="GND"/>
@@ -6744,23 +6828,18 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 </segment>
 <segment>
 <pinref part="GND8" gate="1" pin="GND"/>
-<wire x1="213.36" y1="88.9" x2="213.36" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="88.9" x2="213.36" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="P0_0" gate="G$1" pin="C"/>
 </segment>
 <segment>
 <pinref part="P0_1" gate="G$1" pin="C"/>
-<wire x1="205.74" y1="81.28" x2="205.74" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="81.28" x2="205.74" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="GND10" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="GND"/>
-<wire x1="101.6" y1="45.72" x2="88.9" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="GND11" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="U$4" gate="G$1" pin="GND8"/>
 <pinref part="GND14" gate="1" pin="GND"/>
-<wire x1="142.24" y1="45.72" x2="152.4" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="43.18" x2="121.92" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="BLE1" gate="G$1" pin="GND7"/>
 </segment>
 <segment>
 <pinref part="U$5" gate="G$1" pin="3"/>
@@ -6768,22 +6847,18 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 <pinref part="GND3" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="GND2"/>
-<pinref part="U$4" gate="G$1" pin="GND1"/>
-<wire x1="101.6" y1="88.9" x2="101.6" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="GND7"/>
-<wire x1="101.6" y1="86.36" x2="101.6" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="83.82" x2="101.6" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="81.28" x2="101.6" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="78.74" x2="101.6" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="76.2" x2="101.6" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="GND6"/>
-<pinref part="U$4" gate="G$1" pin="GND5"/>
-<pinref part="U$4" gate="G$1" pin="GND4"/>
-<pinref part="U$4" gate="G$1" pin="GND3"/>
-<junction x="101.6" y="86.36"/>
+<wire x1="86.36" y1="86.36" x2="86.36" y2="83.82" width="0.1524" layer="91"/>
+<junction x="86.36" y="86.36"/>
 <pinref part="GND2" gate="1" pin="GND"/>
-<wire x1="101.6" y1="86.36" x2="81.28" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="83.82" x2="86.36" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="86.36" x2="78.74" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="BLE1" gate="G$1" pin="GND1"/>
+<wire x1="86.36" y1="86.36" x2="88.9" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="BLE1" gate="G$1" pin="GND2"/>
+<wire x1="88.9" y1="83.82" x2="86.36" y2="83.82" width="0.1524" layer="91"/>
+<junction x="86.36" y="83.82"/>
+<wire x1="86.36" y1="81.28" x2="88.9" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="BLE1" gate="G$1" pin="GND3"/>
 </segment>
 <segment>
 <wire x1="58.42" y1="132.08" x2="58.42" y2="124.46" width="0.1524" layer="91"/>
@@ -6818,9 +6893,9 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 </net>
 <net name="DEBUG_DATA" class="0">
 <segment>
-<wire x1="101.6" y1="68.58" x2="96.52" y2="68.58" width="0.1524" layer="91"/>
-<label x="91.44" y="68.58" size="1.778" layer="95"/>
-<pinref part="U$4" gate="G$1" pin="P2_2"/>
+<wire x1="119.38" y1="43.18" x2="119.38" y2="35.56" width="0.1524" layer="91"/>
+<label x="119.38" y="33.02" size="1.778" layer="95" rot="R90"/>
+<pinref part="BLE1" gate="G$1" pin="P2_2"/>
 </segment>
 <segment>
 <label x="12.7" y="86.36" size="1.778" layer="95"/>
@@ -6830,9 +6905,9 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 </net>
 <net name="DEBUG_CLOCK" class="0">
 <segment>
-<wire x1="101.6" y1="66.04" x2="96.52" y2="66.04" width="0.1524" layer="91"/>
-<label x="91.44" y="66.04" size="1.778" layer="95"/>
-<pinref part="U$4" gate="G$1" pin="P2_1"/>
+<wire x1="116.84" y1="43.18" x2="116.84" y2="35.56" width="0.1524" layer="91"/>
+<label x="116.84" y="33.02" size="1.778" layer="95" rot="R90"/>
+<pinref part="BLE1" gate="G$1" pin="P2_1"/>
 </segment>
 <segment>
 <label x="48.26" y="86.36" size="1.778" layer="95"/>
@@ -6843,9 +6918,9 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 </net>
 <net name="RESET" class="0">
 <segment>
-<wire x1="142.24" y1="68.58" x2="144.78" y2="68.58" width="0.1524" layer="91"/>
-<label x="144.78" y="68.58" size="1.778" layer="95"/>
-<pinref part="U$4" gate="G$1" pin="RESET#"/>
+<wire x1="88.9" y1="71.12" x2="83.82" y2="71.12" width="0.1524" layer="91"/>
+<label x="78.74" y="71.12" size="1.778" layer="95"/>
+<pinref part="BLE1" gate="G$1" pin="RESET"/>
 </segment>
 <segment>
 <label x="15.24" y="81.28" size="1.778" layer="95"/>
@@ -6862,6 +6937,7 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 <label x="193.04" y="142.24" size="1.778" layer="95"/>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="175.26" y1="142.24" x2="175.26" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -6880,9 +6956,9 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 </net>
 <net name="P0_2" class="0">
 <segment>
-<wire x1="142.24" y1="60.96" x2="147.32" y2="60.96" width="0.1524" layer="91"/>
-<label x="147.32" y="60.96" size="1.778" layer="95"/>
-<pinref part="U$4" gate="G$1" pin="P0_2"/>
+<wire x1="88.9" y1="78.74" x2="81.28" y2="78.74" width="0.1524" layer="91"/>
+<label x="81.28" y="78.74" size="1.778" layer="95"/>
+<pinref part="BLE1" gate="G$1" pin="P0_2"/>
 </segment>
 <segment>
 <pinref part="U$5" gate="G$1" pin="1"/>
@@ -6893,51 +6969,51 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 </net>
 <net name="P0_3" class="0">
 <segment>
-<wire x1="142.24" y1="58.42" x2="147.32" y2="58.42" width="0.1524" layer="91"/>
-<label x="147.32" y="58.42" size="1.778" layer="95"/>
-<pinref part="U$4" gate="G$1" pin="P0_3"/>
+<wire x1="88.9" y1="68.58" x2="81.28" y2="68.58" width="0.1524" layer="91"/>
+<label x="81.28" y="68.58" size="1.778" layer="95"/>
+<pinref part="BLE1" gate="G$1" pin="P0_3"/>
 </segment>
 </net>
 <net name="P0_4" class="0">
 <segment>
-<wire x1="142.24" y1="55.88" x2="147.32" y2="55.88" width="0.1524" layer="91"/>
-<label x="147.32" y="55.88" size="1.778" layer="95"/>
-<pinref part="U$4" gate="G$1" pin="P0_4"/>
+<wire x1="88.9" y1="66.04" x2="81.28" y2="66.04" width="0.1524" layer="91"/>
+<label x="81.28" y="66.04" size="1.778" layer="95"/>
+<pinref part="BLE1" gate="G$1" pin="P0_4"/>
 </segment>
 </net>
 <net name="P0_5" class="0">
 <segment>
-<wire x1="142.24" y1="53.34" x2="147.32" y2="53.34" width="0.1524" layer="91"/>
-<label x="147.32" y="53.34" size="1.778" layer="95"/>
-<pinref part="U$4" gate="G$1" pin="P0_5"/>
+<wire x1="88.9" y1="63.5" x2="81.28" y2="63.5" width="0.1524" layer="91"/>
+<label x="81.28" y="63.5" size="1.778" layer="95"/>
+<pinref part="BLE1" gate="G$1" pin="P0_5"/>
 </segment>
 </net>
 <net name="P0_6" class="0">
 <segment>
-<wire x1="142.24" y1="50.8" x2="147.32" y2="50.8" width="0.1524" layer="91"/>
-<label x="147.32" y="50.8" size="1.778" layer="95"/>
-<pinref part="U$4" gate="G$1" pin="P0_6"/>
+<wire x1="88.9" y1="60.96" x2="81.28" y2="60.96" width="0.1524" layer="91"/>
+<label x="81.28" y="60.96" size="1.778" layer="95"/>
+<pinref part="BLE1" gate="G$1" pin="P0_6"/>
 </segment>
 </net>
 <net name="P0_7" class="0">
 <segment>
-<wire x1="142.24" y1="48.26" x2="147.32" y2="48.26" width="0.1524" layer="91"/>
-<label x="147.32" y="48.26" size="1.778" layer="95"/>
-<pinref part="U$4" gate="G$1" pin="P0_7"/>
+<wire x1="88.9" y1="58.42" x2="81.28" y2="58.42" width="0.1524" layer="91"/>
+<label x="81.28" y="58.42" size="1.778" layer="95"/>
+<pinref part="BLE1" gate="G$1" pin="P0_7"/>
 </segment>
 </net>
 <net name="P1_4" class="0">
 <segment>
-<wire x1="119.38" y1="35.56" x2="119.38" y2="25.4" width="0.1524" layer="91"/>
-<label x="119.38" y="25.4" size="1.778" layer="95" rot="R90"/>
-<pinref part="U$4" gate="G$1" pin="P1_4"/>
+<wire x1="142.24" y1="66.04" x2="137.16" y2="66.04" width="0.1524" layer="91"/>
+<label x="142.24" y="66.04" size="1.778" layer="95"/>
+<pinref part="BLE1" gate="G$1" pin="P1_4"/>
 </segment>
 </net>
 <net name="P1_7" class="0">
 <segment>
-<wire x1="93.98" y1="60.96" x2="101.6" y2="60.96" width="0.1524" layer="91"/>
-<label x="93.98" y="60.96" size="1.778" layer="95"/>
-<pinref part="U$4" gate="G$1" pin="P1_7"/>
+<wire x1="111.76" y1="35.56" x2="111.76" y2="43.18" width="0.1524" layer="91"/>
+<label x="111.76" y="35.56" size="1.778" layer="95" rot="R90"/>
+<pinref part="BLE1" gate="G$1" pin="DCDC"/>
 </segment>
 <segment>
 <pinref part="TPS1" gate="G$1" pin="ON/BYP"/>
@@ -6945,60 +7021,60 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 <label x="68.58" y="142.24" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="P1_0" class="0">
+<net name="SDA" class="0">
 <segment>
-<wire x1="129.54" y1="35.56" x2="129.54" y2="27.94" width="0.1524" layer="91"/>
-<label x="129.54" y="25.4" size="1.778" layer="95" rot="R90"/>
-<pinref part="U$4" gate="G$1" pin="P1_0"/>
+<wire x1="137.16" y1="58.42" x2="142.24" y2="58.42" width="0.1524" layer="91"/>
+<label x="144.78" y="58.42" size="1.778" layer="95"/>
+<pinref part="BLE1" gate="G$1" pin="SDA"/>
 </segment>
 </net>
-<net name="P1_1" class="0">
+<net name="SCL" class="0">
 <segment>
-<wire x1="127" y1="35.56" x2="127" y2="25.4" width="0.1524" layer="91"/>
-<label x="127" y="25.4" size="1.778" layer="95" rot="R90"/>
-<pinref part="U$4" gate="G$1" pin="P1_1"/>
+<wire x1="127" y1="43.18" x2="127" y2="35.56" width="0.1524" layer="91"/>
+<label x="127" y="33.02" size="1.778" layer="95" rot="R90"/>
+<pinref part="BLE1" gate="G$1" pin="SCL"/>
 </segment>
 </net>
 <net name="P1_2" class="0">
 <segment>
-<wire x1="124.46" y1="35.56" x2="124.46" y2="25.4" width="0.1524" layer="91"/>
-<label x="124.46" y="25.4" size="1.778" layer="95" rot="R90"/>
-<pinref part="U$4" gate="G$1" pin="P1_2"/>
+<wire x1="142.24" y1="71.12" x2="137.16" y2="71.12" width="0.1524" layer="91"/>
+<label x="142.24" y="71.12" size="1.778" layer="95"/>
+<pinref part="BLE1" gate="G$1" pin="P1_2"/>
 </segment>
 </net>
 <net name="P1_3" class="0">
 <segment>
-<wire x1="121.92" y1="25.4" x2="121.92" y2="35.56" width="0.1524" layer="91"/>
-<label x="121.92" y="25.4" size="1.778" layer="95" rot="R90"/>
-<pinref part="U$4" gate="G$1" pin="P1_3"/>
+<wire x1="137.16" y1="68.58" x2="142.24" y2="68.58" width="0.1524" layer="91"/>
+<label x="142.24" y="68.58" size="1.778" layer="95"/>
+<pinref part="BLE1" gate="G$1" pin="P1_3"/>
 </segment>
 </net>
 <net name="P1_5" class="0">
 <segment>
-<wire x1="116.84" y1="25.4" x2="116.84" y2="35.56" width="0.1524" layer="91"/>
-<label x="116.84" y="25.4" size="1.778" layer="95" rot="R90"/>
-<pinref part="U$4" gate="G$1" pin="P1_5"/>
+<wire x1="142.24" y1="63.5" x2="137.16" y2="63.5" width="0.1524" layer="91"/>
+<label x="142.24" y="63.5" size="1.778" layer="95"/>
+<pinref part="BLE1" gate="G$1" pin="P1_5"/>
 </segment>
 </net>
 <net name="P1_6" class="0">
 <segment>
-<wire x1="101.6" y1="58.42" x2="93.98" y2="58.42" width="0.1524" layer="91"/>
-<label x="93.98" y="58.42" size="1.778" layer="95"/>
-<pinref part="U$4" gate="G$1" pin="P1_6"/>
+<wire x1="109.22" y1="43.18" x2="109.22" y2="35.56" width="0.1524" layer="91"/>
+<label x="109.22" y="35.56" size="1.778" layer="95" rot="R90"/>
+<pinref part="BLE1" gate="G$1" pin="P1_6"/>
 </segment>
 </net>
 <net name="P2_0" class="0">
 <segment>
-<wire x1="101.6" y1="63.5" x2="93.98" y2="63.5" width="0.1524" layer="91"/>
-<label x="93.98" y="63.5" size="1.778" layer="95"/>
-<pinref part="U$4" gate="G$1" pin="P2_0"/>
+<wire x1="114.3" y1="43.18" x2="114.3" y2="35.56" width="0.1524" layer="91"/>
+<label x="114.3" y="33.02" size="1.778" layer="95" rot="R90"/>
+<pinref part="BLE1" gate="G$1" pin="P2_0"/>
 </segment>
 </net>
 <net name="P0_1" class="0">
 <segment>
-<wire x1="142.24" y1="63.5" x2="147.32" y2="63.5" width="0.1524" layer="91"/>
-<label x="147.32" y="63.5" size="1.778" layer="95"/>
-<pinref part="U$4" gate="G$1" pin="P0_1"/>
+<wire x1="81.28" y1="76.2" x2="88.9" y2="76.2" width="0.1524" layer="91"/>
+<label x="81.28" y="76.2" size="1.778" layer="95"/>
+<pinref part="BLE1" gate="G$1" pin="P0_1"/>
 </segment>
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
@@ -7008,9 +7084,9 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 </net>
 <net name="P0_0" class="0">
 <segment>
-<wire x1="142.24" y1="66.04" x2="147.32" y2="66.04" width="0.1524" layer="91"/>
-<label x="147.32" y="66.04" size="1.778" layer="95"/>
-<pinref part="U$4" gate="G$1" pin="P0_0"/>
+<wire x1="88.9" y1="73.66" x2="81.28" y2="73.66" width="0.1524" layer="91"/>
+<label x="81.28" y="73.66" size="1.778" layer="95"/>
+<pinref part="BLE1" gate="G$1" pin="P0_0"/>
 </segment>
 <segment>
 <pinref part="R0" gate="G$1" pin="1"/>
@@ -7062,14 +7138,14 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 <wire x1="175.26" y1="157.48" x2="175.26" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="78.74" y1="71.12" x2="101.6" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="AVDD"/>
+<wire x1="99.06" y1="30.48" x2="99.06" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="P+2" gate="1" pin="V+"/>
+<pinref part="BLE1" gate="G$1" pin="AVDD"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="DVDD"/>
-<wire x1="101.6" y1="48.26" x2="78.74" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="43.18" x2="124.46" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="P+4" gate="1" pin="V+"/>
+<pinref part="BLE1" gate="G$1" pin="DVDD"/>
 </segment>
 <segment>
 <wire x1="15.24" y1="78.74" x2="27.94" y2="78.74" width="0.1524" layer="91"/>
@@ -7091,6 +7167,22 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 <segment>
 <pinref part="U$5" gate="G$1" pin="2"/>
 <wire x1="238.76" y1="144.78" x2="248.92" y2="144.78" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="BLE1" gate="G$1" pin="GND4"/>
+<wire x1="101.6" y1="43.18" x2="101.6" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="BLE1" gate="G$1" pin="GND5"/>
+<wire x1="101.6" y1="40.64" x2="104.14" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="40.64" x2="104.14" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="BLE1" gate="G$1" pin="GND6"/>
+<wire x1="104.14" y1="40.64" x2="106.68" y2="40.64" width="0.1524" layer="91"/>
+<junction x="104.14" y="40.64"/>
+<wire x1="106.68" y1="43.18" x2="106.68" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="GND11" gate="1" pin="GND"/>
+<junction x="106.68" y="40.64"/>
+<wire x1="106.68" y1="40.64" x2="106.68" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
