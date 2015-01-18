@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -59,6 +59,7 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
 <layer number="101" name="Patch_Top" color="12" fill="4" visible="yes" active="yes"/>
 <layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
@@ -72,6 +73,7 @@
 <layer number="110" name="fp0" color="7" fill="1" visible="no" active="yes"/>
 <layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="113" name="IDFDebug" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
@@ -147,21 +149,21 @@
 <text x="-1.615440625" y="0.784859375" size="0.6096" layer="25">&gt;NAME</text>
 </package>
 <package name="BRICK_I2C">
-<wire x1="-10.16" y1="-20.32" x2="10.16" y2="-20.32" width="0.127" layer="20"/>
-<wire x1="10.16" y1="-20.32" x2="12.7" y2="-17.78" width="0.127" layer="20" curve="90"/>
-<wire x1="12.7" y1="-17.78" x2="12.7" y2="7.62" width="0.127" layer="20"/>
-<wire x1="-10.16" y1="-20.32" x2="-12.7" y2="-17.78" width="0.127" layer="20" curve="-90"/>
+<wire x1="-11.43" y1="-20.32" x2="11.43" y2="-20.32" width="0.127" layer="20"/>
+<wire x1="11.43" y1="-20.32" x2="13.97" y2="-17.78" width="0.127" layer="20" curve="90"/>
+<wire x1="13.97" y1="-17.78" x2="13.97" y2="7.62" width="0.127" layer="20"/>
+<wire x1="-11.43" y1="-20.32" x2="-13.97" y2="-16.51" width="0.127" layer="20" curve="-90"/>
 <pad name="GND" x="3.81" y="-12.7" drill="0.9" shape="long" rot="R90"/>
 <pad name="VCC" x="1.27" y="-12.7" drill="0.9" shape="long" rot="R90"/>
 <pad name="SDA" x="-1.27" y="-12.7" drill="0.9" shape="long" rot="R90"/>
 <pad name="SCL" x="-3.81" y="-12.7" drill="0.9" shape="long" rot="R90"/>
-<wire x1="-12.7" y1="7.62" x2="-12.7" y2="-17.78" width="0.127" layer="20"/>
+<wire x1="-13.97" y1="8.89" x2="-13.97" y2="-16.51" width="0.127" layer="20"/>
 <wire x1="-6.35" y1="-20.32" x2="-6.35" y2="-11.1125" width="0.254" layer="21"/>
 <wire x1="6.35" y1="-11.1125" x2="6.35" y2="-20.32" width="0.254" layer="21"/>
-<pad name="P$5" x="-9.525" y="7.62" drill="3" diameter="3.81"/>
-<pad name="P$6" x="9.525" y="7.62" drill="3" diameter="3.81"/>
-<pad name="P$7" x="-9.525" y="-17.145" drill="3" diameter="3.81"/>
-<pad name="P$8" x="9.525" y="-17.145" drill="3" diameter="3.81"/>
+<pad name="P$5" x="-10.795" y="7.62" drill="3" diameter="3.81"/>
+<pad name="P$6" x="10.795" y="7.62" drill="3" diameter="3.81"/>
+<pad name="P$7" x="-10.795" y="-17.145" drill="3" diameter="3.81"/>
+<pad name="P$8" x="10.795" y="-17.145" drill="3" diameter="3.81"/>
 <rectangle x1="-3.7839" y1="11.4957" x2="-3.5045" y2="11.5211" layer="21" rot="R270"/>
 <rectangle x1="-3.822" y1="11.483" x2="-3.4156" y2="11.5084" layer="21" rot="R270"/>
 <rectangle x1="-3.8347" y1="11.4703" x2="-3.3521" y2="11.4957" layer="21" rot="R270"/>
@@ -833,7 +835,7 @@
 <rectangle x1="2.9852" y1="13.2864" x2="3.7472" y2="13.3118" layer="21" rot="R270"/>
 <rectangle x1="3.0995" y1="13.3245" x2="3.6837" y2="13.3499" layer="21" rot="R270"/>
 <rectangle x1="3.2265" y1="13.3499" x2="3.6075" y2="13.3753" layer="21" rot="R270"/>
-<wire x1="-12.7" y1="7.62" x2="12.7" y2="7.62" width="0.127" layer="20" curve="-180"/>
+<wire x1="-13.97" y1="8.89" x2="13.97" y2="7.62" width="0.127" layer="20" curve="-180"/>
 <text x="0" y="17.78" size="1.6764" layer="21" font="vector" ratio="9" align="center">FaBo</text>
 <wire x1="-6.35" y1="-11.1125" x2="6.35" y2="-11.1125" width="0.254" layer="21"/>
 <text x="-3.81" y="-10.795" size="0.8128" layer="21" font="vector" rot="R90" align="center-left">SCL</text>
