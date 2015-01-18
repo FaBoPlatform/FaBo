@@ -81,15 +81,15 @@
 <rectangle x1="-1.54" y1="0.27" x2="-0.265" y2="1.545" layer="21"/>
 </package>
 <package name="HAMAMATSU-S11059">
-<smd name="P$1" x="-2.04" y="-1.58" dx="1" dy="0.5" layer="1"/>
-<smd name="P$2" x="-2.04" y="-0.78" dx="1" dy="0.5" layer="1"/>
-<smd name="P$3" x="-2.04" y="0.02" dx="1" dy="0.5" layer="1"/>
-<smd name="P$4" x="-2.04" y="0.82" dx="1" dy="0.5" layer="1"/>
-<smd name="P$5" x="-2.04" y="1.62" dx="1" dy="0.5" layer="1"/>
-<smd name="P$6" x="2.03" y="1.62" dx="1" dy="0.5" layer="1"/>
-<smd name="P$7" x="2.03" y="0.82" dx="1" dy="0.5" layer="1"/>
-<smd name="P$8" x="2.03" y="-0.78" dx="1" dy="0.5" layer="1"/>
-<smd name="P$9" x="2.03" y="-1.58" dx="1" dy="0.5" layer="1"/>
+<smd name="5" x="-2.04" y="-1.58" dx="1" dy="0.5" layer="1"/>
+<smd name="4" x="-2.04" y="-0.78" dx="1" dy="0.5" layer="1"/>
+<smd name="3" x="-2.04" y="0.02" dx="1" dy="0.5" layer="1"/>
+<smd name="2" x="-2.04" y="0.82" dx="1" dy="0.5" layer="1"/>
+<smd name="1" x="-2.04" y="1.62" dx="1" dy="0.5" layer="1"/>
+<smd name="9" x="2.03" y="1.62" dx="1" dy="0.5" layer="1"/>
+<smd name="8" x="2.03" y="0.82" dx="1" dy="0.5" layer="1"/>
+<smd name="7" x="2.03" y="-0.78" dx="1" dy="0.5" layer="1"/>
+<smd name="6" x="2.03" y="-1.58" dx="1" dy="0.5" layer="1"/>
 <wire x1="-1.6" y1="-2.1" x2="1.6" y2="-2.1" width="0.127" layer="21"/>
 <wire x1="1.6" y1="-2.1" x2="1.6" y2="2.1" width="0.127" layer="21"/>
 <wire x1="1.6" y1="2.1" x2="-1.6" y2="2.1" width="0.127" layer="21"/>
@@ -314,15 +314,15 @@
 <devices>
 <device name="" package="HAMAMATSU-S11059">
 <connects>
-<connect gate="G$1" pin="GND1" pad="P$2"/>
-<connect gate="G$1" pin="GND2" pad="P$3"/>
-<connect gate="G$1" pin="GND3" pad="P$4"/>
-<connect gate="G$1" pin="GND4" pad="P$5"/>
-<connect gate="G$1" pin="GND5" pad="P$7"/>
-<connect gate="G$1" pin="GND6" pad="P$8"/>
-<connect gate="G$1" pin="SCL" pad="P$6"/>
-<connect gate="G$1" pin="SDA" pad="P$9"/>
-<connect gate="G$1" pin="VDD" pad="P$1"/>
+<connect gate="G$1" pin="GND1" pad="2"/>
+<connect gate="G$1" pin="GND2" pad="3"/>
+<connect gate="G$1" pin="GND3" pad="4"/>
+<connect gate="G$1" pin="GND4" pad="5"/>
+<connect gate="G$1" pin="GND5" pad="7"/>
+<connect gate="G$1" pin="GND6" pad="8"/>
+<connect gate="G$1" pin="SCL" pad="6"/>
+<connect gate="G$1" pin="SDA" pad="9"/>
+<connect gate="G$1" pin="VDD" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
