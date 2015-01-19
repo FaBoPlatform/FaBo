@@ -1,4 +1,7 @@
 # brick_i2c_oled
 
 #### Parts list
-- 0.96" OLED i2c Display [tindie](https://www.tindie.com/products/miker/096-oled-i2c-display/)
+- SSD1306 [Datasheet](http://www.buydisplay.com/download/ic/SSD1306.pdf)
+- 128x64 OLED [Buy led] (http://www.buydisplay.com/default/0-49-inch-oled-display-module-64x32-pixel-ssd1306-i2c-white-on-black)
+
+

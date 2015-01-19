@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -129,15 +129,15 @@
 <library name="gclueSensor">
 <packages>
 <package name="HAMAMATSU-S11059">
-<smd name="P$1" x="-2.04" y="-1.58" dx="1" dy="0.5" layer="1"/>
-<smd name="P$2" x="-2.04" y="-0.78" dx="1" dy="0.5" layer="1"/>
-<smd name="P$3" x="-2.04" y="0.02" dx="1" dy="0.5" layer="1"/>
-<smd name="P$4" x="-2.04" y="0.82" dx="1" dy="0.5" layer="1"/>
-<smd name="P$5" x="-2.04" y="1.62" dx="1" dy="0.5" layer="1"/>
-<smd name="P$6" x="2.03" y="1.62" dx="1" dy="0.5" layer="1"/>
-<smd name="P$7" x="2.03" y="0.82" dx="1" dy="0.5" layer="1"/>
-<smd name="P$8" x="2.03" y="-0.78" dx="1" dy="0.5" layer="1"/>
-<smd name="P$9" x="2.03" y="-1.58" dx="1" dy="0.5" layer="1"/>
+<smd name="5" x="-2.04" y="-1.58" dx="1" dy="0.5" layer="1"/>
+<smd name="4" x="-2.04" y="-0.78" dx="1" dy="0.5" layer="1"/>
+<smd name="3" x="-2.04" y="0.02" dx="1" dy="0.5" layer="1"/>
+<smd name="2" x="-2.04" y="0.82" dx="1" dy="0.5" layer="1"/>
+<smd name="1" x="-2.04" y="1.62" dx="1" dy="0.5" layer="1"/>
+<smd name="9" x="2.03" y="1.62" dx="1" dy="0.5" layer="1"/>
+<smd name="8" x="2.03" y="0.82" dx="1" dy="0.5" layer="1"/>
+<smd name="7" x="2.03" y="-0.78" dx="1" dy="0.5" layer="1"/>
+<smd name="6" x="2.03" y="-1.58" dx="1" dy="0.5" layer="1"/>
 <wire x1="-1.6" y1="-2.1" x2="1.6" y2="-2.1" width="0.127" layer="21"/>
 <wire x1="1.6" y1="-2.1" x2="1.6" y2="2.1" width="0.127" layer="21"/>
 <wire x1="1.6" y1="2.1" x2="-1.6" y2="2.1" width="0.127" layer="21"/>
@@ -171,15 +171,15 @@
 <devices>
 <device name="" package="HAMAMATSU-S11059">
 <connects>
-<connect gate="G$1" pin="GND1" pad="P$2"/>
-<connect gate="G$1" pin="GND2" pad="P$3"/>
-<connect gate="G$1" pin="GND3" pad="P$4"/>
-<connect gate="G$1" pin="GND4" pad="P$5"/>
-<connect gate="G$1" pin="GND5" pad="P$7"/>
-<connect gate="G$1" pin="GND6" pad="P$8"/>
-<connect gate="G$1" pin="SCL" pad="P$6"/>
-<connect gate="G$1" pin="SDA" pad="P$9"/>
-<connect gate="G$1" pin="VDD" pad="P$1"/>
+<connect gate="G$1" pin="GND1" pad="2"/>
+<connect gate="G$1" pin="GND2" pad="3"/>
+<connect gate="G$1" pin="GND3" pad="4"/>
+<connect gate="G$1" pin="GND4" pad="5"/>
+<connect gate="G$1" pin="GND5" pad="7"/>
+<connect gate="G$1" pin="GND6" pad="8"/>
+<connect gate="G$1" pin="SCL" pad="6"/>
+<connect gate="G$1" pin="SDA" pad="9"/>
+<connect gate="G$1" pin="VDD" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -193,21 +193,21 @@
 <description>&lt;h3&gt;GClue, Inc.&lt;/h3&gt;</description>
 <packages>
 <package name="BRICK_I2C">
-<wire x1="-10.16" y1="-20.32" x2="10.16" y2="-20.32" width="0.127" layer="20"/>
-<wire x1="10.16" y1="-20.32" x2="12.7" y2="-17.78" width="0.127" layer="20" curve="90"/>
-<wire x1="12.7" y1="-17.78" x2="12.7" y2="7.62" width="0.127" layer="20"/>
-<wire x1="-10.16" y1="-20.32" x2="-12.7" y2="-17.78" width="0.127" layer="20" curve="-90"/>
+<wire x1="-11.43" y1="-20.32" x2="11.43" y2="-20.32" width="0.127" layer="20"/>
+<wire x1="11.43" y1="-20.32" x2="13.97" y2="-17.78" width="0.127" layer="20" curve="90"/>
+<wire x1="13.97" y1="-17.78" x2="13.97" y2="7.62" width="0.127" layer="20"/>
+<wire x1="-11.43" y1="-20.32" x2="-13.97" y2="-16.51" width="0.127" layer="20" curve="-90"/>
 <pad name="GND" x="3.81" y="-12.7" drill="0.9" shape="long" rot="R90"/>
 <pad name="VCC" x="1.27" y="-12.7" drill="0.9" shape="long" rot="R90"/>
 <pad name="SDA" x="-1.27" y="-12.7" drill="0.9" shape="long" rot="R90"/>
 <pad name="SCL" x="-3.81" y="-12.7" drill="0.9" shape="long" rot="R90"/>
-<wire x1="-12.7" y1="7.62" x2="-12.7" y2="-17.78" width="0.127" layer="20"/>
+<wire x1="-13.97" y1="8.89" x2="-13.97" y2="-16.51" width="0.127" layer="20"/>
 <wire x1="-6.35" y1="-20.32" x2="-6.35" y2="-11.1125" width="0.254" layer="21"/>
 <wire x1="6.35" y1="-11.1125" x2="6.35" y2="-20.32" width="0.254" layer="21"/>
-<pad name="P$5" x="-9.525" y="7.62" drill="3" diameter="3.81"/>
-<pad name="P$6" x="9.525" y="7.62" drill="3" diameter="3.81"/>
-<pad name="P$7" x="-9.525" y="-17.145" drill="3" diameter="3.81"/>
-<pad name="P$8" x="9.525" y="-17.145" drill="3" diameter="3.81"/>
+<pad name="P$5" x="-10.795" y="7.62" drill="3" diameter="3.81"/>
+<pad name="P$6" x="10.795" y="7.62" drill="3" diameter="3.81"/>
+<pad name="P$7" x="-10.795" y="-17.145" drill="3" diameter="3.81"/>
+<pad name="P$8" x="10.795" y="-17.145" drill="3" diameter="3.81"/>
 <rectangle x1="-3.7839" y1="11.4957" x2="-3.5045" y2="11.5211" layer="21" rot="R270"/>
 <rectangle x1="-3.822" y1="11.483" x2="-3.4156" y2="11.5084" layer="21" rot="R270"/>
 <rectangle x1="-3.8347" y1="11.4703" x2="-3.3521" y2="11.4957" layer="21" rot="R270"/>
@@ -879,7 +879,7 @@
 <rectangle x1="2.9852" y1="13.2864" x2="3.7472" y2="13.3118" layer="21" rot="R270"/>
 <rectangle x1="3.0995" y1="13.3245" x2="3.6837" y2="13.3499" layer="21" rot="R270"/>
 <rectangle x1="3.2265" y1="13.3499" x2="3.6075" y2="13.3753" layer="21" rot="R270"/>
-<wire x1="-12.7" y1="7.62" x2="12.7" y2="7.62" width="0.127" layer="20" curve="-180"/>
+<wire x1="-13.97" y1="8.89" x2="13.97" y2="7.62" width="0.127" layer="20" curve="-180"/>
 <text x="0" y="17.78" size="1.6764" layer="21" font="vector" ratio="9" align="center">FaBo</text>
 <wire x1="-6.35" y1="-11.1125" x2="6.35" y2="-11.1125" width="0.254" layer="21"/>
 <text x="-3.81" y="-10.795" size="0.8128" layer="21" font="vector" rot="R90" align="center-left">SCL</text>
@@ -6625,8 +6625,12 @@ type 0309, grid 2.5 mm</description>
 <segment>
 <pinref part="S1" gate="G$1" pin="GND6"/>
 <wire x1="177.8" y1="111.76" x2="187.96" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="111.76" x2="187.96" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="111.76" x2="187.96" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="1" pin="GND"/>
+<pinref part="S1" gate="G$1" pin="GND5"/>
+<wire x1="187.96" y1="106.68" x2="187.96" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="106.68" x2="187.96" y2="106.68" width="0.1524" layer="91"/>
+<junction x="187.96" y="106.68"/>
 </segment>
 </net>
 </nets>
