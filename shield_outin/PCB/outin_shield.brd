@@ -858,7 +858,7 @@
 <text x="52.07" y="17.145" size="1.27" layer="21" font="vector" rot="R270" align="center">I2C</text>
 <text x="65.405" y="6.985" size="1.016" layer="21" font="vector" rot="R180" align="top-left">REV.0.3</text>
 <text x="66.04" y="8.89" size="1.27" layer="21" font="vector" rot="R180" align="top-left">OUT/IN Shield</text>
-<text x="52.07" y="29.845" size="1.27" layer="21" font="vector" rot="R270" align="center">SERIAL</text>
+<text x="52.07" y="31.115" size="1.27" layer="21" font="vector" rot="R270" align="center">SERIAL</text>
 <text x="52.705" y="33.9725" size="0.8128" layer="21" font="vector" rot="R90">GND</text>
 <text x="45.72" y="12.7" size="1.27" layer="21" font="vector" rot="R270" align="center">5V</text>
 <text x="45.72" y="21.59" size="1.27" layer="21" font="vector" rot="R90" align="center">3V3</text>
