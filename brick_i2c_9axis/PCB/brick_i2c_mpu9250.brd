@@ -126,6 +126,8 @@
 </layers>
 <board>
 <plain>
+<text x="3.81" y="25.4" size="1.016" layer="21">MPU9250</text>
+<text x="6.35" y="34.29" size="1.016" layer="21">Rev 0.1</text>
 </plain>
 <libraries>
 <library name="adafruit">
