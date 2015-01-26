@@ -426,6 +426,58 @@ BL600-ST 204-320048 Trace Pad&lt;br&gt;
 <wire x1="-7" y1="9.7" x2="-7" y2="-10.2" width="0.127" layer="21"/>
 <wire x1="-7" y1="-10.2" x2="7.2" y2="-10.2" width="0.127" layer="21"/>
 </package>
+<package name="RAYTAC-MDBT40">
+<smd name="3" x="-4.86" y="-0.9" dx="1.85" dy="0.5" layer="1"/>
+<smd name="4" x="-4.86" y="-1.6" dx="1.85" dy="0.5" layer="1"/>
+<smd name="5" x="-4.86" y="-2.3" dx="1.85" dy="0.5" layer="1"/>
+<smd name="6" x="-4.86" y="-3" dx="1.85" dy="0.5" layer="1"/>
+<smd name="7" x="-4.86" y="-3.7" dx="1.85" dy="0.5" layer="1"/>
+<smd name="8" x="-4.86" y="-4.4" dx="1.85" dy="0.5" layer="1"/>
+<smd name="9" x="-4.86" y="-5.1" dx="1.85" dy="0.5" layer="1"/>
+<smd name="10" x="-4.86" y="-5.8" dx="1.85" dy="0.5" layer="1"/>
+<smd name="11" x="-4.86" y="-6.5" dx="1.85" dy="0.5" layer="1"/>
+<smd name="12" x="-4.86" y="-7.2" dx="1.85" dy="0.5" layer="1"/>
+<smd name="35" x="4.84" y="-0.9" dx="1.85" dy="0.5" layer="1"/>
+<smd name="34" x="4.84" y="-1.6" dx="1.85" dy="0.5" layer="1"/>
+<smd name="33" x="4.84" y="-2.3" dx="1.85" dy="0.5" layer="1"/>
+<smd name="32" x="4.84" y="-3" dx="1.85" dy="0.5" layer="1"/>
+<smd name="31" x="4.84" y="-3.7" dx="1.85" dy="0.5" layer="1"/>
+<smd name="30" x="4.84" y="-4.4" dx="1.85" dy="0.5" layer="1"/>
+<smd name="29" x="4.84" y="-5.1" dx="1.85" dy="0.5" layer="1"/>
+<smd name="28" x="4.84" y="-5.8" dx="1.85" dy="0.5" layer="1"/>
+<smd name="27" x="4.84" y="-6.5" dx="1.85" dy="0.5" layer="1"/>
+<smd name="26" x="4.84" y="-7.2" dx="1.85" dy="0.5" layer="1"/>
+<smd name="36" x="4.84" y="-0.2" dx="1.85" dy="0.5" layer="1"/>
+<smd name="37" x="4.84" y="0.5" dx="1.85" dy="0.5" layer="1"/>
+<smd name="38" x="4.84" y="1.2" dx="1.85" dy="0.5" layer="1"/>
+<smd name="39" x="4.84" y="1.9" dx="1.85" dy="0.5" layer="1"/>
+<smd name="40" x="4.84" y="2.6" dx="1.85" dy="0.5" layer="1"/>
+<smd name="41" x="4.84" y="3.3" dx="1.85" dy="0.5" layer="1"/>
+<smd name="42" x="4.84" y="4" dx="1.85" dy="0.5" layer="1"/>
+<smd name="1" x="-4.86" y="4" dx="1.85" dy="0.5" layer="1"/>
+<smd name="2" x="-4.86" y="3.3" dx="1.85" dy="0.5" layer="1"/>
+<smd name="13" x="-4.22" y="-8.71" dx="1.85" dy="0.5" layer="1" rot="R90"/>
+<smd name="14" x="-3.52" y="-8.71" dx="1.85" dy="0.5" layer="1" rot="R90"/>
+<smd name="15" x="-2.82" y="-8.71" dx="1.85" dy="0.5" layer="1" rot="R90"/>
+<smd name="16" x="-2.12" y="-8.71" dx="1.85" dy="0.5" layer="1" rot="R90"/>
+<smd name="17" x="-1.42" y="-8.71" dx="1.85" dy="0.5" layer="1" rot="R90"/>
+<smd name="18" x="-0.72" y="-8.71" dx="1.85" dy="0.5" layer="1" rot="R90"/>
+<smd name="19" x="-0.02" y="-8.71" dx="1.85" dy="0.5" layer="1" rot="R90"/>
+<smd name="20" x="0.68" y="-8.71" dx="1.85" dy="0.5" layer="1" rot="R90"/>
+<smd name="21" x="1.38" y="-8.71" dx="1.85" dy="0.5" layer="1" rot="R90"/>
+<smd name="22" x="2.08" y="-8.71" dx="1.85" dy="0.5" layer="1" rot="R90"/>
+<smd name="23" x="2.78" y="-8.71" dx="1.85" dy="0.5" layer="1" rot="R90"/>
+<smd name="24" x="3.48" y="-8.71" dx="1.85" dy="0.5" layer="1" rot="R90"/>
+<smd name="25" x="4.18" y="-8.71" dx="1.85" dy="0.5" layer="1" rot="R90"/>
+<wire x1="-5" y1="-9" x2="5" y2="-9" width="0.05" layer="21"/>
+<wire x1="5" y1="-9" x2="5" y2="9" width="0.05" layer="21"/>
+<wire x1="5" y1="9" x2="-5" y2="9" width="0.05" layer="21"/>
+<wire x1="-5" y1="9" x2="-5" y2="-9" width="0.05" layer="21"/>
+<rectangle x1="-5" y1="5.5" x2="5" y2="9" layer="39"/>
+<rectangle x1="-1.25" y1="3" x2="1.2" y2="5.8" layer="39"/>
+<rectangle x1="-5" y1="5.5" x2="5" y2="9" layer="40"/>
+<rectangle x1="-1.25" y1="3" x2="1.2" y2="5.75" layer="40"/>
+</package>
 </packages>
 <symbols>
 <symbol name="BLUEGIGA-BLE113">
@@ -724,6 +776,54 @@ BL600-ST 204-320048 Trace Pad&lt;br&gt;
 <wire x1="20.32" y1="-27.94" x2="20.32" y2="25.4" width="0.254" layer="94"/>
 <wire x1="20.32" y1="25.4" x2="-20.32" y2="25.4" width="0.254" layer="94"/>
 <wire x1="-20.32" y1="25.4" x2="-20.32" y2="-27.94" width="0.254" layer="94"/>
+</symbol>
+<symbol name="RAYTAC-MDBT40">
+<pin name="GND1" x="-17.78" y="27.94" length="middle"/>
+<pin name="GND2" x="-17.78" y="25.4" length="middle"/>
+<pin name="AVDD" x="-17.78" y="10.16" length="middle"/>
+<pin name="P0_21" x="-17.78" y="7.62" length="middle"/>
+<pin name="P0_22" x="-17.78" y="5.08" length="middle"/>
+<pin name="P0_23" x="-17.78" y="2.54" length="middle"/>
+<pin name="P0_24" x="-17.78" y="0" length="middle"/>
+<pin name="P0_25" x="-17.78" y="-2.54" length="middle"/>
+<pin name="XL2" x="-17.78" y="-5.08" length="middle"/>
+<pin name="XL1" x="-17.78" y="-7.62" length="middle"/>
+<pin name="P0_28" x="-17.78" y="-10.16" length="middle"/>
+<pin name="P0_29" x="-17.78" y="-12.7" length="middle"/>
+<pin name="GND3" x="-10.16" y="-30.48" length="middle" rot="R90"/>
+<pin name="VDD" x="-7.62" y="-30.48" length="middle" rot="R90"/>
+<pin name="DCC" x="-5.08" y="-30.48" length="middle" rot="R90"/>
+<pin name="P0_30" x="-2.54" y="-30.48" length="middle" rot="R90"/>
+<pin name="P0_00" x="0" y="-30.48" length="middle" rot="R90"/>
+<pin name="P0_01" x="2.54" y="-30.48" length="middle" rot="R90"/>
+<pin name="P0_02" x="5.08" y="-30.48" length="middle" rot="R90"/>
+<pin name="P0_03" x="7.62" y="-30.48" length="middle" rot="R90"/>
+<pin name="P0_04" x="10.16" y="-30.48" length="middle" rot="R90"/>
+<pin name="P0_05" x="12.7" y="-30.48" length="middle" rot="R90"/>
+<pin name="P0_06" x="15.24" y="-30.48" length="middle" rot="R90"/>
+<pin name="P0_07" x="17.78" y="-30.48" length="middle" rot="R90"/>
+<pin name="GND4" x="20.32" y="-30.48" length="middle" rot="R90"/>
+<pin name="P0_08" x="30.48" y="-12.7" length="middle" rot="R180"/>
+<pin name="P0_09" x="30.48" y="-10.16" length="middle" rot="R180"/>
+<pin name="P0_10" x="30.48" y="-7.62" length="middle" rot="R180"/>
+<pin name="P0_11" x="30.48" y="-5.08" length="middle" rot="R180"/>
+<pin name="P0_12" x="30.48" y="-2.54" length="middle" rot="R180"/>
+<pin name="P0_13" x="30.48" y="0" length="middle" rot="R180"/>
+<pin name="P0_14" x="30.48" y="2.54" length="middle" rot="R180"/>
+<pin name="P0_15" x="30.48" y="5.08" length="middle" rot="R180"/>
+<pin name="P0_16" x="30.48" y="7.62" length="middle" rot="R180"/>
+<pin name="SWDIO" x="30.48" y="10.16" length="middle" rot="R180"/>
+<pin name="SWCLK" x="30.48" y="12.7" length="middle" rot="R180"/>
+<pin name="P0_17" x="30.48" y="15.24" length="middle" rot="R180"/>
+<pin name="P0_18" x="30.48" y="17.78" length="middle" rot="R180"/>
+<pin name="P0_19" x="30.48" y="20.32" length="middle" rot="R180"/>
+<pin name="P0_20" x="30.48" y="22.86" length="middle" rot="R180"/>
+<pin name="DEC2" x="30.48" y="25.4" length="middle" rot="R180"/>
+<pin name="GND5" x="30.48" y="27.94" length="middle" rot="R180"/>
+<wire x1="-12.7" y1="30.48" x2="-12.7" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-25.4" x2="25.4" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="25.4" y1="-25.4" x2="25.4" y2="30.48" width="0.254" layer="94"/>
+<wire x1="25.4" y1="30.48" x2="-12.7" y2="30.48" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1054,6 +1154,62 @@ BL600-ST 204-320048 Trace Pad&lt;br&gt;
 <connect gate="G$1" pin="SIO_8" pad="12"/>
 <connect gate="G$1" pin="SIO_9" pad="13"/>
 <connect gate="G$1" pin="VCC" pad="10"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RAYTAC-MDBT40">
+<gates>
+<gate name="G$1" symbol="RAYTAC-MDBT40" x="-7.62" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="RAYTAC-MDBT40">
+<connects>
+<connect gate="G$1" pin="AVDD" pad="3"/>
+<connect gate="G$1" pin="DCC" pad="15"/>
+<connect gate="G$1" pin="DEC2" pad="41"/>
+<connect gate="G$1" pin="GND1" pad="1"/>
+<connect gate="G$1" pin="GND2" pad="2"/>
+<connect gate="G$1" pin="GND3" pad="13"/>
+<connect gate="G$1" pin="GND4" pad="25"/>
+<connect gate="G$1" pin="GND5" pad="42"/>
+<connect gate="G$1" pin="P0_00" pad="17"/>
+<connect gate="G$1" pin="P0_01" pad="18"/>
+<connect gate="G$1" pin="P0_02" pad="19"/>
+<connect gate="G$1" pin="P0_03" pad="20"/>
+<connect gate="G$1" pin="P0_04" pad="21"/>
+<connect gate="G$1" pin="P0_05" pad="22"/>
+<connect gate="G$1" pin="P0_06" pad="23"/>
+<connect gate="G$1" pin="P0_07" pad="24"/>
+<connect gate="G$1" pin="P0_08" pad="26"/>
+<connect gate="G$1" pin="P0_09" pad="27"/>
+<connect gate="G$1" pin="P0_10" pad="28"/>
+<connect gate="G$1" pin="P0_11" pad="29"/>
+<connect gate="G$1" pin="P0_12" pad="30"/>
+<connect gate="G$1" pin="P0_13" pad="31"/>
+<connect gate="G$1" pin="P0_14" pad="32"/>
+<connect gate="G$1" pin="P0_15" pad="33"/>
+<connect gate="G$1" pin="P0_16" pad="34"/>
+<connect gate="G$1" pin="P0_17" pad="37"/>
+<connect gate="G$1" pin="P0_18" pad="38"/>
+<connect gate="G$1" pin="P0_19" pad="39"/>
+<connect gate="G$1" pin="P0_20" pad="40"/>
+<connect gate="G$1" pin="P0_21" pad="4"/>
+<connect gate="G$1" pin="P0_22" pad="5"/>
+<connect gate="G$1" pin="P0_23" pad="6"/>
+<connect gate="G$1" pin="P0_24" pad="7"/>
+<connect gate="G$1" pin="P0_25" pad="8"/>
+<connect gate="G$1" pin="P0_28" pad="11"/>
+<connect gate="G$1" pin="P0_29" pad="12"/>
+<connect gate="G$1" pin="P0_30" pad="16"/>
+<connect gate="G$1" pin="SWCLK" pad="36"/>
+<connect gate="G$1" pin="SWDIO" pad="35"/>
+<connect gate="G$1" pin="VDD" pad="14"/>
+<connect gate="G$1" pin="XL1" pad="10"/>
+<connect gate="G$1" pin="XL2" pad="9"/>
 </connects>
 <technologies>
 <technology name=""/>
