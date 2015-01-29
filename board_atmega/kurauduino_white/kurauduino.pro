@@ -1,25 +1,25 @@
 EAGLE AutoRouter Statistics:
 
-Job           : /Users/KojiShimakage/Documents/kurauduino_white/kurauduino.brd
+Job           : /Users/sasakiakira/Documents/workspace_fabo_github/FaBo/board_atmega/kurauduino_white/kurauduino.brd
 
-Start at      : 17:14:18 (2015/01/26)
-End at        : 17:14:33 (2015/01/26)
-Elapsed time  : 00:00:12
+Start at      : 10:23:00 (2015/01/29)
+End at        : 10:23:04 (2015/01/29)
+Elapsed time  : 00:00:02
 
-Signals       :    34   RoutingGrid: 9 mil  Layers: 2
+Signals       :    34   RoutingGrid: 12.5 mil  Layers: 2
 Connections   :    70   predefined:  0 ( 0 Vias )
 
-Router memory :   333944
+Router memory :   177120
 
-Passname          : TopRouter     Route Optimize1 Optimize2 Optimize3 Optimize4
+Passname          :    Busses     Route Optimize1 Optimize2 Optimize3 Optimize4
 
-Time per pass     :  00:00:06  00:00:02  00:00:01  00:00:01  00:00:01  00:00:01
-Number of Ripups  :         0        20         0         0         0         0
-max. Level        :         0         2         0         0         0         0
-max. Total        :         0        26         0         0         0         0
+Time per pass     :  00:00:00  00:00:01  00:00:00  00:00:01  00:00:00  00:00:00
+Number of Ripups  :         0         2         0         0         0         0
+max. Level        :         0         1         0         0         0         0
+max. Total        :         0         2         0         0         0         0
 
-Routed            :        28        70        66        69        70        70
-Vias              :         0        64        54        50        47        45
-Resolution        :    40.0 %   100.0 %    94.3 %    98.6 %   100.0 %   100.0 %
+Routed            :         8        70        70        70        70        70
+Vias              :         0       135        67        52        43        44
+Resolution        :    11.4 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
 
 Final             : 100.0% finished
