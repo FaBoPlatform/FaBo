@@ -478,6 +478,44 @@ BL600-ST 204-320048 Trace Pad&lt;br&gt;
 <rectangle x1="-5" y1="5.5" x2="5" y2="9" layer="40"/>
 <rectangle x1="-1.25" y1="3" x2="1.2" y2="5.75" layer="40"/>
 </package>
+<package name="MICROCHIP-RN42">
+<wire x1="-6.7" y1="12.8" x2="-6.7" y2="-12.8" width="0.127" layer="21"/>
+<wire x1="-6.7" y1="-12.8" x2="6.7" y2="-12.8" width="0.127" layer="21"/>
+<wire x1="6.7" y1="-12.8" x2="6.7" y2="12.8" width="0.127" layer="21"/>
+<wire x1="6.7" y1="12.8" x2="-6.7" y2="12.8" width="0.127" layer="21"/>
+<smd name="12" x="-6.7" y="-9.8" dx="1.3" dy="0.8" layer="1"/>
+<smd name="11" x="-6.7" y="-8.6" dx="1.3" dy="0.8" layer="1"/>
+<smd name="10" x="-6.7" y="-7.4" dx="1.3" dy="0.8" layer="1"/>
+<smd name="9" x="-6.7" y="-6.2" dx="1.3" dy="0.8" layer="1"/>
+<smd name="8" x="-6.7" y="-5" dx="1.3" dy="0.8" layer="1"/>
+<smd name="7" x="-6.7" y="-3.8" dx="1.3" dy="0.8" layer="1"/>
+<smd name="6" x="-6.7" y="-2.6" dx="1.3" dy="0.8" layer="1"/>
+<smd name="5" x="-6.7" y="-1.4" dx="1.3" dy="0.8" layer="1"/>
+<smd name="4" x="-6.7" y="-0.2" dx="1.3" dy="0.8" layer="1"/>
+<smd name="3" x="-6.7" y="1" dx="1.3" dy="0.8" layer="1"/>
+<smd name="2" x="-6.7" y="2.2" dx="1.3" dy="0.8" layer="1"/>
+<smd name="13" x="6.7" y="-9.8" dx="1.3" dy="0.8" layer="1"/>
+<smd name="14" x="6.7" y="-8.6" dx="1.3" dy="0.8" layer="1"/>
+<smd name="15" x="6.7" y="-7.4" dx="1.3" dy="0.8" layer="1"/>
+<smd name="16" x="6.7" y="-6.2" dx="1.3" dy="0.8" layer="1"/>
+<smd name="17" x="6.7" y="-5" dx="1.3" dy="0.8" layer="1"/>
+<smd name="18" x="6.7" y="-3.8" dx="1.3" dy="0.8" layer="1"/>
+<smd name="19" x="6.7" y="-2.6" dx="1.3" dy="0.8" layer="1"/>
+<smd name="20" x="6.7" y="-1.4" dx="1.3" dy="0.8" layer="1"/>
+<smd name="21" x="6.7" y="-0.2" dx="1.3" dy="0.8" layer="1"/>
+<smd name="22" x="6.7" y="1" dx="1.3" dy="0.8" layer="1"/>
+<smd name="23" x="6.7" y="2.2" dx="1.3" dy="0.8" layer="1"/>
+<smd name="30" x="4.1" y="-12.7" dx="1.3" dy="0.8" layer="1" rot="R90"/>
+<smd name="28" x="3.1" y="-12.7" dx="1.3" dy="0.8" layer="1" rot="R90"/>
+<smd name="31" x="1.9" y="-12.7" dx="1.3" dy="0.8" layer="1" rot="R90"/>
+<smd name="32" x="0.7" y="-12.7" dx="1.3" dy="0.8" layer="1" rot="R90"/>
+<smd name="33" x="-0.5" y="-12.7" dx="1.3" dy="0.8" layer="1" rot="R90"/>
+<smd name="34" x="-1.7" y="-12.7" dx="1.3" dy="0.8" layer="1" rot="R90"/>
+<smd name="29" x="-3.1" y="-12.7" dx="1.3" dy="0.8" layer="1" rot="R90"/>
+<smd name="35" x="-4.1" y="-12.7" dx="1.3" dy="0.8" layer="1" rot="R90"/>
+<smd name="1" x="-6.7" y="3.4" dx="1.3" dy="0.8" layer="1"/>
+<smd name="24" x="6.7" y="3.4" dx="1.3" dy="0.8" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="BLUEGIGA-BLE113">
@@ -824,6 +862,45 @@ BL600-ST 204-320048 Trace Pad&lt;br&gt;
 <wire x1="-12.7" y1="-25.4" x2="25.4" y2="-25.4" width="0.254" layer="94"/>
 <wire x1="25.4" y1="-25.4" x2="25.4" y2="30.48" width="0.254" layer="94"/>
 <wire x1="25.4" y1="30.48" x2="-12.7" y2="30.48" width="0.254" layer="94"/>
+</symbol>
+<symbol name="MICROCHIP-42">
+<pin name="GND1" x="-17.78" y="15.24" length="middle"/>
+<pin name="SPI_MOSI" x="-17.78" y="12.7" length="middle"/>
+<pin name="GPIO6" x="-17.78" y="10.16" length="middle"/>
+<pin name="GPIO7" x="-17.78" y="7.62" length="middle"/>
+<pin name="RESET" x="-17.78" y="5.08" length="middle"/>
+<pin name="SPI_CLOCK" x="-17.78" y="2.54" length="middle"/>
+<pin name="PCM_CLK" x="-17.78" y="0" length="middle"/>
+<pin name="PCM_SYNC" x="-17.78" y="-2.54" length="middle"/>
+<pin name="PCM_IN" x="-17.78" y="-5.08" length="middle"/>
+<pin name="PCM_OUT" x="-17.78" y="-7.62" length="middle"/>
+<pin name="VDD" x="-17.78" y="-10.16" length="middle"/>
+<pin name="GND2" x="-17.78" y="-12.7" length="middle"/>
+<pin name="AIO1" x="-10.16" y="-27.94" length="middle" rot="R90"/>
+<pin name="GND3" x="-7.62" y="-27.94" length="middle" rot="R90"/>
+<pin name="GPIO11" x="-5.08" y="-27.94" length="middle" rot="R90"/>
+<pin name="GPIO10" x="-2.54" y="-27.94" length="middle" rot="R90"/>
+<pin name="GPIO9" x="0" y="-27.94" length="middle" rot="R90"/>
+<pin name="GPIO8" x="2.54" y="-27.94" length="middle" rot="R90"/>
+<pin name="GND4" x="5.08" y="-27.94" length="middle" rot="R90"/>
+<pin name="AIO0" x="7.62" y="-27.94" length="middle" rot="R90"/>
+<pin name="UART_RX" x="17.78" y="-12.7" length="middle" rot="R180"/>
+<pin name="UART_TX" x="17.78" y="-10.16" length="middle" rot="R180"/>
+<pin name="UART_RTS" x="17.78" y="-7.62" length="middle" rot="R180"/>
+<pin name="UART_CTS" x="17.78" y="-5.08" length="middle" rot="R180"/>
+<pin name="USB_D+" x="17.78" y="-2.54" length="middle" rot="R180"/>
+<pin name="USB_D-" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="GPIO2" x="17.78" y="2.54" length="middle" rot="R180"/>
+<pin name="GPIO3" x="17.78" y="5.08" length="middle" rot="R180"/>
+<pin name="GPIO5" x="17.78" y="7.62" length="middle" rot="R180"/>
+<pin name="GPIO4" x="17.78" y="10.16" length="middle" rot="R180"/>
+<pin name="SPI_CSB" x="17.78" y="12.7" length="middle" rot="R180"/>
+<pin name="SPI_MISO" x="17.78" y="15.24" length="middle" rot="R180"/>
+<wire x1="-12.7" y1="-22.86" x2="12.7" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-22.86" x2="12.7" y2="25.4" width="0.254" layer="94"/>
+<wire x1="12.7" y1="25.4" x2="-12.7" y2="25.4" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="25.4" x2="-12.7" y2="-22.86" width="0.254" layer="94"/>
+<text x="-2.54" y="22.86" size="1.27" layer="94">RN42</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1210,6 +1287,52 @@ BL600-ST 204-320048 Trace Pad&lt;br&gt;
 <connect gate="G$1" pin="VDD" pad="14"/>
 <connect gate="G$1" pin="XL1" pad="10"/>
 <connect gate="G$1" pin="XL2" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MICROCHIP-RN41">
+<gates>
+<gate name="G$1" symbol="MICROCHIP-42" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MICROCHIP-RN42">
+<connects>
+<connect gate="G$1" pin="AIO0" pad="30"/>
+<connect gate="G$1" pin="AIO1" pad="35"/>
+<connect gate="G$1" pin="GND1" pad="1"/>
+<connect gate="G$1" pin="GND2" pad="12"/>
+<connect gate="G$1" pin="GND3" pad="28"/>
+<connect gate="G$1" pin="GND4" pad="29"/>
+<connect gate="G$1" pin="GPIO10" pad="33"/>
+<connect gate="G$1" pin="GPIO11" pad="34"/>
+<connect gate="G$1" pin="GPIO2" pad="19"/>
+<connect gate="G$1" pin="GPIO3" pad="20"/>
+<connect gate="G$1" pin="GPIO4" pad="22"/>
+<connect gate="G$1" pin="GPIO5" pad="21"/>
+<connect gate="G$1" pin="GPIO6" pad="3"/>
+<connect gate="G$1" pin="GPIO7" pad="4"/>
+<connect gate="G$1" pin="GPIO8" pad="31"/>
+<connect gate="G$1" pin="GPIO9" pad="32"/>
+<connect gate="G$1" pin="PCM_CLK" pad="7"/>
+<connect gate="G$1" pin="PCM_IN" pad="9"/>
+<connect gate="G$1" pin="PCM_OUT" pad="10"/>
+<connect gate="G$1" pin="PCM_SYNC" pad="8"/>
+<connect gate="G$1" pin="RESET" pad="5"/>
+<connect gate="G$1" pin="SPI_CLOCK" pad="6"/>
+<connect gate="G$1" pin="SPI_CSB" pad="23"/>
+<connect gate="G$1" pin="SPI_MISO" pad="24"/>
+<connect gate="G$1" pin="SPI_MOSI" pad="2"/>
+<connect gate="G$1" pin="UART_CTS" pad="16"/>
+<connect gate="G$1" pin="UART_RTS" pad="15"/>
+<connect gate="G$1" pin="UART_RX" pad="13"/>
+<connect gate="G$1" pin="UART_TX" pad="14"/>
+<connect gate="G$1" pin="USB_D+" pad="17"/>
+<connect gate="G$1" pin="USB_D-" pad="18"/>
+<connect gate="G$1" pin="VDD" pad="11"/>
 </connects>
 <technologies>
 <technology name=""/>
