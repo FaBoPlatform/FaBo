@@ -306,6 +306,17 @@
 <text x="3.525378125" y="-5.085378125" size="0.6096" layer="21" rot="R270">A7</text>
 <text x="3.46" y="-7.52" size="0.6096" layer="21" rot="R270">A6</text>
 </package>
+<package name="MICREL-MIC5205">
+<smd name="1" x="-0.97" y="-0.85" dx="0.55" dy="1" layer="1"/>
+<smd name="3" x="0.99" y="-0.85" dx="0.55" dy="1" layer="1"/>
+<wire x1="-1.45" y1="-0.65" x2="1.45" y2="-0.65" width="0.127" layer="21"/>
+<wire x1="1.45" y1="-0.65" x2="1.45" y2="0.65" width="0.127" layer="21"/>
+<wire x1="1.45" y1="0.65" x2="-1.45" y2="0.65" width="0.127" layer="21"/>
+<wire x1="-1.45" y1="0.65" x2="-1.45" y2="-0.65" width="0.127" layer="21"/>
+<smd name="2" x="0" y="-0.85" dx="0.55" dy="1" layer="1"/>
+<smd name="5" x="-0.92" y="0.84" dx="0.55" dy="1" layer="1"/>
+<smd name="4" x="0.97" y="0.82" dx="0.55" dy="1" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="INDUCTOR-0805">
@@ -567,6 +578,18 @@
 <wire x1="38.1" y1="-25.4" x2="30.48" y2="-25.4" width="0.254" layer="94"/>
 <wire x1="30.48" y1="-25.4" x2="30.48" y2="-17.78" width="0.254" layer="94"/>
 </symbol>
+<symbol name="MICREC-MIC5205">
+<pin name="IN" x="-2.54" y="-7.62" length="middle" rot="R90"/>
+<pin name="GND" x="0" y="-7.62" length="middle" rot="R90"/>
+<pin name="EN" x="2.54" y="-7.62" length="middle" rot="R90"/>
+<pin name="BYD" x="2.54" y="15.24" length="middle" rot="R270"/>
+<pin name="OUT" x="-2.54" y="15.24" length="middle" rot="R270"/>
+<wire x1="-7.62" y1="-2.54" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-2.54" x2="7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="10.16" x2="-7.62" y2="-2.54" width="0.254" layer="94"/>
+<text x="-2.54" y="7.62" size="1.27" layer="94">MIC5205</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="INDUCTOR-0805" prefix="INDUCTOR">
@@ -810,6 +833,25 @@
 <connect gate="G$1" pin="TX_U" pad="TX_U"/>
 <connect gate="G$1" pin="VCC1" pad="VCC1"/>
 <connect gate="G$1" pin="VCC2" pad="VCC2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MICREL-MIC5205">
+<gates>
+<gate name="G$1" symbol="MICREC-MIC5205" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="MICREL-MIC5205">
+<connects>
+<connect gate="G$1" pin="BYD" pad="4"/>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>
