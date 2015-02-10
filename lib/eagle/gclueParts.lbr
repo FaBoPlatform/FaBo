@@ -232,6 +232,80 @@
 <wire x1="-3.45" y1="1.7" x2="-3.45" y2="-1.7" width="0.127" layer="21"/>
 <text x="-1.9" y="-0.1" size="0.3048" layer="21">20P3.0-JMCS-G-TF</text>
 </package>
+<package name="ARDUINO-MINIPRO-BASE">
+<pad name="9" x="-7.625" y="-15.62" drill="0.8"/>
+<wire x1="-8.5" y1="16.5" x2="8.5" y2="16.5" width="0.127" layer="20"/>
+<wire x1="8.5" y1="16.5" x2="8.5" y2="-16.5" width="0.127" layer="20"/>
+<wire x1="8.5" y1="-16.5" x2="-8.5" y2="-16.5" width="0.127" layer="20"/>
+<wire x1="-8.5" y1="-16.5" x2="-8.5" y2="16.5" width="0.127" layer="20"/>
+<pad name="10" x="7.625" y="-15.62" drill="0.8"/>
+<pad name="GRN" x="6.34" y="14.975" drill="0.8" rot="R90"/>
+<pad name="TX_U" x="3.8" y="14.975" drill="0.8" rot="R90"/>
+<pad name="RX_U" x="1.26" y="14.975" drill="0.8" rot="R90"/>
+<pad name="VCC1" x="-1.28" y="14.975" drill="0.8" rot="R90"/>
+<pad name="GND2" x="-3.82" y="14.975" drill="0.8" rot="R90"/>
+<pad name="BLK" x="-6.36" y="14.975" drill="0.8" rot="R90"/>
+<pad name="8" x="-7.625" y="-13.08" drill="0.8"/>
+<pad name="7" x="-7.625" y="-10.54" drill="0.8"/>
+<pad name="6" x="-7.625" y="-8" drill="0.8"/>
+<pad name="5" x="-7.625" y="-5.46" drill="0.8"/>
+<pad name="4" x="-7.625" y="-2.92" drill="0.8"/>
+<pad name="3" x="-7.625" y="-0.38" drill="0.8"/>
+<pad name="2" x="-7.625" y="2.16" drill="0.8"/>
+<pad name="GND1" x="-7.625" y="4.7" drill="0.8"/>
+<pad name="RST" x="-7.625" y="7.24" drill="0.8"/>
+<pad name="RX" x="-7.625" y="9.78" drill="0.8"/>
+<pad name="TX" x="-7.625" y="12.32" drill="0.8"/>
+<pad name="11" x="7.625" y="-13.08" drill="0.8"/>
+<pad name="12" x="7.625" y="-10.54" drill="0.8"/>
+<pad name="13" x="7.625" y="-8" drill="0.8"/>
+<pad name="A0" x="7.625" y="-5.46" drill="0.8"/>
+<pad name="A1" x="7.625" y="-2.92" drill="0.8"/>
+<pad name="A2" x="7.625" y="-0.38" drill="0.8"/>
+<pad name="A3" x="7.625" y="2.16" drill="0.8"/>
+<pad name="VCC2" x="7.625" y="4.7" drill="0.8"/>
+<pad name="RST2" x="7.625" y="7.24" drill="0.8"/>
+<pad name="GND3" x="7.625" y="9.78" drill="0.8"/>
+<pad name="RAW" x="7.625" y="12.32" drill="0.8"/>
+<text x="-7.4" y="14" size="0.6096" layer="21" rot="R90">BLK</text>
+<text x="-2.9" y="14" size="0.6096" layer="21" rot="R180">GND</text>
+<text x="-0.4" y="13.9" size="0.6096" layer="21" rot="R180">VCC</text>
+<text x="1.9" y="14" size="0.6096" layer="21" rot="R180">RX</text>
+<text x="4.4" y="14" size="0.6096" layer="21" rot="R180">TX</text>
+<text x="7.9" y="14" size="0.6096" layer="21" rot="R90">GRN</text>
+<text x="-6.6" y="12.6" size="0.6096" layer="21" rot="R270">TX</text>
+<text x="-6.6" y="10.2" size="0.6096" layer="21" rot="R270">RX</text>
+<text x="-6.6" y="7.8" size="0.6096" layer="21" rot="R270">RST</text>
+<text x="-6.6" y="5.4" size="0.6096" layer="21" rot="R270">GND</text>
+<text x="-6.6" y="2.4" size="0.6096" layer="21" rot="R270">2</text>
+<text x="-6.5" y="-0.2" size="0.6096" layer="21" rot="R270">3</text>
+<text x="-6.6" y="-2.8" size="0.6096" layer="21" rot="R270">4</text>
+<text x="-6.6" y="-5.3" size="0.6096" layer="21" rot="R270">5</text>
+<text x="-6.6" y="-7.9" size="0.6096" layer="21" rot="R270">6</text>
+<text x="-6.5" y="-10.3" size="0.6096" layer="21" rot="R270">7</text>
+<text x="-6.6" y="-12.9" size="0.6096" layer="21" rot="R270">8</text>
+<text x="-6.6" y="-15.5" size="0.6096" layer="21" rot="R270">9</text>
+<text x="6.1" y="12.7" size="0.6096" layer="21" rot="R270">RAW</text>
+<text x="6.1" y="10.3" size="0.6096" layer="21" rot="R270">GND</text>
+<text x="6.1" y="7.9" size="0.6096" layer="21" rot="R270">RST</text>
+<text x="6.1" y="5.5" size="0.6096" layer="21" rot="R270">VCC</text>
+<text x="6.2" y="2.4" size="0.6096" layer="21" rot="R270">A3</text>
+<text x="6" y="0.1" size="0.6096" layer="21" rot="R270">A2</text>
+<text x="6" y="-2.5" size="0.6096" layer="21" rot="R270">A1</text>
+<text x="6" y="-5" size="0.6096" layer="21" rot="R270">A0</text>
+<text x="6" y="-10.2" size="0.6096" layer="21" rot="R270">12</text>
+<text x="6.2" y="-15.3" size="0.6096" layer="21" rot="R270">10</text>
+<text x="6.1" y="-7.7" size="0.6096" layer="21" rot="R270">13</text>
+<text x="6.1" y="-12.7" size="0.6096" layer="21" rot="R270">11</text>
+<pad name="A4" x="5.085" y="-1.65" drill="0.8"/>
+<pad name="A5" x="5.085" y="0.89" drill="0.8"/>
+<text x="3.525378125" y="1.264621875" size="0.6096" layer="21" rot="R270">A5</text>
+<text x="3.46" y="-1.17" size="0.6096" layer="21" rot="R270">A4</text>
+<pad name="A6" x="5.085" y="-8" drill="0.8"/>
+<pad name="A7" x="5.085" y="-5.46" drill="0.8"/>
+<text x="3.525378125" y="-5.085378125" size="0.6096" layer="21" rot="R270">A7</text>
+<text x="3.46" y="-7.52" size="0.6096" layer="21" rot="R270">A6</text>
+</package>
 </packages>
 <symbols>
 <symbol name="INDUCTOR-0805">
@@ -437,6 +511,62 @@
 <wire x1="15.24" y1="7.62" x2="-12.7" y2="7.62" width="0.254" layer="94"/>
 <wire x1="-12.7" y1="7.62" x2="-12.7" y2="-7.62" width="0.254" layer="94"/>
 </symbol>
+<symbol name="ARDUINO-MINIPRO-BASE">
+<pin name="TX" x="-15.24" y="12.7" length="middle"/>
+<pin name="RX" x="-15.24" y="10.16" length="middle"/>
+<pin name="RST1" x="-15.24" y="7.62" length="middle"/>
+<pin name="GND1" x="-15.24" y="5.08" length="middle"/>
+<pin name="2" x="-15.24" y="2.54" length="middle"/>
+<pin name="3" x="-15.24" y="0" length="middle"/>
+<pin name="4" x="-15.24" y="-2.54" length="middle"/>
+<pin name="5" x="-15.24" y="-5.08" length="middle"/>
+<pin name="6" x="-15.24" y="-7.62" length="middle"/>
+<pin name="7" x="-15.24" y="-10.16" length="middle"/>
+<pin name="8" x="-15.24" y="-12.7" length="middle"/>
+<pin name="9" x="-15.24" y="-15.24" length="middle"/>
+<wire x1="-10.16" y1="15.24" x2="-10.16" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-17.78" x2="-2.54" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-17.78" x2="-2.54" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="15.24" x2="-10.16" y2="15.24" width="0.254" layer="94"/>
+<pin name="RAW" x="5.08" y="12.7" length="middle"/>
+<pin name="GND3" x="5.08" y="10.16" length="middle"/>
+<pin name="RST2" x="5.08" y="7.62" length="middle"/>
+<pin name="VCC2" x="5.08" y="5.08" length="middle"/>
+<pin name="A3" x="5.08" y="2.54" length="middle"/>
+<pin name="A2" x="5.08" y="0" length="middle"/>
+<pin name="A1" x="5.08" y="-2.54" length="middle"/>
+<pin name="A0" x="5.08" y="-5.08" length="middle"/>
+<pin name="13" x="5.08" y="-7.62" length="middle"/>
+<pin name="12" x="5.08" y="-10.16" length="middle"/>
+<pin name="11" x="5.08" y="-12.7" length="middle"/>
+<pin name="10" x="5.08" y="-15.24" length="middle"/>
+<wire x1="10.16" y1="15.24" x2="10.16" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-17.78" x2="17.78" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-17.78" x2="17.78" y2="15.24" width="0.254" layer="94"/>
+<wire x1="17.78" y1="15.24" x2="10.16" y2="15.24" width="0.254" layer="94"/>
+<pin name="BLK" x="25.4" y="12.7" length="middle"/>
+<pin name="GND2" x="25.4" y="10.16" length="middle"/>
+<pin name="VCC1" x="25.4" y="7.62" length="middle"/>
+<pin name="RX_U" x="25.4" y="5.08" length="middle"/>
+<pin name="TX_U" x="25.4" y="2.54" length="middle"/>
+<pin name="GRN" x="25.4" y="0" length="middle"/>
+<wire x1="30.48" y1="15.24" x2="30.48" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="30.48" y1="-2.54" x2="38.1" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="38.1" y1="-2.54" x2="38.1" y2="15.24" width="0.254" layer="94"/>
+<wire x1="38.1" y1="15.24" x2="30.48" y2="15.24" width="0.254" layer="94"/>
+<pin name="A5" x="25.4" y="-10.16" length="middle"/>
+<pin name="A4" x="25.4" y="-12.7" length="middle"/>
+<wire x1="30.48" y1="-7.62" x2="38.1" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="38.1" y1="-7.62" x2="38.1" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="38.1" y1="-15.24" x2="30.48" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="30.48" y1="-15.24" x2="30.48" y2="-7.62" width="0.254" layer="94"/>
+<pin name="A6" x="25.4" y="-20.32" length="middle"/>
+<pin name="A7" x="25.4" y="-22.86" length="middle"/>
+<wire x1="30.48" y1="-17.78" x2="38.1" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="38.1" y1="-17.78" x2="38.1" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="38.1" y1="-25.4" x2="30.48" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="30.48" y1="-25.4" x2="30.48" y2="-17.78" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="INDUCTOR-0805" prefix="INDUCTOR">
@@ -632,6 +762,54 @@
 <connect gate="G$1" pin="7" pad="7"/>
 <connect gate="G$1" pin="8" pad="8"/>
 <connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ARDUIN-MINIPRO-BASE">
+<gates>
+<gate name="G$1" symbol="ARDUINO-MINIPRO-BASE" x="-15.24" y="0"/>
+</gates>
+<devices>
+<device name="" package="ARDUINO-MINIPRO-BASE">
+<connects>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="11" pad="11"/>
+<connect gate="G$1" pin="12" pad="12"/>
+<connect gate="G$1" pin="13" pad="13"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+<connect gate="G$1" pin="A0" pad="A0"/>
+<connect gate="G$1" pin="A1" pad="A1"/>
+<connect gate="G$1" pin="A2" pad="A2"/>
+<connect gate="G$1" pin="A3" pad="A3"/>
+<connect gate="G$1" pin="A4" pad="A4"/>
+<connect gate="G$1" pin="A5" pad="A5"/>
+<connect gate="G$1" pin="A6" pad="A6"/>
+<connect gate="G$1" pin="A7" pad="A7"/>
+<connect gate="G$1" pin="BLK" pad="BLK"/>
+<connect gate="G$1" pin="GND1" pad="GND1"/>
+<connect gate="G$1" pin="GND2" pad="GND2"/>
+<connect gate="G$1" pin="GND3" pad="GND3"/>
+<connect gate="G$1" pin="GRN" pad="GRN"/>
+<connect gate="G$1" pin="RAW" pad="RAW"/>
+<connect gate="G$1" pin="RST1" pad="RST"/>
+<connect gate="G$1" pin="RST2" pad="RST2"/>
+<connect gate="G$1" pin="RX" pad="RX"/>
+<connect gate="G$1" pin="RX_U" pad="RX_U"/>
+<connect gate="G$1" pin="TX" pad="TX"/>
+<connect gate="G$1" pin="TX_U" pad="TX_U"/>
+<connect gate="G$1" pin="VCC1" pad="VCC1"/>
+<connect gate="G$1" pin="VCC2" pad="VCC2"/>
 </connects>
 <technologies>
 <technology name=""/>
