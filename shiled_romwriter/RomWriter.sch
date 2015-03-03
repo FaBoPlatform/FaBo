@@ -3695,7 +3695,7 @@ naming: grid - package width</description>
 <part name="IC1" library="mylib" deviceset="ATMEGA168*P" device="" technology="-20"/>
 <part name="U$1" library="mylib" deviceset="ARDUINO_SHIELD_VER2" device=""/>
 <part name="ICSP" library="mylib" deviceset="AVR_SPI_PRG_6" device="2X3_LOCK"/>
-<part name="R1" library="adafruit" deviceset="FLIPFLOP-RES" device=""/>
+<part name="R1" library="adafruit" deviceset="FLIPFLOP-RES" device="" value="10kΩ"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
 <part name="P+2" library="supply1" deviceset="+5V" device=""/>
@@ -3716,6 +3716,9 @@ naming: grid - package width</description>
 <part name="C2" library="capacitor-wima" deviceset="C" device="2.5/2" value="22pf"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
+<part name="P+5" library="supply1" deviceset="+5V" device=""/>
+<part name="C3" library="capacitor-wima" deviceset="C" device="2.5/2" value="0.1μF"/>
+<part name="GND8" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3746,6 +3749,9 @@ naming: grid - package width</description>
 <instance part="C2" gate="G$1" x="147.32" y="35.56"/>
 <instance part="GND6" gate="1" x="132.08" y="22.86"/>
 <instance part="GND7" gate="1" x="147.32" y="22.86"/>
+<instance part="P+5" gate="1" x="195.58" y="45.72"/>
+<instance part="C3" gate="G$1" x="195.58" y="35.56"/>
+<instance part="GND8" gate="1" x="195.58" y="22.86"/>
 </instances>
 <busses>
 </busses>
@@ -3881,6 +3887,11 @@ naming: grid - package width</description>
 <pinref part="P+2" gate="1" pin="+5V"/>
 <wire x1="170.18" y1="106.68" x2="160.02" y2="106.68" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="C3" gate="G$1" pin="1"/>
+<pinref part="P+5" gate="1" pin="+5V"/>
+<wire x1="195.58" y1="38.1" x2="195.58" y2="43.18" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="GND" class="0">
 <segment>
@@ -3937,6 +3948,11 @@ naming: grid - package width</description>
 <pinref part="C1" gate="G$1" pin="2"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 <wire x1="132.08" y1="30.48" x2="132.08" y2="25.4" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C3" gate="G$1" pin="2"/>
+<pinref part="GND8" gate="1" pin="GND"/>
+<wire x1="195.58" y1="30.48" x2="195.58" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="XTAL1" class="0">
