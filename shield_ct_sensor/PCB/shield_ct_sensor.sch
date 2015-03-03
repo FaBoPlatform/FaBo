@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -20997,7 +20997,7 @@ Grid 5.00 mm&lt;p&gt;
 <sheets>
 <sheet>
 <plain>
-<text x="248.92" y="5.08" size="2.54" layer="94">0.1</text>
+<text x="248.92" y="5.08" size="2.54" layer="94">0.2</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="0" y="0"/>
@@ -21230,9 +21230,9 @@ Grid 5.00 mm&lt;p&gt;
 <label x="129.54" y="43.18" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="D12"/>
-<wire x1="198.12" y1="142.24" x2="187.96" y2="142.24" width="0.1524" layer="91"/>
-<label x="198.12" y="142.24" size="1.016" layer="95" xref="yes"/>
+<pinref part="U1" gate="G$1" pin="D10"/>
+<wire x1="198.12" y1="137.16" x2="187.96" y2="137.16" width="0.1524" layer="91"/>
+<label x="198.12" y="137.16" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="TX_HW" class="0">
@@ -21254,9 +21254,9 @@ Grid 5.00 mm&lt;p&gt;
 <label x="129.54" y="33.02" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="D13"/>
-<wire x1="198.12" y1="144.78" x2="187.96" y2="144.78" width="0.1524" layer="91"/>
-<label x="198.12" y="144.78" size="1.016" layer="95" xref="yes"/>
+<pinref part="U1" gate="G$1" pin="D11"/>
+<wire x1="198.12" y1="139.7" x2="187.96" y2="139.7" width="0.1524" layer="91"/>
+<label x="198.12" y="139.7" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
