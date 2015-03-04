@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -1749,7 +1749,7 @@ Source: http://focus.ti.com/lit/ds/symlink/tps77001.pdf</description>
 <class number="0" name="default" width="0.254" drill="0">
 <clearance class="0" value="0.254"/>
 </class>
-<class number="2" name="gnd" width="0.3048" drill="0.5588">
+<class number="2" name="GND" width="0.254" drill="0.254">
 <clearance class="2" value="0.254"/>
 </class>
 <class number="3" name="usbvcc" width="0.508" drill="0.6096">
@@ -2061,8 +2061,8 @@ Source: http://focus.ti.com/lit/ds/symlink/tps77001.pdf</description>
 <pinref part="R4" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<wire x1="185.42" y1="129.54" x2="203.2" y2="134.62" width="0.1524" layer="91"/>
-<label x="203.2" y="134.62" size="1.778" layer="95" rot="R90"/>
+<wire x1="185.42" y1="129.54" x2="195.58" y2="129.54" width="0.1524" layer="91"/>
+<label x="187.96" y="129.54" size="1.778" layer="95"/>
 <pinref part="U$2" gate="G$1" pin="RX"/>
 </segment>
 </net>
@@ -2076,8 +2076,8 @@ Source: http://focus.ti.com/lit/ds/symlink/tps77001.pdf</description>
 <pinref part="R7" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<wire x1="185.42" y1="134.62" x2="208.28" y2="129.54" width="0.1524" layer="91"/>
-<label x="213.36" y="129.54" size="1.778" layer="95" rot="R90"/>
+<wire x1="185.42" y1="134.62" x2="195.58" y2="134.62" width="0.1524" layer="91"/>
+<label x="187.96" y="134.62" size="1.778" layer="95"/>
 <pinref part="U$2" gate="G$1" pin="TX"/>
 </segment>
 </net>
