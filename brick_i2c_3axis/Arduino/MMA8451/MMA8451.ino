@@ -1,6 +1,6 @@
 #include <Wire.h>
 
-#define DEVICE_ADDR (0x1d) // スレーブデバイスのアドレス
+#define DEVICE_ADDR (0x68) // スレーブデバイスのアドレス
 
 void setup()
 {

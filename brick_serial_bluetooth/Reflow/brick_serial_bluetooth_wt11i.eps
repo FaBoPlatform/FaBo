@@ -1,0 +1,185 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%Title: EAGLE Drawing /Users/sasakiakira/Documents/workspace_fabo_github/FaBo/brick_serial_bluetooth/PCB/brick_serial_bluetooth_wt11i.brd
+%%Creator: EAGLE
+%%Pages: 1
+%%BoundingBox: 0 0 106 164
+%%EndComments
+
+% Coordinate transfer:
+
+/EU { 254 div 0.072 mul } def
+/inch { 72 mul } def
+
+% Linestyle:
+
+1 setlinecap
+1 setlinejoin
+
+% Drawing functions:
+
+/l {  % draw a line
+   /lw exch def
+   /y2 exch def
+   /x2 exch def
+   /y1 exch def
+   /x1 exch def
+   newpath
+   x1 EU y1 EU moveto
+   x2 EU y2 EU lineto
+   lw EU setlinewidth
+   stroke
+   } def
+
+/h {  % draw a hole
+   /d  exch def
+   /y  exch def
+   /x  exch def
+   d 0 gt {
+     newpath
+     x EU y EU d 2 div EU 0 360 arc
+     currentgray dup
+     1 exch sub setgray
+     fill
+     setgray
+     } if
+   } def
+
+/b {  % draw a bar
+   /an exch def
+   /y2 exch def
+   /x2 exch def
+   /y1 exch def
+   /x1 exch def
+   /w2 x2 x1 sub 2 div EU def
+   /h2 y2 y1 sub 2 div EU def
+   gsave
+   x1 x2 add 2 div EU y1 y2 add 2 div EU translate
+   an rotate
+   newpath
+   w2     h2     moveto
+   w2 neg h2     lineto
+   w2 neg h2 neg lineto
+   w2     h2 neg lineto
+   closepath
+   fill
+   grestore
+   } def
+
+/c {  % draw a circle
+   /lw exch def
+   /rd exch def
+   /y  exch def
+   /x  exch def
+   newpath
+   lw EU setlinewidth
+   x EU y EU rd EU 0 360 arc
+   stroke
+   } def
+
+/a {  % draw an arc
+   /lc exch def
+   /ae exch def
+   /as exch def
+   /lw exch def
+   /rd exch def
+   /y  exch def
+   /x  exch def
+   lw rd 2 mul gt {
+     /rd rd lw 2 div add 2 div def
+     /lw rd 2 mul def
+     } if
+   currentlinecap currentlinejoin
+   lc setlinecap 0 setlinejoin
+   newpath
+   lw EU setlinewidth
+   x EU y EU rd EU as ae arc
+   stroke
+   setlinejoin setlinecap
+   } def
+
+/p {  % draw a pie
+   /d exch def
+   /y exch def
+   /x exch def
+   newpath
+   x EU y EU d 2 div EU 0 360 arc
+   fill
+   } def
+
+/edge { 0.20710678119 mul } def
+
+/o {  % draw an octagon
+   /an exch def
+   /dy exch def
+   /dx exch def
+   /y  exch def
+   /x  exch def
+   gsave
+   x EU y EU translate
+   an dx dy lt { 90 add /dx dy /dy dx def def } if rotate
+   newpath
+      0 dx 2 div sub EU                    0 dy edge  add EU moveto
+      0 dx dy sub 2 div sub dy edge sub EU 0 dy 2 div add EU lineto
+      0 dx dy sub 2 div add dy edge add EU 0 dy 2 div add EU lineto
+      0 dx 2 div add EU                    0 dy edge  add EU lineto
+      0 dx 2 div add EU                    0 dy edge  sub EU lineto
+      0 dx dy sub 2 div add dy edge add EU 0 dy 2 div sub EU lineto
+      0 dx dy sub 2 div sub dy edge sub EU 0 dy 2 div sub EU lineto
+      0 dx 2 div sub EU                    0 dy edge  sub EU lineto
+   closepath
+   fill
+   grestore
+   } def
+
+241872 188872 249872 197872 0.0 b
+251372 167872 259372 176872 0.0 b
+232372 167872 240372 176872 0.0 b
+83684 133478 83684 129666 7187 l
+83684 129666 85480 129666 7187 l
+85480 129666 85480 133478 7187 l
+85480 133478 83684 133478 7187 l
+101464 133478 101464 129666 7187 l
+101464 129666 103260 129666 7187 l
+103260 129666 103260 133478 7187 l
+103260 133478 101464 133478 7187 l
+181072 126572 192072 136572 0.0 b
+198072 126572 209072 136572 0.0 b
+28672 88472 39672 98472 0.0 b
+45672 88472 56672 98472 0.0 b
+28672 126572 39672 136572 0.0 b
+45672 126572 56672 136572 0.0 b
+130272 126572 141272 136572 0.0 b
+147272 126572 158272 136572 0.0 b
+233622 99872 239122 111872 0.0 b
+243122 99872 248622 111872 0.0 b
+252622 99872 258122 111872 0.0 b
+252622 125872 258122 137872 0.0 b
+233622 125872 239122 137872 0.0 b
+65772 193472 87772 201472 0.0 b
+65772 208472 87772 216472 0.0 b
+65772 223472 87772 231472 0.0 b
+65772 238472 87772 246472 0.0 b
+65772 253472 87772 261472 0.0 b
+65772 268472 87772 276472 0.0 b
+65772 283472 87772 291472 0.0 b
+65772 298472 87772 306472 0.0 b
+65772 313472 87772 321472 0.0 b
+65772 328472 87772 336472 0.0 b
+65772 343472 87772 351472 0.0 b
+65772 358472 87772 366472 0.0 b
+65772 373472 87772 381472 0.0 b
+65772 388472 87772 396472 0.0 b
+200772 193472 222772 201472 0.0 b
+200772 208472 222772 216472 0.0 b
+200772 223472 222772 231472 0.0 b
+200772 238472 222772 246472 0.0 b
+200772 253472 222772 261472 0.0 b
+200772 268472 222772 276472 0.0 b
+200772 283472 222772 291472 0.0 b
+200772 298472 222772 306472 0.0 b
+200772 313472 222772 321472 0.0 b
+200772 328472 222772 336472 0.0 b
+200772 343472 222772 351472 0.0 b
+200772 358472 222772 366472 0.0 b
+200772 373472 222772 381472 0.0 b
+200772 388472 222772 396472 0.0 b
