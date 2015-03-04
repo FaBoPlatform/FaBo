@@ -2,7 +2,7 @@
 %%Title: EAGLE Drawing /Users/sasakiakira/Documents/workspace_fabo_github/FaBo/shield_motor/PCB/connector_motor.brd
 %%Creator: EAGLE
 %%Pages: 1
-%%BoundingBox: 0 0 576 810
+%%BoundingBox: 0 0 222 161
 %%EndComments
 
 % Coordinate transfer:
@@ -131,137 +131,6 @@
    grestore
    } def
 
-% the real drawing size:
-
-/MinDrawX      0 EU def
-/MinDrawY      0 EU def
-/MaxDrawX 784352 EU def
-/MaxDrawY 567944 EU def
-
-% the usable page size:
-
-/LeftMargin 0.25 inch def  % change these if drawing gets clipped!
-/BotMargin  0.25 inch def
-/PageWidth   7.7500 inch def
-/PageHeight 11.0000 inch def
-
-% are we going to rotate?:
-
-/RotateDrawing 0 0 ne def
-
-% Media size functions:
-
-/AbortMessage {  % Show a message in a box and stop printing
-   /h 100 def
-   /Courier findfont 12 scalefont setfont
-   mediawidth pagemargin sub h 1 setpage
-   newpath
-   0 0 moveto
-   0 h rlineto
-   mediawidth pagemargin sub 0 rlineto
-   0 h neg rlineto
-   closepath
-   5 setlinewidth
-   stroke
-   newpath 50 60 moveto (ERROR: Jobsize exceeds physical printing area!) show
-   newpath 50 40 moveto (       Job has been aborted!) show
-   showpage
-   stop
-   } def
-
-/SelectPage {  % Select the page identified by Row and Column
-   /Column exch def
-   /Row    exch def
-
-   % the actually exposed area (if the machine knows these parameters!):
-
-   /DrawX MaxDrawX MinDrawX sub def
-   /DrawY MaxDrawY MinDrawY sub def
-   statusdict /setpage known
-   statusdict /mediawidth known and
-   statusdict /medialength known and
-   statusdict /pagemargin known and {
-      % this is for machines that can tell the media size:
-      statusdict begin
-         /MediaW mediawidth pagemargin sub def
-         DrawX DrawY ge {
-            DrawX MediaW le DrawY medialength le and {
-               MediaW DrawY 1 setpage
-               MediaW DrawX sub 2 div 0 translate
-               }{
-            DrawY MediaW le DrawX medialength le and {
-               MediaW DrawX 0 setpage
-               0 MediaW DrawY sub 2 div translate
-               }{
-               AbortMessage
-               } ifelse
-               } ifelse
-            }{
-            DrawY MediaW le DrawX medialength le and {
-               MediaW DrawX 0 setpage
-               0 MediaW DrawY sub 2 div translate
-               }{
-            DrawX MediaW le DrawY medialength le and {
-               MediaW DrawY 1 setpage
-               MediaW DrawX sub 2 div 0 translate
-               }{
-               AbortMessage
-               } ifelse
-               } ifelse
-            } ifelse
-         end
-      }{
-      % this is for machines that can NOT tell the media size:
-      % (Ghostscript doesn't like this!)
-      /Product product length string def
-      /i 0 def
-      product { dup 97 lt { 32 add } if Product exch i exch put /i i 1 add def } forall 
-      Product (ghostscript) search dup /IsGhostscript exch def
-      { pop pop } if
-      pop
-      IsGhostscript not {
-         statusdict /setpage known {
-            statusdict begin
-               RotateDrawing {
-                  LeftMargin PageHeight add BotMargin DrawY add
-                  }{
-                  BotMargin DrawY add LeftMargin DrawX add 
-                  } ifelse
-               0 setpage
-               end
-            } if
-         } if
-      % set clipping boundary:
-      newpath
-      LeftMargin BotMargin moveto
-      0 PageHeight rlineto
-      PageWidth  0 rlineto
-      0 PageHeight neg rlineto
-      closepath
-      clip
-      % set the origin:
-      LeftMargin BotMargin translate
-      RotateDrawing {
-         0 PageHeight translate
-         -90 rotate
-         PageHeight Column mul neg PageWidth Row mul neg translate
-         }{
-         PageWidth Column mul neg PageHeight Row mul neg translate
-         } ifelse
-      } ifelse
-   % move the lower left corner of the drawing to the origin:
-   MinDrawX neg MinDrawY neg translate
-   
-   % Linestyle:
-   
-   1 setlinecap
-   1 setlinejoin
-   
-   } def
-
-% TheDrawing
-
-gsave 0 0 SelectPage
 447080 148472 457080 153472 90.0 b
 457280 148472 467280 153472 90.0 b
 467480 148472 477480 153472 90.0 b
@@ -294,36 +163,43 @@ gsave 0 0 SelectPage
 467480 414472 477480 419472 90.0 b
 457280 414472 467280 419472 90.0 b
 447080 414472 457080 419472 90.0 b
-256580 326272 266580 331272 90.0 b
-266780 326272 276780 331272 90.0 b
-276980 326272 286980 331272 90.0 b
-287180 326272 297180 331272 90.0 b
-337780 326272 347780 331272 90.0 b
-347980 326272 357980 331272 90.0 b
-358180 326272 368180 331272 90.0 b
-368380 326272 378380 331272 90.0 b
-368380 414472 378380 419472 90.0 b
-358180 414472 368180 419472 90.0 b
-347980 414472 357980 419472 90.0 b
-337780 414472 347780 419472 90.0 b
-287180 414472 297180 419472 90.0 b
-276980 414472 286980 419472 90.0 b
-266780 414472 276780 419472 90.0 b
-256580 414472 266580 419472 90.0 b
-256580 148472 266580 153472 90.0 b
-266780 148472 276780 153472 90.0 b
-276980 148472 286980 153472 90.0 b
-287180 148472 297180 153472 90.0 b
-337780 148472 347780 153472 90.0 b
-347980 148472 357980 153472 90.0 b
-358180 148472 368180 153472 90.0 b
-368380 148472 378380 153472 90.0 b
-368380 236672 378380 241672 90.0 b
-358180 236672 368180 241672 90.0 b
-347980 236672 357980 241672 90.0 b
-337780 236672 347780 241672 90.0 b
-287180 236672 297180 241672 90.0 b
-276980 236672 286980 241672 90.0 b
-266780 236672 276780 241672 90.0 b
-256580 236672 266580 241672 90.0 b
-showpage grestore
+269280 321192 279280 326192 90.0 b
+279480 321192 289480 326192 90.0 b
+289680 321192 299680 326192 90.0 b
+299880 321192 309880 326192 90.0 b
+350480 321192 360480 326192 90.0 b
+360680 321192 370680 326192 90.0 b
+370880 321192 380880 326192 90.0 b
+381080 321192 391080 326192 90.0 b
+381080 409392 391080 414392 90.0 b
+370880 409392 380880 414392 90.0 b
+360680 409392 370680 414392 90.0 b
+350480 409392 360480 414392 90.0 b
+299880 409392 309880 414392 90.0 b
+289680 409392 299680 414392 90.0 b
+279480 409392 289480 414392 90.0 b
+269280 409392 279280 414392 90.0 b
+391280 236672 401280 241672 270.0 b
+381080 236672 391080 241672 270.0 b
+370880 236672 380880 241672 270.0 b
+360680 236672 370680 241672 270.0 b
+310080 236672 320080 241672 270.0 b
+299880 236672 309880 241672 270.0 b
+289680 236672 299680 241672 270.0 b
+279480 236672 289480 241672 270.0 b
+279480 148472 289480 153472 270.0 b
+289680 148472 299680 153472 270.0 b
+299880 148472 309880 153472 270.0 b
+310080 148472 320080 153472 270.0 b
+360680 148472 370680 153472 270.0 b
+370880 148472 380880 153472 270.0 b
+381080 148472 391080 153472 270.0 b
+391280 148472 401280 153472 270.0 b
+167880 356172 177880 364172 0.0 b
+187880 356172 197880 364172 0.0 b
+167880 318072 177880 326072 0.0 b
+187880 318072 197880 326072 0.0 b
+164780 474672 207780 499672 0.0 b
+81780 474672 124780 499672 0.0 b
+168880 393272 179880 403272 0.0 b
+185880 393272 196880 403272 0.0 b

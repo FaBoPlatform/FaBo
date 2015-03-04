@@ -168,7 +168,7 @@
 <text x="63.5" y="4.1275" size="1.016" layer="21" font="vector" rot="R90" align="center-left">A5</text>
 <text x="61.595" y="39.37" size="1.27" layer="21" font="vector" rot="R90" align="center">RESET</text>
 <text x="53.0225" y="14.605" size="1.27" layer="21" font="vector" ratio="10" rot="R270" align="top-center">I2C</text>
-<text x="39.6875" y="17.78" size="1.016" layer="21" font="vector" align="bottom-right">REV.1.0</text>
+<text x="39.6875" y="17.78" size="1.016" layer="21" font="vector" align="bottom-right">REV.Beta</text>
 <text x="40.005" y="20.0025" size="1.4224" layer="21" font="vector" align="bottom-right">OUT/IN Shield</text>
 <text x="53.0225" y="27.305" size="1.27" layer="21" font="vector" ratio="10" rot="R270" align="top-center">SERIAL</text>
 <text x="46.0375" y="9.8425" size="1.27" layer="21" font="vector" rot="R270" align="center">5V</text>
