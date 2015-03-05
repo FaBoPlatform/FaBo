@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -21381,7 +21381,7 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : Com
 <sheets>
 <sheet>
 <plain>
-<text x="248.92" y="5.08" size="2.54" layer="94">1.0</text>
+<text x="251.46" y="5.08" size="2.54" layer="94" align="bottom-center">Beta</text>
 <text x="15.24" y="158.242" size="1.778" layer="96">RESET</text>
 </plain>
 <instances>
