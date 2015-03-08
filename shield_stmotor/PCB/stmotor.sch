@@ -8573,8 +8573,8 @@ DIN A4, landscape with location and doc. field</description>
 </class>
 </classes>
 <parts>
-<part name="SV1" library="con-lstb" deviceset="MA08-1" device=""/>
-<part name="SV2" library="con-lstb" deviceset="MA08-1" device=""/>
+<part name="MOT1_1" library="con-lstb" deviceset="MA08-1" device=""/>
+<part name="MOT1_2" library="con-lstb" deviceset="MA08-1" device=""/>
 <part name="U$1" library="adafruit" deviceset="ARDUINO" device="-NOHOLE"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="P+2" library="supply1" deviceset="+5V" device=""/>
@@ -8589,57 +8589,71 @@ DIN A4, landscape with location and doc. field</description>
 <part name="MOTOR1" library="con-wago-500" deviceset="W237-4" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="FRAME1" library="frames" deviceset="A4L-LOC" device=""/>
+<part name="MOT2_1" library="con-lstb" deviceset="MA08-1" device=""/>
+<part name="MOT2_2" library="con-lstb" deviceset="MA08-1" device=""/>
+<part name="P+1" library="supply1" deviceset="+5V" device=""/>
+<part name="GND3" library="supply1" deviceset="GND" device=""/>
+<part name="SUPPLY1" library="supply2" deviceset="+12V" device=""/>
+<part name="MOTOR2" library="con-wago-500" deviceset="W237-4" device=""/>
+<part name="SUPPLY2" library="supply2" deviceset="+12V" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="SV1" gate="1" x="109.22" y="86.36"/>
-<instance part="SV2" gate="1" x="134.62" y="86.36"/>
+<instance part="MOT1_1" gate="1" x="109.22" y="86.36"/>
+<instance part="MOT1_2" gate="1" x="134.62" y="86.36"/>
 <instance part="U$1" gate="G$1" x="40.64" y="99.06"/>
 <instance part="GND1" gate="1" x="53.34" y="43.18"/>
 <instance part="P+2" gate="1" x="160.02" y="86.36"/>
 <instance part="GND2" gate="1" x="154.94" y="73.66"/>
-<instance part="GND5" gate="1" x="160.02" y="88.9"/>
+<instance part="GND5" gate="1" x="190.5" y="121.92"/>
 <instance part="P+4" gate="1" x="45.72" y="60.96"/>
 <instance part="SUPPLY" gate="-1" x="165.1" y="134.62"/>
 <instance part="SUPPLY" gate="-2" x="165.1" y="129.54"/>
 <instance part="SUPPLY4" gate="+12V" x="175.26" y="139.7"/>
 <instance part="GND14" gate="1" x="175.26" y="124.46"/>
-<instance part="SUPPLY5" gate="+12V" x="160.02" y="106.68"/>
-<instance part="C6" gate="G$1" x="160.02" y="99.06"/>
-<instance part="MOTOR1" gate="-1" x="177.8" y="60.96"/>
-<instance part="MOTOR1" gate="-2" x="177.8" y="55.88"/>
-<instance part="MOTOR1" gate="-3" x="177.8" y="50.8"/>
-<instance part="MOTOR1" gate="-4" x="177.8" y="45.72"/>
+<instance part="SUPPLY5" gate="+12V" x="190.5" y="139.7"/>
+<instance part="C6" gate="G$1" x="190.5" y="132.08"/>
+<instance part="MOTOR1" gate="-1" x="200.66" y="96.52"/>
+<instance part="MOTOR1" gate="-2" x="200.66" y="91.44"/>
+<instance part="MOTOR1" gate="-3" x="200.66" y="86.36"/>
+<instance part="MOTOR1" gate="-4" x="200.66" y="81.28"/>
 <instance part="GND4" gate="1" x="25.4" y="129.54"/>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
+<instance part="MOT2_1" gate="1" x="109.22" y="48.26"/>
+<instance part="MOT2_2" gate="1" x="134.62" y="48.26"/>
+<instance part="P+1" gate="1" x="160.02" y="48.26"/>
+<instance part="GND3" gate="1" x="154.94" y="35.56"/>
+<instance part="SUPPLY1" gate="+12V" x="154.94" y="68.58"/>
+<instance part="MOTOR2" gate="-1" x="200.66" y="73.66"/>
+<instance part="MOTOR2" gate="-2" x="200.66" y="68.58"/>
+<instance part="MOTOR2" gate="-3" x="200.66" y="63.5"/>
+<instance part="MOTOR2" gate="-4" x="200.66" y="58.42"/>
+<instance part="SUPPLY2" gate="+12V" x="154.94" y="104.14"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="S1_RST" class="0">
 <segment>
-<pinref part="SV1" gate="1" pin="4"/>
-<pinref part="SV1" gate="1" pin="3"/>
+<pinref part="MOT1_1" gate="1" pin="4"/>
+<pinref part="MOT1_1" gate="1" pin="3"/>
 <wire x1="116.84" y1="86.36" x2="116.84" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="SV2" gate="1" pin="1"/>
+<pinref part="MOT1_2" gate="1" pin="1"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="142.24" y1="78.74" x2="154.94" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="78.74" x2="154.94" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SV2" gate="1" pin="7"/>
 <pinref part="GND5" gate="1" pin="GND"/>
-<wire x1="142.24" y1="93.98" x2="160.02" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="93.98" x2="160.02" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="127" x2="190.5" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="C6" gate="G$1" pin="-"/>
-<junction x="160.02" y="93.98"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="GND1"/>
@@ -8664,53 +8678,59 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="25.4" y1="139.7" x2="25.4" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="GND3" gate="1" pin="GND"/>
+<wire x1="142.24" y1="40.64" x2="154.94" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="40.64" x2="154.94" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="MOT2_2" gate="1" pin="1"/>
+</segment>
 </net>
 <net name="S1_1B" class="0">
 <segment>
-<pinref part="SV2" gate="1" pin="3"/>
+<pinref part="MOT1_2" gate="1" pin="3"/>
 <wire x1="142.24" y1="83.82" x2="147.32" y2="83.82" width="0.1524" layer="91"/>
 <label x="147.32" y="83.82" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="MOTOR1" gate="-1" pin="KL"/>
-<wire x1="182.88" y1="60.96" x2="187.96" y2="60.96" width="0.1524" layer="91"/>
-<label x="187.96" y="60.96" size="1.778" layer="95"/>
+<wire x1="205.74" y1="96.52" x2="210.82" y2="96.52" width="0.1524" layer="91"/>
+<label x="210.82" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="S1_1A" class="0">
 <segment>
-<pinref part="SV2" gate="1" pin="4"/>
+<pinref part="MOT1_2" gate="1" pin="4"/>
 <wire x1="142.24" y1="86.36" x2="147.32" y2="86.36" width="0.1524" layer="91"/>
 <label x="147.32" y="86.36" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="MOTOR1" gate="-2" pin="KL"/>
-<wire x1="182.88" y1="55.88" x2="187.96" y2="55.88" width="0.1524" layer="91"/>
-<label x="187.96" y="55.88" size="1.778" layer="95"/>
+<wire x1="205.74" y1="91.44" x2="210.82" y2="91.44" width="0.1524" layer="91"/>
+<label x="210.82" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="S1_2A" class="0">
 <segment>
-<pinref part="SV2" gate="1" pin="5"/>
+<pinref part="MOT1_2" gate="1" pin="5"/>
 <wire x1="142.24" y1="88.9" x2="147.32" y2="88.9" width="0.1524" layer="91"/>
 <label x="147.32" y="88.9" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="MOTOR1" gate="-3" pin="KL"/>
-<wire x1="182.88" y1="50.8" x2="187.96" y2="50.8" width="0.1524" layer="91"/>
-<label x="187.96" y="50.8" size="1.778" layer="95"/>
+<wire x1="205.74" y1="86.36" x2="210.82" y2="86.36" width="0.1524" layer="91"/>
+<label x="210.82" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="S1_2B" class="0">
 <segment>
-<pinref part="SV2" gate="1" pin="6"/>
+<pinref part="MOT1_2" gate="1" pin="6"/>
 <wire x1="142.24" y1="91.44" x2="147.32" y2="91.44" width="0.1524" layer="91"/>
 <label x="147.32" y="91.44" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="MOTOR1" gate="-4" pin="KL"/>
-<wire x1="182.88" y1="45.72" x2="187.96" y2="45.72" width="0.1524" layer="91"/>
-<label x="187.96" y="45.72" size="1.778" layer="95"/>
+<wire x1="205.74" y1="81.28" x2="210.82" y2="81.28" width="0.1524" layer="91"/>
+<label x="210.82" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="S1_DIR" class="0">
@@ -8720,7 +8740,7 @@ DIN A4, landscape with location and doc. field</description>
 <label x="60.96" y="132.08" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="SV1" gate="1" pin="1"/>
+<pinref part="MOT1_1" gate="1" pin="1"/>
 <wire x1="116.84" y1="78.74" x2="121.92" y2="78.74" width="0.1524" layer="91"/>
 <label x="121.92" y="78.74" size="1.778" layer="95"/>
 </segment>
@@ -8732,7 +8752,7 @@ DIN A4, landscape with location and doc. field</description>
 <label x="58.42" y="132.08" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="SV1" gate="1" pin="2"/>
+<pinref part="MOT1_1" gate="1" pin="2"/>
 <wire x1="116.84" y1="81.28" x2="121.92" y2="81.28" width="0.1524" layer="91"/>
 <label x="121.92" y="81.28" size="1.778" layer="95"/>
 </segment>
@@ -8744,14 +8764,14 @@ DIN A4, landscape with location and doc. field</description>
 <label x="55.88" y="132.08" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="SV1" gate="1" pin="8"/>
+<pinref part="MOT1_1" gate="1" pin="8"/>
 <wire x1="116.84" y1="96.52" x2="121.92" y2="96.52" width="0.1524" layer="91"/>
 <label x="121.92" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="+5V" class="0">
 <segment>
-<pinref part="SV2" gate="1" pin="2"/>
+<pinref part="MOT1_2" gate="1" pin="2"/>
 <wire x1="142.24" y1="81.28" x2="160.02" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="P+2" gate="1" pin="+5V"/>
 <wire x1="160.02" y1="81.28" x2="160.02" y2="83.82" width="0.1524" layer="91"/>
@@ -8763,6 +8783,12 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="48.26" y1="53.34" x2="45.72" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="53.34" x2="45.72" y2="58.42" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<wire x1="142.24" y1="43.18" x2="160.02" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="P+1" gate="1" pin="+5V"/>
+<wire x1="160.02" y1="43.18" x2="160.02" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="MOT2_2" gate="1" pin="2"/>
+</segment>
 </net>
 <net name="+12V" class="0">
 <segment>
@@ -8772,19 +8798,129 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="175.26" y1="134.62" x2="175.26" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SUPPLY5" gate="+12V" pin="+12V"/>
 <pinref part="C6" gate="G$1" pin="+"/>
-<wire x1="160.02" y1="104.14" x2="160.02" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="101.6" x2="154.94" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="154.94" y1="101.6" x2="154.94" y2="96.52" width="0.1524" layer="91"/>
-<junction x="160.02" y="101.6"/>
-<pinref part="SV2" gate="1" pin="8"/>
-<wire x1="154.94" y1="96.52" x2="142.24" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="SUPPLY5" gate="+12V" pin="+12V"/>
+<wire x1="190.5" y1="137.16" x2="190.5" y2="134.62" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY1" gate="+12V" pin="+12V"/>
+<wire x1="154.94" y1="66.04" x2="154.94" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="58.42" x2="142.24" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="MOT2_2" gate="1" pin="8"/>
+<wire x1="142.24" y1="55.88" x2="154.94" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="MOT2_2" gate="1" pin="7"/>
+<wire x1="154.94" y1="55.88" x2="154.94" y2="58.42" width="0.1524" layer="91"/>
+<junction x="154.94" y="58.42"/>
+</segment>
+<segment>
+<pinref part="MOT1_2" gate="1" pin="7"/>
+<pinref part="SUPPLY2" gate="+12V" pin="+12V"/>
+<wire x1="142.24" y1="93.98" x2="154.94" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="93.98" x2="154.94" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="MS1" class="0">
+<net name="N$1" class="0">
 <segment>
-<pinref part="SV1" gate="1" pin="7"/>
+<pinref part="MOT2_1" gate="1" pin="3"/>
+<wire x1="116.84" y1="45.72" x2="119.38" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="45.72" x2="119.38" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="MOT2_1" gate="1" pin="4"/>
+<wire x1="119.38" y1="48.26" x2="116.84" y2="48.26" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="S2_STEP" class="0">
+<segment>
+<pinref part="MOT2_1" gate="1" pin="2"/>
+<wire x1="116.84" y1="43.18" x2="121.92" y2="43.18" width="0.1524" layer="91"/>
+<label x="121.92" y="43.18" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="S2_DIR" class="0">
+<segment>
+<pinref part="MOT2_1" gate="1" pin="1"/>
+<wire x1="121.92" y1="40.64" x2="116.84" y2="40.64" width="0.1524" layer="91"/>
+<label x="121.92" y="40.64" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MOT2_MS3" class="0">
+<segment>
+<pinref part="MOT2_1" gate="1" pin="5"/>
+<wire x1="116.84" y1="50.8" x2="121.92" y2="50.8" width="0.1524" layer="91"/>
+<label x="121.92" y="50.8" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MOT2_MS2" class="0">
+<segment>
+<pinref part="MOT2_1" gate="1" pin="6"/>
+<wire x1="116.84" y1="53.34" x2="121.92" y2="53.34" width="0.1524" layer="91"/>
+<label x="121.92" y="53.34" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MOT2_MS1" class="0">
+<segment>
+<pinref part="MOT2_1" gate="1" pin="7"/>
+<wire x1="116.84" y1="55.88" x2="121.92" y2="55.88" width="0.1524" layer="91"/>
+<label x="121.92" y="55.88" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="S2_EN" class="0">
+<segment>
+<pinref part="MOT2_1" gate="1" pin="8"/>
+<wire x1="116.84" y1="58.42" x2="121.92" y2="58.42" width="0.1524" layer="91"/>
+<label x="121.92" y="58.42" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="S2_1B" class="0">
+<segment>
+<pinref part="MOTOR2" gate="-1" pin="KL"/>
+<wire x1="205.74" y1="73.66" x2="210.82" y2="73.66" width="0.1524" layer="91"/>
+<label x="210.82" y="73.66" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="MOT2_2" gate="1" pin="3"/>
+<wire x1="142.24" y1="45.72" x2="147.32" y2="45.72" width="0.1524" layer="91"/>
+<label x="147.32" y="45.72" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="S2_1A" class="0">
+<segment>
+<pinref part="MOTOR2" gate="-2" pin="KL"/>
+<wire x1="205.74" y1="68.58" x2="210.82" y2="68.58" width="0.1524" layer="91"/>
+<label x="210.82" y="68.58" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="MOT2_2" gate="1" pin="4"/>
+<wire x1="142.24" y1="48.26" x2="147.32" y2="48.26" width="0.1524" layer="91"/>
+<label x="147.32" y="48.26" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="S2_2A" class="0">
+<segment>
+<pinref part="MOTOR2" gate="-3" pin="KL"/>
+<wire x1="205.74" y1="63.5" x2="210.82" y2="63.5" width="0.1524" layer="91"/>
+<label x="210.82" y="63.5" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="MOT2_2" gate="1" pin="5"/>
+<wire x1="142.24" y1="50.8" x2="147.32" y2="50.8" width="0.1524" layer="91"/>
+<label x="147.32" y="50.8" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="S2_2B" class="0">
+<segment>
+<pinref part="MOTOR2" gate="-4" pin="KL"/>
+<wire x1="205.74" y1="58.42" x2="210.82" y2="58.42" width="0.1524" layer="91"/>
+<label x="210.82" y="58.42" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="MOT2_2" gate="1" pin="6"/>
+<wire x1="142.24" y1="53.34" x2="147.32" y2="53.34" width="0.1524" layer="91"/>
+<label x="147.32" y="53.34" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MOT1_MS1" class="0">
+<segment>
+<pinref part="MOT1_1" gate="1" pin="7"/>
 <wire x1="116.84" y1="93.98" x2="121.92" y2="93.98" width="0.1524" layer="91"/>
 <label x="121.92" y="93.98" size="1.778" layer="95"/>
 </segment>
@@ -8794,9 +8930,9 @@ DIN A4, landscape with location and doc. field</description>
 <label x="40.64" y="134.62" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="MS2" class="0">
+<net name="MOT1_MS2" class="0">
 <segment>
-<pinref part="SV1" gate="1" pin="6"/>
+<pinref part="MOT1_1" gate="1" pin="6"/>
 <wire x1="116.84" y1="91.44" x2="121.92" y2="91.44" width="0.1524" layer="91"/>
 <label x="121.92" y="91.44" size="1.778" layer="95"/>
 </segment>
@@ -8806,9 +8942,9 @@ DIN A4, landscape with location and doc. field</description>
 <label x="43.18" y="134.62" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="MS3" class="0">
+<net name="MOT1_MS3" class="0">
 <segment>
-<pinref part="SV1" gate="1" pin="5"/>
+<pinref part="MOT1_1" gate="1" pin="5"/>
 <wire x1="116.84" y1="88.9" x2="121.92" y2="88.9" width="0.1524" layer="91"/>
 <label x="121.92" y="88.9" size="1.778" layer="95"/>
 </segment>
@@ -8816,6 +8952,12 @@ DIN A4, landscape with location and doc. field</description>
 <pinref part="U$1" gate="G$1" pin="D9"/>
 <wire x1="45.72" y1="127" x2="45.72" y2="134.62" width="0.1524" layer="91"/>
 <label x="45.72" y="134.62" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="MOT1_2" gate="1" pin="8"/>
+<wire x1="154.94" y1="96.52" x2="142.24" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
