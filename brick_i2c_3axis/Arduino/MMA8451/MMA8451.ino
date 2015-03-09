@@ -1,6 +1,6 @@
 #include <Wire.h>
 
-#define DEVICE_ADDR (0x68) // スレーブデバイスのアドレス
+#define DEVICE_ADDR (0x1C) // スレーブデバイスのアドレス
 
 void setup()
 {
@@ -8,9 +8,9 @@ void setup()
   Wire.begin();       // I2Cの開始
   
   Serial.println("Checking I2C device...");
-  byte who_am_i = 0x00;
-  readI2c(0x0D, 1, &who_am_i);
-  if(who_am_i == 0x03){
+  byte who_am_i = 0;
+  readI2c(0x0d, 1, &who_am_i);
+  if(who_am_i == 0x1A){
     Serial.println("I am MMA8451");
   }else{
     Serial.println("Not detected");
@@ -137,12 +137,13 @@ void writeI2c(byte register_addr, byte value) {
 // I2Cへの読み込み
 void readI2c(byte register_addr, int num, byte *buf) {
   Wire.beginTransmission(DEVICE_ADDR); 
-  Wire.write(register_addr);           
+  Wire.write(register_addr);  
+ Serial.println("Debug");  
   Wire.endTransmission();         
 
   Wire.beginTransmission(DEVICE_ADDR); 
   Wire.requestFrom(DEVICE_ADDR, num);  
-
+ 
   int i = 0;
   while (Wire.available())
   {
@@ -157,5 +158,5 @@ void readI2c(byte register_addr, int num, byte *buf) {
     
     i++;   
   }
-  Wire.endTransmission();         
+  Wire.endTransmission(false);         
 }
