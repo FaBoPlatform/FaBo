@@ -19056,7 +19056,7 @@
 <rectangle x1="0.288290625" y1="3.71983125" x2="0.537209375" y2="3.73760625" layer="21"/>
 <rectangle x1="0.34163125" y1="3.737609375" x2="0.50165" y2="3.755390625" layer="21"/>
 <rectangle x1="0.377190625" y1="3.755390625" x2="0.466090625" y2="3.773165625" layer="21"/>
-<text x="0" y="4.445" size="1.6764" layer="21" font="vector" align="bottom-center">FaBo</text>
+<text x="0" y="5.08" size="1.6764" layer="21" font="vector" align="bottom-center">FaBo</text>
 </package>
 </packages>
 <symbols>
