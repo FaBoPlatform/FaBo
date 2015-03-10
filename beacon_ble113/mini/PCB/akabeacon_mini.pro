@@ -2,24 +2,24 @@ EAGLE AutoRouter Statistics:
 
 Job           : /Users/sasakiakira/Documents/workspace_fabo_github/FaBo/beacon_ble113/mini/PCB/akabeacon_mini.brd
 
-Start at      : 15:47:14 (2014/12/29)
-End at        : 15:47:23 (2014/12/29)
-Elapsed time  : 00:00:07
+Start at      : 18:09:32 (2015/03/09)
+End at        : 18:09:34 (2015/03/09)
+Elapsed time  : 00:00:00
 
 Signals       :    27   RoutingGrid: 3.93701 mil  Layers: 2
-Connections   :    44   predefined:  0 ( 0 Vias )
+Connections   :    44   predefined:  44 ( 25 Vias )
 
-Router memory :   748216
+Router memory :   671376
 
-Passname          :    Busses     Route Optimize1 Optimize2 Optimize3 Optimize4
+Passname          :     Route Optimize1 Optimize2 Optimize3 Optimize4
 
-Time per pass     :  00:00:00  00:00:02  00:00:02  00:00:01  00:00:01  00:00:01
-Number of Ripups  :         0         4         0         0         0         0
-max. Level        :         0         2         0         0         0         0
-max. Total        :         0        19         0         0         0         0
+Time per pass     :  00:00:00  00:00:00  00:00:00  00:00:00  00:00:00
+Number of Ripups  :         0         0         0         0         0
+max. Level        :         0         0         0         0         0
+max. Total        :         0         0         0         0         0
 
-Routed            :         1        43        43        43        43        43
-Vias              :         0        43        29        29        29        29
-Resolution        :     2.3 %    97.7 %    97.7 %    97.7 %    97.7 %    97.7 %
+Routed            :         0         0         0         0         0
+Vias              :         0         0         0         0         0
+Resolution        :   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
 
-Final             : 97.7% finished. Polygons may have fallen apart.
+Final             : 100.0% finished
