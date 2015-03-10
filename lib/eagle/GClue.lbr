@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -15196,6 +15196,12 @@
 <package name="SCREWPAD_3.2MM">
 <pad name="1" x="0" y="0" drill="3.2" diameter="4"/>
 <circle x="0" y="0" radius="2.55" width="0.127" layer="51"/>
+</package>
+<package name="BUZZER-PKM13EPYH4000-A0">
+<pad name="1" x="-2.5" y="0" drill="1" shape="octagon"/>
+<pad name="2" x="2.5" y="0" drill="1" shape="octagon"/>
+<circle x="0" y="0" radius="6.3" width="0.127" layer="21"/>
+<text x="-2.54" y="2.54" size="1.016" layer="25" font="vector">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -33015,6 +33021,20 @@ FTDI USB to Serial UART interface</description>
 <symbol name="SCREW-PAD">
 <circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
 </symbol>
+<symbol name="BUZZER">
+<wire x1="-2.54" y1="-5.08" x2="1.27" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-5.08" x2="1.27" y2="-5.715" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-5.715" x2="2.54" y2="-5.715" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-5.715" x2="2.54" y2="5.715" width="0.254" layer="94"/>
+<wire x1="2.54" y1="5.715" x2="1.27" y2="5.715" width="0.254" layer="94"/>
+<wire x1="1.27" y1="5.715" x2="1.27" y2="5.08" width="0.254" layer="94"/>
+<wire x1="1.27" y1="5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="1.27" y1="5.08" x2="1.27" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<text x="-5.08" y="6.35" size="1.778" layer="95">&gt;NAME</text>
+<pin name="2" x="-7.62" y="-2.54" visible="off" length="middle" direction="pas"/>
+<pin name="1" x="-7.62" y="2.54" visible="off" length="middle" direction="pas"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="CH7410-2032LF">
@@ -34327,6 +34347,22 @@ standard SMD and PTH capacitor</description>
 </technologies>
 </device>
 <device name="-3.2MM" package="SCREWPAD_3.2MM">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BUZZER" prefix="U" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="BUZZER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-PKM13EPYH4000" package="BUZZER-PKM13EPYH4000-A0">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
