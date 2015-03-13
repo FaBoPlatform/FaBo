@@ -277,6 +277,7 @@ public class PhonejackSerial {
 			// check if the pulse is started
 			if !pulsestart {
 				if exdata - data > 4000 {
+					//println("** start!! \(exdata)")
 					pulsestart = true
 				} else {
 					exdata = data
@@ -291,11 +292,12 @@ public class PhonejackSerial {
 			
 			// skip the end bit
 			if framecnt > dev * 8 {
-				if framecnt > dev * 10 {
+				if framecnt > dev * 20 {
 					// init
 					pulsestart = false;
 					framecnt = 0
 					receivedData = 0
+					exdata = data
 				}
 				continue
 			}
