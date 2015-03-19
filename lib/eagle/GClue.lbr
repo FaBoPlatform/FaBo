@@ -18992,6 +18992,84 @@
 <rectangle x1="0.377190625" y1="3.755390625" x2="0.466090625" y2="3.773165625" layer="21"/>
 <text x="0" y="5.08" size="1.6764" layer="21" font="vector" align="bottom-center">FaBo</text>
 </package>
+<package name="BRICK_3PIN_MIDDLE">
+<pad name="IN/OUT" x="-2.54" y="-7.62" drill="0.9" shape="long" rot="R90"/>
+<pad name="VCC" x="0" y="-7.62" drill="0.9" shape="long" rot="R90"/>
+<pad name="GND" x="2.54" y="-7.62" drill="0.9" shape="long" rot="R90"/>
+<text x="-2.54" y="-5.715" size="0.8128" layer="21" font="vector" rot="R90" align="center-left">I/O</text>
+<text x="0" y="-5.715" size="0.8128" layer="21" font="vector" rot="R90" align="center-left">VCC</text>
+<text x="2.54" y="-5.715" size="0.8128" layer="21" font="vector" rot="R90" align="center-left">GND</text>
+<wire x1="-16.51" y1="8.89" x2="-16.51" y2="-12.7" width="0" layer="20"/>
+<wire x1="-16.51" y1="-12.7" x2="-13.97" y2="-15.24" width="0" layer="20" curve="90"/>
+<wire x1="-13.97" y1="-15.24" x2="12.7" y2="-15.24" width="0" layer="20"/>
+<wire x1="12.7" y1="-15.24" x2="15.24" y2="-12.7" width="0" layer="20" curve="90"/>
+<wire x1="15.24" y1="-12.7" x2="15.24" y2="8.89" width="0" layer="20"/>
+<wire x1="-5.08" y1="-16.51" x2="-5.08" y2="-7.62" width="0.127" layer="21"/>
+<pad name="P$5" x="-12.7" y="8.89" drill="3" diameter="3.81"/>
+<pad name="P$6" x="11.43" y="8.89" drill="3" diameter="3.81"/>
+<pad name="P$7" x="-12.7" y="-11.43" drill="3" diameter="3.81"/>
+<pad name="P$8" x="11.43" y="-11.43" drill="3" diameter="3.81"/>
+<wire x1="-16.51" y1="8.89" x2="15.24" y2="8.89" width="0" layer="20" curve="-180"/>
+<circle x="-12.7" y="8.89" radius="2.55" width="0.127" layer="51"/>
+<circle x="-12.7" y="-11.43" radius="2.55" width="0.127" layer="51"/>
+<circle x="11.43" y="8.89" radius="2.55" width="0.127" layer="51"/>
+<circle x="11.43" y="-11.43" radius="2.55" width="0.127" layer="51"/>
+<wire x1="-5.08" y1="-7.62" x2="-5.08" y2="-21.02" width="0.127" layer="51"/>
+<wire x1="5.08" y1="-7.62" x2="5.08" y2="-21.02" width="0.127" layer="51"/>
+<wire x1="-5.08" y1="-21.02" x2="-3.8" y2="-21.02" width="0.127" layer="51"/>
+<wire x1="-3.8" y1="-21.02" x2="-2.8" y2="-21.02" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="-21.02" x2="2.8" y2="-21.02" width="0.127" layer="51"/>
+<wire x1="2.8" y1="-21.02" x2="3.8" y2="-21.02" width="0.127" layer="51"/>
+<wire x1="3.8" y1="-21.02" x2="5.08" y2="-21.02" width="0.127" layer="51"/>
+<wire x1="-3.8" y1="-17.22" x2="-3.8" y2="-21.02" width="0.127" layer="51"/>
+<wire x1="-3.8" y1="-17.22" x2="3.8" y2="-17.22" width="0.127" layer="51"/>
+<wire x1="3.8" y1="-17.22" x2="3.8" y2="-21.02" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="-21.02" x2="-2.8" y2="-18.62" width="0.127" layer="51"/>
+<wire x1="2.8" y1="-21.02" x2="2.8" y2="-18.62" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="-18.62" x2="2.8" y2="-18.62" width="0.127" layer="51"/>
+<wire x1="5.08" y1="-16.51" x2="5.08" y2="-7.62" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="-7.62" x2="-5.08" y2="-7.62" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-7.62" x2="3.81" y2="-7.62" width="0.127" layer="21"/>
+</package>
+<package name="BRICK_3PIN_BIG">
+<pad name="IN/OUT" x="-1.27" y="-8.89" drill="0.9" shape="long" rot="R90"/>
+<pad name="VCC" x="1.27" y="-8.89" drill="0.9" shape="long" rot="R90"/>
+<pad name="GND" x="3.81" y="-8.89" drill="0.9" shape="long" rot="R90"/>
+<text x="-1.27" y="-6.985" size="0.8128" layer="21" font="vector" rot="R90" align="center-left">I/O</text>
+<text x="1.27" y="-6.985" size="0.8128" layer="21" font="vector" rot="R90" align="center-left">VCC</text>
+<text x="3.81" y="-6.985" size="0.8128" layer="21" font="vector" rot="R90" align="center-left">GND</text>
+<wire x1="-20.32" y1="5.08" x2="-20.32" y2="-11.51" width="0" layer="20"/>
+<wire x1="-20.32" y1="-11.51" x2="-15.32" y2="-16.51" width="0" layer="20" curve="90"/>
+<wire x1="-15.32" y1="-16.51" x2="16.59" y2="-16.51" width="0" layer="20"/>
+<wire x1="16.59" y1="-16.51" x2="21.59" y2="-11.51" width="0" layer="20" curve="90"/>
+<wire x1="21.59" y1="-11.51" x2="21.59" y2="5.08" width="0" layer="20"/>
+<wire x1="-3.81" y1="-17.78" x2="-3.81" y2="-8.89" width="0.127" layer="21"/>
+<pad name="P$5" x="-16.51" y="7.62" drill="3" diameter="3.81"/>
+<pad name="P$6" x="17.78" y="7.62" drill="3" diameter="3.81"/>
+<pad name="P$7" x="-16.51" y="-12.7" drill="3" diameter="3.81"/>
+<pad name="P$8" x="17.78" y="-12.7" drill="3" diameter="3.81"/>
+<wire x1="-20.32" y1="5.08" x2="21.59" y2="5.08" width="0" layer="20" curve="-180"/>
+<circle x="-16.51" y="7.62" radius="2.55" width="0.127" layer="51"/>
+<circle x="-16.51" y="-12.7" radius="2.55" width="0.127" layer="51"/>
+<circle x="17.78" y="7.62" radius="2.55" width="0.127" layer="51"/>
+<circle x="17.78" y="-12.7" radius="2.55" width="0.127" layer="51"/>
+<wire x1="-3.81" y1="-8.89" x2="-3.81" y2="-22.29" width="0.127" layer="51"/>
+<wire x1="6.35" y1="-8.89" x2="6.35" y2="-22.29" width="0.127" layer="51"/>
+<wire x1="-3.81" y1="-22.29" x2="-2.53" y2="-22.29" width="0.127" layer="51"/>
+<wire x1="-2.53" y1="-22.29" x2="-1.53" y2="-22.29" width="0.127" layer="51"/>
+<wire x1="-1.53" y1="-22.29" x2="4.07" y2="-22.29" width="0.127" layer="51"/>
+<wire x1="4.07" y1="-22.29" x2="5.07" y2="-22.29" width="0.127" layer="51"/>
+<wire x1="5.07" y1="-22.29" x2="6.35" y2="-22.29" width="0.127" layer="51"/>
+<wire x1="-2.53" y1="-18.49" x2="-2.53" y2="-22.29" width="0.127" layer="51"/>
+<wire x1="-2.53" y1="-18.49" x2="5.07" y2="-18.49" width="0.127" layer="51"/>
+<wire x1="5.07" y1="-18.49" x2="5.07" y2="-22.29" width="0.127" layer="51"/>
+<wire x1="-1.53" y1="-22.29" x2="-1.53" y2="-19.89" width="0.127" layer="51"/>
+<wire x1="4.07" y1="-22.29" x2="4.07" y2="-19.89" width="0.127" layer="51"/>
+<wire x1="-1.53" y1="-19.89" x2="4.07" y2="-19.89" width="0.127" layer="51"/>
+<wire x1="6.35" y1="-17.78" x2="6.35" y2="-8.89" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-8.89" x2="-3.81" y2="-8.89" width="0.127" layer="21"/>
+<wire x1="6.35" y1="-8.89" x2="5.08" y2="-8.89" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CH7410-2032LF">
@@ -38151,6 +38229,40 @@ standard SMD and PTH capacitor</description>
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BRICK_3PIN_BIG">
+<gates>
+<gate name="G$1" symbol="BRICK_3PIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="BRICK_3PIN_BIG">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="I/O" pad="IN/OUT"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BRICK_3PIN_MIDDLE">
+<gates>
+<gate name="G$1" symbol="BRICK_3PIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="BRICK_3PIN_MIDDLE">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="I/O" pad="IN/OUT"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
 </connects>
 <technologies>
 <technology name=""/>
