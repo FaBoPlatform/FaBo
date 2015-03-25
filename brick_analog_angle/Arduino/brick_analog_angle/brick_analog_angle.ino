@@ -1,3 +1,9 @@
+//
+// FaBo Brick Sample
+//
+// brick_analog_angle
+//
+
 int sensorPin = A0;    
 int ledPin = 3;  
 int sensorValue = 0;
