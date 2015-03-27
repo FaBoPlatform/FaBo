@@ -126,7 +126,8 @@
 </layers>
 <board>
 <plain>
-<text x="19" y="34" size="1.4224" layer="21">Rev0.1</text>
+<text x="11.5" y="25.5" size="1.4224" layer="21">Rev0.2</text>
+<text x="10" y="27.5" size="1.4224" layer="21">PhoneJack</text>
 </plain>
 <libraries>
 <library name="SparkFun">
