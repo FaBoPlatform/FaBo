@@ -1,4 +1,3 @@
-// Using #508 touch brick and #505 LED brick
 int buttonPin = A0;
 int ledPin = A1;
 
@@ -14,9 +13,9 @@ void loop(){
   buttonState = digitalRead(buttonPin);
 
   if (buttonState == HIGH) {        
-    digitalWrite(ledPin, LOW);  
+    digitalWrite(ledPin, HIGH);  
   } 
   else {
-    digitalWrite(ledPin, HIGH); 
+    digitalWrite(ledPin, LOW); 
   }
 }
