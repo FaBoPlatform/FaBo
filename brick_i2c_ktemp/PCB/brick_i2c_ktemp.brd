@@ -129,7 +129,7 @@
 <text x="12.7" y="36.83" size="1.778" layer="21" font="vector" align="bottom-center">+</text>
 <text x="15.24" y="36.83" size="1.778" layer="21" font="vector" align="bottom-center">-</text>
 <text x="1.27" y="12.7" size="1.27" layer="21" font="vector">KTEMP</text>
-<text x="1.27" y="11.43" size="1.016" layer="21" font="vector">Rev.Beta</text>
+<text x="1.27" y="11.43" size="1.016" layer="21" font="vector">Rev.Beta2</text>
 </plain>
 <libraries>
 <library name="pinhead">

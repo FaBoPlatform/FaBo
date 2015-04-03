@@ -126,7 +126,7 @@
 </layers>
 <board>
 <plain>
-<text x="5.08" y="8.89" size="1.016" layer="21" font="vector" rot="R90">Rev.Beta</text>
+<text x="5.08" y="8.89" size="1.016" layer="21" font="vector" rot="R90">Rev.Beta2</text>
 <text x="3.81" y="8.89" size="1.27" layer="21" font="vector" rot="R90">UV</text>
 </plain>
 <libraries>

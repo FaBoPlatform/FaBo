@@ -127,7 +127,7 @@
 <board>
 <plain>
 <rectangle x1="11.3075" y1="33.075" x2="29.3075" y2="43.075" layer="39"/>
-<text x="20.955" y="11.43" size="0.8128" layer="21" font="vector">Rev. Beta</text>
+<text x="20.955" y="11.43" size="0.8128" layer="21" font="vector">Rev. Beta2</text>
 <rectangle x1="11.3075" y1="33.075" x2="29.3075" y2="43.075" layer="40"/>
 <text x="20.955" y="12.3825" size="1.016" layer="21" font="vector">BLE</text>
 </plain>

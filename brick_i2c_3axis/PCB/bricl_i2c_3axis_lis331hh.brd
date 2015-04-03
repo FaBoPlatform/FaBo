@@ -128,7 +128,7 @@
 <plain>
 <text x="1.27" y="13.97" size="1.27" layer="21" font="vector">3AXIS
 LIS331HH</text>
-<text x="1.27" y="12.7" size="1.016" layer="21" font="vector">Rev.Beta</text>
+<text x="1.27" y="12.7" size="1.016" layer="21" font="vector">Rev.Beta2</text>
 </plain>
 <libraries>
 <library name="gclue">

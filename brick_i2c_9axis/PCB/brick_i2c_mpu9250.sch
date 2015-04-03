@@ -21499,7 +21499,7 @@
 <sheets>
 <sheet>
 <plain>
-<text x="254" y="5.08" size="2.54" layer="94" align="bottom-center">Beta</text>
+<text x="254" y="5.08" size="2.54" layer="94" align="bottom-center">Beta2</text>
 </plain>
 <instances>
 <instance part="+3V1" gate="G$1" x="99.06" y="104.14"/>

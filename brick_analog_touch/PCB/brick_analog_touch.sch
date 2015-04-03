@@ -21862,7 +21862,7 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <sheets>
 <sheet>
 <plain>
-<text x="251.46" y="5.08" size="2.54" layer="94" align="bottom-center">Beta</text>
+<text x="251.46" y="5.08" size="2.54" layer="94" align="bottom-center">Beta2</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="142.24" y="93.98" rot="R180"/>

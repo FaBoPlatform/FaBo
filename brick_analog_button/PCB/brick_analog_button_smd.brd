@@ -127,7 +127,7 @@
 <board>
 <plain>
 <text x="3.81" y="8.89" size="1.27" layer="21" font="vector" rot="R90">BUTTON</text>
-<text x="5.08" y="8.89" size="1.016" layer="21" font="vector" rot="R90">Rev.Beta</text>
+<text x="5.08" y="8.89" size="1.016" layer="21" font="vector" rot="R90">Rev.Beta2</text>
 </plain>
 <libraries>
 <library name="gclue">

@@ -127,7 +127,7 @@
 <board>
 <plain>
 <text x="1.27" y="13.97" size="1.27" layer="21" font="vector">RTC</text>
-<text x="1.27" y="12.7" size="1.016" layer="21" font="vector">Rev.Beta</text>
+<text x="1.27" y="12.7" size="1.016" layer="21" font="vector">Rev.Beta2</text>
 <text x="16.51" y="26.035" size="0.8128" layer="21" font="vector">VBAT</text>
 <text x="12.3825" y="18.0975" size="0.6096" layer="21" font="vector">DS1307</text>
 </plain>

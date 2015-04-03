@@ -127,7 +127,7 @@
 <board>
 <plain>
 <text x="1.27" y="10.795" size="1.27" layer="21" font="vector">OLED</text>
-<text x="1.27" y="9.525" size="1.016" layer="21" font="vector">Rev.Beta</text>
+<text x="1.27" y="9.525" size="1.016" layer="21" font="vector">Rev.Beta2</text>
 </plain>
 <libraries>
 <library name="gclueParts">
