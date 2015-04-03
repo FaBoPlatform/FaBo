@@ -34,6 +34,5 @@ void loop()
     Serial.print(":");
     Serial.println(rd);
   }
-  sSerial.flush();
 }
 
