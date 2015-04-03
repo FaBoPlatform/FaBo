@@ -1087,8 +1087,8 @@ http://akizukidenshi.com/download/ds/avvicon/MJ-4PP-9.pdf</description>
 <part name="R2" library="gclue" deviceset="RESISTOR" device="0603" value="22k"/>
 <part name="GND3" library="gclue" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
-<part name="R3" library="gclue" deviceset="RESISTOR" device="0603" value="5.1k"/>
-<part name="R4" library="gclue" deviceset="RESISTOR" device="0603" value="3.3k"/>
+<part name="R3" library="gclue" deviceset="RESISTOR" device="0603" value="4.7k"/>
+<part name="R4" library="gclue" deviceset="RESISTOR" device="0603" value="3k"/>
 <part name="GND4" library="gclue" deviceset="GND" device=""/>
 <part name="GND5" library="gclue" deviceset="GND" device=""/>
 <part name="C2" library="gclue" deviceset="CAP" device="-EIA0603" value="1u"/>
