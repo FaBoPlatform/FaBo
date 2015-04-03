@@ -1,25 +1,25 @@
 EAGLE AutoRouter Statistics:
 
-Job           : /Users/sasakiakira/Documents/workspace_fabo_github/FaBo/brick_i2c_9axis/PCB/brick_i2c_mpu9250.brd
+Job           : /Users/yamauchi/Documents/eagle/GClue/FaBo/brick_i2c_9axis/PCB/brick_i2c_mpu9250.brd
 
-Start at      : 11:29:39 (2015/03/14)
-End at        : 11:29:45 (2015/03/14)
-Elapsed time  : 00:00:03
+Start at      : 09:24:17 (2015/04/03)
+End at        : 09:24:23 (2015/04/03)
+Elapsed time  : 00:00:01
 
-Signals       :     5   RoutingGrid: 4 mil  Layers: 2
-Connections   :    19   predefined:  0 ( 0 Vias )
+Signals       :     5   RoutingGrid: 6.25 mil  Layers: 2
+Connections   :    19   predefined:  7 ( 0 Vias )
 
-Router memory :   510336
+Router memory :   237552
 
-Passname          : TopRouter     Route Optimize1 Optimize2 Optimize3 Optimize4
+Passname          :     Route Optimize1 Optimize2 Optimize3 Optimize4
 
-Time per pass     :  00:00:02  00:00:00  00:00:00  00:00:01  00:00:00  00:00:00
-Number of Ripups  :         0         0         0         0         0         0
-max. Level        :         0         0         0         0         0         0
-max. Total        :         0         0         0         0         0         0
+Time per pass     :  00:00:00  00:00:00  00:00:01  00:00:00  00:00:00
+Number of Ripups  :         1         0         0         0         0
+max. Level        :         1         0         0         0         0
+max. Total        :         7         0         0         0         0
 
-Routed            :        10        19        19        19        19        19
-Vias              :         0         7         7         5         6         6
-Resolution        :    52.6 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
+Routed            :        12        12        12        12        12
+Vias              :         5         2         2         2         2
+Resolution        :   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
 
-Final             : 100.0% finished
+Final             : 78.9% finished. Polygons may have fallen apart.
