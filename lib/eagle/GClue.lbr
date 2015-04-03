@@ -16420,7 +16420,7 @@
 <rectangle x1="0.07658125" y1="1.2040875" x2="0.15836875" y2="1.209925" layer="21"/>
 <rectangle x1="0.09410625" y1="1.209928125" x2="0.14668125" y2="1.215771875" layer="21"/>
 <rectangle x1="0.105790625" y1="1.215771875" x2="0.134996875" y2="1.221609375" layer="21"/>
-<text x="0" y="1.905" size="0.8128" layer="21" font="vector" align="bottom-center">FaBo</text>
+<text x="0" y="1.5875" size="0.8128" layer="21" font="vector" align="bottom-center">FaBo</text>
 </package>
 <package name="LOGO_FABO_M">
 <rectangle x1="0.094740625" y1="-2.545840625" x2="0.351790625" y2="-2.534159375" layer="21"/>
@@ -42562,6 +42562,11 @@ FTDI USB to Serial UART interface</description>
 </gates>
 <devices>
 <device name="-FABO_M" package="LOGO_FABO_M">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-FABO_S" package="LOGO_FABO_S">
 <technologies>
 <technology name=""/>
 </technologies>
