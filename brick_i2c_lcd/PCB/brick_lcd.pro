@@ -1,25 +1,25 @@
 EAGLE AutoRouter Statistics:
 
-Job           : /Users/sasakiakira/Documents/workspace_fabo_github/FaBo/brick_i2c_lcd/PCB/brick_lcd.brd
+Job           : /Users/yamauchi/Documents/eagle/GClue/FaBo/brick_i2c_lcd/PCB/brick_lcd.brd
 
-Start at      : 17:59:54 (2015/01/18)
-End at        : 17:59:56 (2015/01/18)
-Elapsed time  : 00:00:01
+Start at      : 18:20:33 (2015/04/06)
+End at        : 18:20:43 (2015/04/06)
+Elapsed time  : 00:00:08
 
-Signals       :    23   RoutingGrid: 9.84252 mil  Layers: 2
-Connections   :    24   predefined:  1 ( 4 Vias )
+Signals       :    23   RoutingGrid: 6 mil  Layers: 2
+Connections   :    24   predefined:  7 ( 4 Vias )
 
-Router memory :   98440
+Router memory :   262632
 
-Passname          :    Busses     Route Optimize1 Optimize2 Optimize3 Optimize4
+Passname          : TopRouter     Route Optimize1 Optimize2 Optimize3 Optimize4 Optimize5 Optimize6 Optimize7 Optimize8 Optimize9Optimize10Optimize11Optimize12
 
-Time per pass     :  00:00:00  00:00:01  00:00:00  00:00:00  00:00:00  00:00:00
-Number of Ripups  :         0         2         0         0         0         0
-max. Level        :         0         1         0         0         0         0
-max. Total        :         0         6         0         0         0         0
+Time per pass     :  00:00:06  00:00:00  00:00:01  00:00:00  00:00:00  00:00:00  00:00:00  00:00:00  00:00:01  00:00:00  00:00:00  00:00:00  00:00:00  00:00:00
+Number of Ripups  :         0         0         0         0         0         0         0         0         0         0         0         0         0         0
+max. Level        :         0         0         0         0         0         0         0         0         0         0         0         0         0         0
+max. Total        :         0         0         0         0         0         0         0         0         0         0         0         0         0         0
 
-Routed            :         3        23        23        23        23        23
-Vias              :         0        25        13        11        11        11
-Resolution        :    16.7 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
+Routed            :        12        17        17        17        17        17        17        17        17        17        17        17        17        17
+Vias              :         0         0         0         0         0         0         0         0         0         0         0         0         0         0
+Resolution        :    79.2 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
 
-Final             : 100.0% finished
+Final             : 87.5% finished. Polygons may have fallen apart.
