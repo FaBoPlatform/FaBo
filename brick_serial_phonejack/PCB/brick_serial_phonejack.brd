@@ -128,6 +128,7 @@
 <plain>
 <text x="5.08" y="8.89" size="1.016" layer="21" font="vector" rot="R90">Rev.Beta2</text>
 <text x="3.81" y="8.89" size="1.27" layer="21" font="vector" rot="R90">PhoneJack</text>
+<text x="25.4" y="15.875" size="0.8128" layer="21" font="vector" rot="R90" align="bottom-center">MADE IN JAPAN</text>
 </plain>
 <libraries>
 <library name="SparkFun">
@@ -4195,8 +4196,8 @@ design rules under a new name.</description>
 <element name="R4" library="gclue" package="EIA0603-RES" value="3k" x="11.43" y="21.59"/>
 <element name="C2" library="gclue" package="EIA0603-CAP" value="1u" x="6.35" y="17.78"/>
 <element name="J1" library="gclue" package="BRICK_SERIAL" value="0" x="13.97" y="19.05"/>
-<element name="U$2" library="gclue" package="LOGO_OSHW_T_S" value="" x="24.13" y="10.16"/>
-<element name="U$1" library="FaBo" package="LOGO_FABO_S" value="" x="24.2316" y="12.6492"/>
+<element name="U$2" library="gclue" package="LOGO_OSHW_T_S" value="" x="24.13" y="8.89"/>
+<element name="U$1" library="FaBo" package="LOGO_FABO_S" value="" x="24.1808" y="14.0716" rot="R90"/>
 </elements>
 <signals>
 <signal name="GND">

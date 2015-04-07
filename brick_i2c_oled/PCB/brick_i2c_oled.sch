@@ -21867,8 +21867,8 @@
 <part name="C4" library="GClue-Capacitor" deviceset="CAPACITOR" device="0603" value="0.1uf"/>
 <part name="C5" library="GClue-Capacitor" deviceset="CAPACITOR" device="0603" value="4.7uf"/>
 <part name="J1" library="gclue" deviceset="BRICK_I2C" device=""/>
-<part name="U$1" library="gclue" deviceset="LOGO_OSHW_T" device="-M"/>
 <part name="U$6" library="FaBo" deviceset="LOGO_FABO" device="-S"/>
+<part name="U$1" library="gclue" deviceset="LOGO_OSHW_T" device="-S"/>
 </parts>
 <sheets>
 <sheet>
@@ -21903,8 +21903,8 @@
 <instance part="C4" gate="G$1" x="203.2" y="71.12" rot="R90"/>
 <instance part="C5" gate="G$1" x="195.58" y="71.12" rot="R90"/>
 <instance part="J1" gate="G$1" x="66.04" y="66.04"/>
-<instance part="U$1" gate="G$1" x="208.28" y="12.7"/>
 <instance part="U$6" gate="G$1" x="162.56" y="22.86"/>
+<instance part="U$1" gate="G$1" x="208.28" y="12.7"/>
 </instances>
 <busses>
 </busses>

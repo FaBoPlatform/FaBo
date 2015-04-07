@@ -128,8 +128,9 @@
 <plain>
 <text x="12.7" y="35.56" size="1.778" layer="21" font="vector" align="bottom-center">+</text>
 <text x="15.24" y="35.56" size="1.778" layer="21" font="vector" align="bottom-center">-</text>
-<text x="1.27" y="12.7" size="1.27" layer="21" font="vector">KTEMP</text>
-<text x="1.27" y="11.43" size="1.016" layer="21" font="vector">Rev.Beta2</text>
+<text x="1.27" y="15.24" size="1.27" layer="21" font="vector">KTEMP</text>
+<text x="1.27" y="13.97" size="1.016" layer="21" font="vector">Rev.Beta2</text>
+<text x="13.97" y="25.4" size="0.8128" layer="21" font="vector" align="bottom-center">MADE IN JAPAN</text>
 </plain>
 <libraries>
 <library name="pinhead">
@@ -4181,7 +4182,7 @@ design rules under a new name.</description>
 <element name="C1" library="GClue-Capacitor" package="0603" value="0.1uf" x="16.51" y="15.24" rot="R180"/>
 <element name="C2" library="GClue-Capacitor" package="0603" value="10uf" x="16.51" y="17.78" rot="R180"/>
 <element name="U$3" library="gclue" package="LOGO_OSHW_T_M" value="" x="24.13" y="15.24"/>
-<element name="U$4" library="FaBo" package="LOGO_FABO_M" value="" x="13.97" y="25.4"/>
+<element name="U$4" library="FaBo" package="LOGO_FABO_M" value="" x="13.97" y="26.67"/>
 </elements>
 <signals>
 <signal name="SCL">

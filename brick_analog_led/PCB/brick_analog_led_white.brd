@@ -128,6 +128,7 @@
 <plain>
 <text x="3.81" y="7.62" size="1.27" layer="21" font="vector" rot="R90">LED White</text>
 <text x="5.08" y="7.62" size="1.016" layer="21" font="vector" rot="R90">Rev.Beta2</text>
+<text x="12.7" y="25.4" size="0.8128" layer="21" font="vector" align="bottom-center">MADE IN JAPAN</text>
 </plain>
 <libraries>
 <library name="gclue">

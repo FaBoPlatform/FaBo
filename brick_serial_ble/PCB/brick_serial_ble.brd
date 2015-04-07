@@ -127,9 +127,10 @@
 <board>
 <plain>
 <rectangle x1="11.3075" y1="33.075" x2="29.3075" y2="43.075" layer="39"/>
-<text x="20.955" y="6.985" size="0.8128" layer="21" font="vector">Rev. Beta2</text>
+<text x="22.86" y="6.985" size="0.8128" layer="21" font="vector" rot="R90">Rev. Beta2</text>
 <rectangle x1="11.3075" y1="33.075" x2="29.3075" y2="43.075" layer="40"/>
-<text x="20.955" y="7.9375" size="1.016" layer="21" font="vector">BLE</text>
+<text x="21.9075" y="6.985" size="1.016" layer="21" font="vector" rot="R90">BLE</text>
+<text x="27.305" y="6.985" size="0.8128" layer="21" font="vector" rot="R90">MADE IN JAPAN</text>
 </plain>
 <libraries>
 <library name="SparkFun">
@@ -3087,7 +3088,7 @@ design rules under a new name.</description>
 <element name="R7" library="GClue-Resistors" package="0603" value="10K" x="6.35" y="13.335" rot="R180"/>
 <element name="C1" library="GClue-Capacitor" package="0603" value="1uF" x="2.54" y="13.335" rot="R180"/>
 <element name="U$4" library="gclue" package="LOGO_OSHW_S" value="" x="1.524" y="7.2898"/>
-<element name="U$3" library="FaBo" package="LOGO_FABO_S" value="" x="24.13" y="10.795"/>
+<element name="U$3" library="FaBo" package="LOGO_FABO_S" value="" x="26.035" y="9.525" rot="R90"/>
 </elements>
 <signals>
 <signal name="GND">

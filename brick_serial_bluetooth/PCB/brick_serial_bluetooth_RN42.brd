@@ -126,9 +126,10 @@
 </layers>
 <board>
 <plain>
-<text x="20.32" y="13.335" size="0.8128" layer="21" font="vector">BLUETOOTH</text>
-<text x="20.32" y="12.065" size="0.8128" layer="21" font="vector">Rev.Beta2</text>
+<text x="22.225" y="8.255" size="0.8128" layer="21" font="vector" rot="R90">BLUETOOTH</text>
+<text x="23.495" y="8.89" size="0.8128" layer="21" font="vector" rot="R90">Rev.Beta2</text>
 <text x="12.7" y="34.29" size="1.016" layer="21" font="vector">RN42</text>
+<text x="27.305" y="11.43" size="0.8128" layer="21" font="vector" rot="R90" align="bottom-center">MADE IN JAPAN</text>
 </plain>
 <libraries>
 <library name="SparkFun">
@@ -4294,8 +4295,8 @@ design rules under a new name.</description>
 <element name="U$1" library="gclueBT" package="MICROCHIP-RN42" value="MICROCHIP-RN41" x="13.97" y="33.02"/>
 <element name="U$3" library="gclue" package="BRICK_SERIAL" value="" x="13.97" y="19.05"/>
 <element name="U2" library="SmartPrj" package="SOT23-DBV" value="LP2985-33DBVR" x="10.795" y="15.875" smashed="yes"/>
-<element name="U$4" library="gclue" package="LOGO_OSHW_T_S" value="" x="3.81" y="10.16"/>
-<element name="U$5" library="FaBo" package="LOGO_FABO_S" value="" x="24.13" y="8.89"/>
+<element name="U$4" library="gclue" package="LOGO_OSHW_T_S" value="" x="3.81" y="8.89"/>
+<element name="U$5" library="FaBo" package="LOGO_FABO_S" value="" x="26.035" y="9.525" rot="R90"/>
 </elements>
 <signals>
 <signal name="GND">

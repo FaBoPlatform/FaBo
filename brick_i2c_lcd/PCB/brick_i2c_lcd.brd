@@ -142,8 +142,9 @@
 <text x="9.2202" y="43.9166" size="0.8128" layer="22">16</text>
 <text x="9.144" y="9.2456" size="0.8128" layer="22">14</text>
 <text x="9.1186" y="41.4782" size="0.8128" layer="22">1</text>
-<text x="13.97" y="11.43" size="1.27" layer="21" font="vector">LCD</text>
-<text x="13.97" y="10.16" size="1.016" layer="21" font="vector">Rev.Beta2</text>
+<text x="12.7" y="11.43" size="1.27" layer="21" font="vector">LCD</text>
+<text x="12.7" y="10.16" size="1.016" layer="21" font="vector">Rev.Beta2</text>
+<text x="17.78" y="13.97" size="0.8128" layer="21" font="vector" align="bottom-center">MADE IN JAPAN</text>
 </plain>
 <libraries>
 <library name="gclue">
@@ -4354,8 +4355,8 @@ design rules under a new name.</description>
 </element>
 <element name="U$3" library="gclue" package="RESISTOR_0603" value="RESISTOR_0603" x="17.4498" y="32.3342" smashed="yes" rot="R90"/>
 <element name="T1" library="transistor" package="SOT23" value="." x="11.8364" y="33.9852" smashed="yes"/>
-<element name="U$4" library="FaBo" package="LOGO_FABO_S" value="" x="16.51" y="13.97"/>
-<element name="U$5" library="gclue" package="LOGO_OSHW_T_S" value="" x="20.32" y="7.62"/>
+<element name="U$4" library="FaBo" package="LOGO_FABO_S" value="" x="15.875" y="15.24"/>
+<element name="U$5" library="gclue" package="LOGO_OSHW_T_S" value="" x="20.955" y="7.62"/>
 </elements>
 <signals>
 <signal name="GND">
