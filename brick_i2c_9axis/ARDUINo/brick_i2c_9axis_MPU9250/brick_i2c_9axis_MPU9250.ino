@@ -1,6 +1,12 @@
+//
+// FaBo Brick Sample
+//
+// brick_i2c_9axis_MPU9250
+//
+
 #include <Wire.h>
 
-#define DEVICE_ADDR (0x30) // スレーブデバイスのアドレス
+#define DEVICE_ADDR (0x69) // スレーブデバイスのアドレス
 
 void setup()
 {
@@ -9,10 +15,10 @@ void setup()
   
   Serial.println("Checking I2C device...");
   byte who_am_i = 0x00;
-  readI2c(0x68, 1, &who_am_i);
+  readI2c(0x75, 1, &who_am_i);
   Serial.println(who_am_i);
-  if(who_am_i == 0x33){
-    Serial.println("I am MPU9250");
+  if(who_am_i == 0x71){
+    Serial.println("I am MMA8451");
   }else{
     Serial.println("Not detected");
   }

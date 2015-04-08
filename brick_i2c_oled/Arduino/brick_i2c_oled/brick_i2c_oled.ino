@@ -1,3 +1,9 @@
+//
+// FaBo Brick Sample
+//
+// brick_i2c_oled
+//
+
 #include "U8glib.h"
 
 U8GLIB_SSD1306_128X64 u8g(U8G_I2C_OPT_NONE);	

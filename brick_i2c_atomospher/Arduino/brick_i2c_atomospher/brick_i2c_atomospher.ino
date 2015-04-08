@@ -1,12 +1,15 @@
+//
+// FaBo Brick Sample
+//
+// brick_i2c_atomospher
+//
+
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
+#define DEVICE_ADDR (0x2a) // スレーブデバイスのアドレス
 
 
-#define DEVICE_ADDR (0x60) // スレーブデバイスのアドレス
-LiquidCrystal_I2C lcd1(0x20,16,2); // set the first LCD address to 0x20
-LiquidCrystal_I2C lcd2(0x21,16,2); // set the second LCD address to 0x21
 
- 
 void setup()
 {
   Serial.begin(9600); // シリアルの開始デバック用
@@ -48,20 +51,16 @@ void loop()
 { 
 
 
-Initialize them in the setup-section:
+
 
 lcd1.init(); // initialize the 1st lcd
 
 lcd2.init(); // initialize the 2nd lcd
 
- 
-
-And send text:
 
 lcd1.print("1st Hello!");
 
 lcd2.print("2nd Hello!");
-  
 }
 
 // Standby mode

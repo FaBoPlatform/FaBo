@@ -1,3 +1,9 @@
+//
+// FaBo Brick Sample
+//
+// brick_i2c_3axis_ADXL345
+//
+
 #include <Wire.h>
 
 #define DEVICE_ADDR (0x53) // スレーブデバイスのアドレス

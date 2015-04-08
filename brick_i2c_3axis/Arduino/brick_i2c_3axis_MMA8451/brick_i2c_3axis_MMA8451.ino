@@ -1,5 +1,12 @@
+//
+// FaBo Brick Sample
+//
+// brick_i2c_3axis_MMA8451
+//
+
 #include <Wire.h>
-#define DEVICE_ADDR (0x48) // スレーブデバイスのアドレス
+
+#define DEVICE_ADDR (0x1C) // スレーブデバイスのアドレス
 
 void setup()
 {
@@ -7,10 +14,10 @@ void setup()
   Wire.begin();       // I2Cの開始
   
   Serial.println("Checking I2C device...");
-  byte who_am_i = 0x00;
-  readI2c(0x0B, 1, &who_am_i);
-  if(who_am_i == 0xCB){
-    Serial.println("I am ADT7410");
+  byte who_am_i = 0;
+  readI2c(0x0d, 1, &who_am_i);
+  if(who_am_i == 0x1A){
+    Serial.println("I am MMA8451");
   }else{
     Serial.println("Not detected");
   }
@@ -40,7 +47,56 @@ void setup()
 
 void loop()
 { 
-
+  /*
+  int length = 6;
+  byte axis_buff[6];
+  readI2c(0x01, length, axis_buff); //レジスターアドレス 0x32から6バイト読む
+  int x = axis_buff[0] << 2 | axis_buff[1] >> 6 & 0x3;
+  int y = axis_buff[2] << 2 | axis_buff[3] >> 6 & 0x3;
+  int z = axis_buff[4] << 2 | axis_buff[5] >> 6 & 0x3;
+  */
+  /*
+  byte axis_buff[3];
+  readI2c(0x01, 3, axis_buff);
+  int x = axis_buff[0] << 2;
+  int y = axis_buff[1] << 2;
+  int z = axis_buff[2] << 2;
+  */
+  
+  /*
+  byte axis_buff[6];
+  uint8_t length = 6;
+  readI2c(0x01, length, axis_buff); //レジスターアドレス 0x32から6バイト読む
+  
+  int x = (int16_t)((axis_buff[0] << 8) + axis_buff[1]);   
+  int y = (int16_t)((axis_buff[2] << 8) + axis_buff[3]);   
+  int z = (int16_t)((axis_buff[4] << 8) + axis_buff[5]);   
+  
+  
+  int x1 = axis_buff[0] & 0x03;   
+  int x2 = axis_buff[1] >> 2;   
+  int y1 = axis_buff[2] & 0x03;    
+  int y2 = axis_buff[3] >> 2;   
+  int z1 = axis_buff[4] & 0x03;   
+  int z2 = axis_buff[5] >> 2;   
+ 
+   
+  Serial.print("x1: ");
+  Serial.print( x1 );
+   Serial.print(" x2: ");
+  Serial.print( x2 );
+  Serial.print(" y1: ");
+  Serial.print( y1 );
+   Serial.print(" y2: ");
+  Serial.print( y2 );
+  Serial.print(" z1: ");
+  Serial.print( z1 );
+  Serial.print(" z2: ");
+  Serial.println( z2 );
+  
+  delay(1000);
+  */
+  
 }
 
 // Standby mode
@@ -87,12 +143,13 @@ void writeI2c(byte register_addr, byte value) {
 // I2Cへの読み込み
 void readI2c(byte register_addr, int num, byte *buf) {
   Wire.beginTransmission(DEVICE_ADDR); 
-  Wire.write(register_addr);           
-  Wire.endTransmission(false);         
+  Wire.write(register_addr);  
+ Serial.println("Debug");  
+  Wire.endTransmission();         
 
-  //Wire.beginTransmission(DEVICE_ADDR); 
+  Wire.beginTransmission(DEVICE_ADDR); 
   Wire.requestFrom(DEVICE_ADDR, num);  
-
+ 
   int i = 0;
   while (Wire.available())
   {
@@ -107,5 +164,5 @@ void readI2c(byte register_addr, int num, byte *buf) {
     
     i++;   
   }
-  //Wire.endTransmission();         
+  Wire.endTransmission(false);         
 }

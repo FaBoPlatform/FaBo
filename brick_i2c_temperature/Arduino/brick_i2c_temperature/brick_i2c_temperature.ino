@@ -1,6 +1,11 @@
-#include <Wire.h>
+//
+// FaBo Brick Sample
+//
+// brick_i2c_temperature
+//
 
-#define DEVICE_ADDR (0x40) // スレーブデバイスのアドレス
+#include <Wire.h>
+#define DEVICE_ADDR (0x48) // スレーブデバイスのアドレス
 
 void setup()
 {
@@ -9,39 +14,73 @@ void setup()
   
   Serial.println("Checking I2C device...");
   byte who_am_i = 0x00;
-  readI2c(0x11, 1, &who_am_i);
-  if(who_am_i == 0x50){
-    Serial.println("I am SI7005");
+  readI2c(0x0B, 1, &who_am_i);
+  if(who_am_i == 0xCB){
+    Serial.println("I am ADT7410");
   }else{
     Serial.println("Not detected");
   }
   
   Serial.println("init");
+  // Standby mode
+    // reset
+  //writeI2c(0x2b,0x40);
+  //delay(10);
+  standbyMode();
   
-  writeI2c(0x03, 0x11);
+  // DATA_FORMAT
+  writeI2c(0xe, 0x00);
+  
+  // DRDY on INT1
+  //writeI2c(0x2D, 0x01);
+  //writeI2c(0x2E, 0x01);
+  // Turn on orientation config
+  //writeI2c(0x11, 0x40);
+  // Active Mode
+  hiresolMode();
+  
+  activeMode();
+  
   
 }
 
 void loop()
 { 
-  writeI2c(0x03, 0x11);
-  
-  byte status = 0x01;						// Wait for the measurement to finish
-  while ( status & 0x01 )
-  {
-    byte n = 0x00;
-    readI2c(0x03, 1, &n);
-    status = n;
-  }
-  
-  byte temp[2];
-  readI2c(0x01, 2, temp);
-  int value = (temp[0] << 8 | temp[1])/32 - 50;
-  Serial.print("temp: ");
-  Serial.println(value);
-  delay(1000);
+
 }
 
+// Standby mode
+void standbyMode()
+{
+   byte n = 0x00;
+   byte activeMask = 0x01;
+  
+  readI2c(0x2a, 1, &n);
+  Serial.println( n );
+  Serial.println( n & ~activeMask );
+  writeI2c(0x2a, n & ~activeMask);
+}
+
+// Active Mode
+void activeMode()
+{
+  byte n = 0x00;
+  byte activeMask = 0x01;
+ 
+  readI2c(0x2a, 1, &n);
+  Serial.println( n );
+  Serial.println( n | activeMask );
+  writeI2c(0x2a, n | activeMask);
+}
+
+void hiresolMode()
+{
+  byte n;
+  byte fastModeMask = 0x02;
+ 
+  readI2c(0x2b, 1, &n);
+  writeI2c(0x2b,  n | fastModeMask);
+}
 
 // I2Cへの書き込み
 void writeI2c(byte register_addr, byte value) {
