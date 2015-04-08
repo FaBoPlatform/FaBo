@@ -1,3 +1,9 @@
+//
+// FaBo Brick Sample
+//
+// brick_analog_temp_lm61ciz
+//
+
 int temp_pin = A0;
 int temp_value = 0;
 

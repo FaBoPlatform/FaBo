@@ -1,3 +1,9 @@
+//
+// FaBo Brick Sample
+//
+// brick_analog_light
+//
+
 int light_value = 0;
 
 void setup() {                

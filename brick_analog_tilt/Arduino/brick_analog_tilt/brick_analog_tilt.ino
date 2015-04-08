@@ -1,4 +1,9 @@
-// Using #508 touch brick and #505 LED brick
+//
+// FaBo Brick Sample
+//
+// brick_analog_tilt
+//
+
 int buttonPin = A0;
 int ledPin = A1;
 
@@ -14,9 +19,9 @@ void loop(){
   buttonState = digitalRead(buttonPin);
 
   if (buttonState == HIGH) {        
-    digitalWrite(ledPin, LOW);  
+    digitalWrite(ledPin, HIGH);  
   } 
   else {
-    digitalWrite(ledPin, HIGH); 
+    digitalWrite(ledPin, LOW); 
   }
 }

@@ -1,3 +1,9 @@
+//
+// FaBo Brick Sample
+//
+// brick_analog_touch
+//
+
 int buttonPin = A0;
 int ledPin = A1;
 
@@ -13,9 +19,9 @@ void loop(){
   buttonState = digitalRead(buttonPin);
 
   if (buttonState == HIGH) {        
-    digitalWrite(ledPin, HIGH);  
+    digitalWrite(ledPin, LOW);  
   } 
   else {
-    digitalWrite(ledPin, LOW); 
+    digitalWrite(ledPin, HIGH); 
   }
 }
