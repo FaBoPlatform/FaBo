@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -496,13 +496,13 @@
 <text x="-2.54" y="-3.175" size="1.016" layer="27">&gt;VALUE</text>
 </package>
 <package name="GAASP-G6262">
-<smd name="1" x="-1.5" y="-1.5" dx="1.5" dy="0.635" layer="1" rot="R90"/>
-<smd name="2" x="1" y="-1.5" dx="1.5" dy="0.635" layer="1" rot="R90"/>
-<smd name="3" x="-0.2" y="3.1" dx="1.5" dy="0.635" layer="1" rot="R90"/>
-<wire x1="-2.2" y1="2.5" x2="1.7" y2="2.5" width="0.127" layer="21"/>
-<wire x1="1.7" y1="2.5" x2="1.7" y2="-1" width="0.127" layer="21"/>
-<wire x1="1.7" y1="-1" x2="-2.2" y2="-1" width="0.127" layer="21"/>
-<wire x1="-2.2" y1="-1" x2="-2.2" y2="2.5" width="0.127" layer="21"/>
+<smd name="1" x="-1.5" y="-1.8" dx="1.5" dy="0.635" layer="1" rot="R90"/>
+<smd name="2" x="1" y="-1.8" dx="1.5" dy="0.635" layer="1" rot="R90"/>
+<smd name="3" x="-0.2" y="3.3" dx="1.5" dy="0.635" layer="1" rot="R90"/>
+<wire x1="-2.2" y1="2.5" x2="1.7" y2="2.5" width="0" layer="20"/>
+<wire x1="1.7" y1="2.5" x2="1.7" y2="-1" width="0" layer="20"/>
+<wire x1="1.7" y1="-1" x2="-2.2" y2="-1" width="0" layer="20"/>
+<wire x1="-2.2" y1="-1" x2="-2.2" y2="2.5" width="0" layer="20"/>
 </package>
 <package name="ADT7410">
 <smd name="1" x="-2.3622" y="1.905" dx="2.1844" dy="0.5588" layer="1"/>
