@@ -13,5 +13,5 @@ void setup() {
 void loop() {
   uv_value = analogRead(A0) ;  
   Serial.println(uv_value) ; 
-  delay(10);
+  delay(100);
 }

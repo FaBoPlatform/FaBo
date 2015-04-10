@@ -1,25 +1,25 @@
 EAGLE AutoRouter Statistics:
 
-Job           : /Users/yamauchi/Documents/eagle/GClue/FaBo/shield_ct_sensor/PCB/shield_ct_sensor.brd
+Job           : /Users/yamauchi/Documents/eagle/FaBo/shield_ct_sensor/PCB/shield_ct_sensor.brd
 
-Start at      : 14:12:44 (2015/02/26)
-End at        : 14:13:20 (2015/02/26)
-Elapsed time  : 00:00:08
+Start at      : 10:56:44 (2015/04/10)
+End at        : 10:57:28 (2015/04/10)
+Elapsed time  : 00:00:41
 
-Signals       :    13   RoutingGrid: 9 mil  Layers: 2
-Connections   :    23   predefined:  0 ( 0 Vias )
+Signals       :    14   RoutingGrid: 8 mil  Layers: 2
+Connections   :    34   predefined:  8 ( 0 Vias )
 
-Router memory :   330260
+Router memory :   440040
 
 Passname          : TopRouter     Route Optimize1 Optimize2 Optimize3 Optimize4 Optimize5 Optimize6 Optimize7 Optimize8 Optimize9Optimize10Optimize11Optimize12
 
-Time per pass     :  00:00:02  00:00:00  00:00:01  00:00:01  00:00:00  00:00:00  00:00:01  00:00:00  00:00:01  00:00:00  00:00:01  00:00:00  00:00:01  00:00:00
+Time per pass     :  00:00:35  00:00:00  00:00:01  00:00:00  00:00:01  00:00:00  00:00:01  00:00:00  00:00:01  00:00:00  00:00:01  00:00:00  00:00:01  00:00:00
 Number of Ripups  :         0         0         0         0         0         0         0         0         0         0         0         0         0         0
 max. Level        :         0         0         0         0         0         0         0         0         0         0         0         0         0         0
 max. Total        :         0         0         0         0         0         0         0         0         0         0         0         0         0         0
 
-Routed            :        23        23        23        23        23        23        23        23        23        23        23        23        23        23
-Vias              :         0         0         1         1         2         2         2         2         2         2         2         2         2         2
-Resolution        :   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
+Routed            :         0        26        26        26        26        26        26        26        26        26        26        26        26        26
+Vias              :         0         2         2         1         1         1         1         1         1         1         1         1         1         1
+Resolution        :    23.5 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
 
 Final             : 100.0% finished
