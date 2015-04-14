@@ -715,117 +715,6 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </deviceset>
 </devicesets>
 </library>
-<library name="SparkFun-3-2-07">
-<description>Spark Fun Electronics' preferred foot prints. &lt;b&gt;Not to be used for commercial purposes.&lt;/b&gt; We've spent an enormous amount of time creating and checking these footprints and parts. If you enjoy using this library, please buy one of our products at www.sparkfun.com.</description>
-<packages>
-<package name="TACTILE_SWITCH_SMD">
-<wire x1="-1.54" y1="-2.54" x2="-2.54" y2="-1.54" width="0.2032" layer="51"/>
-<wire x1="-2.54" y1="-1.24" x2="-2.54" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="-2.54" y1="1.54" x2="-1.54" y2="2.54" width="0.2032" layer="51"/>
-<wire x1="-1.54" y1="2.54" x2="1.54" y2="2.54" width="0.2032" layer="21"/>
-<wire x1="1.54" y1="2.54" x2="2.54" y2="1.54" width="0.2032" layer="51"/>
-<wire x1="2.54" y1="1.24" x2="2.54" y2="-1.24" width="0.2032" layer="21"/>
-<wire x1="2.54" y1="-1.54" x2="1.54" y2="-2.54" width="0.2032" layer="51"/>
-<wire x1="1.54" y1="-2.54" x2="-1.54" y2="-2.54" width="0.2032" layer="21"/>
-<wire x1="1.905" y1="1.27" x2="1.905" y2="0.445" width="0.127" layer="51"/>
-<wire x1="1.905" y1="0.445" x2="2.16" y2="-0.01" width="0.127" layer="51"/>
-<wire x1="1.905" y1="-0.23" x2="1.905" y2="-1.115" width="0.127" layer="51"/>
-<circle x="0" y="0" radius="1.27" width="0.2032" layer="21"/>
-<smd name="1" x="-2.54" y="1.905" dx="0.762" dy="1.524" layer="1" rot="R90"/>
-<smd name="3" x="-2.54" y="-1.905" dx="0.762" dy="1.524" layer="1" rot="R90"/>
-<smd name="4" x="2.54" y="-1.905" dx="0.762" dy="1.524" layer="1" rot="R90"/>
-<smd name="2" x="2.54" y="1.905" dx="0.762" dy="1.524" layer="1" rot="R90"/>
-<text x="-3.67" y="3.05" size="1.778" layer="25" ratio="10">&gt;NAME</text>
-</package>
-<package name="TACTILE-PTH">
-<description>&lt;b&gt;OMRON SWITCH&lt;/b&gt;</description>
-<wire x1="3.048" y1="1.016" x2="3.048" y2="2.54" width="0.2032" layer="51"/>
-<wire x1="3.048" y1="2.54" x2="2.54" y2="3.048" width="0.2032" layer="51"/>
-<wire x1="2.54" y1="-3.048" x2="3.048" y2="-2.54" width="0.2032" layer="51"/>
-<wire x1="3.048" y1="-2.54" x2="3.048" y2="-1.016" width="0.2032" layer="51"/>
-<wire x1="-2.54" y1="3.048" x2="-3.048" y2="2.54" width="0.2032" layer="51"/>
-<wire x1="-3.048" y1="2.54" x2="-3.048" y2="1.016" width="0.2032" layer="51"/>
-<wire x1="-2.54" y1="-3.048" x2="-3.048" y2="-2.54" width="0.2032" layer="51"/>
-<wire x1="-3.048" y1="-2.54" x2="-3.048" y2="-1.016" width="0.2032" layer="51"/>
-<wire x1="2.54" y1="-3.048" x2="2.159" y2="-3.048" width="0.2032" layer="51"/>
-<wire x1="-2.54" y1="-3.048" x2="-2.159" y2="-3.048" width="0.2032" layer="51"/>
-<wire x1="-2.54" y1="3.048" x2="-2.159" y2="3.048" width="0.2032" layer="51"/>
-<wire x1="2.54" y1="3.048" x2="2.159" y2="3.048" width="0.2032" layer="51"/>
-<wire x1="2.159" y1="3.048" x2="-2.159" y2="3.048" width="0.2032" layer="21"/>
-<wire x1="-2.159" y1="-3.048" x2="2.159" y2="-3.048" width="0.2032" layer="21"/>
-<wire x1="3.048" y1="0.998" x2="3.048" y2="-1.016" width="0.2032" layer="21"/>
-<wire x1="-3.048" y1="1.028" x2="-3.048" y2="-1.016" width="0.2032" layer="21"/>
-<wire x1="-2.413" y1="1.27" x2="-2.413" y2="0.508" width="0.2032" layer="51"/>
-<wire x1="-2.413" y1="-0.508" x2="-2.413" y2="-1.27" width="0.2032" layer="51"/>
-<wire x1="-2.413" y1="0.508" x2="-2.159" y2="-0.381" width="0.2032" layer="51"/>
-<circle x="0" y="0" radius="1.778" width="0.2032" layer="21"/>
-<circle x="-2.159" y="-2.159" radius="0.508" width="0.1524" layer="51"/>
-<circle x="2.159" y="-2.032" radius="0.508" width="0.2032" layer="51"/>
-<circle x="2.159" y="2.159" radius="0.508" width="0.2032" layer="51"/>
-<circle x="-2.159" y="2.159" radius="0.508" width="0.2032" layer="51"/>
-<pad name="1" x="-3.2512" y="2.2606" drill="1.016"/>
-<pad name="3" x="-3.2512" y="-2.2606" drill="1.016"/>
-<pad name="2" x="3.2512" y="2.2606" drill="1.016"/>
-<pad name="4" x="3.2512" y="-2.2606" drill="1.016"/>
-<text x="-2.54" y="3.81" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-</package>
-</packages>
-<symbols>
-<symbol name="SWITCH-MOMENTARY">
-<wire x1="1.905" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="1.905" y1="4.445" x2="1.905" y2="3.175" width="0.254" layer="94"/>
-<wire x1="-1.905" y1="4.445" x2="-1.905" y2="3.175" width="0.254" layer="94"/>
-<wire x1="1.905" y1="4.445" x2="0" y2="4.445" width="0.254" layer="94"/>
-<wire x1="0" y1="4.445" x2="-1.905" y2="4.445" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="0" y2="1.905" width="0.1524" layer="94"/>
-<wire x1="0" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="94"/>
-<wire x1="0" y1="4.445" x2="0" y2="3.175" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="0" x2="1.905" y2="1.27" width="0.254" layer="94"/>
-<circle x="-2.54" y="0" radius="0.127" width="0.4064" layer="94"/>
-<circle x="2.54" y="0" radius="0.127" width="0.4064" layer="94"/>
-<text x="-2.54" y="6.35" size="1.778" layer="95">&gt;NAME</text>
-<pin name="1" x="-5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="2"/>
-<pin name="3" x="5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="4" x="5.08" y="-2.54" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="2" x="-5.08" y="-2.54" visible="pad" length="short" direction="pas" swaplevel="2"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="TAC_SWITCH" prefix="S" uservalue="yes">
-<description>&lt;b&gt;Momentary Switch&lt;/b&gt;
-Button commonly used for reset or general input. Spark Fun Electronics SKU : Comp-PBS</description>
-<gates>
-<gate name="S" symbol="SWITCH-MOMENTARY" x="0" y="0"/>
-</gates>
-<devices>
-<device name="SND" package="TACTILE_SWITCH_SMD">
-<connects>
-<connect gate="S" pin="1" pad="1"/>
-<connect gate="S" pin="2" pad="2"/>
-<connect gate="S" pin="3" pad="3"/>
-<connect gate="S" pin="4" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="PTH" package="TACTILE-PTH">
-<connects>
-<connect gate="S" pin="1" pad="1"/>
-<connect gate="S" pin="2" pad="2"/>
-<connect gate="S" pin="3" pad="3"/>
-<connect gate="S" pin="4" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="Gclue">
 <description>&lt;h3&gt;GClue, Inc.&lt;/h3&gt;</description>
 <packages>
@@ -860,11 +749,29 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : Com
 <pad name="VCC" x="-1.27" y="0" drill="1" shape="long" rot="R90"/>
 <pad name="SDA" x="1.27" y="0" drill="1" shape="long" rot="R90"/>
 <pad name="SCL" x="3.81" y="0" drill="1" shape="long" rot="R90"/>
-<text x="-5.08" y="1.651" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-3.81" y="-3.81" size="1.27" layer="25" font="vector">&gt;NAME</text>
 <rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
 <rectangle x1="-4.064" y1="-0.254" x2="-3.556" y2="0.254" layer="51"/>
 <rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
 <rectangle x1="3.556" y1="-0.254" x2="4.064" y2="0.254" layer="51"/>
+<wire x1="-6.35" y1="13.4" x2="-6.35" y2="0" width="0.127" layer="51"/>
+<wire x1="6.35" y1="0" x2="6.35" y2="13.4" width="0.127" layer="51"/>
+<wire x1="-6.35" y1="13.4" x2="-3.8" y2="13.4" width="0.127" layer="51"/>
+<wire x1="-3.8" y1="13.4" x2="3.8" y2="13.4" width="0.127" layer="51"/>
+<wire x1="3.8" y1="13.4" x2="6.35" y2="13.4" width="0.127" layer="51"/>
+<wire x1="-6.35" y1="0" x2="-5.5" y2="0" width="0.127" layer="51"/>
+<wire x1="6.35" y1="0" x2="5.5" y2="0" width="0.127" layer="51"/>
+<wire x1="-3.8" y1="13.4" x2="-3.8" y2="9.6" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="12" x2="-2.8" y2="9.6" width="0.127" layer="51"/>
+<wire x1="3.8" y1="13.4" x2="3.8" y2="9.6" width="0.127" layer="51"/>
+<wire x1="2.8" y1="12" x2="2.8" y2="9.6" width="0.127" layer="51"/>
+<wire x1="-3.8" y1="9.6" x2="-2.8" y2="9.6" width="0.127" layer="51"/>
+<wire x1="3.8" y1="9.6" x2="2.8" y2="9.6" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="12" x2="2.8" y2="12" width="0.127" layer="51"/>
+<text x="-3.81" y="1.905" size="1.016" layer="51" font="vector" rot="R90" align="center-left">GND</text>
+<text x="-1.27" y="1.905" size="1.016" layer="51" font="vector" rot="R90" align="center-left">VCC</text>
+<text x="1.27" y="1.905" size="1.016" layer="51" font="vector" rot="R90" align="center-left">SDA</text>
+<text x="3.81" y="1.905" size="1.016" layer="51" font="vector" rot="R90" align="center-left">SCL</text>
 </package>
 <package name="BRICK_SERIAL_CONNECTOR">
 <wire x1="-4.445" y1="1.27" x2="-3.175" y2="1.27" width="0.1524" layer="21"/>
@@ -897,11 +804,29 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : Com
 <pad name="VCC" x="-1.27" y="0" drill="1" shape="long" rot="R90"/>
 <pad name="RX" x="1.27" y="0" drill="1" shape="long" rot="R90"/>
 <pad name="TX" x="3.81" y="0" drill="1" shape="long" rot="R90"/>
-<text x="-5.08" y="1.651" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-3.81" y="-3.81" size="1.27" layer="25" font="vector">&gt;NAME</text>
 <rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
 <rectangle x1="-4.064" y1="-0.254" x2="-3.556" y2="0.254" layer="51"/>
 <rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
 <rectangle x1="3.556" y1="-0.254" x2="4.064" y2="0.254" layer="51"/>
+<wire x1="-6.35" y1="13.4" x2="-6.35" y2="0" width="0.127" layer="51"/>
+<wire x1="6.35" y1="13.4" x2="6.35" y2="0" width="0.127" layer="51"/>
+<wire x1="-6.35" y1="13.4" x2="-3.8" y2="13.4" width="0.127" layer="51"/>
+<wire x1="-3.8" y1="13.4" x2="3.8" y2="13.4" width="0.127" layer="51"/>
+<wire x1="3.8" y1="13.4" x2="6.35" y2="13.4" width="0.127" layer="51"/>
+<wire x1="-6.35" y1="0" x2="-5.5" y2="0" width="0.127" layer="51"/>
+<wire x1="6.35" y1="0" x2="5.5" y2="0" width="0.127" layer="51"/>
+<wire x1="-3.8" y1="13.4" x2="-3.8" y2="9.6" width="0.127" layer="51"/>
+<wire x1="3.8" y1="13.4" x2="3.8" y2="9.6" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="12" x2="-2.8" y2="9.6" width="0.127" layer="51"/>
+<wire x1="2.8" y1="12" x2="2.8" y2="9.6" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="12" x2="2.8" y2="12" width="0.127" layer="51"/>
+<wire x1="-3.8" y1="9.6" x2="-2.8" y2="9.6" width="0.127" layer="51"/>
+<wire x1="2.8" y1="9.6" x2="3.8" y2="9.6" width="0.127" layer="51"/>
+<text x="-3.81" y="1.905" size="1.27" layer="51" font="vector" rot="R90" align="center-left">GND</text>
+<text x="-1.27" y="1.905" size="1.27" layer="51" font="vector" rot="R90" align="center-left">VCC</text>
+<text x="1.27" y="1.905" size="1.27" layer="51" font="vector" rot="R90" align="center-left">RX</text>
+<text x="3.81" y="1.905" size="1.27" layer="51" font="vector" rot="R90" align="center-left">TX</text>
 </package>
 <package name="EG1218">
 <wire x1="-5.842" y1="2.032" x2="5.842" y2="2.032" width="0.127" layer="21"/>
@@ -7106,6 +7031,33 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : Com
 <rectangle x1="-0.129540625" y1="0.942340625" x2="0.149859375" y2="0.947415625" layer="21"/>
 <rectangle x1="-0.129540625" y1="0.94741875" x2="0.149859375" y2="0.9525" layer="21"/>
 <rectangle x1="-0.124459375" y1="0.9525" x2="0.144778125" y2="0.95758125" layer="21"/>
+</package>
+<package name="DTS_6_V">
+<wire x1="3.1" y1="-1.3" x2="3.1" y2="1.3" width="0.1" layer="21"/>
+<wire x1="-3.1" y1="1.3" x2="-3.1" y2="-1.3" width="0.1" layer="21"/>
+<wire x1="3.1" y1="3.1" x2="-3.1" y2="3.1" width="0.1" layer="21"/>
+<wire x1="-3.1" y1="-3.1" x2="3.1" y2="-3.1" width="0.1" layer="21"/>
+<circle x="0" y="0" radius="1.75" width="0.1" layer="21"/>
+<pad name="1" x="-3.25" y="2.25" drill="1" shape="long"/>
+<pad name="3" x="-3.25" y="-2.25" drill="1" shape="long"/>
+<pad name="2" x="3.25" y="2.25" drill="1" shape="long"/>
+<pad name="4" x="3.25" y="-2.25" drill="1" shape="long"/>
+<text x="-2.54" y="3.81" size="1.016" layer="25" font="vector" ratio="10">&gt;NAME</text>
+</package>
+<package name="1273HA-160G-G">
+<wire x1="-6" y1="6" x2="6" y2="6" width="0.1" layer="21"/>
+<wire x1="-6" y1="-6" x2="6" y2="-6" width="0.1" layer="21"/>
+<wire x1="-6" y1="-6" x2="-6" y2="6" width="0.1" layer="21"/>
+<wire x1="6" y1="-6" x2="6" y2="6" width="0.1" layer="21"/>
+<pad name="1" x="-6.25" y="2.5" drill="1.1" shape="long"/>
+<pad name="3" x="-6.25" y="-2.5" drill="1.1" shape="long"/>
+<pad name="2" x="6.25" y="2.5" drill="1.1" shape="long"/>
+<pad name="4" x="6.25" y="-2.5" drill="1.1" shape="long"/>
+<wire x1="-1.9" y1="1.9" x2="-1.9" y2="-1.9" width="0.1" layer="21"/>
+<wire x1="1.9" y1="1.9" x2="1.9" y2="-1.9" width="0.1" layer="21"/>
+<wire x1="-1.9" y1="1.9" x2="1.9" y2="1.9" width="0.1" layer="21"/>
+<wire x1="-1.9" y1="-1.9" x2="1.9" y2="-1.9" width="0.1" layer="21"/>
+<text x="-3.81" y="6.35" size="1.27" layer="25" font="vector">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -15588,6 +15540,27 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : Com
 <rectangle x1="-0.4699" y1="3.72618125" x2="0.5359375" y2="3.73125625" layer="94"/>
 <rectangle x1="-0.459740625" y1="3.731259375" x2="0.525778125" y2="3.736340625" layer="94"/>
 </symbol>
+<symbol name="TACTSWITCH">
+<wire x1="1.905" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="1.905" y1="4.445" x2="1.905" y2="3.175" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="4.445" x2="-1.905" y2="3.175" width="0.254" layer="94"/>
+<wire x1="1.905" y1="4.445" x2="0" y2="4.445" width="0.254" layer="94"/>
+<wire x1="0" y1="4.445" x2="-1.905" y2="4.445" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.905" width="0.1524" layer="94"/>
+<wire x1="0" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="94"/>
+<wire x1="0" y1="4.445" x2="0" y2="3.175" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="1.905" y2="1.27" width="0.254" layer="94"/>
+<circle x="-2.54" y="0" radius="0.127" width="0.4064" layer="94"/>
+<circle x="2.54" y="0" radius="0.127" width="0.4064" layer="94"/>
+<text x="-2.54" y="6.35" size="1.778" layer="95">&gt;NAME</text>
+<text x="3.175" y="3.81" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="2"/>
+<pin name="3" x="5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="4" x="5.08" y="-2.54" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="2" x="-5.08" y="-2.54" visible="pad" length="short" direction="pas" swaplevel="2"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="BRICK_I2C_CONNECTOR" prefix="SV" uservalue="yes">
@@ -15717,6 +15690,35 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : Com
 </technologies>
 </device>
 <device name="-S" package="LOGO_OSHW_T_S">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SWITCH-TACT" prefix="S">
+<gates>
+<gate name="G$1" symbol="TACTSWITCH" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-6MM" package="DTS_6_V">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-12MM" package="1273HA-160G-G">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -22521,7 +22523,6 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : Com
 <part name="P+18" library="SparkFun" deviceset="VCC" device=""/>
 <part name="P+19" library="SparkFun" deviceset="VCC" device=""/>
 <part name="GND24" library="SparkFun" deviceset="GND" device=""/>
-<part name="SW4" library="SparkFun-3-2-07" deviceset="TAC_SWITCH" device="PTH" value="RESET"/>
 <part name="GND25" library="SparkFun" deviceset="GND" device=""/>
 <part name="SV1" library="Gclue" deviceset="BRICK_I2C_CONNECTOR" device=""/>
 <part name="U$1" library="Gclue" deviceset="A4L-LOC" device=""/>
@@ -22540,12 +22541,12 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : Com
 <part name="P+9" library="SparkFun" deviceset="VCC" device=""/>
 <part name="U$2" library="FaBo" deviceset="LOGO_FABO" device="-S"/>
 <part name="U$3" library="Gclue" deviceset="LOGO_OSHW_T" device="-S"/>
+<part name="SW4" library="Gclue" deviceset="SWITCH-TACT" device="-6MM"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="251.46" y="5.08" size="2.54" layer="94" align="bottom-center">Beta2</text>
-<text x="15.24" y="158.242" size="1.778" layer="96">RESET</text>
 </plain>
 <instances>
 <instance part="OUT2" gate="G$1" x="121.92" y="116.84" rot="R90"/>
@@ -22598,9 +22599,6 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : Com
 <instance part="P+18" gate="1" x="167.64" y="101.6"/>
 <instance part="P+19" gate="1" x="190.5" y="101.6"/>
 <instance part="GND24" gate="1" x="134.62" y="38.1"/>
-<instance part="SW4" gate="S" x="20.32" y="152.4" smashed="yes">
-<attribute name="NAME" x="17.78" y="161.036" size="1.778" layer="95"/>
-</instance>
 <instance part="GND25" gate="1" x="10.16" y="106.68"/>
 <instance part="SV1" gate="G$1" x="124.46" y="43.18" rot="R90"/>
 <instance part="U$1" gate="G$1" x="0" y="0"/>
@@ -22619,6 +22617,9 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : Com
 <instance part="P+9" gate="1" x="236.22" y="101.6"/>
 <instance part="U$2" gate="G$1" x="162.56" y="22.86"/>
 <instance part="U$3" gate="G$1" x="208.28" y="12.7"/>
+<instance part="SW4" gate="G$1" x="20.32" y="152.4" smashed="yes">
+<attribute name="NAME" x="17.78" y="158.75" size="1.778" layer="95"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -22861,10 +22862,8 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : Com
 <wire x1="160.02" y1="50.8" x2="160.02" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SW4" gate="S" pin="2"/>
-<wire x1="15.24" y1="149.86" x2="10.16" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="GND25" gate="1" pin="GND"/>
-<wire x1="10.16" y1="149.86" x2="10.16" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="152.4" x2="10.16" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="GND2"/>
 <wire x1="10.16" y1="142.24" x2="10.16" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="10.16" y1="139.7" x2="10.16" y2="109.22" width="0.1524" layer="91"/>
@@ -22873,6 +22872,8 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : Com
 <pinref part="U1" gate="G$1" pin="GND1"/>
 <wire x1="30.48" y1="139.7" x2="10.16" y2="139.7" width="0.1524" layer="91"/>
 <junction x="10.16" y="139.7"/>
+<pinref part="SW4" gate="G$1" pin="1"/>
+<wire x1="15.24" y1="152.4" x2="10.16" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="GND3"/>
@@ -23146,8 +23147,8 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : Com
 <net name="RESET" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="RESET"/>
-<pinref part="SW4" gate="S" pin="4"/>
 <wire x1="30.48" y1="149.86" x2="25.4" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="SW4" gate="G$1" pin="4"/>
 </segment>
 </net>
 <net name="3V3" class="1">
