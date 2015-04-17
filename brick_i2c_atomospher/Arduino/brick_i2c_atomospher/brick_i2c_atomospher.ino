@@ -5,95 +5,35 @@
 //
 
 #include <Wire.h>
-#include <LiquidCrystal_I2C.h>
-#define DEVICE_ADDR (0x2a) // スレーブデバイスのアドレス
-
-
+#define DEVICE_ADDR (0x60) 
 
 void setup()
 {
   Serial.begin(9600); // シリアルの開始デバック用
   Wire.begin();       // I2Cの開始
-  
-  Serial.println("Checking I2C device...");
-  byte who_am_i = 0x00;
-  readI2c(0x00, 1, &who_am_i);
-  if(who_am_i == 0x03){
-    Serial.println("I am MMA8451");
-  }else{
-    Serial.println("Not detected");
-  }
-  
-  Serial.println("init");
-  // Standby mode
-    // reset
-  //writeI2c(0x2b,0x40);
-  //delay(10);
-  standbyMode();
-  
-  // DATA_FORMAT
-  writeI2c(0xe, 0x00);
-  
-  // DRDY on INT1
-  //writeI2c(0x2D, 0x01);
-  //writeI2c(0x2E, 0x01);
-  // Turn on orientation config
-  //writeI2c(0x11, 0x40);
-  // Active Mode
-  hiresolMode();
-  
-  activeMode();
-  
-  
 }
 
 void loop()
 { 
 
-
-
-
-lcd1.init(); // initialize the 1st lcd
-
-lcd2.init(); // initialize the 2nd lcd
-
-
-lcd1.print("1st Hello!");
-
-lcd2.print("2nd Hello!");
-}
-
-// Standby mode
-void standbyMode()
-{
-   byte n = 0x00;
-   byte activeMask = 0x01;
+  writeI2c(0x12,0x01);
   
-  readI2c(0x2a, 1, &n);
-  Serial.println( n );
-  Serial.println( n & ~activeMask );
-  writeI2c(0x2a, n & ~activeMask);
-}
+  delay(100);
+  byte atom_buff[4];
+  readI2c(0x00,4, atom_buff);
+  int ph = atom_buff[0];
+  int pl = atom_buff[1];
+  int pressure = (( ph * 256) + pl)/64;
+  int th = atom_buff[2];
+  int tl = atom_buff[3];
+  int temp = ((th * 256 ) + tl)/64 ;
+  
+  Serial.print("pressure");
+  Serial.println(pressure);
+  Serial.print("temp");
+  Serial.println(temp);
 
-// Active Mode
-void activeMode()
-{
-  byte n = 0x00;
-  byte activeMask = 0x01;
- 
-  readI2c(0x2a, 1, &n);
-  Serial.println( n );
-  Serial.println( n | activeMask );
-  writeI2c(0x2a, n | activeMask);
-}
-
-void hiresolMode()
-{
-  byte n;
-  byte fastModeMask = 0x02;
- 
-  readI2c(0x2b, 1, &n);
-  writeI2c(0x2b,  n | fastModeMask);
+   delay(1000);
 }
 
 // I2Cへの書き込み
@@ -119,12 +59,7 @@ void readI2c(byte register_addr, int num, byte *buf) {
     byte n = 0x00;
     n = Wire.read();
     *(buf + i) = n;
-    //byte buf1 = Wire.read();
-    //int x1 = (int)buf1;
-   
-    Serial.print("Wire.read();");
-    Serial.println(n);
-    
+ 
     i++;   
   }
   //Wire.endTransmission();         
