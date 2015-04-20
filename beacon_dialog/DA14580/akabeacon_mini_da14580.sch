@@ -822,11 +822,6 @@ Commonly used for 1/4W through-hole resistors. 0.3" pitch between holes.&lt;br&g
 </package>
 </packages>
 <symbols>
-<symbol name="GND">
-<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
-<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
-</symbol>
 <symbol name="RESISTOR">
 <wire x1="-2.54" y1="0" x2="-2.159" y2="1.016" width="0.1524" layer="94"/>
 <wire x1="-2.159" y1="1.016" x2="-1.524" y2="-1.016" width="0.1524" layer="94"/>
@@ -844,19 +839,6 @@ Commonly used for 1/4W through-hole resistors. 0.3" pitch between holes.&lt;br&g
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="GND" prefix="GND">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="1" symbol="GND" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="RESISTOR" prefix="R" uservalue="yes">
 <description>&lt;b&gt;Resistor&lt;/b&gt;
 Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</description>
@@ -2564,11 +2546,11 @@ Source: www.kingbright.com</description>
 <part name="R2" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="180"/>
 <part name="P0_0" library="led" deviceset="LED" device="CHIP-LED0603"/>
 <part name="U$7" library="gclue-test" deviceset="SWICTH-4P(KMR2)" device=""/>
-<part name="GND13" library="SparkFun" deviceset="GND" device=""/>
 <part name="+3V6" library="supply1" deviceset="+3V3" device=""/>
 <part name="R1" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="0"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="C1" library="GClue-Capacitor" deviceset="CAPACITOR" device="0603" value="2.2uf"/>
+<part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2600,11 +2582,11 @@ Source: www.kingbright.com</description>
 <instance part="R2" gate="G$1" x="30.48" y="81.28" rot="R90"/>
 <instance part="P0_0" gate="G$1" x="30.48" y="96.52"/>
 <instance part="U$7" gate="G$1" x="35.56" y="147.32"/>
-<instance part="GND13" gate="1" x="27.94" y="134.62"/>
 <instance part="+3V6" gate="G$1" x="30.48" y="111.76"/>
 <instance part="R1" gate="G$1" x="205.74" y="78.74"/>
 <instance part="GND6" gate="1" x="210.82" y="81.28"/>
 <instance part="C1" gate="G$1" x="81.28" y="137.16"/>
+<instance part="+3V3" gate="G$1" x="22.86" y="142.24"/>
 </instances>
 <busses>
 </busses>
@@ -2710,11 +2692,6 @@ Source: www.kingbright.com</description>
 <pinref part="C1" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="U$7" gate="G$1" pin="3"/>
-<wire x1="27.94" y1="144.78" x2="27.94" y2="137.16" width="0.1524" layer="91"/>
-<pinref part="GND13" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="U$1" gate="G$1" pin="ANTIN"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="172.72" y1="78.74" x2="198.12" y2="78.74" width="0.1524" layer="91"/>
@@ -2758,6 +2735,13 @@ Source: www.kingbright.com</description>
 <pinref part="P0_0" gate="G$1" pin="A"/>
 <pinref part="+3V6" gate="G$1" pin="+3V3"/>
 <wire x1="30.48" y1="99.06" x2="30.48" y2="109.22" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="22.86" y1="139.7" x2="22.86" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="U$7" gate="G$1" pin="3"/>
+<wire x1="27.94" y1="144.78" x2="27.94" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="134.62" x2="27.94" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="+3V3" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
 <net name="P0_2" class="0">

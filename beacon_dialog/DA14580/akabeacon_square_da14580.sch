@@ -370,67 +370,6 @@ With round pins</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="SparkFun-Capacitors">
-<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
-In this library you'll find resistors, capacitors, inductors, test points, jumper pads, etc.&lt;br&gt;&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
-&lt;br&gt;&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
-&lt;br&gt;&lt;br&gt;
-You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-<package name="1206">
-<wire x1="-2.473" y1="0.983" x2="2.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="2.473" y1="-0.983" x2="-2.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-2.473" y1="-0.983" x2="-2.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="2.473" y1="0.983" x2="2.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-0.965" y1="0.787" x2="0.965" y2="0.787" width="0.1016" layer="51"/>
-<wire x1="-0.965" y1="-0.787" x2="0.965" y2="-0.787" width="0.1016" layer="51"/>
-<smd name="1" x="-1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
-<smd name="2" x="1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
-<text x="-1.27" y="1.143" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-1.397" y="-1.524" size="0.4064" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.7018" y1="-0.8509" x2="-0.9517" y2="0.8491" layer="51"/>
-<rectangle x1="0.9517" y1="-0.8491" x2="1.7018" y2="0.8509" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
-</package>
-</packages>
-<symbols>
-<symbol name="CAP">
-<wire x1="0" y1="2.54" x2="0" y2="2.032" width="0.1524" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="0.508" width="0.1524" layer="94"/>
-<text x="1.524" y="2.921" size="1.778" layer="95">&gt;NAME</text>
-<text x="1.524" y="-2.159" size="1.778" layer="96">&gt;VALUE</text>
-<rectangle x1="-2.032" y1="0.508" x2="2.032" y2="1.016" layer="94"/>
-<rectangle x1="-2.032" y1="1.524" x2="2.032" y2="2.032" layer="94"/>
-<pin name="1" x="0" y="5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
-<pin name="2" x="0" y="-2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="10UF-6.3V-20%(1206)" prefix="C" uservalue="yes">
-<description>CAP-10057&lt;BR&gt;
-Ceramic&lt;br&gt;</description>
-<gates>
-<gate name="G$1" symbol="CAP" x="0" y="-2.54"/>
-</gates>
-<devices>
-<device name="" package="1206">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CAP-10057"/>
-<attribute name="VALUE" value="10uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="GClue-Resistors">
 <packages>
 <package name="0603">
@@ -950,11 +889,9 @@ Source: Epson Toyocom FC-12M.pdf</description>
 <part name="GND8" library="SparkFun" deviceset="GND" device=""/>
 <part name="VCC" library="adafruit" deviceset="PINHD-1X1" device="CB"/>
 <part name="GND" library="adafruit" deviceset="PINHD-1X1" device="CB"/>
-<part name="C3" library="SparkFun-Capacitors" deviceset="10UF-6.3V-20%(1206)" device="" value="100uF"/>
 <part name="U$1" library="gclue" deviceset="A4L-LOC" device=""/>
 <part name="R2" library="GClue-Resistors" deviceset="RESISTOR" device="0603" value="4.7K"/>
 <part name="LED" library="GClue-LED" deviceset="LED" device="0603"/>
-<part name="C1" library="GClue-Capacitor" deviceset="CAPACITOR" device="0603" value="1u"/>
 <part name="U$6" library="gclue" deviceset="PIN-HEADER-SMT(1.27MM)2X5" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
@@ -963,14 +900,14 @@ Source: Epson Toyocom FC-12M.pdf</description>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
-<part name="32.768LHZ1" library="crystal" deviceset="FC-12M" device=""/>
+<part name="LHZ" library="crystal" deviceset="FC-12M" device="" value=""/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="P+4" library="supply1" deviceset="+5V" device=""/>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
 <part name="C2" library="GClue-Capacitor" deviceset="CAPACITOR" device="0603" value="2.2uf"/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
 <part name="U$7" library="gclue-test" deviceset="SWICTH-4P(KMR2)" device=""/>
-<part name="GND2" library="SparkFun" deviceset="GND" device=""/>
+<part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -983,11 +920,9 @@ Source: Epson Toyocom FC-12M.pdf</description>
 <instance part="GND8" gate="1" x="78.74" y="15.24"/>
 <instance part="VCC" gate="G$1" x="50.8" y="35.56"/>
 <instance part="GND" gate="G$1" x="25.4" y="38.1"/>
-<instance part="C3" gate="G$1" x="33.02" y="22.86" rot="R90"/>
 <instance part="U$1" gate="G$1" x="0" y="0"/>
 <instance part="R2" gate="G$1" x="78.74" y="43.18" rot="R90"/>
 <instance part="LED" gate="G$1" x="78.74" y="33.02" rot="R270"/>
-<instance part="C1" gate="G$1" x="30.48" y="30.48"/>
 <instance part="U$6" gate="G$1" x="45.72" y="99.06" rot="R270"/>
 <instance part="GND6" gate="1" x="109.22" y="76.2"/>
 <instance part="+3V3" gate="G$1" x="33.02" y="109.22"/>
@@ -996,29 +931,23 @@ Source: Epson Toyocom FC-12M.pdf</description>
 <instance part="GND12" gate="1" x="170.18" y="88.9"/>
 <instance part="GND13" gate="1" x="160.02" y="134.62"/>
 <instance part="GND14" gate="1" x="147.32" y="78.74"/>
-<instance part="32.768LHZ1" gate="G$1" x="185.42" y="99.06" rot="R90"/>
+<instance part="LHZ" gate="G$1" x="185.42" y="99.06" rot="R90"/>
 <instance part="GND15" gate="1" x="218.44" y="109.22"/>
 <instance part="P+4" gate="1" x="93.98" y="119.38"/>
 <instance part="+3V2" gate="G$1" x="162.56" y="91.44"/>
 <instance part="C2" gate="G$1" x="157.48" y="76.2" rot="R90"/>
 <instance part="GND16" gate="1" x="157.48" y="68.58"/>
 <instance part="U$7" gate="G$1" x="43.18" y="142.24"/>
-<instance part="GND2" gate="1" x="35.56" y="129.54"/>
+<instance part="+3V1" gate="G$1" x="27.94" y="137.16"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="GND" class="0">
 <segment>
-<wire x1="22.86" y1="38.1" x2="22.86" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="22.86" y1="30.48" x2="22.86" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="22.86" x2="22.86" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="30.48" x2="22.86" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="22.86" x2="27.94" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="38.1" x2="22.86" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="GND" gate="G$1" pin="1"/>
-<pinref part="C3" gate="G$1" pin="1"/>
-<pinref part="C1" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="GND8" gate="1" pin="GND"/>
@@ -1127,24 +1056,13 @@ Source: Epson Toyocom FC-12M.pdf</description>
 <pinref part="GND16" gate="1" pin="GND"/>
 <wire x1="157.48" y1="73.66" x2="157.48" y2="71.12" width="0.1524" layer="91"/>
 </segment>
-<segment>
-<pinref part="U$7" gate="G$1" pin="3"/>
-<wire x1="35.56" y1="139.7" x2="35.56" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="GND2" gate="1" pin="GND"/>
-</segment>
 </net>
 <net name="3.3V" class="0">
 <segment>
 <pinref part="P+1" gate="G$1" pin="3.3V"/>
-<wire x1="43.18" y1="35.56" x2="43.18" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="35.56" x2="43.18" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="35.56" x2="48.26" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="30.48" x2="43.18" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="22.86" x2="43.18" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="22.86" x2="43.18" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="VCC" gate="G$1" pin="1"/>
-<pinref part="C3" gate="G$1" pin="2"/>
-<pinref part="C1" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -1247,6 +1165,13 @@ Source: Epson Toyocom FC-12M.pdf</description>
 <wire x1="157.48" y1="81.28" x2="157.48" y2="83.82" width="0.1524" layer="91"/>
 <junction x="157.48" y="83.82"/>
 </segment>
+<segment>
+<pinref part="+3V1" gate="G$1" pin="+3V3"/>
+<wire x1="27.94" y1="134.62" x2="27.94" y2="127" width="0.1524" layer="91"/>
+<pinref part="U$7" gate="G$1" pin="3"/>
+<wire x1="35.56" y1="139.7" x2="35.56" y2="127" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="127" x2="35.56" y2="127" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="RST" class="0">
 <segment>
@@ -1271,7 +1196,7 @@ Source: Epson Toyocom FC-12M.pdf</description>
 <segment>
 <wire x1="185.42" y1="106.68" x2="165.1" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="U$9" gate="G$1" pin="XTAL32KM"/>
-<pinref part="32.768LHZ1" gate="G$1" pin="2"/>
+<pinref part="LHZ" gate="G$1" pin="2"/>
 <wire x1="185.42" y1="106.68" x2="185.42" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -1280,7 +1205,7 @@ Source: Epson Toyocom FC-12M.pdf</description>
 <wire x1="180.34" y1="104.14" x2="165.1" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="U$9" gate="G$1" pin="XTAL32KP"/>
 <wire x1="180.34" y1="104.14" x2="180.34" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="32.768LHZ1" gate="G$1" pin="1"/>
+<pinref part="LHZ" gate="G$1" pin="1"/>
 <wire x1="180.34" y1="88.9" x2="185.42" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="88.9" x2="185.42" y2="96.52" width="0.1524" layer="91"/>
 </segment>
