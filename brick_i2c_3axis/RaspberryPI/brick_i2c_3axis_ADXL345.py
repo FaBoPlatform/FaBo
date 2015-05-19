@@ -1,4 +1,9 @@
 # coding: utf-8
+#
+# FaBo Brick Sample
+#
+# brick_i2c_3axis_ADXL345
+#
 
 import smbus
 import time
