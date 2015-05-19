@@ -130,9 +130,9 @@
 <description>&lt;h3&gt;GClue, Inc.&lt;/h3&gt;</description>
 <packages>
 <package name="BRICK_3PIN">
-<pad name="IN/OUT" x="-2.54" y="-8.89" drill="0.8" diameter="1.4224" shape="octagon" rot="R90"/>
-<pad name="VCC" x="0" y="-8.89" drill="0.8" diameter="1.4224" shape="octagon" rot="R90"/>
-<pad name="GND" x="2.54" y="-8.89" drill="0.8" diameter="1.4224" shape="square" rot="R90"/>
+<pad name="IN/OUT" x="-2.54" y="-8.89" drill="0.9" diameter="1.6764" shape="octagon" rot="R90"/>
+<pad name="VCC" x="0" y="-8.89" drill="0.9" diameter="1.6764" shape="octagon" rot="R90"/>
+<pad name="GND" x="2.54" y="-8.89" drill="0.9" diameter="1.6764" shape="square" rot="R90"/>
 <text x="-2.54" y="-7.62" size="0.8128" layer="21" font="vector" rot="R90" align="center-left">I/O</text>
 <text x="0" y="-7.62" size="0.8128" layer="21" font="vector" rot="R90" align="center-left">VCC</text>
 <text x="2.54" y="-7.62" size="0.8128" layer="21" font="vector" rot="R90" align="center-left">GND</text>
