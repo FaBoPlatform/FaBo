@@ -2,20 +2,21 @@
 #
 # FaBo Brick Sample
 #
-# brick_analog_led
+# brick_analog_button
 #
 
 import RPi.GPIO as GPIO
-import time
 
 LEDPIN = 4
+BUTTONPIN = 7
 
 GPIO.setwarnings(False)
 GPIO.setmode( GPIO.BCM )
 GPIO.setup( LEDPIN, GPIO.OUT )
+GPIO.setup( BUTTONPIN, GPIO.IN )
 
 while True:
-	GPIO.output( LEDPIN, True )
-	time.sleep( 1.0 )
-	GPIO.output( LEDPIN, False )
-	time.sleep( 1.0 )
+	if( GPIO.input( BUTTONPIN ) ):
+		GPIO.output( LEDPIN, True )
+	else:
+		GPIO.output( LEDPIN, False )
