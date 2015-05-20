@@ -128,7 +128,7 @@
 <plain>
 <text x="3.81" y="7.62" size="1.27" layer="21" font="vector" rot="R90">VIBRATOR</text>
 <text x="5.08" y="7.62" size="1.016" layer="21" font="vector" rot="R90">Rev.Beta2</text>
-<text x="12.7" y="13.97" size="0.8128" layer="21" font="vector" align="bottom-center">MADE IN JAPAN</text>
+<text x="12.7" y="12.7" size="0.8128" layer="21" font="vector" align="bottom-center">MADE IN JAPAN</text>
 </plain>
 <libraries>
 <library name="gclue">
@@ -2214,8 +2214,8 @@
 <rectangle x1="-0.3429" y1="2.3495" x2="0.3302" y2="2.3622" layer="21"/>
 </package>
 <package name="LA3R5-480AH1_PTH">
-<pad name="P$1" x="-1.29" y="0" drill="1" shape="octagon"/>
-<pad name="P$2" x="1.29" y="0" drill="1" shape="octagon"/>
+<pad name="P$1" x="-1.29" y="0" drill="1.2" shape="octagon"/>
+<pad name="P$2" x="1.29" y="0" drill="1.2" shape="octagon"/>
 <wire x1="0.9" y1="0" x2="-0.9" y2="0" width="0.127" layer="51"/>
 <wire x1="2" y1="12.2" x2="-2" y2="12.2" width="0.127" layer="51"/>
 <wire x1="-2" y1="0" x2="-2" y2="12.2" width="0.127" layer="51"/>
@@ -4097,7 +4097,7 @@ design rules under a new name.</description>
 <element name="J1" library="gclue" package="BRICK_3PIN" value="" x="12.7" y="16.51"/>
 <element name="U$5" library="gclue" package="LOGO_OSHW_T_M" value="" x="21.59" y="12.7"/>
 <element name="U1" library="gclue" package="LA3R5-480AH1_PTH" value="" x="12.7" y="20.32"/>
-<element name="U$1" library="FaBo" package="LOGO_FABO_M" value="" x="12.7" y="15.24"/>
+<element name="U$1" library="FaBo" package="LOGO_FABO_M" value="" x="12.7" y="13.97"/>
 </elements>
 <signals>
 <signal name="GND">

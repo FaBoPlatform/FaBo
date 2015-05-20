@@ -6299,8 +6299,8 @@
 <wire x1="-1.5" y1="1.23" x2="-1.5" y2="-2.27" width="0.127" layer="21"/>
 </package>
 <package name="LA3R5-480AH1_PTH">
-<pad name="P$1" x="-1.29" y="0" drill="1" shape="octagon"/>
-<pad name="P$2" x="1.29" y="0" drill="1" shape="octagon"/>
+<pad name="P$1" x="-1.29" y="0" drill="1.2" shape="octagon"/>
+<pad name="P$2" x="1.29" y="0" drill="1.2" shape="octagon"/>
 <wire x1="0.9" y1="0" x2="-0.9" y2="0" width="0.127" layer="51"/>
 <wire x1="2" y1="12.2" x2="-2" y2="12.2" width="0.127" layer="51"/>
 <wire x1="-2" y1="0" x2="-2" y2="12.2" width="0.127" layer="51"/>
