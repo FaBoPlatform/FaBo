@@ -142,37 +142,37 @@ http://www.telcom-semi.com&lt;p&gt;
 <wire x1="86.36" y1="1.27" x2="85.09" y2="0" width="0.127" layer="20" curve="-90"/>
 <hole x="2.54" y="17.78" drill="3.2"/>
 <hole x="83.82" y="17.78" drill="3.2"/>
-<pad name="-B" x="3.81" y="33.02" drill="0.8" shape="long"/>
-<pad name="+E" x="11.43" y="33.02" drill="0.8" shape="long"/>
-<pad name="BB(L)" x="22.86" y="33.02" drill="0.8" shape="long"/>
-<pad name="BB(R)" x="27.94" y="33.02" drill="0.8" shape="long"/>
-<pad name="4.2V2(R)" x="80.01" y="33.02" drill="0.8" shape="long"/>
-<pad name="4.2V1(R)" x="74.93" y="33.02" drill="0.8" shape="long"/>
-<pad name="4.2V2(L)" x="68.58" y="33.02" drill="0.8" shape="long"/>
-<pad name="4.2V1(L)" x="63.5" y="33.02" drill="0.8" shape="long"/>
-<pad name="200V2" x="55.88" y="33.02" drill="0.8" shape="long"/>
-<pad name="200V1" x="50.8" y="33.02" drill="0.8" shape="long"/>
-<pad name="4P1L_1(R)" x="80.01" y="2.54" drill="0.8" shape="long"/>
-<pad name="4P1L_7(R)" x="74.93" y="2.54" drill="0.8" shape="long"/>
-<pad name="4P1L_1(L)" x="68.58" y="2.54" drill="0.8" shape="long"/>
-<pad name="4P1L_7(L)" x="63.5" y="2.54" drill="0.8" shape="long"/>
-<wire x1="61.9125" y1="2.8575" x2="61.9125" y2="3.4925" width="0.127" layer="21"/>
-<wire x1="61.9125" y1="3.4925" x2="70.1675" y2="3.4925" width="0.127" layer="21"/>
-<wire x1="70.1675" y1="3.4925" x2="70.1675" y2="2.8575" width="0.127" layer="21"/>
-<wire x1="73.3425" y1="2.8575" x2="73.3425" y2="3.4925" width="0.127" layer="21"/>
-<wire x1="73.3425" y1="3.4925" x2="81.5975" y2="3.4925" width="0.127" layer="21"/>
-<wire x1="81.5975" y1="3.4925" x2="81.5975" y2="2.8575" width="0.127" layer="21"/>
-<wire x1="73.3425" y1="32.7025" x2="73.3425" y2="32.0675" width="0.127" layer="21"/>
-<wire x1="73.3425" y1="32.0675" x2="81.5975" y2="32.0675" width="0.127" layer="21"/>
-<wire x1="81.5975" y1="32.0675" x2="81.5975" y2="32.7025" width="0.127" layer="21"/>
-<wire x1="70.1675" y1="32.7025" x2="70.1675" y2="32.0675" width="0.127" layer="21"/>
-<wire x1="70.1675" y1="32.0675" x2="61.9125" y2="32.0675" width="0.127" layer="21"/>
-<wire x1="61.9125" y1="32.0675" x2="61.9125" y2="32.7025" width="0.127" layer="21"/>
-<wire x1="57.4675" y1="32.7025" x2="57.4675" y2="32.0675" width="0.127" layer="21"/>
-<wire x1="57.4675" y1="32.0675" x2="49.2125" y2="32.0675" width="0.127" layer="21"/>
-<wire x1="49.2125" y1="32.0675" x2="49.2125" y2="32.7025" width="0.127" layer="21"/>
-<text x="62.865" y="3.81" size="1.4224" layer="21">4P1L(L)</text>
-<text x="73.66" y="3.81" size="1.4224" layer="21">4P1L(R)</text>
+<pad name="-B" x="3.81" y="33.02" drill="1.2" shape="long"/>
+<pad name="+E" x="11.43" y="33.02" drill="1.2" shape="long"/>
+<pad name="BB(L)" x="22.86" y="33.02" drill="1.2" shape="long"/>
+<pad name="BB(R)" x="27.94" y="33.02" drill="1.2" shape="long"/>
+<pad name="4.2V2(R)" x="80.01" y="33.02" drill="1.2" shape="long"/>
+<pad name="4.2V1(R)" x="74.93" y="33.02" drill="1.2" shape="long"/>
+<pad name="4.2V2(L)" x="68.58" y="33.02" drill="1.2" shape="long"/>
+<pad name="4.2V1(L)" x="63.5" y="33.02" drill="1.2" shape="long"/>
+<pad name="200V2" x="55.88" y="33.02" drill="1.2" shape="long"/>
+<pad name="200V1" x="50.8" y="33.02" drill="1.2" shape="long"/>
+<pad name="4P1L_1(R)" x="80.01" y="2.54" drill="1.2" shape="long"/>
+<pad name="4P1L_7(R)" x="74.93" y="2.54" drill="1.2" shape="long"/>
+<pad name="4P1L_1(L)" x="68.58" y="2.54" drill="1.2" shape="long"/>
+<pad name="4P1L_7(L)" x="63.5" y="2.54" drill="1.2" shape="long"/>
+<wire x1="61.2775" y1="2.8575" x2="61.2775" y2="3.81" width="0.127" layer="21"/>
+<wire x1="61.2775" y1="3.81" x2="70.8025" y2="3.81" width="0.127" layer="21"/>
+<wire x1="70.8025" y1="3.81" x2="70.8025" y2="2.8575" width="0.127" layer="21"/>
+<wire x1="72.7075" y1="2.8575" x2="72.7075" y2="3.81" width="0.127" layer="21"/>
+<wire x1="72.7075" y1="3.81" x2="82.2325" y2="3.81" width="0.127" layer="21"/>
+<wire x1="82.2325" y1="3.81" x2="82.2325" y2="2.8575" width="0.127" layer="21"/>
+<wire x1="72.7075" y1="32.7025" x2="72.7075" y2="31.75" width="0.127" layer="21"/>
+<wire x1="72.7075" y1="31.75" x2="82.2325" y2="31.75" width="0.127" layer="21"/>
+<wire x1="82.2325" y1="31.75" x2="82.2325" y2="32.7025" width="0.127" layer="21"/>
+<wire x1="70.8025" y1="32.7025" x2="70.8025" y2="31.75" width="0.127" layer="21"/>
+<wire x1="70.8025" y1="31.75" x2="61.2775" y2="31.75" width="0.127" layer="21"/>
+<wire x1="61.2775" y1="31.75" x2="61.2775" y2="32.7025" width="0.127" layer="21"/>
+<wire x1="58.1025" y1="32.7025" x2="58.1025" y2="31.75" width="0.127" layer="21"/>
+<wire x1="58.1025" y1="31.75" x2="48.5775" y2="31.75" width="0.127" layer="21"/>
+<wire x1="48.5775" y1="31.75" x2="48.5775" y2="32.7025" width="0.127" layer="21"/>
+<text x="62.865" y="4.1275" size="1.4224" layer="21">4P1L(L)</text>
+<text x="73.66" y="4.1275" size="1.4224" layer="21">4P1L(R)</text>
 <text x="63.1825" y="0.3175" size="1.27" layer="21">7</text>
 <text x="68.2625" y="0.3175" size="1.27" layer="21">1</text>
 <text x="74.6125" y="0.3175" size="1.27" layer="21">7</text>
@@ -184,8 +184,8 @@ http://www.telcom-semi.com&lt;p&gt;
 <text x="26.3525" y="30.1625" size="1.4224" layer="21">BB(R)</text>
 <text x="9.8425" y="30.1625" size="1.4224" layer="21">+E</text>
 <text x="2.54" y="30.1625" size="1.4224" layer="21">-B</text>
-<pad name="-A" x="43.18" y="2.54" drill="0.8" shape="long"/>
-<text x="41.91" y="3.4925" size="1.4224" layer="21">-A</text>
+<pad name="-A" x="43.18" y="2.54" drill="1.2" shape="long"/>
+<text x="41.91" y="3.81" size="1.4224" layer="21">-A</text>
 </package>
 <package name="RESISTOR_1/4W">
 <wire x1="-2.54" y1="0.889" x2="-2.286" y2="1.143" width="0.1524" layer="21" curve="-90"/>
@@ -204,23 +204,11 @@ http://www.telcom-semi.com&lt;p&gt;
 <wire x1="2.286" y1="1.143" x2="1.905" y2="1.143" width="0.1524" layer="21"/>
 <wire x1="2.286" y1="-1.143" x2="1.905" y2="-1.143" width="0.1524" layer="21"/>
 <wire x1="2.54" y1="-0.889" x2="2.54" y2="0.889" width="0.1524" layer="21"/>
-<wire x1="-0.41" y1="0.635" x2="0.41" y2="0.635" width="0.1524" layer="51"/>
-<wire x1="-0.41" y1="-0.635" x2="0.41" y2="-0.635" width="0.1524" layer="51"/>
-<wire x1="-2.595" y1="0" x2="-1.1" y2="0" width="0.3048" layer="1"/>
-<wire x1="1" y1="0" x2="2.56" y2="0" width="0.3048" layer="1"/>
 <pad name="1" x="-3.81" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
 <pad name="2" x="3.81" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
-<text x="-2.7305" y="1.2065" size="1.4224" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.413" y="-0.6985" size="1.4224" layer="25" ratio="10">&gt;NAME</text>
 <rectangle x1="2.54" y1="-0.3048" x2="2.794" y2="0.3048" layer="21"/>
 <rectangle x1="-2.7686" y1="-0.3048" x2="-2.54" y2="0.3048" layer="21"/>
-<rectangle x1="0.4064" y1="-0.6985" x2="1.0564" y2="0.7015" layer="21"/>
-<rectangle x1="-1.0668" y1="-0.6985" x2="-0.4168" y2="0.7015" layer="21"/>
-<rectangle x1="-1.6254" y1="-0.7" x2="-0.4254" y2="0.7" layer="1"/>
-<rectangle x1="0.4254" y1="-0.7" x2="1.6254" y2="0.7" layer="1"/>
-<rectangle x1="-1.7254" y1="-0.8" x2="-0.3254" y2="0.8" layer="29"/>
-<rectangle x1="0.3254" y1="-0.8" x2="1.7254" y2="0.8" layer="29"/>
-<rectangle x1="-1.6254" y1="-0.7" x2="-0.4254" y2="0.7" layer="31"/>
-<rectangle x1="0.4254" y1="-0.7" x2="1.6254" y2="0.7" layer="31"/>
 </package>
 <package name="RESISTOR_1W">
 <wire x1="4.445" y1="0" x2="4.699" y2="0" width="0.6096" layer="51"/>
@@ -241,19 +229,11 @@ http://www.telcom-semi.com&lt;p&gt;
 <wire x1="3.556" y1="1.143" x2="3.175" y2="1.143" width="0.1524" layer="21"/>
 <wire x1="3.556" y1="-1.143" x2="3.175" y2="-1.143" width="0.1524" layer="21"/>
 <wire x1="3.81" y1="-0.889" x2="3.81" y2="0.889" width="0.1524" layer="21"/>
-<wire x1="-1.045" y1="0.635" x2="1.045" y2="0.635" width="0.1524" layer="51"/>
-<wire x1="-1.045" y1="-0.635" x2="1.045" y2="-0.635" width="0.1524" layer="51"/>
-<wire x1="-5.135" y1="0" x2="-1.735" y2="0" width="0.3048" layer="1"/>
-<wire x1="1.635" y1="0" x2="5.1" y2="0" width="0.3048" layer="1"/>
 <pad name="1" x="-6.35" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
 <pad name="2" x="6.35" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
-<text x="-4.0005" y="1.2065" size="1.4224" layer="25" ratio="10">&gt;NAME</text>
+<text x="-3.683" y="-0.6985" size="1.4224" layer="25" ratio="10">&gt;NAME</text>
 <rectangle x1="3.81" y1="-0.3048" x2="4.6736" y2="0.3048" layer="21"/>
 <rectangle x1="-4.6736" y1="-0.3048" x2="-3.81" y2="0.3048" layer="21"/>
-<rectangle x1="1.0414" y1="-0.6985" x2="1.6914" y2="0.7015" layer="21"/>
-<rectangle x1="-1.7018" y1="-0.6985" x2="-1.0518" y2="0.7015" layer="21"/>
-<rectangle x1="-2.2604" y1="-0.7" x2="-1.0604" y2="0.7" layer="1"/>
-<rectangle x1="1.0604" y1="-0.7" x2="2.2604" y2="0.7" layer="1"/>
 </package>
 <package name="RESISTOR_1/2W">
 <wire x1="3.81" y1="-1.27" x2="3.7465" y2="-1.27" width="0.6096" layer="51"/>
@@ -274,39 +254,23 @@ http://www.telcom-semi.com&lt;p&gt;
 <wire x1="2.921" y1="-0.127" x2="2.54" y2="-0.127" width="0.1524" layer="21"/>
 <wire x1="2.921" y1="-2.413" x2="2.54" y2="-2.413" width="0.1524" layer="21"/>
 <wire x1="3.175" y1="-2.159" x2="3.175" y2="-0.381" width="0.1524" layer="21"/>
-<wire x1="-1.045" y1="-0.635" x2="1.045" y2="-0.635" width="0.1524" layer="51"/>
-<wire x1="-1.045" y1="-1.905" x2="1.045" y2="-1.905" width="0.1524" layer="51"/>
-<wire x1="-3.865" y1="-1.27" x2="-1.735" y2="-1.27" width="0.3048" layer="1"/>
-<wire x1="1.635" y1="-1.27" x2="3.83" y2="-1.27" width="0.3048" layer="1"/>
 <pad name="1" x="-5.08" y="-1.27" drill="0.8128" diameter="1.6764" shape="octagon"/>
 <pad name="2" x="5.08" y="-1.27" drill="0.8128" diameter="1.6764" shape="octagon"/>
-<text x="-3.3655" y="-0.0635" size="1.4224" layer="25" ratio="10">&gt;NAME</text>
+<text x="-3.048" y="-1.9685" size="1.4224" layer="25" ratio="10">&gt;NAME</text>
 <rectangle x1="3.175" y1="-1.5748" x2="3.7211" y2="-0.9652" layer="21"/>
 <rectangle x1="-3.7211" y1="-1.5748" x2="-3.175" y2="-0.9652" layer="21"/>
-<rectangle x1="1.0414" y1="-1.9685" x2="1.6914" y2="-0.5685" layer="21"/>
-<rectangle x1="-1.7018" y1="-1.9685" x2="-1.0518" y2="-0.5685" layer="21"/>
-<rectangle x1="-2.2604" y1="-1.97" x2="-1.0604" y2="-0.57" layer="1"/>
-<rectangle x1="1.0604" y1="-1.97" x2="2.2604" y2="-0.57" layer="1"/>
-</package>
-<package name="100UF25V_S3">
-<wire x1="1.905" y1="3.81" x2="0.635" y2="3.81" width="0.2032" layer="21"/>
-<circle x="2.54" y="2.54" radius="3.25" width="0.2032" layer="21"/>
-<pad name="2" x="1.27" y="2.54" drill="0.7" diameter="1.651"/>
-<pad name="1" x="3.81" y="2.54" drill="0.7" diameter="1.651" shape="square"/>
-<text x="0.635" y="-1.778" size="0.8128" layer="27">&gt;Value</text>
-<text x="0.508" y="4.191" size="0.8128" layer="25">&gt;Name</text>
 </package>
 <package name="47UF250V_S5_NO_VALUE">
 <wire x1="-1.905" y1="1.27" x2="-3.175" y2="1.27" width="0.2032" layer="21"/>
-<pad name="2" x="-2.54" y="0" drill="0.7" diameter="1.651"/>
-<pad name="1" x="2.54" y="0" drill="0.7" diameter="1.651" shape="square"/>
+<pad name="2" x="-2.54" y="0" drill="1" diameter="1.8"/>
+<pad name="1" x="2.54" y="0" drill="1" diameter="1.8" shape="square"/>
 <text x="-3.302" y="1.651" size="1.6764" layer="25">&gt;Name</text>
 <circle x="0" y="0" radius="4.57905" width="0.127" layer="21"/>
 </package>
 <package name="100UF400V_S6_NO_VALUE">
-<wire x1="-4.445" y1="1.27" x2="-3.175" y2="1.27" width="0.2032" layer="21"/>
-<pad name="2" x="-3.81" y="0" drill="0.7" diameter="1.651"/>
-<pad name="1" x="3.81" y="0" drill="0.7" diameter="1.651" shape="square"/>
+<wire x1="-4.445" y1="1.905" x2="-3.175" y2="1.905" width="0.2032" layer="21"/>
+<pad name="2" x="-3.81" y="0" drill="1" diameter="1.8"/>
+<pad name="1" x="3.81" y="0" drill="1" diameter="1.651" shape="square"/>
 <text x="-4.572" y="2.921" size="1.4224" layer="25">&gt;Name</text>
 <circle x="0" y="0" radius="7.62" width="0.127" layer="21"/>
 </package>
@@ -440,13 +404,6 @@ http://www.telcom-semi.com&lt;p&gt;
 <rectangle x1="1.905" y1="2.921" x2="3.175" y2="3.175" layer="51"/>
 <rectangle x1="-3.175" y1="2.921" x2="-1.905" y2="3.175" layer="51"/>
 </package>
-<package name="100UF25V_S3_NO_VALUE">
-<wire x1="-0.635" y1="0.9525" x2="-1.905" y2="0.9525" width="0.2032" layer="21"/>
-<circle x="0" y="0" radius="3.25" width="0.2032" layer="21"/>
-<pad name="2" x="-1.27" y="0" drill="0.7" diameter="1.651"/>
-<pad name="1" x="1.27" y="0" drill="0.7" diameter="1.651" shape="square"/>
-<text x="-2.3495" y="1.3335" size="1.4224" layer="25">&gt;Name</text>
-</package>
 <package name="C12.5B6_NO_VALUE">
 <wire x1="6.985" y1="3.81" x2="6.985" y2="2.54" width="0.4064" layer="21"/>
 <wire x1="8.1915" y1="3.81" x2="8.1915" y2="2.54" width="0.4064" layer="21"/>
@@ -465,6 +422,21 @@ http://www.telcom-semi.com&lt;p&gt;
 <pad name="1" x="1.27" y="2.54" drill="1.016" diameter="2.159" shape="octagon"/>
 <pad name="2" x="13.97" y="2.54" drill="1.016" diameter="2.159" shape="octagon"/>
 <text x="1.27" y="3.937" size="1.4224" layer="25" ratio="10">&gt;NAME</text>
+</package>
+<package name="100UF25V_S3">
+<wire x1="1.905" y1="3.81" x2="0.635" y2="3.81" width="0.2032" layer="21"/>
+<circle x="2.54" y="2.54" radius="3.25" width="0.2032" layer="21"/>
+<pad name="2" x="1.27" y="2.54" drill="0.8" diameter="1.651"/>
+<pad name="1" x="3.81" y="2.54" drill="0.8" diameter="1.651" shape="square"/>
+<text x="0.635" y="-1.778" size="0.8128" layer="27">&gt;Value</text>
+<text x="0.508" y="4.191" size="0.8128" layer="25">&gt;Name</text>
+</package>
+<package name="100UF25V_S3_NO_VALUE">
+<wire x1="-0.635" y1="0.9525" x2="-1.905" y2="0.9525" width="0.2032" layer="21"/>
+<circle x="0" y="0" radius="3.25" width="0.2032" layer="21"/>
+<pad name="2" x="-1.27" y="0" drill="0.8" diameter="1.651"/>
+<pad name="1" x="1.27" y="0" drill="0.8" diameter="1.651" shape="square"/>
+<text x="-2.3495" y="1.3335" size="1.4224" layer="25">&gt;Name</text>
 </package>
 </packages>
 <symbols>
