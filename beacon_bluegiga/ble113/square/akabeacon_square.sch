@@ -63,6 +63,7 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
 <layer number="101" name="Patch_Top" color="12" fill="4" visible="yes" active="yes"/>
 <layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
@@ -76,6 +77,7 @@
 <layer number="110" name="fp0" color="7" fill="1" visible="no" active="yes"/>
 <layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="113" name="IDFDebug" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
@@ -221,18 +223,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="3.5" y1="-10.05" x2="3.5" y2="5.9" width="0.127" layer="21"/>
 <wire x1="3.5" y1="5.9" x2="-5.75" y2="5.9" width="0.127" layer="21"/>
 </package>
-<package name="SWICTH-LS6J2M-T">
-<wire x1="-2.6" y1="2.6" x2="2.6" y2="2.6" width="0.127" layer="21"/>
-<wire x1="2.6" y1="2.6" x2="2.6" y2="-2.6" width="0.127" layer="21"/>
-<wire x1="2.6" y1="-2.6" x2="-2.6" y2="-2.6" width="0.127" layer="21"/>
-<wire x1="-2.6" y1="-2.6" x2="-2.6" y2="2.6" width="0.127" layer="21"/>
-<smd name="1" x="-2.4" y="2.4" dx="1.55" dy="1.2" layer="1"/>
-<smd name="2" x="-2.3" y="-2.4" dx="1.55" dy="1.2" layer="1"/>
-<smd name="4" x="2.4" y="-2.4" dx="1.55" dy="1.2" layer="1"/>
-<smd name="3" x="2.4" y="2.4" dx="1.55" dy="1.2" layer="1"/>
-<circle x="-1.6" y="1.4" radius="0.4242625" width="0.127" layer="21"/>
-<circle x="-1.6" y="-1.3" radius="0.4242625" width="0.127" layer="21"/>
-</package>
 <package name="PIN-HEADER-SMT(1.27MM)2X5">
 <smd name="8" x="1.2" y="2" dx="2.032" dy="0.635" layer="1" rot="R90"/>
 <smd name="7" x="1.2" y="-1.9" dx="2.032" dy="0.635" layer="1" rot="R90"/>
@@ -251,6 +241,12 @@ We've spent an enormous amount of time creating and checking these footprints an
 <text x="-4.4" y="-2.25" size="1.27" layer="21">1</text>
 <hole x="1.8" y="0" drill="0.8"/>
 <hole x="-1.8" y="0" drill="0.8"/>
+</package>
+<package name="SWITCH-4P(KMR2)">
+<smd name="1" x="-1" y="0" dx="0.9" dy="0.95" layer="1"/>
+<smd name="3" x="-1" y="-1.6" dx="0.9" dy="0.95" layer="1"/>
+<smd name="2" x="3.1" y="0" dx="0.9" dy="0.95" layer="1"/>
+<smd name="4" x="3.1" y="-1.6" dx="0.9" dy="0.95" layer="1"/>
 </package>
 </packages>
 <symbols>
@@ -296,22 +292,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pin name="NC2" x="20.32" y="2.54" length="middle" rot="R180"/>
 <pin name="GND9" x="20.32" y="5.08" length="middle" rot="R180"/>
 <text x="2.54" y="20.32" size="1.778" layer="94">BLE113</text>
-</symbol>
-<symbol name="SWICTH-LS6J2M-T">
-<pin name="1" x="-7.62" y="7.62" length="middle"/>
-<pin name="2" x="-7.62" y="2.54" length="middle"/>
-<pin name="3" x="7.62" y="7.62" length="middle" rot="R180"/>
-<pin name="4" x="7.62" y="2.54" length="middle" rot="R180"/>
-<wire x1="-5.08" y1="7.62" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="7.62" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="5.08" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="2.54" x2="-5.08" y2="2.54" width="0.254" layer="94"/>
-<wire x1="5.08" y1="7.62" x2="2.54" y2="7.62" width="0.254" layer="94"/>
-<wire x1="2.54" y1="7.62" x2="2.54" y2="5.08" width="0.254" layer="94"/>
-<wire x1="2.54" y1="5.08" x2="2.54" y2="2.54" width="0.254" layer="94"/>
-<wire x1="2.54" y1="2.54" x2="5.08" y2="2.54" width="0.254" layer="94"/>
-<wire x1="2.54" y1="5.08" x2="0" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="5.08" x2="0" y2="7.62" width="0.254" layer="94"/>
 </symbol>
 <symbol name="PIN-HEAER-SMT(1.27MM)2X5">
 <text x="-7.54" y="-2.58" size="1.27" layer="94">1</text>
@@ -376,6 +356,17 @@ We've spent an enormous amount of time creating and checking these footprints an
 <text x="163.83" y="20.32" size="2.54" layer="94" font="vector">FaBo</text>
 <text x="163.83" y="15.24" size="2.54" layer="94" font="vector">www.gclue.jp</text>
 </symbol>
+<symbol name="SWITCH-4P(KMR2)">
+<wire x1="0" y1="2.54" x2="0" y2="5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<pin name="1" x="-7.62" y="5.08" length="middle"/>
+<pin name="2" x="7.62" y="5.08" length="middle" rot="R180"/>
+<pin name="3" x="-7.62" y="-2.54" length="middle"/>
+<pin name="4" x="7.62" y="-2.54" length="middle" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="BLE113">
@@ -428,24 +419,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 </device>
 </devices>
 </deviceset>
-<deviceset name="SWITCH-LS6J2M-T">
-<gates>
-<gate name="G$1" symbol="SWICTH-LS6J2M-T" x="2.54" y="-5.08"/>
-</gates>
-<devices>
-<device name="" package="SWICTH-LS6J2M-T">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="PIN-HEADER-SMT(1.27MM)2X5">
 <description>PIN-HEADER-SMT (1.27MM) 2x5</description>
 <gates>
@@ -478,6 +451,24 @@ We've spent an enormous amount of time creating and checking these footprints an
 </gates>
 <devices>
 <device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SWICTH-4P(KMR2)">
+<gates>
+<gate name="G$1" symbol="SWITCH-4P(KMR2)" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SWITCH-4P(KMR2)">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -820,7 +811,6 @@ Ceramic&lt;br&gt;</description>
 <part name="GND9" library="SparkFun" deviceset="GND" device=""/>
 <part name="U$5" library="gclue" deviceset="BLE113" device=""/>
 <part name="GND4" library="SparkFun" deviceset="GND" device=""/>
-<part name="U$8" library="gclue" deviceset="SWITCH-LS6J2M-T" device=""/>
 <part name="U$2" library="gclue" deviceset="PIN-HEADER-SMT(1.27MM)2X5" device=""/>
 <part name="VCC" library="adafruit" deviceset="PINHD-1X1" device="CB"/>
 <part name="GND" library="adafruit" deviceset="PINHD-1X1" device="CB"/>
@@ -830,6 +820,7 @@ Ceramic&lt;br&gt;</description>
 <part name="R2" library="GClue-Resistors" deviceset="RESISTOR" device="0603" value="4.7K"/>
 <part name="LED" library="GClue-LED" deviceset="LED" device="0603"/>
 <part name="C1" library="GClue-Capacitor" deviceset="CAPACITOR" device="0603" value="1u"/>
+<part name="U$6" library="gclue" deviceset="SWICTH-4P(KMR2)" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -851,7 +842,6 @@ Ceramic&lt;br&gt;</description>
 <instance part="GND9" gate="1" x="99.06" y="114.3" rot="R270"/>
 <instance part="U$5" gate="G$1" x="106.68" y="58.42"/>
 <instance part="GND4" gate="1" x="137.16" y="33.02"/>
-<instance part="U$8" gate="G$1" x="55.88" y="101.6" rot="R270"/>
 <instance part="U$2" gate="G$1" x="114.3" y="111.76" rot="R270"/>
 <instance part="VCC" gate="G$1" x="78.74" y="81.28"/>
 <instance part="GND" gate="G$1" x="53.34" y="83.82"/>
@@ -861,6 +851,7 @@ Ceramic&lt;br&gt;</description>
 <instance part="R2" gate="G$1" x="180.34" y="91.44" rot="R90"/>
 <instance part="LED" gate="G$1" x="180.34" y="81.28" rot="R270"/>
 <instance part="C1" gate="G$1" x="58.42" y="76.2"/>
+<instance part="U$6" gate="G$1" x="73.66" y="101.6"/>
 </instances>
 <busses>
 </busses>
@@ -912,11 +903,6 @@ Ceramic&lt;br&gt;</description>
 <pinref part="U$5" gate="G$1" pin="GND9"/>
 </segment>
 <segment>
-<pinref part="GND7" gate="1" pin="GND"/>
-<wire x1="63.5" y1="93.98" x2="63.5" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="U$8" gate="G$1" pin="3"/>
-</segment>
-<segment>
 <pinref part="GND9" gate="1" pin="GND"/>
 <wire x1="101.6" y1="114.3" x2="106.68" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="1"/>
@@ -930,6 +916,12 @@ Ceramic&lt;br&gt;</description>
 <pinref part="U$5" gate="G$1" pin="GND8"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="127" y1="35.56" x2="137.16" y2="35.56" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND7" gate="1" pin="GND"/>
+<wire x1="63.5" y1="93.98" x2="63.5" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="U$6" gate="G$1" pin="3"/>
+<wire x1="63.5" y1="99.06" x2="66.04" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
@@ -1011,9 +1003,10 @@ Ceramic&lt;br&gt;</description>
 <label x="71.12" y="111.76" size="1.778" layer="95"/>
 <wire x1="43.18" y1="111.76" x2="63.5" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="111.76" x2="73.66" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="111.76" x2="63.5" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="U$8" gate="G$1" pin="1"/>
 <pinref part="R1" gate="G$1" pin="2"/>
+<pinref part="U$6" gate="G$1" pin="1"/>
+<wire x1="66.04" y1="106.68" x2="63.5" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="106.68" x2="63.5" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
