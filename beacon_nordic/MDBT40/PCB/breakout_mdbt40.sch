@@ -9,6 +9,10 @@
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
@@ -293,25 +297,6 @@
 <library name="gclue">
 <description>&lt;h3&gt;GClue, Inc.&lt;/h3&gt;</description>
 <packages>
-<package name="PIN-HEADER-SMT(1.27MM)2X5">
-<smd name="8" x="1.2" y="2" dx="2.032" dy="0.635" layer="1" rot="R90"/>
-<smd name="7" x="1.2" y="-1.9" dx="2.032" dy="0.635" layer="1" rot="R90"/>
-<smd name="6" x="0" y="2" dx="2.032" dy="0.635" layer="1" rot="R90"/>
-<smd name="5" x="0" y="-1.95" dx="2.032" dy="0.635" layer="1" rot="R90"/>
-<smd name="4" x="-1.2" y="2" dx="2.032" dy="0.635" layer="1" rot="R90"/>
-<smd name="3" x="-1.2" y="-1.95" dx="2.032" dy="0.635" layer="1" rot="R90"/>
-<smd name="2" x="-2.35" y="2" dx="2.032" dy="0.635" layer="1" rot="R90"/>
-<smd name="1" x="-2.4" y="-1.95" dx="2.032" dy="0.635" layer="1" rot="R90"/>
-<smd name="10" x="2.4" y="2" dx="2.032" dy="0.635" layer="1" rot="R90"/>
-<smd name="9" x="2.4" y="-1.9" dx="2.032" dy="0.635" layer="1" rot="R90"/>
-<wire x1="-3.15" y1="1.9" x2="3.1" y2="1.9" width="0.127" layer="21"/>
-<wire x1="3.1" y1="1.9" x2="3.1" y2="-1.7" width="0.127" layer="21"/>
-<wire x1="3.1" y1="-1.7" x2="-3.15" y2="-1.7" width="0.127" layer="21"/>
-<wire x1="-3.15" y1="-1.7" x2="-3.15" y2="1.9" width="0.127" layer="21"/>
-<text x="-4.4" y="-2.25" size="1.27" layer="21">1</text>
-<hole x="1.8" y="0" drill="1"/>
-<hole x="-1.8" y="0" drill="1"/>
-</package>
 <package name="SMTU2450-BOTTOM-MINI">
 <smd name="P$_VCC" x="0" y="16" dx="4.318" dy="3.2512" layer="16" rot="R270"/>
 <smd name="P$_GND" x="0" y="-16" dx="4.318" dy="3.2512" layer="16" rot="R270"/>
@@ -319,44 +304,6 @@
 </package>
 </packages>
 <symbols>
-<symbol name="PIN-HEAER-SMT(1.27MM)2X5">
-<text x="-7.54" y="-2.58" size="1.27" layer="94">1</text>
-<wire x1="7.62" y1="5.08" x2="7.62" y2="6.35" width="0.254" layer="94"/>
-<wire x1="5.08" y1="5.08" x2="5.08" y2="6.35" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="5.08" y1="0" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="7.62" y1="0" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="8.89" y1="5.08" x2="8.89" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="-3.81" y1="3.556" x2="-3.81" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="-3.81" y1="-1.27" x2="8.89" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="2.54" y1="5.08" x2="2.54" y2="6.35" width="0.254" layer="94"/>
-<wire x1="0" y1="6.35" x2="0" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="5.08" x2="-2.54" y2="6.35" width="0.254" layer="94"/>
-<pin name="2" x="-2.54" y="11.43" length="middle" rot="R270"/>
-<pin name="4" x="0" y="11.43" length="middle" rot="R270"/>
-<pin name="6" x="2.54" y="11.43" length="middle" rot="R270"/>
-<pin name="8" x="5.08" y="11.43" length="middle" rot="R270"/>
-<pin name="10" x="7.62" y="11.43" length="middle" rot="R270"/>
-<pin name="1" x="-2.54" y="-7.62" length="middle" rot="R90"/>
-<pin name="3" x="0" y="-7.62" length="middle" rot="R90"/>
-<pin name="5" x="2.54" y="-7.62" length="middle" rot="R90"/>
-<pin name="7" x="5.08" y="-7.62" length="middle" rot="R90"/>
-<pin name="9" x="7.62" y="-7.62" length="middle" rot="R90"/>
-<wire x1="-3.81" y1="5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="5.08" x2="0" y2="5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
-<wire x1="2.54" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
-<wire x1="7.62" y1="5.08" x2="8.89" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-3.81" y1="3.81" x2="-3.81" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="5.08" x2="-2.54" y2="3.81" width="0.254" layer="94"/>
-<wire x1="0" y1="5.08" x2="0" y2="3.81" width="0.254" layer="94"/>
-<wire x1="2.54" y1="5.08" x2="2.54" y2="3.81" width="0.254" layer="94"/>
-<wire x1="5.08" y1="5.08" x2="5.08" y2="3.81" width="0.254" layer="94"/>
-<wire x1="7.62" y1="5.08" x2="7.62" y2="3.81" width="0.254" layer="94"/>
-</symbol>
 <symbol name="SMTU2450">
 <wire x1="2.54" y1="2.54" x2="2.54" y2="-2.54" width="0.6096" layer="94"/>
 <wire x1="0.8" y1="1.04" x2="0.8" y2="-1.24" width="0.6096" layer="94"/>
@@ -368,31 +315,6 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="PIN-HEADER-SMT(1.27MM)2X5">
-<description>PIN-HEADER-SMT (1.27MM) 2x5</description>
-<gates>
-<gate name="G$1" symbol="PIN-HEAER-SMT(1.27MM)2X5" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="PIN-HEADER-SMT(1.27MM)2X5">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="10" pad="10"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
-<connect gate="G$1" pin="7" pad="7"/>
-<connect gate="G$1" pin="8" pad="8"/>
-<connect gate="G$1" pin="9" pad="9"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="SMTU2450-BOTTOM-MINI">
 <gates>
 <gate name="G$1" symbol="SMTU2450" x="-2.54" y="0"/>
@@ -5106,6 +5028,342 @@ Source: Epson Toyocom FC-12M.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="tag-connect">
+<description>&lt;h3&gt;TAG-CONNECT ICSP Connector&lt;/h3&gt;&lt;BR&gt;&lt;I&gt;Manufacturer:&lt;/I&gt; &lt;a href="http://www.tag-connect.com"&gt;Tag-Connect&lt;/a&gt;&lt;BR&gt;
+&lt;BR&gt;Cable for easy In-Circuit Serial Programming. Designed for Microchip ICD2, suitable for many others.&lt;BR&gt;
+Two variants - one "with legs" (for hands-free fit on PCB) and another "without legs" for quick programming.
+
+&lt;p&gt;
+&lt;TABLE cellspacing=0 cellpadding=0 border=0&gt;
+&lt;TR&gt;&lt;TD width=20&gt;&lt;/TD&gt;&lt;TD&gt;
+&lt;TABLE cellspacing=0 cellpadding=1 border=1&gt;
+&lt;TR bgcolor=silver&gt;&lt;TD align=center&gt;PAD&lt;/TD&gt;&lt;TD align=center&gt;Description&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;1&lt;/TD&gt;&lt;TD&gt;MCLR/Vpp&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;2&lt;/TD&gt;&lt;TD&gt;Vdd&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;3&lt;/TD&gt;&lt;TD&gt;GND&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;4&lt;/TD&gt;&lt;TD&gt;PGD (ISPDAT)&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;5&lt;/TD&gt;&lt;TD&gt;PGC (ISPCLK)&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;6&lt;/TD&gt;&lt;TD&gt;nc (used for LVP)&lt;/TD&gt;&lt;/TR&gt;
+&lt;/TABLE&gt;
+&lt;/TD&gt;&lt;/TR&gt;&lt;/TABLE&gt;&lt;BR&gt;&lt;BR&gt;
+
+©2009 ROFA.cz - modified and updated by Robert Darlington &amp;#8249;rdarlington@gmail.com&amp;#8250;</description>
+<packages>
+<package name="TC2030-MCP">
+<description>&lt;b&gt;TAG-CONNECT ICSP Connector&lt;/b&gt; - Legged version&lt;BR&gt;&lt;I&gt;Manufacturer:&lt;/I&gt; &lt;a href="http://www.tag-connect.com"&gt;Tag-Connect&lt;/a&gt;
+&lt;p&gt;
+Cable for easy In-Circuit Serial Programming. Designed for Microchip ICD2, suitable for many others.
+&lt;p&gt;
+&lt;b&gt;NOTE:&lt;/b&gt; Eagle's default spacing for drill holes does not leave sufficent room for routing traces for this footprint and should be adjusted. &lt;br&gt;
+This setting can be found in the board layout editor under the Edit menu.  Select "Design Rules" and then the Distance tab.  8 mils for Drill/Hole works well.
+&lt;br&gt;
+&lt;TABLE cellspacing=0 cellpadding=0 border=0&gt;
+&lt;TR&gt;&lt;TD width=20&gt;&lt;/TD&gt;&lt;TD&gt;
+&lt;TABLE cellspacing=0 cellpadding=1 border=1&gt;
+&lt;TR bgcolor=silver&gt;&lt;TD align=center&gt;PAD&lt;/TD&gt;&lt;TD align=center&gt;Description&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;1&lt;/TD&gt;&lt;TD&gt;MCLR/Vpp&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;2&lt;/TD&gt;&lt;TD&gt;Vdd&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;3&lt;/TD&gt;&lt;TD&gt;GND&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;4&lt;/TD&gt;&lt;TD&gt;PGD (ISPDAT)&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;5&lt;/TD&gt;&lt;TD&gt;PGC (ISPCLK)&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;6&lt;/TD&gt;&lt;TD&gt;nc (used for LVP)&lt;/TD&gt;&lt;/TR&gt;
+&lt;/TABLE&gt;
+&lt;/TD&gt;&lt;/TR&gt;&lt;/TABLE&gt;&lt;BR&gt;&lt;BR&gt;
+©2009 ROFA.cz - modified and updated by Robert Darlington &amp;#8249;rdarlington@gmail.com&amp;#8250;</description>
+<smd name="2" x="1.27" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="4" x="2.54" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="6" x="3.81" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="5" x="3.81" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="3" x="2.54" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="1" x="1.27" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<text x="-1.27" y="-2.54" size="1.27" layer="25" rot="R90">&gt;name</text>
+<hole x="0" y="0" drill="0.889"/>
+<hole x="5.08" y="-1.016" drill="0.889"/>
+<hole x="5.08" y="1.016" drill="0.889"/>
+<hole x="0" y="2.54" drill="2.3748"/>
+<hole x="0" y="-2.54" drill="2.3748"/>
+<hole x="3.175" y="-2.54" drill="2.3748"/>
+<hole x="3.175" y="2.54" drill="2.3748"/>
+<polygon width="0.0254" layer="39">
+<vertex x="1.27" y="-0.2413"/>
+<vertex x="1.6637" y="-0.2413"/>
+<vertex x="1.6637" y="-0.635"/>
+<vertex x="2.1463" y="-0.635"/>
+<vertex x="2.1463" y="-0.2413"/>
+<vertex x="2.9337" y="-0.2413"/>
+<vertex x="2.9337" y="-0.635"/>
+<vertex x="3.4163" y="-0.635"/>
+<vertex x="3.4163" y="-0.2413"/>
+<vertex x="3.81" y="-0.2413"/>
+<vertex x="3.81" y="0.2413"/>
+<vertex x="3.4163" y="0.2413"/>
+<vertex x="3.4163" y="0.635"/>
+<vertex x="2.9337" y="0.635"/>
+<vertex x="2.9337" y="0.2413"/>
+<vertex x="2.1463" y="0.2413"/>
+<vertex x="2.1463" y="0.635"/>
+<vertex x="1.6637" y="0.635"/>
+<vertex x="1.6637" y="0.2413"/>
+<vertex x="1.27" y="0.2413"/>
+</polygon>
+</package>
+<package name="TC2030-MCP-NL">
+<description>&lt;B&gt;TAG-CONNECT ICSP Connector&lt;/B&gt;&lt;BR&gt;&lt;I&gt;Manufacturer:&lt;/I&gt; &lt;a href="www.tag-connect.com"&gt;Tag-Connect&lt;/a&gt;&lt;BR&gt;
+&lt;BR&gt;Cable for easy In-Circuit Serial Programming. Designed for Microchip ICD2, suitable for many others.&lt;BR&gt;
+
+&lt;TABLE cellspacing=0 cellpadding=0 border=0&gt;
+&lt;TR&gt;&lt;TD width=20&gt;&lt;/TD&gt;&lt;TD&gt;
+&lt;TABLE cellspacing=0 cellpadding=1 border=1&gt;
+&lt;TR bgcolor=silver&gt;&lt;TD align=center&gt;PAD&lt;/TD&gt;&lt;TD align=center&gt;Description&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;1&lt;/TD&gt;&lt;TD&gt;MCLR/Vpp&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;2&lt;/TD&gt;&lt;TD&gt;Vdd&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;3&lt;/TD&gt;&lt;TD&gt;GND&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;4&lt;/TD&gt;&lt;TD&gt;PGD (ISPDAT)&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;5&lt;/TD&gt;&lt;TD&gt;PGC (ISPCLK)&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;6&lt;/TD&gt;&lt;TD&gt;nc (used for LVP)&lt;/TD&gt;&lt;/TR&gt;
+&lt;/TABLE&gt;
+&lt;/TD&gt;&lt;/TR&gt;&lt;/TABLE&gt;&lt;BR&gt;&lt;BR&gt;
+
+©2009 ROFA.cz - modified and updated by Robert Darlington &amp;#8249;rdarlington@gmail.com&amp;#8250;</description>
+<smd name="2" x="1.27" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="4" x="2.54" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="6" x="3.81" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="5" x="3.81" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="3" x="2.54" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="1" x="1.27" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<text x="-0.635" y="1.27" size="1.27" layer="25">&gt;name</text>
+<hole x="0" y="0" drill="0.889"/>
+<hole x="5.08" y="-1.016" drill="0.889"/>
+<hole x="5.08" y="1.016" drill="0.889"/>
+<polygon width="0.0254" layer="39">
+<vertex x="1.27" y="-0.2413"/>
+<vertex x="1.6637" y="-0.2413"/>
+<vertex x="1.6637" y="-0.635"/>
+<vertex x="2.1463" y="-0.635"/>
+<vertex x="2.1463" y="-0.2413"/>
+<vertex x="2.9337" y="-0.2413"/>
+<vertex x="2.9337" y="-0.635"/>
+<vertex x="3.4163" y="-0.635"/>
+<vertex x="3.4163" y="-0.2413"/>
+<vertex x="3.81" y="-0.2413"/>
+<vertex x="3.81" y="0.2413"/>
+<vertex x="3.4163" y="0.2413"/>
+<vertex x="3.4163" y="0.635"/>
+<vertex x="2.9337" y="0.635"/>
+<vertex x="2.9337" y="0.2413"/>
+<vertex x="2.1463" y="0.2413"/>
+<vertex x="2.1463" y="0.635"/>
+<vertex x="1.6637" y="0.635"/>
+<vertex x="1.6637" y="0.2413"/>
+<vertex x="1.27" y="0.2413"/>
+</polygon>
+</package>
+<package name="TC2030-MCP-NL-CP">
+<description>&lt;B&gt;TAG-CONNECT ICSP Connector&lt;/B&gt;&lt;I&gt;- with optional copper pads for steel alignment pins&lt;/I&gt;&lt;BR&gt;&lt;I&gt;Manufacturer:&lt;/I&gt; &lt;a href="http://www.tag-connect.com"&gt;Tag-Connect&lt;/a&gt;&lt;BR&gt;
+&lt;BR&gt;Cable for easy In-Circuit Serial Programming. Designed for Microchip ICD2, suitable for many others.
+&lt;p&gt;
+&lt;b&gt;NOTE:&lt;/b&gt; Eagle's default spacing for drill holes does not leave sufficent room for routing traces for this footprint and should be adjusted. &lt;br&gt;
+This setting can be found in the board layout editor under the Edit menu.  Select "Design Rules" and then the Distance tab.  8 mils for Drill/Hole works well.
+&lt;br&gt;
+&lt;TABLE cellspacing=0 cellpadding=0 border=0&gt;
+&lt;TR&gt;&lt;TD width=20&gt;&lt;/TD&gt;&lt;TD&gt;
+&lt;TABLE cellspacing=0 cellpadding=1 border=1&gt;
+&lt;TR bgcolor=silver&gt;&lt;TD align=center&gt;PAD&lt;/TD&gt;&lt;TD align=center&gt;Description&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;1&lt;/TD&gt;&lt;TD&gt;MCLR/Vpp&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;2&lt;/TD&gt;&lt;TD&gt;Vdd&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;3&lt;/TD&gt;&lt;TD&gt;GND&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;4&lt;/TD&gt;&lt;TD&gt;PGD (ISPDAT)&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;5&lt;/TD&gt;&lt;TD&gt;PGC (ISPCLK)&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;6&lt;/TD&gt;&lt;TD&gt;nc (used for LVP)&lt;/TD&gt;&lt;/TR&gt;
+&lt;/TABLE&gt;
+&lt;/TD&gt;&lt;/TR&gt;&lt;/TABLE&gt;&lt;BR&gt;&lt;BR&gt;
+
+&lt;B&gt;Note:&lt;/B&gt; Suitable Receptacle pins are 0295-0-15-xx-06-xx-10-0 series from &lt;a href="www.mill-max.com"&gt;Mill-Max&lt;/a&gt;&lt;BR&gt;&lt;BR&gt;
+
+©2009 ROFA.cz - modified and updated by Robert Darlington &amp;#8249;rdarlington@gmail.com&amp;#8250;</description>
+<smd name="2" x="1.27" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="4" x="2.54" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="6" x="3.81" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="5" x="3.81" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="3" x="2.54" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="1" x="1.27" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<text x="-1.27" y="1.905" size="1.27" layer="25">&gt;name</text>
+<hole x="0" y="0" drill="1.6"/>
+<hole x="5.08" y="1.016" drill="1.6"/>
+<hole x="5.08" y="-1.016" drill="1.6"/>
+<polygon width="0.0254" layer="39">
+<vertex x="1.27" y="-0.2413"/>
+<vertex x="1.6637" y="-0.2413"/>
+<vertex x="1.6637" y="-0.635"/>
+<vertex x="2.1463" y="-0.635"/>
+<vertex x="2.1463" y="-0.2413"/>
+<vertex x="2.9337" y="-0.2413"/>
+<vertex x="2.9337" y="-0.635"/>
+<vertex x="3.4163" y="-0.635"/>
+<vertex x="3.4163" y="-0.2413"/>
+<vertex x="3.81" y="-0.2413"/>
+<vertex x="3.81" y="0.2413"/>
+<vertex x="3.4163" y="0.2413"/>
+<vertex x="3.4163" y="0.635"/>
+<vertex x="2.9337" y="0.635"/>
+<vertex x="2.9337" y="0.2413"/>
+<vertex x="2.1463" y="0.2413"/>
+<vertex x="2.1463" y="0.635"/>
+<vertex x="1.6637" y="0.635"/>
+<vertex x="1.6637" y="0.2413"/>
+<vertex x="1.27" y="0.2413"/>
+</polygon>
+<polygon width="0.0254" layer="16">
+<vertex x="3.556" y="-1.016" curve="90"/>
+<vertex x="5.08" y="-2.54" curve="90"/>
+<vertex x="6.604" y="-1.016"/>
+<vertex x="6.604" y="1.016" curve="90"/>
+<vertex x="5.08" y="2.54" curve="90"/>
+<vertex x="3.556" y="1.016"/>
+</polygon>
+<polygon width="0.0254" layer="16">
+<vertex x="-1.524" y="0" curve="-90"/>
+<vertex x="0" y="1.524" curve="-90"/>
+<vertex x="1.524" y="0" curve="-90"/>
+<vertex x="0" y="-1.524" curve="-90"/>
+</polygon>
+<polygon width="0.254" layer="30">
+<vertex x="3.556" y="-1.016" curve="90"/>
+<vertex x="5.08" y="-2.54" curve="90"/>
+<vertex x="6.604" y="-1.016"/>
+<vertex x="6.604" y="1.016" curve="90"/>
+<vertex x="5.08" y="2.54" curve="90"/>
+<vertex x="3.556" y="1.016"/>
+</polygon>
+<polygon width="0.254" layer="30">
+<vertex x="-1.524" y="0" curve="-90"/>
+<vertex x="0" y="1.524" curve="-90"/>
+<vertex x="1.524" y="0" curve="-90"/>
+<vertex x="0" y="-1.524" curve="-90"/>
+</polygon>
+</package>
+</packages>
+<symbols>
+<symbol name="ICSP">
+<wire x1="-10.16" y1="10.16" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="8.89" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="8.89" y1="-7.62" x2="8.89" y2="10.16" width="0.254" layer="94"/>
+<wire x1="8.89" y1="10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<circle x="5.842" y="9.144" radius="0.5679" width="0.254" layer="94"/>
+<circle x="4.826" y="3.048" radius="0.5679" width="0.254" layer="94"/>
+<circle x="6.858" y="3.048" radius="0.5679" width="0.254" layer="94"/>
+<pin name="VPP/MCLR" x="-12.7" y="7.62" length="short" direction="pas"/>
+<pin name="VDD" x="-12.7" y="5.08" length="short" direction="pwr"/>
+<pin name="VSS(GND)" x="-12.7" y="2.54" length="short" direction="pwr"/>
+<pin name="ICSP_DAT/PGD" x="-12.7" y="0" length="short"/>
+<pin name="ICSP_CLK/PGC" x="-12.7" y="-2.54" length="short" direction="out"/>
+<pin name="LVP" x="-12.7" y="-5.08" length="short"/>
+<polygon width="0.254" layer="94">
+<vertex x="6.096" y="7.62" curve="-90"/>
+<vertex x="6.604" y="8.128" curve="-90"/>
+<vertex x="7.112" y="7.62" curve="-90"/>
+<vertex x="6.604" y="7.112" curve="-90"/>
+</polygon>
+<polygon width="0.254" layer="94">
+<vertex x="4.572" y="7.62" curve="-90"/>
+<vertex x="5.08" y="8.128" curve="-90"/>
+<vertex x="5.588" y="7.62" curve="-90"/>
+<vertex x="5.08" y="7.112" curve="-90"/>
+</polygon>
+<polygon width="0.254" layer="94">
+<vertex x="6.096" y="6.096" curve="-90"/>
+<vertex x="6.604" y="6.604" curve="-90"/>
+<vertex x="7.112" y="6.096" curve="-90"/>
+<vertex x="6.604" y="5.588" curve="-90"/>
+</polygon>
+<polygon width="0.254" layer="94">
+<vertex x="4.572" y="6.096" curve="-90"/>
+<vertex x="5.08" y="6.604" curve="-90"/>
+<vertex x="5.588" y="6.096" curve="-90"/>
+<vertex x="5.08" y="5.588" curve="-90"/>
+</polygon>
+<polygon width="0.254" layer="94">
+<vertex x="4.572" y="4.572" curve="-90"/>
+<vertex x="5.08" y="5.08" curve="-90"/>
+<vertex x="5.588" y="4.572" curve="-90"/>
+<vertex x="5.08" y="4.064" curve="-90"/>
+</polygon>
+<polygon width="0.254" layer="94">
+<vertex x="6.096" y="4.572" curve="-90"/>
+<vertex x="6.604" y="5.08" curve="-90"/>
+<vertex x="7.112" y="4.572" curve="-90"/>
+<vertex x="6.604" y="4.064" curve="-90"/>
+</polygon>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="TC2030" prefix="J" uservalue="yes">
+<description>&lt;h3&gt;TAG-CONNECT ICSP Connector&lt;/h3&gt;&lt;BR&gt;&lt;I&gt;Manufacturer:&lt;/I&gt; &lt;a href="http://www.tag-connect.com"&gt;Tag-Connect&lt;/a&gt;&lt;BR&gt;
+&lt;BR&gt;Cable for easy In-Circuit Serial Programming. Designed for Microchip ICD2, suitable for many others.&lt;BR&gt;
+Two variants - one "with legs" (for hands-free fit on PCB) and another "without legs" for quick programming.
+
+&lt;p&gt;
+&lt;TABLE cellspacing=0 cellpadding=0 border=0&gt;
+&lt;TR&gt;&lt;TD width=20&gt;&lt;/TD&gt;&lt;TD&gt;
+&lt;TABLE cellspacing=0 cellpadding=1 border=1&gt;
+&lt;TR bgcolor=silver&gt;&lt;TD align=center&gt;PAD&lt;/TD&gt;&lt;TD align=center&gt;Description&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;1&lt;/TD&gt;&lt;TD&gt;MCLR/Vpp&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;2&lt;/TD&gt;&lt;TD&gt;Vdd&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;3&lt;/TD&gt;&lt;TD&gt;GND&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;4&lt;/TD&gt;&lt;TD&gt;PGD (ISPDAT)&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;5&lt;/TD&gt;&lt;TD&gt;PGC (ISPCLK)&lt;/TD&gt;&lt;/TR&gt;
+&lt;TR&gt;&lt;TD align=center&gt;6&lt;/TD&gt;&lt;TD&gt;nc (used for LVP)&lt;/TD&gt;&lt;/TR&gt;
+&lt;/TABLE&gt;
+&lt;/TD&gt;&lt;/TR&gt;&lt;/TABLE&gt;&lt;BR&gt;&lt;BR&gt;
+
+©2009 ROFA.cz - modified and updated by Robert Darlington &amp;#8249;rdarlington@gmail.com&amp;#8250;</description>
+<gates>
+<gate name="G$1" symbol="ICSP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-MCP" package="TC2030-MCP">
+<connects>
+<connect gate="G$1" pin="ICSP_CLK/PGC" pad="5"/>
+<connect gate="G$1" pin="ICSP_DAT/PGD" pad="4"/>
+<connect gate="G$1" pin="LVP" pad="6"/>
+<connect gate="G$1" pin="VDD" pad="2"/>
+<connect gate="G$1" pin="VPP/MCLR" pad="1"/>
+<connect gate="G$1" pin="VSS(GND)" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-MCP-NL" package="TC2030-MCP-NL">
+<connects>
+<connect gate="G$1" pin="ICSP_CLK/PGC" pad="5"/>
+<connect gate="G$1" pin="ICSP_DAT/PGD" pad="4"/>
+<connect gate="G$1" pin="LVP" pad="6"/>
+<connect gate="G$1" pin="VDD" pad="2"/>
+<connect gate="G$1" pin="VPP/MCLR" pad="1"/>
+<connect gate="G$1" pin="VSS(GND)" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="" package="TC2030-MCP-NL-CP">
+<connects>
+<connect gate="G$1" pin="ICSP_CLK/PGC" pad="5"/>
+<connect gate="G$1" pin="ICSP_DAT/PGD" pad="4"/>
+<connect gate="G$1" pin="LVP" pad="6"/>
+<connect gate="G$1" pin="VDD" pad="2"/>
+<connect gate="G$1" pin="VPP/MCLR" pad="1"/>
+<connect gate="G$1" pin="VSS(GND)" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -5117,7 +5375,6 @@ Source: Epson Toyocom FC-12M.pdf</description>
 </classes>
 <parts>
 <part name="U$1" library="gclueBT" deviceset="RAYTAC-MDBT40" device=""/>
-<part name="U$2" library="gclue" deviceset="PIN-HEADER-SMT(1.27MM)2X5" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
@@ -5127,8 +5384,6 @@ Source: Epson Toyocom FC-12M.pdf</description>
 <part name="C2" library="adafruit" deviceset="C-US" device="C0603" value="12pf"/>
 <part name="C3" library="adafruit" deviceset="C-US" device="C0603" value="12pf"/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
-<part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
-<part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="R1" library="adafruit" deviceset="R-US_" device="R0603"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="C4" library="adafruit" deviceset="C-US" device="C0603" value="0.1uf"/>
@@ -5142,14 +5397,18 @@ Source: Epson Toyocom FC-12M.pdf</description>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="C5" library="adafruit" deviceset="C-US" device="C0603" value="0.1uf"/>
+<part name="J2" library="tag-connect" deviceset="TC2030" device="-MCP"/>
+<part name="GND11" library="supply1" deviceset="GND" device=""/>
+<part name="+3V7" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="7.62" y="50.8" size="3.81" layer="94">Debug</text>
+<text x="10.16" y="43.18" size="1.778" layer="97">P0_09 RX, P0_11 TX</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="127" y="76.2"/>
-<instance part="U$2" gate="G$1" x="53.34" y="60.96" rot="R270"/>
 <instance part="GND1" gate="1" x="91.44" y="96.52"/>
 <instance part="GND2" gate="1" x="167.64" y="99.06"/>
 <instance part="+3V1" gate="G$1" x="76.2" y="93.98"/>
@@ -5159,8 +5418,6 @@ Source: Epson Toyocom FC-12M.pdf</description>
 <instance part="C2" gate="G$1" x="86.36" y="71.12" rot="R90"/>
 <instance part="C3" gate="G$1" x="86.36" y="60.96" rot="R90"/>
 <instance part="GND5" gate="1" x="81.28" y="55.88"/>
-<instance part="+3V3" gate="G$1" x="40.64" y="71.12"/>
-<instance part="GND6" gate="1" x="40.64" y="45.72"/>
 <instance part="R1" gate="G$1" x="170.18" y="93.98"/>
 <instance part="GND7" gate="1" x="177.8" y="78.74"/>
 <instance part="C4" gate="G$1" x="119.38" y="15.24"/>
@@ -5174,6 +5431,9 @@ Source: Epson Toyocom FC-12M.pdf</description>
 <instance part="+3V4" gate="G$1" x="66.04" y="104.14"/>
 <instance part="GND10" gate="1" x="35.56" y="78.74"/>
 <instance part="C5" gate="G$1" x="50.8" y="86.36" rot="R90"/>
+<instance part="J2" gate="G$1" x="38.1" y="22.86"/>
+<instance part="GND11" gate="1" x="10.16" y="7.62"/>
+<instance part="+3V7" gate="G$1" x="10.16" y="38.1"/>
 </instances>
 <busses>
 </busses>
@@ -5185,11 +5445,9 @@ Source: Epson Toyocom FC-12M.pdf</description>
 <label x="165.1" y="86.36" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="63.5" y1="63.5" x2="64.77" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="2"/>
-<wire x1="64.77" y1="63.5" x2="73.66" y2="63.5" width="0.1524" layer="91"/>
-<junction x="64.77" y="63.5"/>
-<label x="73.66" y="63.5" size="1.778" layer="95"/>
+<pinref part="J2" gate="G$1" pin="VDD"/>
+<wire x1="25.4" y1="27.94" x2="12.7" y2="27.94" width="0.1524" layer="91"/>
+<label x="12.7" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SWCLK" class="0">
@@ -5202,13 +5460,6 @@ Source: Epson Toyocom FC-12M.pdf</description>
 <wire x1="162.56" y1="93.98" x2="165.1" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="88.9" x2="165.1" y2="88.9" width="0.1524" layer="91"/>
 <junction x="162.56" y="88.9"/>
-</segment>
-<segment>
-<wire x1="63.5" y1="60.96" x2="64.77" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="4"/>
-<wire x1="64.77" y1="60.96" x2="73.66" y2="60.96" width="0.1524" layer="91"/>
-<junction x="64.77" y="60.96"/>
-<label x="73.66" y="60.96" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -5249,24 +5500,6 @@ Source: Epson Toyocom FC-12M.pdf</description>
 <junction x="81.28" y="60.96"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="3"/>
-<pinref part="GND6" gate="1" pin="GND"/>
-<wire x1="45.72" y1="60.96" x2="40.64" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="60.96" x2="40.64" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="5"/>
-<wire x1="40.64" y1="58.42" x2="40.64" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="55.88" x2="40.64" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="53.34" x2="40.64" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="58.42" x2="40.64" y2="58.42" width="0.1524" layer="91"/>
-<junction x="40.64" y="58.42"/>
-<pinref part="U$2" gate="G$1" pin="7"/>
-<wire x1="45.72" y1="55.88" x2="40.64" y2="55.88" width="0.1524" layer="91"/>
-<junction x="40.64" y="55.88"/>
-<pinref part="U$2" gate="G$1" pin="9"/>
-<wire x1="45.72" y1="53.34" x2="40.64" y2="53.34" width="0.1524" layer="91"/>
-<junction x="40.64" y="53.34"/>
-</segment>
-<segment>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="175.26" y1="93.98" x2="177.8" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="93.98" x2="177.8" y2="81.28" width="0.1524" layer="91"/>
@@ -5294,6 +5527,12 @@ Source: Epson Toyocom FC-12M.pdf</description>
 <wire x1="48.26" y1="86.36" x2="35.56" y2="86.36" width="0.1524" layer="91"/>
 <junction x="35.56" y="86.36"/>
 </segment>
+<segment>
+<pinref part="J2" gate="G$1" pin="LVP"/>
+<wire x1="25.4" y1="17.78" x2="10.16" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="17.78" x2="10.16" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="GND11" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="+3V3" class="0">
 <segment>
@@ -5316,12 +5555,6 @@ Source: Epson Toyocom FC-12M.pdf</description>
 <junction x="119.38" y="22.86"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="1"/>
-<pinref part="+3V3" gate="G$1" pin="+3V3"/>
-<wire x1="45.72" y1="63.5" x2="40.64" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="63.5" x2="40.64" y2="68.58" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="U$3" gate="G$1" pin="P$_VCC"/>
 <wire x1="55.88" y1="93.98" x2="66.04" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="93.98" x2="66.04" y2="101.6" width="0.1524" layer="91"/>
@@ -5330,6 +5563,12 @@ Source: Epson Toyocom FC-12M.pdf</description>
 <junction x="66.04" y="93.98"/>
 <pinref part="C5" gate="G$1" pin="2"/>
 <wire x1="66.04" y1="86.36" x2="55.88" y2="86.36" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="J2" gate="G$1" pin="VPP/MCLR"/>
+<pinref part="+3V7" gate="G$1" pin="+3V3"/>
+<wire x1="25.4" y1="30.48" x2="10.16" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="30.48" x2="10.16" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -5477,6 +5716,11 @@ Source: Epson Toyocom FC-12M.pdf</description>
 <wire x1="60.96" y1="22.86" x2="50.8" y2="22.86" width="0.1524" layer="91"/>
 <label x="50.8" y="22.86" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="J2" gate="G$1" pin="VSS(GND)"/>
+<wire x1="25.4" y1="25.4" x2="12.7" y2="25.4" width="0.1524" layer="91"/>
+<label x="12.7" y="25.4" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="P0_10" class="0">
 <segment>
@@ -5500,6 +5744,11 @@ Source: Epson Toyocom FC-12M.pdf</description>
 <pinref part="JP2" gate="A" pin="6"/>
 <wire x1="60.96" y1="17.78" x2="50.8" y2="17.78" width="0.1524" layer="91"/>
 <label x="50.8" y="17.78" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J2" gate="G$1" pin="ICSP_CLK/PGC"/>
+<wire x1="25.4" y1="20.32" x2="12.7" y2="20.32" width="0.1524" layer="91"/>
+<label x="12.7" y="20.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="P0_12" class="0">
@@ -5615,6 +5864,13 @@ Source: Epson Toyocom FC-12M.pdf</description>
 <pinref part="U$1" gate="G$1" pin="P0_30"/>
 <wire x1="124.46" y1="45.72" x2="124.46" y2="40.64" width="0.1524" layer="91"/>
 <label x="124.46" y="40.64" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
+<net name="SWDCLK" class="0">
+<segment>
+<pinref part="J2" gate="G$1" pin="ICSP_DAT/PGD"/>
+<wire x1="25.4" y1="22.86" x2="12.7" y2="22.86" width="0.1524" layer="91"/>
+<label x="12.7" y="22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
