@@ -3837,13 +3837,6 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 <wire x1="193.04" y1="50.8" x2="193.04" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="SWCLK" class="0">
-<segment>
-<wire x1="149.86" y1="33.02" x2="149.86" y2="50.8" width="0.1524" layer="91"/>
-<label x="149.86" y="33.02" size="1.778" layer="95" rot="R270" xref="yes"/>
-<pinref part="U$1" gate="G$1" pin="SWOLK"/>
-</segment>
-</net>
 <net name="SWDIO" class="0">
 <segment>
 <wire x1="152.4" y1="33.02" x2="152.4" y2="50.8" width="0.1524" layer="91"/>
@@ -3940,6 +3933,11 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 <pinref part="J1" gate="G$1" pin="ICSP_DAT/PGD"/>
 <wire x1="91.44" y1="134.62" x2="81.28" y2="134.62" width="0.1524" layer="91"/>
 <label x="81.28" y="134.62" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="149.86" y1="33.02" x2="149.86" y2="50.8" width="0.1524" layer="91"/>
+<label x="149.86" y="33.02" size="1.778" layer="95" rot="R270" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="SWOLK"/>
 </segment>
 </net>
 </nets>

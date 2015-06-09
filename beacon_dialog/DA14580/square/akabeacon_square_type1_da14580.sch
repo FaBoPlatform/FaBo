@@ -143,31 +143,12 @@ We've spent an enormous amount of time creating and checking these footprints an
 <text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 </symbol>
-<symbol name="3.3V">
-<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
-<text x="-1.016" y="3.556" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="3.3V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="GND" prefix="GND">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="1" symbol="GND" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="3.3V" prefix="P+">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="3.3V" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -1139,7 +1120,6 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 </classes>
 <parts>
 <part name="GND1" library="SparkFun" deviceset="GND" device=""/>
-<part name="P+1" library="SparkFun" deviceset="3.3V" device=""/>
 <part name="GND8" library="SparkFun" deviceset="GND" device=""/>
 <part name="VCC" library="adafruit" deviceset="PINHD-1X1" device="CB"/>
 <part name="GND" library="adafruit" deviceset="PINHD-1X1" device="CB"/>
@@ -1162,6 +1142,7 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 <part name="J2" library="tag-connect" deviceset="TC2030" device="-MCP"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
+<part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1171,7 +1152,6 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 </plain>
 <instances>
 <instance part="GND1" gate="1" x="22.86" y="17.78"/>
-<instance part="P+1" gate="G$1" x="43.18" y="43.18"/>
 <instance part="GND8" gate="1" x="78.74" y="15.24"/>
 <instance part="VCC" gate="G$1" x="50.8" y="35.56"/>
 <instance part="GND" gate="G$1" x="25.4" y="38.1"/>
@@ -1194,6 +1174,7 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 <instance part="J2" gate="G$1" x="66.04" y="104.14"/>
 <instance part="GND3" gate="1" x="40.64" y="88.9"/>
 <instance part="+3V3" gate="G$1" x="40.64" y="119.38"/>
+<instance part="+3V4" gate="G$1" x="43.18" y="45.72"/>
 </instances>
 <busses>
 </busses>
@@ -1298,14 +1279,6 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 <wire x1="53.34" y1="99.06" x2="40.64" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="99.06" x2="40.64" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="1" pin="GND"/>
-</segment>
-</net>
-<net name="3.3V" class="0">
-<segment>
-<pinref part="P+1" gate="G$1" pin="3.3V"/>
-<wire x1="43.18" y1="35.56" x2="43.18" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="35.56" x2="48.26" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="VCC" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -1424,6 +1397,12 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 <pinref part="+3V3" gate="G$1" pin="+3V3"/>
 <wire x1="53.34" y1="111.76" x2="40.64" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="111.76" x2="40.64" y2="116.84" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="43.18" y1="35.56" x2="43.18" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="35.56" x2="48.26" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="VCC" gate="G$1" pin="1"/>
+<pinref part="+3V4" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
 <net name="RST" class="0">
