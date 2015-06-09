@@ -11,11 +11,11 @@ void setup() {
 }
 
 void loop() {
-  tone(pin,262,melo);
+  tone(buzzerPin,262,melo);
   delay(melo);
-  tone(pin,294,melo);
+  tone(buzzerPin,294,melo);
   delay(melo);
-  tone(pin,330,melo);
+  tone(buzzerPin,330,melo);
   delay(melo);
 
   delay(1000);
