@@ -319,6 +319,14 @@
 <wire x1="3.81" y1="0" x2="5.08" y2="0" width="0.127" layer="21"/>
 <wire x1="-5.08" y1="0" x2="-3.81" y2="0" width="0.127" layer="21"/>
 </package>
+<package name="SCREWPAD_3MM">
+<pad name="1" x="0" y="0" drill="3" diameter="3.81"/>
+<circle x="0" y="0" radius="2.55" width="0.127" layer="51"/>
+</package>
+<package name="SCREWPAD_3.2MM">
+<pad name="1" x="0" y="0" drill="3.2" diameter="4"/>
+<circle x="0" y="0" radius="2.55" width="0.127" layer="51"/>
+</package>
 <package name="LOGO_OSHW_T_L">
 <rectangle x1="-3.616325" y1="-5.965825" x2="-3.368675" y2="-5.946775" layer="21"/>
 <rectangle x1="-3.063875" y1="-5.965825" x2="-2.816225" y2="-5.946775" layer="21"/>
@@ -6497,6 +6505,9 @@
 <wire x1="-1.905" y1="-2.54" x2="1.905" y2="-2.54" width="0.254" layer="94"/>
 <text x="-2.794" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="GND" x="0" y="0" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="SCREW-PAD">
+<circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
 </symbol>
 <symbol name="LOGO_OSHW_T">
 <rectangle x1="-2.55778125" y1="-6.479540625" x2="-2.4511" y2="-6.474459375" layer="94"/>
@@ -15006,6 +15017,23 @@ Standard 0603 ceramic capacitor</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="SCREW-PAD" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="SCREW-PAD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-3MM" package="SCREWPAD_3MM">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-3.2MM" package="SCREWPAD_3.2MM">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 <deviceset name="LOGO_OSHW_T" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="LOGO_OSHW_T" x="0" y="0"/>
@@ -21874,7 +21902,9 @@ Standard 0603 ceramic capacitor</description>
 <part name="GND11" library="GClue" deviceset="GND" device=""/>
 <part name="GND12" library="GClue" deviceset="GND" device=""/>
 <part name="GND13" library="GClue" deviceset="GND" device=""/>
-<part name="U$15" library="GClue" deviceset="LOGO_OSHW_T" device="-S"/>
+<part name="U$16" library="GClue" deviceset="SCREW-PAD" device="-3MM"/>
+<part name="U$17" library="GClue" deviceset="SCREW-PAD" device="-3MM"/>
+<part name="U$15" library="GClue" deviceset="LOGO_OSHW_T" device="-M"/>
 </parts>
 <sheets>
 <sheet>
@@ -21935,6 +21965,8 @@ Standard 0603 ceramic capacitor</description>
 <instance part="GND11" gate="GND" x="160.02" y="40.64"/>
 <instance part="GND12" gate="GND" x="190.5" y="40.64"/>
 <instance part="GND13" gate="GND" x="220.98" y="40.64"/>
+<instance part="U$16" gate="G$1" x="157.48" y="17.78"/>
+<instance part="U$17" gate="G$1" x="157.48" y="10.16"/>
 <instance part="U$15" gate="G$1" x="208.28" y="12.7"/>
 </instances>
 <busses>
