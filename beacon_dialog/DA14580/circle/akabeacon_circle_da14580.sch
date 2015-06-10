@@ -3024,11 +3024,6 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 <label x="142.24" y="101.6" size="1.778" layer="95" rot="R90" xref="yes"/>
 <pinref part="U$1" gate="G$1" pin="P0_4"/>
 </segment>
-<segment>
-<pinref part="J2" gate="G$1" pin="ICSP_CLK/PGC"/>
-<wire x1="63.5" y1="27.94" x2="53.34" y2="27.94" width="0.1524" layer="91"/>
-<label x="53.34" y="27.94" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="P1_1" class="0">
 <segment>
@@ -3153,6 +3148,13 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 <pinref part="J2" gate="G$1" pin="ICSP_DAT/PGD"/>
 <wire x1="63.5" y1="30.48" x2="53.34" y2="30.48" width="0.1524" layer="91"/>
 <label x="53.34" y="30.48" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="RESET" class="0">
+<segment>
+<pinref part="J2" gate="G$1" pin="ICSP_CLK/PGC"/>
+<wire x1="63.5" y1="27.94" x2="53.34" y2="27.94" width="0.1524" layer="91"/>
+<label x="53.34" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
