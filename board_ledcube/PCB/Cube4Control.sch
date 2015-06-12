@@ -403,22 +403,22 @@
 <wire x1="-5.08" y1="-0.508" x2="-5.08" y2="-1.5748" width="0.1524" layer="21"/>
 <wire x1="-5.08" y1="0.508" x2="-5.08" y2="-0.508" width="0.1524" layer="21" curve="-180"/>
 <wire x1="-5.08" y1="-1.6002" x2="5.08" y2="-1.6002" width="0.0508" layer="21"/>
-<smd name="1" x="-4.445" y="-3.0734" dx="0.7112" dy="2.286" layer="1"/>
-<smd name="16" x="-4.445" y="3.0734" dx="0.7112" dy="2.286" layer="1"/>
-<smd name="2" x="-3.175" y="-3.0734" dx="0.7112" dy="2.286" layer="1"/>
-<smd name="3" x="-1.905" y="-3.0734" dx="0.7112" dy="2.286" layer="1"/>
-<smd name="15" x="-3.175" y="3.0734" dx="0.7112" dy="2.286" layer="1"/>
-<smd name="14" x="-1.905" y="3.0734" dx="0.7112" dy="2.286" layer="1"/>
-<smd name="4" x="-0.635" y="-3.0734" dx="0.7112" dy="2.286" layer="1"/>
-<smd name="13" x="-0.635" y="3.0734" dx="0.7112" dy="2.286" layer="1"/>
-<smd name="5" x="0.635" y="-3.0734" dx="0.7112" dy="2.286" layer="1"/>
-<smd name="12" x="0.635" y="3.0734" dx="0.7112" dy="2.286" layer="1"/>
-<smd name="6" x="1.905" y="-3.0734" dx="0.7112" dy="2.286" layer="1"/>
-<smd name="7" x="3.175" y="-3.0734" dx="0.7112" dy="2.286" layer="1"/>
-<smd name="11" x="1.905" y="3.0734" dx="0.7112" dy="2.286" layer="1"/>
-<smd name="10" x="3.175" y="3.0734" dx="0.7112" dy="2.286" layer="1"/>
-<smd name="8" x="4.445" y="-3.0734" dx="0.7112" dy="2.286" layer="1"/>
-<smd name="9" x="4.445" y="3.0734" dx="0.7112" dy="2.286" layer="1"/>
+<smd name="1" x="-4.445" y="-3.0734" dx="0.6604" dy="2.159" layer="1"/>
+<smd name="16" x="-4.445" y="3.0734" dx="0.6604" dy="2.159" layer="1"/>
+<smd name="2" x="-3.175" y="-3.0734" dx="0.6604" dy="2.159" layer="1"/>
+<smd name="3" x="-1.905" y="-3.0734" dx="0.6604" dy="2.159" layer="1"/>
+<smd name="15" x="-3.175" y="3.0734" dx="0.6604" dy="2.159" layer="1"/>
+<smd name="14" x="-1.905" y="3.0734" dx="0.6604" dy="2.159" layer="1"/>
+<smd name="4" x="-0.635" y="-3.0734" dx="0.6604" dy="2.159" layer="1"/>
+<smd name="13" x="-0.635" y="3.0734" dx="0.6604" dy="2.159" layer="1"/>
+<smd name="5" x="0.635" y="-3.0734" dx="0.6604" dy="2.159" layer="1"/>
+<smd name="12" x="0.635" y="3.0734" dx="0.6604" dy="2.159" layer="1"/>
+<smd name="6" x="1.905" y="-3.0734" dx="0.6604" dy="2.159" layer="1"/>
+<smd name="7" x="3.175" y="-3.0734" dx="0.6604" dy="2.159" layer="1"/>
+<smd name="11" x="1.905" y="3.0734" dx="0.6604" dy="2.159" layer="1"/>
+<smd name="10" x="3.175" y="3.0734" dx="0.6604" dy="2.159" layer="1"/>
+<smd name="8" x="4.445" y="-3.0734" dx="0.6604" dy="2.159" layer="1"/>
+<smd name="9" x="4.445" y="3.0734" dx="0.6604" dy="2.159" layer="1"/>
 <text x="0" y="0" size="1.016" layer="27" font="vector" ratio="10" align="center">&gt;VALUE</text>
 <text x="-5.715" y="0" size="1.27" layer="25" font="vector" ratio="10" rot="R90" align="bottom-center">&gt;NAME</text>
 <rectangle x1="-0.889" y1="1.9558" x2="-0.381" y2="3.0988" layer="51"/>
@@ -22827,7 +22827,7 @@ Standard 0603 ceramic capacitor</description>
 <part name="SUPPLY14" library="Gclue" deviceset="5V" device=""/>
 <part name="GND16" library="Gclue" deviceset="GND" device=""/>
 <part name="U$2" library="FaBo" deviceset="LOGO_FABO" device="-M"/>
-<part name="U$3" library="Gclue" deviceset="LOGO_OSHW_T" device="-S"/>
+<part name="U$4" library="Gclue" deviceset="LOGO_OSHW_T" device="-M"/>
 </parts>
 <sheets>
 <sheet>
@@ -22954,7 +22954,7 @@ Standard 0603 ceramic capacitor</description>
 <instance part="SUPPLY14" gate="5V" x="236.22" y="134.62"/>
 <instance part="GND16" gate="GND" x="246.38" y="121.92"/>
 <instance part="U$2" gate="G$1" x="162.56" y="22.86"/>
-<instance part="U$3" gate="G$1" x="208.28" y="12.7"/>
+<instance part="U$4" gate="G$1" x="208.28" y="12.7"/>
 </instances>
 <busses>
 </busses>
