@@ -8,7 +8,7 @@
 </settings>
 <grid distance="0.0125" unitdist="inch" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -132,7 +132,7 @@
 <text x="32.385" y="45.085" size="1.27" layer="21" font="vector" rot="R270" align="center">3V3</text>
 <text x="76.5175" y="34.925" size="0.8128" layer="21" font="vector" rot="R90" align="bottom-center">GND</text>
 <text x="16.51" y="14.605" size="1.27" layer="21" font="vector" rot="R270" align="center">I2C</text>
-<text x="82.55" y="19.05" size="1.4224" layer="21" font="vector" rot="R90">OUT/IN Shield for Pi B+</text>
+<text x="82.2325" y="19.05" size="1.4224" layer="21" font="vector" rot="R90">OUT/IN Shield for Pi B+</text>
 <text x="16.51" y="27.305" size="1.27" layer="21" font="vector" rot="R270" align="center">SERIAL</text>
 <text x="76.5175" y="22.225" size="0.8128" layer="21" font="vector" rot="R90" align="bottom-center">GND</text>
 <text x="22.225" y="8.89" size="1.27" layer="21" font="vector" rot="R270" align="bottom-right">5V</text>
@@ -145,8 +145,8 @@
 <text x="11.43" y="43.815" size="1.27" layer="21" font="vector" rot="R180" align="center-left">MISO</text>
 <text x="11.43" y="46.355" size="1.27" layer="21" font="vector" rot="R180" align="center-left">MOSI</text>
 <text x="16.51" y="41.275" size="1.27" layer="21" font="vector" rot="R90" align="center">SPI</text>
-<text x="84.455" y="36.83" size="1.27" layer="21" font="vector" rot="R90">Rev.Beta2</text>
-<text x="83.82" y="4.445" size="1.016" layer="21" font="vector" rot="R90">MADE IN JAPAN</text>
+<text x="84.1375" y="36.83" size="1.27" layer="21" font="vector" rot="R90">Rev.Beta2</text>
+<text x="84.1375" y="4.445" size="1.016" layer="21" font="vector" rot="R90">MADE IN JAPAN</text>
 <wire x1="60.325" y1="9.525" x2="27.6225" y2="9.525" width="0.6096" layer="21"/>
 <text x="61.9125" y="9.525" size="0.8128" layer="21" font="vector" rot="R90" align="bottom-center">GND</text>
 <wire x1="16.51" y1="10.795" x2="12.065" y2="10.795" width="0.6096" layer="21"/>
@@ -4401,7 +4401,7 @@ design rules under a new name.</description>
 <element name="GPIO27" library="Gclue" package="1X3-SNEAKY" value="" x="58.1025" y="12.065" smashed="yes" rot="R90">
 <attribute name="NAME" x="56.1975" y="10.16" size="1.27" layer="25" font="vector" ratio="10" rot="R90"/>
 </element>
-<element name="U$14" library="FaBo" package="LOGO_FABO_M" value="" x="82.55" y="10.16" rot="R90"/>
+<element name="U$14" library="FaBo" package="LOGO_FABO_M" value="" x="82.8675" y="10.16" rot="R90"/>
 <element name="U$15" library="Gclue" package="LOGO_OSHW_T_M" value="" x="80.01" y="50.8" rot="R90"/>
 <element name="U1" library="Gclue" package="RASPBERRY_PI_B+" value="" x="0" y="0"/>
 <element name="GPIO12" library="Gclue" package="1X3-SNEAKY" value="" x="65.405" y="37.465" smashed="yes" rot="R90">
