@@ -384,7 +384,7 @@ Source: Epson Toyocom FC-12M.pdf</description>
 <pin name="P0_5" x="-7.62" y="-15.24" length="middle" rot="R90"/>
 <pin name="P0_7" x="-5.08" y="-15.24" length="middle" rot="R90"/>
 <pin name="P0_6" x="-2.54" y="-15.24" length="middle" rot="R90"/>
-<pin name="SWOLK" x="0" y="-15.24" length="middle" rot="R90"/>
+<pin name="SWCLK" x="0" y="-15.24" length="middle" rot="R90"/>
 <pin name="SWDIO" x="2.54" y="-15.24" length="middle" rot="R90"/>
 <pin name="GND1" x="5.08" y="-15.24" length="middle" rot="R90"/>
 <pin name="VBAT" x="7.62" y="-15.24" length="middle" rot="R90"/>
@@ -464,8 +464,8 @@ Source: Epson Toyocom FC-12M.pdf</description>
 <connect gate="G$1" pin="P1_0" pad="35"/>
 <connect gate="G$1" pin="P1_1" pad="30"/>
 <connect gate="G$1" pin="RST" pad="25"/>
+<connect gate="G$1" pin="SWCLK" pad="4"/>
 <connect gate="G$1" pin="SWDIO" pad="5"/>
-<connect gate="G$1" pin="SWOLK" pad="4"/>
 <connect gate="G$1" pin="VBAT" pad="7"/>
 <connect gate="G$1" pin="VPP" pad="31"/>
 <connect gate="G$1" pin="XTAL32KM" pad="10"/>
@@ -3073,7 +3073,12 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 <segment>
 <wire x1="149.86" y1="33.02" x2="149.86" y2="50.8" width="0.1524" layer="91"/>
 <label x="149.86" y="33.02" size="1.778" layer="95" rot="R270" xref="yes"/>
-<pinref part="U$1" gate="G$1" pin="SWOLK"/>
+<pinref part="U$1" gate="G$1" pin="SWCLK"/>
+</segment>
+<segment>
+<pinref part="J2" gate="G$1" pin="ICSP_DAT/PGD"/>
+<wire x1="63.5" y1="30.48" x2="53.34" y2="30.48" width="0.1524" layer="91"/>
+<label x="53.34" y="30.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SWDIO" class="0">
@@ -3141,13 +3146,6 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 <pinref part="U$1" gate="G$1" pin="ANTOUT"/>
 <wire x1="172.72" y1="76.2" x2="218.44" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="76.2" x2="218.44" y2="78.74" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="SWDCLK" class="0">
-<segment>
-<pinref part="J2" gate="G$1" pin="ICSP_DAT/PGD"/>
-<wire x1="63.5" y1="30.48" x2="53.34" y2="30.48" width="0.1524" layer="91"/>
-<label x="53.34" y="30.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RESET" class="0">

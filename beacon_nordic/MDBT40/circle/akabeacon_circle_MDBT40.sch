@@ -6748,7 +6748,7 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 <part name="C2" library="adafruit" deviceset="C-US" device="C0603" value="12pf"/>
 <part name="C3" library="adafruit" deviceset="C-US" device="C0603" value="12pf"/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
-<part name="R1" library="adafruit" deviceset="R-US_" device="R0603"/>
+<part name="R1" library="adafruit" deviceset="R-US_" device="R0603" value="10K"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="C4" library="adafruit" deviceset="C-US" device="C0603" value="0.1uf"/>
 <part name="C1" library="adafruit" deviceset="C-US" device="C0603" value="0.1uf"/>
@@ -6833,6 +6833,11 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 <wire x1="213.36" y1="121.92" x2="226.06" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="116.84" x2="223.52" y2="116.84" width="0.1524" layer="91"/>
 <junction x="213.36" y="116.84"/>
+</segment>
+<segment>
+<pinref part="J2" gate="G$1" pin="ICSP_DAT/PGD"/>
+<wire x1="71.12" y1="76.2" x2="58.42" y2="76.2" width="0.1524" layer="91"/>
+<label x="58.42" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -7047,11 +7052,6 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 <wire x1="200.66" y1="93.98" x2="210.82" y2="93.98" width="0.1524" layer="91"/>
 <label x="203.2" y="93.98" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="J2" gate="G$1" pin="VSS(GND)"/>
-<wire x1="71.12" y1="78.74" x2="58.42" y2="78.74" width="0.1524" layer="91"/>
-<label x="58.42" y="78.74" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="P0_10" class="0">
 <segment>
@@ -7065,11 +7065,6 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 <pinref part="U$1" gate="G$1" pin="P0_11"/>
 <wire x1="200.66" y1="99.06" x2="210.82" y2="99.06" width="0.1524" layer="91"/>
 <label x="203.2" y="99.06" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="J2" gate="G$1" pin="ICSP_CLK/PGC"/>
-<wire x1="71.12" y1="73.66" x2="58.42" y2="73.66" width="0.1524" layer="91"/>
-<label x="58.42" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="P0_12" class="0">
@@ -7192,13 +7187,6 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 <pinref part="U$1" gate="G$1" pin="P0_19"/>
 <wire x1="210.82" y1="124.46" x2="200.66" y2="124.46" width="0.1524" layer="91"/>
 <label x="203.2" y="124.46" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="SWDCLK" class="0">
-<segment>
-<pinref part="J2" gate="G$1" pin="ICSP_DAT/PGD"/>
-<wire x1="71.12" y1="76.2" x2="58.42" y2="76.2" width="0.1524" layer="91"/>
-<label x="58.42" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
