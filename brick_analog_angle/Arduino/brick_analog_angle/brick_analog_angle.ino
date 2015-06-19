@@ -5,7 +5,7 @@
 //
 
 int sensorPin = A0;    
-int ledPin = 3;  
+int ledPin = 5;
 int sensorValue = 0;
 int outputValue = 0;
 
