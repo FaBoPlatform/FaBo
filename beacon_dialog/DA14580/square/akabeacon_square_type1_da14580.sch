@@ -635,7 +635,7 @@ Source: Epson Toyocom FC-12M.pdf</description>
 <pin name="P0_5" x="-7.62" y="-15.24" length="middle" rot="R90"/>
 <pin name="P0_7" x="-5.08" y="-15.24" length="middle" rot="R90"/>
 <pin name="P0_6" x="-2.54" y="-15.24" length="middle" rot="R90"/>
-<pin name="SWOLK" x="0" y="-15.24" length="middle" rot="R90"/>
+<pin name="SWCLK" x="0" y="-15.24" length="middle" rot="R90"/>
 <pin name="SWDIO" x="2.54" y="-15.24" length="middle" rot="R90"/>
 <pin name="GND1" x="5.08" y="-15.24" length="middle" rot="R90"/>
 <pin name="VBAT" x="7.62" y="-15.24" length="middle" rot="R90"/>
@@ -715,8 +715,8 @@ Source: Epson Toyocom FC-12M.pdf</description>
 <connect gate="G$1" pin="P1_0" pad="35"/>
 <connect gate="G$1" pin="P1_1" pad="30"/>
 <connect gate="G$1" pin="RST" pad="25"/>
+<connect gate="G$1" pin="SWCLK" pad="4"/>
 <connect gate="G$1" pin="SWDIO" pad="5"/>
-<connect gate="G$1" pin="SWOLK" pad="4"/>
 <connect gate="G$1" pin="VBAT" pad="7"/>
 <connect gate="G$1" pin="VPP" pad="31"/>
 <connect gate="G$1" pin="XTAL32KM" pad="10"/>
@@ -1119,10 +1119,9 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 </class>
 </classes>
 <parts>
-<part name="GND1" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND8" library="SparkFun" deviceset="GND" device=""/>
-<part name="VCC" library="adafruit" deviceset="PINHD-1X1" device="CB"/>
 <part name="GND" library="adafruit" deviceset="PINHD-1X1" device="CB"/>
+<part name="VCC" library="adafruit" deviceset="PINHD-1X1" device="CB"/>
 <part name="U$1" library="gclue" deviceset="A4L-LOC" device=""/>
 <part name="R2" library="GClue-Resistors" deviceset="RESISTOR" device="0603" value="4.7K"/>
 <part name="LED" library="GClue-LED" deviceset="LED" device="0603"/>
@@ -1142,6 +1141,7 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 <part name="J2" library="tag-connect" deviceset="TC2030" device="-MCP"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
+<part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
@@ -1151,10 +1151,9 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 <text x="40.64" y="124.46" size="1.778" layer="97">P0_4 RX, P0_5 TX</text>
 </plain>
 <instances>
-<instance part="GND1" gate="1" x="22.86" y="17.78"/>
 <instance part="GND8" gate="1" x="78.74" y="15.24"/>
-<instance part="VCC" gate="G$1" x="50.8" y="35.56"/>
-<instance part="GND" gate="G$1" x="25.4" y="38.1"/>
+<instance part="GND" gate="G$1" x="50.8" y="35.56"/>
+<instance part="VCC" gate="G$1" x="25.4" y="38.1"/>
 <instance part="U$1" gate="G$1" x="0" y="0"/>
 <instance part="R2" gate="G$1" x="78.74" y="43.18" rot="R90"/>
 <instance part="LED" gate="G$1" x="78.74" y="33.02" rot="R270"/>
@@ -1174,17 +1173,13 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 <instance part="J2" gate="G$1" x="66.04" y="104.14"/>
 <instance part="GND3" gate="1" x="40.64" y="88.9"/>
 <instance part="+3V3" gate="G$1" x="40.64" y="119.38"/>
-<instance part="+3V4" gate="G$1" x="43.18" y="45.72"/>
+<instance part="GND1" gate="1" x="40.64" y="25.4"/>
+<instance part="+3V4" gate="G$1" x="15.24" y="48.26"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="GND" class="0">
-<segment>
-<pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="22.86" y1="38.1" x2="22.86" y2="20.32" width="0.1524" layer="91"/>
-<pinref part="GND" gate="G$1" pin="1"/>
-</segment>
 <segment>
 <pinref part="GND8" gate="1" pin="GND"/>
 <wire x1="78.74" y1="27.94" x2="78.74" y2="17.78" width="0.1524" layer="91"/>
@@ -1279,6 +1274,12 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 <wire x1="53.34" y1="99.06" x2="40.64" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="99.06" x2="40.64" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="1" pin="GND"/>
+</segment>
+<segment>
+<wire x1="40.64" y1="35.56" x2="48.26" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="GND" gate="G$1" pin="1"/>
+<pinref part="GND1" gate="1" pin="GND"/>
+<wire x1="40.64" y1="35.56" x2="40.64" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -1399,10 +1400,10 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 <wire x1="40.64" y1="111.76" x2="40.64" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="43.18" y1="35.56" x2="43.18" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="35.56" x2="48.26" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="VCC" gate="G$1" pin="1"/>
 <pinref part="+3V4" gate="G$1" pin="+3V3"/>
+<wire x1="22.86" y1="38.1" x2="15.24" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="38.1" x2="15.24" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RST" class="0">
@@ -1439,7 +1440,12 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 <segment>
 <wire x1="142.24" y1="71.12" x2="142.24" y2="88.9" width="0.1524" layer="91"/>
 <label x="142.24" y="71.12" size="1.778" layer="95" rot="R270" xref="yes"/>
-<pinref part="U$9" gate="G$1" pin="SWOLK"/>
+<pinref part="U$9" gate="G$1" pin="SWCLK"/>
+</segment>
+<segment>
+<pinref part="J2" gate="G$1" pin="ICSP_DAT/PGD"/>
+<wire x1="53.34" y1="104.14" x2="43.18" y2="104.14" width="0.1524" layer="91"/>
+<label x="43.18" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SWDIO" class="0">
@@ -1460,13 +1466,6 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 <pinref part="U$9" gate="G$1" pin="VPP"/>
 <wire x1="93.98" y1="111.76" x2="116.84" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="P+4" gate="1" pin="+5V"/>
-</segment>
-</net>
-<net name="SWDCLK" class="0">
-<segment>
-<pinref part="J2" gate="G$1" pin="ICSP_DAT/PGD"/>
-<wire x1="53.34" y1="104.14" x2="43.18" y2="104.14" width="0.1524" layer="91"/>
-<label x="43.18" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

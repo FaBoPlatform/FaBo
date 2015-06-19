@@ -181,25 +181,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 </library>
 <library name="gclue">
 <packages>
-<package name="PIN-HEADER-SMT(1.27MM)2X5">
-<smd name="8" x="1.2" y="2" dx="2.032" dy="0.635" layer="1" rot="R90"/>
-<smd name="7" x="1.2" y="-1.9" dx="2.032" dy="0.635" layer="1" rot="R90"/>
-<smd name="6" x="0" y="2" dx="2.032" dy="0.635" layer="1" rot="R90"/>
-<smd name="5" x="0" y="-1.95" dx="2.032" dy="0.635" layer="1" rot="R90"/>
-<smd name="4" x="-1.2" y="2" dx="2.032" dy="0.635" layer="1" rot="R90"/>
-<smd name="3" x="-1.2" y="-1.95" dx="2.032" dy="0.635" layer="1" rot="R90"/>
-<smd name="2" x="-2.35" y="2" dx="2.032" dy="0.635" layer="1" rot="R90"/>
-<smd name="1" x="-2.4" y="-1.95" dx="2.032" dy="0.635" layer="1" rot="R90"/>
-<smd name="10" x="2.4" y="2" dx="2.032" dy="0.635" layer="1" rot="R90"/>
-<smd name="9" x="2.4" y="-1.9" dx="2.032" dy="0.635" layer="1" rot="R90"/>
-<wire x1="-3.15" y1="1.9" x2="3.1" y2="1.9" width="0.127" layer="21"/>
-<wire x1="3.1" y1="1.9" x2="3.1" y2="-1.7" width="0.127" layer="21"/>
-<wire x1="3.1" y1="-1.7" x2="-3.15" y2="-1.7" width="0.127" layer="21"/>
-<wire x1="-3.15" y1="-1.7" x2="-3.15" y2="1.9" width="0.127" layer="21"/>
-<text x="-4.4" y="-2.25" size="1.27" layer="21">1</text>
-<hole x="1.8" y="0" drill="0.8"/>
-<hole x="-1.8" y="0" drill="0.8"/>
-</package>
 <package name="SWITCH-4P(KMR2)">
 <smd name="1" x="-1" y="0" dx="0.9" dy="0.95" layer="1"/>
 <smd name="3" x="-1" y="-1.6" dx="0.9" dy="0.95" layer="1"/>
@@ -208,44 +189,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 </package>
 </packages>
 <symbols>
-<symbol name="PIN-HEAER-SMT(1.27MM)2X5">
-<text x="-7.54" y="-2.58" size="1.27" layer="94">1</text>
-<wire x1="7.62" y1="5.08" x2="7.62" y2="6.35" width="0.254" layer="94"/>
-<wire x1="5.08" y1="5.08" x2="5.08" y2="6.35" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="5.08" y1="0" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="7.62" y1="0" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="8.89" y1="5.08" x2="8.89" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="-3.81" y1="3.556" x2="-3.81" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="-3.81" y1="-1.27" x2="8.89" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="2.54" y1="5.08" x2="2.54" y2="6.35" width="0.254" layer="94"/>
-<wire x1="0" y1="6.35" x2="0" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="5.08" x2="-2.54" y2="6.35" width="0.254" layer="94"/>
-<pin name="2" x="-2.54" y="11.43" length="middle" rot="R270"/>
-<pin name="4" x="0" y="11.43" length="middle" rot="R270"/>
-<pin name="6" x="2.54" y="11.43" length="middle" rot="R270"/>
-<pin name="8" x="5.08" y="11.43" length="middle" rot="R270"/>
-<pin name="10" x="7.62" y="11.43" length="middle" rot="R270"/>
-<pin name="1" x="-2.54" y="-7.62" length="middle" rot="R90"/>
-<pin name="3" x="0" y="-7.62" length="middle" rot="R90"/>
-<pin name="5" x="2.54" y="-7.62" length="middle" rot="R90"/>
-<pin name="7" x="5.08" y="-7.62" length="middle" rot="R90"/>
-<pin name="9" x="7.62" y="-7.62" length="middle" rot="R90"/>
-<wire x1="-3.81" y1="5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="5.08" x2="0" y2="5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
-<wire x1="2.54" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
-<wire x1="7.62" y1="5.08" x2="8.89" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-3.81" y1="3.81" x2="-3.81" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="5.08" x2="-2.54" y2="3.81" width="0.254" layer="94"/>
-<wire x1="0" y1="5.08" x2="0" y2="3.81" width="0.254" layer="94"/>
-<wire x1="2.54" y1="5.08" x2="2.54" y2="3.81" width="0.254" layer="94"/>
-<wire x1="5.08" y1="5.08" x2="5.08" y2="3.81" width="0.254" layer="94"/>
-<wire x1="7.62" y1="5.08" x2="7.62" y2="3.81" width="0.254" layer="94"/>
-</symbol>
 <symbol name="A4L-LOC">
 <wire x1="256.54" y1="3.81" x2="256.54" y2="8.89" width="0.1016" layer="94"/>
 <wire x1="256.54" y1="8.89" x2="256.54" y2="13.97" width="0.1016" layer="94"/>
@@ -284,31 +227,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="PIN-HEADER-SMT(1.27MM)2X5">
-<description>PIN-HEADER-SMT (1.27MM) 2x5</description>
-<gates>
-<gate name="G$1" symbol="PIN-HEAER-SMT(1.27MM)2X5" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="PIN-HEADER-SMT(1.27MM)2X5">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="10" pad="10"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
-<connect gate="G$1" pin="7" pad="7"/>
-<connect gate="G$1" pin="8" pad="8"/>
-<connect gate="G$1" pin="9" pad="9"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="A4L-LOC">
 <description>FaBo A4 FRAME</description>
 <gates>
@@ -1200,10 +1118,6 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 <part name="P+6" library="SparkFun" deviceset="3.3V" device=""/>
 <part name="GND7" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND8" library="SparkFun" deviceset="GND" device=""/>
-<part name="P+7" library="SparkFun" deviceset="3.3V" device=""/>
-<part name="P+8" library="SparkFun" deviceset="3.3V" device=""/>
-<part name="GND9" library="SparkFun" deviceset="GND" device=""/>
-<part name="U$2" library="gclue" deviceset="PIN-HEADER-SMT(1.27MM)2X5" device=""/>
 <part name="VCC" library="adafruit" deviceset="PINHD-1X1" device="CB"/>
 <part name="GND" library="adafruit" deviceset="PINHD-1X1" device="CB"/>
 <part name="C3" library="SparkFun-Capacitors" deviceset="10UF-6.3V-20%(1206)" device="" value="100uF"/>
@@ -1220,9 +1134,9 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 <part name="BLE1" library="gclueBT" deviceset="BLUEGIGA-BLE121LR" device=""/>
 <part name="P+2" library="SparkFun" deviceset="3.3V" device=""/>
 <part name="P+3" library="SparkFun" deviceset="3.3V" device=""/>
-<part name="J1" library="tag-connect" deviceset="TC2030" device=""/>
 <part name="GND2" library="SparkFun" deviceset="GND" device=""/>
 <part name="P+4" library="SparkFun" deviceset="3.3V" device=""/>
+<part name="J2" library="tag-connect" deviceset="TC2030" device="-MCP"/>
 </parts>
 <sheets>
 <sheet>
@@ -1235,10 +1149,6 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 <instance part="P+6" gate="G$1" x="17.78" y="111.76"/>
 <instance part="GND7" gate="1" x="63.5" y="91.44"/>
 <instance part="GND8" gate="1" x="180.34" y="63.5"/>
-<instance part="P+7" gate="G$1" x="91.44" y="104.14"/>
-<instance part="P+8" gate="G$1" x="134.62" y="114.3" rot="R270"/>
-<instance part="GND9" gate="1" x="99.06" y="114.3" rot="R270"/>
-<instance part="U$2" gate="G$1" x="114.3" y="111.76" rot="R270"/>
 <instance part="VCC" gate="G$1" x="78.74" y="81.28"/>
 <instance part="GND" gate="G$1" x="53.34" y="83.82"/>
 <instance part="C3" gate="G$1" x="60.96" y="68.58" rot="R90"/>
@@ -1255,9 +1165,9 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 <instance part="BLE1" gate="G$1" x="215.9" y="134.62"/>
 <instance part="P+2" gate="G$1" x="195.58" y="91.44"/>
 <instance part="P+3" gate="G$1" x="220.98" y="91.44"/>
-<instance part="J1" gate="G$1" x="121.92" y="137.16"/>
 <instance part="GND2" gate="1" x="93.98" y="142.24"/>
 <instance part="P+4" gate="G$1" x="101.6" y="142.24"/>
+<instance part="J2" gate="G$1" x="129.54" y="137.16"/>
 </instances>
 <busses>
 </busses>
@@ -1273,11 +1183,6 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 <pinref part="GND" gate="G$1" pin="1"/>
 <pinref part="C3" gate="G$1" pin="1"/>
 <pinref part="C1" gate="G$1" pin="1"/>
-</segment>
-<segment>
-<pinref part="GND9" gate="1" pin="GND"/>
-<wire x1="101.6" y1="114.3" x2="106.68" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="GND8" gate="1" pin="GND"/>
@@ -1336,9 +1241,9 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 <pinref part="BLE1" gate="G$1" pin="GND3"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="VPP/MCLR"/>
 <pinref part="GND2" gate="1" pin="GND"/>
-<wire x1="109.22" y1="144.78" x2="93.98" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="144.78" x2="93.98" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="VPP/MCLR"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
@@ -1353,16 +1258,6 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 <pinref part="C1" gate="G$1" pin="2"/>
 <pinref part="C3" gate="G$1" pin="2"/>
 <wire x1="63.5" y1="68.58" x2="71.12" y2="68.58" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="P+8" gate="G$1" pin="3.3V"/>
-<wire x1="125.73" y1="114.3" x2="134.62" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<pinref part="P+7" gate="G$1" pin="3.3V"/>
-<wire x1="91.44" y1="104.14" x2="106.68" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="9"/>
 </segment>
 <segment>
 <pinref part="P+6" gate="G$1" pin="3.3V"/>
@@ -1384,46 +1279,36 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 <wire x1="220.98" y1="88.9" x2="226.06" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="VDD"/>
 <pinref part="P+4" gate="G$1" pin="3.3V"/>
-<wire x1="109.22" y1="142.24" x2="101.6" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="142.24" x2="101.6" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="VDD"/>
 </segment>
 </net>
 <net name="DEBUG_DATA" class="0">
-<segment>
-<label x="81.28" y="111.76" size="1.778" layer="95"/>
-<wire x1="106.68" y1="111.76" x2="93.98" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="3"/>
-</segment>
 <segment>
 <wire x1="220.98" y1="106.68" x2="220.98" y2="99.06" width="0.1524" layer="91"/>
 <label x="220.98" y="96.52" size="1.778" layer="95" rot="R90"/>
 <pinref part="BLE1" gate="G$1" pin="P2_2"/>
 </segment>
 <segment>
-<wire x1="109.22" y1="139.7" x2="96.52" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="139.7" x2="96.52" y2="139.7" width="0.1524" layer="91"/>
 <label x="96.52" y="139.7" size="1.778" layer="95"/>
+<pinref part="J2" gate="G$1" pin="VSS(GND)"/>
 </segment>
 </net>
 <net name="DEBUG_CLOCK" class="0">
-<segment>
-<label x="127" y="111.76" size="1.778" layer="95"/>
-<label x="127" y="111.76" size="1.778" layer="95"/>
-<wire x1="125.73" y1="111.76" x2="137.16" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="4"/>
-</segment>
 <segment>
 <wire x1="218.44" y1="106.68" x2="218.44" y2="99.06" width="0.1524" layer="91"/>
 <label x="218.44" y="96.52" size="1.778" layer="95" rot="R90"/>
 <pinref part="BLE1" gate="G$1" pin="P2_1"/>
 </segment>
+<segment>
+<wire x1="116.84" y1="137.16" x2="99.06" y2="137.16" width="0.1524" layer="91"/>
+<label x="99.06" y="137.16" size="1.778" layer="95"/>
+<pinref part="J2" gate="G$1" pin="ICSP_DAT/PGD"/>
+</segment>
 </net>
 <net name="RESET" class="0">
-<segment>
-<label x="96.52" y="106.68" size="1.778" layer="95"/>
-<wire x1="106.68" y1="106.68" x2="96.52" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="7"/>
-</segment>
 <segment>
 <label x="71.12" y="111.76" size="1.778" layer="95"/>
 <wire x1="43.18" y1="111.76" x2="63.5" y2="111.76" width="0.1524" layer="91"/>
@@ -1439,8 +1324,9 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 <pinref part="BLE1" gate="G$1" pin="RESET"/>
 </segment>
 <segment>
-<wire x1="109.22" y1="137.16" x2="99.06" y2="137.16" width="0.1524" layer="91"/>
-<label x="99.06" y="137.16" size="1.778" layer="95"/>
+<wire x1="116.84" y1="134.62" x2="99.06" y2="134.62" width="0.1524" layer="91"/>
+<label x="99.06" y="134.62" size="1.778" layer="95"/>
+<pinref part="J2" gate="G$1" pin="ICSP_CLK/PGC"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -1494,22 +1380,12 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 </net>
 <net name="P1_4" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="5"/>
-<wire x1="106.68" y1="109.22" x2="96.52" y2="109.22" width="0.1524" layer="91"/>
-<label x="96.52" y="109.22" size="1.778" layer="95"/>
-</segment>
-<segment>
 <wire x1="243.84" y1="129.54" x2="238.76" y2="129.54" width="0.1524" layer="91"/>
 <label x="243.84" y="129.54" size="1.778" layer="95"/>
 <pinref part="BLE1" gate="G$1" pin="P1_4"/>
 </segment>
 </net>
 <net name="P1_7" class="0">
-<segment>
-<pinref part="U$2" gate="G$1" pin="10"/>
-<wire x1="125.73" y1="104.14" x2="134.62" y2="104.14" width="0.1524" layer="91"/>
-<label x="134.62" y="104.14" size="1.778" layer="95"/>
-</segment>
 <segment>
 <wire x1="213.36" y1="99.06" x2="213.36" y2="106.68" width="0.1524" layer="91"/>
 <label x="213.36" y="99.06" size="1.778" layer="95" rot="R90"/>
@@ -1532,22 +1408,12 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 </net>
 <net name="P1_5" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="6"/>
-<wire x1="125.73" y1="109.22" x2="134.62" y2="109.22" width="0.1524" layer="91"/>
-<label x="134.62" y="109.22" size="1.778" layer="95"/>
-</segment>
-<segment>
 <wire x1="243.84" y1="127" x2="238.76" y2="127" width="0.1524" layer="91"/>
 <label x="243.84" y="127" size="1.778" layer="95"/>
 <pinref part="BLE1" gate="G$1" pin="P1_5"/>
 </segment>
 </net>
 <net name="P1_6" class="0">
-<segment>
-<pinref part="U$2" gate="G$1" pin="8"/>
-<wire x1="125.73" y1="106.68" x2="134.62" y2="106.68" width="0.1524" layer="91"/>
-<label x="134.62" y="106.68" size="1.778" layer="95"/>
-</segment>
 <segment>
 <wire x1="210.82" y1="106.68" x2="210.82" y2="99.06" width="0.1524" layer="91"/>
 <label x="210.82" y="99.06" size="1.778" layer="95" rot="R90"/>

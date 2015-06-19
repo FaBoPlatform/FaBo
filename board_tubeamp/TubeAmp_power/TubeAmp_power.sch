@@ -142,8 +142,8 @@ http://www.telcom-semi.com&lt;p&gt;
 <wire x1="86.36" y1="1.27" x2="85.09" y2="0" width="0.127" layer="20" curve="-90"/>
 <hole x="2.54" y="17.78" drill="3.2"/>
 <hole x="83.82" y="17.78" drill="3.2"/>
-<pad name="-B" x="3.81" y="33.02" drill="1.2" shape="long"/>
-<pad name="+E" x="11.43" y="33.02" drill="1.2" shape="long"/>
+<pad name="-B" x="3.81" y="26.67" drill="1.2" shape="long"/>
+<pad name="+E" x="3.81" y="33.02" drill="1.2" shape="long"/>
 <pad name="BB(L)" x="22.86" y="33.02" drill="1.2" shape="long"/>
 <pad name="BB(R)" x="27.94" y="33.02" drill="1.2" shape="long"/>
 <pad name="4.2V2(R)" x="80.01" y="33.02" drill="1.2" shape="long"/>
@@ -152,10 +152,10 @@ http://www.telcom-semi.com&lt;p&gt;
 <pad name="4.2V1(L)" x="63.5" y="33.02" drill="1.2" shape="long"/>
 <pad name="200V2" x="55.88" y="33.02" drill="1.2" shape="long"/>
 <pad name="200V1" x="50.8" y="33.02" drill="1.2" shape="long"/>
-<pad name="4P1L_1(R)" x="80.01" y="2.54" drill="1.2" shape="long"/>
-<pad name="4P1L_7(R)" x="74.93" y="2.54" drill="1.2" shape="long"/>
-<pad name="4P1L_1(L)" x="68.58" y="2.54" drill="1.2" shape="long"/>
-<pad name="4P1L_7(L)" x="63.5" y="2.54" drill="1.2" shape="long"/>
+<pad name="4P1L_1(R)" x="74.93" y="2.54" drill="1.2" shape="long"/>
+<pad name="4P1L_7(R)" x="80.01" y="2.54" drill="1.2" shape="long"/>
+<pad name="4P1L_1(L)" x="63.5" y="2.54" drill="1.2" shape="long"/>
+<pad name="4P1L_7(L)" x="68.58" y="2.54" drill="1.2" shape="long"/>
 <wire x1="61.2775" y1="2.8575" x2="61.2775" y2="3.81" width="0.127" layer="21"/>
 <wire x1="61.2775" y1="3.81" x2="70.8025" y2="3.81" width="0.127" layer="21"/>
 <wire x1="70.8025" y1="3.81" x2="70.8025" y2="2.8575" width="0.127" layer="21"/>
@@ -173,19 +173,45 @@ http://www.telcom-semi.com&lt;p&gt;
 <wire x1="48.5775" y1="31.75" x2="48.5775" y2="32.7025" width="0.127" layer="21"/>
 <text x="62.865" y="4.1275" size="1.4224" layer="21">4P1L(L)</text>
 <text x="73.66" y="4.1275" size="1.4224" layer="21">4P1L(R)</text>
-<text x="63.1825" y="0.3175" size="1.27" layer="21">7</text>
-<text x="68.2625" y="0.3175" size="1.27" layer="21">1</text>
-<text x="74.6125" y="0.3175" size="1.27" layer="21">7</text>
-<text x="79.6925" y="0.3175" size="1.27" layer="21">1</text>
+<text x="68.2625" y="0.3175" size="1.27" layer="21">7</text>
+<text x="63.1825" y="0.3175" size="1.27" layer="21">1</text>
+<text x="79.6925" y="0.3175" size="1.27" layer="21">7</text>
+<text x="74.6125" y="0.3175" size="1.27" layer="21">1</text>
 <text x="63.1825" y="30.1625" size="1.4224" layer="21">4.2V(L)</text>
 <text x="73.9775" y="30.1625" size="1.4224" layer="21">4.2V(R)</text>
 <text x="51.1175" y="30.1625" size="1.4224" layer="21">200V</text>
 <text x="20.0025" y="30.1625" size="1.4224" layer="21">BB(L)</text>
 <text x="26.3525" y="30.1625" size="1.4224" layer="21">BB(R)</text>
-<text x="9.8425" y="30.1625" size="1.4224" layer="21">+E</text>
-<text x="2.54" y="30.1625" size="1.4224" layer="21">-B</text>
-<pad name="-A" x="43.18" y="2.54" drill="1.2" shape="long"/>
-<text x="41.91" y="3.81" size="1.4224" layer="21">-A</text>
+<text x="2.2225" y="30.1625" size="1.4224" layer="21">+E</text>
+<text x="2.54" y="23.8125" size="1.4224" layer="21">-B</text>
+<text x="80.3275" y="30.1625" size="1.4224" layer="22" rot="MR0">4.2V(R)</text>
+<text x="69.5325" y="30.1625" size="1.4224" layer="22" rot="MR0">4.2V(L)</text>
+<text x="55.5625" y="30.1625" size="1.4224" layer="22" rot="MR0">200V</text>
+<text x="30.7975" y="30.1625" size="1.4224" layer="22" rot="MR0">BB(R)</text>
+<text x="24.4475" y="30.1625" size="1.4224" layer="22" rot="MR0">BB(L)</text>
+<text x="5.3975" y="30.1625" size="1.4224" layer="22" rot="MR0">+E</text>
+<text x="5.08" y="23.8125" size="1.4224" layer="22" rot="MR0">-B</text>
+<text x="69.215" y="4.1275" size="1.4224" layer="22" rot="MR0">4P1L(L)</text>
+<text x="63.8175" y="0.3175" size="1.27" layer="22" rot="MR0">1</text>
+<text x="68.8975" y="0.3175" size="1.27" layer="22" rot="MR0">7</text>
+<text x="75.2475" y="0.3175" size="1.27" layer="22" rot="MR0">1</text>
+<text x="80.3275" y="0.3175" size="1.27" layer="22" rot="MR0">7</text>
+<text x="80.645" y="4.1275" size="1.4224" layer="22" rot="MR0">4P1L(R)</text>
+<wire x1="58.1025" y1="32.7025" x2="58.1025" y2="31.75" width="0.127" layer="22"/>
+<wire x1="58.1025" y1="31.75" x2="48.5775" y2="31.75" width="0.127" layer="22"/>
+<wire x1="48.5775" y1="31.75" x2="48.5775" y2="32.7025" width="0.127" layer="22"/>
+<wire x1="70.8025" y1="32.7025" x2="70.8025" y2="31.75" width="0.127" layer="22"/>
+<wire x1="70.8025" y1="31.75" x2="61.2775" y2="31.75" width="0.127" layer="22"/>
+<wire x1="61.2775" y1="31.75" x2="61.2775" y2="32.7025" width="0.127" layer="22"/>
+<wire x1="82.2325" y1="32.7025" x2="82.2325" y2="31.75" width="0.127" layer="22"/>
+<wire x1="82.2325" y1="31.75" x2="72.7075" y2="31.75" width="0.127" layer="22"/>
+<wire x1="72.7075" y1="31.75" x2="72.7075" y2="32.7025" width="0.127" layer="22"/>
+<wire x1="70.8025" y1="2.8575" x2="70.8025" y2="3.81" width="0.127" layer="22"/>
+<wire x1="70.8025" y1="3.81" x2="61.2775" y2="3.81" width="0.127" layer="22"/>
+<wire x1="61.2775" y1="3.81" x2="61.2775" y2="2.8575" width="0.127" layer="22"/>
+<wire x1="82.2325" y1="2.8575" x2="82.2325" y2="3.81" width="0.127" layer="22"/>
+<wire x1="82.2325" y1="3.81" x2="72.7075" y2="3.81" width="0.127" layer="22"/>
+<wire x1="72.7075" y1="3.81" x2="72.7075" y2="2.8575" width="0.127" layer="22"/>
 </package>
 <package name="RESISTOR_1/4W">
 <wire x1="-2.54" y1="0.889" x2="-2.286" y2="1.143" width="0.1524" layer="21" curve="-90"/>
@@ -447,9 +473,9 @@ http://www.telcom-semi.com&lt;p&gt;
 <wire x1="-12.7" y1="-33.02" x2="-12.7" y2="55.88" width="0.254" layer="94"/>
 <text x="-12.7" y="-35.56" size="1.778" layer="95">&gt;NAME</text>
 <text x="-12.7" y="55.88" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="4P1L_1L" x="-17.78" y="-10.16" visible="pin" length="middle"/>
-<pin name="4P1L_7R" x="-17.78" y="-20.32" visible="pin" length="middle"/>
-<pin name="4P1L_1R" x="-17.78" y="-27.94" visible="pin" length="middle"/>
+<pin name="4P1L_1L" x="-17.78" y="-2.54" visible="pin" length="middle"/>
+<pin name="4P1L_7R" x="-17.78" y="-27.94" visible="pin" length="middle"/>
+<pin name="4P1L_1R" x="-17.78" y="-20.32" visible="pin" length="middle"/>
 <pin name="4.2V2R" x="20.32" y="-27.94" visible="pin" length="middle" rot="R180"/>
 <pin name="4.2V1R" x="20.32" y="-20.32" visible="pin" length="middle" rot="R180"/>
 <pin name="4.2V2L" x="20.32" y="-10.16" visible="pin" length="middle" rot="R180"/>
@@ -460,8 +486,7 @@ http://www.telcom-semi.com&lt;p&gt;
 <pin name="BB_L" x="20.32" y="33.02" visible="pin" length="middle" rot="R180"/>
 <pin name="+E" x="20.32" y="43.18" visible="pin" length="middle" rot="R180"/>
 <pin name="-B" x="20.32" y="50.8" visible="pin" length="middle" rot="R180"/>
-<pin name="4P1L_7L" x="-17.78" y="-2.54" visible="pin" length="middle"/>
-<pin name="-A" x="-17.78" y="20.32" visible="pin" length="middle"/>
+<pin name="4P1L_7L" x="-17.78" y="-10.16" visible="pin" length="middle"/>
 </symbol>
 <symbol name="RESISTOR">
 <wire x1="0" y1="0" x2="0.381" y2="1.016" width="0.2032" layer="94"/>
@@ -606,7 +631,6 @@ http://www.telcom-semi.com&lt;p&gt;
 <device name="" package="AMP_POWER">
 <connects>
 <connect gate="G$1" pin="+E" pad="+E"/>
-<connect gate="G$1" pin="-A" pad="-A"/>
 <connect gate="G$1" pin="-B" pad="-B"/>
 <connect gate="G$1" pin="200V1" pad="200V1"/>
 <connect gate="G$1" pin="200V2" pad="200V2"/>
@@ -817,11 +841,11 @@ http://www.telcom-semi.com&lt;p&gt;
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
-<class number="1" name="power" width="0.508" drill="0.254">
+<class number="1" name="power" width="0.762" drill="0.254">
 </class>
-<class number="2" name="GND" width="0.4826" drill="0.2286">
+<class number="2" name="GND" width="0.762" drill="0.2286">
 </class>
-<class number="3" name="edit" width="0.4064" drill="0">
+<class number="3" name="edit" width="0.762" drill="0">
 </class>
 </classes>
 <parts>
@@ -1023,22 +1047,6 @@ http://www.telcom-semi.com&lt;p&gt;
 <net name="4P1L_7L" class="1">
 <segment>
 <pinref part="AMP_POWER1" gate="G$1" pin="4P1L_7L"/>
-<wire x1="116.84" y1="76.2" x2="116.84" y2="71.12" width="0.1524" layer="91"/>
-<label x="116.84" y="71.12" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<pinref part="C5" gate="G$1" pin="+"/>
-<wire x1="139.7" y1="12.7" x2="138.43" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="138.43" y1="30.48" x2="138.43" y2="12.7" width="0.1524" layer="91"/>
-<junction x="138.43" y="12.7"/>
-<wire x1="138.43" y1="12.7" x2="138.43" y2="-2.54" width="0.1524" layer="91"/>
-<label x="138.43" y="-2.54" size="1.778" layer="95" rot="R90"/>
-<pinref part="SDI260_1" gate="G$1" pin="+"/>
-</segment>
-</net>
-<net name="4P1L_1L" class="1">
-<segment>
-<pinref part="AMP_POWER1" gate="G$1" pin="4P1L_1L"/>
 <wire x1="124.46" y1="76.2" x2="124.46" y2="71.12" width="0.1524" layer="91"/>
 <label x="124.46" y="71.12" size="1.778" layer="95" rot="R90"/>
 </segment>
@@ -1052,25 +1060,25 @@ http://www.telcom-semi.com&lt;p&gt;
 <pinref part="SDI260_1" gate="G$1" pin="-"/>
 </segment>
 </net>
+<net name="4P1L_1L" class="1">
+<segment>
+<pinref part="AMP_POWER1" gate="G$1" pin="4P1L_1L"/>
+<wire x1="116.84" y1="76.2" x2="116.84" y2="71.12" width="0.1524" layer="91"/>
+<label x="116.84" y="71.12" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="C5" gate="G$1" pin="+"/>
+<wire x1="139.7" y1="12.7" x2="138.43" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="138.43" y1="30.48" x2="138.43" y2="12.7" width="0.1524" layer="91"/>
+<junction x="138.43" y="12.7"/>
+<wire x1="138.43" y1="12.7" x2="138.43" y2="-2.54" width="0.1524" layer="91"/>
+<label x="138.43" y="-2.54" size="1.778" layer="95" rot="R90"/>
+<pinref part="SDI260_1" gate="G$1" pin="+"/>
+</segment>
+</net>
 <net name="4P1L_7R" class="1">
 <segment>
 <pinref part="AMP_POWER1" gate="G$1" pin="4P1L_7R"/>
-<wire x1="134.62" y1="76.2" x2="134.62" y2="71.12" width="0.1524" layer="91"/>
-<label x="134.62" y="71.12" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<pinref part="C6" gate="G$1" pin="+"/>
-<wire x1="161.29" y1="12.7" x2="160.02" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="30.48" x2="160.02" y2="12.7" width="0.1524" layer="91"/>
-<junction x="160.02" y="12.7"/>
-<wire x1="160.02" y1="12.7" x2="160.02" y2="-2.54" width="0.1524" layer="91"/>
-<label x="160.02" y="-2.54" size="1.778" layer="95" rot="R90"/>
-<pinref part="SDI260_2" gate="G$1" pin="+"/>
-</segment>
-</net>
-<net name="4P1L_1R" class="1">
-<segment>
-<pinref part="AMP_POWER1" gate="G$1" pin="4P1L_1R"/>
 <wire x1="142.24" y1="76.2" x2="142.24" y2="71.12" width="0.1524" layer="91"/>
 <label x="142.24" y="71.12" size="1.778" layer="95" rot="R90"/>
 </segment>
@@ -1082,6 +1090,22 @@ http://www.telcom-semi.com&lt;p&gt;
 <wire x1="170.18" y1="12.7" x2="170.18" y2="-2.54" width="0.1524" layer="91"/>
 <label x="170.18" y="-2.54" size="1.778" layer="95" rot="R90"/>
 <pinref part="SDI260_2" gate="G$1" pin="-"/>
+</segment>
+</net>
+<net name="4P1L_1R" class="1">
+<segment>
+<pinref part="AMP_POWER1" gate="G$1" pin="4P1L_1R"/>
+<wire x1="134.62" y1="76.2" x2="134.62" y2="71.12" width="0.1524" layer="91"/>
+<label x="134.62" y="71.12" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="C6" gate="G$1" pin="+"/>
+<wire x1="161.29" y1="12.7" x2="160.02" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="30.48" x2="160.02" y2="12.7" width="0.1524" layer="91"/>
+<junction x="160.02" y="12.7"/>
+<wire x1="160.02" y1="12.7" x2="160.02" y2="-2.54" width="0.1524" layer="91"/>
+<label x="160.02" y="-2.54" size="1.778" layer="95" rot="R90"/>
+<pinref part="SDI260_2" gate="G$1" pin="+"/>
 </segment>
 </net>
 <net name="N$1" class="3">
@@ -1140,11 +1164,6 @@ http://www.telcom-semi.com&lt;p&gt;
 <junction x="76.2" y="-2.54"/>
 <label x="25.4" y="7.62" size="1.778" layer="95"/>
 <pinref part="DF08M" gate="G$1" pin="-"/>
-</segment>
-<segment>
-<pinref part="AMP_POWER1" gate="G$1" pin="-A"/>
-<wire x1="93.98" y1="76.2" x2="93.98" y2="71.12" width="0.1524" layer="91"/>
-<label x="93.98" y="71.12" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <pinref part="AMP_POWER1" gate="G$1" pin="-B"/>

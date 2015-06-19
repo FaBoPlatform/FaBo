@@ -16,6 +16,7 @@ Section=Sec_10
 [Sec_1]
 Name[de]="Lötstopmaske Lötseite"
 Name[en]="Drills&Holes"
+Name[ja]="Drills&Holes"
 Name[zh]="drill data"
 Prompt=""
 Device="EXCELLON"
@@ -36,6 +37,7 @@ Colors=" 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 6 6 4 8 8 8 8 8 8 8 8 8 8 8 8 8 4 4 1 1
 [Sec_2]
 Name[de]="Lötstopmaske Lötseite"
 Name[en]="Slot drills/holes"
+Name[ja]="Slot drills/holes"
 Name[zh]="edge milling"
 Prompt=""
 Device="GERBER_RS274X"
@@ -56,6 +58,7 @@ Colors=" 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 6 6 4 8 8 8 8 8 8 8 8 8 8 8 8 8 4 4 1 1
 [Sec_3]
 Name[de]="Lötstopmaske Lötseite"
 Name[en]="Solder paste bottom"
+Name[ja]="Solder paste bottom"
 Name[zh]="padmask bottom"
 Prompt=""
 Device="GERBER_RS274X"
@@ -76,6 +79,7 @@ Colors=" 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 6 6 4 8 8 8 8 8 8 8 8 8 8 8 8 8 4 4 1 1
 [Sec_4]
 Name[de]="Lötstopmaske Lötseite"
 Name[en]="Solder paste top"
+Name[ja]="Solder paste top"
 Name[zh]="padmask top"
 Prompt=""
 Device="GERBER_RS274X"
@@ -96,6 +100,7 @@ Colors=" 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 6 6 4 8 8 8 8 8 8 8 8 8 8 8 8 8 4 4 1 1
 [Sec_5]
 Name[de]="Lötstopmaske Lötseite"
 Name[en]="Solder Mask bottom"
+Name[ja]="Solder Mask bottom"
 Name[zh]="solder mask bottom"
 Prompt=""
 Device="GERBER_RS274X"
@@ -116,6 +121,7 @@ Colors=" 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 6 6 4 8 8 8 8 8 8 8 8 8 8 8 8 8 4 4 1 1
 [Sec_6]
 Name[de]="Lötstopmaske Lötseite"
 Name[en]="Solder Mask top"
+Name[ja]="Solder Mask top"
 Name[zh]="solder mask top"
 Prompt=""
 Device="GERBER_RS274X"
@@ -136,6 +142,7 @@ Colors=" 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 6 6 4 8 8 8 8 8 8 8 8 8 8 8 8 8 4 4 1 1
 [Sec_7]
 Name[de]="Lötstopmaske Lötseite"
 Name[en]="Silk bottom"
+Name[ja]="Silk bottom"
 Name[zh]="silk bottom"
 Prompt=""
 Device="GERBER_RS274X"
@@ -156,6 +163,7 @@ Colors=" 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 6 6 4 8 8 8 8 8 8 8 8 8 8 8 8 8 4 4 1 1
 [Sec_8]
 Name[de]="Lötstopmaske Lötseite"
 Name[en]="Silk top"
+Name[ja]="Silk top"
 Name[zh]="silk top"
 Prompt=""
 Device="GERBER_RS274X"
@@ -176,6 +184,7 @@ Colors=" 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 6 6 4 8 8 8 8 8 8 8 8 8 8 8 8 8 4 4 1 1
 [Sec_9]
 Name[de]="Lötstopmaske Lötseite"
 Name[en]="Bottom layer"
+Name[ja]="Bottom layer"
 Name[zh]="bottom copper"
 Prompt=""
 Device="GERBER_RS274X"
@@ -196,6 +205,7 @@ Colors=" 1 2 1 2 1 2 1 2 1 2 1 2 1 2 1 2 6 6 4 8 8 8 8 8 8 8 8 8 8 8 8 8 4 4 1 1
 [Sec_10]
 Name[de]="Lötstopmaske Lötseite"
 Name[en]="Top Layer"
+Name[ja]="Top Layer"
 Name[zh]="top copper"
 Prompt=""
 Device="GERBER_RS274X"
