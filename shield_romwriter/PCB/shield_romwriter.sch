@@ -8254,6 +8254,90 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <text x="-0.762" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-1.016" y="-1.524" size="0.4064" layer="27">&gt;VALUE</text>
 </package>
+<package name="ZERO_PRESSURE_SOCKET_DIL28">
+<wire x1="-17.78" y1="-1.27" x2="-17.78" y2="-3.048" width="0.2032" layer="21"/>
+<wire x1="-17.78" y1="-1.27" x2="-17.78" y2="1.27" width="0.2032" layer="21" curve="180"/>
+<wire x1="17.78" y1="-3.048" x2="17.78" y2="3.048" width="0.2032" layer="21"/>
+<wire x1="-17.78" y1="3.048" x2="-17.78" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="-17.78" y1="3.048" x2="-17.526" y2="3.048" width="0.2032" layer="21"/>
+<wire x1="-17.78" y1="-3.048" x2="-17.526" y2="-3.048" width="0.2032" layer="21"/>
+<wire x1="17.78" y1="-3.048" x2="17.526" y2="-3.048" width="0.2032" layer="21"/>
+<wire x1="17.78" y1="3.048" x2="17.526" y2="3.048" width="0.2032" layer="21"/>
+<pad name="1" x="-16.51" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="2" x="-13.97" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="-11.43" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="4" x="-8.89" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="5" x="-6.35" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="6" x="-3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="7" x="-1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="8" x="1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="9" x="3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="10" x="6.35" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="11" x="8.89" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="12" x="11.43" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="13" x="13.97" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="14" x="16.51" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="15" x="16.51" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="16" x="13.97" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="17" x="11.43" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="18" x="8.89" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="19" x="6.35" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="20" x="3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="21" x="1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="22" x="-1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="23" x="-3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="24" x="-6.35" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="25" x="-8.89" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="26" x="-11.43" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="27" x="-13.97" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="28" x="-16.51" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<text x="-24.765" y="-2.54" size="1.27" layer="25" font="vector" rot="R90">&gt;NAME</text>
+<text x="-12.7" y="0" size="1.27" layer="27" font="vector" align="center-left">&gt;VALUE</text>
+<wire x1="-21.13" y1="11.43" x2="18.415" y2="11.43" width="0.127" layer="21"/>
+<wire x1="18.415" y1="11.43" x2="25.83" y2="11.43" width="0.127" layer="21"/>
+<wire x1="27.1" y1="10.16" x2="27.1" y2="9.525" width="0.127" layer="21"/>
+<wire x1="27.1" y1="9.525" x2="27.1" y2="2.54" width="0.127" layer="21"/>
+<wire x1="27.1" y1="2.54" x2="27.1" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="27.1" y1="-2.54" x2="27.1" y2="-9.525" width="0.127" layer="21"/>
+<wire x1="27.1" y1="-9.525" x2="27.1" y2="-10.16" width="0.127" layer="21"/>
+<wire x1="25.83" y1="-11.43" x2="18.415" y2="-11.43" width="0.127" layer="21"/>
+<wire x1="18.415" y1="-11.43" x2="-21.13" y2="-11.43" width="0.127" layer="21"/>
+<wire x1="-22.4" y1="-10.16" x2="-22.4" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-22.4" y1="2.54" x2="-22.4" y2="10.16" width="0.127" layer="21"/>
+<wire x1="20.32" y1="11.43" x2="33.02" y2="11.43" width="0.127" layer="51"/>
+<wire x1="36.83" y1="12.7" x2="36.83" y2="8.89" width="0.127" layer="51" curve="-180"/>
+<wire x1="33.02" y1="11.43" x2="36.83" y2="12.7" width="0.127" layer="51"/>
+<wire x1="36.83" y1="8.89" x2="33.02" y2="10.16" width="0.127" layer="51"/>
+<wire x1="33.02" y1="10.16" x2="20.955" y2="10.16" width="0.127" layer="51"/>
+<wire x1="20.32" y1="11.43" x2="19.05" y2="10.16" width="0.127" layer="51" curve="90"/>
+<wire x1="27.1" y1="2.54" x2="22.86" y2="2.54" width="0.127" layer="21"/>
+<wire x1="22.86" y1="2.54" x2="22.86" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="22.86" y1="-2.54" x2="27.1" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="27.1" y1="10.16" x2="25.83" y2="11.43" width="0.127" layer="21" curve="90"/>
+<wire x1="27.1" y1="-10.16" x2="25.83" y2="-11.43" width="0.127" layer="21" curve="-90"/>
+<wire x1="-22.4" y1="-10.16" x2="-21.13" y2="-11.43" width="0.127" layer="21" curve="90"/>
+<wire x1="-22.4" y1="10.16" x2="-21.13" y2="11.43" width="0.127" layer="21" curve="-90"/>
+<wire x1="19.05" y1="-10.16" x2="20.32" y2="-11.43" width="0.127" layer="51" curve="90"/>
+<wire x1="20.32" y1="-11.43" x2="25.4" y2="-11.43" width="0.127" layer="51"/>
+<wire x1="25.4" y1="-11.43" x2="25.4" y2="-10.16" width="0.127" layer="51"/>
+<wire x1="25.4" y1="-10.16" x2="20.955" y2="-10.16" width="0.127" layer="51"/>
+<wire x1="20.955" y1="10.16" x2="20.32" y2="9.525" width="0.127" layer="51" curve="90"/>
+<wire x1="19.05" y1="10.16" x2="19.05" y2="9.525" width="0.127" layer="51"/>
+<wire x1="20.955" y1="-10.16" x2="20.32" y2="-9.525" width="0.127" layer="51" curve="-90"/>
+<wire x1="19.05" y1="-10.16" x2="19.05" y2="-9.525" width="0.127" layer="51"/>
+<wire x1="18.415" y1="11.43" x2="18.415" y2="9.525" width="0.127" layer="21"/>
+<wire x1="18.415" y1="9.525" x2="27.1" y2="9.525" width="0.127" layer="21"/>
+<wire x1="18.415" y1="-11.43" x2="18.415" y2="-9.525" width="0.127" layer="21"/>
+<wire x1="18.415" y1="-9.525" x2="27.1" y2="-9.525" width="0.127" layer="21"/>
+<wire x1="-18.8" y1="2.54" x2="-18.8" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-18.8" y1="-2.54" x2="-22.4" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-22.4" y1="-2.54" x2="-24" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-24" y1="-2.54" x2="-24" y2="2.54" width="0.127" layer="21"/>
+<circle x="25.0825" y="0" radius="1" width="0.127" layer="21"/>
+<wire x1="-24" y1="2.54" x2="-22.4" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-22.4" y1="2.54" x2="-18.8" y2="2.54" width="0.127" layer="21"/>
+<circle x="-21.59" y="0" radius="1" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="A4L-LOC">
@@ -16900,6 +16984,41 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <technology name=""/>
 </technologies>
 </device>
+<device name="ZERO_PRESSURE_SOCKET" package="ZERO_PRESSURE_SOCKET_DIL28">
+<connects>
+<connect gate="G$1" pin="AREF" pad="21"/>
+<connect gate="G$1" pin="AVCC" pad="20"/>
+<connect gate="G$1" pin="GND@1" pad="8"/>
+<connect gate="G$1" pin="GND@2" pad="22"/>
+<connect gate="G$1" pin="PB0(ICP)" pad="14"/>
+<connect gate="G$1" pin="PB1(OC1A)" pad="15"/>
+<connect gate="G$1" pin="PB2(SS/OC1B)" pad="16"/>
+<connect gate="G$1" pin="PB3(MOSI/OC2)" pad="17"/>
+<connect gate="G$1" pin="PB4(MISO)" pad="18"/>
+<connect gate="G$1" pin="PB5(SCK)" pad="19"/>
+<connect gate="G$1" pin="PB6(XTAL1/TOSC1)" pad="9"/>
+<connect gate="G$1" pin="PB7(XTAL2/TOSC2)" pad="10"/>
+<connect gate="G$1" pin="PC0(ADC0)" pad="23"/>
+<connect gate="G$1" pin="PC1(ADC1)" pad="24"/>
+<connect gate="G$1" pin="PC2(ADC2)" pad="25"/>
+<connect gate="G$1" pin="PC3(ADC3)" pad="26"/>
+<connect gate="G$1" pin="PC4(ADC4/SDA)" pad="27"/>
+<connect gate="G$1" pin="PC5(ADC5/SCL)" pad="28"/>
+<connect gate="G$1" pin="PC6(/RESET)" pad="1"/>
+<connect gate="G$1" pin="PD0(RXD)" pad="2"/>
+<connect gate="G$1" pin="PD1(TXD)" pad="3"/>
+<connect gate="G$1" pin="PD2(INT0)" pad="4"/>
+<connect gate="G$1" pin="PD3(INT1)" pad="5"/>
+<connect gate="G$1" pin="PD4(XCK/T0)" pad="6"/>
+<connect gate="G$1" pin="PD5(T1)" pad="11"/>
+<connect gate="G$1" pin="PD6(AIN0)" pad="12"/>
+<connect gate="G$1" pin="PD7(AIN1)" pad="13"/>
+<connect gate="G$1" pin="VCC" pad="7"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="LOGO_OSHW_T" uservalue="yes">
@@ -23755,7 +23874,6 @@ Standard 0603 ceramic capacitor</description>
 <part name="P+5" library="supply1" deviceset="+5V" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="U$2" library="GClue" deviceset="A4L-LOC" device=""/>
-<part name="IC1" library="GClue" deviceset="ATMEGA328P-PU" device=""/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
@@ -23772,6 +23890,7 @@ Standard 0603 ceramic capacitor</description>
 <part name="C2" library="GClue" deviceset="CAP" device="-PTH-SMALL" value="22pF"/>
 <part name="C3" library="GClue" deviceset="CAP" device="-PTH-SMALL" value="0.01pF"/>
 <part name="U2" library="GClue" deviceset="ARDUINO_UNO_R3_SHIELD" device="-NOLABEL"/>
+<part name="U1" library="GClue" deviceset="ATMEGA328P-PU" device="ZERO_PRESSURE_SOCKET" value="ZERO_PRESSURE_SOCKET"/>
 </parts>
 <sheets>
 <sheet>
@@ -23794,7 +23913,6 @@ Standard 0603 ceramic capacitor</description>
 <instance part="P+5" gate="1" x="218.44" y="111.76"/>
 <instance part="GND8" gate="1" x="218.44" y="88.9"/>
 <instance part="U$2" gate="G$1" x="0" y="0"/>
-<instance part="IC1" gate="G$1" x="170.18" y="101.6"/>
 <instance part="GND9" gate="1" x="228.6" y="149.86"/>
 <instance part="GND1" gate="1" x="33.02" y="137.16"/>
 <instance part="P+1" gate="1" x="48.26" y="71.12"/>
@@ -23811,6 +23929,7 @@ Standard 0603 ceramic capacitor</description>
 <instance part="C2" gate="G$1" x="91.44" y="33.02"/>
 <instance part="C3" gate="G$1" x="218.44" y="99.06"/>
 <instance part="U2" gate="G$1" x="55.88" y="101.6"/>
+<instance part="U1" gate="G$1" x="170.18" y="101.6"/>
 </instances>
 <busses>
 </busses>
@@ -23826,9 +23945,9 @@ Standard 0603 ceramic capacitor</description>
 <pinref part="U2" gate="G$1" pin="D13"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="PB5(SCK)"/>
 <wire x1="203.2" y1="73.66" x2="193.04" y2="73.66" width="0.1524" layer="91"/>
 <label x="195.58" y="73.66" size="1.778" layer="95"/>
+<pinref part="U1" gate="G$1" pin="PB5(SCK)"/>
 </segment>
 </net>
 <net name="MISO" class="0">
@@ -23842,9 +23961,9 @@ Standard 0603 ceramic capacitor</description>
 <pinref part="U2" gate="G$1" pin="D12"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="PB4(MISO)"/>
 <wire x1="203.2" y1="76.2" x2="193.04" y2="76.2" width="0.1524" layer="91"/>
 <label x="195.58" y="76.2" size="1.778" layer="95"/>
+<pinref part="U1" gate="G$1" pin="PB4(MISO)"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
@@ -23858,9 +23977,9 @@ Standard 0603 ceramic capacitor</description>
 <wire x1="228.6" y1="157.48" x2="223.52" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="PB3(MOSI/OC2)"/>
 <wire x1="203.2" y1="78.74" x2="193.04" y2="78.74" width="0.1524" layer="91"/>
 <label x="195.58" y="78.74" size="1.778" layer="95"/>
+<pinref part="U1" gate="G$1" pin="PB3(MOSI/OC2)"/>
 </segment>
 </net>
 <net name="RESET" class="0">
@@ -23875,10 +23994,10 @@ Standard 0603 ceramic capacitor</description>
 </segment>
 <segment>
 <wire x1="139.7" y1="142.24" x2="139.7" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="PC6(/RESET)"/>
 <wire x1="139.7" y1="132.08" x2="144.78" y2="132.08" width="0.1524" layer="91"/>
 <label x="139.7" y="132.08" size="1.778" layer="95" rot="R90"/>
 <pinref part="R1" gate="G$1" pin="1"/>
+<pinref part="U1" gate="G$1" pin="PC6(/RESET)"/>
 </segment>
 </net>
 <net name="ERR_LED" class="0">
@@ -23932,12 +24051,12 @@ Standard 0603 ceramic capacitor</description>
 <segment>
 <pinref part="P+2" gate="1" pin="+5V"/>
 <wire x1="129.54" y1="165.1" x2="129.54" y2="127" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="VCC"/>
 <wire x1="129.54" y1="127" x2="129.54" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="124.46" x2="144.78" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="AVCC"/>
 <wire x1="144.78" y1="127" x2="129.54" y2="127" width="0.1524" layer="91"/>
 <junction x="129.54" y="127"/>
+<pinref part="U1" gate="G$1" pin="VCC"/>
+<pinref part="U1" gate="G$1" pin="AVCC"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -23997,12 +24116,12 @@ Standard 0603 ceramic capacitor</description>
 <segment>
 <pinref part="GND10" gate="1" pin="GND"/>
 <wire x1="129.54" y1="66.04" x2="129.54" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="GND@1"/>
 <wire x1="129.54" y1="76.2" x2="129.54" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="78.74" x2="144.78" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="GND@2"/>
 <wire x1="144.78" y1="76.2" x2="129.54" y2="76.2" width="0.1524" layer="91"/>
 <junction x="129.54" y="76.2"/>
+<pinref part="U1" gate="G$1" pin="GND@1"/>
+<pinref part="U1" gate="G$1" pin="GND@2"/>
 </segment>
 </net>
 <net name="XTAL1" class="0">
@@ -24016,9 +24135,9 @@ Standard 0603 ceramic capacitor</description>
 <pinref part="C1" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="PB6(XTAL1/TOSC1)"/>
 <wire x1="134.62" y1="106.68" x2="144.78" y2="106.68" width="0.1524" layer="91"/>
 <label x="134.62" y="106.68" size="1.778" layer="95"/>
+<pinref part="U1" gate="G$1" pin="PB6(XTAL1/TOSC1)"/>
 </segment>
 </net>
 <net name="XTAL2" class="0">
@@ -24032,9 +24151,9 @@ Standard 0603 ceramic capacitor</description>
 <pinref part="C2" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="PB7(XTAL2/TOSC2)"/>
 <wire x1="134.62" y1="101.6" x2="144.78" y2="101.6" width="0.1524" layer="91"/>
 <label x="134.62" y="101.6" size="1.778" layer="95"/>
+<pinref part="U1" gate="G$1" pin="PB7(XTAL2/TOSC2)"/>
 </segment>
 </net>
 <net name="N$6" class="0">
