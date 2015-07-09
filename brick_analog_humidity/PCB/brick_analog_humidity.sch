@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -129,12 +129,12 @@
 <library name="gclue">
 <packages>
 <package name="BRICK_3PIN">
-<pad name="IN/OUT" x="-2.54" y="-8.89" drill="0.8" diameter="1.4224" shape="octagon" rot="R90"/>
-<pad name="VCC" x="0" y="-8.89" drill="0.8" diameter="1.4224" shape="octagon" rot="R90"/>
-<pad name="GND" x="2.54" y="-8.89" drill="0.8" diameter="1.4224" shape="square" rot="R90"/>
-<text x="-2.54" y="-7.62" size="0.8128" layer="21" font="vector" rot="R90" align="center-left">I/O</text>
-<text x="0" y="-7.62" size="0.8128" layer="21" font="vector" rot="R90" align="center-left">VCC</text>
-<text x="2.54" y="-7.62" size="0.8128" layer="21" font="vector" rot="R90" align="center-left">GND</text>
+<pad name="IN/OUT" x="-2.54" y="-8.89" drill="1" diameter="1.778" shape="octagon" rot="R90"/>
+<pad name="VCC" x="0" y="-8.89" drill="1" diameter="1.778" shape="octagon" rot="R90"/>
+<pad name="GND" x="2.54" y="-8.89" drill="1" diameter="1.6764" shape="square" rot="R90"/>
+<text x="-2.54" y="-7.62" size="0.8128" layer="21" font="vector" ratio="10" rot="R90" align="center-left">I/O</text>
+<text x="0" y="-7.62" size="0.8128" layer="21" font="vector" ratio="10" rot="R90" align="center-left">VCC</text>
+<text x="2.54" y="-7.62" size="0.8128" layer="21" font="vector" ratio="10" rot="R90" align="center-left">GND</text>
 <wire x1="-10.16" y1="-16.51" x2="10.16" y2="-16.51" width="0" layer="20"/>
 <wire x1="10.16" y1="-16.51" x2="12.7" y2="-13.97" width="0" layer="20" curve="90"/>
 <wire x1="12.7" y1="-13.97" x2="12.7" y2="3.81" width="0" layer="20"/>
@@ -6290,6 +6290,123 @@
 <rectangle x1="-0.129540625" y1="0.94741875" x2="0.149859375" y2="0.9525" layer="21"/>
 <rectangle x1="-0.124459375" y1="0.9525" x2="0.144778125" y2="0.95758125" layer="21"/>
 </package>
+<package name="RES-AXL-REGULAR">
+<wire x1="-2.54" y1="0.762" x2="2.54" y2="0.762" width="0.127" layer="21"/>
+<wire x1="2.54" y1="0.762" x2="2.54" y2="0" width="0.127" layer="21"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-0.762" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-0.762" x2="-2.54" y2="-0.762" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-0.762" x2="-2.54" y2="0" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="0.762" width="0.127" layer="21"/>
+<wire x1="2.54" y1="0" x2="2.794" y2="0" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="0" x2="-2.794" y2="0" width="0.2032" layer="21"/>
+<pad name="P$1" x="-3.81" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$2" x="3.81" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<text x="-2.286" y="-0.508" size="1.016" layer="25" font="vector" ratio="10">&gt;NAME</text>
+<text x="-2.286" y="-1.016" size="1.016" layer="27" font="vector" ratio="10" align="top-left">&gt;VALUE</text>
+</package>
+<package name="BRICK_3PIN_MIDDLE">
+<pad name="IN/OUT" x="-2.54" y="-8.89" drill="1" shape="long" rot="R90"/>
+<pad name="VCC" x="0" y="-8.89" drill="1" shape="long" rot="R90"/>
+<pad name="GND" x="2.54" y="-8.89" drill="1" shape="long" rot="R90"/>
+<text x="-2.54" y="-6.985" size="0.8128" layer="21" font="vector" ratio="10" rot="R90" align="center-left">I/O</text>
+<text x="0" y="-6.985" size="0.8128" layer="21" font="vector" ratio="10" rot="R90" align="center-left">VCC</text>
+<text x="2.54" y="-6.985" size="0.8128" layer="21" font="vector" ratio="10" rot="R90" align="center-left">GND</text>
+<wire x1="-16.51" y1="10.16" x2="-16.51" y2="-12.7" width="0" layer="20"/>
+<wire x1="-16.51" y1="-12.7" x2="-13.97" y2="-15.24" width="0" layer="20" curve="90"/>
+<wire x1="-13.97" y1="-15.24" x2="13.97" y2="-15.24" width="0" layer="20"/>
+<wire x1="13.97" y1="-15.24" x2="16.51" y2="-12.7" width="0" layer="20" curve="90"/>
+<wire x1="16.51" y1="-12.7" x2="16.51" y2="10.16" width="0" layer="20"/>
+<wire x1="-5.08" y1="-17.78" x2="-5.08" y2="-8.89" width="0.127" layer="21"/>
+<pad name="P$5" x="-12.7" y="10.16" drill="3" diameter="3.81"/>
+<pad name="P$6" x="12.7" y="10.16" drill="3" diameter="3.81"/>
+<pad name="P$7" x="-12.7" y="-11.43" drill="3" diameter="3.81"/>
+<pad name="P$8" x="12.7" y="-11.43" drill="3" diameter="3.81"/>
+<wire x1="-16.51" y1="10.16" x2="16.51" y2="10.16" width="0" layer="20" curve="-180"/>
+<circle x="-12.7" y="10.16" radius="2.55" width="0.127" layer="51"/>
+<circle x="-12.7" y="-11.43" radius="2.55" width="0.127" layer="51"/>
+<circle x="12.7" y="10.16" radius="2.55" width="0.127" layer="51"/>
+<circle x="12.7" y="-11.43" radius="2.55" width="0.127" layer="51"/>
+<wire x1="-5.08" y1="-8.89" x2="-5.08" y2="-22.29" width="0.127" layer="51"/>
+<wire x1="5.08" y1="-8.89" x2="5.08" y2="-22.29" width="0.127" layer="51"/>
+<wire x1="-5.08" y1="-22.29" x2="-3.8" y2="-22.29" width="0.127" layer="51"/>
+<wire x1="-3.8" y1="-22.29" x2="-2.8" y2="-22.29" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="-22.29" x2="2.8" y2="-22.29" width="0.127" layer="51"/>
+<wire x1="2.8" y1="-22.29" x2="3.8" y2="-22.29" width="0.127" layer="51"/>
+<wire x1="3.8" y1="-22.29" x2="5.08" y2="-22.29" width="0.127" layer="51"/>
+<wire x1="-3.8" y1="-18.49" x2="-3.8" y2="-22.29" width="0.127" layer="51"/>
+<wire x1="-3.8" y1="-18.49" x2="3.8" y2="-18.49" width="0.127" layer="51"/>
+<wire x1="3.8" y1="-18.49" x2="3.8" y2="-22.29" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="-22.29" x2="-2.8" y2="-19.89" width="0.127" layer="51"/>
+<wire x1="2.8" y1="-22.29" x2="2.8" y2="-19.89" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="-19.89" x2="2.8" y2="-19.89" width="0.127" layer="51"/>
+<wire x1="5.08" y1="-17.78" x2="5.08" y2="-8.89" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="-8.89" x2="-5.08" y2="-8.89" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-8.89" x2="3.81" y2="-8.89" width="0.127" layer="21"/>
+</package>
+<package name="BRICK_3PIN_BIG">
+<pad name="IN/OUT" x="-2.54" y="-8.89" drill="1" shape="long" rot="R90"/>
+<pad name="VCC" x="0" y="-8.89" drill="1" shape="long" rot="R90"/>
+<pad name="GND" x="2.54" y="-8.89" drill="1" shape="long" rot="R90"/>
+<text x="-2.54" y="-6.985" size="0.8128" layer="21" font="vector" ratio="10" rot="R90" align="center-left">I/O</text>
+<text x="0" y="-6.985" size="0.8128" layer="21" font="vector" ratio="10" rot="R90" align="center-left">VCC</text>
+<text x="2.54" y="-6.985" size="0.8128" layer="21" font="vector" ratio="10" rot="R90" align="center-left">GND</text>
+<wire x1="-20.32" y1="8.89" x2="-20.32" y2="-13.97" width="0" layer="20"/>
+<wire x1="-20.32" y1="-13.97" x2="-17.78" y2="-16.51" width="0" layer="20" curve="90"/>
+<wire x1="-17.78" y1="-16.51" x2="17.78" y2="-16.51" width="0" layer="20"/>
+<wire x1="17.78" y1="-16.51" x2="20.32" y2="-13.97" width="0" layer="20" curve="90"/>
+<wire x1="20.32" y1="-13.97" x2="20.32" y2="8.89" width="0" layer="20"/>
+<wire x1="-5.08" y1="-17.78" x2="-5.08" y2="-8.89" width="0.127" layer="21"/>
+<pad name="P$5" x="-16.51" y="8.89" drill="3" diameter="3.81"/>
+<pad name="P$6" x="16.51" y="8.89" drill="3" diameter="3.81"/>
+<pad name="P$7" x="-16.51" y="-12.7" drill="3" diameter="3.81"/>
+<pad name="P$8" x="16.51" y="-12.7" drill="3" diameter="3.81"/>
+<wire x1="-20.32" y1="8.89" x2="20.32" y2="8.89" width="0" layer="20" curve="-180"/>
+<circle x="-16.51" y="8.89" radius="2.55" width="0.127" layer="51"/>
+<circle x="-16.51" y="-12.7" radius="2.55" width="0.127" layer="51"/>
+<circle x="16.51" y="8.89" radius="2.55" width="0.127" layer="51"/>
+<circle x="16.51" y="-12.7" radius="2.55" width="0.127" layer="51"/>
+<wire x1="-5.08" y1="-8.89" x2="-5.08" y2="-22.29" width="0.127" layer="51"/>
+<wire x1="5.08" y1="-8.89" x2="5.08" y2="-22.29" width="0.127" layer="51"/>
+<wire x1="-5.08" y1="-22.29" x2="-3.8" y2="-22.29" width="0.127" layer="51"/>
+<wire x1="-3.8" y1="-22.29" x2="-2.8" y2="-22.29" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="-22.29" x2="2.8" y2="-22.29" width="0.127" layer="51"/>
+<wire x1="2.8" y1="-22.29" x2="3.8" y2="-22.29" width="0.127" layer="51"/>
+<wire x1="3.8" y1="-22.29" x2="5.08" y2="-22.29" width="0.127" layer="51"/>
+<wire x1="-3.8" y1="-18.49" x2="-3.8" y2="-22.29" width="0.127" layer="51"/>
+<wire x1="-3.8" y1="-18.49" x2="3.8" y2="-18.49" width="0.127" layer="51"/>
+<wire x1="3.8" y1="-18.49" x2="3.8" y2="-22.29" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="-22.29" x2="-2.8" y2="-19.89" width="0.127" layer="51"/>
+<wire x1="2.8" y1="-22.29" x2="2.8" y2="-19.89" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="-19.89" x2="2.8" y2="-19.89" width="0.127" layer="51"/>
+<wire x1="5.08" y1="-17.78" x2="5.08" y2="-8.89" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="-8.89" x2="-5.08" y2="-8.89" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-8.89" x2="3.81" y2="-8.89" width="0.127" layer="21"/>
+</package>
+<package name="BRICK_3PIN_CONNECTOR">
+<pad name="IN/OUT" x="2.54" y="0" drill="1" diameter="1.778" shape="octagon" rot="R270"/>
+<pad name="VCC" x="0" y="0" drill="1" diameter="1.778" shape="octagon" rot="R270"/>
+<pad name="GND" x="-2.54" y="0" drill="1" diameter="1.6764" shape="square" rot="R270"/>
+<text x="2.54" y="1.27" size="0.8128" layer="51" font="vector" rot="R90" align="center-left">I/O</text>
+<text x="0" y="1.27" size="0.8128" layer="51" font="vector" rot="R90" align="center-left">VCC</text>
+<text x="-2.54" y="1.27" size="0.8128" layer="51" font="vector" rot="R90" align="center-left">GND</text>
+<wire x1="5.08" y1="7.62" x2="5.08" y2="0" width="0.127" layer="21"/>
+<wire x1="5.08" y1="0" x2="5.08" y2="13.4" width="0.127" layer="51"/>
+<wire x1="-5.08" y1="0" x2="-5.08" y2="13.4" width="0.127" layer="51"/>
+<wire x1="5.08" y1="13.4" x2="3.8" y2="13.4" width="0.127" layer="51"/>
+<wire x1="3.8" y1="13.4" x2="2.8" y2="13.4" width="0.127" layer="51"/>
+<wire x1="2.8" y1="13.4" x2="-2.8" y2="13.4" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="13.4" x2="-3.8" y2="13.4" width="0.127" layer="51"/>
+<wire x1="-3.8" y1="13.4" x2="-5.08" y2="13.4" width="0.127" layer="51"/>
+<wire x1="3.8" y1="9.6" x2="3.8" y2="13.4" width="0.127" layer="51"/>
+<wire x1="3.8" y1="9.6" x2="-3.8" y2="9.6" width="0.127" layer="51"/>
+<wire x1="-3.8" y1="9.6" x2="-3.8" y2="13.4" width="0.127" layer="51"/>
+<wire x1="2.8" y1="13.4" x2="2.8" y2="11" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="13.4" x2="-2.8" y2="11" width="0.127" layer="51"/>
+<wire x1="2.8" y1="11" x2="-2.8" y2="11" width="0.127" layer="51"/>
+<wire x1="-5.08" y1="7.62" x2="-5.08" y2="0" width="0.127" layer="21"/>
+<wire x1="3.81" y1="0" x2="5.08" y2="0" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="0" x2="-3.81" y2="0" width="0.127" layer="21"/>
+</package>
 <package name="EIA0603">
 <wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
 <wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
@@ -6299,25 +6416,11 @@
 <wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
 <smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
 <smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<text x="-1.27" y="0.9525" size="0.8128" layer="25" font="vector">&gt;NAME</text>
-<text x="-1.27" y="-1.905" size="0.8128" layer="27" font="vector">&gt;VALUE</text>
+<text x="0" y="1.27" size="1.016" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.27" size="1.016" layer="27" font="vector" ratio="10" align="top-center">&gt;VALUE</text>
 <rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
 <rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
-</package>
-<package name="RES-AXL-REGULAR">
-<wire x1="-2.54" y1="0.762" x2="2.54" y2="0.762" width="0.2032" layer="21"/>
-<wire x1="2.54" y1="0.762" x2="2.54" y2="0" width="0.2032" layer="21"/>
-<wire x1="2.54" y1="0" x2="2.54" y2="-0.762" width="0.2032" layer="21"/>
-<wire x1="2.54" y1="-0.762" x2="-2.54" y2="-0.762" width="0.2032" layer="21"/>
-<wire x1="-2.54" y1="-0.762" x2="-2.54" y2="0" width="0.2032" layer="21"/>
-<wire x1="-2.54" y1="0" x2="-2.54" y2="0.762" width="0.2032" layer="21"/>
-<wire x1="2.54" y1="0" x2="2.794" y2="0" width="0.2032" layer="21"/>
-<wire x1="-2.54" y1="0" x2="-2.794" y2="0" width="0.2032" layer="21"/>
-<pad name="P$1" x="-3.81" y="0" drill="0.9" diameter="1.8796"/>
-<pad name="P$2" x="3.81" y="0" drill="0.9" diameter="1.8796"/>
-<text x="-2.032" y="-0.381" size="0.8128" layer="25" font="vector">&gt;NAME</text>
-<text x="-2.032" y="-2.54" size="0.8128" layer="27" font="vector">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -14766,7 +14869,37 @@
 <gate name="G$1" symbol="BRICK_3PIN" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="BRICK_3PIN">
+<device name="_NORMAL" package="BRICK_3PIN">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="I/O" pad="IN/OUT"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_MIDDLE" package="BRICK_3PIN_MIDDLE">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="I/O" pad="IN/OUT"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_BIG" package="BRICK_3PIN_BIG">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="I/O" pad="IN/OUT"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_CONNECTOR" package="BRICK_3PIN_CONNECTOR">
 <connects>
 <connect gate="G$1" pin="GND" pad="GND"/>
 <connect gate="G$1" pin="I/O" pad="IN/OUT"/>
@@ -22219,7 +22352,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <parts>
 <part name="JP1" library="SparkFun-Connectors" deviceset="M04" device="LONGPADS" value="DHT11"/>
 <part name="U$2" library="gclue" deviceset="A4L-LOC" device=""/>
-<part name="J1" library="gclue" deviceset="BRICK_3PIN" device=""/>
+<part name="J1" library="gclue" deviceset="BRICK_3PIN" device="_NORMAL"/>
 <part name="U$4" library="gclue" deviceset="LOGO_OSHW_T" device="-M"/>
 <part name="R1" library="gclue" deviceset="RES" device="-PTH-REGULAR" value="10k"/>
 <part name="U$1" library="FaBo" deviceset="LOGO_FABO" device="-M"/>
@@ -22227,7 +22360,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <sheets>
 <sheet>
 <plain>
-<text x="251.46" y="5.08" size="2.54" layer="94" align="bottom-center">Beta2</text>
+<text x="251.46" y="5.08" size="2.54" layer="94" align="bottom-center">1.0</text>
 </plain>
 <instances>
 <instance part="JP1" gate="G$1" x="162.56" y="96.52" smashed="yes" rot="R180">

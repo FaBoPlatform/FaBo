@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -1829,10 +1829,10 @@
 <wire x1="10.16" y1="-19.05" x2="13.97" y2="-15.24" width="0" layer="20" curve="90"/>
 <wire x1="13.97" y1="-15.24" x2="13.97" y2="6.35" width="0" layer="20"/>
 <wire x1="-10.16" y1="-19.05" x2="-13.97" y2="-15.24" width="0" layer="20" curve="-90"/>
-<pad name="GND" x="3.81" y="-10.16" drill="0.9" shape="long" rot="R90"/>
-<pad name="VCC" x="1.27" y="-10.16" drill="0.9" shape="long" rot="R90"/>
-<pad name="RX" x="-3.81" y="-10.16" drill="0.9" shape="long" rot="R90"/>
-<pad name="TX" x="-1.27" y="-10.16" drill="0.9" shape="long" rot="R90"/>
+<pad name="GND" x="3.81" y="-10.16" drill="1" shape="long" rot="R90"/>
+<pad name="VCC" x="1.27" y="-10.16" drill="1" shape="long" rot="R90"/>
+<pad name="RX" x="-3.81" y="-10.16" drill="1" shape="long" rot="R90"/>
+<pad name="TX" x="-1.27" y="-10.16" drill="1" shape="long" rot="R90"/>
 <wire x1="-13.97" y1="6.35" x2="-13.97" y2="-15.24" width="0" layer="20"/>
 <wire x1="-6.35" y1="-19.05" x2="-6.35" y2="-10.16" width="0.127" layer="21"/>
 <wire x1="6.35" y1="-10.16" x2="6.35" y2="-19.05" width="0.127" layer="21"/>
@@ -1841,10 +1841,10 @@
 <pad name="P$7" x="-10.16" y="-15.24" drill="3" diameter="3.81"/>
 <pad name="P$8" x="10.16" y="-15.24" drill="3" diameter="3.81"/>
 <wire x1="-13.97" y1="6.35" x2="13.97" y2="6.35" width="0" layer="20" curve="-180"/>
-<text x="-3.81" y="-8.255" size="0.8128" layer="21" font="vector" rot="R90" align="center-left">RX</text>
-<text x="-1.27" y="-8.255" size="0.8128" layer="21" font="vector" rot="R90" align="center-left">TX</text>
-<text x="1.27" y="-8.255" size="0.8128" layer="21" font="vector" rot="R90" align="center-left">VCC</text>
-<text x="3.81" y="-8.255" size="0.8128" layer="21" font="vector" rot="R90" align="center-left">GND</text>
+<text x="-3.81" y="-8.255" size="0.8128" layer="21" font="vector" ratio="10" rot="R90" align="center-left">RX</text>
+<text x="-1.27" y="-8.255" size="0.8128" layer="21" font="vector" ratio="10" rot="R90" align="center-left">TX</text>
+<text x="1.27" y="-8.255" size="0.8128" layer="21" font="vector" ratio="10" rot="R90" align="center-left">VCC</text>
+<text x="3.81" y="-8.255" size="0.8128" layer="21" font="vector" ratio="10" rot="R90" align="center-left">GND</text>
 <circle x="-10.16" y="6.35" radius="2.55" width="0.127" layer="51"/>
 <circle x="-10.16" y="-15.24" radius="2.55" width="0.127" layer="51"/>
 <circle x="10.16" y="6.35" radius="2.55" width="0.127" layer="51"/>
@@ -1957,8 +1957,8 @@
 <wire x1="-0.965" y1="-0.787" x2="0.965" y2="-0.787" width="0.1016" layer="51"/>
 <smd name="1" x="-1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
 <smd name="2" x="1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
-<text x="-1.905" y="1.27" size="1.016" layer="25" font="vector">&gt;NAME</text>
-<text x="-1.905" y="-2.54" size="1.016" layer="27" font="vector">&gt;VALUE</text>
+<text x="0" y="1.27" size="1.016" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.27" size="1.016" layer="27" font="vector" ratio="10" align="top-center">&gt;VALUE</text>
 <rectangle x1="-1.7018" y1="-0.8509" x2="-0.9517" y2="0.8491" layer="51"/>
 <rectangle x1="0.9517" y1="-0.8491" x2="1.7018" y2="0.8509" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
@@ -2008,8 +2008,8 @@
 <wire x1="-2.032" y1="0" x2="-1.7306" y2="-1.065" width="0.254" layer="21" curve="31.60822" cap="flat"/>
 <wire x1="1.5748" y1="1.2954" x2="1.5748" y2="0.7874" width="0.254" layer="21"/>
 <wire x1="1.5748" y1="-1.2954" x2="1.5748" y2="-0.8382" width="0.254" layer="21"/>
-<pad name="A" x="-1.27" y="0" drill="0.8" shape="octagon"/>
-<pad name="K" x="1.27" y="0" drill="0.8" shape="octagon"/>
+<pad name="A" x="-1.27" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="K" x="1.27" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
 <text x="1.905" y="0.381" size="1.27" layer="25" font="vector" ratio="10">&gt;NAME</text>
 <text x="1.905" y="-1.651" size="1.27" layer="27" font="vector" ratio="10">&gt;VALUE</text>
 </package>
@@ -2093,10 +2093,10 @@
 <wire x1="-2.159" y1="0" x2="0" y2="2.159" width="0.1524" layer="51" curve="-90" cap="flat"/>
 <wire x1="0" y1="-2.159" x2="2.159" y2="0" width="0.1524" layer="51" curve="90" cap="flat"/>
 <circle x="0" y="0" radius="2.54" width="0.1524" layer="21"/>
-<pad name="A" x="-1.27" y="0" drill="0.8" diameter="1.9304"/>
-<pad name="K" x="1.27" y="0" drill="0.8" diameter="1.9304"/>
-<text x="3.175" y="0.5334" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="3.2004" y="-1.8034" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<pad name="A" x="-1.27" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="K" x="1.27" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<text x="3.175" y="0.5334" size="1.27" layer="25" font="vector" ratio="10">&gt;NAME</text>
+<text x="3.2004" y="-1.8034" size="1.27" layer="27" font="vector" ratio="10">&gt;VALUE</text>
 </package>
 <package name="EIA1206-CAP">
 <wire x1="-1" y1="-1.2" x2="-2.5" y2="-1.2" width="0.2032" layer="21"/>
@@ -4586,10 +4586,10 @@
 <wire x1="-2.54" y1="0" x2="-2.54" y2="0.762" width="0.127" layer="21"/>
 <wire x1="2.54" y1="0" x2="2.794" y2="0" width="0.2032" layer="21"/>
 <wire x1="-2.54" y1="0" x2="-2.794" y2="0" width="0.2032" layer="21"/>
-<pad name="P$1" x="-3.81" y="0" drill="0.9" diameter="1.778" shape="octagon"/>
-<pad name="P$2" x="3.81" y="0" drill="0.9" diameter="1.778" shape="octagon"/>
-<text x="-2.286" y="-0.508" size="1.016" layer="25" font="vector">&gt;NAME</text>
-<text x="-2.286" y="-1.016" size="1.016" layer="27" font="vector" align="top-left">&gt;VALUE</text>
+<pad name="P$1" x="-3.81" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$2" x="3.81" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<text x="-2.286" y="-0.508" size="1.016" layer="25" font="vector" ratio="10">&gt;NAME</text>
+<text x="-2.286" y="-1.016" size="1.016" layer="27" font="vector" ratio="10" align="top-left">&gt;VALUE</text>
 </package>
 <package name="LOGO_OSHW_T_L">
 <rectangle x1="-3.616325" y1="-5.965825" x2="-3.368675" y2="-5.946775" layer="21"/>
@@ -12034,67 +12034,67 @@
 <wire x1="12.192" y1="3.81" x2="12.192" y2="12.7" width="0.127" layer="51"/>
 <wire x1="12.192" y1="12.7" x2="-1.778" y2="12.7" width="0.127" layer="51"/>
 <wire x1="-1.778" y1="12.7" x2="-1.778" y2="3.81" width="0.127" layer="51"/>
-<pad name="D4" x="53.34" y="50.927" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="A0" x="50.8" y="2.413" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="D3" x="55.88" y="50.673" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="D2" x="58.42" y="50.927" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="D1" x="60.96" y="50.673" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="D0" x="63.5" y="50.927" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="D5" x="50.8" y="50.673" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="D6" x="48.26" y="50.927" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="D7" x="45.72" y="50.673" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="D8" x="41.656" y="50.927" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="D9" x="39.116" y="50.673" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="D10" x="36.576" y="50.927" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="D11" x="34.036" y="50.673" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="D12" x="31.496" y="50.927" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="D13" x="28.956" y="50.673" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="GND3" x="26.416" y="50.927" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="AREF" x="23.876" y="50.673" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="A1" x="53.34" y="2.667" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="A2" x="55.88" y="2.413" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="A3" x="58.42" y="2.667" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="A4" x="60.96" y="2.413" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="A5" x="63.5" y="2.667" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="VIN" x="45.72" y="2.667" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="GND1" x="43.18" y="2.413" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="GND2" x="40.64" y="2.667" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="5V" x="38.1" y="2.413" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="3V3" x="35.56" y="2.667" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="RESET" x="33.02" y="2.413" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="SDA" x="21.336" y="50.927" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="SCL" x="18.796" y="50.673" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="IOREF" x="30.48" y="2.667" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="RESERVED" x="27.94" y="2.413" drill="1.016" diameter="1.9304" shape="octagon"/>
-<text x="50.8" y="5.08" size="1.016" layer="21" font="vector" rot="R90" align="center-left">A0</text>
-<text x="53.34" y="5.08" size="1.016" layer="21" font="vector" rot="R90" align="center-left">A1</text>
-<text x="55.88" y="5.08" size="1.016" layer="21" font="vector" rot="R90" align="center-left">A2</text>
-<text x="58.42" y="5.08" size="1.016" layer="21" font="vector" rot="R90" align="center-left">A3</text>
-<text x="60.96" y="5.08" size="1.016" layer="21" font="vector" rot="R90" align="center-left">A4/SDA</text>
-<text x="63.5" y="5.08" size="1.016" layer="21" font="vector" rot="R90" align="center-left">A5/SCL</text>
-<text x="45.72" y="5.08" size="1.016" layer="21" font="vector" rot="R90" align="center-left">Vin</text>
-<text x="43.18" y="5.08" size="1.016" layer="21" font="vector" rot="R90" align="center-left">GND</text>
-<text x="40.64" y="5.08" size="1.016" layer="21" font="vector" rot="R90" align="center-left">GND</text>
-<text x="38.1" y="5.08" size="1.016" layer="21" font="vector" rot="R90" align="center-left">5V</text>
-<text x="35.56" y="5.08" size="1.016" layer="21" font="vector" rot="R90" align="center-left">3V3</text>
-<text x="33.02" y="5.08" size="1.016" layer="21" font="vector" rot="R90" align="center-left">RESET</text>
-<text x="30.48" y="5.08" size="1.016" layer="21" font="vector" rot="R90" align="center-left">IOREF</text>
-<text x="63.5" y="48.26" size="1.016" layer="21" font="vector" rot="R270" align="center-left">RX&lt;D0</text>
-<text x="60.96" y="48.26" size="1.016" layer="21" font="vector" rot="R270" align="center-left">TX&gt;D1</text>
-<text x="58.42" y="48.26" size="1.016" layer="21" font="vector" rot="R270" align="center-left">D2</text>
-<text x="55.88" y="48.26" size="1.016" layer="21" font="vector" rot="R270" align="center-left">D3</text>
-<text x="53.34" y="48.26" size="1.016" layer="21" font="vector" rot="R270" align="center-left">D4</text>
-<text x="50.8" y="48.26" size="1.016" layer="21" font="vector" rot="R270" align="center-left">D5</text>
-<text x="48.26" y="48.26" size="1.016" layer="21" font="vector" rot="R270" align="center-left">D6</text>
-<text x="45.72" y="48.26" size="1.016" layer="21" font="vector" rot="R270" align="center-left">D7</text>
-<text x="41.656" y="48.26" size="1.016" layer="21" font="vector" rot="R270" align="center-left">D8</text>
-<text x="39.116" y="48.26" size="1.016" layer="21" font="vector" rot="R270" align="center-left">D9</text>
-<text x="36.576" y="48.26" size="1.016" layer="21" font="vector" rot="R270" align="center-left">D10</text>
-<text x="34.036" y="48.26" size="1.016" layer="21" font="vector" rot="R270" align="center-left">D11</text>
-<text x="31.496" y="48.26" size="1.016" layer="21" font="vector" rot="R270" align="center-left">D12</text>
-<text x="28.956" y="48.26" size="1.016" layer="21" font="vector" rot="R270" align="center-left">D13</text>
-<text x="26.416" y="48.26" size="1.016" layer="21" font="vector" rot="R270" align="center-left">GND</text>
-<text x="23.876" y="48.26" size="1.016" layer="21" font="vector" rot="R270" align="center-left">AREF</text>
+<pad name="D4" x="53.34" y="50.927" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="A0" x="50.8" y="2.413" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="D3" x="55.88" y="50.673" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="D2" x="58.42" y="50.927" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="D1" x="60.96" y="50.673" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="D0" x="63.5" y="50.927" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="D5" x="50.8" y="50.673" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="D6" x="48.26" y="50.927" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="D7" x="45.72" y="50.673" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="D8" x="41.656" y="50.927" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="D9" x="39.116" y="50.673" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="D10" x="36.576" y="50.927" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="D11" x="34.036" y="50.673" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="D12" x="31.496" y="50.927" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="D13" x="28.956" y="50.673" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="GND3" x="26.416" y="50.927" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="AREF" x="23.876" y="50.673" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="A1" x="53.34" y="2.667" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="A2" x="55.88" y="2.413" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="A3" x="58.42" y="2.667" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="A4" x="60.96" y="2.413" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="A5" x="63.5" y="2.667" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="VIN" x="45.72" y="2.667" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="GND1" x="43.18" y="2.413" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="GND2" x="40.64" y="2.667" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="5V" x="38.1" y="2.413" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="3V3" x="35.56" y="2.667" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="RESET" x="33.02" y="2.413" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="SDA" x="21.336" y="50.927" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="SCL" x="18.796" y="50.673" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="IOREF" x="30.48" y="2.667" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="RESERVED" x="27.94" y="2.413" drill="1" diameter="1.778" shape="octagon"/>
+<text x="50.8" y="5.08" size="1.016" layer="21" font="vector" ratio="10" rot="R90" align="center-left">A0</text>
+<text x="53.34" y="5.08" size="1.016" layer="21" font="vector" ratio="10" rot="R90" align="center-left">A1</text>
+<text x="55.88" y="5.08" size="1.016" layer="21" font="vector" ratio="10" rot="R90" align="center-left">A2</text>
+<text x="58.42" y="5.08" size="1.016" layer="21" font="vector" ratio="10" rot="R90" align="center-left">A3</text>
+<text x="60.96" y="5.08" size="1.016" layer="21" font="vector" ratio="10" rot="R90" align="center-left">A4/SDA</text>
+<text x="63.5" y="5.08" size="1.016" layer="21" font="vector" ratio="10" rot="R90" align="center-left">A5/SCL</text>
+<text x="45.72" y="5.08" size="1.016" layer="21" font="vector" ratio="10" rot="R90" align="center-left">Vin</text>
+<text x="43.18" y="5.08" size="1.016" layer="21" font="vector" ratio="10" rot="R90" align="center-left">GND</text>
+<text x="40.64" y="5.08" size="1.016" layer="21" font="vector" ratio="10" rot="R90" align="center-left">GND</text>
+<text x="38.1" y="5.08" size="1.016" layer="21" font="vector" ratio="10" rot="R90" align="center-left">5V</text>
+<text x="35.56" y="5.08" size="1.016" layer="21" font="vector" ratio="10" rot="R90" align="center-left">3V3</text>
+<text x="33.02" y="5.08" size="1.016" layer="21" font="vector" ratio="10" rot="R90" align="center-left">RESET</text>
+<text x="30.48" y="5.08" size="1.016" layer="21" font="vector" ratio="10" rot="R90" align="center-left">IOREF</text>
+<text x="63.5" y="48.26" size="1.016" layer="21" font="vector" ratio="10" rot="R270" align="center-left">RX&lt;D0</text>
+<text x="60.96" y="48.26" size="1.016" layer="21" font="vector" ratio="10" rot="R270" align="center-left">TX&gt;D1</text>
+<text x="58.42" y="48.26" size="1.016" layer="21" font="vector" ratio="10" rot="R270" align="center-left">D2</text>
+<text x="55.88" y="48.26" size="1.016" layer="21" font="vector" ratio="10" rot="R270" align="center-left">D3</text>
+<text x="53.34" y="48.26" size="1.016" layer="21" font="vector" ratio="10" rot="R270" align="center-left">D4</text>
+<text x="50.8" y="48.26" size="1.016" layer="21" font="vector" ratio="10" rot="R270" align="center-left">D5</text>
+<text x="48.26" y="48.26" size="1.016" layer="21" font="vector" ratio="10" rot="R270" align="center-left">D6</text>
+<text x="45.72" y="48.26" size="1.016" layer="21" font="vector" ratio="10" rot="R270" align="center-left">D7</text>
+<text x="41.656" y="48.26" size="1.016" layer="21" font="vector" ratio="10" rot="R270" align="center-left">D8</text>
+<text x="39.116" y="48.26" size="1.016" layer="21" font="vector" ratio="10" rot="R270" align="center-left">D9</text>
+<text x="36.576" y="48.26" size="1.016" layer="21" font="vector" ratio="10" rot="R270" align="center-left">D10</text>
+<text x="34.036" y="48.26" size="1.016" layer="21" font="vector" ratio="10" rot="R270" align="center-left">D11</text>
+<text x="31.496" y="48.26" size="1.016" layer="21" font="vector" ratio="10" rot="R270" align="center-left">D12</text>
+<text x="28.956" y="48.26" size="1.016" layer="21" font="vector" ratio="10" rot="R270" align="center-left">D13</text>
+<text x="26.416" y="48.26" size="1.016" layer="21" font="vector" ratio="10" rot="R270" align="center-left">GND</text>
+<text x="23.876" y="48.26" size="1.016" layer="21" font="vector" ratio="10" rot="R270" align="center-left">AREF</text>
 </package>
 <package name="EG1218">
 <wire x1="-5.842" y1="2.032" x2="5.842" y2="2.032" width="0.127" layer="21"/>
@@ -12165,38 +12165,38 @@
 <wire x1="12.192" y1="3.81" x2="12.192" y2="12.7" width="0.127" layer="51"/>
 <wire x1="12.192" y1="12.7" x2="-1.778" y2="12.7" width="0.127" layer="51"/>
 <wire x1="-1.778" y1="12.7" x2="-1.778" y2="3.81" width="0.127" layer="51"/>
-<pad name="D4" x="53.34" y="50.927" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="A0" x="50.8" y="2.413" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="D3" x="55.88" y="50.673" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="D2" x="58.42" y="50.927" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="D1" x="60.96" y="50.673" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="D0" x="63.5" y="50.927" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="D5" x="50.8" y="50.673" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="D6" x="48.26" y="50.927" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="D7" x="45.72" y="50.673" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="D8" x="41.656" y="50.927" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="D9" x="39.116" y="50.673" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="D10" x="36.576" y="50.927" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="D11" x="34.036" y="50.673" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="D12" x="31.496" y="50.927" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="D13" x="28.956" y="50.673" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="GND3" x="26.416" y="50.927" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="AREF" x="23.876" y="50.673" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="A1" x="53.34" y="2.667" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="A2" x="55.88" y="2.413" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="A3" x="58.42" y="2.667" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="A4" x="60.96" y="2.413" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="A5" x="63.5" y="2.667" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="VIN" x="45.72" y="2.667" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="GND1" x="43.18" y="2.413" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="GND2" x="40.64" y="2.667" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="5V" x="38.1" y="2.413" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="3V3" x="35.56" y="2.667" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="RESET" x="33.02" y="2.413" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="SDA" x="21.336" y="50.927" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="SCL" x="18.796" y="50.673" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="IOREF" x="30.48" y="2.667" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="RESERVED" x="27.94" y="2.413" drill="1.016" diameter="1.9304" shape="octagon"/>
+<pad name="D4" x="53.34" y="50.927" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="A0" x="50.8" y="2.413" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="D3" x="55.88" y="50.673" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="D2" x="58.42" y="50.927" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="D1" x="60.96" y="50.673" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="D0" x="63.5" y="50.927" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="D5" x="50.8" y="50.673" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="D6" x="48.26" y="50.927" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="D7" x="45.72" y="50.673" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="D8" x="41.656" y="50.927" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="D9" x="39.116" y="50.673" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="D10" x="36.576" y="50.927" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="D11" x="34.036" y="50.673" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="D12" x="31.496" y="50.927" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="D13" x="28.956" y="50.673" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="GND3" x="26.416" y="50.927" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="AREF" x="23.876" y="50.673" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="A1" x="53.34" y="2.667" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="A2" x="55.88" y="2.413" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="A3" x="58.42" y="2.667" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="A4" x="60.96" y="2.413" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="A5" x="63.5" y="2.667" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="VIN" x="45.72" y="2.667" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="GND1" x="43.18" y="2.413" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="GND2" x="40.64" y="2.667" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="5V" x="38.1" y="2.413" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="3V3" x="35.56" y="2.667" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="RESET" x="33.02" y="2.413" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="SDA" x="21.336" y="50.927" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="SCL" x="18.796" y="50.673" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="IOREF" x="30.48" y="2.667" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="RESERVED" x="27.94" y="2.413" drill="1" diameter="1.778" shape="octagon"/>
 </package>
 <package name="ARDUINO_UNO_R3_OUTIN">
 <wire x1="64.516" y1="53.34" x2="66.04" y2="51.816" width="0" layer="20"/>
@@ -14840,10 +14840,10 @@
 <circle x="0" y="0" radius="2.55" width="0.127" layer="51"/>
 </package>
 <package name="BUZZER-PKM13EPYH4000-A0">
-<pad name="1" x="-2.5" y="0" drill="1" shape="octagon"/>
-<pad name="2" x="2.5" y="0" drill="1" shape="octagon"/>
+<pad name="1" x="-2.5" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="2" x="2.5" y="0" drill="1" diameter="1.778" shape="octagon"/>
 <circle x="0" y="0" radius="6.3" width="0.127" layer="21"/>
-<text x="-2.54" y="2.54" size="1.016" layer="25" font="vector">&gt;NAME</text>
+<text x="0" y="2.54" size="1.27" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
 </package>
 <package name="LOGO_FABO_S">
 <rectangle x1="0.047371875" y1="-1.272921875" x2="0.175890625" y2="-1.267078125" layer="21"/>
@@ -18701,12 +18701,12 @@
 <text x="0" y="5.08" size="1.6764" layer="21" font="vector" align="bottom-center">FaBo</text>
 </package>
 <package name="BRICK_3PIN_MIDDLE">
-<pad name="IN/OUT" x="-2.54" y="-8.89" drill="0.9" shape="long" rot="R90"/>
-<pad name="VCC" x="0" y="-8.89" drill="0.9" shape="long" rot="R90"/>
-<pad name="GND" x="2.54" y="-8.89" drill="0.9" shape="long" rot="R90"/>
-<text x="-2.54" y="-6.985" size="0.8128" layer="21" font="vector" rot="R90" align="center-left">I/O</text>
-<text x="0" y="-6.985" size="0.8128" layer="21" font="vector" rot="R90" align="center-left">VCC</text>
-<text x="2.54" y="-6.985" size="0.8128" layer="21" font="vector" rot="R90" align="center-left">GND</text>
+<pad name="IN/OUT" x="-2.54" y="-8.89" drill="1" shape="long" rot="R90"/>
+<pad name="VCC" x="0" y="-8.89" drill="1" shape="long" rot="R90"/>
+<pad name="GND" x="2.54" y="-8.89" drill="1" shape="long" rot="R90"/>
+<text x="-2.54" y="-6.985" size="0.8128" layer="21" font="vector" ratio="10" rot="R90" align="center-left">I/O</text>
+<text x="0" y="-6.985" size="0.8128" layer="21" font="vector" ratio="10" rot="R90" align="center-left">VCC</text>
+<text x="2.54" y="-6.985" size="0.8128" layer="21" font="vector" ratio="10" rot="R90" align="center-left">GND</text>
 <wire x1="-16.51" y1="10.16" x2="-16.51" y2="-12.7" width="0" layer="20"/>
 <wire x1="-16.51" y1="-12.7" x2="-13.97" y2="-15.24" width="0" layer="20" curve="90"/>
 <wire x1="-13.97" y1="-15.24" x2="13.97" y2="-15.24" width="0" layer="20"/>
@@ -18740,12 +18740,12 @@
 <wire x1="5.08" y1="-8.89" x2="3.81" y2="-8.89" width="0.127" layer="21"/>
 </package>
 <package name="BRICK_3PIN_BIG">
-<pad name="IN/OUT" x="-2.54" y="-8.89" drill="0.9" shape="long" rot="R90"/>
-<pad name="VCC" x="0" y="-8.89" drill="0.9" shape="long" rot="R90"/>
-<pad name="GND" x="2.54" y="-8.89" drill="0.9" shape="long" rot="R90"/>
-<text x="-2.54" y="-6.985" size="0.8128" layer="21" font="vector" rot="R90" align="center-left">I/O</text>
-<text x="0" y="-6.985" size="0.8128" layer="21" font="vector" rot="R90" align="center-left">VCC</text>
-<text x="2.54" y="-6.985" size="0.8128" layer="21" font="vector" rot="R90" align="center-left">GND</text>
+<pad name="IN/OUT" x="-2.54" y="-8.89" drill="1" shape="long" rot="R90"/>
+<pad name="VCC" x="0" y="-8.89" drill="1" shape="long" rot="R90"/>
+<pad name="GND" x="2.54" y="-8.89" drill="1" shape="long" rot="R90"/>
+<text x="-2.54" y="-6.985" size="0.8128" layer="21" font="vector" ratio="10" rot="R90" align="center-left">I/O</text>
+<text x="0" y="-6.985" size="0.8128" layer="21" font="vector" ratio="10" rot="R90" align="center-left">VCC</text>
+<text x="2.54" y="-6.985" size="0.8128" layer="21" font="vector" ratio="10" rot="R90" align="center-left">GND</text>
 <wire x1="-20.32" y1="8.89" x2="-20.32" y2="-13.97" width="0" layer="20"/>
 <wire x1="-20.32" y1="-13.97" x2="-17.78" y2="-16.51" width="0" layer="20" curve="90"/>
 <wire x1="-17.78" y1="-16.51" x2="17.78" y2="-16.51" width="0" layer="20"/>
@@ -19510,9 +19510,9 @@
 <text x="6.35" y="-1.905" size="1.016" layer="21" font="vector" rot="R270" align="center-left">GND</text>
 </package>
 <package name="BRICK_3PIN_CONNECTOR">
-<pad name="IN/OUT" x="2.54" y="0" drill="0.9" diameter="1.778" shape="octagon" rot="R270"/>
-<pad name="VCC" x="0" y="0" drill="0.9" diameter="1.778" shape="octagon" rot="R270"/>
-<pad name="GND" x="-2.54" y="0" drill="0.9" diameter="1.778" shape="square" rot="R270"/>
+<pad name="IN/OUT" x="2.54" y="0" drill="1" diameter="1.778" shape="octagon" rot="R270"/>
+<pad name="VCC" x="0" y="0" drill="1" diameter="1.778" shape="octagon" rot="R270"/>
+<pad name="GND" x="-2.54" y="0" drill="1" diameter="1.6764" shape="square" rot="R270"/>
 <text x="2.54" y="1.27" size="0.8128" layer="51" font="vector" rot="R90" align="center-left">I/O</text>
 <text x="0" y="1.27" size="0.8128" layer="51" font="vector" rot="R90" align="center-left">VCC</text>
 <text x="-2.54" y="1.27" size="0.8128" layer="51" font="vector" rot="R90" align="center-left">GND</text>
