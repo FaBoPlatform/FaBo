@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -126,20 +126,20 @@
 </layers>
 <board>
 <plain>
-<text x="3.81" y="7.62" size="1.27" layer="21" font="vector" rot="R90">VIBRATOR</text>
-<text x="5.08" y="7.62" size="1.016" layer="21" font="vector" rot="R90">Rev.Beta2</text>
-<text x="12.7" y="12.7" size="0.8128" layer="21" font="vector" align="bottom-center">MADE IN JAPAN</text>
+<text x="3.81" y="7.62" size="1.27" layer="21" font="vector" ratio="10" rot="R90">VIBRATOR</text>
+<text x="5.08" y="7.62" size="1.016" layer="21" font="vector" ratio="10" rot="R90">Rev.1.0</text>
+<text x="12.7" y="13.97" size="1.016" layer="21" font="vector" ratio="10" align="bottom-center">MADE IN JAPAN</text>
 </plain>
 <libraries>
 <library name="gclue">
 <packages>
 <package name="BRICK_3PIN">
-<pad name="IN/OUT" x="-2.54" y="-8.89" drill="0.8" diameter="1.4224" shape="octagon" rot="R90"/>
-<pad name="VCC" x="0" y="-8.89" drill="0.8" diameter="1.4224" shape="octagon" rot="R90"/>
-<pad name="GND" x="2.54" y="-8.89" drill="0.8" diameter="1.4224" shape="square" rot="R90"/>
-<text x="-2.54" y="-7.62" size="0.8128" layer="21" font="vector" rot="R90" align="center-left">I/O</text>
-<text x="0" y="-7.62" size="0.8128" layer="21" font="vector" rot="R90" align="center-left">VCC</text>
-<text x="2.54" y="-7.62" size="0.8128" layer="21" font="vector" rot="R90" align="center-left">GND</text>
+<pad name="IN/OUT" x="-2.54" y="-8.89" drill="1" diameter="1.778" shape="octagon" rot="R90"/>
+<pad name="VCC" x="0" y="-8.89" drill="1" diameter="1.778" shape="octagon" rot="R90"/>
+<pad name="GND" x="2.54" y="-8.89" drill="1" diameter="1.6764" shape="square" rot="R90"/>
+<text x="-2.54" y="-7.62" size="0.8128" layer="21" font="vector" ratio="10" rot="R90" align="center-left">I/O</text>
+<text x="0" y="-7.62" size="0.8128" layer="21" font="vector" ratio="10" rot="R90" align="center-left">VCC</text>
+<text x="2.54" y="-7.62" size="0.8128" layer="21" font="vector" ratio="10" rot="R90" align="center-left">GND</text>
 <wire x1="-10.16" y1="-16.51" x2="10.16" y2="-16.51" width="0" layer="20"/>
 <wire x1="10.16" y1="-16.51" x2="12.7" y2="-13.97" width="0" layer="20" curve="90"/>
 <wire x1="12.7" y1="-13.97" x2="12.7" y2="3.81" width="0" layer="20"/>
@@ -4097,7 +4097,7 @@ design rules under a new name.</description>
 <element name="J1" library="gclue" package="BRICK_3PIN" value="" x="12.7" y="16.51"/>
 <element name="U$5" library="gclue" package="LOGO_OSHW_T_M" value="" x="21.59" y="12.7"/>
 <element name="U1" library="gclue" package="LA3R5-480AH1_PTH" value="" x="12.7" y="20.32"/>
-<element name="U$1" library="FaBo" package="LOGO_FABO_M" value="" x="12.7" y="13.97"/>
+<element name="U$1" library="FaBo" package="LOGO_FABO_M" value="" x="12.7" y="15.24"/>
 </elements>
 <signals>
 <signal name="GND">

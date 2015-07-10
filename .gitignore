@@ -6,3 +6,4 @@ beacon_manager/iOS/BeaconManager/BeaconManager.xcodeproj/xcuserdata
 beacon_manager/iOS/BeaconManager/BeaconManager.xcodeproj/project.xcworkspace/xcuserdata
 brick_serial_phonejack/iOS/PhonejackSerial/PhonejackSerial/PhonejackSerial.xcodeproj/project.xcworkspace/xcuserdata
 brick_serial_phonejack/iOS/PhonejackSerial/PhonejackSerial/PhonejackSerial.xcodeproj/xcuserdata/zuvola.xcuserdatad
+*.pro

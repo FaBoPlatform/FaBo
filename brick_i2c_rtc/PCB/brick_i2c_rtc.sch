@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -128,11 +128,6 @@
 <libraries>
 <library name="gclue">
 <packages>
-<package name="RESISTOR_0603">
-<smd name="P$1" x="-0.75" y="0" dx="0.8" dy="0.8" layer="1"/>
-<smd name="P$2" x="0.75" y="0" dx="0.8" dy="0.8" layer="1"/>
-<text x="-1.615440625" y="0.784859375" size="0.6096" layer="25">&gt;NAME</text>
-</package>
 <package name="CH7401-2032LF">
 <smd name="1" x="-3.81" y="0" dx="2.6" dy="3.6" layer="16" rot="R90"/>
 <smd name="0" x="17.62" y="0" dx="2.6" dy="3.6" layer="16" rot="R180"/>
@@ -155,10 +150,10 @@
 <text x="-1.905" y="3.175" size="0.8128" layer="25">&gt;NAME</text>
 </package>
 <package name="BRICK_I2C">
-<pad name="GND" x="3.81" y="-10.16" drill="0.9" shape="long" rot="R90"/>
-<pad name="VCC" x="1.27" y="-10.16" drill="0.9" shape="long" rot="R90"/>
-<pad name="SDA" x="-1.27" y="-10.16" drill="0.9" shape="long" rot="R90"/>
-<pad name="SCL" x="-3.81" y="-10.16" drill="0.9" shape="long" rot="R90"/>
+<pad name="GND" x="3.81" y="-10.16" drill="1" shape="long" rot="R90"/>
+<pad name="VCC" x="1.27" y="-10.16" drill="1" shape="long" rot="R90"/>
+<pad name="SDA" x="-1.27" y="-10.16" drill="1" shape="long" rot="R90"/>
+<pad name="SCL" x="-3.81" y="-10.16" drill="1" shape="long" rot="R90"/>
 <wire x1="-10.16" y1="-19.05" x2="10.16" y2="-19.05" width="0" layer="20"/>
 <wire x1="10.16" y1="-19.05" x2="13.97" y2="-15.24" width="0" layer="20" curve="90"/>
 <wire x1="13.97" y1="-15.24" x2="13.97" y2="6.35" width="0" layer="20"/>
@@ -171,10 +166,10 @@
 <pad name="P$3" x="-10.16" y="-15.24" drill="3" diameter="3.81"/>
 <pad name="P$4" x="10.16" y="-15.24" drill="3" diameter="3.81"/>
 <wire x1="-13.97" y1="6.35" x2="13.97" y2="6.35" width="0" layer="20" curve="-180"/>
-<text x="-3.81" y="-8.255" size="0.8128" layer="21" font="vector" rot="R90" align="center-left">SCL</text>
-<text x="-1.27" y="-8.255" size="0.8128" layer="21" font="vector" rot="R90" align="center-left">SDA</text>
-<text x="1.27" y="-8.255" size="0.8128" layer="21" font="vector" rot="R90" align="center-left">VCC</text>
-<text x="3.81" y="-8.255" size="0.8128" layer="21" font="vector" rot="R90" align="center-left">GND</text>
+<text x="-3.81" y="-8.255" size="0.8128" layer="21" font="vector" ratio="10" rot="R90" align="center-left">SCL</text>
+<text x="-1.27" y="-8.255" size="0.8128" layer="21" font="vector" ratio="10" rot="R90" align="center-left">SDA</text>
+<text x="1.27" y="-8.255" size="0.8128" layer="21" font="vector" ratio="10" rot="R90" align="center-left">VCC</text>
+<text x="3.81" y="-8.255" size="0.8128" layer="21" font="vector" ratio="10" rot="R90" align="center-left">GND</text>
 <circle x="-10.16" y="6.35" radius="2.55" width="0.127" layer="51"/>
 <circle x="-10.16" y="-15.24" radius="2.55" width="0.127" layer="51"/>
 <circle x="10.16" y="6.35" radius="2.55" width="0.127" layer="51"/>
@@ -6338,21 +6333,37 @@
 <rectangle x1="-0.129540625" y1="0.94741875" x2="0.149859375" y2="0.9525" layer="21"/>
 <rectangle x1="-0.124459375" y1="0.9525" x2="0.144778125" y2="0.95758125" layer="21"/>
 </package>
+<package name="EIA0603">
+<wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
+<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
+<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<text x="0" y="1.27" size="1.016" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.27" size="1.016" layer="27" font="vector" ratio="10" align="top-center">&gt;VALUE</text>
+<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
+<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+</package>
+<package name="RES-AXL-REGULAR">
+<wire x1="-2.54" y1="0.762" x2="2.54" y2="0.762" width="0.127" layer="21"/>
+<wire x1="2.54" y1="0.762" x2="2.54" y2="0" width="0.127" layer="21"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-0.762" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-0.762" x2="-2.54" y2="-0.762" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-0.762" x2="-2.54" y2="0" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="0.762" width="0.127" layer="21"/>
+<wire x1="2.54" y1="0" x2="2.794" y2="0" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="0" x2="-2.794" y2="0" width="0.2032" layer="21"/>
+<pad name="P$1" x="-3.81" y="0" drill="0.9" diameter="1.778" shape="octagon"/>
+<pad name="P$2" x="3.81" y="0" drill="0.9" diameter="1.778" shape="octagon"/>
+<text x="-2.286" y="-0.508" size="1.016" layer="25" font="vector">&gt;NAME</text>
+<text x="-2.286" y="-1.016" size="1.016" layer="27" font="vector" align="top-left">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
-<symbol name="REGISTOR_0603">
-<pin name="1" x="-5.08" y="0" visible="off" length="short"/>
-<pin name="2" x="5.08" y="0" visible="off" length="short" rot="R180"/>
-<wire x1="-2.54" y1="0" x2="-2.032" y2="-0.762" width="0.254" layer="94"/>
-<wire x1="-2.032" y1="-0.762" x2="-1.27" y2="0.762" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="0.762" x2="-0.508" y2="-0.762" width="0.254" layer="94"/>
-<wire x1="-0.508" y1="-0.762" x2="0.254" y2="0.762" width="0.254" layer="94"/>
-<wire x1="0.254" y1="0.762" x2="1.016" y2="-0.762" width="0.254" layer="94"/>
-<wire x1="1.016" y1="-0.762" x2="1.778" y2="0.762" width="0.254" layer="94"/>
-<wire x1="1.778" y1="0.762" x2="2.54" y2="0" width="0.254" layer="94"/>
-<text x="-3.04" y="1.04" size="1.27" layer="95">&gt;NAME</text>
-<text x="-3.54" y="-2.58" size="1.27" layer="96">&gt;VALUE</text>
-</symbol>
 <symbol name="CH7410-2032LF">
 <wire x1="2.54" y1="5.08" x2="2.54" y2="0" width="0.6096" layer="94"/>
 <wire x1="0.8" y1="3.58" x2="0.8" y2="1.3" width="0.6096" layer="94"/>
@@ -14803,24 +14814,23 @@
 <rectangle x1="-0.4699" y1="3.72618125" x2="0.5359375" y2="3.73125625" layer="94"/>
 <rectangle x1="-0.459740625" y1="3.731259375" x2="0.525778125" y2="3.736340625" layer="94"/>
 </symbol>
+<symbol name="RESISTOR">
+<wire x1="-2.54" y1="0" x2="-2.159" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="-2.159" y1="1.016" x2="-1.524" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="-1.524" y1="-1.016" x2="-0.889" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="-0.889" y1="1.016" x2="-0.254" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="-0.254" y1="-1.016" x2="0.381" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="0.381" y1="1.016" x2="1.016" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="1.016" y1="-1.016" x2="1.651" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="1.651" y1="1.016" x2="2.286" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="2.286" y1="-1.016" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<text x="-3.81" y="1.4986" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+</symbol>
 </symbols>
 <devicesets>
-<deviceset name="RESISTOR_0603" uservalue="yes">
-<gates>
-<gate name="G$1" symbol="REGISTOR_0603" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="RESISTOR_0603">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="CH7410-2032LF">
 <description>&lt;b&gt;2032 Battery Holder&lt;/b&gt;</description>
 <gates>
@@ -14930,6 +14940,31 @@ akizuki
 </technologies>
 </device>
 <device name="-S" package="LOGO_OSHW_T_S">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RES" prefix="R" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-EIA0603" package="EIA0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-PTH-REGULAR" package="RES-AXL-REGULAR">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -21730,14 +21765,12 @@ akizuki
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0" drill="0">
+<class number="0" name="default" width="0.3048" drill="0">
 </class>
 </classes>
 <parts>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
-<part name="R1" library="gclue" deviceset="RESISTOR_0603" device="" value="4.7K"/>
-<part name="R2" library="gclue" deviceset="RESISTOR_0603" device="" value="4.7K"/>
 <part name="P+2" library="supply1" deviceset="VCC" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="P+3" library="supply1" deviceset="VCC" device=""/>
@@ -21750,17 +21783,17 @@ akizuki
 <part name="Q1" library="gclue" deviceset="FC-255" device="" value="32.768kHz"/>
 <part name="U$3" library="gclue" deviceset="LOGO_OSHW_T" device="-M"/>
 <part name="U$4" library="FaBo" deviceset="LOGO_FABO" device="-M"/>
+<part name="R1" library="gclue" deviceset="RES" device="-EIA0603" value="4.7k"/>
+<part name="R2" library="gclue" deviceset="RES" device="-EIA0603" value="4.7k"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="251.46" y="5.08" size="2.54" layer="94" align="bottom-center">Beta2</text>
+<text x="251.46" y="5.08" size="2.54" layer="94" align="bottom-center">1.0</text>
 </plain>
 <instances>
 <instance part="GND1" gate="1" x="152.4" y="71.12"/>
 <instance part="P+1" gate="VCC" x="132.08" y="124.46"/>
-<instance part="R1" gate="G$1" x="132.08" y="109.22" rot="R90"/>
-<instance part="R2" gate="G$1" x="124.46" y="109.22" rot="R90"/>
 <instance part="P+2" gate="VCC" x="124.46" y="124.46"/>
 <instance part="GND2" gate="1" x="172.72" y="71.12"/>
 <instance part="P+3" gate="VCC" x="157.48" y="124.46"/>
@@ -21776,6 +21809,8 @@ akizuki
 </instance>
 <instance part="U$3" gate="G$1" x="208.28" y="12.7"/>
 <instance part="U$4" gate="G$1" x="162.56" y="22.86"/>
+<instance part="R1" gate="G$1" x="132.08" y="109.22" rot="R90"/>
+<instance part="R2" gate="G$1" x="124.46" y="109.22" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -21801,25 +21836,25 @@ akizuki
 <net name="SDA" class="0">
 <segment>
 <wire x1="137.16" y1="93.98" x2="124.46" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="124.46" y1="104.14" x2="124.46" y2="93.98" width="0.1524" layer="91"/>
 <junction x="124.46" y="93.98"/>
 <label x="116.84" y="94.234" size="1.778" layer="95"/>
 <pinref part="U1" gate="G$1" pin="SDA"/>
 <pinref part="J1" gate="G$1" pin="SDA"/>
 <wire x1="96.52" y1="93.98" x2="124.46" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="R2" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="SCL" class="0">
 <segment>
 <wire x1="137.16" y1="99.06" x2="132.08" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="132.08" y1="104.14" x2="132.08" y2="99.06" width="0.1524" layer="91"/>
 <junction x="132.08" y="99.06"/>
 <label x="116.84" y="99.314" size="1.778" layer="95"/>
 <pinref part="U1" gate="G$1" pin="SCL"/>
 <pinref part="J1" gate="G$1" pin="SCL"/>
 <wire x1="96.52" y1="99.06" x2="132.08" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -21842,14 +21877,14 @@ akizuki
 </net>
 <net name="VCC" class="0">
 <segment>
-<pinref part="R2" gate="G$1" pin="2"/>
 <pinref part="P+2" gate="VCC" pin="VCC"/>
 <wire x1="124.46" y1="114.3" x2="124.46" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="R2" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
 <wire x1="132.08" y1="114.3" x2="132.08" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="P+3" gate="VCC" pin="VCC"/>
