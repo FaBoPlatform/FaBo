@@ -718,8 +718,8 @@ Japan: MIC Japan certification ( 209-J00111 )&lt;br&gt;</description>
 <hole x="-32" y="-17" drill="3"/>
 <hole x="32" y="-17" drill="3"/>
 <hole x="32" y="17" drill="3"/>
-<pad name="VCC" x="33" y="6.5" drill="0.8" shape="square"/>
-<pad name="GND" x="33" y="-6.5" drill="0.8" shape="square"/>
+<pad name="VCC" x="33" y="6.5" drill="0.9" shape="square"/>
+<pad name="GND" x="33" y="-6.5" drill="0.9" shape="square"/>
 <text x="31.5" y="4.5" size="1.27" layer="21" rot="R90">VCC</text>
 <text x="31.5" y="-8.75" size="1.27" layer="21" rot="R90">GND</text>
 <wire x1="32.5" y1="-15.5" x2="-24.5" y2="-15.5" width="0.127" layer="22"/>
