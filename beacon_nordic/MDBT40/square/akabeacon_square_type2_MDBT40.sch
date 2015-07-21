@@ -181,18 +181,16 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="215.265" y1="13.97" x2="215.265" y2="19.05" width="0.1016" layer="94"/>
 <wire x1="215.265" y1="19.05" x2="256.54" y2="19.05" width="0.1016" layer="94"/>
 <wire x1="215.265" y1="19.05" x2="215.265" y2="24.13" width="0.1016" layer="94"/>
-<text x="217.17" y="15.24" size="2.54" layer="94">&gt;DRAWING_NAME</text>
+<text x="217.17" y="20.32" size="2.54" layer="94">&gt;DRAWING_NAME</text>
 <text x="217.17" y="10.16" size="2.286" layer="94">&gt;LAST_DATE_TIME</text>
 <text x="230.505" y="5.08" size="2.54" layer="94">&gt;SHEET</text>
 <text x="216.916" y="4.953" size="2.54" layer="94">Sheet:</text>
 <frame x1="0" y1="0" x2="260.35" y2="179.07" columns="6" rows="4" layer="94"/>
-<text x="163.83" y="20.32" size="2.54" layer="94" font="vector">FaBo</text>
-<text x="163.83" y="15.24" size="2.54" layer="94" font="vector">www.gclue.jp</text>
 </symbol>
 </symbols>
 <devicesets>
 <deviceset name="A4L-LOC">
-<description>FaBo A4 FRAME</description>
+<description>FRAME A4</description>
 <gates>
 <gate name="G$1" symbol="A4L-LOC" x="0" y="0"/>
 </gates>
@@ -6381,8 +6379,8 @@ Source: www.kingbright.com</description>
 <hole x="-32" y="-17" drill="3"/>
 <hole x="32" y="-17" drill="3"/>
 <hole x="32" y="17" drill="3"/>
-<pad name="VCC" x="33" y="6.5" drill="0.8" shape="square"/>
-<pad name="GND" x="33" y="-6.5" drill="0.8" shape="square"/>
+<pad name="VCC" x="33" y="6.5" drill="0.9" shape="square"/>
+<pad name="GND" x="33" y="-6.5" drill="0.9" shape="square"/>
 <text x="31.5" y="4.5" size="1.27" layer="21" rot="R90">VCC</text>
 <text x="31.5" y="-8.75" size="1.27" layer="21" rot="R90">GND</text>
 <wire x1="32.5" y1="-15.5" x2="-24.5" y2="-15.5" width="0.127" layer="22"/>
