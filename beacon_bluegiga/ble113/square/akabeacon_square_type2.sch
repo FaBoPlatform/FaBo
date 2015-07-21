@@ -778,8 +778,8 @@ http://www.tag-connect.com</description>
 <hole x="-32" y="-17" drill="3"/>
 <hole x="32" y="-17" drill="3"/>
 <hole x="32" y="17" drill="3"/>
-<pad name="VCC" x="33" y="6.5" drill="0.8" shape="square"/>
-<pad name="GND" x="33" y="-6.5" drill="0.8" shape="square"/>
+<pad name="VCC" x="33" y="6.5" drill="0.9" shape="square"/>
+<pad name="GND" x="33" y="-6.5" drill="0.9" shape="square"/>
 <text x="31.5" y="4.5" size="1.27" layer="21" rot="R90">VCC</text>
 <text x="31.5" y="-8.75" size="1.27" layer="21" rot="R90">GND</text>
 <wire x1="32.5" y1="-15.5" x2="-24.5" y2="-15.5" width="0.127" layer="22"/>
@@ -4601,7 +4601,7 @@ http://www.tag-connect.com</description>
 <instance part="U$6" gate="G$1" x="73.66" y="101.6"/>
 <instance part="GND9" gate="1" x="144.78" y="116.84" rot="R90"/>
 <instance part="P+4" gate="G$1" x="96.52" y="116.84" rot="R90"/>
-<instance part="TC1" gate="A" x="119.38" y="121.92"/>
+<instance part="TC1" gate="A" x="116.84" y="121.92"/>
 <instance part="U$3" gate="G$1" x="20.32" y="83.82"/>
 </instances>
 <busses>
@@ -4673,7 +4673,7 @@ http://www.tag-connect.com</description>
 <wire x1="63.5" y1="99.06" x2="66.04" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="142.24" y1="116.84" x2="127" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="116.84" x2="124.46" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="GND9" gate="1" pin="GND"/>
 <pinref part="TC1" gate="A" pin="1"/>
 </segment>
@@ -4709,7 +4709,7 @@ http://www.tag-connect.com</description>
 <pinref part="R1" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<wire x1="96.52" y1="116.84" x2="111.76" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="116.84" x2="109.22" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="P+4" gate="G$1" pin="3.3V"/>
 <pinref part="TC1" gate="A" pin="2"/>
 </segment>
@@ -4721,7 +4721,7 @@ http://www.tag-connect.com</description>
 <pinref part="U$5" gate="G$1" pin="P2_2"/>
 </segment>
 <segment>
-<wire x1="142.24" y1="119.38" x2="127" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="119.38" x2="124.46" y2="119.38" width="0.1524" layer="91"/>
 <label x="142.24" y="119.38" size="1.778" layer="95" rot="R180"/>
 <pinref part="TC1" gate="A" pin="3"/>
 </segment>
@@ -4733,7 +4733,7 @@ http://www.tag-connect.com</description>
 <pinref part="U$5" gate="G$1" pin="P2_1"/>
 </segment>
 <segment>
-<wire x1="95.25" y1="119.38" x2="111.76" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="95.25" y1="119.38" x2="109.22" y2="119.38" width="0.1524" layer="91"/>
 <label x="96.52" y="119.38" size="1.778" layer="95"/>
 <pinref part="TC1" gate="A" pin="4"/>
 </segment>
@@ -4754,7 +4754,7 @@ http://www.tag-connect.com</description>
 <wire x1="63.5" y1="106.68" x2="63.5" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="142.24" y1="121.92" x2="127" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="121.92" x2="124.46" y2="121.92" width="0.1524" layer="91"/>
 <label x="139.7" y="121.92" size="1.778" layer="95" rot="R180"/>
 <pinref part="TC1" gate="A" pin="5"/>
 </segment>
@@ -4787,7 +4787,7 @@ http://www.tag-connect.com</description>
 <wire x1="127" y1="45.72" x2="137.16" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="111.76" y1="121.92" x2="96.52" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="121.92" x2="96.52" y2="121.92" width="0.1524" layer="91"/>
 <label x="96.52" y="121.92" size="1.778" layer="95"/>
 <pinref part="TC1" gate="A" pin="6"/>
 </segment>
@@ -4799,7 +4799,7 @@ http://www.tag-connect.com</description>
 <pinref part="U$5" gate="G$1" pin="P0_5"/>
 </segment>
 <segment>
-<wire x1="127" y1="124.46" x2="142.24" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="124.46" x2="142.24" y2="124.46" width="0.1524" layer="91"/>
 <label x="142.24" y="124.46" size="1.778" layer="95"/>
 <pinref part="TC1" gate="A" pin="7"/>
 </segment>
