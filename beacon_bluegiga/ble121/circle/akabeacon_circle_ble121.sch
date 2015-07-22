@@ -200,18 +200,16 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="215.265" y1="13.97" x2="215.265" y2="19.05" width="0.1016" layer="94"/>
 <wire x1="215.265" y1="19.05" x2="256.54" y2="19.05" width="0.1016" layer="94"/>
 <wire x1="215.265" y1="19.05" x2="215.265" y2="24.13" width="0.1016" layer="94"/>
-<text x="217.17" y="15.24" size="2.54" layer="94">&gt;DRAWING_NAME</text>
+<text x="217.17" y="20.32" size="2.54" layer="94">&gt;DRAWING_NAME</text>
 <text x="217.17" y="10.16" size="2.286" layer="94">&gt;LAST_DATE_TIME</text>
 <text x="230.505" y="5.08" size="2.54" layer="94">&gt;SHEET</text>
 <text x="216.916" y="4.953" size="2.54" layer="94">Sheet:</text>
 <frame x1="0" y1="0" x2="260.35" y2="179.07" columns="6" rows="4" layer="94"/>
-<text x="163.83" y="20.32" size="2.54" layer="94" font="vector">FaBo</text>
-<text x="163.83" y="15.24" size="2.54" layer="94" font="vector">www.gclue.jp</text>
 </symbol>
 </symbols>
 <devicesets>
 <deviceset name="A4L-LOC">
-<description>FaBo A4 FRAME</description>
+<description>FRAME A4</description>
 <gates>
 <gate name="G$1" symbol="A4L-LOC" x="0" y="0"/>
 </gates>
@@ -4372,17 +4370,21 @@ Source: AVX .. aphvc.pdf</description>
 <rectangle x1="-4.57" y1="-5.1" x2="-3.05" y2="5.1" layer="51"/>
 <rectangle x1="3.05" y1="-5.1" x2="4.5688" y2="5.1" layer="51"/>
 </package>
-<package name="C01005">
+<package name="C1005">
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
+<wire x1="-0.245" y1="0.224" x2="0.245" y2="0.224" width="0.1524" layer="51"/>
+<wire x1="0.245" y1="-0.224" x2="-0.245" y2="-0.224" width="0.1524" layer="51"/>
+<wire x1="-1.473" y1="0.483" x2="1.473" y2="0.483" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="0.483" x2="1.473" y2="-0.483" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="-0.483" x2="-1.473" y2="-0.483" width="0.0508" layer="39"/>
+<wire x1="-1.473" y1="-0.483" x2="-1.473" y2="0.483" width="0.0508" layer="39"/>
+<smd name="1" x="-0.65" y="0" dx="0.7" dy="0.9" layer="1"/>
+<smd name="2" x="0.65" y="0" dx="0.7" dy="0.9" layer="1"/>
+<text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.554" y1="-0.3048" x2="-0.254" y2="0.2951" layer="51"/>
+<rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.2951" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
-<smd name="1" x="-0.1625" y="0" dx="0.2" dy="0.25" layer="1"/>
-<smd name="2" x="0.1625" y="0" dx="0.2" dy="0.25" layer="1"/>
-<text x="-0.4" y="0.3" size="1.27" layer="25">&gt;NAME</text>
-<text x="-0.4" y="-1.6" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.2" y1="-0.1" x2="-0.075" y2="0.1" layer="51"/>
-<rectangle x1="0.075" y1="-0.1" x2="0.2" y2="0.1" layer="51"/>
-<rectangle x1="-0.15" y1="0.05" x2="0.15" y2="0.1" layer="51"/>
-<rectangle x1="-0.15" y1="-0.1" x2="0.15" y2="-0.05" layer="51"/>
 </package>
 </packages>
 <symbols>
@@ -4432,6 +4434,15 @@ Source: AVX .. aphvc.pdf</description>
 </technologies>
 </device>
 <device name="C0805" package="C0805">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="C1005" package="C1005">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -5097,15 +5108,6 @@ Source: AVX .. aphvc.pdf</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="01005" package="C01005">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
 </devices>
 </deviceset>
 </devicesets>
@@ -5127,14 +5129,12 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="0.837" y1="-0.873" x2="0.843" y2="0.604" width="0.127" layer="21"/>
 <wire x1="0.843" y1="0.604" x2="-0.917" y2="0.606" width="0.127" layer="21"/>
 <wire x1="-0.917" y1="0.606" x2="-0.917" y2="-0.879" width="0.127" layer="21"/>
-<wire x1="0.251" y1="0.544" x2="0.257" y2="0.544" width="0.127" layer="21"/>
-<wire x1="0.257" y1="0.544" x2="0.257" y2="-0.088" width="0.127" layer="21"/>
-<wire x1="0.257" y1="-0.088" x2="0.777" y2="-0.088" width="0.127" layer="21"/>
-<wire x1="0.777" y1="-0.088" x2="0.777" y2="-0.064" width="0.127" layer="21"/>
-<wire x1="0.777" y1="-0.064" x2="0.73" y2="-0.064" width="0.127" layer="21"/>
-<wire x1="0.73" y1="-0.064" x2="0.73" y2="0.562" width="0.127" layer="21"/>
-<wire x1="0.292" y1="0.574" x2="0.712" y2="0.574" width="0.127" layer="21"/>
-<wire x1="0.712" y1="0.574" x2="0.712" y2="-0.006" width="0.127" layer="21"/>
+<wire x1="0.251" y1="-0.1164" x2="0.257" y2="0.5186" width="0.127" layer="21"/>
+<wire x1="0.257" y1="0.5186" x2="0.2824" y2="0.5216" width="0.127" layer="21"/>
+<wire x1="0.2824" y1="0.5216" x2="0.7008" y2="0.5216" width="0.127" layer="21"/>
+<wire x1="0.7008" y1="0.5216" x2="0.7008" y2="-0.1148" width="0.127" layer="21"/>
+<wire x1="0.7008" y1="-0.1148" x2="0.7046" y2="-0.1148" width="0.127" layer="21"/>
+<wire x1="0.7046" y1="-0.1148" x2="0.2474" y2="-0.1238" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -5426,49 +5426,65 @@ Japan: MIC Japan certification ( 209-J00111 )&lt;br&gt;</description>
 </library>
 <library name="TagConnect">
 <packages>
-<package name="TC2050-IDC">
-<smd name="2" x="-2.54" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
-<smd name="1" x="-2.54" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
-<smd name="4" x="-1.27" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
-<smd name="3" x="-1.27" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
-<smd name="6" x="0" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
-<smd name="5" x="0" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
-<smd name="7" x="1.27" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
-<smd name="8" x="1.27" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
-<smd name="10" x="2.54" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
-<smd name="9" x="2.54" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
-<rectangle x1="-2.54" y1="-0.635" x2="2.54" y2="0.635" layer="41"/>
-<hole x="-3.81" y="0" drill="0.9906"/>
-<hole x="3.81" y="1.016" drill="0.9906"/>
-<hole x="3.81" y="-1.016" drill="0.9906"/>
-<hole x="-3.81" y="2.54" drill="2.3749"/>
-<hole x="-3.81" y="-2.54" drill="2.3749"/>
-<hole x="1.905" y="2.54" drill="2.3749"/>
-<hole x="1.905" y="-2.54" drill="2.3749"/>
-<rectangle x1="-4.5847" y1="-5.14985" x2="-3.0353" y2="-2.54" layer="40"/>
-<rectangle x1="1.1303" y1="-5.14985" x2="2.6797" y2="-2.54" layer="40"/>
-<rectangle x1="-4.5847" y1="2.54" x2="-3.0353" y2="5.14985" layer="40"/>
-<rectangle x1="1.1303" y1="2.54" x2="2.6797" y2="5.14985" layer="40"/>
-<text x="-5.715" y="-2.54" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-<text x="6.35" y="-2.54" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-</package>
 <package name="TC2050-IDC-NL">
-<smd name="2" x="-2.54" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
-<smd name="1" x="-2.54" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
-<smd name="4" x="-1.27" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
-<smd name="3" x="-1.27" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
-<smd name="6" x="0" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
-<smd name="5" x="0" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
-<smd name="7" x="1.27" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
-<smd name="8" x="1.27" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
-<smd name="10" x="2.54" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
-<smd name="9" x="2.54" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
-<rectangle x1="-2.54" y1="-0.635" x2="2.54" y2="0.635" layer="41"/>
-<hole x="-3.81" y="0" drill="0.9906"/>
-<hole x="3.81" y="1.016" drill="0.9906"/>
-<hole x="3.81" y="-1.016" drill="0.9906"/>
-<text x="-4.445" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-<text x="-4.445" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<smd name="2" x="-2.54" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="4" x="-1.27" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="6" x="0" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="5" x="0" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="3" x="-1.27" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="1" x="-2.54" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<text x="-4.445" y="1.27" size="1.27" layer="25">&gt;name</text>
+<hole x="-3.81" y="0" drill="0.889"/>
+<hole x="3.81" y="-1.016" drill="0.889"/>
+<hole x="3.81" y="1.016" drill="0.889"/>
+<polygon width="0.0254" layer="39">
+<vertex x="-2.54" y="-0.2413"/>
+<vertex x="-2.1463" y="-0.2413"/>
+<vertex x="-2.1463" y="-0.635"/>
+<vertex x="-1.6637" y="-0.635"/>
+<vertex x="-1.6637" y="-0.2413"/>
+<vertex x="-0.8763" y="-0.2413"/>
+<vertex x="-0.8763" y="-0.635"/>
+<vertex x="-0.3937" y="-0.635"/>
+<vertex x="-0.3937" y="-0.2413"/>
+<vertex x="0" y="-0.2413"/>
+<vertex x="0" y="0.2413"/>
+<vertex x="-0.3937" y="0.2413"/>
+<vertex x="-0.3937" y="0.635"/>
+<vertex x="-0.8763" y="0.635"/>
+<vertex x="-0.8763" y="0.2413"/>
+<vertex x="-1.6637" y="0.2413"/>
+<vertex x="-1.6637" y="0.635"/>
+<vertex x="-2.1463" y="0.635"/>
+<vertex x="-2.1463" y="0.2413"/>
+<vertex x="-2.54" y="0.2413"/>
+</polygon>
+<smd name="8" x="1.27" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="7" x="1.27" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="9" x="2.54" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="10" x="2.54" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<polygon width="0.0254" layer="39">
+<vertex x="0" y="-0.2413"/>
+<vertex x="0.3937" y="-0.2413"/>
+<vertex x="0.3937" y="-0.635"/>
+<vertex x="0.8763" y="-0.635"/>
+<vertex x="0.8763" y="-0.2413"/>
+<vertex x="1.6637" y="-0.2413"/>
+<vertex x="1.6637" y="-0.635"/>
+<vertex x="2.1463" y="-0.635"/>
+<vertex x="2.1463" y="-0.2413"/>
+<vertex x="2.54" y="-0.2413"/>
+<vertex x="2.54" y="0.2413"/>
+<vertex x="2.1463" y="0.2413"/>
+<vertex x="2.1463" y="0.635"/>
+<vertex x="1.6637" y="0.635"/>
+<vertex x="1.6637" y="0.2413"/>
+<vertex x="0.8763" y="0.2413"/>
+<vertex x="0.8763" y="0.635"/>
+<vertex x="0.3937" y="0.635"/>
+<vertex x="0.3937" y="0.2413"/>
+<vertex x="0" y="0.2413"/>
+</polygon>
 </package>
 </packages>
 <symbols>
@@ -5509,24 +5525,7 @@ http://www.tag-connect.com</description>
 <gate name="A" symbol="TC2050-IDC" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TC2050-IDC">
-<connects>
-<connect gate="A" pin="1" pad="1"/>
-<connect gate="A" pin="10" pad="10"/>
-<connect gate="A" pin="2" pad="2"/>
-<connect gate="A" pin="3" pad="3"/>
-<connect gate="A" pin="4" pad="4"/>
-<connect gate="A" pin="5" pad="5"/>
-<connect gate="A" pin="6" pad="6"/>
-<connect gate="A" pin="7" pad="7"/>
-<connect gate="A" pin="8" pad="8"/>
-<connect gate="A" pin="9" pad="9"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-NL" package="TC2050-IDC-NL">
+<device name="" package="TC2050-IDC-NL">
 <connects>
 <connect gate="A" pin="1" pad="1"/>
 <connect gate="A" pin="10" pad="10"/>
@@ -5730,7 +5729,7 @@ http://www.tag-connect.com</description>
 <part name="BLE1" library="gclueBT" deviceset="BLUEGIGA-BLE121LR" device=""/>
 <part name="GND9" library="SparkFun" deviceset="GND" device=""/>
 <part name="P+6" library="SparkFun" deviceset="3.3V" device=""/>
-<part name="TC1" library="TagConnect" deviceset="TC2050-IDC" device="-NL" value=""/>
+<part name="TC1" library="TagConnect" deviceset="TC2050-IDC" device="" value="TC2050-IDC"/>
 <part name="U$1" library="GClue-Beacon" deviceset="CIRCLE-TYPE1" device=""/>
 <part name="C2" library="GClue-Capacitor" deviceset="CAPACITOR" device="0603" value="2.2uf"/>
 <part name="C1" library="GClue-Capacitor" deviceset="CAPACITOR" device="0603" value="2.2uf"/>
