@@ -190,22 +190,64 @@
 <library name="TagConnect">
 <packages>
 <package name="TC2050-IDC-NL">
-<smd name="2" x="-2.54" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
-<smd name="1" x="-2.54" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
-<smd name="4" x="-1.27" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
-<smd name="3" x="-1.27" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
-<smd name="6" x="0" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
-<smd name="5" x="0" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
-<smd name="7" x="1.27" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
-<smd name="8" x="1.27" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
-<smd name="10" x="2.54" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
-<smd name="9" x="2.54" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
-<rectangle x1="-2.54" y1="-0.635" x2="2.54" y2="0.635" layer="41"/>
-<hole x="-3.81" y="0" drill="0.9906"/>
-<hole x="3.81" y="1.016" drill="0.9906"/>
-<hole x="3.81" y="-1.016" drill="0.9906"/>
-<text x="-4.445" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-<text x="-4.445" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<smd name="2" x="-2.54" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="4" x="-1.27" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="6" x="0" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="5" x="0" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="3" x="-1.27" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="1" x="-2.54" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<text x="-4.445" y="1.27" size="1.27" layer="25">&gt;name</text>
+<hole x="-3.81" y="0" drill="0.889"/>
+<hole x="3.81" y="-1.016" drill="0.889"/>
+<hole x="3.81" y="1.016" drill="0.889"/>
+<polygon width="0.0254" layer="39">
+<vertex x="-2.54" y="-0.2413"/>
+<vertex x="-2.1463" y="-0.2413"/>
+<vertex x="-2.1463" y="-0.635"/>
+<vertex x="-1.6637" y="-0.635"/>
+<vertex x="-1.6637" y="-0.2413"/>
+<vertex x="-0.8763" y="-0.2413"/>
+<vertex x="-0.8763" y="-0.635"/>
+<vertex x="-0.3937" y="-0.635"/>
+<vertex x="-0.3937" y="-0.2413"/>
+<vertex x="0" y="-0.2413"/>
+<vertex x="0" y="0.2413"/>
+<vertex x="-0.3937" y="0.2413"/>
+<vertex x="-0.3937" y="0.635"/>
+<vertex x="-0.8763" y="0.635"/>
+<vertex x="-0.8763" y="0.2413"/>
+<vertex x="-1.6637" y="0.2413"/>
+<vertex x="-1.6637" y="0.635"/>
+<vertex x="-2.1463" y="0.635"/>
+<vertex x="-2.1463" y="0.2413"/>
+<vertex x="-2.54" y="0.2413"/>
+</polygon>
+<smd name="8" x="1.27" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="7" x="1.27" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="9" x="2.54" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="10" x="2.54" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<polygon width="0.0254" layer="39">
+<vertex x="0" y="-0.2413"/>
+<vertex x="0.3937" y="-0.2413"/>
+<vertex x="0.3937" y="-0.635"/>
+<vertex x="0.8763" y="-0.635"/>
+<vertex x="0.8763" y="-0.2413"/>
+<vertex x="1.6637" y="-0.2413"/>
+<vertex x="1.6637" y="-0.635"/>
+<vertex x="2.1463" y="-0.635"/>
+<vertex x="2.1463" y="-0.2413"/>
+<vertex x="2.54" y="-0.2413"/>
+<vertex x="2.54" y="0.2413"/>
+<vertex x="2.1463" y="0.2413"/>
+<vertex x="2.1463" y="0.635"/>
+<vertex x="1.6637" y="0.635"/>
+<vertex x="1.6637" y="0.2413"/>
+<vertex x="0.8763" y="0.2413"/>
+<vertex x="0.8763" y="0.635"/>
+<vertex x="0.3937" y="0.635"/>
+<vertex x="0.3937" y="0.2413"/>
+<vertex x="0" y="0.2413"/>
+</polygon>
 </package>
 </packages>
 </library>
@@ -4206,7 +4248,7 @@ design rules under a new name.</description>
 <element name="LED" library="GClue-LED" package="0603" value="LED0603" x="7.07" y="46.91" rot="R90"/>
 <element name="R1" library="GClue-Resistors" package="0603" value="4.7K" x="26.27" y="35.31" rot="R90"/>
 <element name="R2" library="GClue-Resistors" package="0603" value="4.7K" x="11.42" y="46.91" rot="R90"/>
-<element name="TC1" library="TagConnect" package="TC2050-IDC-NL" value="" x="8.17" y="10.23"/>
+<element name="TC1" library="TagConnect" package="TC2050-IDC-NL" value="TC2050-IDC" x="8.17" y="10.23"/>
 <element name="U$5" library="gclue" package="BLE113" value="BLE113" x="6.22" y="31.07" rot="R90"/>
 <element name="U$6" library="gclue" package="SWITCH-4P(KMR2)" value="SWICTH-4P(KMR2)" x="26.34" y="30.98" rot="R270"/>
 <element name="U$2" library="GClue-Beacon" package="SQUARE-TYPE1-TC2030" value="SQUARE-TYPE1" x="33" y="30"/>
