@@ -132,7 +132,7 @@
 <plain>
 <rectangle x1="-2.47" y1="15.85" x2="3.77" y2="24.31" layer="41"/>
 <rectangle x1="-2.47" y1="15.85" x2="3.64" y2="24.31" layer="42"/>
-<text x="42" y="17" size="1.016" layer="21" rot="R90">Rev.BETA</text>
+<text x="42" y="17" size="1.016" layer="21" rot="R90">Rev.1.0</text>
 </plain>
 <libraries>
 <library name="gclue">

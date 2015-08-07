@@ -132,7 +132,7 @@
 <plain>
 <rectangle x1="-2.09" y1="17.69" x2="4.78" y2="41.09" layer="41"/>
 <rectangle x1="-2.25" y1="17.66" x2="4.68" y2="41.06" layer="42"/>
-<text x="42" y="17" size="1.016" layer="21" rot="R90">Rev.BETA</text>
+<text x="42" y="18" size="1.016" layer="21" rot="R90">Rev.1.0</text>
 </plain>
 <libraries>
 <library name="GClue-Capacitor">

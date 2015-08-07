@@ -131,7 +131,7 @@
 <board>
 <plain>
 <text x="24.2" y="18.45" size="1.016" layer="21" align="bottom-center">MADE IN JAPAN</text>
-<text x="24.2" y="15.7" size="1.016" layer="21" align="bottom-center">Rev. Beta</text>
+<text x="24.2" y="15.7" size="1.016" layer="21" align="bottom-center">Rev. 1.0</text>
 <rectangle x1="21.7" y1="36.85" x2="39.95" y2="43.85" layer="41"/>
 <rectangle x1="21.8" y1="36.75" x2="40.3" y2="43.75" layer="42"/>
 </plain>

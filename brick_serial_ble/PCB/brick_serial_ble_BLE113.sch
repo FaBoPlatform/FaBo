@@ -341,19 +341,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <hole x="1.8" y="0" drill="1"/>
 <hole x="-1.8" y="0" drill="1"/>
 </package>
-<package name="SWITCH-LS6J2M-T">
-<wire x1="-2.6" y1="2.6" x2="2.6" y2="2.6" width="0.127" layer="21"/>
-<wire x1="2.6" y1="2.6" x2="2.6" y2="-2.6" width="0.127" layer="21"/>
-<wire x1="2.6" y1="-2.6" x2="-2.6" y2="-2.6" width="0.127" layer="21"/>
-<wire x1="-2.6" y1="-2.6" x2="-2.6" y2="2.6" width="0.127" layer="21"/>
-<smd name="1" x="-2.4" y="2.4" dx="1.55" dy="1.2" layer="1"/>
-<smd name="2" x="-2.3" y="-2.4" dx="1.55" dy="1.2" layer="1"/>
-<smd name="4" x="2.4" y="-2.4" dx="1.55" dy="1.2" layer="1"/>
-<smd name="3" x="2.4" y="2.4" dx="1.55" dy="1.2" layer="1"/>
-<circle x="-1.6" y="1.4" radius="0.4242625" width="0.127" layer="21"/>
-<circle x="-1.6" y="-1.3" radius="0.4242625" width="0.127" layer="21"/>
-<text x="-2.54" y="3.81" size="0.8128" layer="25">&gt;NAME</text>
-</package>
 <package name="BRICK_SERIAL">
 <wire x1="-10.16" y1="-19.05" x2="10.16" y2="-19.05" width="0" layer="20"/>
 <wire x1="10.16" y1="-19.05" x2="13.97" y2="-15.24" width="0" layer="20" curve="90"/>
@@ -2840,6 +2827,12 @@ We've spent an enormous amount of time creating and checking these footprints an
 <rectangle x1="-0.370840625" y1="2.49428125" x2="0.350515625" y2="2.5044375" layer="21"/>
 <rectangle x1="-0.370840625" y1="2.504440625" x2="0.350515625" y2="2.514596875" layer="21"/>
 </package>
+<package name="SWITCH-4P(KMR2)">
+<smd name="1" x="-1" y="0" dx="0.9" dy="0.95" layer="1"/>
+<smd name="3" x="-1" y="-1.6" dx="0.9" dy="0.95" layer="1"/>
+<smd name="2" x="3.1" y="0" dx="0.9" dy="0.95" layer="1"/>
+<smd name="4" x="3.1" y="-1.6" dx="0.9" dy="0.95" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="PIN-HEAER-SMT(1.27MM)2X5">
@@ -2879,23 +2872,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="2.54" y1="5.08" x2="2.54" y2="3.81" width="0.254" layer="94"/>
 <wire x1="5.08" y1="5.08" x2="5.08" y2="3.81" width="0.254" layer="94"/>
 <wire x1="7.62" y1="5.08" x2="7.62" y2="3.81" width="0.254" layer="94"/>
-</symbol>
-<symbol name="SWITCH-LS6J2M-T">
-<pin name="1" x="-7.62" y="2.54" visible="pad" length="middle"/>
-<pin name="2" x="-7.62" y="-2.54" visible="pad" length="middle"/>
-<pin name="3" x="7.62" y="2.54" visible="pad" length="middle" rot="R180"/>
-<pin name="4" x="7.62" y="-2.54" visible="pad" length="middle" rot="R180"/>
-<wire x1="-5.08" y1="2.54" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="2.54" x2="-2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-2.54" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="5.08" y1="2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
-<wire x1="2.54" y1="2.54" x2="2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="0" x2="0" y2="2.54" width="0.254" layer="94"/>
-<text x="-5.08" y="5.08" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="A4L-LOC">
 <wire x1="256.54" y1="3.81" x2="256.54" y2="8.89" width="0.1016" layer="94"/>
@@ -5370,6 +5346,17 @@ We've spent an enormous amount of time creating and checking these footprints an
 <rectangle x1="-0.535940625" y1="3.74141875" x2="0.469896875" y2="3.7465" layer="94"/>
 <rectangle x1="-0.52578125" y1="3.7465" x2="0.4597375" y2="3.75158125" layer="94"/>
 </symbol>
+<symbol name="SWITCH-4P(KMR2)">
+<wire x1="0" y1="2.54" x2="0" y2="5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<pin name="1" x="-7.62" y="5.08" length="middle"/>
+<pin name="2" x="7.62" y="5.08" length="middle" rot="R180"/>
+<pin name="3" x="-7.62" y="-2.54" length="middle"/>
+<pin name="4" x="7.62" y="-2.54" length="middle" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="PIN-HEADER-SMT(1.27MM)2X5">
@@ -5390,25 +5377,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <connect gate="G$1" pin="7" pad="7"/>
 <connect gate="G$1" pin="8" pad="8"/>
 <connect gate="G$1" pin="9" pad="9"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="SWITCH-LS6J2M-T" prefix="S">
-<description>Switch Tact SMD(LS6J2M-T)</description>
-<gates>
-<gate name="G$1" symbol="SWITCH-LS6J2M-T" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SWITCH-LS6J2M-T">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -5464,6 +5432,24 @@ We've spent an enormous amount of time creating and checking these footprints an
 </technologies>
 </device>
 <device name="-M" package="LOGO_OSHW_M">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SWICTH-4P(KMR2)">
+<gates>
+<gate name="G$1" symbol="SWITCH-4P(KMR2)" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SWITCH-4P(KMR2)">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -12741,7 +12727,6 @@ Source: http://focus.ti.com/lit/ds/symlink/tps77001.pdf</description>
 <part name="BSS138" library="SparkFun" deviceset="MOSFET-NCHANNEL" device="SMD" value=""/>
 <part name="U$1" library="gclue" deviceset="PIN-HEADER-SMT(1.27MM)2X5" device=""/>
 <part name="GND11" library="SparkFun" deviceset="GND" device=""/>
-<part name="S1" library="gclue" deviceset="SWITCH-LS6J2M-T" device=""/>
 <part name="U$5" library="gclue" deviceset="A4L-LOC" device=""/>
 <part name="U$6" library="gclueBT" deviceset="BLUEGIGA-BLE113" device=""/>
 <part name="GND12" library="SparkFun" deviceset="GND" device=""/>
@@ -12777,6 +12762,7 @@ Source: http://focus.ti.com/lit/ds/symlink/tps77001.pdf</description>
 <part name="C1" library="GClue-Capacitor" deviceset="CAPACITOR" device="0603" value="1uF"/>
 <part name="U$4" library="gclue" deviceset="LOGO_OSHW" device="-S"/>
 <part name="U$3" library="FaBo" deviceset="LOGO_FABO" device="-S"/>
+<part name="U$7" library="gclue" deviceset="SWICTH-4P(KMR2)" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12791,7 +12777,6 @@ Source: http://focus.ti.com/lit/ds/symlink/tps77001.pdf</description>
 <instance part="BSS138" gate="G$1" x="27.94" y="25.4" rot="R270"/>
 <instance part="U$1" gate="G$1" x="139.7" y="152.4" rot="R270"/>
 <instance part="GND11" gate="1" x="149.86" y="132.08"/>
-<instance part="S1" gate="G$1" x="58.42" y="127" rot="R270"/>
 <instance part="U$5" gate="G$1" x="0" y="0"/>
 <instance part="U$6" gate="G$1" x="127" y="66.04"/>
 <instance part="GND12" gate="1" x="96.52" y="83.82"/>
@@ -12827,6 +12812,7 @@ Source: http://focus.ti.com/lit/ds/symlink/tps77001.pdf</description>
 <instance part="C1" gate="G$1" x="78.74" y="93.98" rot="R90"/>
 <instance part="U$4" gate="G$1" x="210.82" y="7.62"/>
 <instance part="U$3" gate="G$1" x="162.56" y="22.86"/>
+<instance part="U$7" gate="G$1" x="60.96" y="127"/>
 </instances>
 <busses>
 </busses>
@@ -12848,16 +12834,6 @@ Source: http://focus.ti.com/lit/ds/symlink/tps77001.pdf</description>
 <pinref part="GND10" gate="1" pin="GND"/>
 <wire x1="53.34" y1="25.4" x2="53.34" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="1"/>
-</segment>
-<segment>
-<pinref part="GND7" gate="1" pin="GND"/>
-<wire x1="60.96" y1="119.38" x2="60.96" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="S1" gate="G$1" pin="3"/>
-<label x="60.96" y="119.38" size="1.778" layer="95"/>
-<pinref part="S1" gate="G$1" pin="4"/>
-<wire x1="55.88" y1="119.38" x2="55.88" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="116.84" x2="60.96" y2="116.84" width="0.1524" layer="91"/>
-<junction x="60.96" y="116.84"/>
 </segment>
 <segment>
 <wire x1="127" y1="134.62" x2="149.86" y2="134.62" width="0.1524" layer="91"/>
@@ -12946,6 +12922,18 @@ Source: http://focus.ti.com/lit/ds/symlink/tps77001.pdf</description>
 <wire x1="198.12" y1="119.38" x2="198.12" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="U$7" gate="G$1" pin="3"/>
+<wire x1="53.34" y1="124.46" x2="50.8" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="124.46" x2="50.8" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="116.84" x2="60.96" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="116.84" x2="71.12" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="116.84" x2="71.12" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="U$7" gate="G$1" pin="4"/>
+<wire x1="71.12" y1="124.46" x2="68.58" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="GND7" gate="1" pin="GND"/>
+<junction x="60.96" y="116.84"/>
+</segment>
 </net>
 <net name="DEBUG_DATA" class="0">
 <segment>
@@ -12980,16 +12968,17 @@ Source: http://focus.ti.com/lit/ds/symlink/tps77001.pdf</description>
 <wire x1="132.08" y1="147.32" x2="124.46" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<label x="66.04" y="137.16" size="1.778" layer="95"/>
-<wire x1="48.26" y1="137.16" x2="55.88" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="137.16" x2="60.96" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="137.16" x2="68.58" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="134.62" x2="60.96" y2="137.16" width="0.1524" layer="91"/>
-<pinref part="S1" gate="G$1" pin="1"/>
+<label x="73.66" y="137.16" size="1.778" layer="95"/>
+<wire x1="48.26" y1="137.16" x2="50.8" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
-<pinref part="S1" gate="G$1" pin="2"/>
-<wire x1="55.88" y1="134.62" x2="55.88" y2="137.16" width="0.1524" layer="91"/>
-<junction x="55.88" y="137.16"/>
+<pinref part="U$7" gate="G$1" pin="2"/>
+<wire x1="50.8" y1="137.16" x2="71.12" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="137.16" x2="76.2" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="132.08" x2="71.12" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="132.08" x2="71.12" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="137.16" x2="50.8" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="U$7" gate="G$1" pin="1"/>
+<wire x1="50.8" y1="132.08" x2="53.34" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$6" gate="G$1" pin="RESET#"/>

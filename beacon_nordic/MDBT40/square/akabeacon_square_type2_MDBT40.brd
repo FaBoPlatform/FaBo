@@ -134,7 +134,7 @@
 <rectangle x1="-3.92" y1="17.28" x2="6.29" y2="22.28" layer="42" rot="R90"/>
 <rectangle x1="3.3" y1="18.54" x2="6.07" y2="21.41" layer="42" rot="R90"/>
 <rectangle x1="3.41" y1="18.43" x2="6.17" y2="21.31" layer="41"/>
-<text x="41" y="17" size="1.016" layer="21" rot="R90">Rev.BETA</text>
+<text x="41" y="17" size="1.016" layer="21" rot="R90">Rev.1.0</text>
 </plain>
 <libraries>
 <library name="adafruit">
