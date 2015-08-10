@@ -129,7 +129,7 @@
 <text x="5.08" y="11.7475" size="0.8128" layer="21" font="vector" align="top-center">5V</text>
 <text x="5.08" y="21.2725" size="0.8128" layer="21" font="vector" align="bottom-center">3V3</text>
 <text x="1.27" y="8.89" size="1.016" layer="21" font="vector">USB</text>
-<text x="1.27" y="7.62" size="0.8128" layer="21" font="vector">Rev.Beta2</text>
+<text x="1.27" y="7.62" size="0.8128" layer="21" font="vector">Rev.1.0</text>
 <text x="26.035" y="11.43" size="0.8128" layer="21" font="vector" rot="R90" align="bottom-center">MADE IN JAPAN</text>
 </plain>
 <libraries>

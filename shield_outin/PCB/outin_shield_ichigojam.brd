@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.3.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -140,9 +140,9 @@
 <wire x1="40.8" y1="62.23" x2="40.8" y2="-1.27" width="0" layer="231"/>
 <wire x1="21.3" y1="62.23" x2="21.3" y2="-1.27" width="0" layer="231"/>
 <wire x1="30.8" y1="62.23" x2="30.8" y2="-1.27" width="0" layer="231"/>
-<text x="46.99" y="44.45" size="1.27" layer="21" font="vector" ratio="12">IchigoJam OUT/IN Shield</text>
-<text x="62.23" y="1.27" size="1.27" layer="21" font="vector" ratio="12">Rev. Beta</text>
-<text x="66.04" y="54.61" size="1.016" layer="21" font="vector" ratio="12" align="bottom-center">MADE IN JAPAN</text>
+<text x="57.15" y="55.88" size="3.81" layer="21" font="vector" ratio="12">Zunda</text>
+<text x="60.96" y="53.34" size="1.27" layer="21" font="vector" ratio="12">Rev. Beta</text>
+<text x="52.07" y="1.27" size="1.016" layer="21" font="vector" ratio="12" align="bottom-center">MADE IN JAPAN</text>
 <wire x1="74.93" y1="1.27" x2="74.93" y2="59.69" width="0" layer="20"/>
 <wire x1="0" y1="59.69" x2="0" y2="1.27" width="0" layer="20"/>
 <wire x1="0" y1="1.27" x2="1.27" y2="0" width="0" layer="20" curve="90"/>
@@ -4516,8 +4516,8 @@ design rules under a new name.</description>
 <attribute name="NAME" x="48.768" y="32.004" size="1.016" layer="25" font="vector" ratio="12" rot="R90"/>
 <attribute name="VALUE" x="49.276" y="32.004" size="1.016" layer="27" font="vector" ratio="12" rot="R90" align="top-left"/>
 </element>
-<element name="U$3" library="FaBo" package="LOGO_FABO_M" value="" x="66.04" y="55.88"/>
-<element name="U$4" library="GClue" package="LOGO_OSHW_T_M" value="" x="66.04" y="50.8"/>
+<element name="U$3" library="FaBo" package="LOGO_FABO_M" value="" x="52.07" y="2.54"/>
+<element name="U$4" library="GClue" package="LOGO_OSHW_T_M" value="" x="64.77" y="49.53"/>
 </elements>
 <signals>
 <signal name="IN1">

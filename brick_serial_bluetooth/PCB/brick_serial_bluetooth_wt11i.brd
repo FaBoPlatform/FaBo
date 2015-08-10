@@ -128,7 +128,7 @@
 <plain>
 <text x="22.225" y="7.62" size="0.8128" layer="21" font="vector" rot="R90">BLUETOOTH</text>
 <text x="12.7" y="36.83" size="0.8128" layer="21" font="vector">WT11i</text>
-<text x="23.495" y="8.255" size="0.8128" layer="21" font="vector" rot="R90">Rev.Beta2</text>
+<text x="23.495" y="8.255" size="0.8128" layer="21" font="vector" rot="R90">Rev.1.0</text>
 <text x="27.305" y="11.43" size="0.8128" layer="21" font="vector" rot="R90" align="bottom-center">MADE IN JAPAN</text>
 </plain>
 <libraries>
