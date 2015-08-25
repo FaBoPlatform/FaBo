@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.3.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -128,7 +128,7 @@
 <plain>
 <text x="1.27" y="13.97" size="1.27" layer="21" font="vector">3AXIS
 ADXL345</text>
-<text x="1.27" y="12.7" size="1.016" layer="21" font="vector">Rev.Beta2</text>
+<text x="1.27" y="12.7" size="1.016" layer="21" font="vector">Rev.1.0</text>
 <text x="13.97" y="31.75" size="0.8128" layer="21" font="vector" align="bottom-center">MADE IN JAPAN</text>
 </plain>
 <libraries>
