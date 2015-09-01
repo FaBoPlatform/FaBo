@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -25,7 +25,7 @@
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
-<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
@@ -19825,7 +19825,7 @@
 <smd name="2" x="0" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
 <smd name="3" x="0.8128" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
 <text x="0" y="1.27" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
-<smd name="SHORT" x="0.4064" y="0" dx="0.8128" dy="0.2032" layer="1" cream="no"/>
+<wire x1="0" y1="0" x2="0.8128" y2="0" width="0.3048" layer="1"/>
 </package>
 <package name="1X14">
 <wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.2032" layer="21"/>
@@ -40314,21 +40314,20 @@ FTDI USB to Serial UART interface</description>
 <text x="-5.08" y="8.382" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="SMD-JUMPER-3-23SHORT">
-<wire x1="-0.635" y1="-1.397" x2="0.635" y2="-1.397" width="1.27" layer="94" curve="180" cap="flat"/>
+<wire x1="-0.635" y1="-1.397" x2="0" y2="-2.032" width="1.27" layer="94" curve="90" cap="flat"/>
+<wire x1="0" y1="-2.032" x2="0.635" y2="-1.397" width="1.27" layer="94" curve="90" cap="flat"/>
 <wire x1="-0.635" y1="1.397" x2="0.635" y2="1.397" width="1.27" layer="94" curve="-180" cap="flat"/>
 <wire x1="1.27" y1="-0.635" x2="-1.27" y2="-0.635" width="0.1524" layer="94"/>
-<wire x1="-1.27" y1="-0.635" x2="-1.27" y2="0" width="0.1524" layer="94"/>
-<wire x1="-1.27" y1="0" x2="-1.27" y2="0.635" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="-0.635" x2="-1.27" y2="0.635" width="0.1524" layer="94"/>
 <wire x1="-1.27" y1="0.635" x2="1.27" y2="0.635" width="0.1524" layer="94"/>
 <wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94"/>
 <text x="2.54" y="0.381" size="1.778" layer="95">&gt;NAME</text>
 <text x="2.54" y="-1.905" size="1.778" layer="96">&gt;VALUE</text>
 <rectangle x1="-1.27" y1="-0.635" x2="1.27" y2="0.635" layer="94"/>
 <pin name="3" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
 <pin name="1" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
-<pin name="2" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
-<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<pin name="2" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<wire x1="0" y1="0" x2="0" y2="-2.032" width="0.6096" layer="94"/>
 </symbol>
 <symbol name="PINHEAD-1X14">
 <pin name="1" x="-17.78" y="7.62" visible="pin" length="middle" rot="R270"/>
@@ -40443,16 +40442,16 @@ FTDI USB to Serial UART interface</description>
 <wire x1="-7.62" y1="-10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
 </symbol>
 <symbol name="A-551SRD">
-<pin name="E" x="-15.24" y="-2.54" length="middle"/>
-<pin name="D" x="-15.24" y="0" length="middle"/>
-<pin name="ANO1" x="15.24" y="7.62" length="middle" rot="R180"/>
-<pin name="C" x="-15.24" y="2.54" length="middle"/>
-<pin name="DP" x="15.24" y="-5.08" length="middle" rot="R180"/>
-<pin name="B" x="-15.24" y="5.08" length="middle"/>
-<pin name="A" x="-15.24" y="7.62" length="middle"/>
-<pin name="ANO2" x="15.24" y="5.08" length="middle" rot="R180"/>
-<pin name="F" x="-15.24" y="-5.08" length="middle"/>
-<pin name="G" x="-15.24" y="-7.62" length="middle"/>
+<pin name="E" x="-15.24" y="-2.54" visible="pin" length="middle"/>
+<pin name="D" x="-15.24" y="0" visible="pin" length="middle"/>
+<pin name="ANO1" x="15.24" y="7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="C" x="-15.24" y="2.54" visible="pin" length="middle"/>
+<pin name="DP" x="15.24" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="B" x="-15.24" y="5.08" visible="pin" length="middle"/>
+<pin name="A" x="-15.24" y="7.62" visible="pin" length="middle"/>
+<pin name="ANO2" x="15.24" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="F" x="-15.24" y="-5.08" visible="pin" length="middle"/>
+<pin name="G" x="-15.24" y="-7.62" visible="pin" length="middle"/>
 <wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
 <wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
