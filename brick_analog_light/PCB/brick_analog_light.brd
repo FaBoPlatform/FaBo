@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -92,6 +92,7 @@
 <layer number="153" name="FabDoc1" color="6" fill="1" visible="no" active="no"/>
 <layer number="154" name="FabDoc2" color="2" fill="1" visible="no" active="no"/>
 <layer number="155" name="FabDoc3" color="7" fill="15" visible="no" active="no"/>
+<layer number="160" name="O_Dim" color="12" fill="11" visible="yes" active="yes"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="no" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="10" visible="no" active="yes"/>
@@ -126,9 +127,9 @@
 </layers>
 <board>
 <plain>
-<text x="3.81" y="8.89" size="1.27" layer="21" font="vector" rot="R90">LIGHT</text>
-<text x="5.08" y="8.89" size="1.016" layer="21" font="vector" rot="R90">Rev.Beta2</text>
-<text x="12.7" y="25.4" size="0.8128" layer="21" font="vector" align="bottom-center">MADE IN JAPAN</text>
+<text x="3.81" y="8.89" size="1.27" layer="21" font="vector" ratio="12" rot="R90">LIGHT</text>
+<text x="5.08" y="8.89" size="1.016" layer="21" font="vector" ratio="12" rot="R90">Rev.1.0</text>
+<text x="12.7" y="25.4" size="1.016" layer="21" font="vector" ratio="12" align="bottom-center">MADE IN JAPAN</text>
 </plain>
 <libraries>
 <library name="SparkFun">
@@ -165,12 +166,12 @@ We've spent an enormous amount of time creating and checking these footprints an
 <description>&lt;h3&gt;GClue, Inc.&lt;/h3&gt;</description>
 <packages>
 <package name="BRICK_3PIN">
-<pad name="IN/OUT" x="-2.54" y="-8.89" drill="0.8" diameter="1.4224" shape="octagon" rot="R90"/>
-<pad name="VCC" x="0" y="-8.89" drill="0.8" diameter="1.4224" shape="octagon" rot="R90"/>
-<pad name="GND" x="2.54" y="-8.89" drill="0.8" diameter="1.4224" shape="square" rot="R90"/>
-<text x="-2.54" y="-7.62" size="0.8128" layer="21" font="vector" rot="R90" align="center-left">I/O</text>
-<text x="0" y="-7.62" size="0.8128" layer="21" font="vector" rot="R90" align="center-left">VCC</text>
-<text x="2.54" y="-7.62" size="0.8128" layer="21" font="vector" rot="R90" align="center-left">GND</text>
+<pad name="IN/OUT" x="-2.54" y="-8.89" drill="1" diameter="1.778" shape="octagon" rot="R90"/>
+<pad name="VCC" x="0" y="-8.89" drill="1" diameter="1.778" shape="octagon" rot="R90"/>
+<pad name="GND" x="2.54" y="-8.89" drill="1" diameter="1.6764" shape="square" rot="R90"/>
+<text x="-2.54" y="-7.62" size="0.8128" layer="21" font="vector" ratio="12" rot="R90" align="center-left">I/O</text>
+<text x="0" y="-7.62" size="0.8128" layer="21" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
+<text x="2.54" y="-7.62" size="0.8128" layer="21" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
 <wire x1="-10.16" y1="-16.51" x2="10.16" y2="-16.51" width="0" layer="20"/>
 <wire x1="10.16" y1="-16.51" x2="12.7" y2="-13.97" width="0" layer="20" curve="90"/>
 <wire x1="12.7" y1="-13.97" x2="12.7" y2="3.81" width="0" layer="20"/>
@@ -4136,8 +4137,8 @@ design rules under a new name.</description>
 </element>
 <element name="J1" library="Gclue" package="BRICK_3PIN" value="" x="12.7" y="16.51"/>
 <element name="R1" library="Gclue" package="RES-AXL-REGULAR" value="10k" x="12.7" y="16.51" smashed="yes" rot="R180">
-<attribute name="NAME" x="14.732" y="16.891" size="0.8128" layer="25" font="vector" rot="R180"/>
-<attribute name="VALUE" x="12.7" y="18.415" size="0.8128" layer="27" font="vector" rot="R180"/>
+<attribute name="NAME" x="14.732" y="16.891" size="0.8128" layer="25" font="vector" ratio="12" rot="R180"/>
+<attribute name="VALUE" x="12.7" y="18.415" size="0.8128" layer="27" font="vector" ratio="12" rot="R180"/>
 </element>
 <element name="U$4" library="Gclue" package="LOGO_OSHW_T_M" value="" x="21.59" y="12.7"/>
 <element name="U$2" library="FaBo" package="LOGO_FABO_M" value="" x="12.7" y="26.67"/>

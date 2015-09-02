@@ -92,6 +92,7 @@
 <layer number="153" name="FabDoc1" color="6" fill="1" visible="no" active="no"/>
 <layer number="154" name="FabDoc2" color="2" fill="1" visible="no" active="no"/>
 <layer number="155" name="FabDoc3" color="7" fill="15" visible="no" active="no"/>
+<layer number="160" name="O_Dim" color="12" fill="11" visible="yes" active="yes"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="1" visible="no" active="no"/>
@@ -126,11 +127,11 @@
 </layers>
 <board>
 <plain>
-<text x="12.7" y="35.56" size="1.778" layer="21" font="vector" align="bottom-center">+</text>
-<text x="15.24" y="35.56" size="1.778" layer="21" font="vector" align="bottom-center">-</text>
-<text x="3.81" y="8.89" size="1.27" layer="21" font="vector" ratio="10" rot="R90">KTEMP</text>
-<text x="5.08" y="8.89" size="1.016" layer="21" font="vector" ratio="10" rot="R90">Rev.1.0</text>
-<text x="13.97" y="26.67" size="1.016" layer="21" font="vector" ratio="10" align="bottom-center">MADE IN JAPAN</text>
+<text x="12.7" y="35.56" size="1.778" layer="21" font="vector" ratio="12" align="bottom-center">+</text>
+<text x="15.24" y="35.56" size="1.778" layer="21" font="vector" ratio="12" align="bottom-center">-</text>
+<text x="3.81" y="11.43" size="1.27" layer="21" font="vector" ratio="12" rot="R90">KTEMP</text>
+<text x="5.08" y="11.43" size="1.016" layer="21" font="vector" ratio="12" rot="R90">Rev.1.0</text>
+<text x="13.97" y="26.67" size="1.016" layer="21" font="vector" ratio="12" align="bottom-center">MADE IN JAPAN</text>
 </plain>
 <libraries>
 <library name="pinhead">
@@ -200,10 +201,10 @@
 <pad name="P$3" x="-10.16" y="-15.24" drill="3" diameter="3.81"/>
 <pad name="P$4" x="10.16" y="-15.24" drill="3" diameter="3.81"/>
 <wire x1="-13.97" y1="6.35" x2="13.97" y2="6.35" width="0" layer="20" curve="-180"/>
-<text x="-3.81" y="-8.255" size="0.8128" layer="21" font="vector" ratio="10" rot="R90" align="center-left">SCL</text>
-<text x="-1.27" y="-8.255" size="0.8128" layer="21" font="vector" ratio="10" rot="R90" align="center-left">SDA</text>
-<text x="1.27" y="-8.255" size="0.8128" layer="21" font="vector" ratio="10" rot="R90" align="center-left">VCC</text>
-<text x="3.81" y="-8.255" size="0.8128" layer="21" font="vector" ratio="10" rot="R90" align="center-left">GND</text>
+<text x="-3.81" y="-8.255" size="0.8128" layer="21" font="vector" ratio="12" rot="R90" align="center-left">SCL</text>
+<text x="-1.27" y="-8.255" size="0.8128" layer="21" font="vector" ratio="12" rot="R90" align="center-left">SDA</text>
+<text x="1.27" y="-8.255" size="0.8128" layer="21" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
+<text x="3.81" y="-8.255" size="0.8128" layer="21" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
 <circle x="-10.16" y="6.35" radius="2.55" width="0.127" layer="51"/>
 <circle x="-10.16" y="-15.24" radius="2.55" width="0.127" layer="51"/>
 <circle x="10.16" y="6.35" radius="2.55" width="0.127" layer="51"/>
