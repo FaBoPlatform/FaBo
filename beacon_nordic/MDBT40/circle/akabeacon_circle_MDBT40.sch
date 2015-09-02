@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -135,27 +135,32 @@
 </packages>
 <symbols>
 <symbol name="A4L-LOC">
-<wire x1="256.54" y1="3.81" x2="256.54" y2="8.89" width="0.1016" layer="94"/>
-<wire x1="256.54" y1="8.89" x2="256.54" y2="13.97" width="0.1016" layer="94"/>
-<wire x1="256.54" y1="13.97" x2="256.54" y2="19.05" width="0.1016" layer="94"/>
-<wire x1="256.54" y1="19.05" x2="256.54" y2="24.13" width="0.1016" layer="94"/>
-<wire x1="161.29" y1="3.81" x2="161.29" y2="24.13" width="0.1016" layer="94"/>
-<wire x1="161.29" y1="24.13" x2="215.265" y2="24.13" width="0.1016" layer="94"/>
-<wire x1="215.265" y1="24.13" x2="256.54" y2="24.13" width="0.1016" layer="94"/>
-<wire x1="246.38" y1="3.81" x2="246.38" y2="8.89" width="0.1016" layer="94"/>
-<wire x1="246.38" y1="8.89" x2="256.54" y2="8.89" width="0.1016" layer="94"/>
-<wire x1="246.38" y1="8.89" x2="215.265" y2="8.89" width="0.1016" layer="94"/>
-<wire x1="215.265" y1="8.89" x2="215.265" y2="3.81" width="0.1016" layer="94"/>
-<wire x1="215.265" y1="8.89" x2="215.265" y2="13.97" width="0.1016" layer="94"/>
-<wire x1="215.265" y1="13.97" x2="256.54" y2="13.97" width="0.1016" layer="94"/>
-<wire x1="215.265" y1="13.97" x2="215.265" y2="19.05" width="0.1016" layer="94"/>
-<wire x1="215.265" y1="19.05" x2="256.54" y2="19.05" width="0.1016" layer="94"/>
-<wire x1="215.265" y1="19.05" x2="215.265" y2="24.13" width="0.1016" layer="94"/>
-<text x="217.17" y="20.32" size="2.54" layer="94">&gt;DRAWING_NAME</text>
-<text x="217.17" y="10.16" size="2.286" layer="94">&gt;LAST_DATE_TIME</text>
-<text x="230.505" y="5.08" size="2.54" layer="94">&gt;SHEET</text>
-<text x="216.916" y="4.953" size="2.54" layer="94">Sheet:</text>
+<wire x1="256.54" y1="3.81" x2="256.54" y2="17.78" width="0.1016" layer="94"/>
+<wire x1="256.54" y1="17.78" x2="256.54" y2="27.94" width="0.1016" layer="94"/>
+<wire x1="161.29" y1="3.81" x2="161.29" y2="17.78" width="0.1016" layer="94"/>
+<wire x1="161.29" y1="17.78" x2="161.29" y2="22.86" width="0.1016" layer="94"/>
+<wire x1="161.29" y1="22.86" x2="161.29" y2="27.94" width="0.1016" layer="94"/>
+<wire x1="161.29" y1="27.94" x2="234.95" y2="27.94" width="0.1016" layer="94"/>
+<wire x1="234.95" y1="27.94" x2="256.54" y2="27.94" width="0.1016" layer="94"/>
+<wire x1="161.29" y1="22.86" x2="212.09" y2="22.86" width="0.1016" layer="94"/>
+<text x="172.72" y="24.13" size="2.54" layer="94">&gt;DRAWING_NAME</text>
+<text x="170.18" y="20.32" size="1.778" layer="94" align="center-left">&gt;LAST_DATE_TIME</text>
+<text x="223.52" y="20.32" size="1.778" layer="94" align="center-left">&gt;SHEET</text>
+<text x="213.36" y="20.32" size="1.778" layer="94" align="center-left">Sheet:</text>
 <frame x1="0" y1="0" x2="260.35" y2="179.07" columns="6" rows="4" layer="94"/>
+<text x="162.56" y="24.13" size="2.54" layer="94">Title:</text>
+<text x="162.56" y="20.32" size="1.778" layer="94" align="center-left">Date:</text>
+<text x="162.56" y="10.16" size="1.778" layer="94">Released under the Creative Commons</text>
+<text x="162.56" y="5.08" size="1.778" layer="94">https://creativecommons.org/licenses/by-sa/4.0/</text>
+<text x="236.22" y="26.67" size="2.1844" layer="94" align="top-left">REV:</text>
+<wire x1="212.09" y1="22.86" x2="234.95" y2="22.86" width="0.1016" layer="94"/>
+<wire x1="161.29" y1="17.78" x2="212.09" y2="17.78" width="0.1016" layer="94"/>
+<wire x1="212.09" y1="17.78" x2="234.95" y2="17.78" width="0.1016" layer="94"/>
+<wire x1="234.95" y1="17.78" x2="256.54" y2="17.78" width="0.1016" layer="94"/>
+<wire x1="234.95" y1="17.78" x2="234.95" y2="22.86" width="0.1016" layer="94"/>
+<text x="162.56" y="7.62" size="1.778" layer="94">Attribution-ShareAlike 4.0 License</text>
+<wire x1="234.95" y1="22.86" x2="234.95" y2="27.94" width="0.1016" layer="94"/>
+<wire x1="212.09" y1="17.78" x2="212.09" y2="22.86" width="0.1016" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -6459,23 +6464,21 @@ http://www.tag-connect.com</description>
 <library name="GClue-Beacon">
 <packages>
 <package name="CIRCLE-TYE1-TC2030">
-<wire x1="-15.0912" y1="14.5474" x2="-20.2728" y2="4.7938" width="0.4064" layer="20" curve="-329.646306"/>
-<wire x1="-20.2728" y1="4.9462" x2="-15.3452" y2="14.4712" width="0.4064" layer="20" curve="-191.363211"/>
-<smd name="GND" x="11.046190625" y="-11.1067625" dx="4.318" dy="3.2512" layer="16" rot="R135"/>
-<smd name="VCC" x="-11.581225" y="11.520653125" dx="4.318" dy="3.2512" layer="16" rot="R135"/>
-<text x="-8.476" y="13.396" size="2.54" layer="22">+</text>
-<circle x="-7.62" y="14.224" radius="1.27" width="0.127" layer="22"/>
-<circle x="-20.812" y="12.4" radius="0.477071875" width="0.127" layer="21"/>
+<circle x="-14.712" y="13.1" radius="0.477071875" width="0.127" layer="21"/>
 <wire x1="11.43" y1="10.16" x2="13.97" y2="10.16" width="0.127" layer="21"/>
 <wire x1="13.97" y1="10.16" x2="13.97" y2="11.43" width="0.127" layer="21"/>
 <wire x1="13.97" y1="11.43" x2="11.43" y2="11.43" width="0.127" layer="21"/>
 <wire x1="11.43" y1="11.43" x2="11.43" y2="10.16" width="0.127" layer="21"/>
-<wire x1="-2" y1="-16.35" x2="2" y2="-16.35" width="0.127" layer="21"/>
-<wire x1="2" y1="-16.35" x2="2" y2="-19.35" width="0.127" layer="21"/>
-<wire x1="2" y1="-19.35" x2="-2" y2="-19.35" width="0.127" layer="21"/>
-<wire x1="-2" y1="-19.35" x2="-2" y2="-16.35" width="0.127" layer="21"/>
-<wire x1="21.59" y1="0" x2="21.59" y2="0.254" width="0.127" layer="21"/>
-<wire x1="0" y1="17.78" x2="0" y2="20.828" width="0.127" layer="21"/>
+<wire x1="-1.8" y1="-11.05" x2="2.2" y2="-11.05" width="0.127" layer="21"/>
+<wire x1="2.2" y1="-11.05" x2="2.2" y2="-14.05" width="0.127" layer="21"/>
+<wire x1="2.2" y1="-14.05" x2="-1.8" y2="-14.05" width="0.127" layer="21"/>
+<wire x1="-1.8" y1="-14.05" x2="-1.8" y2="-11.05" width="0.127" layer="21"/>
+<wire x1="0" y1="15.78" x2="0" y2="19.828" width="0.127" layer="21"/>
+<smd name="PLUS1" x="-16" y="0" dx="5" dy="10.5" layer="16"/>
+<smd name="PLUS2" x="16" y="0" dx="5" dy="10.5" layer="16"/>
+<smd name="GND" x="0" y="0" dx="10.5" dy="10.5" layer="16"/>
+<wire x1="-16" y1="12" x2="-13.7" y2="14.6" width="0.127" layer="20" curve="-180"/>
+<wire x1="-13.7" y1="14.6" x2="-16" y2="12" width="0.127" layer="20" curve="-349.998404"/>
 </package>
 </packages>
 <symbols>
@@ -6498,7 +6501,7 @@ http://www.tag-connect.com</description>
 <device name="" package="CIRCLE-TYE1-TC2030">
 <connects>
 <connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="VCC" pad="VCC"/>
+<connect gate="G$1" pin="VCC" pad="PLUS1 PLUS2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -6540,12 +6543,12 @@ http://www.tag-connect.com</description>
 <part name="P0_0" library="led" deviceset="LED" device="CHIP-LED0603"/>
 <part name="U$5" library="gclue-test" deviceset="SWICTH-4P(KMR2)" device=""/>
 <part name="GND13" library="SparkFun" deviceset="GND" device=""/>
-<part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
 <part name="R2" library="adafruit" deviceset="R-US_" device="R0603"/>
 <part name="TC1" library="TagConnect" deviceset="TC2030-IDC" device="-NL" value=""/>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="U$7" library="GClue-Beacon" deviceset="CIRCLE-TYPE1" device=""/>
+<part name="GND2" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6562,30 +6565,30 @@ http://www.tag-connect.com</description>
 <instance part="U$1" gate="G$1" x="170.18" y="104.14"/>
 <instance part="GND1" gate="1" x="134.62" y="124.46"/>
 <instance part="+3V1" gate="G$1" x="104.14" y="121.92"/>
-<instance part="+3V2" gate="G$1" x="142.24" y="68.58"/>
+<instance part="+3V2" gate="G$1" x="142.24" y="71.12"/>
 <instance part="GND3" gate="1" x="200.66" y="45.72"/>
 <instance part="C2" gate="G$1" x="116.84" y="99.06" rot="R90"/>
 <instance part="C3" gate="G$1" x="116.84" y="88.9" rot="R90"/>
 <instance part="GND5" gate="1" x="109.22" y="81.28"/>
-<instance part="R1" gate="G$1" x="231.14" y="121.92"/>
+<instance part="R1" gate="G$1" x="228.6" y="121.92"/>
 <instance part="GND7" gate="1" x="241.3" y="68.58"/>
 <instance part="C4" gate="G$1" x="162.56" y="43.18"/>
-<instance part="C1" gate="G$1" x="104.14" y="106.68"/>
+<instance part="C1" gate="G$1" x="104.14" y="104.14"/>
 <instance part="GND8" gate="1" x="104.14" y="93.98"/>
 <instance part="GND9" gate="1" x="162.56" y="30.48"/>
 <instance part="32.768LHZ" gate="G$1" x="127" y="93.98" rot="R90"/>
 <instance part="+3V4" gate="G$1" x="86.36" y="149.86"/>
 <instance part="GND10" gate="1" x="55.88" y="124.46"/>
 <instance part="C5" gate="G$1" x="71.12" y="132.08" rot="R90"/>
-<instance part="P0_0" gate="G$1" x="20.32" y="91.44"/>
+<instance part="P0_0" gate="G$1" x="15.24" y="68.58"/>
 <instance part="U$5" gate="G$1" x="25.4" y="142.24"/>
 <instance part="GND13" gate="1" x="17.78" y="129.54"/>
-<instance part="+3V5" gate="G$1" x="20.32" y="106.68"/>
-<instance part="R2" gate="G$1" x="20.32" y="76.2" rot="R90"/>
+<instance part="R2" gate="G$1" x="15.24" y="81.28" rot="R270"/>
 <instance part="TC1" gate="A" x="76.2" y="27.94"/>
 <instance part="+3V3" gate="G$1" x="121.92" y="30.48"/>
 <instance part="GND4" gate="1" x="48.26" y="22.86"/>
 <instance part="U$7" gate="G$1" x="71.12" y="139.7"/>
+<instance part="GND2" gate="1" x="15.24" y="55.88"/>
 </instances>
 <busses>
 </busses>
@@ -6609,7 +6612,7 @@ http://www.tag-connect.com</description>
 <wire x1="200.66" y1="116.84" x2="213.36" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="116.84" x2="213.36" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="213.36" y1="121.92" x2="226.06" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="121.92" x2="223.52" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="116.84" x2="223.52" y2="116.84" width="0.1524" layer="91"/>
 <junction x="213.36" y="116.84"/>
 </segment>
@@ -6653,7 +6656,7 @@ http://www.tag-connect.com</description>
 </segment>
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="236.22" y1="121.92" x2="241.3" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="121.92" x2="241.3" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="241.3" y1="121.92" x2="241.3" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 <pinref part="U$1" gate="G$1" pin="GND5"/>
@@ -6664,7 +6667,7 @@ http://www.tag-connect.com</description>
 <segment>
 <pinref part="GND8" gate="1" pin="GND"/>
 <pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="104.14" y1="96.52" x2="104.14" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="96.52" x2="104.14" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C4" gate="G$1" pin="2"/>
@@ -6694,6 +6697,11 @@ http://www.tag-connect.com</description>
 <wire x1="63.5" y1="30.48" x2="48.26" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="30.48" x2="48.26" y2="25.4" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="P0_0" gate="G$1" pin="C"/>
+<pinref part="GND2" gate="1" pin="GND"/>
+<wire x1="15.24" y1="63.5" x2="15.24" y2="58.42" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="+3V3" class="0">
 <segment>
@@ -6702,12 +6710,12 @@ http://www.tag-connect.com</description>
 <pinref part="+3V1" gate="G$1" pin="+3V3"/>
 <pinref part="U$1" gate="G$1" pin="AVDD"/>
 <pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="104.14" y1="109.22" x2="104.14" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="106.68" x2="104.14" y2="114.3" width="0.1524" layer="91"/>
 <junction x="104.14" y="114.3"/>
 </segment>
 <segment>
 <pinref part="+3V2" gate="G$1" pin="+3V3"/>
-<wire x1="142.24" y1="66.04" x2="142.24" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="68.58" x2="142.24" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="VDD"/>
 <wire x1="142.24" y1="50.8" x2="162.56" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="50.8" x2="162.56" y2="73.66" width="0.1524" layer="91"/>
@@ -6724,11 +6732,6 @@ http://www.tag-connect.com</description>
 <pinref part="C5" gate="G$1" pin="2"/>
 <wire x1="86.36" y1="132.08" x2="76.2" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="U$7" gate="G$1" pin="VCC"/>
-</segment>
-<segment>
-<pinref part="P0_0" gate="G$1" pin="A"/>
-<pinref part="+3V5" gate="G$1" pin="+3V3"/>
-<wire x1="20.32" y1="93.98" x2="20.32" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="TC1" gate="A" pin="VCC"/>
@@ -6952,13 +6955,6 @@ http://www.tag-connect.com</description>
 <label x="167.64" y="63.5" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="LED1" class="0">
-<segment>
-<pinref part="P0_0" gate="G$1" pin="C"/>
-<wire x1="20.32" y1="86.36" x2="20.32" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="R2" gate="G$1" pin="2"/>
-</segment>
-</net>
 <net name="P0_18" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="P0_18"/>
@@ -6966,8 +6962,8 @@ http://www.tag-connect.com</description>
 <label x="203.2" y="121.92" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="20.32" y1="60.96" x2="20.32" y2="71.12" width="0.1524" layer="91"/>
-<label x="20.32" y="60.96" size="1.778" layer="95" rot="R90"/>
+<wire x1="15.24" y1="101.6" x2="15.24" y2="86.36" width="0.1524" layer="91"/>
+<label x="15.24" y="99.06" size="1.778" layer="95" rot="R90"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -6976,6 +6972,13 @@ http://www.tag-connect.com</description>
 <pinref part="U$1" gate="G$1" pin="P0_19"/>
 <wire x1="210.82" y1="124.46" x2="200.66" y2="124.46" width="0.1524" layer="91"/>
 <label x="203.2" y="124.46" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="R2" gate="G$1" pin="2"/>
+<pinref part="P0_0" gate="G$1" pin="A"/>
+<wire x1="15.24" y1="76.2" x2="15.24" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
