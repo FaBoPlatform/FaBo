@@ -6,11 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<<<<<<< HEAD
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
-=======
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
->>>>>>> 2202a8fc2d78f03dea967481ef38ddf4165b18b8
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -22022,7 +22018,6 @@
 <rectangle x1="-0.3429" y1="2.3368" x2="0.3556" y2="2.3495" layer="22" rot="R180"/>
 <rectangle x1="-0.3302" y1="2.3495" x2="0.3429" y2="2.3622" layer="22" rot="R180"/>
 </package>
-<<<<<<< HEAD
 <package name="BREAKOUT_BLE">
 <wire x1="15.24" y1="-49.469825" x2="15.24" y2="17.48019375" width="0.127" layer="20"/>
 <wire x1="15.24" y1="17.48019375" x2="12.40019375" y2="20.32" width="0.127" layer="20" curve="90"/>
@@ -22156,7 +22151,7 @@
 <text x="7.62" y="-4.445" size="1.27" layer="21">P0_23</text>
 <text x="7.62" y="-6.985" size="1.27" layer="21">P0_24</text>
 <circle x="0" y="-17.02" radius="12.5" width="0.127" layer="21"/>
-=======
+</package>
 <package name="LA-301VL">
 <wire x1="-3.5" y1="5.5" x2="-3.5" y2="-5.5" width="0.127" layer="21"/>
 <wire x1="3.5" y1="5.5" x2="3.5" y2="-5.5" width="0.127" layer="21"/>
@@ -22220,7 +22215,6 @@
 <smd name="13" x="-0.325" y="2.8" dx="0.35" dy="1.6" layer="1"/>
 <smd name="14" x="-0.975" y="2.8" dx="0.35" dy="1.6" layer="1"/>
 <text x="-1.905" y="0" size="1.016" layer="25" font="vector" ratio="12">&gt;NAME</text>
->>>>>>> 2202a8fc2d78f03dea967481ef38ddf4165b18b8
 </package>
 </packages>
 <symbols>
@@ -40565,7 +40559,6 @@ FTDI USB to Serial UART interface</description>
 <pin name="D" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
 <pin name="S" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
 </symbol>
-<<<<<<< HEAD
 <symbol name="BREAKOUT_BLE">
 <pin name="GND" x="-15.24" y="12.7" length="middle"/>
 <pin name="3.3V" x="-15.24" y="10.16" length="middle"/>
@@ -40633,7 +40626,7 @@ FTDI USB to Serial UART interface</description>
 <wire x1="-10.16" y1="-20.32" x2="-10.16" y2="17.78" width="0.254" layer="94"/>
 <pin name="SCL" x="-15.24" y="-17.78" length="middle"/>
 <pin name="P0_24" x="15.24" y="-17.78" length="middle" rot="R180"/>
-=======
+</symbol>
 <symbol name="LA-301VL">
 <pin name="A" x="-12.7" y="7.62" visible="pin" length="middle"/>
 <pin name="F" x="-12.7" y="-5.08" visible="pin" length="middle"/>
@@ -40727,7 +40720,6 @@ FTDI USB to Serial UART interface</description>
 <wire x1="-4.318" y1="2.54" x2="-4.826" y2="3.302" width="0.254" layer="94"/>
 <wire x1="-4.826" y1="3.302" x2="-5.08" y2="3.048" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="3.048" x2="-4.318" y2="2.54" width="0.254" layer="94"/>
->>>>>>> 2202a8fc2d78f03dea967481ef38ddf4165b18b8
 </symbol>
 </symbols>
 <devicesets>
@@ -42945,7 +42937,6 @@ standard SMD and PTH capacitor</description>
 </device>
 </devices>
 </deviceset>
-<<<<<<< HEAD
 <deviceset name="BREAKOUT_BLE">
 <gates>
 <gate name="G$1" symbol="BREAKOUT_BLE" x="0" y="2.54"/>
@@ -42981,7 +42972,10 @@ standard SMD and PTH capacitor</description>
 <connect gate="G$1" pin="RESET" pad="RESET"/>
 <connect gate="G$1" pin="SCL" pad="SCL"/>
 <connect gate="G$1" pin="SDA" pad="SDA"/>
-=======
+</connects>
+</device>
+</devices>
+</deviceset>
 <deviceset name="LA-301VL" prefix="U">
 <gates>
 <gate name="G$1" symbol="LA-301VL" x="0" y="0"/>
@@ -42999,7 +42993,6 @@ standard SMD and PTH capacitor</description>
 <connect gate="G$1" pin="E" pad="E"/>
 <connect gate="G$1" pin="F" pad="F"/>
 <connect gate="G$1" pin="G" pad="G"/>
->>>>>>> 2202a8fc2d78f03dea967481ef38ddf4165b18b8
 </connects>
 <technologies>
 <technology name=""/>
@@ -43007,7 +43000,6 @@ standard SMD and PTH capacitor</description>
 </device>
 </devices>
 </deviceset>
-<<<<<<< HEAD
 <deviceset name="BREAKOUT_BLE_NORDIC">
 <gates>
 <gate name="G$1" symbol="BREAKOUT_BLE_NORDIC" x="0" y="-2.54"/>
@@ -43043,7 +43035,10 @@ standard SMD and PTH capacitor</description>
 <connect gate="G$1" pin="RESET" pad="RESET"/>
 <connect gate="G$1" pin="SCL" pad="SCL"/>
 <connect gate="G$1" pin="SDA" pad="SDA"/>
-=======
+</connects>
+</device>
+</devices>
+</deviceset>
 <deviceset name="A-551SRD">
 <gates>
 <gate name="G$1" symbol="A-551SRD" x="0" y="0"/>
@@ -43107,7 +43102,6 @@ standard SMD and PTH capacitor</description>
 <connects>
 <connect gate="G$1" pin="C" pad="K"/>
 <connect gate="G$1" pin="E" pad="A"/>
->>>>>>> 2202a8fc2d78f03dea967481ef38ddf4165b18b8
 </connects>
 <technologies>
 <technology name=""/>
