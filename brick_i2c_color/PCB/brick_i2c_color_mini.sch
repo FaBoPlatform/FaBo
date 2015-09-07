@@ -397,9 +397,9 @@
 <packages>
 <package name="FABO-NANO">
 <circle x="0" y="0" radius="5" width="0.0254" layer="20"/>
-<smd name="VCC" x="1.27" y="2" dx="2.032" dy="0.635" layer="16" rot="R90"/>
+<smd name="GND" x="1.27" y="2" dx="2.032" dy="0.635" layer="16" rot="R90"/>
 <smd name="1" x="1.27" y="-1.95" dx="2.032" dy="0.635" layer="16" rot="R90"/>
-<smd name="GND" x="0.07" y="2" dx="2.032" dy="0.635" layer="16" rot="R90"/>
+<smd name="VCC" x="0.07" y="2" dx="2.032" dy="0.635" layer="16" rot="R90"/>
 <smd name="2" x="0.07" y="-1.95" dx="2.032" dy="0.635" layer="16" rot="R90"/>
 <smd name="0" x="-1.08" y="2" dx="2.032" dy="0.635" layer="16" rot="R90"/>
 <smd name="3" x="-1.13" y="-1.95" dx="2.032" dy="0.635" layer="16" rot="R90"/>
