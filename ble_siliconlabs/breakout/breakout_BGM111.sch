@@ -6663,14 +6663,14 @@ http://www.tag-connect.com</description>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="C5" library="adafruit" deviceset="C-US" device="C0603" value="0.1uf"/>
-<part name="PA0" library="led" deviceset="LED" device="CHIP-LED0603"/>
+<part name="PF3" library="led" deviceset="LED" device="CHIP-LED0603"/>
 <part name="U$5" library="gclue-test" deviceset="SWICTH-4P(KMR2)" device=""/>
 <part name="GND13" library="SparkFun" deviceset="GND" device=""/>
 <part name="R2" library="adafruit" deviceset="R-US_" device="R0603"/>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
-<part name="PA1" library="led" deviceset="LED" device="CHIP-LED0603"/>
+<part name="PF2" library="led" deviceset="LED" device="CHIP-LED0603"/>
 <part name="R3" library="adafruit" deviceset="R-US_" device="R0603"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="U$2" library="GClue-Supply" deviceset="SMTU2450-TOP" device=""/>
@@ -6705,14 +6705,14 @@ http://www.tag-connect.com</description>
 <instance part="+3V4" gate="G$1" x="86.36" y="149.86"/>
 <instance part="GND10" gate="1" x="55.88" y="124.46"/>
 <instance part="C5" gate="G$1" x="71.12" y="132.08" rot="R90"/>
-<instance part="PA0" gate="G$1" x="15.24" y="68.58"/>
+<instance part="PF3" gate="G$1" x="15.24" y="68.58"/>
 <instance part="U$5" gate="G$1" x="25.4" y="142.24"/>
 <instance part="GND13" gate="1" x="17.78" y="129.54"/>
-<instance part="R2" gate="G$1" x="15.24" y="81.28" rot="R270"/>
+<instance part="R2" gate="G$1" x="15.24" y="78.74" rot="R270"/>
 <instance part="+3V3" gate="G$1" x="121.92" y="30.48"/>
 <instance part="GND4" gate="1" x="48.26" y="22.86"/>
 <instance part="GND2" gate="1" x="15.24" y="55.88"/>
-<instance part="PA1" gate="G$1" x="25.4" y="68.58"/>
+<instance part="PF2" gate="G$1" x="25.4" y="68.58"/>
 <instance part="R3" gate="G$1" x="25.4" y="81.28" rot="R270"/>
 <instance part="GND6" gate="1" x="25.4" y="55.88"/>
 <instance part="U$2" gate="G$1" x="71.12" y="139.7"/>
@@ -6736,6 +6736,7 @@ http://www.tag-connect.com</description>
 <segment>
 <wire x1="193.04" y1="106.68" x2="208.28" y2="106.68" width="0.1524" layer="91"/>
 <label x="208.28" y="106.68" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="PF1"/>
 </segment>
 <segment>
 <wire x1="63.5" y1="25.4" x2="50.8" y2="25.4" width="0.1524" layer="91"/>
@@ -6757,6 +6758,7 @@ http://www.tag-connect.com</description>
 <wire x1="208.28" y1="99.06" x2="213.36" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="208.28" y1="104.14" x2="218.44" y2="104.14" width="0.1524" layer="91"/>
 <junction x="208.28" y="104.14"/>
+<pinref part="U$1" gate="G$1" pin="PF0"/>
 </segment>
 <segment>
 <wire x1="63.5" y1="27.94" x2="50.8" y2="27.94" width="0.1524" layer="91"/>
@@ -6774,6 +6776,7 @@ http://www.tag-connect.com</description>
 <wire x1="157.48" y1="129.54" x2="147.32" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="129.54" x2="147.32" y2="127" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
+<pinref part="U$1" gate="G$1" pin="GND1"/>
 </segment>
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
@@ -6807,12 +6810,12 @@ http://www.tag-connect.com</description>
 <pinref part="TC1" gate="A" pin="SWO"/>
 </segment>
 <segment>
-<pinref part="PA0" gate="G$1" pin="C"/>
+<pinref part="PF3" gate="G$1" pin="C"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="15.24" y1="63.5" x2="15.24" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="PA1" gate="G$1" pin="C"/>
+<pinref part="PF2" gate="G$1" pin="C"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 <wire x1="25.4" y1="63.5" x2="25.4" y2="58.42" width="0.1524" layer="91"/>
 </segment>
@@ -6930,12 +6933,10 @@ http://www.tag-connect.com</description>
 <wire x1="193.04" y1="116.84" x2="200.66" y2="116.84" width="0.1524" layer="91"/>
 <label x="198.12" y="116.84" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="P0_09" class="0">
 <segment>
-<wire x1="91.44" y1="30.48" x2="101.6" y2="30.48" width="0.1524" layer="91"/>
-<label x="101.6" y="30.48" size="1.778" layer="95"/>
-<pinref part="TC1" gate="A" pin="GND"/>
+<wire x1="91.44" y1="27.94" x2="101.6" y2="27.94" width="0.1524" layer="91"/>
+<label x="101.6" y="27.94" size="1.778" layer="95"/>
+<pinref part="TC1" gate="A" pin="NRESET"/>
 </segment>
 </net>
 <net name="PC6" class="0">
@@ -6948,13 +6949,6 @@ http://www.tag-connect.com</description>
 <pinref part="U$1" gate="G$1" pin="PC6"/>
 <wire x1="170.18" y1="86.36" x2="170.18" y2="78.74" width="0.1524" layer="91"/>
 <label x="170.18" y="78.74" size="1.778" layer="95" rot="R90"/>
-</segment>
-</net>
-<net name="P0_11" class="0">
-<segment>
-<wire x1="91.44" y1="27.94" x2="101.6" y2="27.94" width="0.1524" layer="91"/>
-<label x="101.6" y="27.94" size="1.778" layer="95"/>
-<pinref part="TC1" gate="A" pin="NRESET"/>
 </segment>
 </net>
 <net name="PC8" class="0">
@@ -7035,6 +7029,11 @@ http://www.tag-connect.com</description>
 <wire x1="193.04" y1="109.22" x2="200.66" y2="109.22" width="0.1524" layer="91"/>
 <label x="198.12" y="109.22" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="25.4" y1="101.6" x2="25.4" y2="86.36" width="0.1524" layer="91"/>
+<label x="25.4" y="99.06" size="1.778" layer="95" rot="R90"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+</segment>
 </net>
 <net name="PF3" class="0">
 <segment>
@@ -7046,6 +7045,11 @@ http://www.tag-connect.com</description>
 <pinref part="U$1" gate="G$1" pin="PF3"/>
 <wire x1="193.04" y1="111.76" x2="200.66" y2="111.76" width="0.1524" layer="91"/>
 <label x="198.12" y="111.76" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="15.24" y1="101.6" x2="15.24" y2="83.82" width="0.1524" layer="91"/>
+<label x="15.24" y="99.06" size="1.778" layer="95" rot="R90"/>
+<pinref part="R2" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="PF4" class="0">
@@ -7059,18 +7063,23 @@ http://www.tag-connect.com</description>
 <wire x1="193.04" y1="114.3" x2="200.66" y2="114.3" width="0.1524" layer="91"/>
 <label x="198.12" y="114.3" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="91.44" y1="30.48" x2="101.6" y2="30.48" width="0.1524" layer="91"/>
+<label x="101.6" y="30.48" size="1.778" layer="95"/>
+<pinref part="TC1" gate="A" pin="GND"/>
+</segment>
 </net>
 <net name="N$1" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
-<pinref part="PA0" gate="G$1" pin="A"/>
-<wire x1="15.24" y1="76.2" x2="15.24" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="PF3" gate="G$1" pin="A"/>
+<wire x1="15.24" y1="73.66" x2="15.24" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
-<pinref part="PA1" gate="G$1" pin="A"/>
+<pinref part="PF2" gate="G$1" pin="A"/>
 <wire x1="25.4" y1="76.2" x2="25.4" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -7131,22 +7140,12 @@ http://www.tag-connect.com</description>
 <label x="38.1" y="93.98" size="1.778" layer="95"/>
 <pinref part="U$3" gate="G$1" pin="PA0"/>
 </segment>
-<segment>
-<wire x1="15.24" y1="101.6" x2="15.24" y2="86.36" width="0.1524" layer="91"/>
-<label x="15.24" y="99.06" size="1.778" layer="95" rot="R90"/>
-<pinref part="R2" gate="G$1" pin="1"/>
-</segment>
 </net>
 <net name="PA1" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="PA1"/>
 <wire x1="157.48" y1="116.84" x2="152.4" y2="116.84" width="0.1524" layer="91"/>
 <label x="152.4" y="116.84" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="25.4" y1="101.6" x2="25.4" y2="86.36" width="0.1524" layer="91"/>
-<label x="25.4" y="99.06" size="1.778" layer="95" rot="R90"/>
-<pinref part="R3" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <wire x1="50.8" y1="91.44" x2="38.1" y2="91.44" width="0.1524" layer="91"/>
