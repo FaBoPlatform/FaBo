@@ -30728,8 +30728,8 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="J1" library="FaBo-Template" deviceset="FABO_BRICK_3PIN" device=""/>
 <part name="Q1" library="FaBo-etc" deviceset="L-51ROPT1D1" device=""/>
 <part name="Q2" library="FaBo-etc" deviceset="NPN" device="-2SC1815"/>
-<part name="R1" library="FaBo-etc" deviceset="RES" device="-PTH-REGULAR"/>
-<part name="R2" library="FaBo-etc" deviceset="RES" device="-PTH-REGULAR"/>
+<part name="R1" library="FaBo-etc" deviceset="RES" device="-PTH-REGULAR" value="1k"/>
+<part name="R2" library="FaBo-etc" deviceset="RES" device="-PTH-REGULAR" value="10k"/>
 <part name="GND1" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="GND2" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="U$2" library="FaBo-etc" deviceset="VCC" device=""/>
