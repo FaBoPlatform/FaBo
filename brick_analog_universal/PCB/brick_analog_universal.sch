@@ -30565,7 +30565,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <sheets>
 <sheet>
 <plain>
-<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">Beta</text>
+<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.0</text>
 </plain>
 <instances>
 <instance part="U$2" gate="G$1" x="0" y="0"/>

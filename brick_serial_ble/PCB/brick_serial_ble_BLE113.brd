@@ -127,7 +127,7 @@
 </layers>
 <board>
 <plain>
-<text x="5.08" y="8.255" size="1.016" layer="21" font="vector" ratio="12" rot="R90">Rev. 1.0</text>
+<text x="5.08" y="8.255" size="1.016" layer="21" font="vector" ratio="12" rot="R90">Rev. 1.0.1</text>
 <text x="3.683" y="8.255" size="1.27" layer="21" font="vector" ratio="12" rot="R90">BLE</text>
 <text x="13.97" y="26.416" size="1.016" layer="22" font="vector" ratio="12" rot="MR0" align="top-center">MADE IN JAPAN</text>
 <rectangle x1="11.43" y1="33.02" x2="29.21" y2="40.64" layer="41"/>

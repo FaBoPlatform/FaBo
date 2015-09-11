@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -129,7 +129,7 @@
 <plain>
 <text x="12.7" y="26.67" size="1.016" layer="21" font="vector" ratio="12" align="bottom-center">MADE IN JAPAN</text>
 <text x="3.81" y="6.985" size="1.27" layer="21" font="vector" ratio="12" rot="R90">IR Receive</text>
-<text x="5.08" y="6.985" size="1.016" layer="21" font="vector" ratio="12" rot="R90">Rev.Beta</text>
+<text x="5.08" y="6.985" size="1.016" layer="21" font="vector" ratio="12" rot="R90">Rev.1.0.0</text>
 </plain>
 <libraries>
 <library name="FaBo-Template">

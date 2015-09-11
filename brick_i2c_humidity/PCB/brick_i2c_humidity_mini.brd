@@ -127,6 +127,7 @@
 </layers>
 <board>
 <plain>
+<text x="5.0546" y="0.8636" size="0.6096" layer="22" font="vector" ratio="12" rot="MR0" align="bottom-center">Rev.1.0.0</text>
 </plain>
 <libraries>
 <library name="GClue-Capacitor">

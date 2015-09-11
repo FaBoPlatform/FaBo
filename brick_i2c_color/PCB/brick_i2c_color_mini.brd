@@ -128,6 +128,7 @@
 <board>
 <plain>
 <text x="3.2512" y="5.08" size="0.4826" layer="22" font="vector" ratio="12" rot="SMR270" align="bottom-center">MADE IN JAPAN</text>
+<text x="5.08" y="0.889" size="0.6096" layer="22" font="vector" ratio="12" rot="MR0" align="bottom-center">Rev.1.0.0</text>
 </plain>
 <libraries>
 <library name="GClue-Capacitor">

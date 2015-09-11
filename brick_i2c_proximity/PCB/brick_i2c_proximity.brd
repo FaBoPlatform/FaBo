@@ -129,7 +129,7 @@
 <plain>
 <text x="13.97" y="31.75" size="1.016" layer="21" font="vector" ratio="12" align="bottom-center">MADE IN JAPAN</text>
 <text x="3.81" y="10.16" size="1.27" layer="21" font="vector" ratio="12" rot="R90">Proximity</text>
-<text x="5.08" y="10.16" size="1.016" layer="21" font="vector" ratio="12" rot="R90">Rev.Beta</text>
+<text x="5.08" y="10.16" size="1.016" layer="21" font="vector" ratio="12" rot="R90">Rev.1.0.0</text>
 </plain>
 <libraries>
 <library name="FaBo-etc">

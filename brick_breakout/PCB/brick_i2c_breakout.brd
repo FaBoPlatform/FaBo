@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -128,7 +128,7 @@
 <board>
 <plain>
 <text x="1.905" y="4.445" size="1.016" layer="21" font="vector" ratio="12" rot="R90">I2C BREAKOUT</text>
-<text x="17.145" y="6.35" size="1.016" layer="22" font="vector" ratio="12" rot="MR270" align="bottom-center">Rev.Beta</text>
+<text x="17.145" y="6.35" size="1.016" layer="22" font="vector" ratio="12" rot="MR270" align="bottom-center">Rev.1.0.0</text>
 <text x="8.89" y="17.78" size="1.016" layer="22" font="vector" ratio="12" rot="MR0" align="bottom-center">MADE IN JAPAN</text>
 </plain>
 <libraries>

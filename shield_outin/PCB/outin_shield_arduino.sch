@@ -25161,7 +25161,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <sheets>
 <sheet>
 <plain>
-<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">Beta4</text>
+<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.0</text>
 <text x="233.426" y="6.35" size="1.4224" layer="94" align="bottom-center">MADE IN JAPAN</text>
 <text x="12.7" y="58.42" size="1.778" layer="97">RESET</text>
 </plain>

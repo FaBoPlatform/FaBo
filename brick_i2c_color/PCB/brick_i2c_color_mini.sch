@@ -30526,7 +30526,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <sheets>
 <sheet>
 <plain>
-<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0</text>
+<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.0</text>
 </plain>
 <instances>
 <instance part="S1" gate="G$1" x="144.78" y="101.6"/>

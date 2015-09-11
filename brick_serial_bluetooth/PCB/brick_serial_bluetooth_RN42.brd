@@ -128,7 +128,7 @@
 <board>
 <plain>
 <text x="3.81" y="7.62" size="1.27" layer="21" font="vector" ratio="12" rot="R90">BLUETOOTH</text>
-<text x="5.08" y="7.62" size="1.016" layer="21" font="vector" ratio="12" rot="R90">Rev.1.0</text>
+<text x="5.08" y="7.62" size="1.016" layer="21" font="vector" ratio="12" rot="R90">Rev.1.0.1</text>
 <text x="13.97" y="32.766" size="1.27" layer="21" font="vector" ratio="12" align="bottom-center">RN42</text>
 <text x="13.97" y="13.462" size="1.016" layer="21" font="vector" ratio="12" align="bottom-center">MADE IN JAPAN</text>
 </plain>

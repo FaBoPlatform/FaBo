@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -23962,7 +23962,7 @@ Standard 0603 ceramic capacitor</description>
 <sheets>
 <sheet>
 <plain>
-<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0</text>
+<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.0</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="0" y="0"/>

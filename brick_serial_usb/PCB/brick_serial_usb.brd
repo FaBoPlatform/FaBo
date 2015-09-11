@@ -130,7 +130,7 @@
 <text x="23.622" y="21.59" size="1.016" layer="21" font="vector" ratio="12" rot="R180" align="top-center">5V</text>
 <text x="23.622" y="11.938" size="1.016" layer="21" font="vector" ratio="12" rot="R180" align="bottom-center">3V3</text>
 <text x="3.81" y="9.525" size="1.27" layer="21" font="vector" ratio="12" rot="R90">USB Serial</text>
-<text x="5.08" y="9.525" size="1.016" layer="21" font="vector" ratio="12" rot="R90">Rev.1.0</text>
+<text x="5.08" y="9.525" size="1.016" layer="21" font="vector" ratio="12" rot="R90">Rev.1.0.1</text>
 <text x="13.462" y="14.224" size="1.016" layer="21" font="vector" ratio="12" rot="R180" align="bottom-center">MADE IN JAPAN</text>
 </plain>
 <libraries>
