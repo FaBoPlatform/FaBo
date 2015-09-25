@@ -96,6 +96,7 @@
 <layer number="153" name="FabDoc1" color="6" fill="1" visible="no" active="no"/>
 <layer number="154" name="FabDoc2" color="2" fill="1" visible="no" active="no"/>
 <layer number="155" name="FabDoc3" color="7" fill="15" visible="no" active="no"/>
+<layer number="160" name="O_Dim" color="12" fill="11" visible="yes" active="yes"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="1" visible="no" active="no"/>
@@ -135,27 +136,32 @@
 </packages>
 <symbols>
 <symbol name="A4L-LOC">
-<wire x1="256.54" y1="3.81" x2="256.54" y2="8.89" width="0.1016" layer="94"/>
-<wire x1="256.54" y1="8.89" x2="256.54" y2="13.97" width="0.1016" layer="94"/>
-<wire x1="256.54" y1="13.97" x2="256.54" y2="19.05" width="0.1016" layer="94"/>
-<wire x1="256.54" y1="19.05" x2="256.54" y2="24.13" width="0.1016" layer="94"/>
-<wire x1="161.29" y1="3.81" x2="161.29" y2="24.13" width="0.1016" layer="94"/>
-<wire x1="161.29" y1="24.13" x2="215.265" y2="24.13" width="0.1016" layer="94"/>
-<wire x1="215.265" y1="24.13" x2="256.54" y2="24.13" width="0.1016" layer="94"/>
-<wire x1="246.38" y1="3.81" x2="246.38" y2="8.89" width="0.1016" layer="94"/>
-<wire x1="246.38" y1="8.89" x2="256.54" y2="8.89" width="0.1016" layer="94"/>
-<wire x1="246.38" y1="8.89" x2="215.265" y2="8.89" width="0.1016" layer="94"/>
-<wire x1="215.265" y1="8.89" x2="215.265" y2="3.81" width="0.1016" layer="94"/>
-<wire x1="215.265" y1="8.89" x2="215.265" y2="13.97" width="0.1016" layer="94"/>
-<wire x1="215.265" y1="13.97" x2="256.54" y2="13.97" width="0.1016" layer="94"/>
-<wire x1="215.265" y1="13.97" x2="215.265" y2="19.05" width="0.1016" layer="94"/>
-<wire x1="215.265" y1="19.05" x2="256.54" y2="19.05" width="0.1016" layer="94"/>
-<wire x1="215.265" y1="19.05" x2="215.265" y2="24.13" width="0.1016" layer="94"/>
-<text x="217.17" y="20.32" size="2.54" layer="94">&gt;DRAWING_NAME</text>
-<text x="217.17" y="10.16" size="2.286" layer="94">&gt;LAST_DATE_TIME</text>
-<text x="230.505" y="5.08" size="2.54" layer="94">&gt;SHEET</text>
-<text x="216.916" y="4.953" size="2.54" layer="94">Sheet:</text>
+<wire x1="256.54" y1="3.81" x2="256.54" y2="17.78" width="0.1016" layer="94"/>
+<wire x1="256.54" y1="17.78" x2="256.54" y2="27.94" width="0.1016" layer="94"/>
+<wire x1="161.29" y1="3.81" x2="161.29" y2="17.78" width="0.1016" layer="94"/>
+<wire x1="161.29" y1="17.78" x2="161.29" y2="22.86" width="0.1016" layer="94"/>
+<wire x1="161.29" y1="22.86" x2="161.29" y2="27.94" width="0.1016" layer="94"/>
+<wire x1="161.29" y1="27.94" x2="234.95" y2="27.94" width="0.1016" layer="94"/>
+<wire x1="234.95" y1="27.94" x2="256.54" y2="27.94" width="0.1016" layer="94"/>
+<wire x1="161.29" y1="22.86" x2="212.09" y2="22.86" width="0.1016" layer="94"/>
+<text x="172.72" y="24.13" size="2.54" layer="94">&gt;DRAWING_NAME</text>
+<text x="170.18" y="20.32" size="1.778" layer="94" align="center-left">&gt;LAST_DATE_TIME</text>
+<text x="223.52" y="20.32" size="1.778" layer="94" align="center-left">&gt;SHEET</text>
+<text x="213.36" y="20.32" size="1.778" layer="94" align="center-left">Sheet:</text>
 <frame x1="0" y1="0" x2="260.35" y2="179.07" columns="6" rows="4" layer="94"/>
+<text x="162.56" y="24.13" size="2.54" layer="94">Title:</text>
+<text x="162.56" y="20.32" size="1.778" layer="94" align="center-left">Date:</text>
+<text x="162.56" y="10.16" size="1.778" layer="94">Released under the Creative Commons</text>
+<text x="162.56" y="5.08" size="1.778" layer="94">https://creativecommons.org/licenses/by-sa/4.0/</text>
+<text x="236.22" y="26.67" size="2.1844" layer="94" align="top-left">REV:</text>
+<wire x1="212.09" y1="22.86" x2="234.95" y2="22.86" width="0.1016" layer="94"/>
+<wire x1="161.29" y1="17.78" x2="212.09" y2="17.78" width="0.1016" layer="94"/>
+<wire x1="212.09" y1="17.78" x2="234.95" y2="17.78" width="0.1016" layer="94"/>
+<wire x1="234.95" y1="17.78" x2="256.54" y2="17.78" width="0.1016" layer="94"/>
+<wire x1="234.95" y1="17.78" x2="234.95" y2="22.86" width="0.1016" layer="94"/>
+<text x="162.56" y="7.62" size="1.778" layer="94">Attribution-ShareAlike 4.0 License</text>
+<wire x1="234.95" y1="22.86" x2="234.95" y2="27.94" width="0.1016" layer="94"/>
+<wire x1="212.09" y1="17.78" x2="212.09" y2="22.86" width="0.1016" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -6333,7 +6339,105 @@ Source: www.kingbright.com</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="GClue-Beacon">
+<library name="TagConnect">
+<packages>
+<package name="TC2030-IDC">
+<smd name="2" x="-1.27" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
+<smd name="1" x="-1.27" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
+<smd name="4" x="0" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
+<smd name="3" x="0" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
+<smd name="6" x="1.27" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
+<smd name="5" x="1.27" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
+<rectangle x1="-1.27" y1="-0.635" x2="1.27" y2="0.635" layer="41"/>
+<hole x="-2.54" y="0" drill="0.9906"/>
+<hole x="2.54" y="1.016" drill="0.9906"/>
+<hole x="2.54" y="-1.016" drill="0.9906"/>
+<hole x="-2.54" y="2.54" drill="2.3749"/>
+<hole x="-2.54" y="-2.54" drill="2.3749"/>
+<hole x="0.635" y="2.54" drill="2.3749"/>
+<hole x="0.635" y="-2.54" drill="2.3749"/>
+<rectangle x1="-3.3147" y1="-5.14985" x2="-1.7653" y2="-2.54" layer="40"/>
+<rectangle x1="-0.1397" y1="-5.14985" x2="1.4097" y2="-2.54" layer="40"/>
+<rectangle x1="-3.3147" y1="2.54" x2="-1.7653" y2="5.14985" layer="40"/>
+<rectangle x1="-0.1397" y1="2.54" x2="1.4097" y2="5.14985" layer="40"/>
+<text x="-4.445" y="-2.54" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<text x="5.08" y="-2.54" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+</package>
+<package name="TC2030-IDC-NL">
+<smd name="2" x="-1.27" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
+<smd name="1" x="-1.27" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
+<smd name="4" x="0" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
+<smd name="3" x="0" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
+<smd name="6" x="1.27" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
+<smd name="5" x="1.27" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
+<rectangle x1="-1.27" y1="-0.635" x2="1.27" y2="0.635" layer="41"/>
+<hole x="-2.54" y="0" drill="0.9906"/>
+<hole x="2.54" y="1.016" drill="0.9906"/>
+<hole x="2.54" y="-1.016" drill="0.9906"/>
+<text x="-3.175" y="1.905" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-3.175" y="-3.175" size="1.27" layer="25">&gt;NAME</text>
+</package>
+</packages>
+<symbols>
+<symbol name="TC2030-IDC">
+<wire x1="12.7" y1="-5.08" x2="-10.16" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="-10.16" y1="5.08" x2="-10.16" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="12.7" y1="-5.08" x2="12.7" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="-10.16" y1="5.08" x2="12.7" y2="5.08" width="0.4064" layer="94"/>
+<text x="-3.81" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-3.81" y="5.842" size="1.778" layer="95">&gt;NAME</text>
+<pin name="VCC" x="15.24" y="-2.54" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="NRESET" x="15.24" y="0" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="GND" x="15.24" y="2.54" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="SWDIO" x="-12.7" y="-2.54" length="short" direction="pas" swaplevel="1"/>
+<pin name="SWCLK" x="-12.7" y="0" length="short" direction="pas" swaplevel="1"/>
+<pin name="SWO" x="-12.7" y="2.54" length="short" direction="pas" swaplevel="1"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="TC2030-IDC" prefix="TC">
+<description>Tag-Connect In Circuit Programming &amp; Debug Cable 6 Pin
+http://www.tag-connect.com</description>
+<gates>
+<gate name="A" symbol="TC2030-IDC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TC2030-IDC">
+<connects>
+<connect gate="A" pin="GND" pad="5"/>
+<connect gate="A" pin="NRESET" pad="3"/>
+<connect gate="A" pin="SWCLK" pad="4"/>
+<connect gate="A" pin="SWDIO" pad="2"/>
+<connect gate="A" pin="SWO" pad="6"/>
+<connect gate="A" pin="VCC" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-NL" package="TC2030-IDC-NL">
+<connects>
+<connect gate="A" pin="GND" pad="5"/>
+<connect gate="A" pin="NRESET" pad="3"/>
+<connect gate="A" pin="SWCLK" pad="4"/>
+<connect gate="A" pin="SWDIO" pad="2"/>
+<connect gate="A" pin="SWO" pad="6"/>
+<connect gate="A" pin="VCC" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="FaBo-Template">
+<description>&lt;h3&gt;FaBo Template&lt;/h3&gt;
+FaBo Bricks/Beacons/Breakouts&lt;br&gt;
+&lt;br&gt;
+Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;br&gt;
+https://creativecommons.org/licenses/by-sa/4.0/</description>
 <packages>
 <package name="SQUARE-TYPE2-TC2030">
 <wire x1="-30.757359375" y1="-20" x2="31.39445" y2="-20" width="0.4064" layer="20"/>
@@ -6349,8 +6453,8 @@ Source: www.kingbright.com</description>
 <hole x="-32" y="-17" drill="3"/>
 <hole x="32" y="-17" drill="3"/>
 <hole x="32" y="17" drill="3"/>
-<pad name="VCC" x="33" y="6.5" drill="0.9" shape="square"/>
-<pad name="GND" x="33" y="-6.5" drill="0.9" shape="square"/>
+<pad name="VCC" x="33" y="6.5" drill="1.1" shape="square"/>
+<pad name="GND" x="33" y="-6.5" drill="1.1" shape="square"/>
 <text x="31.5" y="4.5" size="1.27" layer="21" rot="R90">VCC</text>
 <text x="31.5" y="-8.75" size="1.27" layer="21" rot="R90">GND</text>
 <wire x1="32.5" y1="-15.5" x2="-24.5" y2="-15.5" width="0.127" layer="22"/>
@@ -10113,99 +10217,6 @@ Source: www.kingbright.com</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="TagConnect">
-<packages>
-<package name="TC2030-IDC">
-<smd name="2" x="-1.27" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
-<smd name="1" x="-1.27" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
-<smd name="4" x="0" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
-<smd name="3" x="0" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
-<smd name="6" x="1.27" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
-<smd name="5" x="1.27" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
-<rectangle x1="-1.27" y1="-0.635" x2="1.27" y2="0.635" layer="41"/>
-<hole x="-2.54" y="0" drill="0.9906"/>
-<hole x="2.54" y="1.016" drill="0.9906"/>
-<hole x="2.54" y="-1.016" drill="0.9906"/>
-<hole x="-2.54" y="2.54" drill="2.3749"/>
-<hole x="-2.54" y="-2.54" drill="2.3749"/>
-<hole x="0.635" y="2.54" drill="2.3749"/>
-<hole x="0.635" y="-2.54" drill="2.3749"/>
-<rectangle x1="-3.3147" y1="-5.14985" x2="-1.7653" y2="-2.54" layer="40"/>
-<rectangle x1="-0.1397" y1="-5.14985" x2="1.4097" y2="-2.54" layer="40"/>
-<rectangle x1="-3.3147" y1="2.54" x2="-1.7653" y2="5.14985" layer="40"/>
-<rectangle x1="-0.1397" y1="2.54" x2="1.4097" y2="5.14985" layer="40"/>
-<text x="-4.445" y="-2.54" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-<text x="5.08" y="-2.54" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-</package>
-<package name="TC2030-IDC-NL">
-<smd name="2" x="-1.27" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
-<smd name="1" x="-1.27" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
-<smd name="4" x="0" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
-<smd name="3" x="0" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
-<smd name="6" x="1.27" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
-<smd name="5" x="1.27" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
-<rectangle x1="-1.27" y1="-0.635" x2="1.27" y2="0.635" layer="41"/>
-<hole x="-2.54" y="0" drill="0.9906"/>
-<hole x="2.54" y="1.016" drill="0.9906"/>
-<hole x="2.54" y="-1.016" drill="0.9906"/>
-<text x="-3.175" y="1.905" size="1.27" layer="27">&gt;VALUE</text>
-<text x="-3.175" y="-3.175" size="1.27" layer="25">&gt;NAME</text>
-</package>
-</packages>
-<symbols>
-<symbol name="TC2030-IDC">
-<wire x1="12.7" y1="-5.08" x2="-10.16" y2="-5.08" width="0.4064" layer="94"/>
-<wire x1="-10.16" y1="5.08" x2="-10.16" y2="-5.08" width="0.4064" layer="94"/>
-<wire x1="12.7" y1="-5.08" x2="12.7" y2="5.08" width="0.4064" layer="94"/>
-<wire x1="-10.16" y1="5.08" x2="12.7" y2="5.08" width="0.4064" layer="94"/>
-<text x="-3.81" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
-<text x="-3.81" y="5.842" size="1.778" layer="95">&gt;NAME</text>
-<pin name="VCC" x="15.24" y="-2.54" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="NRESET" x="15.24" y="0" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="GND" x="15.24" y="2.54" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="SWDIO" x="-12.7" y="-2.54" length="short" direction="pas" swaplevel="1"/>
-<pin name="SWCLK" x="-12.7" y="0" length="short" direction="pas" swaplevel="1"/>
-<pin name="SWO" x="-12.7" y="2.54" length="short" direction="pas" swaplevel="1"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="TC2030-IDC" prefix="TC">
-<description>Tag-Connect In Circuit Programming &amp; Debug Cable 6 Pin
-http://www.tag-connect.com</description>
-<gates>
-<gate name="A" symbol="TC2030-IDC" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="TC2030-IDC">
-<connects>
-<connect gate="A" pin="GND" pad="5"/>
-<connect gate="A" pin="NRESET" pad="3"/>
-<connect gate="A" pin="SWCLK" pad="4"/>
-<connect gate="A" pin="SWDIO" pad="2"/>
-<connect gate="A" pin="SWO" pad="6"/>
-<connect gate="A" pin="VCC" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-NL" package="TC2030-IDC-NL">
-<connects>
-<connect gate="A" pin="GND" pad="5"/>
-<connect gate="A" pin="NRESET" pad="3"/>
-<connect gate="A" pin="SWCLK" pad="4"/>
-<connect gate="A" pin="SWDIO" pad="2"/>
-<connect gate="A" pin="SWO" pad="6"/>
-<connect gate="A" pin="VCC" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -10222,27 +10233,27 @@ http://www.tag-connect.com</description>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="C2" library="adafruit" deviceset="C-US" device="C0603" value="12pf"/>
-<part name="C3" library="adafruit" deviceset="C-US" device="C0603" value="12pf"/>
+<part name="C2" library="adafruit" deviceset="C-US" device="C0603"/>
+<part name="C3" library="adafruit" deviceset="C-US" device="C0603"/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="R1" library="adafruit" deviceset="R-US_" device="R0603" value="10K"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
-<part name="C4" library="adafruit" deviceset="C-US" device="C0603" value="0.1uf"/>
-<part name="C1" library="adafruit" deviceset="C-US" device="C0603" value="0.1uf"/>
+<part name="C4" library="adafruit" deviceset="C-US" device="C0603"/>
+<part name="C1" library="adafruit" deviceset="C-US" device="C0603"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
-<part name="32.768LHZ" library="crystal" deviceset="FC-12M" device=""/>
+<part name="CR" library="crystal" deviceset="FC-12M" device="" value=""/>
 <part name="P0_0" library="led" deviceset="LED" device="CHIP-LED0603"/>
 <part name="U$6" library="gclue-test" deviceset="SWICTH-4P(KMR2)" device=""/>
 <part name="R2" library="adafruit" deviceset="R-US_" device="R0603"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
-<part name="U$5" library="GClue-Beacon" deviceset="SQUARE-TYPE2-TC2030" device=""/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
 <part name="TC1" library="TagConnect" deviceset="TC2030-IDC" device="-NL" value=""/>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
+<part name="U$2" library="FaBo-Template" deviceset="SQUARE-TYPE2-TC2030" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10270,18 +10281,18 @@ http://www.tag-connect.com</description>
 <instance part="C1" gate="G$1" x="106.68" y="111.76"/>
 <instance part="GND8" gate="1" x="106.68" y="99.06"/>
 <instance part="GND9" gate="1" x="165.1" y="35.56"/>
-<instance part="32.768LHZ" gate="G$1" x="129.54" y="99.06" rot="R90"/>
+<instance part="CR" gate="G$1" x="129.54" y="99.06" rot="R90"/>
 <instance part="P0_0" gate="G$1" x="33.02" y="81.28"/>
 <instance part="U$6" gate="G$1" x="30.48" y="137.16"/>
-<instance part="R2" gate="G$1" x="33.02" y="93.98" rot="R90"/>
+<instance part="R2" gate="G$1" x="33.02" y="96.52" rot="R90"/>
 <instance part="GND6" gate="1" x="33.02" y="66.04"/>
-<instance part="U$5" gate="G$1" x="12.7" y="30.48"/>
 <instance part="GND10" gate="1" x="27.94" y="20.32"/>
 <instance part="+3V4" gate="G$1" x="27.94" y="40.64"/>
 <instance part="TC1" gate="A" x="86.36" y="50.8"/>
 <instance part="+3V3" gate="G$1" x="132.08" y="53.34"/>
 <instance part="GND1" gate="1" x="58.42" y="45.72"/>
 <instance part="GND4" gate="1" x="30.48" y="124.46"/>
+<instance part="U$2" gate="G$1" x="12.7" y="30.48"/>
 </instances>
 <busses>
 </busses>
@@ -10341,10 +10352,10 @@ http://www.tag-connect.com</description>
 <junction x="165.1" y="43.18"/>
 </segment>
 <segment>
-<pinref part="U$5" gate="G$1" pin="GND"/>
 <wire x1="20.32" y1="27.94" x2="27.94" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="27.94" x2="27.94" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="GND10" gate="1" pin="GND"/>
+<pinref part="U$2" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="TC1" gate="A" pin="SWO"/>
@@ -10419,10 +10430,10 @@ http://www.tag-connect.com</description>
 <junction x="165.1" y="55.88"/>
 </segment>
 <segment>
-<pinref part="U$5" gate="G$1" pin="VCC"/>
 <wire x1="20.32" y1="33.02" x2="27.94" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="33.02" x2="27.94" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="+3V4" gate="G$1" pin="+3V3"/>
+<pinref part="U$2" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
 <pinref part="TC1" gate="A" pin="VCC"/>
@@ -10439,7 +10450,7 @@ http://www.tag-connect.com</description>
 <wire x1="129.54" y1="101.6" x2="129.54" y2="104.14" width="0.1524" layer="91"/>
 <junction x="129.54" y="104.14"/>
 <pinref part="C2" gate="G$1" pin="2"/>
-<pinref part="32.768LHZ" gate="G$1" pin="2"/>
+<pinref part="CR" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -10453,7 +10464,7 @@ http://www.tag-connect.com</description>
 <junction x="129.54" y="93.98"/>
 <pinref part="C3" gate="G$1" pin="2"/>
 <junction x="124.46" y="93.98"/>
-<pinref part="32.768LHZ" gate="G$1" pin="1"/>
+<pinref part="CR" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="P0_00" class="0">
@@ -10593,7 +10604,7 @@ http://www.tag-connect.com</description>
 <wire x1="30.48" y1="144.78" x2="40.64" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="144.78" x2="40.64" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="144.78" x2="30.48" y2="152.4" width="0.1524" layer="91"/>
-<label x="30.48" y="152.4" size="1.778" layer="95"/>
+<label x="33.02" y="152.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="P0_21" class="0">
@@ -10660,7 +10671,7 @@ http://www.tag-connect.com</description>
 </segment>
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="33.02" y1="99.06" x2="33.02" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="101.6" x2="33.02" y2="109.22" width="0.1524" layer="91"/>
 <label x="33.02" y="109.22" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -10675,7 +10686,7 @@ http://www.tag-connect.com</description>
 <segment>
 <pinref part="P0_0" gate="G$1" pin="A"/>
 <pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="33.02" y1="83.82" x2="33.02" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="83.82" x2="33.02" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

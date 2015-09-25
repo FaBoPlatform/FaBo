@@ -6532,19 +6532,19 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="C2" library="adafruit" deviceset="C-US" device="C0603" value="12pf"/>
-<part name="C3" library="adafruit" deviceset="C-US" device="C0603" value="12pf"/>
+<part name="C2" library="adafruit" deviceset="C-US" device="C0603"/>
+<part name="C3" library="adafruit" deviceset="C-US" device="C0603"/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
-<part name="R1" library="adafruit" deviceset="R-US_" device="R0603" value="10K"/>
+<part name="R1" library="adafruit" deviceset="R-US_" device="R0603"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
-<part name="C4" library="adafruit" deviceset="C-US" device="C0603" value="0.1uf"/>
-<part name="C1" library="adafruit" deviceset="C-US" device="C0603" value="0.1uf"/>
+<part name="C4" library="adafruit" deviceset="C-US" device="C0603"/>
+<part name="C1" library="adafruit" deviceset="C-US" device="C0603"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
-<part name="32.768LHZ" library="crystal" deviceset="FC-12M" device=""/>
+<part name="CR" library="crystal" deviceset="FC-12M" device="" value=""/>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
-<part name="C5" library="adafruit" deviceset="C-US" device="C0603" value="0.1uf"/>
+<part name="C5" library="adafruit" deviceset="C-US" device="C0603"/>
 <part name="P0_0" library="led" deviceset="LED" device="CHIP-LED0603"/>
 <part name="U$5" library="gclue-test" deviceset="SWICTH-4P(KMR2)" device=""/>
 <part name="GND13" library="SparkFun" deviceset="GND" device=""/>
@@ -6581,7 +6581,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <instance part="C1" gate="G$1" x="104.14" y="104.14"/>
 <instance part="GND8" gate="1" x="104.14" y="93.98"/>
 <instance part="GND9" gate="1" x="162.56" y="30.48"/>
-<instance part="32.768LHZ" gate="G$1" x="127" y="93.98" rot="R90"/>
+<instance part="CR" gate="G$1" x="127" y="93.98" rot="R90"/>
 <instance part="+3V4" gate="G$1" x="86.36" y="149.86"/>
 <instance part="GND10" gate="1" x="55.88" y="124.46"/>
 <instance part="C5" gate="G$1" x="71.12" y="132.08" rot="R90"/>
@@ -6753,7 +6753,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="127" y1="96.52" x2="127" y2="99.06" width="0.1524" layer="91"/>
 <junction x="127" y="99.06"/>
 <pinref part="C2" gate="G$1" pin="2"/>
-<pinref part="32.768LHZ" gate="G$1" pin="2"/>
+<pinref part="CR" gate="G$1" pin="2"/>
 <pinref part="U$1" gate="G$1" pin="XL2"/>
 </segment>
 </net>
@@ -6767,7 +6767,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <junction x="127" y="88.9"/>
 <pinref part="C3" gate="G$1" pin="2"/>
 <junction x="121.92" y="88.9"/>
-<pinref part="32.768LHZ" gate="G$1" pin="1"/>
+<pinref part="CR" gate="G$1" pin="1"/>
 <pinref part="U$1" gate="G$1" pin="XL1"/>
 </segment>
 </net>
