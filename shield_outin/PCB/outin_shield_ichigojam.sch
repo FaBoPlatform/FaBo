@@ -30523,7 +30523,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="41.435" y1="-22.78" x2="41.435" y2="27.22" width="0" layer="160"/>
 <wire x1="-33.565" y1="-22.78" x2="-33.565" y2="27.22" width="0" layer="160"/>
 <text x="0" y="18.415" size="1.016" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
-<text x="14.605" y="-18.415" size="1.016" layer="21" font="vector" ratio="12" rot="R180" align="bottom-center">U</text>
+<text x="14.605" y="18.415" size="1.016" layer="21" font="vector" ratio="12" align="bottom-center">U</text>
 <pad name="P$1" x="-29.065" y="22.72" drill="3.5"/>
 <pad name="P$2" x="36.935" y="22.72" drill="3.5"/>
 <pad name="P$3" x="36.935" y="-18.28" drill="3.5"/>
