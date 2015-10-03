@@ -1,7 +1,7 @@
 #include <SoftwareSerial.h>
 
-int bluetoothRx = 11;  // RX-I pin of bluetooth mate, Arduino D11
-int bluetoothTx = 10;  // TX-O pin of bluetooth mate, Arduino D10
+int bluetoothRx = 10;  // RX-I pin of bluetooth mate, Arduino D11
+int bluetoothTx = 11;  // TX-O pin of bluetooth mate, Arduino D10
 
 SoftwareSerial mySerial(bluetoothRx, bluetoothTx); // RX, TX
 
