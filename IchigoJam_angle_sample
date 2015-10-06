@@ -1,0 +1,5 @@
+100 'ANGLE_sample_program
+110 CLS
+120 LOCATE 10,8:PRINT "Digital =";IN(2)
+130 LOCATE 10,9:PRINT "Analog  =";ANA(2);"  "
+140 GOTO 120
