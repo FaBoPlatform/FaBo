@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -128,7 +128,7 @@
 <board>
 <plain>
 <text x="3.81" y="8.89" size="1.27" layer="21" font="vector" ratio="12" rot="R90">LIGHT</text>
-<text x="5.08" y="8.89" size="1.016" layer="21" font="vector" ratio="12" rot="R90">Rev.1.0</text>
+<text x="5.08" y="8.89" size="1.016" layer="21" font="vector" ratio="12" rot="R90">Rev.1.0.0</text>
 <text x="12.7" y="25.4" size="1.016" layer="21" font="vector" ratio="12" align="bottom-center">MADE IN JAPAN</text>
 </plain>
 <libraries>
@@ -162,10 +162,14 @@ We've spent an enormous amount of time creating and checking these footprints an
 </package>
 </packages>
 </library>
-<library name="Gclue">
-<description>&lt;h3&gt;GClue, Inc.&lt;/h3&gt;</description>
+<library name="FaBo-Template">
+<description>&lt;h3&gt;FaBo Template&lt;/h3&gt;
+FaBo Bricks/Beacons/Breakouts&lt;br&gt;
+&lt;br&gt;
+Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;br&gt;
+https://creativecommons.org/licenses/by-sa/4.0/</description>
 <packages>
-<package name="BRICK_3PIN">
+<package name="FABO_BRICK_3PIN">
 <pad name="IN/OUT" x="-2.54" y="-8.89" drill="1" diameter="1.778" shape="octagon" rot="R90"/>
 <pad name="VCC" x="0" y="-8.89" drill="1" diameter="1.778" shape="octagon" rot="R90"/>
 <pad name="GND" x="2.54" y="-8.89" drill="1" diameter="1.6764" shape="square" rot="R90"/>
@@ -204,6 +208,15 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="-3.81" y1="-8.89" x2="-5.08" y2="-8.89" width="0.127" layer="21"/>
 <wire x1="5.08" y1="-8.89" x2="3.81" y2="-8.89" width="0.127" layer="21"/>
 </package>
+</packages>
+</library>
+<library name="FaBo-etc">
+<description>&lt;h3&gt;FaBo etc&lt;/h3&gt;
+etc/etc...&lt;br&gt;
+&lt;br&gt;
+Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;br&gt;
+https://creativecommons.org/licenses/by-sa/4.0/</description>
+<packages>
 <package name="LOGO_OSHW_T_M">
 <rectangle x1="-2.413" y1="-3.9751" x2="-2.2479" y2="-3.9624" layer="21"/>
 <rectangle x1="-2.0447" y1="-3.9751" x2="-1.8796" y2="-3.9624" layer="21"/>
@@ -2245,24 +2258,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <rectangle x1="-0.3556" y1="2.3368" x2="0.3429" y2="2.3495" layer="21"/>
 <rectangle x1="-0.3429" y1="2.3495" x2="0.3302" y2="2.3622" layer="21"/>
 </package>
-<package name="RES-AXL-REGULAR">
-<wire x1="-2.54" y1="0.762" x2="2.54" y2="0.762" width="0.2032" layer="21"/>
-<wire x1="2.54" y1="0.762" x2="2.54" y2="0" width="0.2032" layer="21"/>
-<wire x1="2.54" y1="0" x2="2.54" y2="-0.762" width="0.2032" layer="21"/>
-<wire x1="2.54" y1="-0.762" x2="-2.54" y2="-0.762" width="0.2032" layer="21"/>
-<wire x1="-2.54" y1="-0.762" x2="-2.54" y2="0" width="0.2032" layer="21"/>
-<wire x1="-2.54" y1="0" x2="-2.54" y2="0.762" width="0.2032" layer="21"/>
-<wire x1="2.54" y1="0" x2="2.794" y2="0" width="0.2032" layer="21"/>
-<wire x1="-2.54" y1="0" x2="-2.794" y2="0" width="0.2032" layer="21"/>
-<pad name="P$1" x="-3.81" y="0" drill="0.9" diameter="1.8796"/>
-<pad name="P$2" x="3.81" y="0" drill="0.9" diameter="1.8796"/>
-<text x="-2.032" y="-0.381" size="0.8128" layer="25" font="vector">&gt;NAME</text>
-<text x="-2.032" y="-2.54" size="0.8128" layer="27" font="vector">&gt;VALUE</text>
-</package>
-</packages>
-</library>
-<library name="FaBo">
-<packages>
 <package name="LOGO_FABO_M">
 <rectangle x1="-2.0391125" y1="-0.006096875" x2="-1.78308125" y2="0.006096875" layer="21"/>
 <rectangle x1="4.215384375" y1="-0.006096875" x2="4.386071875" y2="0.006096875" layer="21"/>
@@ -3939,6 +3934,18 @@ We've spent an enormous amount of time creating and checking these footprints an
 <rectangle x1="-4.587240625" y1="3.62711875" x2="-4.123946875" y2="3.6393125" layer="21"/>
 <rectangle x1="-4.489703125" y1="3.6393125" x2="-4.233671875" y2="3.6515" layer="21"/>
 </package>
+<package name="RES-AXL-REGULAR">
+<wire x1="-2.54" y1="0.762" x2="2.54" y2="0.762" width="0.127" layer="21"/>
+<wire x1="2.54" y1="0.762" x2="2.54" y2="0" width="0.127" layer="21"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-0.762" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-0.762" x2="-2.54" y2="-0.762" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-0.762" x2="-2.54" y2="0" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="0.762" width="0.127" layer="21"/>
+<pad name="P$1" x="-3.81" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$2" x="3.81" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<text x="-2.286" y="-0.508" size="0.8128" layer="25" font="vector" ratio="12">&gt;NAME</text>
+<text x="-2.286" y="-1.016" size="0.8128" layer="27" font="vector" ratio="12" align="top-left">&gt;VALUE</text>
+</package>
 </packages>
 </library>
 </libraries>
@@ -4135,33 +4142,25 @@ design rules under a new name.</description>
 <element name="U1" library="SparkFun" package="1X02" value="" x="11.43" y="21.59" smashed="yes">
 <attribute name="VALUE" x="10.16" y="18.415" size="1.27" layer="27"/>
 </element>
-<element name="J1" library="Gclue" package="BRICK_3PIN" value="" x="12.7" y="16.51"/>
-<element name="R1" library="Gclue" package="RES-AXL-REGULAR" value="10k" x="12.7" y="16.51" smashed="yes" rot="R180">
-<attribute name="NAME" x="14.732" y="16.891" size="0.8128" layer="25" font="vector" ratio="12" rot="R180"/>
-<attribute name="VALUE" x="12.7" y="18.415" size="0.8128" layer="27" font="vector" ratio="12" rot="R180"/>
-</element>
-<element name="U$4" library="Gclue" package="LOGO_OSHW_T_M" value="" x="21.59" y="12.7"/>
-<element name="U$2" library="FaBo" package="LOGO_FABO_M" value="" x="12.7" y="26.67"/>
+<element name="J1" library="FaBo-Template" package="FABO_BRICK_3PIN" value="" x="12.7" y="16.51"/>
+<element name="U$2" library="FaBo-etc" package="LOGO_OSHW_T_M" value="" x="21.59" y="12.7"/>
+<element name="U$3" library="FaBo-etc" package="LOGO_FABO_M" value="" x="12.7" y="26.67"/>
+<element name="R1" library="FaBo-etc" package="RES-AXL-REGULAR" value="10k" x="12.7" y="13.97" rot="R180"/>
 </elements>
 <signals>
-<signal name="N$1">
-<contactref element="J1" pad="VCC"/>
-<contactref element="R1" pad="P$1"/>
-<wire x1="12.7" y1="7.62" x2="12.7" y2="12.7" width="0.3048" layer="16"/>
-<wire x1="12.7" y1="12.7" x2="16.51" y2="16.51" width="0.3048" layer="16"/>
-</signal>
 <signal name="N$2">
 <contactref element="U1" pad="1"/>
-<contactref element="J1" pad="IN/OUT"/>
 <contactref element="R1" pad="P$2"/>
-<wire x1="8.89" y1="16.51" x2="8.89" y2="8.89" width="0.3048" layer="16"/>
-<wire x1="8.89" y1="8.89" x2="10.16" y2="7.62" width="0.3048" layer="16"/>
-<wire x1="8.89" y1="16.51" x2="8.89" y2="19.05" width="0.3048" layer="16"/>
-<wire x1="8.89" y1="19.05" x2="11.43" y2="21.59" width="0.3048" layer="16"/>
+<contactref element="J1" pad="IN/OUT"/>
+<wire x1="10.16" y1="7.62" x2="10.16" y2="11.43" width="0.4064" layer="16"/>
+<wire x1="10.16" y1="11.43" x2="8.89" y2="12.7" width="0.4064" layer="16"/>
+<wire x1="8.89" y1="12.7" x2="8.89" y2="13.97" width="0.4064" layer="16"/>
+<wire x1="8.89" y1="13.97" x2="8.89" y2="16.51" width="0.4064" layer="16"/>
+<wire x1="8.89" y1="16.51" x2="11.43" y2="19.05" width="0.4064" layer="16"/>
+<wire x1="11.43" y1="19.05" x2="11.43" y2="21.59" width="0.4064" layer="16"/>
 </signal>
 <signal name="GND">
 <contactref element="U1" pad="2"/>
-<contactref element="J1" pad="GND"/>
 <polygon width="0.4064" layer="16" spacing="0.4064">
 <vertex x="-1.27" y="-1.27"/>
 <vertex x="26.67" y="-1.27"/>
@@ -4174,6 +4173,14 @@ design rules under a new name.</description>
 <vertex x="26.67" y="34.29"/>
 <vertex x="-1.27" y="34.29"/>
 </polygon>
+<contactref element="J1" pad="GND"/>
+</signal>
+<signal name="N$1">
+<contactref element="R1" pad="P$1"/>
+<contactref element="J1" pad="VCC"/>
+<wire x1="16.51" y1="13.97" x2="16.51" y2="12.7" width="0.4064" layer="16"/>
+<wire x1="16.51" y1="12.7" x2="12.7" y2="8.89" width="0.4064" layer="16"/>
+<wire x1="12.7" y1="8.89" x2="12.7" y2="7.62" width="0.4064" layer="16"/>
 </signal>
 </signals>
 </board>
