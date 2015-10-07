@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -151,11 +151,6 @@
 <smd name="SDA" x="4.8" y="3.24" dx="1.2" dy="0.6" layer="1"/>
 <smd name="VDD" x="4.8" y="4.51" dx="1.2" dy="0.6" layer="1"/>
 <text x="-2.5" y="5.9" size="0.6096" layer="21">PCF8574T</text>
-</package>
-<package name="RESISTOR_0603">
-<smd name="P$1" x="-0.75" y="0" dx="0.8" dy="0.8" layer="1"/>
-<smd name="P$2" x="0.75" y="0" dx="0.8" dy="0.8" layer="1"/>
-<text x="-0.762" y="0.762" size="0.3048" layer="25">&gt;NAME</text>
 </package>
 <package name="LOGO_OSHW_T_L">
 <rectangle x1="-3.616325" y1="-5.965825" x2="-3.368675" y2="-5.946775" layer="21"/>
@@ -6304,18 +6299,6 @@
 <wire x1="5.08" y1="-15.24" x2="5.08" y2="12.7" width="0.254" layer="94"/>
 <wire x1="5.08" y1="12.7" x2="-7.62" y2="12.7" width="0.254" layer="94"/>
 <text x="-5.08" y="10.16" size="1.4224" layer="94">PCF8574T</text>
-</symbol>
-<symbol name="REGISTOR_0603">
-<pin name="1" x="-5.08" y="0" length="short"/>
-<pin name="2" x="5.08" y="0" length="short" rot="R180"/>
-<wire x1="-2.54" y1="0" x2="-2.032" y2="-0.762" width="0.254" layer="94"/>
-<wire x1="-2.032" y1="-0.762" x2="-1.27" y2="0.762" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="0.762" x2="-0.508" y2="-0.762" width="0.254" layer="94"/>
-<wire x1="-0.508" y1="-0.762" x2="0.254" y2="0.762" width="0.254" layer="94"/>
-<wire x1="0.254" y1="0.762" x2="1.016" y2="-0.762" width="0.254" layer="94"/>
-<wire x1="1.016" y1="-0.762" x2="1.778" y2="0.762" width="0.254" layer="94"/>
-<wire x1="1.778" y1="0.762" x2="2.54" y2="0" width="0.254" layer="94"/>
-<text x="-2.54" y="2.54" size="1.27" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="A4L-LOC">
 <wire x1="256.54" y1="3.81" x2="256.54" y2="8.89" width="0.1016" layer="94"/>
@@ -14748,22 +14731,6 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="RESISTOR_0603">
-<gates>
-<gate name="G$1" symbol="REGISTOR_0603" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="RESISTOR_0603">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="A4L-LOC">
 <description>FRAME A4</description>
 <gates>
@@ -22184,8 +22151,6 @@ W = angled&lt;p&gt;
 <part name="TX33C" library="adafruit" deviceset="TRIMPOT" device="TC33X"/>
 <part name="P+4" library="supply1" deviceset="VCC" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
-<part name="U$3" library="gclue" deviceset="RESISTOR_0603" device=""/>
-<part name="P+5" library="supply1" deviceset="VCC" device=""/>
 <part name="T1" library="transistor" deviceset="BC850" device="" value="."/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="U$2" library="gclue" deviceset="A4L-LOC" device=""/>
@@ -22205,14 +22170,12 @@ W = angled&lt;p&gt;
 <instance part="P+2" gate="VCC" x="167.64" y="119.38"/>
 <instance part="GND2" gate="1" x="119.38" y="96.52"/>
 <instance part="GND3" gate="1" x="119.38" y="114.3"/>
-<instance part="LCD" gate="A" x="78.74" y="81.28" rot="R180"/>
+<instance part="LCD" gate="A" x="81.28" y="81.28" rot="R180"/>
 <instance part="GND4" gate="1" x="99.06" y="96.52"/>
 <instance part="P+3" gate="VCC" x="109.22" y="96.52"/>
 <instance part="TX33C" gate="G$1" x="106.68" y="134.62" rot="R270"/>
 <instance part="P+4" gate="VCC" x="124.46" y="139.7"/>
 <instance part="GND6" gate="1" x="86.36" y="129.54"/>
-<instance part="U$3" gate="G$1" x="147.32" y="132.08"/>
-<instance part="P+5" gate="VCC" x="132.08" y="137.16"/>
 <instance part="T1" gate="G$1" x="180.34" y="106.68"/>
 <instance part="GND5" gate="1" x="182.88" y="91.44"/>
 <instance part="U$2" gate="G$1" x="0" y="0"/>
@@ -22253,7 +22216,7 @@ W = angled&lt;p&gt;
 </segment>
 <segment>
 <pinref part="LCD" gate="A" pin="14"/>
-<wire x1="96.52" y1="96.52" x2="81.28" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="96.52" x2="83.82" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="96.52" x2="96.52" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="96.52" y1="99.06" x2="99.06" y2="99.06" width="0.1524" layer="91"/>
@@ -22277,7 +22240,7 @@ W = angled&lt;p&gt;
 </segment>
 <segment>
 <pinref part="LCD" gate="A" pin="13"/>
-<wire x1="81.28" y1="93.98" x2="109.22" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="93.98" x2="109.22" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="P+3" gate="VCC" pin="VCC"/>
 </segment>
 <segment>
@@ -22285,12 +22248,6 @@ W = angled&lt;p&gt;
 <pinref part="P+4" gate="VCC" pin="VCC"/>
 <wire x1="111.76" y1="134.62" x2="124.46" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="134.62" x2="124.46" y2="137.16" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U$3" gate="G$1" pin="1"/>
-<pinref part="P+5" gate="VCC" pin="VCC"/>
-<wire x1="142.24" y1="132.08" x2="132.08" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="132.08" x2="132.08" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -22320,7 +22277,7 @@ W = angled&lt;p&gt;
 <net name="LEVEL" class="0">
 <segment>
 <pinref part="LCD" gate="A" pin="12"/>
-<wire x1="81.28" y1="91.44" x2="93.98" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="91.44" x2="93.98" y2="91.44" width="0.1524" layer="91"/>
 <label x="93.98" y="91.44" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -22332,7 +22289,7 @@ W = angled&lt;p&gt;
 <net name="DB7" class="0">
 <segment>
 <pinref part="LCD" gate="A" pin="1"/>
-<wire x1="81.28" y1="63.5" x2="93.98" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="63.5" x2="93.98" y2="63.5" width="0.1524" layer="91"/>
 <label x="93.98" y="63.5" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -22344,7 +22301,7 @@ W = angled&lt;p&gt;
 <net name="DB6" class="0">
 <segment>
 <pinref part="LCD" gate="A" pin="2"/>
-<wire x1="81.28" y1="66.04" x2="93.98" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="66.04" x2="93.98" y2="66.04" width="0.1524" layer="91"/>
 <label x="93.98" y="66.04" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -22356,7 +22313,7 @@ W = angled&lt;p&gt;
 <net name="DB5" class="0">
 <segment>
 <pinref part="LCD" gate="A" pin="3"/>
-<wire x1="81.28" y1="68.58" x2="93.98" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="68.58" x2="93.98" y2="68.58" width="0.1524" layer="91"/>
 <label x="93.98" y="68.58" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -22368,7 +22325,7 @@ W = angled&lt;p&gt;
 <net name="DB4" class="0">
 <segment>
 <pinref part="LCD" gate="A" pin="4"/>
-<wire x1="81.28" y1="71.12" x2="93.98" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="71.12" x2="93.98" y2="71.12" width="0.1524" layer="91"/>
 <label x="93.98" y="71.12" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -22380,35 +22337,35 @@ W = angled&lt;p&gt;
 <net name="DB3" class="0">
 <segment>
 <pinref part="LCD" gate="A" pin="5"/>
-<wire x1="81.28" y1="73.66" x2="93.98" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="73.66" x2="93.98" y2="73.66" width="0.1524" layer="91"/>
 <label x="93.98" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DB2" class="0">
 <segment>
 <pinref part="LCD" gate="A" pin="6"/>
-<wire x1="81.28" y1="76.2" x2="93.98" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="76.2" x2="93.98" y2="76.2" width="0.1524" layer="91"/>
 <label x="93.98" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DB1" class="0">
 <segment>
 <pinref part="LCD" gate="A" pin="7"/>
-<wire x1="81.28" y1="78.74" x2="93.98" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="78.74" x2="93.98" y2="78.74" width="0.1524" layer="91"/>
 <label x="93.98" y="78.74" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DB0" class="0">
 <segment>
 <pinref part="LCD" gate="A" pin="8"/>
-<wire x1="81.28" y1="81.28" x2="93.98" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="81.28" x2="93.98" y2="81.28" width="0.1524" layer="91"/>
 <label x="93.98" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="E" class="0">
 <segment>
 <pinref part="LCD" gate="A" pin="9"/>
-<wire x1="81.28" y1="83.82" x2="93.98" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="83.82" x2="93.98" y2="83.82" width="0.1524" layer="91"/>
 <label x="93.98" y="83.82" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -22420,7 +22377,7 @@ W = angled&lt;p&gt;
 <net name="R/W" class="0">
 <segment>
 <pinref part="LCD" gate="A" pin="10"/>
-<wire x1="81.28" y1="86.36" x2="93.98" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="86.36" x2="93.98" y2="86.36" width="0.1524" layer="91"/>
 <label x="93.98" y="86.36" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -22432,7 +22389,7 @@ W = angled&lt;p&gt;
 <net name="RS" class="0">
 <segment>
 <pinref part="LCD" gate="A" pin="11"/>
-<wire x1="81.28" y1="88.9" x2="93.98" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="88.9" x2="93.98" y2="88.9" width="0.1524" layer="91"/>
 <label x="93.98" y="88.9" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -22444,21 +22401,14 @@ W = angled&lt;p&gt;
 <net name="LIGHT" class="0">
 <segment>
 <pinref part="LCD" gate="A" pin="16"/>
-<wire x1="81.28" y1="101.6" x2="93.98" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="101.6" x2="93.98" y2="101.6" width="0.1524" layer="91"/>
 <label x="93.98" y="101.6" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="167.64" y1="134.62" x2="154.94" y2="134.62" width="0.1524" layer="91"/>
-<label x="154.94" y="134.62" size="1.778" layer="95"/>
-<wire x1="167.64" y1="132.08" x2="152.4" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="2"/>
-<wire x1="167.64" y1="132.08" x2="167.64" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LIGHT-" class="0">
 <segment>
 <pinref part="LCD" gate="A" pin="15"/>
-<wire x1="81.28" y1="99.06" x2="93.98" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="99.06" x2="93.98" y2="99.06" width="0.1524" layer="91"/>
 <label x="93.98" y="99.06" size="1.778" layer="95"/>
 </segment>
 <segment>
