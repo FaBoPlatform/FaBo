@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -163,9 +163,9 @@
 <text x="21.59" y="10.795" size="1.016" layer="21" font="vector" ratio="12" align="bottom-center">RESET</text>
 <text x="47.625" y="7.62" size="1.016" layer="21" font="vector" ratio="12" rot="R90" align="bottom-center">5V</text>
 <text x="47.625" y="16.51" size="1.016" layer="21" font="vector" ratio="12" rot="R90" align="bottom-center">3V3</text>
-<text x="50.038" y="44.577" size="1.4224" layer="21" font="vector" ratio="12" align="bottom-right">OUT/IN</text>
-<text x="50.038" y="42.545" size="1.4224" layer="21" font="vector" ratio="12" align="bottom-right">Shield</text>
-<text x="1.016" y="6.35" size="0.8128" layer="22" font="vector" ratio="12" rot="MR90" align="bottom-center">Rev. 1.0.1</text>
+<text x="50.038" y="46.577" size="1.4224" layer="21" font="vector" ratio="12" align="bottom-right">OUT/IN</text>
+<text x="50.038" y="44.545" size="1.4224" layer="21" font="vector" ratio="12" align="bottom-right">Shield</text>
+<text x="46.228" y="42.498" size="1.016" layer="21" font="vector" ratio="12" align="bottom-center">Rev. 1.0.1</text>
 <wire x1="19.05" y1="46.355" x2="19.05" y2="13.97" width="0.4064" layer="21"/>
 <wire x1="31.75" y1="46.355" x2="31.75" y2="13.97" width="0.4064" layer="21"/>
 <wire x1="19.05" y1="46.355" x2="19.05" y2="13.97" width="0.4064" layer="22"/>
