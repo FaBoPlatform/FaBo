@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -127,9 +127,9 @@
 </layers>
 <board>
 <plain>
-<text x="1.27" y="13.97" size="1.27" layer="21" font="vector" ratio="12">3AXIS
+<text x="5.08" y="10.16" size="1.27" layer="21" font="vector" ratio="12" rot="R90">3AXIS
 ADXL345</text>
-<text x="1.27" y="12.7" size="1.016" layer="21" font="vector" ratio="12">Rev.1.0</text>
+<text x="6.35" y="10.16" size="1.016" layer="21" font="vector" ratio="12" rot="R90">Rev.1.0.0</text>
 <text x="13.97" y="31.75" size="1.016" layer="21" font="vector" ratio="12" align="bottom-center">MADE IN JAPAN</text>
 </plain>
 <libraries>
@@ -2280,7 +2280,12 @@ ADXL345</text>
 </package>
 </packages>
 </library>
-<library name="FaBo">
+<library name="FaBo-etc">
+<description>&lt;h3&gt;FaBo etc&lt;/h3&gt;
+etc/etc...&lt;br&gt;
+&lt;br&gt;
+Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;br&gt;
+https://creativecommons.org/licenses/by-sa/4.0/</description>
 <packages>
 <package name="LOGO_FABO_M">
 <rectangle x1="-2.0391125" y1="-0.006096875" x2="-1.78308125" y2="0.006096875" layer="21"/>
@@ -4158,7 +4163,7 @@ design rules under a new name.</description>
 <element name="C1" library="GClue-Capacitor" package="0603" value="0.1uf" x="16.51" y="20.32" rot="R180"/>
 <element name="C2" library="GClue-Capacitor" package="0603" value="0.1uf" x="20.32" y="20.32"/>
 <element name="U$3" library="gclue" package="LOGO_OSHW_T_M" value="" x="24.13" y="15.24"/>
-<element name="U$4" library="FaBo" package="LOGO_FABO_M" value="" x="13.97" y="33.02"/>
+<element name="U$4" library="FaBo-etc" package="LOGO_FABO_M" value="" x="13.97" y="33.02"/>
 </elements>
 <signals>
 <signal name="N$1">

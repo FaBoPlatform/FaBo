@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -127,9 +127,9 @@
 </layers>
 <board>
 <plain>
-<text x="1.27" y="13.97" size="1.27" layer="21" font="vector" ratio="12">9AXIS
+<text x="5.08" y="10.16" size="1.27" layer="21" font="vector" ratio="12" rot="R90">9AXIS
 MPU9250</text>
-<text x="1.27" y="12.7" size="1.016" layer="21" font="vector" ratio="12">Rev.1.0</text>
+<text x="6.35" y="10.16" size="1.016" layer="21" font="vector" ratio="12" rot="R90">Rev.1.0.0</text>
 <text x="13.97" y="31.75" size="1.016" layer="21" font="vector" ratio="12" align="bottom-center">MADE IN JAPAN</text>
 </plain>
 <libraries>
@@ -2291,7 +2291,12 @@ MPU9250</text>
 </package>
 </packages>
 </library>
-<library name="FaBo">
+<library name="FaBo-etc">
+<description>&lt;h3&gt;FaBo etc&lt;/h3&gt;
+etc/etc...&lt;br&gt;
+&lt;br&gt;
+Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;br&gt;
+https://creativecommons.org/licenses/by-sa/4.0/</description>
 <packages>
 <package name="LOGO_FABO_M">
 <rectangle x1="-2.0391125" y1="-0.006096875" x2="-1.78308125" y2="0.006096875" layer="21"/>
@@ -4180,7 +4185,7 @@ design rules under a new name.</description>
 <element name="U$1" library="GClue-Mems" package="LGA-24" value="INVENSENSE-MPU9250" x="13.97" y="27.94"/>
 <element name="J1" library="gclue" package="BRICK_I2C" value="" x="13.97" y="19.05"/>
 <element name="U$5" library="gclue" package="LOGO_OSHW_T_M" value="" x="24.13" y="15.24"/>
-<element name="U$3" library="FaBo" package="LOGO_FABO_M" value="" x="13.97" y="33.02"/>
+<element name="U$3" library="FaBo-etc" package="LOGO_FABO_M" value="" x="13.97" y="33.02"/>
 </elements>
 <signals>
 <signal name="+3V3">

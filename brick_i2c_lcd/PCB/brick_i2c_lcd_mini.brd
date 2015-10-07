@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -128,7 +128,7 @@
 <board>
 <plain>
 <text x="3.81" y="11.43" size="1.27" layer="21" font="vector" ratio="12" rot="R90">LCD8x2</text>
-<text x="5.08" y="11.43" size="1.016" layer="21" font="vector" ratio="12" rot="R90">Rev.1.0</text>
+<text x="5.08" y="11.43" size="1.016" layer="21" font="vector" ratio="12" rot="R90">Rev.1.0.0</text>
 <text x="13.97" y="22.86" size="1.016" layer="21" font="vector" ratio="12" align="bottom-center">MADE IN JAPAN</text>
 </plain>
 <libraries>
@@ -2251,6 +2251,15 @@
 <wire x1="-15" y1="0" x2="-15" y2="19.5" width="0.127" layer="51"/>
 <wire x1="15" y1="0" x2="15" y2="19.5" width="0.127" layer="51"/>
 </package>
+</packages>
+</library>
+<library name="FaBo-etc">
+<description>&lt;h3&gt;FaBo etc&lt;/h3&gt;
+etc/etc...&lt;br&gt;
+&lt;br&gt;
+Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;br&gt;
+https://creativecommons.org/licenses/by-sa/4.0/</description>
+<packages>
 <package name="LOGO_FABO_M">
 <rectangle x1="-2.0391125" y1="-0.006096875" x2="-1.78308125" y2="0.006096875" layer="21"/>
 <rectangle x1="4.215384375" y1="-0.006096875" x2="4.386071875" y2="0.006096875" layer="21"/>
@@ -4121,29 +4130,29 @@ design rules under a new name.</description>
 </autorouter>
 <elements>
 <element name="C1" library="GClue" package="EIA0603" value="1uF" x="10.16" y="15.24" smashed="yes">
-<attribute name="NAME" x="10.16" y="16.51" size="1.016" layer="25" font="vector" ratio="10" align="bottom-center"/>
-<attribute name="VALUE" x="10.16" y="13.97" size="1.016" layer="27" font="vector" ratio="10" align="top-center"/>
+<attribute name="NAME" x="10.16" y="16.002" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center"/>
+<attribute name="VALUE" x="10.16" y="14.732" size="1.016" layer="27" font="vector" ratio="10" align="top-center"/>
 </element>
 <element name="C2" library="GClue" package="EIA0603" value="1uF" x="13.97" y="15.24" smashed="yes">
-<attribute name="NAME" x="13.97" y="16.51" size="1.016" layer="25" font="vector" ratio="10" align="bottom-center"/>
-<attribute name="VALUE" x="13.97" y="13.97" size="1.016" layer="27" font="vector" ratio="10" align="top-center"/>
+<attribute name="NAME" x="13.97" y="16.002" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center"/>
+<attribute name="VALUE" x="13.97" y="14.732" size="1.016" layer="27" font="vector" ratio="10" align="top-center"/>
 </element>
 <element name="C3" library="GClue" package="EIA0603" value="0.1uF" x="17.78" y="15.24" smashed="yes">
-<attribute name="NAME" x="17.78" y="16.51" size="1.016" layer="25" font="vector" ratio="10" align="bottom-center"/>
-<attribute name="VALUE" x="17.78" y="13.97" size="1.016" layer="27" font="vector" ratio="10" align="top-center"/>
+<attribute name="NAME" x="17.78" y="16.002" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center"/>
+<attribute name="VALUE" x="17.78" y="14.732" size="1.016" layer="27" font="vector" ratio="10" align="top-center"/>
 </element>
 <element name="J1" library="GClue" package="BRICK_I2C" value="" x="13.97" y="19.05"/>
 <element name="R1" library="GClue" package="EIA0603" value="4.7k" x="11.43" y="20.32" smashed="yes">
-<attribute name="NAME" x="9.525" y="20.32" size="1.016" layer="25" font="vector" ratio="10" align="center-right"/>
-<attribute name="VALUE" x="11.43" y="19.05" size="1.016" layer="27" font="vector" ratio="10" align="top-center"/>
+<attribute name="NAME" x="9.779" y="20.32" size="0.8128" layer="25" font="vector" ratio="12" align="center-right"/>
+<attribute name="VALUE" x="11.43" y="19.812" size="1.016" layer="27" font="vector" ratio="10" align="top-center"/>
 </element>
 <element name="R2" library="GClue" package="EIA0603" value="4.7k" x="16.51" y="20.32" smashed="yes">
-<attribute name="NAME" x="18.415" y="20.32" size="1.016" layer="25" font="vector" ratio="10" align="center-left"/>
-<attribute name="VALUE" x="16.51" y="19.05" size="1.016" layer="27" font="vector" ratio="10" align="top-center"/>
+<attribute name="NAME" x="18.161" y="20.32" size="0.8128" layer="25" font="vector" ratio="12" align="center-left"/>
+<attribute name="VALUE" x="16.51" y="19.812" size="1.016" layer="27" font="vector" ratio="10" align="top-center"/>
 </element>
 <element name="U$2" library="FaBo" package="AQM0802A" value="AQM0802A" x="13.97" y="29.21"/>
-<element name="U$8" library="FaBo" package="LOGO_FABO_M" value="" x="13.97" y="24.13"/>
 <element name="U$9" library="GClue" package="LOGO_OSHW_T_M" value="" x="24.13" y="16.51"/>
+<element name="U$8" library="FaBo-etc" package="LOGO_FABO_M" value="" x="13.97" y="24.13"/>
 </elements>
 <signals>
 <signal name="N$3">
