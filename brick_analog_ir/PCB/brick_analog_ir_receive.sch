@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -30742,11 +30742,11 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <sheets>
 <sheet>
 <plain>
-<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.0</text>
+<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.1</text>
 </plain>
 <instances>
 <instance part="J1" gate="G$1" x="86.36" y="93.98"/>
-<instance part="Q1" gate="G$1" x="129.54" y="106.68"/>
+<instance part="Q1" gate="G$1" x="134.62" y="106.68" rot="R180"/>
 <instance part="Q2" gate="G$1" x="154.94" y="88.9"/>
 <instance part="R1" gate="G$1" x="142.24" y="88.9"/>
 <instance part="R2" gate="G$1" x="157.48" y="73.66" rot="R90"/>
@@ -30765,9 +30765,9 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <net name="N$5" class="0">
 <segment>
 <wire x1="132.08" y1="88.9" x2="137.16" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="101.6" x2="132.08" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="Q1" gate="G$1" pin="E"/>
 <pinref part="R1" gate="G$1" pin="1"/>
+<pinref part="Q1" gate="G$1" pin="C"/>
+<wire x1="132.08" y1="101.6" x2="132.08" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -30779,7 +30779,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </net>
 <net name="INPUT" class="0">
 <segment>
-<wire x1="104.14" y1="99.06" x2="93.98" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="99.06" x2="93.98" y2="99.06" width="0.1524" layer="91"/>
 <label x="101.6" y="99.06" size="1.778" layer="95"/>
 <pinref part="J1" gate="G$1" pin="I/O"/>
 </segment>
@@ -30788,7 +30788,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="157.48" y1="81.28" x2="157.48" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="81.28" x2="157.48" y2="81.28" width="0.1524" layer="91"/>
 <junction x="157.48" y="81.28"/>
-<label x="165.1" y="81.28" size="1.778" layer="95"/>
+<label x="162.56" y="81.28" size="1.778" layer="95"/>
 <pinref part="R2" gate="G$1" pin="2"/>
 <pinref part="Q2" gate="G$1" pin="E"/>
 </segment>
@@ -30800,15 +30800,15 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pinref part="U$4" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
-<wire x1="132.08" y1="121.92" x2="132.08" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="Q1" gate="G$1" pin="C"/>
-<pinref part="U$3" gate="G$1" pin="VCC"/>
-</segment>
-<segment>
 <wire x1="93.98" y1="93.98" x2="99.06" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="93.98" x2="99.06" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="VCC"/>
 <pinref part="U$2" gate="G$1" pin="VCC"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="VCC"/>
+<pinref part="Q1" gate="G$1" pin="E"/>
+<wire x1="132.08" y1="121.92" x2="132.08" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
