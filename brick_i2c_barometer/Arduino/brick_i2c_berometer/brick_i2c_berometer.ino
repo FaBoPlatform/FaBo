@@ -1,7 +1,7 @@
 //
 // FaBo Brick Sample
 //
-// brick_i2c_atomospher
+// brick_i2c_berometer
 //
 
 #include <Wire.h>
