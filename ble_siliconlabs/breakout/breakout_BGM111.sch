@@ -6666,12 +6666,12 @@ http://www.tag-connect.com</description>
 <part name="PF3" library="led" deviceset="LED" device="CHIP-LED0603"/>
 <part name="U$5" library="gclue-test" deviceset="SWICTH-4P(KMR2)" device=""/>
 <part name="GND13" library="SparkFun" deviceset="GND" device=""/>
-<part name="R2" library="adafruit" deviceset="R-US_" device="R0603"/>
+<part name="R2" library="adafruit" deviceset="R-US_" device="R0603" value="180"/>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="PF2" library="led" deviceset="LED" device="CHIP-LED0603"/>
-<part name="R3" library="adafruit" deviceset="R-US_" device="R0603"/>
+<part name="R3" library="adafruit" deviceset="R-US_" device="R0603" value="180"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="U$2" library="GClue-Supply" deviceset="SMTU2450-TOP" device=""/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>

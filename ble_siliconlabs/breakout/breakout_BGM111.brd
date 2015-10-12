@@ -2252,8 +2252,8 @@ design rules under a new name.</description>
 <element name="PF3" library="led" package="CHIP-LED0603" value="" x="18.0848" y="52.7304"/>
 <element name="PF2" library="led" package="CHIP-LED0603" value="" x="12.1412" y="52.6796"/>
 <element name="R1" library="adafruit" package="R0603" value="10K" x="15.24" y="2.54"/>
-<element name="R2" library="adafruit" package="R0603" value="" x="17.8308" y="47.0916"/>
-<element name="R3" library="adafruit" package="R0603" value="" x="12.4968" y="47.1424"/>
+<element name="R2" library="adafruit" package="R0603" value="180" x="17.8308" y="47.0916"/>
+<element name="R3" library="adafruit" package="R0603" value="180" x="12.4968" y="47.1424"/>
 <element name="U$2" library="GClue-Supply" package="SMTU2450" value="SMTU2450-TOP" x="15.1892" y="21.9964"/>
 <element name="U$5" library="gclue-test" package="SWITCH-4P(KMR2)" value="SWICTH-4P(KMR2)" x="3.6576" y="69.088"/>
 <element name="TC1" library="TagConnect" package="TC2030-IDC" value="TC2030-IDC" x="25.4" y="7.62" rot="R180"/>
