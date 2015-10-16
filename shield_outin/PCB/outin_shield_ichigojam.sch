@@ -31680,7 +31680,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <sheets>
 <sheet>
 <plain>
-<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.0</text>
+<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.1</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="0" y="0"/>
@@ -32178,20 +32178,10 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </net>
 <net name="TX" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="RXD-2"/>
-<pinref part="U1" gate="G$1" pin="RXD"/>
-<wire x1="86.36" y1="111.76" x2="81.28" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="111.76" x2="86.36" y2="111.76" width="0.1524" layer="91"/>
-<junction x="86.36" y="111.76"/>
-<label x="101.6" y="113.538" size="1.778" layer="95" rot="R180"/>
-</segment>
-<segment>
 <pinref part="SERIAL" gate="G$1" pin="TX"/>
 <wire x1="182.88" y1="63.5" x2="182.88" y2="53.34" width="0.1524" layer="91"/>
 <label x="182.88" y="58.42" size="1.778" layer="95" rot="R90"/>
 </segment>
-</net>
-<net name="RX" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="TXD-2"/>
 <pinref part="U1" gate="G$1" pin="TXD"/>
@@ -32200,10 +32190,20 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <junction x="86.36" y="114.3"/>
 <label x="101.6" y="116.078" size="1.778" layer="95" rot="R180"/>
 </segment>
+</net>
+<net name="RX" class="0">
 <segment>
 <pinref part="SERIAL" gate="G$1" pin="RX"/>
 <wire x1="177.8" y1="63.5" x2="177.8" y2="53.34" width="0.1524" layer="91"/>
 <label x="177.8" y="58.42" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="RXD-2"/>
+<pinref part="U1" gate="G$1" pin="RXD"/>
+<wire x1="86.36" y1="111.76" x2="81.28" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="111.76" x2="86.36" y2="111.76" width="0.1524" layer="91"/>
+<junction x="86.36" y="111.76"/>
+<label x="101.6" y="113.538" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="N$2" class="0">
