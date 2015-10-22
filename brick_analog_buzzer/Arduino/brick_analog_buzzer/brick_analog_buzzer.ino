@@ -4,19 +4,19 @@
 // brick_analog_buzzer
 //
 
-int buzzerPin = 13;
-int melo = 200;
+int buzzerPin = A0;
+int duration = 500;
 
 void setup() {
 }
 
 void loop() {
-  tone(buzzerPin,262,melo);
-  delay(melo);
-  tone(buzzerPin,294,melo);
-  delay(melo);
-  tone(buzzerPin,330,melo);
-  delay(melo);
+  tone(buzzerPin,262,duration);
+  delay(duration);
+  tone(buzzerPin,294,duration);
+  delay(duration);
+  tone(buzzerPin,330,duration);
+  delay(duration);
 
   delay(1000);
 }
