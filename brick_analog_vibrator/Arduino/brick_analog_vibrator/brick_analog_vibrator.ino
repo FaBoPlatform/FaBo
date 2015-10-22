@@ -4,8 +4,8 @@
 // brick_analog_vibrator
 //
 
-int buttonPin = A0;
-int vibratorPin = A1;
+int vibratorPin = A0;
+int buttonPin = A1;
 
 int buttonState = 0;
 
