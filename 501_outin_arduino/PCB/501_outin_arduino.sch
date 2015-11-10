@@ -195,44 +195,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <text x="-2.286" y="-0.508" size="0.8128" layer="25" font="vector" ratio="12">&gt;NAME</text>
 <text x="-2.286" y="-1.016" size="0.8128" layer="27" font="vector" ratio="12" align="top-left">&gt;VALUE</text>
 </package>
-<package name="LED-3MM">
-<wire x1="1.5748" y1="-1.27" x2="1.5748" y2="1.27" width="0.254" layer="21"/>
-<wire x1="0" y1="2.032" x2="1.561" y2="1.3009" width="0.254" layer="21" curve="-50.193108" cap="flat"/>
-<wire x1="-1.7929" y1="0.9562" x2="0" y2="2.032" width="0.254" layer="21" curve="-61.926949" cap="flat"/>
-<wire x1="0" y1="-2.032" x2="1.5512" y2="-1.3126" width="0.254" layer="21" curve="49.763022" cap="flat"/>
-<wire x1="-1.7643" y1="-1.0082" x2="0" y2="-2.032" width="0.254" layer="21" curve="60.255215" cap="flat"/>
-<wire x1="-2.032" y1="0" x2="-1.7891" y2="0.9634" width="0.254" layer="21" curve="-28.301701" cap="flat"/>
-<wire x1="-2.032" y1="0" x2="-1.7306" y2="-1.065" width="0.254" layer="21" curve="31.60822" cap="flat"/>
-<wire x1="1.5748" y1="1.2954" x2="1.5748" y2="0.7874" width="0.254" layer="21"/>
-<wire x1="1.5748" y1="-1.2954" x2="1.5748" y2="-0.8382" width="0.254" layer="21"/>
-<pad name="A" x="-1.27" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
-<pad name="K" x="1.27" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
-<text x="1.905" y="0.381" size="1.27" layer="25" font="vector" ratio="12">&gt;NAME</text>
-<text x="1.905" y="-1.651" size="1.27" layer="27" font="vector" ratio="12">&gt;VALUE</text>
-</package>
-<package name="LED-5MM">
-<wire x1="2.54" y1="-1.905" x2="2.54" y2="1.905" width="0.2032" layer="21"/>
-<wire x1="2.54" y1="-1.905" x2="2.54" y2="1.905" width="0.254" layer="21" curve="-286.260205" cap="flat"/>
-<pad name="A" x="-1.27" y="0" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="K" x="1.27" y="0" drill="1" diameter="1.778" shape="octagon"/>
-<text x="3.175" y="0.5334" size="1.27" layer="25" font="vector" ratio="12">&gt;NAME</text>
-<text x="3.2004" y="-1.8034" size="1.27" layer="27" font="vector" ratio="12">&gt;VALUE</text>
-</package>
-<package name="EIA0603-LED">
-<wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="39"/>
-<smd name="A" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<smd name="C" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<text x="0" y="1.27" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.27" size="0.8128" layer="27" font="vector" ratio="12" align="top-center">&gt;VALUE</text>
-<polygon width="0.15" layer="21">
-<vertex x="-0.2" y="0.3"/>
-<vertex x="-0.2" y="-0.3"/>
-<vertex x="0.2" y="0"/>
-</polygon>
-</package>
 <package name="LOGO_FABO_L">
 <rectangle x1="-2.25933125" y1="-0.008890625" x2="-1.88595" y2="0.008890625" layer="21"/>
 <rectangle x1="6.861809375" y1="-0.008890625" x2="7.110728125" y2="0.008890625" layer="21"/>
@@ -20976,30 +20938,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 </symbol>
-<symbol name="LED">
-<wire x1="1.27" y1="2.54" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="-1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="1.27" y1="2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-2.032" y1="1.778" x2="-3.429" y2="0.381" width="0.1524" layer="94"/>
-<wire x1="-1.905" y1="0.635" x2="-3.302" y2="-0.762" width="0.1524" layer="94"/>
-<text x="3.556" y="-2.032" size="1.778" layer="95" rot="R90">&gt;NAME</text>
-<text x="5.715" y="-2.032" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="C" x="0" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
-<pin name="A" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
-<polygon width="0.1524" layer="94">
-<vertex x="-3.429" y="0.381"/>
-<vertex x="-3.048" y="1.27"/>
-<vertex x="-2.54" y="0.762"/>
-</polygon>
-<polygon width="0.1524" layer="94">
-<vertex x="-3.302" y="-0.762"/>
-<vertex x="-2.921" y="0.127"/>
-<vertex x="-2.413" y="-0.381"/>
-</polygon>
-</symbol>
 <symbol name="LOGO_FABO">
 <rectangle x1="7.7343" y1="2.6289" x2="8.2677" y2="2.6543" layer="94"/>
 <rectangle x1="20.7645" y1="2.6289" x2="21.1201" y2="2.6543" layer="94"/>
@@ -31175,41 +31113,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LED" prefix="LED" uservalue="yes">
-<description>&lt;h3&gt;LED&lt;/h3&gt;</description>
-<gates>
-<gate name="G$1" symbol="LED" x="0" y="0"/>
-</gates>
-<devices>
-<device name="-3MM" package="LED-3MM">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="K"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-5MM" package="LED-5MM">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="K"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-EIA0603" package="EIA0603-LED">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="LOGO_FABO" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="LOGO_FABO" x="0" y="0"/>
@@ -32636,15 +32539,12 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="I2C" library="FaBo-Template" deviceset="FABO_BRICK_I2C" device="-CONNECTOR"/>
 <part name="SERIAL" library="FaBo-Template" deviceset="FABO_BRICK_SERIAL" device="-CONNECTOR"/>
 <part name="A0" library="FaBo-Template" deviceset="FABO_BRICK_3PIN" device="-CONNECTOR"/>
-<part name="GND1" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="SW1" library="FaBo-etc" deviceset="SWITCH-TACT" device="-6MM" value="RESET"/>
 <part name="Q1" library="FaBo-etc" deviceset="MOSFET-N" device="-BSS138"/>
 <part name="R1" library="FaBo-etc" deviceset="RES" device="-EIA0603" value="10k"/>
 <part name="R2" library="FaBo-etc" deviceset="RES" device="-EIA0603" value="10k"/>
 <part name="R3" library="FaBo-etc" deviceset="RES" device="-EIA0603" value="3k"/>
 <part name="R4" library="FaBo-etc" deviceset="RES" device="-EIA0603" value="4.7k"/>
-<part name="R5" library="FaBo-etc" deviceset="RES" device="-EIA0603" value="1k"/>
-<part name="ON" library="FaBo-etc" deviceset="LED" device="-EIA0603"/>
 <part name="A1" library="FaBo-Template" deviceset="FABO_BRICK_3PIN" device="-CONNECTOR"/>
 <part name="A2" library="FaBo-Template" deviceset="FABO_BRICK_3PIN" device="-CONNECTOR"/>
 <part name="A3" library="FaBo-Template" deviceset="FABO_BRICK_3PIN" device="-CONNECTOR"/>
@@ -32677,7 +32577,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="GND20" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="SUPPLY3" library="FaBo-etc" deviceset="5V" device=""/>
 <part name="GND21" library="FaBo-etc" deviceset="GND" device=""/>
-<part name="SUPPLY4" library="FaBo-etc" deviceset="5V" device=""/>
 <part name="GND22" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="SUPPLY5" library="FaBo-etc" deviceset="3V3" device=""/>
 <part name="SUPPLY6" library="FaBo-etc" deviceset="5V" device=""/>
@@ -32708,7 +32607,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <sheets>
 <sheet>
 <plain>
-<text x="246.38" y="19.05" size="2.54" layer="94" align="bottom-center">1.0.3</text>
+<text x="246.38" y="19.05" size="2.54" layer="94" align="bottom-center">1.0.4</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="0" y="0"/>
@@ -32716,7 +32615,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <instance part="I2C" gate="G$1" x="203.2" y="45.72" rot="R90"/>
 <instance part="SERIAL" gate="G$1" x="236.22" y="45.72" rot="R90"/>
 <instance part="A0" gate="G$1" x="99.06" y="152.4" rot="R90"/>
-<instance part="GND1" gate="GND" x="175.26" y="35.56"/>
 <instance part="SW1" gate="G$1" x="33.02" y="30.48" smashed="yes">
 <attribute name="NAME" x="30.48" y="36.83" size="1.778" layer="95"/>
 <attribute name="VALUE" x="33.02" y="22.86" size="1.778" layer="96" align="bottom-center"/>
@@ -32726,8 +32624,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <instance part="R2" gate="G$1" x="134.62" y="58.42" rot="R90"/>
 <instance part="R3" gate="G$1" x="160.02" y="58.42" rot="R90"/>
 <instance part="R4" gate="G$1" x="160.02" y="43.18" rot="R90"/>
-<instance part="R5" gate="G$1" x="175.26" y="58.42" rot="R90"/>
-<instance part="ON" gate="G$1" x="175.26" y="43.18"/>
 <instance part="A1" gate="G$1" x="127" y="152.4" rot="R90"/>
 <instance part="A2" gate="G$1" x="154.94" y="152.4" rot="R90"/>
 <instance part="A3" gate="G$1" x="182.88" y="152.4" rot="R90"/>
@@ -32760,7 +32656,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <instance part="GND20" gate="GND" x="251.46" y="43.18"/>
 <instance part="SUPPLY3" gate="5V" x="238.76" y="58.42"/>
 <instance part="GND21" gate="GND" x="218.44" y="43.18"/>
-<instance part="SUPPLY4" gate="5V" x="175.26" y="68.58"/>
 <instance part="GND22" gate="GND" x="160.02" y="35.56"/>
 <instance part="SUPPLY5" gate="3V3" x="114.3" y="68.58"/>
 <instance part="SUPPLY6" gate="5V" x="134.62" y="68.58"/>
@@ -32812,11 +32707,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pinref part="R4" gate="G$1" pin="1"/>
 <pinref part="GND22" gate="GND" pin="GND"/>
 <wire x1="160.02" y1="38.1" x2="160.02" y2="35.56" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="ON" gate="G$1" pin="C"/>
-<pinref part="GND1" gate="GND" pin="GND"/>
-<wire x1="175.26" y1="40.64" x2="175.26" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND25" gate="GND" pin="GND"/>
@@ -32957,11 +32847,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="134.62" y1="68.58" x2="134.62" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SUPPLY4" gate="5V" pin="5V"/>
-<pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="175.26" y1="68.58" x2="175.26" y2="63.5" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="SUPPLY3" gate="5V" pin="5V"/>
 <pinref part="SERIAL" gate="G$1" pin="VCC"/>
 <wire x1="238.76" y1="58.42" x2="238.76" y2="53.34" width="0.1524" layer="91"/>
@@ -33075,13 +32960,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pinref part="SW1" gate="G$1" pin="4"/>
 <wire x1="48.26" y1="27.94" x2="38.1" y2="27.94" width="0.1524" layer="91"/>
 <label x="40.64" y="27.94" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="LEDANO" class="0">
-<segment>
-<pinref part="R5" gate="G$1" pin="1"/>
-<pinref part="ON" gate="G$1" pin="A"/>
-<wire x1="175.26" y1="53.34" x2="175.26" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="A5" class="0">
