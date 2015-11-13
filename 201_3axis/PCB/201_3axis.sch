@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -31611,16 +31611,18 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="GND5" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="GND6" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="U$2" library="FaBo-etc" deviceset="LOGO_OSHW" device="-T_M_BOTTOM"/>
+<part name="SUPPLY7" library="FaBo-etc" deviceset="3V3" device=""/>
+<part name="GND7" library="FaBo-etc" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.2</text>
+<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.3</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="0" y="0"/>
 <instance part="U$3" gate="G$1" x="218.44" y="5.08"/>
-<instance part="IC1" gate="G$1" x="203.2" y="104.14"/>
+<instance part="IC1" gate="G$1" x="200.66" y="104.14"/>
 <instance part="IC2" gate="G$1" x="99.06" y="106.68"/>
 <instance part="J1" gate="G$1" x="45.72" y="106.68"/>
 <instance part="SUPPLY1" gate="3V3" x="119.38" y="124.46"/>
@@ -31639,8 +31641,10 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <instance part="SUPPLY6" gate="3V3" x="170.18" y="124.46"/>
 <instance part="GND4" gate="GND" x="160.02" y="78.74"/>
 <instance part="GND5" gate="GND" x="170.18" y="78.74"/>
-<instance part="GND6" gate="GND" x="223.52" y="78.74"/>
+<instance part="GND6" gate="GND" x="220.98" y="78.74"/>
 <instance part="U$2" gate="G$1" x="248.92" y="12.7"/>
+<instance part="SUPPLY7" gate="3V3" x="180.34" y="124.46"/>
+<instance part="GND7" gate="GND" x="180.34" y="78.74"/>
 </instances>
 <busses>
 </busses>
@@ -31694,16 +31698,22 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <segment>
 <pinref part="IC1" gate="G$1" pin="GND1"/>
 <pinref part="GND6" gate="GND" pin="GND"/>
-<wire x1="218.44" y1="96.52" x2="223.52" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="223.52" y1="96.52" x2="223.52" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="96.52" x2="220.98" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="96.52" x2="220.98" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="GND2"/>
-<wire x1="223.52" y1="93.98" x2="223.52" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="223.52" y1="91.44" x2="223.52" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="93.98" x2="223.52" y2="93.98" width="0.1524" layer="91"/>
-<junction x="223.52" y="93.98"/>
+<wire x1="220.98" y1="93.98" x2="220.98" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="91.44" x2="220.98" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="93.98" x2="220.98" y2="93.98" width="0.1524" layer="91"/>
+<junction x="220.98" y="93.98"/>
 <pinref part="IC1" gate="G$1" pin="GND3"/>
-<wire x1="218.44" y1="91.44" x2="223.52" y2="91.44" width="0.1524" layer="91"/>
-<junction x="223.52" y="91.44"/>
+<wire x1="215.9" y1="91.44" x2="220.98" y2="91.44" width="0.1524" layer="91"/>
+<junction x="220.98" y="91.44"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="SDO"/>
+<pinref part="GND7" gate="GND" pin="GND"/>
+<wire x1="185.42" y1="104.14" x2="180.34" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="104.14" x2="180.34" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -31714,7 +31724,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="SCL"/>
-<wire x1="187.96" y1="99.06" x2="149.86" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="99.06" x2="149.86" y2="99.06" width="0.1524" layer="91"/>
 <label x="132.08" y="99.06" size="1.778" layer="95"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="149.86" y1="99.06" x2="129.54" y2="99.06" width="0.1524" layer="91"/>
@@ -31733,7 +31743,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="129.54" y1="96.52" x2="139.7" y2="96.52" width="0.1524" layer="91"/>
 <label x="132.08" y="96.52" size="1.778" layer="95"/>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="139.7" y1="96.52" x2="187.96" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="96.52" x2="185.42" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="104.14" x2="139.7" y2="96.52" width="0.1524" layer="91"/>
 <junction x="139.7" y="96.52"/>
 </segment>
@@ -31764,7 +31774,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="160.02" y1="124.46" x2="160.02" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="VDD"/>
 <wire x1="160.02" y1="114.3" x2="160.02" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="114.3" x2="160.02" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="114.3" x2="160.02" y2="114.3" width="0.1524" layer="91"/>
 <junction x="160.02" y="114.3"/>
 </segment>
 <segment>
@@ -31773,8 +31783,14 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="170.18" y1="124.46" x2="170.18" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="VS"/>
 <wire x1="170.18" y1="111.76" x2="170.18" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="111.76" x2="170.18" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="111.76" x2="170.18" y2="111.76" width="0.1524" layer="91"/>
 <junction x="170.18" y="111.76"/>
+</segment>
+<segment>
+<pinref part="SUPPLY7" gate="3V3" pin="3V3"/>
+<wire x1="180.34" y1="124.46" x2="180.34" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="CS"/>
+<wire x1="180.34" y1="106.68" x2="185.42" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

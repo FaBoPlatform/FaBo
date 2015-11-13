@@ -164,6 +164,8 @@
 <text x="36.02" y="21.25" size="1.016" layer="22" font="vector" ratio="12" rot="SMR180" align="bottom-center">1</text>
 <text x="3" y="21.25" size="1.016" layer="22" font="vector" ratio="12" rot="SMR180" align="bottom-center">14</text>
 <text x="21.59" y="6.35" size="2.54" layer="21" font="vector" ratio="12" align="bottom-center">#212</text>
+<dimension x1="0" y1="-2.54" x2="49.53" y2="-2.54" x3="24.765" y3="-5.079996875" textsize="1.778" layer="51" visible="yes"/>
+<dimension x1="52.07" y1="0" x2="52.07" y2="25.4" x3="54.609996875" y3="12.7" textsize="1.778" layer="51" visible="yes"/>
 </plain>
 <libraries>
 <library name="FaBo-etc">

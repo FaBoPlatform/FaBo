@@ -144,6 +144,8 @@
 <circle x="48.26" y="22.352" radius="0.254" width="0.508" layer="21"/>
 <circle x="36.83" y="15.748" radius="0.254" width="0.508" layer="21"/>
 <text x="10.16" y="5.588" size="2.54" layer="21" font="vector" ratio="12">#504</text>
+<dimension x1="0" y1="-7.62" x2="66.04" y2="-7.62" x3="33.02" y3="-5.08" textsize="1.778" layer="51" visible="yes"/>
+<dimension x1="68.58" y1="0" x2="68.58" y2="38.1" x3="73.660003125" y3="19.05" textsize="1.778" layer="51" visible="yes"/>
 </plain>
 <libraries>
 <library name="gclue">
