@@ -657,7 +657,7 @@ W = angled&lt;p&gt;
 <instance part="U$3" gate="G$1" x="0" y="0"/>
 <instance part="GND2" gate="1" x="27.94" y="38.1"/>
 <instance part="P+3" gate="G$1" x="27.94" y="63.5"/>
-<instance part="U$5" gate="G$1" x="43.18" y="55.88" rot="R270"/>
+<instance part="U$5" gate="G$1" x="40.64" y="55.88" rot="R270"/>
 <instance part="P+1" gate="G$1" x="88.9" y="58.42"/>
 <instance part="GND1" gate="1" x="124.46" y="40.64"/>
 <instance part="SV1" gate="1" x="129.54" y="96.52" rot="R180"/>
@@ -668,15 +668,15 @@ W = angled&lt;p&gt;
 <nets>
 <net name="GND" class="0">
 <segment>
-<wire x1="35.56" y1="55.88" x2="27.94" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="55.88" x2="27.94" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="55.88" x2="27.94" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="53.34" x2="27.94" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="48.26" x2="27.94" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="48.26" x2="27.94" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="48.26" x2="27.94" y2="48.26" width="0.1524" layer="91"/>
 <junction x="27.94" y="48.26"/>
 <junction x="27.94" y="55.88"/>
 <pinref part="GND2" gate="1" pin="GND"/>
-<wire x1="35.56" y1="53.34" x2="27.94" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="53.34" x2="27.94" y2="53.34" width="0.1524" layer="91"/>
 <junction x="27.94" y="53.34"/>
 <pinref part="U$5" gate="G$1" pin="3"/>
 <pinref part="U$5" gate="G$1" pin="5"/>
@@ -697,7 +697,7 @@ W = angled&lt;p&gt;
 </net>
 <net name="3.3V" class="0">
 <segment>
-<wire x1="35.56" y1="58.42" x2="27.94" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="58.42" x2="27.94" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="58.42" x2="27.94" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="P+3" gate="G$1" pin="3.3V"/>
 <pinref part="U$5" gate="G$1" pin="1"/>
@@ -718,13 +718,13 @@ W = angled&lt;p&gt;
 </segment>
 <segment>
 <label x="58.42" y="55.88" size="1.778" layer="95"/>
-<wire x1="54.61" y1="55.88" x2="58.42" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="52.07" y1="55.88" x2="58.42" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="U$5" gate="G$1" pin="4"/>
 </segment>
 </net>
 <net name="SWDIO" class="0">
 <segment>
-<wire x1="58.42" y1="58.42" x2="54.61" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="58.42" x2="52.07" y2="58.42" width="0.1524" layer="91"/>
 <label x="58.42" y="58.42" size="1.778" layer="95"/>
 <pinref part="U$5" gate="G$1" pin="2"/>
 </segment>
@@ -736,7 +736,7 @@ W = angled&lt;p&gt;
 </net>
 <net name="RESET" class="0">
 <segment>
-<wire x1="50.8" y1="48.26" x2="54.61" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="48.26" x2="52.07" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="U$5" gate="G$1" pin="10"/>
 </segment>
 </net>
