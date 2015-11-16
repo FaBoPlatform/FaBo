@@ -231,6 +231,7 @@
 <text x="56.515" y="8.509" size="0.8128" layer="21" font="vector" ratio="12" rot="R180" align="center-left">SDA</text>
 <text x="56.515" y="6.477" size="0.8128" layer="21" font="vector" ratio="12" rot="R180" align="center-left">SCL</text>
 <wire x1="18.415" y1="26.035" x2="67.31" y2="26.035" width="0.127" layer="21"/>
+<text x="49.403" y="15.748" size="1.016" layer="22" rot="R90">RX: 10 TX: 11</text>
 </plain>
 <libraries>
 <library name="FaBo-Template">
