@@ -129,7 +129,7 @@
 <plain>
 <wire x1="2.54" y1="0" x2="63.5" y2="0" width="0" layer="20"/>
 <text x="10.16" y="3.048" size="1.27" layer="21" font="vector" ratio="12">I2C Expand</text>
-<text x="10.16" y="1.27" size="1.016" layer="21" font="vector" ratio="12">Rev.1.0.1</text>
+<text x="10.16" y="1.27" size="1.016" layer="21" font="vector" ratio="12">Rev.1.0.2</text>
 <wire x1="0" y1="2.54" x2="0" y2="35.56" width="0" layer="20"/>
 <wire x1="0" y1="2.54" x2="2.54" y2="0" width="0" layer="20" curve="90"/>
 <wire x1="66.04" y1="2.54" x2="66.04" y2="35.56" width="0" layer="20"/>
@@ -143,7 +143,7 @@
 <circle x="35.56" y="22.352" radius="0.254" width="0.508" layer="21"/>
 <circle x="48.26" y="22.352" radius="0.254" width="0.508" layer="21"/>
 <circle x="36.83" y="15.748" radius="0.254" width="0.508" layer="21"/>
-<text x="10.16" y="5.588" size="2.54" layer="21" font="vector" ratio="12">#504</text>
+<text x="10.16" y="5.588" size="2.54" layer="21" font="vector" ratio="12">#701</text>
 <dimension x1="0" y1="-7.62" x2="66.04" y2="-7.62" x3="33.02" y3="-5.08" textsize="1.778" layer="51" visible="yes"/>
 <dimension x1="68.58" y1="0" x2="68.58" y2="38.1" x3="73.660003125" y3="19.05" textsize="1.778" layer="51" visible="yes"/>
 </plain>

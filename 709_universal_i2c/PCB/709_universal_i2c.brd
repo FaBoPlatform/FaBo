@@ -140,19 +140,19 @@
 <wire x1="11.43" y1="15.24" x2="11.43" y2="6.35" width="0.254" layer="21"/>
 <wire x1="13.97" y1="15.24" x2="13.97" y2="6.35" width="0.254" layer="21"/>
 <wire x1="16.51" y1="15.24" x2="16.51" y2="6.35" width="0.254" layer="21"/>
-<text x="2.54" y="12.7" size="0.8128" layer="21" font="vector" ratio="12" rot="R90" align="center-right">VCC</text>
-<text x="25.4" y="12.7" size="0.8128" layer="21" font="vector" ratio="12" rot="R90" align="center-right">GND</text>
-<wire x1="3.81" y1="10.16" x2="3.81" y2="30.48" width="0.254" layer="21"/>
+<text x="2.54" y="12.7" size="1.016" layer="21" font="vector" ratio="12" rot="R90" align="center-right">VCC</text>
+<text x="25.4" y="12.7" size="1.016" layer="21" font="vector" ratio="12" rot="R90" align="center-right">GND</text>
+<wire x1="3.81" y1="8.89" x2="3.81" y2="30.48" width="0.254" layer="21"/>
 <wire x1="3.81" y1="30.48" x2="1.27" y2="30.48" width="0.254" layer="21"/>
-<wire x1="1.27" y1="30.48" x2="1.27" y2="10.16" width="0.254" layer="21"/>
-<wire x1="1.27" y1="10.16" x2="3.81" y2="10.16" width="0.254" layer="21"/>
-<wire x1="24.13" y1="10.16" x2="26.67" y2="10.16" width="0.254" layer="21"/>
-<wire x1="26.67" y1="10.16" x2="26.67" y2="30.48" width="0.254" layer="21"/>
+<wire x1="1.27" y1="30.48" x2="1.27" y2="8.89" width="0.254" layer="21"/>
+<wire x1="1.27" y1="8.89" x2="3.81" y2="8.89" width="0.254" layer="21"/>
+<wire x1="24.13" y1="8.89" x2="26.67" y2="8.89" width="0.254" layer="21"/>
+<wire x1="26.67" y1="8.89" x2="26.67" y2="30.48" width="0.254" layer="21"/>
 <wire x1="26.67" y1="30.48" x2="24.13" y2="30.48" width="0.254" layer="21"/>
-<wire x1="24.13" y1="30.48" x2="24.13" y2="10.16" width="0.254" layer="21"/>
+<wire x1="24.13" y1="30.48" x2="24.13" y2="8.89" width="0.254" layer="21"/>
 <text x="13.97" y="2.54" size="0.8128" layer="22" font="vector" ratio="12" rot="MR180" align="bottom-center">MADE IN JAPAN</text>
-<text x="13.97" y="11.43" size="1.016" layer="22" font="vector" ratio="12" rot="MR0" align="bottom-center">Rev.1.0.1</text>
-<text x="24.13" y="8.89" size="1.778" layer="22" font="vector" ratio="12" rot="MR0" align="bottom-center">#702</text>
+<text x="13.97" y="11.43" size="1.016" layer="22" font="vector" ratio="12" rot="MR0" align="bottom-center">Rev.1.0.2</text>
+<text x="24.13" y="8.89" size="1.778" layer="22" font="vector" ratio="12" rot="MR0" align="bottom-center">#709</text>
 </plain>
 <libraries>
 <library name="FaBo-etc">
