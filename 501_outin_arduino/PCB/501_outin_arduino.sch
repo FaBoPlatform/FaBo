@@ -33197,22 +33197,22 @@ ARDUINO UNO R3</text>
 <part name="GND31" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="SUPPLY31" library="FaBo-etc" deviceset="5V" device=""/>
 <part name="I2C2" library="FaBo-Template" deviceset="FABO_BRICK_I2C" device="-B04B-PASK-1"/>
-<part name="J1" library="FaBo-Template" deviceset="FABO_BRICK_SERIAL" device="-B04B-PASK-1"/>
 <part name="GND32" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="SUPPLY32" library="FaBo-etc" deviceset="5V" device=""/>
-<part name="I2C3" library="FaBo-Template" deviceset="FABO_BRICK_I2C" device="-B04B-PASK-1"/>
+<part name="I2C3" library="FaBo-Template" deviceset="FABO_BRICK_I2C" device="-S04B-PASK-2"/>
+<part name="SERIAL" library="FaBo-Template" deviceset="FABO_BRICK_SERIAL" device="-S04B-PASK-2"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="373.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.6</text>
+<text x="373.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.7</text>
 <text x="213.36" y="198.12" size="2.54" layer="97">DIGITAL (3pin Top 2mm pitch)</text>
 <text x="213.36" y="236.22" size="2.54" layer="97">ANALOG (3pin Side 2mm pitch)</text>
 <text x="213.36" y="119.38" size="2.54" layer="97">DIGITAL PWM/Servo(3pin Top 2.54mm pitch)</text>
-<text x="213.36" y="76.2" size="2.54" layer="97">I2C (4pin Top 2mm pitch) x3</text>
+<text x="213.36" y="76.2" size="2.54" layer="97">I2C (4pin Top 2mm pitch) x2</text>
 <text x="139.7" y="208.28" size="1.778" layer="97">Software Serial RX</text>
 <text x="139.7" y="210.82" size="1.778" layer="97">Software Serial TX</text>
-<text x="210.82" y="38.1" size="2.54" layer="97">Serial (4pin Side 2mm pitch)</text>
+<text x="289.56" y="76.2" size="2.54" layer="97">I2C/Serial (4pin Side 2mm pitch)</text>
 </plain>
 <instances>
 <instance part="SW1" gate="G$1" x="38.1" y="96.52" smashed="yes">
@@ -33235,8 +33235,8 @@ ARDUINO UNO R3</text>
 <instance part="GND17" gate="GND" x="342.9" y="96.52"/>
 <instance part="GND18" gate="GND" x="314.96" y="96.52"/>
 <instance part="GND19" gate="GND" x="231.14" y="142.24"/>
-<instance part="GND20" gate="GND" x="236.22" y="15.24"/>
-<instance part="SUPPLY3" gate="5V" x="223.52" y="30.48"/>
+<instance part="GND20" gate="GND" x="350.52" y="50.8"/>
+<instance part="SUPPLY3" gate="5V" x="337.82" y="66.04"/>
 <instance part="GND21" gate="GND" x="236.22" y="50.8"/>
 <instance part="GND22" gate="GND" x="124.46" y="86.36"/>
 <instance part="SUPPLY5" gate="3V3" x="73.66" y="119.38"/>
@@ -33316,10 +33316,10 @@ ARDUINO UNO R3</text>
 <instance part="GND31" gate="GND" x="266.7" y="50.8"/>
 <instance part="SUPPLY31" gate="5V" x="254" y="66.04"/>
 <instance part="I2C2" gate="G$1" x="251.46" y="53.34" rot="R90"/>
-<instance part="J1" gate="G$1" x="220.98" y="17.78" rot="R90"/>
-<instance part="GND32" gate="GND" x="297.18" y="50.8"/>
-<instance part="SUPPLY32" gate="5V" x="284.48" y="66.04"/>
-<instance part="I2C3" gate="G$1" x="281.94" y="53.34" rot="R90"/>
+<instance part="GND32" gate="GND" x="317.5" y="50.8"/>
+<instance part="SUPPLY32" gate="5V" x="304.8" y="66.04"/>
+<instance part="I2C3" gate="G$1" x="302.26" y="53.34" rot="R90"/>
+<instance part="SERIAL" gate="G$1" x="335.28" y="53.34" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -33458,11 +33458,11 @@ ARDUINO UNO R3</text>
 <pinref part="D8" gate="G$1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="228.6" y1="25.4" x2="228.6" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="342.9" y1="60.96" x2="342.9" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="GND20" gate="GND" pin="GND"/>
-<wire x1="228.6" y1="27.94" x2="236.22" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="27.94" x2="236.22" y2="15.24" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="GND"/>
+<wire x1="342.9" y1="63.5" x2="350.52" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="350.52" y1="63.5" x2="350.52" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="SERIAL" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <wire x1="228.6" y1="60.96" x2="228.6" y2="63.5" width="0.1524" layer="91"/>
@@ -33542,10 +33542,10 @@ ARDUINO UNO R3</text>
 <pinref part="I2C2" gate="G$1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="289.56" y1="60.96" x2="289.56" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="309.88" y1="60.96" x2="309.88" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="GND32" gate="GND" pin="GND"/>
-<wire x1="289.56" y1="63.5" x2="297.18" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="297.18" y1="63.5" x2="297.18" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="309.88" y1="63.5" x2="317.5" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="317.5" y1="63.5" x2="317.5" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="I2C3" gate="G$1" pin="GND"/>
 </segment>
 </net>
@@ -33563,8 +33563,8 @@ ARDUINO UNO R3</text>
 </segment>
 <segment>
 <pinref part="SUPPLY3" gate="5V" pin="5V"/>
-<wire x1="223.52" y1="30.48" x2="223.52" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="VCC"/>
+<wire x1="337.82" y1="66.04" x2="337.82" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="SERIAL" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
 <wire x1="218.44" y1="154.94" x2="218.44" y2="149.86" width="0.1524" layer="91"/>
@@ -33698,7 +33698,7 @@ ARDUINO UNO R3</text>
 </segment>
 <segment>
 <pinref part="SUPPLY32" gate="5V" pin="5V"/>
-<wire x1="284.48" y1="66.04" x2="284.48" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="66.04" x2="304.8" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="I2C3" gate="G$1" pin="VCC"/>
 </segment>
 </net>
@@ -33994,9 +33994,9 @@ ARDUINO UNO R3</text>
 </net>
 <net name="TX" class="0">
 <segment>
-<wire x1="218.44" y1="35.56" x2="218.44" y2="25.4" width="0.1524" layer="91"/>
-<label x="218.44" y="30.48" size="1.778" layer="95" rot="R90"/>
-<pinref part="J1" gate="G$1" pin="TX"/>
+<wire x1="332.74" y1="71.12" x2="332.74" y2="60.96" width="0.1524" layer="91"/>
+<label x="332.74" y="66.04" size="1.778" layer="95" rot="R90"/>
+<pinref part="SERIAL" gate="G$1" pin="TX"/>
 </segment>
 <segment>
 <pinref part="Q1" gate="G$1" pin="S"/>
@@ -34010,9 +34010,9 @@ ARDUINO UNO R3</text>
 </net>
 <net name="RX" class="0">
 <segment>
-<wire x1="213.36" y1="35.56" x2="213.36" y2="25.4" width="0.1524" layer="91"/>
-<label x="213.36" y="30.48" size="1.778" layer="95" rot="R90"/>
-<pinref part="J1" gate="G$1" pin="RX"/>
+<wire x1="327.66" y1="71.12" x2="327.66" y2="60.96" width="0.1524" layer="91"/>
+<label x="327.66" y="66.04" size="1.778" layer="95" rot="R90"/>
+<pinref part="SERIAL" gate="G$1" pin="RX"/>
 </segment>
 <segment>
 <wire x1="124.46" y1="101.6" x2="124.46" y2="99.06" width="0.1524" layer="91"/>
@@ -34041,8 +34041,8 @@ ARDUINO UNO R3</text>
 <pinref part="I2C2" gate="G$1" pin="SDA"/>
 </segment>
 <segment>
-<wire x1="279.4" y1="71.12" x2="279.4" y2="60.96" width="0.1524" layer="91"/>
-<label x="279.4" y="66.04" size="1.778" layer="95" rot="R90"/>
+<wire x1="299.72" y1="71.12" x2="299.72" y2="60.96" width="0.1524" layer="91"/>
+<label x="299.72" y="66.04" size="1.778" layer="95" rot="R90"/>
 <pinref part="I2C3" gate="G$1" pin="SDA"/>
 </segment>
 </net>
@@ -34063,8 +34063,8 @@ ARDUINO UNO R3</text>
 <pinref part="I2C2" gate="G$1" pin="SCL"/>
 </segment>
 <segment>
-<wire x1="274.32" y1="71.12" x2="274.32" y2="60.96" width="0.1524" layer="91"/>
-<label x="274.32" y="66.04" size="1.778" layer="95" rot="R90"/>
+<wire x1="294.64" y1="71.12" x2="294.64" y2="60.96" width="0.1524" layer="91"/>
+<label x="294.64" y="66.04" size="1.778" layer="95" rot="R90"/>
 <pinref part="I2C3" gate="G$1" pin="SCL"/>
 </segment>
 </net>
