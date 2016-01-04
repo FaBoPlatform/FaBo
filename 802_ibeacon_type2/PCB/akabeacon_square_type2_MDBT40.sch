@@ -4732,65 +4732,6 @@ type 0309, grid 2.5 mm</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="crystal">
-<description>&lt;b&gt;Crystals and Crystal Resonators&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="FC-12M">
-<description>&lt;b&gt;kHz RANGE CRYSTAL UNIT&lt;/b&gt;&lt;p&gt;
-LOW PROFILE SMD&lt;b&gt;
-Source: Epson Toyocom FC-12M.pdf</description>
-<wire x1="-0.925" y1="0.5" x2="0.925" y2="0.5" width="0.2032" layer="51"/>
-<wire x1="0.925" y1="0.5" x2="0.925" y2="-0.5" width="0.2032" layer="51"/>
-<wire x1="0.925" y1="-0.5" x2="-0.925" y2="-0.5" width="0.2032" layer="51"/>
-<wire x1="-0.925" y1="-0.5" x2="-0.925" y2="0.5" width="0.2032" layer="51"/>
-<circle x="0" y="0" radius="0.175" width="0" layer="21"/>
-<smd name="1" x="-0.85" y="0" dx="0.7" dy="1.4" layer="1"/>
-<smd name="2" x="0.85" y="0" dx="0.7" dy="1.4" layer="1"/>
-<text x="-1.025" y="1.025" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.025" y="-2.15" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="Q">
-<wire x1="1.016" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-1.016" y2="0" width="0.1524" layer="94"/>
-<wire x1="-0.381" y1="1.524" x2="-0.381" y2="-1.524" width="0.254" layer="94"/>
-<wire x1="-0.381" y1="-1.524" x2="0.381" y2="-1.524" width="0.254" layer="94"/>
-<wire x1="0.381" y1="-1.524" x2="0.381" y2="1.524" width="0.254" layer="94"/>
-<wire x1="0.381" y1="1.524" x2="-0.381" y2="1.524" width="0.254" layer="94"/>
-<wire x1="1.016" y1="1.778" x2="1.016" y2="-1.778" width="0.254" layer="94"/>
-<wire x1="-1.016" y1="1.778" x2="-1.016" y2="-1.778" width="0.254" layer="94"/>
-<text x="2.54" y="1.016" size="1.778" layer="95">&gt;NAME</text>
-<text x="2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
-<text x="-2.159" y="-1.143" size="0.8636" layer="93">1</text>
-<text x="1.524" y="-1.143" size="0.8636" layer="93">2</text>
-<pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="FC-12M" prefix="Q">
-<description>&lt;b&gt;kHz RANGE CRYSTAL UNIT&lt;/b&gt;&lt;p&gt;
-LOW PROFILE SMD&lt;b&gt;
-Source: Epson Toyocom FC-12M.pdf</description>
-<gates>
-<gate name="G$1" symbol="Q" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="FC-12M">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="led">
 <description>&lt;b&gt;LEDs&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;&lt;br&gt;
@@ -10217,6 +10158,51 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="FaBo-Crystal">
+<packages>
+<package name="ABRACOM-ABS07-32.768KHZ">
+<smd name="P$1" x="-1.25" y="0" dx="1.1" dy="1.9" layer="1"/>
+<smd name="P$2" x="1.25" y="0" dx="1.1" dy="1.9" layer="1"/>
+<wire x1="-1.8" y1="1" x2="1.8" y2="1" width="0.127" layer="21"/>
+<wire x1="1.8" y1="1" x2="1.8" y2="-1" width="0.127" layer="21"/>
+<wire x1="1.8" y1="-1" x2="-1.8" y2="-1" width="0.127" layer="21"/>
+<wire x1="-1.8" y1="-1" x2="-1.8" y2="1" width="0.127" layer="21"/>
+<text x="-1.778" y="1.27" size="0.8128" layer="25">&gt;NAME</text>
+</package>
+</packages>
+<symbols>
+<symbol name="CRYSTAL">
+<pin name="P$1" x="-2.54" y="0" visible="off" length="short"/>
+<pin name="P$2" x="5.08" y="0" visible="off" length="short" rot="R180"/>
+<wire x1="0.2" y1="1.27" x2="0.2" y2="-1.27" width="0.4064" layer="94"/>
+<wire x1="2.34" y1="1.27" x2="2.34" y2="-1.27" width="0.4064" layer="94"/>
+<wire x1="0.816" y1="1.224" x2="0.816" y2="-1.224" width="0.254" layer="94"/>
+<wire x1="0.816" y1="-1.224" x2="1.724" y2="-1.224" width="0.254" layer="94"/>
+<wire x1="1.724" y1="-1.224" x2="1.724" y2="1.224" width="0.254" layer="94"/>
+<wire x1="1.724" y1="1.224" x2="0.816" y2="1.224" width="0.254" layer="94"/>
+<text x="-0.862" y="1.832" size="1.27" layer="95">&gt;NAME</text>
+<text x="-0.762" y="-3.126" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="CRYSTAL" prefix="CY">
+<gates>
+<gate name="G$1" symbol="CRYSTAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="ABS07" package="ABRACOM-ABS07-32.768KHZ">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -10242,7 +10228,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="C1" library="adafruit" deviceset="C-US" device="C0603"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
-<part name="CR" library="crystal" deviceset="FC-12M" device="" value=""/>
 <part name="P0_0" library="led" deviceset="LED" device="CHIP-LED0603"/>
 <part name="U$6" library="gclue-test" deviceset="SWICTH-4P(KMR2)" device=""/>
 <part name="R2" library="adafruit" deviceset="R-US_" device="R0603"/>
@@ -10254,6 +10239,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="U$2" library="FaBo-Template" deviceset="SQUARE-TYPE2-TC2030" device=""/>
+<part name="CY1" library="FaBo-Crystal" deviceset="CRYSTAL" device="ABS07"/>
 </parts>
 <sheets>
 <sheet>
@@ -10281,7 +10267,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <instance part="C1" gate="G$1" x="106.68" y="111.76"/>
 <instance part="GND8" gate="1" x="106.68" y="99.06"/>
 <instance part="GND9" gate="1" x="165.1" y="35.56"/>
-<instance part="CR" gate="G$1" x="129.54" y="99.06" rot="R90"/>
 <instance part="P0_0" gate="G$1" x="33.02" y="81.28"/>
 <instance part="U$6" gate="G$1" x="30.48" y="137.16"/>
 <instance part="R2" gate="G$1" x="33.02" y="96.52" rot="R90"/>
@@ -10293,6 +10278,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <instance part="GND1" gate="1" x="58.42" y="45.72"/>
 <instance part="GND4" gate="1" x="30.48" y="124.46"/>
 <instance part="U$2" gate="G$1" x="12.7" y="30.48"/>
+<instance part="CY1" gate="G$1" x="129.54" y="99.06" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -10450,7 +10436,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="129.54" y1="101.6" x2="129.54" y2="104.14" width="0.1524" layer="91"/>
 <junction x="129.54" y="104.14"/>
 <pinref part="C2" gate="G$1" pin="2"/>
-<pinref part="CR" gate="G$1" pin="2"/>
+<pinref part="CY1" gate="G$1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -10464,7 +10450,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <junction x="129.54" y="93.98"/>
 <pinref part="C3" gate="G$1" pin="2"/>
 <junction x="124.46" y="93.98"/>
-<pinref part="CR" gate="G$1" pin="1"/>
+<pinref part="CY1" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="P0_00" class="0">

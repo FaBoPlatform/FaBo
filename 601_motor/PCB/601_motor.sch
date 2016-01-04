@@ -39743,6 +39743,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="SUPPLY25" library="FaBo-etc" deviceset="5V" device=""/>
 <part name="D12" library="FaBo-Template" deviceset="FABO_BRICK_3PIN" device="-S03B-PASK-2"/>
 <part name="D13" library="FaBo-Template" deviceset="FABO_BRICK_3PIN" device="-S03B-PASK-2"/>
+<part name="VS4" library="FaBo-etc" deviceset="VCC" device="" value="VS"/>
 </parts>
 <sheets>
 <sheet>
@@ -39817,6 +39818,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <instance part="SUPPLY25" gate="5V" x="218.44" y="111.76"/>
 <instance part="D12" gate="G$1" x="190.5" y="99.06" rot="R90"/>
 <instance part="D13" gate="G$1" x="218.44" y="99.06" rot="R90"/>
+<instance part="VS4" gate="G$1" x="7.62" y="73.66"/>
 </instances>
 <busses>
 </busses>
@@ -40180,26 +40182,12 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </net>
 <net name="D11" class="0">
 <segment>
-<pinref part="Q1" gate="G$1" pin="D"/>
-<wire x1="86.36" y1="132.08" x2="76.2" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="132.08" x2="71.12" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="142.24" x2="76.2" y2="132.08" width="0.1524" layer="91"/>
-<junction x="76.2" y="132.08"/>
-<label x="81.28" y="132.08" size="1.778" layer="95"/>
-<pinref part="R2" gate="G$1" pin="1"/>
-</segment>
-<segment>
 <pinref part="U1" gate="G$1" pin="D11"/>
 <wire x1="71.12" y1="81.28" x2="81.28" y2="81.28" width="0.1524" layer="91"/>
 <label x="81.28" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D10" class="0">
-<segment>
-<wire x1="106.68" y1="162.56" x2="106.68" y2="152.4" width="0.1524" layer="91"/>
-<label x="106.68" y="157.48" size="1.778" layer="95" rot="R90"/>
-<pinref part="R3" gate="G$1" pin="2"/>
-</segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="D10"/>
 <wire x1="71.12" y1="78.74" x2="81.28" y2="78.74" width="0.1524" layer="91"/>
@@ -40309,6 +40297,15 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <label x="213.36" y="111.76" size="1.778" layer="95" rot="R90"/>
 <pinref part="D13" gate="G$1" pin="I/O"/>
 </segment>
+<segment>
+<pinref part="Q1" gate="G$1" pin="D"/>
+<wire x1="86.36" y1="132.08" x2="76.2" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="132.08" x2="71.12" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="142.24" x2="76.2" y2="132.08" width="0.1524" layer="91"/>
+<junction x="76.2" y="132.08"/>
+<label x="81.28" y="132.08" size="1.778" layer="95"/>
+<pinref part="R2" gate="G$1" pin="1"/>
+</segment>
 </net>
 <net name="D12" class="0">
 <segment>
@@ -40320,6 +40317,19 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="185.42" y1="116.84" x2="185.42" y2="106.68" width="0.1524" layer="91"/>
 <label x="185.42" y="111.76" size="1.778" layer="95" rot="R90"/>
 <pinref part="D12" gate="G$1" pin="I/O"/>
+</segment>
+<segment>
+<wire x1="106.68" y1="162.56" x2="106.68" y2="152.4" width="0.1524" layer="91"/>
+<label x="106.68" y="157.48" size="1.778" layer="95" rot="R90"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="VCC" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="VIN"/>
+<wire x1="20.32" y1="68.58" x2="7.62" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="68.58" x2="7.62" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="VS4" gate="G$1" pin="VCC"/>
 </segment>
 </net>
 </nets>
