@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.4.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -127,63 +127,6 @@
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
-<library name="gclue">
-<packages>
-<package name="LA3R5-480H1_SMD">
-<smd name="P$1" x="-1" y="-1.27" dx="1.27" dy="0.635" layer="1" rot="R90"/>
-<smd name="P$2" x="0.5" y="-1.27" dx="1.27" dy="0.635" layer="1" rot="R90"/>
-<wire x1="-1.5" y1="-2.27" x2="1" y2="-2.27" width="0.127" layer="21"/>
-<wire x1="1" y1="-2.27" x2="1" y2="1.23" width="0.127" layer="21"/>
-<wire x1="1" y1="1.23" x2="-1.5" y2="1.23" width="0.127" layer="21"/>
-<wire x1="-1.5" y1="1.23" x2="-1.5" y2="-2.27" width="0.127" layer="21"/>
-</package>
-<package name="LA3R5-480AH1_PTH">
-<pad name="P$1" x="-1.29" y="0" drill="1.2" shape="octagon"/>
-<pad name="P$2" x="1.29" y="0" drill="1.2" shape="octagon"/>
-<wire x1="0.9" y1="0" x2="-0.9" y2="0" width="0.127" layer="51"/>
-<wire x1="2" y1="12.2" x2="-2" y2="12.2" width="0.127" layer="51"/>
-<wire x1="-2" y1="0" x2="-2" y2="12.2" width="0.127" layer="51"/>
-<wire x1="2" y1="0" x2="2" y2="12.2" width="0.127" layer="51"/>
-</package>
-</packages>
-<symbols>
-<symbol name="VIBRATOR-LA3R5-480AH1">
-<wire x1="5.08" y1="5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
-<pin name="IN/OUT" x="-10.16" y="2.54" visible="pin" length="middle"/>
-<pin name="GND" x="-10.16" y="-2.54" visible="pin" length="middle"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="LA3R5-480H1" prefix="U" uservalue="yes">
-<gates>
-<gate name="G$1" symbol="VIBRATOR-LA3R5-480AH1" x="0" y="5.08"/>
-</gates>
-<devices>
-<device name="-SMD" package="LA3R5-480H1_SMD">
-<connects>
-<connect gate="G$1" pin="GND" pad="P$2"/>
-<connect gate="G$1" pin="IN/OUT" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-PTH" package="LA3R5-480AH1_PTH">
-<connects>
-<connect gate="G$1" pin="GND" pad="P$2"/>
-<connect gate="G$1" pin="IN/OUT" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="FaBo-etc">
 <description>&lt;h3&gt;FaBo etc&lt;/h3&gt;
 etc/etc...&lt;br&gt;
@@ -31002,18 +30945,17 @@ Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;br&gt;
 https://creativecommons.org/licenses/by-sa/4.0/</description>
 <packages>
 <package name="FABO_BRICK_3PIN">
-<pad name="IN/OUT" x="-2.54" y="-8.89" drill="1" diameter="1.778" shape="octagon" rot="R90"/>
-<pad name="VCC" x="0" y="-8.89" drill="1" diameter="1.778" shape="octagon" rot="R90"/>
-<pad name="GND" x="2.54" y="-8.89" drill="1" diameter="1.6764" shape="square" rot="R90"/>
+<pad name="IN/OUT" x="-2.54" y="-9.525" drill="1" shape="long" rot="R90"/>
+<pad name="VCC" x="0" y="-9.525" drill="1" shape="long" rot="R90"/>
+<pad name="GND" x="2.54" y="-9.525" drill="1" shape="long" rot="R90"/>
 <text x="-2.54" y="-7.62" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">I/O</text>
 <text x="0" y="-7.62" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
 <text x="2.54" y="-7.62" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
-<wire x1="-10.16" y1="-16.51" x2="10.16" y2="-16.51" width="0" layer="20"/>
-<wire x1="10.16" y1="-16.51" x2="12.7" y2="-13.97" width="0" layer="20" curve="90"/>
-<wire x1="12.7" y1="-13.97" x2="12.7" y2="3.81" width="0" layer="20"/>
-<wire x1="-10.16" y1="-16.51" x2="-12.7" y2="-13.97" width="0" layer="20" curve="-90"/>
-<wire x1="-12.7" y1="3.81" x2="-12.7" y2="-13.97" width="0" layer="20"/>
-<wire x1="-5.08" y1="-16.51" x2="-5.08" y2="-8.89" width="0.127" layer="21"/>
+<wire x1="-8.89" y1="-16.51" x2="8.89" y2="-16.51" width="0" layer="20"/>
+<wire x1="8.89" y1="-16.51" x2="12.7" y2="-12.7" width="0" layer="20" curve="90"/>
+<wire x1="12.7" y1="-12.7" x2="12.7" y2="3.81" width="0" layer="20"/>
+<wire x1="-8.89" y1="-16.51" x2="-12.7" y2="-12.7" width="0" layer="20" curve="-90"/>
+<wire x1="-12.7" y1="3.81" x2="-12.7" y2="-12.7" width="0" layer="20"/>
 <pad name="P$5" x="-8.89" y="3.81" drill="3" diameter="3.81"/>
 <pad name="P$6" x="8.89" y="3.81" drill="3" diameter="3.81"/>
 <pad name="P$7" x="-8.89" y="-12.7" drill="3" diameter="3.81"/>
@@ -31023,22 +30965,20 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <circle x="-8.89" y="-12.7" radius="2.55" width="0.127" layer="51"/>
 <circle x="8.89" y="3.81" radius="2.55" width="0.127" layer="51"/>
 <circle x="8.89" y="-12.7" radius="2.55" width="0.127" layer="51"/>
-<wire x1="-5.08" y1="-8.89" x2="-5.08" y2="-22.29" width="0.127" layer="51"/>
-<wire x1="5.08" y1="-8.89" x2="5.08" y2="-22.29" width="0.127" layer="51"/>
-<wire x1="-5.08" y1="-22.29" x2="-3.8" y2="-22.29" width="0.127" layer="51"/>
-<wire x1="-3.8" y1="-22.29" x2="-2.8" y2="-22.29" width="0.127" layer="51"/>
-<wire x1="-2.8" y1="-22.29" x2="2.8" y2="-22.29" width="0.127" layer="51"/>
-<wire x1="2.8" y1="-22.29" x2="3.8" y2="-22.29" width="0.127" layer="51"/>
-<wire x1="3.8" y1="-22.29" x2="5.08" y2="-22.29" width="0.127" layer="51"/>
-<wire x1="-3.8" y1="-18.49" x2="-3.8" y2="-22.29" width="0.127" layer="51"/>
-<wire x1="-3.8" y1="-18.49" x2="3.8" y2="-18.49" width="0.127" layer="51"/>
-<wire x1="3.8" y1="-18.49" x2="3.8" y2="-22.29" width="0.127" layer="51"/>
-<wire x1="-2.8" y1="-22.29" x2="-2.8" y2="-19.89" width="0.127" layer="51"/>
-<wire x1="2.8" y1="-22.29" x2="2.8" y2="-19.89" width="0.127" layer="51"/>
-<wire x1="-2.8" y1="-19.89" x2="2.8" y2="-19.89" width="0.127" layer="51"/>
-<wire x1="5.08" y1="-16.51" x2="5.08" y2="-8.89" width="0.127" layer="21"/>
-<wire x1="-3.81" y1="-8.89" x2="-5.08" y2="-8.89" width="0.127" layer="21"/>
-<wire x1="5.08" y1="-8.89" x2="3.81" y2="-8.89" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-9.525" x2="-5.08" y2="-22.925" width="0.127" layer="51"/>
+<wire x1="5.08" y1="-9.525" x2="5.08" y2="-22.925" width="0.127" layer="51"/>
+<wire x1="-5.08" y1="-22.925" x2="-3.8" y2="-22.925" width="0.127" layer="51"/>
+<wire x1="-3.8" y1="-22.925" x2="-2.8" y2="-22.925" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="-22.925" x2="2.8" y2="-22.925" width="0.127" layer="51"/>
+<wire x1="2.8" y1="-22.925" x2="3.8" y2="-22.925" width="0.127" layer="51"/>
+<wire x1="3.8" y1="-22.925" x2="5.08" y2="-22.925" width="0.127" layer="51"/>
+<wire x1="-3.8" y1="-19.125" x2="-3.8" y2="-22.925" width="0.127" layer="51"/>
+<wire x1="-3.8" y1="-19.125" x2="3.8" y2="-19.125" width="0.127" layer="51"/>
+<wire x1="3.8" y1="-19.125" x2="3.8" y2="-22.925" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="-22.925" x2="-2.8" y2="-20.525" width="0.127" layer="51"/>
+<wire x1="2.8" y1="-22.925" x2="2.8" y2="-20.525" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="-20.525" x2="2.8" y2="-20.525" width="0.127" layer="51"/>
+<wire x1="-5.08" y1="-9.525" x2="5.08" y2="-9.525" width="0.127" layer="51"/>
 </package>
 <package name="FABO_BRICK_3PIN_BIG">
 <pad name="IN/OUT" x="-2.54" y="-15.24" drill="1" shape="long" rot="R90"/>
@@ -31079,46 +31019,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="-3.81" y1="-15.24" x2="-5.08" y2="-15.24" width="0.127" layer="21"/>
 <wire x1="5.08" y1="-15.24" x2="3.81" y2="-15.24" width="0.127" layer="21"/>
 </package>
-<package name="FABO_BRICK_3PIN_BREAKOUT">
-<pad name="IN/OUT" x="-2.54" y="-10.16" drill="1" diameter="1.778" shape="octagon" rot="R90"/>
-<pad name="VCC" x="0" y="-10.16" drill="1" diameter="1.778" shape="octagon" rot="R90"/>
-<pad name="GND" x="2.54" y="-10.16" drill="1" diameter="1.6764" shape="square" rot="R90"/>
-<text x="-2.54" y="-8.89" size="0.8128" layer="21" font="vector" ratio="12" rot="R90" align="center-left">I/O</text>
-<text x="0" y="-8.89" size="0.8128" layer="21" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
-<text x="2.54" y="-8.89" size="0.8128" layer="21" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
-<wire x1="5.08" y1="-12.7" x2="7.62" y2="-10.16" width="0" layer="20" curve="90"/>
-<wire x1="7.62" y1="-10.16" x2="7.62" y2="3.81" width="0" layer="20"/>
-<wire x1="-5.08" y1="-12.7" x2="-7.62" y2="-10.16" width="0" layer="20" curve="-90"/>
-<wire x1="-7.62" y1="3.81" x2="-7.62" y2="-10.16" width="0" layer="20"/>
-<wire x1="-7.62" y1="3.81" x2="7.62" y2="3.81" width="0" layer="20" curve="-180"/>
-<wire x1="-5.08" y1="-12.7" x2="5.08" y2="-12.7" width="0" layer="20"/>
-</package>
-<package name="FABO_BRICK_3PIN_CONNECTOR">
-<pad name="IN/OUT" x="2.54" y="0" drill="1" diameter="1.778" shape="octagon" rot="R270"/>
-<pad name="VCC" x="0" y="0" drill="1" diameter="1.778" shape="octagon" rot="R270"/>
-<pad name="GND" x="-2.54" y="0" drill="1" diameter="1.778" shape="octagon" rot="R270"/>
-<text x="2.54" y="1.27" size="1.016" layer="51" font="vector" ratio="10" rot="R90" align="center-left">I/O</text>
-<text x="0" y="1.27" size="1.016" layer="51" font="vector" ratio="10" rot="R90" align="center-left">VCC</text>
-<text x="-2.54" y="1.27" size="1.016" layer="51" font="vector" ratio="10" rot="R90" align="center-left">GND</text>
-<wire x1="5.08" y1="7.62" x2="5.08" y2="0" width="0.127" layer="21"/>
-<wire x1="5.08" y1="0" x2="5.08" y2="13.4" width="0.127" layer="51"/>
-<wire x1="-5.08" y1="0" x2="-5.08" y2="13.4" width="0.127" layer="51"/>
-<wire x1="5.08" y1="13.4" x2="3.8" y2="13.4" width="0.127" layer="51"/>
-<wire x1="3.8" y1="13.4" x2="2.8" y2="13.4" width="0.127" layer="51"/>
-<wire x1="2.8" y1="13.4" x2="-2.8" y2="13.4" width="0.127" layer="51"/>
-<wire x1="-2.8" y1="13.4" x2="-3.8" y2="13.4" width="0.127" layer="51"/>
-<wire x1="-3.8" y1="13.4" x2="-5.08" y2="13.4" width="0.127" layer="51"/>
-<wire x1="3.8" y1="9.6" x2="3.8" y2="13.4" width="0.127" layer="51"/>
-<wire x1="3.8" y1="9.6" x2="-3.8" y2="9.6" width="0.127" layer="51"/>
-<wire x1="-3.8" y1="9.6" x2="-3.8" y2="13.4" width="0.127" layer="51"/>
-<wire x1="2.8" y1="13.4" x2="2.8" y2="11" width="0.127" layer="51"/>
-<wire x1="-2.8" y1="13.4" x2="-2.8" y2="11" width="0.127" layer="51"/>
-<wire x1="2.8" y1="11" x2="-2.8" y2="11" width="0.127" layer="51"/>
-<wire x1="-5.08" y1="7.62" x2="-5.08" y2="0" width="0.127" layer="21"/>
-<wire x1="3.81" y1="0" x2="5.08" y2="0" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="0" x2="-3.81" y2="0" width="0.127" layer="21"/>
-<text x="0" y="-2.54" size="1.016" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
-</package>
 <package name="FABO_BRICK_3PIN_MIDDLE">
 <pad name="IN/OUT" x="-2.54" y="-13.97" drill="1" shape="long" rot="R90"/>
 <pad name="VCC" x="0" y="-13.97" drill="1" shape="long" rot="R90"/>
@@ -31158,19 +31058,58 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="-3.81" y1="-13.97" x2="-5.08" y2="-13.97" width="0.127" layer="21"/>
 <wire x1="5.08" y1="-13.97" x2="3.81" y2="-13.97" width="0.127" layer="21"/>
 </package>
+<package name="FABO_BRICK_3PIN_BREAKOUT">
+<pad name="GND" x="-2.54" y="-10.795" drill="1" shape="long" rot="R90"/>
+<pad name="VCC" x="0" y="-10.795" drill="1" shape="long" rot="R90"/>
+<pad name="I/O" x="2.54" y="-10.795" drill="1" shape="long" rot="R90"/>
+<text x="2.54" y="-8.89" size="0.8128" layer="21" font="vector" ratio="12" rot="R90" align="center-left">I/O</text>
+<text x="0" y="-8.89" size="0.8128" layer="21" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
+<text x="-2.54" y="-8.89" size="0.8128" layer="21" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
+<wire x1="5.08" y1="-13.97" x2="7.62" y2="-11.43" width="0" layer="20" curve="90"/>
+<wire x1="7.62" y1="-11.43" x2="7.62" y2="3.81" width="0" layer="20"/>
+<wire x1="-5.08" y1="-13.97" x2="-7.62" y2="-11.43" width="0" layer="20" curve="-90"/>
+<wire x1="-7.62" y1="3.81" x2="-7.62" y2="-11.43" width="0" layer="20"/>
+<wire x1="-7.62" y1="3.81" x2="7.62" y2="3.81" width="0" layer="20" curve="-180"/>
+<wire x1="-5.08" y1="-13.97" x2="5.08" y2="-13.97" width="0" layer="20"/>
+</package>
+<package name="FABO_BRICK_3PIN_CONNECTOR">
+<pad name="IN/OUT" x="2.54" y="0" drill="1" shape="long" rot="R270"/>
+<pad name="VCC" x="0" y="0" drill="1" shape="long" rot="R270"/>
+<pad name="GND" x="-2.54" y="0" drill="1" shape="long" rot="R270"/>
+<text x="2.54" y="1.905" size="0.6096" layer="51" font="vector" ratio="10" rot="R90" align="center-left">I/O</text>
+<text x="0" y="1.905" size="0.6096" layer="51" font="vector" ratio="10" rot="R90" align="center-left">VCC</text>
+<text x="-2.54" y="1.905" size="0.6096" layer="51" font="vector" ratio="10" rot="R90" align="center-left">GND</text>
+<wire x1="5.08" y1="7.62" x2="5.08" y2="0" width="0.127" layer="21"/>
+<wire x1="5.08" y1="0" x2="5.08" y2="13.4" width="0.127" layer="51"/>
+<wire x1="-5.08" y1="0" x2="-5.08" y2="13.4" width="0.127" layer="51"/>
+<wire x1="5.08" y1="13.4" x2="3.8" y2="13.4" width="0.127" layer="51"/>
+<wire x1="3.8" y1="13.4" x2="2.8" y2="13.4" width="0.127" layer="51"/>
+<wire x1="2.8" y1="13.4" x2="-2.8" y2="13.4" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="13.4" x2="-3.8" y2="13.4" width="0.127" layer="51"/>
+<wire x1="-3.8" y1="13.4" x2="-5.08" y2="13.4" width="0.127" layer="51"/>
+<wire x1="3.8" y1="9.6" x2="3.8" y2="13.4" width="0.127" layer="51"/>
+<wire x1="3.8" y1="9.6" x2="-3.8" y2="9.6" width="0.127" layer="51"/>
+<wire x1="-3.8" y1="9.6" x2="-3.8" y2="13.4" width="0.127" layer="51"/>
+<wire x1="2.8" y1="13.4" x2="2.8" y2="11" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="13.4" x2="-2.8" y2="11" width="0.127" layer="51"/>
+<wire x1="2.8" y1="11" x2="-2.8" y2="11" width="0.127" layer="51"/>
+<wire x1="-5.08" y1="7.62" x2="-5.08" y2="0" width="0.127" layer="21"/>
+<wire x1="3.81" y1="0" x2="5.08" y2="0" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="0" x2="-3.81" y2="0" width="0.127" layer="21"/>
+<text x="0" y="-1.905" size="0.8128" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center">&gt;NAME</text>
+</package>
 <package name="FABO_BRICK_3PIN_UNIVERSAL">
-<pad name="IN/OUT" x="-2.54" y="-8.89" drill="1" diameter="1.778" shape="octagon" rot="R90"/>
-<pad name="VCC" x="0" y="-8.89" drill="1" diameter="1.778" shape="octagon" rot="R90"/>
-<pad name="GND" x="2.54" y="-8.89" drill="1" diameter="1.6764" shape="square" rot="R90"/>
-<text x="-2.54" y="-7.62" size="0.8128" layer="21" font="vector" ratio="12" rot="R90" align="center-left">I/O</text>
-<text x="0" y="-7.62" size="0.8128" layer="21" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
-<text x="2.54" y="-7.62" size="0.8128" layer="21" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
+<pad name="IN/OUT" x="-2.54" y="-9.525" drill="1" shape="long" rot="R90"/>
+<pad name="VCC" x="0" y="-9.525" drill="1" shape="long" rot="R90"/>
+<pad name="GND" x="2.54" y="-9.525" drill="1" shape="long" rot="R90"/>
+<text x="-2.54" y="-7.62" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">I/O</text>
+<text x="0" y="-7.62" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
+<text x="2.54" y="-7.62" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
 <wire x1="-10.16" y1="-16.51" x2="10.16" y2="-16.51" width="0" layer="20"/>
 <wire x1="10.16" y1="-16.51" x2="12.7" y2="-13.97" width="0" layer="20" curve="90"/>
 <wire x1="12.7" y1="-13.97" x2="12.7" y2="3.81" width="0" layer="20"/>
 <wire x1="-10.16" y1="-16.51" x2="-12.7" y2="-13.97" width="0" layer="20" curve="-90"/>
 <wire x1="-12.7" y1="3.81" x2="-12.7" y2="-13.97" width="0" layer="20"/>
-<wire x1="-5.08" y1="-16.51" x2="-5.08" y2="-8.89" width="0.127" layer="21"/>
 <pad name="P$5" x="-8.89" y="3.81" drill="3" diameter="3.81"/>
 <pad name="P$6" x="8.89" y="3.81" drill="3" diameter="3.81"/>
 <pad name="P$7" x="-8.89" y="-12.7" drill="3" diameter="3.81"/>
@@ -31180,22 +31119,19 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <circle x="-8.89" y="-12.7" radius="2.55" width="0.127" layer="51"/>
 <circle x="8.89" y="3.81" radius="2.55" width="0.127" layer="51"/>
 <circle x="8.89" y="-12.7" radius="2.55" width="0.127" layer="51"/>
-<wire x1="-5.08" y1="-8.89" x2="-5.08" y2="-22.29" width="0.127" layer="51"/>
-<wire x1="5.08" y1="-8.89" x2="5.08" y2="-22.29" width="0.127" layer="51"/>
-<wire x1="-5.08" y1="-22.29" x2="-3.8" y2="-22.29" width="0.127" layer="51"/>
-<wire x1="-3.8" y1="-22.29" x2="-2.8" y2="-22.29" width="0.127" layer="51"/>
-<wire x1="-2.8" y1="-22.29" x2="2.8" y2="-22.29" width="0.127" layer="51"/>
-<wire x1="2.8" y1="-22.29" x2="3.8" y2="-22.29" width="0.127" layer="51"/>
-<wire x1="3.8" y1="-22.29" x2="5.08" y2="-22.29" width="0.127" layer="51"/>
-<wire x1="-3.8" y1="-18.49" x2="-3.8" y2="-22.29" width="0.127" layer="51"/>
-<wire x1="-3.8" y1="-18.49" x2="3.8" y2="-18.49" width="0.127" layer="51"/>
-<wire x1="3.8" y1="-18.49" x2="3.8" y2="-22.29" width="0.127" layer="51"/>
-<wire x1="-2.8" y1="-22.29" x2="-2.8" y2="-19.89" width="0.127" layer="51"/>
-<wire x1="2.8" y1="-22.29" x2="2.8" y2="-19.89" width="0.127" layer="51"/>
-<wire x1="-2.8" y1="-19.89" x2="2.8" y2="-19.89" width="0.127" layer="51"/>
-<wire x1="5.08" y1="-16.51" x2="5.08" y2="-8.89" width="0.127" layer="21"/>
-<wire x1="-3.81" y1="-8.89" x2="-5.08" y2="-8.89" width="0.127" layer="21"/>
-<wire x1="5.08" y1="-8.89" x2="3.81" y2="-8.89" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-9.525" x2="-5.08" y2="-22.925" width="0.127" layer="51"/>
+<wire x1="5.08" y1="-9.525" x2="5.08" y2="-22.925" width="0.127" layer="51"/>
+<wire x1="-5.08" y1="-22.925" x2="-3.8" y2="-22.925" width="0.127" layer="51"/>
+<wire x1="-3.8" y1="-22.925" x2="-2.8" y2="-22.925" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="-22.925" x2="2.8" y2="-22.925" width="0.127" layer="51"/>
+<wire x1="2.8" y1="-22.925" x2="3.8" y2="-22.925" width="0.127" layer="51"/>
+<wire x1="3.8" y1="-22.925" x2="5.08" y2="-22.925" width="0.127" layer="51"/>
+<wire x1="-3.8" y1="-19.125" x2="-3.8" y2="-22.925" width="0.127" layer="51"/>
+<wire x1="-3.8" y1="-19.125" x2="3.8" y2="-19.125" width="0.127" layer="51"/>
+<wire x1="3.8" y1="-19.125" x2="3.8" y2="-22.925" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="-22.925" x2="-2.8" y2="-20.525" width="0.127" layer="51"/>
+<wire x1="2.8" y1="-22.925" x2="2.8" y2="-20.525" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="-20.525" x2="2.8" y2="-20.525" width="0.127" layer="51"/>
 <pad name="P$4" x="5.08" y="-3.81" drill="1" diameter="1.778" shape="octagon"/>
 <pad name="P$9" x="7.62" y="-3.81" drill="1" diameter="1.778" shape="octagon"/>
 <pad name="P$11" x="-5.08" y="-3.81" drill="1" diameter="1.778" shape="octagon"/>
@@ -31241,48 +31177,99 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pad name="P$56" x="0" y="13.97" drill="1" diameter="1.778" shape="octagon"/>
 <pad name="P$57" x="2.54" y="13.97" drill="1" diameter="1.778" shape="octagon"/>
 <pad name="P$58" x="5.08" y="13.97" drill="1" diameter="1.778" shape="octagon"/>
+<wire x1="-5.08" y1="-9.525" x2="5.08" y2="-9.525" width="0.127" layer="51"/>
 </package>
 <package name="FABO_BRICK_3PIN_HEADER">
-<pad name="GND" x="-2.54" y="0.127" drill="1" diameter="1.778" shape="octagon" rot="R90"/>
-<pad name="VCC" x="0" y="-0.127" drill="1" diameter="1.778" shape="octagon" rot="R90"/>
-<pad name="I/O" x="2.54" y="0.127" drill="1" diameter="1.778" shape="octagon" rot="R90"/>
-<text x="8.89" y="0" size="1.27" layer="25" font="vector" ratio="12" align="center-left">&gt;NAME</text>
+<pad name="GND" x="-2.54" y="0" drill="1" diameter="1.778" shape="octagon" rot="R90"/>
+<pad name="VCC" x="0" y="0" drill="1" diameter="1.778" shape="octagon" rot="R90"/>
+<pad name="I/O" x="2.54" y="0" drill="1" diameter="1.778" shape="octagon" rot="R90"/>
+<text x="5.08" y="0" size="1.27" layer="25" font="vector" ratio="12" align="center-left">&gt;NAME</text>
 <rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
 <rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
 <rectangle x1="-2.794" y1="-0.254" x2="-2.286" y2="0.254" layer="51"/>
-<wire x1="-6" y1="2" x2="-3.175" y2="2" width="0.1524" layer="51"/>
-<wire x1="-3.175" y1="2" x2="-1.905" y2="2" width="0.1524" layer="51"/>
-<wire x1="-1.905" y1="2" x2="6" y2="2" width="0.1524" layer="51"/>
-<wire x1="-5.3" y1="-2" x2="5.3" y2="-2" width="0.1524" layer="51"/>
-<wire x1="-5.1" y1="-1" x2="-5.1" y2="1.2" width="0.1524" layer="51"/>
-<wire x1="5.1" y1="-1" x2="7.5" y2="-1" width="0.1524" layer="51"/>
-<wire x1="5.3" y1="-2.2" x2="7.5" y2="-2.2" width="0.1524" layer="51"/>
-<wire x1="7.5" y1="-1" x2="7.5" y2="-2.2" width="0.1524" layer="51"/>
-<wire x1="5.1" y1="-1" x2="5.1" y2="1.2" width="0.1524" layer="51"/>
-<wire x1="5.1" y1="1.2" x2="6" y2="1.2" width="0.1524" layer="51"/>
-<wire x1="6" y1="1.2" x2="6" y2="2" width="0.1524" layer="51"/>
-<wire x1="5.3" y1="-2" x2="5.3" y2="-2.2" width="0.1524" layer="51"/>
-<wire x1="-5.1" y1="-1" x2="-7.5" y2="-1" width="0.1524" layer="51"/>
-<wire x1="-6" y1="1.2" x2="-6" y2="2" width="0.1524" layer="51"/>
-<wire x1="-5.1" y1="1.2" x2="-6" y2="1.2" width="0.1524" layer="51"/>
-<wire x1="-7.5" y1="-1" x2="-7.5" y2="-2.2" width="0.1524" layer="51"/>
-<wire x1="-7.5" y1="-2.2" x2="-5.3" y2="-2.2" width="0.1524" layer="51"/>
-<wire x1="-5.3" y1="-2" x2="-5.3" y2="-2.2" width="0.1524" layer="51"/>
-<wire x1="-2.54" y1="1.27" x2="-3.175" y2="2" width="0.1524" layer="51"/>
-<wire x1="-1.905" y1="2" x2="-2.54" y2="1.27" width="0.1524" layer="51"/>
-<wire x1="-5.1" y1="2" x2="5.1" y2="2" width="0.1524" layer="21"/>
-<wire x1="-7.5" y1="-2" x2="7.5" y2="-2" width="0.1524" layer="21"/>
-<wire x1="-5.1" y1="-1" x2="-5.1" y2="2" width="0.1524" layer="21"/>
-<wire x1="5.1" y1="-1" x2="5.1" y2="2" width="0.1524" layer="21"/>
-<wire x1="5.1" y1="-1" x2="7.5" y2="-1" width="0.1524" layer="21"/>
-<wire x1="-5.1" y1="-1" x2="-7.5" y2="-1" width="0.1524" layer="21"/>
-<wire x1="7.5" y1="-1" x2="7.5" y2="-2" width="0.1524" layer="21"/>
-<wire x1="-7.5" y1="-1" x2="-7.5" y2="-2" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="1.27" x2="-3.175" y2="2" width="0.1524" layer="21"/>
-<wire x1="-1.905" y1="2" x2="-2.54" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="1.27" x2="-3.175" y2="2" width="0.1524" layer="22"/>
-<wire x1="-1.905" y1="2" x2="-2.54" y2="1.27" width="0.1524" layer="22"/>
-<wire x1="-3.175" y1="2" x2="-1.905" y2="2" width="0.1524" layer="22"/>
+<wire x1="-3.81" y1="-1.25" x2="3.81" y2="-1.25" width="0.0762" layer="51"/>
+<wire x1="3.81" y1="1.25" x2="-3.81" y2="1.25" width="0.0762" layer="51"/>
+<wire x1="-3.81" y1="1.25" x2="-3.81" y2="-1.25" width="0.0762" layer="51"/>
+<wire x1="3.81" y1="1.25" x2="3.81" y2="-1.25" width="0.0762" layer="51"/>
+</package>
+<package name="FABO_BRICK_3PIN_CONNECTOR_I">
+<pad name="GND" x="-2.54" y="0.127" drill="1" diameter="1.778" shape="octagon" rot="R90"/>
+<pad name="VCC" x="0" y="-0.127" drill="1" diameter="1.778" shape="octagon" rot="R90"/>
+<pad name="I/O" x="2.54" y="0.127" drill="1" diameter="1.778" shape="octagon" rot="R90"/>
+<text x="0" y="3.81" size="1.27" layer="25" font="vector" ratio="15" align="bottom-center">&gt;NAME</text>
+<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+<rectangle x1="-2.794" y1="-0.254" x2="-2.286" y2="0.254" layer="51"/>
+<wire x1="-5.08" y1="3.175" x2="-3.81" y2="3.175" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="3.175" x2="5.08" y2="3.175" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="3.175" x2="-5.08" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="5.08" y1="3.175" x2="5.08" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="3.175" x2="-2.54" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="1.27" x2="-1.27" y2="3.175" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="3.175" x2="-1.27" y2="3.175" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="1.27" x2="-1.27" y2="3.175" width="0.127" layer="22"/>
+<wire x1="-3.81" y1="3.175" x2="-2.54" y2="1.27" width="0.127" layer="22"/>
+<wire x1="-3.81" y1="3.175" x2="-1.27" y2="3.175" width="0.127" layer="22"/>
+<wire x1="-5.08" y1="-2.54" x2="5.08" y2="-2.54" width="0.127" layer="21"/>
+</package>
+<package name="FABO_BRICK_3PIN_B03B-PASK-1">
+<pad name="GND" x="-2" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="VCC" x="0" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="I/O" x="2" y="0" drill="0.8" diameter="1.4224" shape="square"/>
+<hole x="3.5" y="1.7" drill="1.1"/>
+<wire x1="4" y1="-3.1" x2="4" y2="2.2" width="0.127" layer="51"/>
+<wire x1="-4" y1="-3.1" x2="-4" y2="2.2" width="0.127" layer="51"/>
+<wire x1="4" y1="2.2" x2="-4" y2="2.2" width="0.127" layer="51"/>
+<wire x1="4" y1="-3.1" x2="2" y2="-3.1" width="0.127" layer="51"/>
+<wire x1="2" y1="-3.1" x2="-2" y2="-3.1" width="0.127" layer="51"/>
+<wire x1="-2" y1="-3.1" x2="-4" y2="-3.1" width="0.127" layer="51"/>
+<wire x1="2" y1="-3.6" x2="-2" y2="-3.6" width="0.127" layer="51"/>
+<wire x1="-2" y1="-3.6" x2="-2" y2="-3.1" width="0.127" layer="51"/>
+<wire x1="2" y1="-3.6" x2="2" y2="-3.1" width="0.127" layer="51"/>
+<text x="0" y="3.175" size="1.27" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+</package>
+<package name="FABO_BRICK_3PIN_S03B-PASK-2">
+<pad name="GND" x="-2" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="VCC" x="0" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="I/O" x="2" y="0" drill="0.8" diameter="1.4224" shape="square"/>
+<hole x="3.5" y="2.1" drill="1.1"/>
+<wire x1="4" y1="-3.5" x2="4" y2="8.2" width="0.127" layer="51"/>
+<wire x1="-4" y1="-3.5" x2="-4" y2="8.2" width="0.127" layer="51"/>
+<wire x1="4" y1="8.2" x2="2" y2="8.2" width="0.127" layer="51"/>
+<wire x1="2" y1="8.2" x2="-2" y2="8.2" width="0.127" layer="51"/>
+<wire x1="-2" y1="8.2" x2="-4" y2="8.2" width="0.127" layer="51"/>
+<wire x1="4" y1="-3.5" x2="3.3" y2="-3.5" width="0.127" layer="51"/>
+<text x="0" y="-4.445" size="1.27" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center">&gt;NAME</text>
+<hole x="-3.5" y="2.1" drill="1.1"/>
+<wire x1="-3.3" y1="-3.5" x2="-4" y2="-3.5" width="0.127" layer="51"/>
+<wire x1="2" y1="6.7" x2="-2" y2="6.7" width="0.127" layer="51"/>
+<wire x1="-2" y1="8.2" x2="-2" y2="6.7" width="0.127" layer="51"/>
+<wire x1="2" y1="8.2" x2="2" y2="6.7" width="0.127" layer="51"/>
+<text x="-2" y="1.27" size="0.6096" layer="51" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
+<text x="0" y="1.27" size="0.6096" layer="51" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
+<text x="2" y="1.27" size="0.6096" layer="51" font="vector" ratio="12" rot="R90" align="center-left">I/O</text>
+<wire x1="-3.3" y1="-3.5" x2="-3.3" y2="0.5" width="0.127" layer="51"/>
+<wire x1="3.3" y1="-3.5" x2="3.3" y2="0.5" width="0.127" layer="51"/>
+<wire x1="3.3" y1="0.5" x2="-3.3" y2="0.5" width="0.127" layer="51"/>
+</package>
+<package name="FABO_BRICK_3PIN_B03B-PASK-1_SILK">
+<pad name="GND" x="-2" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="VCC" x="0" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="I/O" x="2" y="0" drill="0.8" diameter="1.4224" shape="square"/>
+<hole x="3.5" y="1.7" drill="1.1"/>
+<wire x1="4" y1="-3.1" x2="4" y2="2.2" width="0.127" layer="51"/>
+<wire x1="-4" y1="-3.1" x2="-4" y2="2.2" width="0.127" layer="51"/>
+<wire x1="4" y1="2.2" x2="-4" y2="2.2" width="0.127" layer="51"/>
+<wire x1="4" y1="-3.1" x2="2" y2="-3.1" width="0.127" layer="51"/>
+<wire x1="2" y1="-3.1" x2="-2" y2="-3.1" width="0.127" layer="51"/>
+<wire x1="-2" y1="-3.1" x2="-4" y2="-3.1" width="0.127" layer="51"/>
+<wire x1="2" y1="-3.6" x2="-2" y2="-3.6" width="0.127" layer="51"/>
+<wire x1="-2" y1="-3.6" x2="-2" y2="-3.1" width="0.127" layer="51"/>
+<wire x1="2" y1="-3.6" x2="2" y2="-3.1" width="0.127" layer="51"/>
+<text x="0" y="3.175" size="1.27" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+<text x="-2" y="-4" size="0.8128" layer="21" font="vector" ratio="12" rot="R270" align="center-left">GND</text>
+<text x="0" y="-4" size="0.8128" layer="21" font="vector" ratio="12" rot="R270" align="center-left">VCC</text>
+<text x="2" y="-4" size="0.8128" layer="21" font="vector" ratio="12" rot="R270" align="center-left">I/O</text>
 </package>
 </packages>
 <symbols>
@@ -31327,7 +31314,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <device name="-BREAKOUT" package="FABO_BRICK_3PIN_BREAKOUT">
 <connects>
 <connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="I/O" pad="IN/OUT"/>
+<connect gate="G$1" pin="I/O" pad="I/O"/>
 <connect gate="G$1" pin="VCC" pad="VCC"/>
 </connects>
 <technologies>
@@ -31374,6 +31361,91 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="-CONNECTOR_I" package="FABO_BRICK_3PIN_CONNECTOR_I">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="I/O" pad="I/O"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-B03B-PASK-1" package="FABO_BRICK_3PIN_B03B-PASK-1">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="I/O" pad="I/O"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-S03B-PASK-2" package="FABO_BRICK_3PIN_S03B-PASK-2">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="I/O" pad="I/O"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-B03B-PASK-1_SILK" package="FABO_BRICK_3PIN_B03B-PASK-1_SILK">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="I/O" pad="I/O"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="FaBo-Parts">
+<description>&lt;h3&gt;FaBo Parts&lt;/h3&gt;
+Parts&lt;br&gt;
+&lt;br&gt;
+Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;br&gt;
+https://creativecommons.org/licenses/by-sa/4.0/</description>
+<packages>
+<package name="LA3R5-480AH1_PTH">
+<pad name="P$1" x="-1.29" y="0" drill="1.2" diameter="1.9304" shape="octagon"/>
+<pad name="P$2" x="1.29" y="0" drill="1.2" diameter="1.9304" shape="octagon"/>
+<wire x1="0.9" y1="0" x2="-0.9" y2="0" width="0.127" layer="51"/>
+<wire x1="2" y1="12.2" x2="-2" y2="12.2" width="0.127" layer="51"/>
+<wire x1="-2" y1="0" x2="-2" y2="12.2" width="0.127" layer="51"/>
+<wire x1="2" y1="0" x2="2" y2="12.2" width="0.127" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="VIBRATOR">
+<wire x1="5.08" y1="5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<pin name="IN/OUT" x="-10.16" y="2.54" visible="pin" length="middle"/>
+<pin name="GND" x="-10.16" y="-2.54" visible="pin" length="middle"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="VIBRATOR" prefix="U" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="VIBRATOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LA3R5-480AH1_PTH">
+<connects>
+<connect gate="G$1" pin="GND" pad="P$2"/>
+<connect gate="G$1" pin="IN/OUT" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 </devicesets>
@@ -31388,23 +31460,23 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </class>
 </classes>
 <parts>
-<part name="U1" library="gclue" deviceset="LA3R5-480H1" device="-PTH"/>
 <part name="U$1" library="FaBo-etc" deviceset="A4L-LOC" device=""/>
 <part name="J1" library="FaBo-Template" deviceset="FABO_BRICK_3PIN" device=""/>
 <part name="U$3" library="FaBo-etc" deviceset="LOGO_FABO" device="-M"/>
 <part name="U$2" library="FaBo-etc" deviceset="LOGO_OSHW" device="-T_M_BOTTOM"/>
+<part name="U1" library="FaBo-Parts" deviceset="VIBRATOR" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.1</text>
+<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.2</text>
 </plain>
 <instances>
-<instance part="U1" gate="G$1" x="147.32" y="93.98"/>
 <instance part="U$1" gate="G$1" x="0" y="0"/>
 <instance part="J1" gate="G$1" x="109.22" y="93.98"/>
 <instance part="U$3" gate="G$1" x="215.9" y="5.08"/>
 <instance part="U$2" gate="G$1" x="248.92" y="12.7"/>
+<instance part="U1" gate="G$1" x="147.32" y="93.98"/>
 </instances>
 <busses>
 </busses>
@@ -31414,8 +31486,8 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="116.84" y1="99.06" x2="127" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="127" y1="99.06" x2="127" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="127" y1="96.52" x2="137.16" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="IN/OUT"/>
 <pinref part="J1" gate="G$1" pin="I/O"/>
+<pinref part="U1" gate="G$1" pin="IN/OUT"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -31423,8 +31495,8 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="116.84" y1="88.9" x2="127" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="127" y1="88.9" x2="127" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="127" y1="91.44" x2="137.16" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="GND"/>
 <pinref part="J1" gate="G$1" pin="GND"/>
+<pinref part="U1" gate="G$1" pin="GND"/>
 </segment>
 </net>
 </nets>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.4.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -128,33 +128,11 @@
 <board>
 <plain>
 <text x="3.81" y="8.89" size="1.27" layer="21" font="vector" ratio="12" rot="R90">TEMP</text>
-<text x="5.08" y="8.89" size="1.016" layer="21" font="vector" ratio="12" rot="R90">Rev.1.0.1</text>
+<text x="5.08" y="8.89" size="1.016" layer="21" font="vector" ratio="12" rot="R90">Rev.1.0.2</text>
 <text x="22.86" y="12.065" size="0.8128" layer="21" font="vector" ratio="12" rot="R270" align="bottom-center">MADE IN JAPAN</text>
 <text x="12.7" y="27.305" size="2.54" layer="21" font="vector" ratio="12" align="bottom-center">#108</text>
 </plain>
 <libraries>
-<library name="Gclue">
-<description>&lt;h3&gt;GClue, Inc.&lt;/h3&gt;</description>
-<packages>
-<package name="SENSOR-LM60-TO-92">
-<description>TO-92</description>
-<wire x1="-2.095" y1="-1.651" x2="-0.7869" y2="2.5484" width="0.1524" layer="21" curve="-111.097684"/>
-<wire x1="0.7869" y1="2.5484" x2="2.095" y2="-1.651" width="0.1524" layer="21" curve="-111.097684"/>
-<wire x1="-2.095" y1="-1.651" x2="2.095" y2="-1.651" width="0.1524" layer="21"/>
-<wire x1="-2.254" y1="-0.254" x2="-0.286" y2="-0.254" width="0.1524" layer="51"/>
-<wire x1="-2.655" y1="-0.254" x2="-2.254" y2="-0.254" width="0.1524" layer="21"/>
-<wire x1="-0.286" y1="-0.254" x2="0.286" y2="-0.254" width="0.1524" layer="21"/>
-<wire x1="2.254" y1="-0.254" x2="2.655" y2="-0.254" width="0.1524" layer="21"/>
-<wire x1="0.286" y1="-0.254" x2="2.254" y2="-0.254" width="0.1524" layer="51"/>
-<wire x1="-0.7864" y1="2.5484" x2="0.7864" y2="2.5484" width="0.1524" layer="51" curve="-34.298964"/>
-<pad name="VCC" x="-1.27" y="0" drill="0.8128" diameter="1.27" shape="octagon"/>
-<pad name="OUT" x="0" y="1.905" drill="0.8128" diameter="1.27" shape="octagon"/>
-<pad name="GND" x="1.27" y="0" drill="0.8128" diameter="1.27" shape="octagon"/>
-<text x="-3.175" y="3.175" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-1.27" y="-3.81" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-</packages>
-</library>
 <library name="FaBo-Template">
 <description>&lt;h3&gt;FaBo Template&lt;/h3&gt;
 FaBo Bricks/Beacons/Breakouts&lt;br&gt;
@@ -163,18 +141,17 @@ Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;br&gt;
 https://creativecommons.org/licenses/by-sa/4.0/</description>
 <packages>
 <package name="FABO_BRICK_3PIN">
-<pad name="IN/OUT" x="-2.54" y="-8.89" drill="1" diameter="1.778" shape="octagon" rot="R90"/>
-<pad name="VCC" x="0" y="-8.89" drill="1" diameter="1.778" shape="octagon" rot="R90"/>
-<pad name="GND" x="2.54" y="-8.89" drill="1" diameter="1.6764" shape="square" rot="R90"/>
+<pad name="IN/OUT" x="-2.54" y="-9.525" drill="1" shape="long" rot="R90"/>
+<pad name="VCC" x="0" y="-9.525" drill="1" shape="long" rot="R90"/>
+<pad name="GND" x="2.54" y="-9.525" drill="1" shape="long" rot="R90"/>
 <text x="-2.54" y="-7.62" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">I/O</text>
 <text x="0" y="-7.62" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
 <text x="2.54" y="-7.62" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
-<wire x1="-10.16" y1="-16.51" x2="10.16" y2="-16.51" width="0" layer="20"/>
-<wire x1="10.16" y1="-16.51" x2="12.7" y2="-13.97" width="0" layer="20" curve="90"/>
-<wire x1="12.7" y1="-13.97" x2="12.7" y2="3.81" width="0" layer="20"/>
-<wire x1="-10.16" y1="-16.51" x2="-12.7" y2="-13.97" width="0" layer="20" curve="-90"/>
-<wire x1="-12.7" y1="3.81" x2="-12.7" y2="-13.97" width="0" layer="20"/>
-<wire x1="-5.08" y1="-16.51" x2="-5.08" y2="-8.89" width="0.127" layer="21"/>
+<wire x1="-8.89" y1="-16.51" x2="8.89" y2="-16.51" width="0" layer="20"/>
+<wire x1="8.89" y1="-16.51" x2="12.7" y2="-12.7" width="0" layer="20" curve="90"/>
+<wire x1="12.7" y1="-12.7" x2="12.7" y2="3.81" width="0" layer="20"/>
+<wire x1="-8.89" y1="-16.51" x2="-12.7" y2="-12.7" width="0" layer="20" curve="-90"/>
+<wire x1="-12.7" y1="3.81" x2="-12.7" y2="-12.7" width="0" layer="20"/>
 <pad name="P$5" x="-8.89" y="3.81" drill="3" diameter="3.81"/>
 <pad name="P$6" x="8.89" y="3.81" drill="3" diameter="3.81"/>
 <pad name="P$7" x="-8.89" y="-12.7" drill="3" diameter="3.81"/>
@@ -184,22 +161,20 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <circle x="-8.89" y="-12.7" radius="2.55" width="0.127" layer="51"/>
 <circle x="8.89" y="3.81" radius="2.55" width="0.127" layer="51"/>
 <circle x="8.89" y="-12.7" radius="2.55" width="0.127" layer="51"/>
-<wire x1="-5.08" y1="-8.89" x2="-5.08" y2="-22.29" width="0.127" layer="51"/>
-<wire x1="5.08" y1="-8.89" x2="5.08" y2="-22.29" width="0.127" layer="51"/>
-<wire x1="-5.08" y1="-22.29" x2="-3.8" y2="-22.29" width="0.127" layer="51"/>
-<wire x1="-3.8" y1="-22.29" x2="-2.8" y2="-22.29" width="0.127" layer="51"/>
-<wire x1="-2.8" y1="-22.29" x2="2.8" y2="-22.29" width="0.127" layer="51"/>
-<wire x1="2.8" y1="-22.29" x2="3.8" y2="-22.29" width="0.127" layer="51"/>
-<wire x1="3.8" y1="-22.29" x2="5.08" y2="-22.29" width="0.127" layer="51"/>
-<wire x1="-3.8" y1="-18.49" x2="-3.8" y2="-22.29" width="0.127" layer="51"/>
-<wire x1="-3.8" y1="-18.49" x2="3.8" y2="-18.49" width="0.127" layer="51"/>
-<wire x1="3.8" y1="-18.49" x2="3.8" y2="-22.29" width="0.127" layer="51"/>
-<wire x1="-2.8" y1="-22.29" x2="-2.8" y2="-19.89" width="0.127" layer="51"/>
-<wire x1="2.8" y1="-22.29" x2="2.8" y2="-19.89" width="0.127" layer="51"/>
-<wire x1="-2.8" y1="-19.89" x2="2.8" y2="-19.89" width="0.127" layer="51"/>
-<wire x1="5.08" y1="-16.51" x2="5.08" y2="-8.89" width="0.127" layer="21"/>
-<wire x1="-3.81" y1="-8.89" x2="-5.08" y2="-8.89" width="0.127" layer="21"/>
-<wire x1="5.08" y1="-8.89" x2="3.81" y2="-8.89" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-9.525" x2="-5.08" y2="-22.925" width="0.127" layer="51"/>
+<wire x1="5.08" y1="-9.525" x2="5.08" y2="-22.925" width="0.127" layer="51"/>
+<wire x1="-5.08" y1="-22.925" x2="-3.8" y2="-22.925" width="0.127" layer="51"/>
+<wire x1="-3.8" y1="-22.925" x2="-2.8" y2="-22.925" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="-22.925" x2="2.8" y2="-22.925" width="0.127" layer="51"/>
+<wire x1="2.8" y1="-22.925" x2="3.8" y2="-22.925" width="0.127" layer="51"/>
+<wire x1="3.8" y1="-22.925" x2="5.08" y2="-22.925" width="0.127" layer="51"/>
+<wire x1="-3.8" y1="-19.125" x2="-3.8" y2="-22.925" width="0.127" layer="51"/>
+<wire x1="-3.8" y1="-19.125" x2="3.8" y2="-19.125" width="0.127" layer="51"/>
+<wire x1="3.8" y1="-19.125" x2="3.8" y2="-22.925" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="-22.925" x2="-2.8" y2="-20.525" width="0.127" layer="51"/>
+<wire x1="2.8" y1="-22.925" x2="2.8" y2="-20.525" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="-20.525" x2="2.8" y2="-20.525" width="0.127" layer="51"/>
+<wire x1="-5.08" y1="-9.525" x2="5.08" y2="-9.525" width="0.127" layer="51"/>
 </package>
 </packages>
 </library>
@@ -3929,6 +3904,25 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </package>
 </packages>
 </library>
+<library name="FaBo-Sensor">
+<description>&lt;h3&gt;FaBo Sensors&lt;/h3&gt;
+Sensors&lt;br&gt;
+&lt;br&gt;
+Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;br&gt;
+https://creativecommons.org/licenses/by-sa/4.0/</description>
+<packages>
+<package name="LM60-TO-92">
+<wire x1="-2.095" y1="-1.651" x2="-0.7869" y2="2.5484" width="0.1" layer="21" curve="-111.097684"/>
+<wire x1="0.7869" y1="2.5484" x2="2.095" y2="-1.651" width="0.1" layer="21" curve="-111.097684"/>
+<wire x1="-2.095" y1="-1.651" x2="2.095" y2="-1.651" width="0.1" layer="21"/>
+<pad name="VCC" x="-1.27" y="0" drill="0.9" diameter="1.6764" shape="octagon"/>
+<pad name="OUT" x="0" y="1.905" drill="0.9" diameter="1.6764" shape="octagon"/>
+<pad name="GND" x="1.27" y="0" drill="0.9" diameter="1.6764" shape="octagon"/>
+<text x="0" y="3.175" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.54" size="0.8128" layer="27" font="vector" ratio="12" rot="R180" align="bottom-center">&gt;VALUE</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -4120,44 +4114,45 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="U1" library="Gclue" package="SENSOR-LM60-TO-92" value="SENSOR-LM60-TO92" x="12.7" y="20.32" smashed="yes"/>
 <element name="J1" library="FaBo-Template" package="FABO_BRICK_3PIN" value="" x="12.7" y="16.51"/>
 <element name="U$3" library="FaBo-etc" package="LOGO_FABO_MS" value="" x="22.86" y="12.065" rot="R90"/>
-<element name="U$2" library="FaBo-etc" package="LOGO_OSHW_T_MS_BOTTOM" value="" x="12.7" y="3.81"/>
+<element name="U$2" library="FaBo-etc" package="LOGO_OSHW_T_MS_BOTTOM" value="" x="12.7" y="3.429"/>
+<element name="U1" library="FaBo-Sensor" package="LM60-TO-92" value="" x="12.7" y="20.32" smashed="yes">
+<attribute name="VALUE" x="12.7" y="17.78" size="0.8128" layer="27" font="vector" ratio="12" rot="R180" align="bottom-center"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
-<contactref element="U1" pad="GND"/>
-<polygon width="0.4064" layer="16" spacing="0.4064">
-<vertex x="-1.27" y="-1.27"/>
-<vertex x="26.67" y="-1.27"/>
-<vertex x="26.67" y="34.29"/>
-<vertex x="-1.27" y="34.29"/>
-</polygon>
-<polygon width="0.4064" layer="1" spacing="0.4064">
-<vertex x="-1.27" y="-1.27"/>
-<vertex x="26.67" y="-1.27"/>
-<vertex x="26.67" y="34.29"/>
-<vertex x="-1.27" y="34.29"/>
-</polygon>
 <contactref element="J1" pad="GND"/>
+<contactref element="U1" pad="GND"/>
+<polygon width="0.2032" layer="16" spacing="0.254">
+<vertex x="-1.27" y="-1.27"/>
+<vertex x="26.67" y="-1.27"/>
+<vertex x="26.67" y="34.29"/>
+<vertex x="-1.27" y="34.29"/>
+</polygon>
+<polygon width="0.2032" layer="1" spacing="0.254">
+<vertex x="-1.27" y="-1.27"/>
+<vertex x="26.67" y="-1.27"/>
+<vertex x="26.67" y="34.29"/>
+<vertex x="-1.27" y="34.29"/>
+</polygon>
 </signal>
 <signal name="VCC">
-<contactref element="U1" pad="VCC"/>
 <contactref element="J1" pad="VCC"/>
-<wire x1="11.43" y1="20.32" x2="11.43" y2="13.97" width="0.4064" layer="16"/>
-<wire x1="11.43" y1="13.97" x2="12.7" y2="12.7" width="0.4064" layer="16"/>
-<wire x1="12.7" y1="12.7" x2="12.7" y2="7.62" width="0.4064" layer="16"/>
+<contactref element="U1" pad="VCC"/>
+<wire x1="11.43" y1="20.32" x2="11.43" y2="12.065" width="0.4064" layer="16"/>
+<wire x1="11.43" y1="12.065" x2="12.7" y2="10.795" width="0.4064" layer="16"/>
+<wire x1="12.7" y1="10.795" x2="12.7" y2="6.985" width="0.4064" layer="16"/>
 </signal>
 <signal name="IN">
-<contactref element="U1" pad="OUT"/>
 <contactref element="J1" pad="IN/OUT"/>
-<wire x1="10.16" y1="7.62" x2="10.16" y2="17.78" width="0.4064" layer="16"/>
-<wire x1="10.16" y1="17.78" x2="8.89" y2="19.05" width="0.4064" layer="16"/>
-<wire x1="8.89" y1="19.05" x2="8.89" y2="21.59" width="0.4064" layer="16"/>
-<wire x1="8.89" y1="21.59" x2="10.16" y2="22.86" width="0.4064" layer="16"/>
-<wire x1="10.16" y1="22.86" x2="12.065" y2="22.86" width="0.4064" layer="16"/>
-<wire x1="12.065" y1="22.86" x2="12.7" y2="22.225" width="0.4064" layer="16"/>
+<contactref element="U1" pad="OUT"/>
+<wire x1="12.7" y1="22.225" x2="10.795" y2="22.225" width="0.4064" layer="16"/>
+<wire x1="10.795" y1="22.225" x2="9.525" y2="20.955" width="0.4064" layer="16"/>
+<wire x1="9.525" y1="20.955" x2="9.525" y2="11.43" width="0.4064" layer="16"/>
+<wire x1="9.525" y1="11.43" x2="10.16" y2="10.795" width="0.4064" layer="16"/>
+<wire x1="10.16" y1="10.795" x2="10.16" y2="6.985" width="0.4064" layer="16"/>
 </signal>
 </signals>
 </board>
