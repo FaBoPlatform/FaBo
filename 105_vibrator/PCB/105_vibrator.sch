@@ -31413,9 +31413,9 @@ Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;br&gt;
 https://creativecommons.org/licenses/by-sa/4.0/</description>
 <packages>
 <package name="LA3R5-480AH1_PTH">
-<pad name="P$1" x="-1.29" y="0" drill="1.2" diameter="1.9304" shape="octagon"/>
-<pad name="P$2" x="1.29" y="0" drill="1.2" diameter="1.9304" shape="octagon"/>
-<wire x1="0.9" y1="0" x2="-0.9" y2="0" width="0.127" layer="51"/>
+<pad name="P$1" x="-1.4" y="0" drill="1.2" diameter="2" shape="octagon"/>
+<pad name="P$2" x="1.4" y="0" drill="1.2" diameter="2" shape="octagon"/>
+<wire x1="2" y1="0" x2="-2" y2="0" width="0.127" layer="51"/>
 <wire x1="2" y1="12.2" x2="-2" y2="12.2" width="0.127" layer="51"/>
 <wire x1="-2" y1="0" x2="-2" y2="12.2" width="0.127" layer="51"/>
 <wire x1="2" y1="0" x2="2" y2="12.2" width="0.127" layer="51"/>
@@ -31429,6 +31429,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="-5.08" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
 <pin name="IN/OUT" x="-10.16" y="2.54" visible="pin" length="middle"/>
 <pin name="GND" x="-10.16" y="-2.54" visible="pin" length="middle"/>
+<text x="0" y="5.842" size="1.778" layer="95" align="bottom-center">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>

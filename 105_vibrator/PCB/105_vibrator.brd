@@ -3912,9 +3912,9 @@ Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;br&gt;
 https://creativecommons.org/licenses/by-sa/4.0/</description>
 <packages>
 <package name="LA3R5-480AH1_PTH">
-<pad name="P$1" x="-1.29" y="0" drill="1.2" diameter="1.9304" shape="octagon"/>
-<pad name="P$2" x="1.29" y="0" drill="1.2" diameter="1.9304" shape="octagon"/>
-<wire x1="0.9" y1="0" x2="-0.9" y2="0" width="0.127" layer="51"/>
+<pad name="P$1" x="-1.4" y="0" drill="1.2" diameter="2" shape="octagon"/>
+<pad name="P$2" x="1.4" y="0" drill="1.2" diameter="2" shape="octagon"/>
+<wire x1="2" y1="0" x2="-2" y2="0" width="0.127" layer="51"/>
 <wire x1="2" y1="12.2" x2="-2" y2="12.2" width="0.127" layer="51"/>
 <wire x1="-2" y1="0" x2="-2" y2="12.2" width="0.127" layer="51"/>
 <wire x1="2" y1="0" x2="2" y2="12.2" width="0.127" layer="51"/>
@@ -4137,9 +4137,8 @@ design rules under a new name.</description>
 <signal name="N$1">
 <contactref element="J1" pad="IN/OUT"/>
 <contactref element="U1" pad="P$1"/>
-<wire x1="11.41" y1="20.32" x2="11.41" y2="12.045" width="0.4064" layer="16"/>
-<wire x1="11.41" y1="12.045" x2="10.16" y2="10.795" width="0.4064" layer="16"/>
-<wire x1="10.16" y1="10.795" x2="10.16" y2="6.985" width="0.4064" layer="16"/>
+<wire x1="10.16" y1="6.985" x2="10.16" y2="19.18" width="0.4064" layer="16"/>
+<wire x1="10.16" y1="19.18" x2="11.3" y2="20.32" width="0.4064" layer="16"/>
 </signal>
 </signals>
 </board>

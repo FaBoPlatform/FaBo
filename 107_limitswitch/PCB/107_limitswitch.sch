@@ -133,10 +133,10 @@
 <pad name="COM" x="-5" y="0" drill="1" diameter="1.9304" shape="octagon"/>
 <pad name="NO" x="0" y="0" drill="1" diameter="1.9304" shape="octagon"/>
 <pad name="NC" x="5" y="0" drill="1" diameter="1.9304" shape="octagon"/>
-<wire x1="-6" y1="-1" x2="-6" y2="-6" width="0.127" layer="51"/>
-<wire x1="-6" y1="-6" x2="6" y2="-6" width="0.127" layer="51"/>
-<wire x1="6" y1="-6" x2="6" y2="-1" width="0.127" layer="51"/>
-<wire x1="6" y1="-1" x2="-6" y2="-1" width="0.127" layer="51"/>
+<wire x1="-6.25" y1="-2.5" x2="-6.25" y2="-8.5" width="0.127" layer="51"/>
+<wire x1="-6.25" y1="-8.5" x2="6.25" y2="-8.5" width="0.127" layer="51"/>
+<wire x1="6.25" y1="-8.5" x2="6.25" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="6.25" y1="-2.5" x2="-6.25" y2="-2.5" width="0.127" layer="51"/>
 </package>
 </packages>
 <symbols>
@@ -150,7 +150,7 @@
 <circle x="-3.556" y="0" radius="0.254" width="0.254" layer="94"/>
 <circle x="3.556" y="0" radius="0.254" width="0.254" layer="94"/>
 <pin name="NO" x="0" y="5.08" visible="pad" length="short" rot="R270"/>
-<text x="-2.54" y="-2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="-2.54" size="1.778" layer="95" rot="R180" align="bottom-center">&gt;NAME</text>
 <wire x1="-5.08" y1="0" x2="-3.81" y2="0" width="0.254" layer="94"/>
 <wire x1="5.08" y1="0" x2="3.81" y2="0" width="0.254" layer="94"/>
 </symbol>
@@ -31481,16 +31481,14 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <text x="0" y="0.635" size="0.6096" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
 </package>
 <package name="AXL-REGULAR">
-<wire x1="-2.54" y1="0.762" x2="2.54" y2="0.762" width="0.127" layer="21"/>
-<wire x1="2.54" y1="0.762" x2="2.54" y2="0" width="0.127" layer="21"/>
-<wire x1="2.54" y1="0" x2="2.54" y2="-0.762" width="0.127" layer="21"/>
-<wire x1="2.54" y1="-0.762" x2="-2.54" y2="-0.762" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="-0.762" x2="-2.54" y2="0" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="0" x2="-2.54" y2="0.762" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="0.6" x2="2.5" y2="0.6" width="0.1" layer="21"/>
+<wire x1="2.5" y1="0.6" x2="2.5" y2="-0.6" width="0.1" layer="21"/>
+<wire x1="2.5" y1="-0.6" x2="-2.5" y2="-0.6" width="0.1" layer="21"/>
+<wire x1="-2.5" y1="-0.6" x2="-2.5" y2="0.6" width="0.1" layer="21"/>
 <pad name="1" x="-3.81" y="0" drill="1" diameter="1.9304" shape="octagon"/>
 <pad name="2" x="3.81" y="0" drill="1" diameter="1.9304" shape="octagon"/>
-<text x="-2.286" y="-0.508" size="0.8128" layer="25" font="vector" ratio="12">&gt;NAME</text>
-<text x="-2.286" y="-1.016" size="0.8128" layer="27" font="vector" ratio="12" align="top-left">&gt;VALUE</text>
+<text x="-2.25" y="0" size="0.8128" layer="25" font="vector" ratio="12" align="center-left">&gt;NAME</text>
+<text x="-2.25" y="-1" size="0.8128" layer="27" font="vector" ratio="12" align="top-left">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>

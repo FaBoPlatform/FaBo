@@ -31479,9 +31479,9 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="-2.095" y1="-1.651" x2="-0.7869" y2="2.5484" width="0.1" layer="21" curve="-111.097684"/>
 <wire x1="0.7869" y1="2.5484" x2="2.095" y2="-1.651" width="0.1" layer="21" curve="-111.097684"/>
 <wire x1="-2.095" y1="-1.651" x2="2.095" y2="-1.651" width="0.1" layer="21"/>
-<pad name="VCC" x="-1.27" y="0" drill="0.9" diameter="1.6764" shape="octagon"/>
-<pad name="OUT" x="0" y="1.905" drill="0.9" diameter="1.6764" shape="octagon"/>
-<pad name="GND" x="1.27" y="0" drill="0.9" diameter="1.6764" shape="octagon"/>
+<pad name="VCC" x="-1.27" y="0" drill="1" diameter="1.6764" shape="octagon"/>
+<pad name="OUT" x="0" y="1.905" drill="1" diameter="1.6764" shape="octagon"/>
+<pad name="GND" x="1.27" y="0" drill="1" diameter="1.6764" shape="octagon"/>
 <text x="0" y="3.175" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-2.54" size="0.8128" layer="27" font="vector" ratio="12" rot="R180" align="bottom-center">&gt;VALUE</text>
 </package>

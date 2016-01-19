@@ -31450,28 +31450,28 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="-0.1" y1="0" x2="-0.1" y2="-0.2" width="0.1524" layer="21"/>
 <wire x1="-0.1" y1="0" x2="0.1" y2="0" width="0.1524" layer="21"/>
 </package>
-<package name="LED_3MM">
-<wire x1="1.5748" y1="-1.27" x2="1.5748" y2="1.27" width="0.127" layer="21"/>
-<wire x1="0" y1="2.032" x2="1.561" y2="1.3009" width="0.127" layer="21" curve="-50.193108" cap="flat"/>
-<wire x1="-1.7929" y1="0.9562" x2="0" y2="2.032" width="0.127" layer="21" curve="-61.926949" cap="flat"/>
-<wire x1="0" y1="-2.032" x2="1.5512" y2="-1.3126" width="0.127" layer="21" curve="49.763022" cap="flat"/>
-<wire x1="-1.7643" y1="-1.0082" x2="0" y2="-2.032" width="0.127" layer="21" curve="60.255215" cap="flat"/>
-<wire x1="-2.032" y1="0" x2="-1.7891" y2="0.9634" width="0.127" layer="21" curve="-28.301701" cap="flat"/>
-<wire x1="-2.032" y1="0" x2="-1.7306" y2="-1.065" width="0.127" layer="21" curve="31.60822" cap="flat"/>
-<wire x1="1.5748" y1="1.2954" x2="1.5748" y2="0.7874" width="0.127" layer="21"/>
-<wire x1="1.5748" y1="-1.2954" x2="1.5748" y2="-0.8382" width="0.127" layer="21"/>
-<pad name="A" x="-1.27" y="0" drill="0.9" diameter="1.778" shape="octagon"/>
-<pad name="K" x="1.27" y="0" drill="0.9" diameter="1.778" shape="octagon"/>
-<text x="1.905" y="0.381" size="0.8128" layer="25" font="vector" ratio="12">&gt;NAME</text>
-<text x="1.905" y="-1.651" size="0.8128" layer="27" font="vector" ratio="12">&gt;VALUE</text>
-</package>
 <package name="LED_5MM">
-<wire x1="2.54" y1="-1.905" x2="2.54" y2="1.905" width="0.127" layer="21"/>
-<wire x1="2.54" y1="-1.905" x2="2.54" y2="1.905" width="0.127" layer="21" curve="-286.260205" cap="flat"/>
-<pad name="A" x="-1.27" y="0" drill="1" diameter="1.9304" shape="octagon"/>
-<pad name="K" x="1.27" y="0" drill="1" diameter="1.9304" shape="octagon"/>
+<wire x1="2.54" y1="-1.905" x2="2.54" y2="1.905" width="0.1" layer="21"/>
+<wire x1="2.54" y1="-1.905" x2="2.54" y2="1.905" width="0.1" layer="21" curve="-286.260205" cap="flat"/>
+<pad name="A" x="-1.27" y="0" drill="1" diameter="1.8" shape="octagon"/>
+<pad name="K" x="1.27" y="0" drill="1" diameter="1.8" shape="octagon"/>
 <text x="3.175" y="0.5334" size="0.8128" layer="25" font="vector" ratio="12">&gt;NAME</text>
 <text x="3.2004" y="-1.8034" size="0.8128" layer="27" font="vector" ratio="12">&gt;VALUE</text>
+</package>
+<package name="LED_3MM">
+<wire x1="1.5748" y1="-1.27" x2="1.5748" y2="1.27" width="0.1" layer="21"/>
+<wire x1="0" y1="2.032" x2="1.561" y2="1.3009" width="0.1" layer="21" curve="-50.193108" cap="flat"/>
+<wire x1="-1.7929" y1="0.9562" x2="0" y2="2.032" width="0.1" layer="21" curve="-61.926949" cap="flat"/>
+<wire x1="0" y1="-2.032" x2="1.5512" y2="-1.3126" width="0.1" layer="21" curve="49.763022" cap="flat"/>
+<wire x1="-1.7643" y1="-1.0082" x2="0" y2="-2.032" width="0.1" layer="21" curve="60.255215" cap="flat"/>
+<wire x1="-2.032" y1="0" x2="-1.7891" y2="0.9634" width="0.1" layer="21" curve="-28.301701" cap="flat"/>
+<wire x1="-2.032" y1="0" x2="-1.7306" y2="-1.065" width="0.1" layer="21" curve="31.60822" cap="flat"/>
+<wire x1="1.5748" y1="1.2954" x2="1.5748" y2="0.7874" width="0.1" layer="21"/>
+<wire x1="1.5748" y1="-1.2954" x2="1.5748" y2="-0.8382" width="0.1" layer="21"/>
+<pad name="A" x="-1.27" y="0" drill="1" diameter="1.9304" shape="octagon"/>
+<pad name="K" x="1.27" y="0" drill="1" diameter="1.9304" shape="octagon"/>
+<text x="1.905" y="0.381" size="0.8128" layer="25" font="vector" ratio="12">&gt;NAME</text>
+<text x="1.905" y="-1.651" size="0.8128" layer="27" font="vector" ratio="12">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -31593,16 +31593,14 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <text x="0" y="0.635" size="0.6096" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
 </package>
 <package name="AXL-REGULAR">
-<wire x1="-2.54" y1="0.762" x2="2.54" y2="0.762" width="0.127" layer="21"/>
-<wire x1="2.54" y1="0.762" x2="2.54" y2="0" width="0.127" layer="21"/>
-<wire x1="2.54" y1="0" x2="2.54" y2="-0.762" width="0.127" layer="21"/>
-<wire x1="2.54" y1="-0.762" x2="-2.54" y2="-0.762" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="-0.762" x2="-2.54" y2="0" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="0" x2="-2.54" y2="0.762" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="0.6" x2="2.5" y2="0.6" width="0.1" layer="21"/>
+<wire x1="2.5" y1="0.6" x2="2.5" y2="-0.6" width="0.1" layer="21"/>
+<wire x1="2.5" y1="-0.6" x2="-2.5" y2="-0.6" width="0.1" layer="21"/>
+<wire x1="-2.5" y1="-0.6" x2="-2.5" y2="0.6" width="0.1" layer="21"/>
 <pad name="1" x="-3.81" y="0" drill="1" diameter="1.9304" shape="octagon"/>
 <pad name="2" x="3.81" y="0" drill="1" diameter="1.9304" shape="octagon"/>
-<text x="-2.286" y="-0.508" size="0.8128" layer="25" font="vector" ratio="12">&gt;NAME</text>
-<text x="-2.286" y="-1.016" size="0.8128" layer="27" font="vector" ratio="12" align="top-left">&gt;VALUE</text>
+<text x="-2.25" y="0" size="0.8128" layer="25" font="vector" ratio="12" align="center-left">&gt;NAME</text>
+<text x="-2.25" y="-1" size="0.8128" layer="27" font="vector" ratio="12" align="top-left">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>

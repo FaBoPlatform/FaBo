@@ -602,22 +602,6 @@ etc/etc...&lt;br&gt;
 Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;br&gt;
 https://creativecommons.org/licenses/by-sa/4.0/</description>
 <packages>
-<package name="LED-5MM">
-<wire x1="2.54" y1="-1.905" x2="2.54" y2="1.905" width="0.1" layer="21"/>
-<wire x1="2.54" y1="-1.905" x2="2.54" y2="1.905" width="0.1" layer="21" curve="-286.260205" cap="flat"/>
-<pad name="A" x="-1.27" y="0" drill="1" diameter="1.9304" shape="octagon"/>
-<pad name="K" x="1.27" y="0" drill="1" diameter="1.9304" shape="octagon"/>
-<text x="3.175" y="0.5334" size="1.27" layer="25" font="vector" ratio="12">&gt;NAME</text>
-<text x="3.2004" y="-1.8034" size="1.27" layer="27" font="vector" ratio="12">&gt;VALUE</text>
-</package>
-<package name="TO-92">
-<wire x1="-2" y1="-1.59" x2="2" y2="-1.59" width="0.1" layer="21"/>
-<pad name="C" x="0" y="0" drill="1" diameter="1.9304" shape="octagon"/>
-<wire x1="-2" y1="-1.59" x2="2" y2="-1.59" width="0.1" layer="21" curve="-259.045263"/>
-<pad name="E" x="-2.54" y="0" drill="1" diameter="1.9304" shape="octagon"/>
-<pad name="B" x="2.54" y="0" drill="1" diameter="1.9304" shape="octagon"/>
-<text x="-2.54" y="3.175" size="0.8128" layer="25" font="vector" ratio="12">&gt;NAME</text>
-</package>
 <package name="LOGO_FABO_L">
 <rectangle x1="-2.25933125" y1="-0.008890625" x2="-1.88595" y2="0.008890625" layer="21"/>
 <rectangle x1="6.861809375" y1="-0.008890625" x2="7.110728125" y2="0.008890625" layer="21"/>
@@ -21237,76 +21221,8 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <rectangle x1="-0.273490625" y1="1.95700625" x2="0.306259375" y2="1.96754375" layer="22" rot="R180"/>
 <rectangle x1="-0.26295" y1="1.967546875" x2="0.29571875" y2="1.978084375" layer="22" rot="R180"/>
 </package>
-<package name="SOT23-3">
-<wire x1="-0.8" y1="0.7" x2="-1.4" y2="0.7" width="0.127" layer="21"/>
-<wire x1="-1.4" y1="0.7" x2="-1.4" y2="-0.1" width="0.127" layer="21"/>
-<wire x1="0.8" y1="0.7" x2="1.4" y2="0.7" width="0.127" layer="21"/>
-<wire x1="1.4" y1="0.7" x2="1.4" y2="-0.1" width="0.127" layer="21"/>
-<smd name="1" x="-0.95" y="-1" dx="0.85" dy="0.95" layer="1"/>
-<smd name="2" x="0.95" y="-1" dx="0.85" dy="0.95" layer="1"/>
-<smd name="3" x="0" y="1.1" dx="0.85" dy="0.95" layer="1"/>
-<text x="0" y="1.905" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.905" size="0.8128" layer="27" font="vector" ratio="12" align="top-center">&gt;VALUE</text>
-</package>
 </packages>
 <symbols>
-<symbol name="PHOTOTRANSISTOR">
-<text x="5.08" y="0" size="1.778" layer="95">&gt;NAME</text>
-<text x="5.08" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
-<rectangle x1="-0.762" y1="-2.54" x2="0" y2="2.54" layer="94"/>
-<wire x1="0" y1="0" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
-<pin name="C" x="2.54" y="5.08" visible="off" length="short" rot="R270"/>
-<pin name="E" x="2.54" y="-5.08" visible="off" length="short" rot="R90"/>
-<wire x1="2.54" y1="2.54" x2="0" y2="0" width="0.254" layer="94"/>
-<circle x="0" y="0" radius="3.565059375" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="2.032" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="2.032" y1="-1.27" x2="1.27" y2="-2.032" width="0.254" layer="94"/>
-<wire x1="1.27" y1="-2.032" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="2.032" y2="-1.524" width="0.254" layer="94"/>
-<wire x1="2.032" y1="-1.524" x2="1.524" y2="-2.032" width="0.254" layer="94"/>
-<wire x1="1.524" y1="-2.032" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="2.032" y2="-1.778" width="0.254" layer="94"/>
-<wire x1="2.032" y1="-1.778" x2="1.778" y2="-2.032" width="0.254" layer="94"/>
-<wire x1="1.778" y1="-2.032" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-4.318" y1="0" x2="-4.826" y2="1.27" width="0.254" layer="94"/>
-<wire x1="-4.826" y1="1.27" x2="-5.588" y2="0.508" width="0.254" layer="94"/>
-<wire x1="-5.588" y1="0.508" x2="-4.318" y2="0" width="0.254" layer="94"/>
-<wire x1="-4.318" y1="0" x2="-6.858" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-4.318" y1="0" x2="-4.826" y2="1.016" width="0.254" layer="94"/>
-<wire x1="-4.826" y1="1.016" x2="-5.334" y2="0.508" width="0.254" layer="94"/>
-<wire x1="-5.334" y1="0.508" x2="-4.318" y2="0" width="0.254" layer="94"/>
-<wire x1="-4.318" y1="0" x2="-4.826" y2="0.762" width="0.254" layer="94"/>
-<wire x1="-4.826" y1="0.762" x2="-5.08" y2="0.508" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="0.508" x2="-4.318" y2="0" width="0.254" layer="94"/>
-<wire x1="-4.318" y1="2.54" x2="-4.826" y2="3.81" width="0.254" layer="94"/>
-<wire x1="-4.826" y1="3.81" x2="-5.588" y2="3.048" width="0.254" layer="94"/>
-<wire x1="-5.588" y1="3.048" x2="-4.318" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-4.318" y1="2.54" x2="-6.858" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-4.318" y1="2.54" x2="-4.826" y2="3.556" width="0.254" layer="94"/>
-<wire x1="-4.826" y1="3.556" x2="-5.334" y2="3.048" width="0.254" layer="94"/>
-<wire x1="-5.334" y1="3.048" x2="-4.318" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-4.318" y1="2.54" x2="-4.826" y2="3.302" width="0.254" layer="94"/>
-<wire x1="-4.826" y1="3.302" x2="-5.08" y2="3.048" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="3.048" x2="-4.318" y2="2.54" width="0.254" layer="94"/>
-</symbol>
-<symbol name="NPN">
-<wire x1="2.54" y1="2.54" x2="0.508" y2="1.524" width="0.1524" layer="94"/>
-<wire x1="1.778" y1="-1.524" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="1.27" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="-2.54" x2="1.778" y2="-1.524" width="0.1524" layer="94"/>
-<wire x1="1.54" y1="-2.04" x2="0.308" y2="-1.424" width="0.1524" layer="94"/>
-<wire x1="1.524" y1="-2.413" x2="2.286" y2="-2.413" width="0.254" layer="94"/>
-<wire x1="2.286" y1="-2.413" x2="1.778" y2="-1.778" width="0.254" layer="94"/>
-<wire x1="1.778" y1="-1.778" x2="1.524" y2="-2.286" width="0.254" layer="94"/>
-<wire x1="1.524" y1="-2.286" x2="1.905" y2="-2.286" width="0.254" layer="94"/>
-<wire x1="1.905" y1="-2.286" x2="1.778" y2="-2.032" width="0.254" layer="94"/>
-<text x="5.08" y="0" size="1.778" layer="95">&gt;NAME</text>
-<text x="5.08" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
-<rectangle x1="-0.254" y1="-2.54" x2="0.508" y2="2.54" layer="94"/>
-<pin name="B" x="-2.54" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
-<pin name="E" x="2.54" y="-5.08" visible="off" length="short" direction="pas" swaplevel="3" rot="R90"/>
-<pin name="C" x="2.54" y="5.08" visible="off" length="short" direction="pas" swaplevel="2" rot="R270"/>
-</symbol>
 <symbol name="GND">
 <wire x1="-1.905" y1="-2.54" x2="1.905" y2="-2.54" width="0.254" layer="94"/>
 <text x="-2.794" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
@@ -31401,49 +31317,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="L-51ROPT1D1" prefix="Q" uservalue="yes">
-<gates>
-<gate name="G$1" symbol="PHOTOTRANSISTOR" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="LED-5MM">
-<connects>
-<connect gate="G$1" pin="C" pad="K"/>
-<connect gate="G$1" pin="E" pad="A"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="NPN" prefix="Q" uservalue="yes">
-<gates>
-<gate name="G$1" symbol="NPN" x="0" y="0"/>
-</gates>
-<devices>
-<device name="-2SC1815" package="TO-92">
-<connects>
-<connect gate="G$1" pin="B" pad="B"/>
-<connect gate="G$1" pin="C" pad="C"/>
-<connect gate="G$1" pin="E" pad="E"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-2SC3325" package="SOT23-3">
-<connects>
-<connect gate="G$1" pin="B" pad="1"/>
-<connect gate="G$1" pin="C" pad="3"/>
-<connect gate="G$1" pin="E" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="GND" prefix="GND">
 <gates>
 <gate name="GND" symbol="GND" x="0" y="0"/>
@@ -31595,16 +31468,14 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <text x="0" y="0.635" size="0.6096" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
 </package>
 <package name="AXL-REGULAR">
-<wire x1="-2.54" y1="0.762" x2="2.54" y2="0.762" width="0.127" layer="21"/>
-<wire x1="2.54" y1="0.762" x2="2.54" y2="0" width="0.127" layer="21"/>
-<wire x1="2.54" y1="0" x2="2.54" y2="-0.762" width="0.127" layer="21"/>
-<wire x1="2.54" y1="-0.762" x2="-2.54" y2="-0.762" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="-0.762" x2="-2.54" y2="0" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="0" x2="-2.54" y2="0.762" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="0.6" x2="2.5" y2="0.6" width="0.1" layer="21"/>
+<wire x1="2.5" y1="0.6" x2="2.5" y2="-0.6" width="0.1" layer="21"/>
+<wire x1="2.5" y1="-0.6" x2="-2.5" y2="-0.6" width="0.1" layer="21"/>
+<wire x1="-2.5" y1="-0.6" x2="-2.5" y2="0.6" width="0.1" layer="21"/>
 <pad name="1" x="-3.81" y="0" drill="1" diameter="1.9304" shape="octagon"/>
 <pad name="2" x="3.81" y="0" drill="1" diameter="1.9304" shape="octagon"/>
-<text x="-2.286" y="-0.508" size="0.8128" layer="25" font="vector" ratio="12">&gt;NAME</text>
-<text x="-2.286" y="-1.016" size="0.8128" layer="27" font="vector" ratio="12" align="top-left">&gt;VALUE</text>
+<text x="-2.25" y="0" size="0.8128" layer="25" font="vector" ratio="12" align="center-left">&gt;NAME</text>
+<text x="-2.25" y="-1" size="0.8128" layer="27" font="vector" ratio="12" align="top-left">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -31671,6 +31542,128 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="FaBo-Parts">
+<description>&lt;h3&gt;FaBo Parts&lt;/h3&gt;
+Parts&lt;br&gt;
+&lt;br&gt;
+Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;br&gt;
+https://creativecommons.org/licenses/by-sa/4.0/</description>
+<packages>
+<package name="LED-5MM">
+<wire x1="2.54" y1="-1.905" x2="2.54" y2="1.905" width="0.1" layer="21"/>
+<wire x1="2.54" y1="-1.905" x2="2.54" y2="1.905" width="0.1" layer="21" curve="-286.260205" cap="flat"/>
+<pad name="A" x="-1.27" y="0" drill="1" diameter="1.9304" shape="octagon"/>
+<pad name="K" x="1.27" y="0" drill="1" diameter="1.9304" shape="octagon"/>
+<text x="3.175" y="0.5334" size="0.8128" layer="25" font="vector" ratio="12">&gt;NAME</text>
+<text x="3.2004" y="-1.8034" size="0.8128" layer="27" font="vector" ratio="12">&gt;VALUE</text>
+</package>
+<package name="TO-92">
+<wire x1="-2" y1="-1.59" x2="2" y2="-1.59" width="0.1" layer="21"/>
+<pad name="2" x="0" y="0" drill="1" diameter="1.9304" shape="octagon"/>
+<wire x1="-2" y1="-1.59" x2="2" y2="-1.59" width="0.1" layer="21" curve="-259.045263"/>
+<pad name="1" x="-2.54" y="0" drill="1" diameter="1.9304" shape="octagon"/>
+<pad name="3" x="2.54" y="0" drill="1" diameter="1.9304" shape="octagon"/>
+<text x="0" y="3.175" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+</package>
+</packages>
+<symbols>
+<symbol name="PHOTOTRANSISTOR">
+<text x="5.08" y="0" size="1.778" layer="95">&gt;NAME</text>
+<text x="5.08" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-0.762" y1="-2.54" x2="0" y2="2.54" layer="94"/>
+<wire x1="0" y1="0" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<pin name="C" x="2.54" y="5.08" visible="off" length="short" rot="R270"/>
+<pin name="E" x="2.54" y="-5.08" visible="off" length="short" rot="R90"/>
+<wire x1="2.54" y1="2.54" x2="0" y2="0" width="0.254" layer="94"/>
+<circle x="0" y="0" radius="3.565059375" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.032" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="2.032" y1="-1.27" x2="1.27" y2="-2.032" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-2.032" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.032" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="2.032" y1="-1.524" x2="1.524" y2="-2.032" width="0.254" layer="94"/>
+<wire x1="1.524" y1="-2.032" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.032" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="2.032" y1="-1.778" x2="1.778" y2="-2.032" width="0.254" layer="94"/>
+<wire x1="1.778" y1="-2.032" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-4.318" y1="0" x2="-4.826" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-4.826" y1="1.27" x2="-5.588" y2="0.508" width="0.254" layer="94"/>
+<wire x1="-5.588" y1="0.508" x2="-4.318" y2="0" width="0.254" layer="94"/>
+<wire x1="-4.318" y1="0" x2="-6.858" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-4.318" y1="0" x2="-4.826" y2="1.016" width="0.254" layer="94"/>
+<wire x1="-4.826" y1="1.016" x2="-5.334" y2="0.508" width="0.254" layer="94"/>
+<wire x1="-5.334" y1="0.508" x2="-4.318" y2="0" width="0.254" layer="94"/>
+<wire x1="-4.318" y1="0" x2="-4.826" y2="0.762" width="0.254" layer="94"/>
+<wire x1="-4.826" y1="0.762" x2="-5.08" y2="0.508" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="0.508" x2="-4.318" y2="0" width="0.254" layer="94"/>
+<wire x1="-4.318" y1="2.54" x2="-4.826" y2="3.81" width="0.254" layer="94"/>
+<wire x1="-4.826" y1="3.81" x2="-5.588" y2="3.048" width="0.254" layer="94"/>
+<wire x1="-5.588" y1="3.048" x2="-4.318" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-4.318" y1="2.54" x2="-6.858" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-4.318" y1="2.54" x2="-4.826" y2="3.556" width="0.254" layer="94"/>
+<wire x1="-4.826" y1="3.556" x2="-5.334" y2="3.048" width="0.254" layer="94"/>
+<wire x1="-5.334" y1="3.048" x2="-4.318" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-4.318" y1="2.54" x2="-4.826" y2="3.302" width="0.254" layer="94"/>
+<wire x1="-4.826" y1="3.302" x2="-5.08" y2="3.048" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="3.048" x2="-4.318" y2="2.54" width="0.254" layer="94"/>
+</symbol>
+<symbol name="NPN">
+<wire x1="2.54" y1="2.54" x2="0.508" y2="1.524" width="0.1524" layer="94"/>
+<wire x1="1.778" y1="-1.524" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="1.27" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.778" y2="-1.524" width="0.1524" layer="94"/>
+<wire x1="1.54" y1="-2.04" x2="0.308" y2="-1.424" width="0.1524" layer="94"/>
+<wire x1="1.524" y1="-2.413" x2="2.286" y2="-2.413" width="0.254" layer="94"/>
+<wire x1="2.286" y1="-2.413" x2="1.778" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="1.778" y1="-1.778" x2="1.524" y2="-2.286" width="0.254" layer="94"/>
+<wire x1="1.524" y1="-2.286" x2="1.905" y2="-2.286" width="0.254" layer="94"/>
+<wire x1="1.905" y1="-2.286" x2="1.778" y2="-2.032" width="0.254" layer="94"/>
+<text x="5.08" y="0" size="1.778" layer="95">&gt;NAME</text>
+<text x="5.08" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="-2.54" x2="0.508" y2="2.54" layer="94"/>
+<pin name="B" x="-2.54" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="E" x="2.54" y="-5.08" visible="off" length="short" direction="pas" swaplevel="3" rot="R90"/>
+<pin name="C" x="2.54" y="5.08" visible="off" length="short" direction="pas" swaplevel="2" rot="R270"/>
+<text x="-1.27" y="-0.508" size="0.8128" layer="97" align="top-center">B</text>
+<text x="3.048" y="3.81" size="0.8128" layer="97" align="center-left">C</text>
+<text x="3.048" y="-3.81" size="0.8128" layer="97" align="center-left">E</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="L-51ROPT1D1" prefix="Q" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="PHOTOTRANSISTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LED-5MM">
+<connects>
+<connect gate="G$1" pin="C" pad="K"/>
+<connect gate="G$1" pin="E" pad="A"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NPN" prefix="Q" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="NPN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-2SC1815" package="TO-92">
+<connects>
+<connect gate="G$1" pin="B" pad="3"/>
+<connect gate="G$1" pin="C" pad="2"/>
+<connect gate="G$1" pin="E" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -31682,8 +31675,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </classes>
 <parts>
 <part name="J1" library="FaBo-Template" deviceset="FABO_BRICK_3PIN" device=""/>
-<part name="Q1" library="FaBo-etc" deviceset="L-51ROPT1D1" device=""/>
-<part name="Q2" library="FaBo-etc" deviceset="NPN" device="-2SC1815"/>
 <part name="GND1" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="GND2" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="U$2" library="FaBo-etc" deviceset="VCC" device=""/>
@@ -31694,6 +31685,8 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="U$6" library="FaBo-etc" deviceset="LOGO_OSHW" device="-T_M_BOTTOM"/>
 <part name="R1" library="FaBo-Resistors" deviceset="RESISTOR" device="-AXL-REGULAR" value="1k"/>
 <part name="R2" library="FaBo-Resistors" deviceset="RESISTOR" device="-AXL-REGULAR" value="10k"/>
+<part name="Q1" library="FaBo-Parts" deviceset="L-51ROPT1D1" device=""/>
+<part name="Q2" library="FaBo-Parts" deviceset="NPN" device="-2SC1815"/>
 </parts>
 <sheets>
 <sheet>
@@ -31702,8 +31695,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </plain>
 <instances>
 <instance part="J1" gate="G$1" x="86.36" y="93.98"/>
-<instance part="Q1" gate="G$1" x="134.62" y="106.68" rot="R180"/>
-<instance part="Q2" gate="G$1" x="154.94" y="88.9"/>
 <instance part="GND1" gate="GND" x="99.06" y="63.5"/>
 <instance part="GND2" gate="GND" x="157.48" y="63.5"/>
 <instance part="U$2" gate="G$1" x="99.06" y="121.92"/>
@@ -31714,6 +31705,8 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <instance part="U$6" gate="G$1" x="248.92" y="12.7"/>
 <instance part="R1" gate="G$1" x="139.7" y="88.9"/>
 <instance part="R2" gate="G$1" x="157.48" y="71.12" rot="R90"/>
+<instance part="Q1" gate="G$1" x="134.62" y="106.68" rot="R180"/>
+<instance part="Q2" gate="G$1" x="154.94" y="88.9"/>
 </instances>
 <busses>
 </busses>
@@ -31721,16 +31714,16 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <net name="N$5" class="0">
 <segment>
 <wire x1="132.08" y1="88.9" x2="137.16" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="Q1" gate="G$1" pin="C"/>
 <wire x1="132.08" y1="101.6" x2="132.08" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="1"/>
+<pinref part="Q1" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
 <wire x1="144.78" y1="88.9" x2="152.4" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="Q2" gate="G$1" pin="B"/>
 <pinref part="R1" gate="G$1" pin="2"/>
+<pinref part="Q2" gate="G$1" pin="B"/>
 </segment>
 </net>
 <net name="INPUT" class="0">
@@ -31745,15 +31738,15 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="167.64" y1="81.28" x2="157.48" y2="81.28" width="0.1524" layer="91"/>
 <junction x="157.48" y="81.28"/>
 <label x="162.56" y="81.28" size="1.778" layer="95"/>
-<pinref part="Q2" gate="G$1" pin="E"/>
 <pinref part="R2" gate="G$1" pin="2"/>
+<pinref part="Q2" gate="G$1" pin="E"/>
 </segment>
 </net>
 <net name="VCC" class="0">
 <segment>
 <wire x1="157.48" y1="121.92" x2="157.48" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="Q2" gate="G$1" pin="C"/>
 <pinref part="U$4" gate="G$1" pin="VCC"/>
+<pinref part="Q2" gate="G$1" pin="C"/>
 </segment>
 <segment>
 <wire x1="93.98" y1="93.98" x2="99.06" y2="93.98" width="0.1524" layer="91"/>
@@ -31763,8 +31756,8 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="VCC"/>
-<pinref part="Q1" gate="G$1" pin="E"/>
 <wire x1="132.08" y1="121.92" x2="132.08" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="Q1" gate="G$1" pin="E"/>
 </segment>
 </net>
 <net name="GND" class="0">
