@@ -6,9 +6,10 @@
 #define HTS221_DEVICE 0xBC
 
 #define HTS221_AV_CONF 0x10
-
 #define HTS221_CTRL_REG1 0x20
+#define HTS221_STATUS_REG 0x27
 
+// Temperature
 #define HTS221_T0_DEGC_X8 0x32
 #define HTS221_T1_DEGC_X8 0x33
 #define HTS221_T0_T1_DEGC_H2 0x35
@@ -29,7 +30,7 @@
 #define HTS221_ODR_7KHZ 0b10
 #define HTS221_ODR_12_5KHZ 0b11
 
-// Humidity calibration registers for computing RH% value
+// Humidity calibration registers
 #define HTS221_HR_OUT_L_REG 0x28
 #define HTS221_HR_OUT_H_REG 0x29
 #define HTS221_H0_RH_X2 0x30
@@ -43,7 +44,7 @@ class hts221
 {
 public:
   int Get_Temperature(void);
-  int Get_Humidity(void);
+  int GetHumidity(void);
   void Configuration(void);
   void PowerOn(void);
   bool SearchDevice(void);

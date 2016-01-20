@@ -24,9 +24,10 @@ void setup()
 void loop()
 { 
   int temp = faboHumidity.Get_Temperature();
-  int humidity = faboHumidity.Get_Humidity();
+  double humidity = faboHumidity.GetHumidity()/10;
 
   Serial.println(temp);
-  Serial.println(humidity);
+  Serial.print(humidity);
+  Serial.println(" %");
   delay(5000);
 }
