@@ -40,72 +40,84 @@ void hts221::Configuration()
    writeI2c(HTS221_AV_CONF, AV_CONF);
 }
 
-int hts221::Get_Humidity()
+int hts221::GetHumidity()
 {
   uint16_t H0_T0_out, H1_T0_out, H_T_out;
   uint16_t H0_rh, H1_rh;
   uint8_t buffer[2];
-  uint32_t temp;
+  uint32_t humidity;
 
-  /* 1. Read H0_rH and H1_rH coefficients*/
+  // H0_rH, H1_rHの読み込み
   readI2c(HTS221_H0_RH_X2, 1, &buffer[0]);
   readI2c(HTS221_H1_RH_X2, 1, &buffer[1]);
+  // 取れてくる値がX2なので、1/2にする
   H0_rh = (buffer[0]&0xff)>>1;
   H1_rh = (buffer[1]&0xff)>>1;
   
-  /*2. Read H0_T0_OUT */
+  // H0_T0_OUTの読み込み
   readI2c(HTS221_H0_T0_OUT_L, 1, &buffer[0]);
-  readI2c(HTS221_H0_T0_OUT_H, 1, &buffer[1]);  
+  readI2c(HTS221_H0_T0_OUT_H, 1, &buffer[1]);
+  // H,Lを結合する
   H0_T0_out = (((uint16_t)buffer[1])<<8) | (uint16_t)buffer[0];
   
-  /*3. Read H1_T0_OUT */
+  // H1_T0_OUT 読み込み
   readI2c(HTS221_H1_T0_OUT_L, 1, &buffer[0]);
   readI2c(HTS221_H1_T0_OUT_H, 1, &buffer[1]);  
+  // H, Lを結合する
   H1_T0_out = (((uint16_t)buffer[1])<<8) | (uint16_t)buffer[0];
   
-  /*4. Read H_T_OUT */
+  // Read H_T_OUTの読み込み
   readI2c(HTS221_HR_OUT_L_REG, 1, &buffer[0]);
   readI2c(HTS221_HR_OUT_H_REG, 1, &buffer[1]);  
+  // H,Lを結合する
   H_T_out = buffer[1]<<8 | buffer[0];
-  double hum = ((int16_t)H1_rh - (int16_t)H0_rh)*10;
+
+  // RHの計算
+  double rh_dx = ((int16_t)H1_rh - (int16_t)H0_rh)*10;
+  humidity = ((int16_t)H_T_out - (int16_t)H0_T0_out)*rh_dx / ((int16_t)H1_T0_out - (int16_t)H0_T0_out);
+  humidity = (int16_t)(humidity + H0_rh*10);
   
-  /*5. Compute the RH [%] value by linear interpolation */
-  temp = (((int16_t)H_T_out - (int16_t)H0_T0_out)*hum)/((int16_t)H1_T0_out - (int16_t)H0_T0_out);
-  temp = (int16_t)(temp + H0_rh*10);
-  
-  if(temp > 1000){
-    temp = 1000;
+  if(humidity > 1000){
+    humidity = 1000;
   }
-  return temp;
+  return humidity;
 }
 
-int hts221::Get_Temperature()
+int hts221::GetTemperature()
 {
   int16_t T0_out, T1_out, T_out, T0_degC_x8_u16, T1_degC_x8_u16;
   int16_t T0_degC, T1_degC;
-  uint8_t buffer[4], tmp;
+  uint8_t buffer[4];
   uint32_t tmp32;
 
+  // T0_degC_x8,T1_degC_x8の値の取得
   readI2c(HTS221_T0_DEGC_X8, 1, &buffer[0]);
   readI2c(HTS221_T1_DEGC_X8, 1, &buffer[1]);
-  readI2c(HTS221_T0_T1_DEGC_H2, 1, &tmp);
+  readI2c(HTS221_T0_T1_DEGC_H2, 1, &buffer[2]);
+  
+  // T0_degC_x8,T1_degC_x8のH,Lを結合
+  T0_degC_x8_u16 = (((uint16_t)(buffer[2] & 0x03)) << 8) | ((uint16_t)buffer[0]);
+  T1_degC_x8_u16 = (((uint16_t)(buffer[2] & 0x0C)) << 6) | ((uint16_t)buffer[1]);
 
-  T0_degC_x8_u16 = (((uint16_t)(tmp & 0x03)) << 8) | ((uint16_t)buffer[0]);
-  T1_degC_x8_u16 = (((uint16_t)(tmp & 0x0C)) << 6) | ((uint16_t)buffer[1]);
+  // T0_T1_DEGC_H2の値の取得
   T0_degC = T0_degC_x8_u16>>3;
   T1_degC = T1_degC_x8_u16>>3;
 
+  // T0_OUT_L, T0_OUT_H, T1_OUT_L, T1_OUT_Hの取得
   readI2c(HTS221_T0_OUT_L, 1, &buffer[0]);
   readI2c(HTS221_T0_OUT_H, 1, &buffer[1]);
   readI2c(HTS221_T1_OUT_L, 1, &buffer[2]);
   readI2c(HTS221_T1_OUT_H, 1, &buffer[3]);
-  
+
+  // L,Hの結合
   T0_out = (((uint16_t)buffer[1])<<8) | (uint16_t)buffer[0];
   T1_out = (((uint16_t)buffer[3])<<8) | (uint16_t)buffer[2];
 
+  // TEMP_OUT_L, TEMP_OUT_Hの取得
   readI2c(HTS221_TEMP_OUT_L, 1, &buffer[0]);
   readI2c(HTS221_TEMP_OUT_H, 1, &buffer[1]);
 
+  // L,Hの結合
   T_out = (((uint16_t)buffer[1])<<8) | (uint16_t)buffer[0];
 
   tmp32 = ((uint32_t)(T_out - T0_out)) * ((uint32_t)(T1_degC - T0_degC)*10);
