@@ -3912,12 +3912,12 @@ Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;br&gt;
 https://creativecommons.org/licenses/by-sa/4.0/</description>
 <packages>
 <package name="ROTARYENCORDER">
-<pad name="1" x="-2.54" y="-1.27" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="3" x="0" y="-1.27" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="5" x="2.54" y="-1.27" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="2" x="-2.54" y="1.27" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="4" x="0" y="1.27" drill="1.016" diameter="1.9304" shape="octagon"/>
-<pad name="6" x="2.54" y="1.27" drill="1.016" diameter="1.9304" shape="octagon"/>
+<pad name="1" x="-2.54" y="-1.27" drill="1.016" diameter="1.9" shape="octagon"/>
+<pad name="3" x="0" y="-1.27" drill="1.016" diameter="1.9" shape="octagon"/>
+<pad name="5" x="2.54" y="-1.27" drill="1.016" diameter="1.9" shape="octagon"/>
+<pad name="2" x="-2.54" y="1.27" drill="1.016" diameter="1.9" shape="octagon"/>
+<pad name="4" x="0" y="1.27" drill="1.016" diameter="1.9" shape="octagon"/>
+<pad name="6" x="2.54" y="1.27" drill="1.016" diameter="1.9" shape="octagon"/>
 <wire x1="-4.75" y1="6.27" x2="-3" y2="6.27" width="0.127" layer="51"/>
 <wire x1="-3" y1="6.27" x2="3" y2="6.27" width="0.127" layer="51"/>
 <wire x1="3" y1="6.27" x2="4.75" y2="6.27" width="0.127" layer="51"/>

@@ -127,8 +127,8 @@
 </layers>
 <board>
 <plain>
-<text x="3.81" y="6.985" size="1.27" layer="21" font="vector" ratio="12" rot="R90">LED Yellow</text>
-<text x="5.08" y="6.985" size="1.016" layer="21" font="vector" ratio="12" rot="R90">Rev.1.0.2</text>
+<text x="3.81" y="6.6675" size="1.27" layer="21" font="vector" ratio="12" rot="R90">LED Yellow</text>
+<text x="5.08" y="6.6675" size="1.016" layer="21" font="vector" ratio="12" rot="R90">Rev.1.0.2</text>
 <text x="22.86" y="12.065" size="0.8128" layer="21" font="vector" ratio="12" rot="R270" align="bottom-center">MADE IN JAPAN</text>
 <text x="12.7" y="27.305" size="2.54" layer="21" font="vector" ratio="12" align="bottom-center">#101</text>
 </plain>
@@ -3912,10 +3912,10 @@ Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;br&gt;
 https://creativecommons.org/licenses/by-sa/4.0/</description>
 <packages>
 <package name="LED_5MM">
-<wire x1="2.54" y1="-1.905" x2="2.54" y2="1.905" width="0.127" layer="21"/>
-<wire x1="2.54" y1="-1.905" x2="2.54" y2="1.905" width="0.127" layer="21" curve="-286.260205" cap="flat"/>
-<pad name="A" x="-1.27" y="0" drill="1" diameter="1.9304" shape="octagon"/>
-<pad name="K" x="1.27" y="0" drill="1" diameter="1.9304" shape="octagon"/>
+<wire x1="2.54" y1="-1.905" x2="2.54" y2="1.905" width="0.1" layer="21"/>
+<wire x1="2.54" y1="-1.905" x2="2.54" y2="1.905" width="0.1" layer="21" curve="-286.260205" cap="flat"/>
+<pad name="A" x="-1.27" y="0" drill="1" diameter="1.8" shape="octagon"/>
+<pad name="K" x="1.27" y="0" drill="1" diameter="1.8" shape="octagon"/>
 <text x="3.175" y="0.5334" size="0.8128" layer="25" font="vector" ratio="12">&gt;NAME</text>
 <text x="3.2004" y="-1.8034" size="0.8128" layer="27" font="vector" ratio="12">&gt;VALUE</text>
 </package>
@@ -3929,16 +3929,14 @@ Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;br&gt;
 https://creativecommons.org/licenses/by-sa/4.0/</description>
 <packages>
 <package name="AXL-REGULAR">
-<wire x1="-2.54" y1="0.762" x2="2.54" y2="0.762" width="0.127" layer="21"/>
-<wire x1="2.54" y1="0.762" x2="2.54" y2="0" width="0.127" layer="21"/>
-<wire x1="2.54" y1="0" x2="2.54" y2="-0.762" width="0.127" layer="21"/>
-<wire x1="2.54" y1="-0.762" x2="-2.54" y2="-0.762" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="-0.762" x2="-2.54" y2="0" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="0" x2="-2.54" y2="0.762" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="0.6" x2="2.5" y2="0.6" width="0.1" layer="21"/>
+<wire x1="2.5" y1="0.6" x2="2.5" y2="-0.6" width="0.1" layer="21"/>
+<wire x1="2.5" y1="-0.6" x2="-2.5" y2="-0.6" width="0.1" layer="21"/>
+<wire x1="-2.5" y1="-0.6" x2="-2.5" y2="0.6" width="0.1" layer="21"/>
 <pad name="1" x="-3.81" y="0" drill="1" diameter="1.9304" shape="octagon"/>
 <pad name="2" x="3.81" y="0" drill="1" diameter="1.9304" shape="octagon"/>
-<text x="-2.286" y="-0.508" size="0.8128" layer="25" font="vector" ratio="12">&gt;NAME</text>
-<text x="-2.286" y="-1.016" size="0.8128" layer="27" font="vector" ratio="12" align="top-left">&gt;VALUE</text>
+<text x="-2.25" y="0" size="0.8128" layer="25" font="vector" ratio="12" align="center-left">&gt;NAME</text>
+<text x="-2.25" y="-1" size="0.8128" layer="27" font="vector" ratio="12" align="top-left">&gt;VALUE</text>
 </package>
 </packages>
 </library>

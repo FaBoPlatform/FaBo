@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -3926,16 +3926,14 @@ Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;br&gt;
 https://creativecommons.org/licenses/by-sa/4.0/</description>
 <packages>
 <package name="AXL-REGULAR">
-<wire x1="-2.54" y1="0.762" x2="2.54" y2="0.762" width="0.127" layer="21"/>
-<wire x1="2.54" y1="0.762" x2="2.54" y2="0" width="0.127" layer="21"/>
-<wire x1="2.54" y1="0" x2="2.54" y2="-0.762" width="0.127" layer="21"/>
-<wire x1="2.54" y1="-0.762" x2="-2.54" y2="-0.762" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="-0.762" x2="-2.54" y2="0" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="0" x2="-2.54" y2="0.762" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="0.6" x2="2.5" y2="0.6" width="0.1" layer="21"/>
+<wire x1="2.5" y1="0.6" x2="2.5" y2="-0.6" width="0.1" layer="21"/>
+<wire x1="2.5" y1="-0.6" x2="-2.5" y2="-0.6" width="0.1" layer="21"/>
+<wire x1="-2.5" y1="-0.6" x2="-2.5" y2="0.6" width="0.1" layer="21"/>
 <pad name="1" x="-3.81" y="0" drill="1" diameter="1.9304" shape="octagon"/>
 <pad name="2" x="3.81" y="0" drill="1" diameter="1.9304" shape="octagon"/>
-<text x="-2.286" y="-0.508" size="0.8128" layer="25" font="vector" ratio="12">&gt;NAME</text>
-<text x="-2.286" y="-1.016" size="0.8128" layer="27" font="vector" ratio="12" align="top-left">&gt;VALUE</text>
+<text x="-2.25" y="0" size="0.8128" layer="25" font="vector" ratio="12" align="center-left">&gt;NAME</text>
+<text x="-2.25" y="-1" size="0.8128" layer="27" font="vector" ratio="12" align="top-left">&gt;VALUE</text>
 </package>
 </packages>
 </library>
@@ -4176,9 +4174,8 @@ design rules under a new name.</description>
 <contactref element="J1" pad="IN/OUT"/>
 <contactref element="R1" pad="2"/>
 <contactref element="U1" pad="2"/>
-<wire x1="8.89" y1="19.685" x2="8.89" y2="12.065" width="0.4064" layer="16"/>
-<wire x1="8.89" y1="12.065" x2="10.16" y2="10.795" width="0.4064" layer="16"/>
-<wire x1="10.16" y1="10.795" x2="10.16" y2="6.985" width="0.4064" layer="16"/>
+<wire x1="10.16" y1="6.985" x2="10.16" y2="18.415" width="0.4064" layer="16"/>
+<wire x1="10.16" y1="18.415" x2="8.89" y2="19.685" width="0.4064" layer="16"/>
 <wire x1="11.43" y1="25.4" x2="11.43" y2="22.225" width="0.4064" layer="1"/>
 <wire x1="11.43" y1="22.225" x2="8.89" y2="19.685" width="0.4064" layer="1"/>
 </signal>
@@ -4186,13 +4183,12 @@ design rules under a new name.</description>
 <contactref element="J1" pad="VCC"/>
 <contactref element="R1" pad="1"/>
 <contactref element="U1" pad="1"/>
-<wire x1="16.51" y1="19.685" x2="16.51" y2="14.605" width="0.4064" layer="16"/>
-<wire x1="16.51" y1="14.605" x2="12.7" y2="10.795" width="0.4064" layer="16"/>
-<wire x1="12.7" y1="10.795" x2="12.7" y2="6.985" width="0.4064" layer="16"/>
-<wire x1="8.89" y1="25.4" x2="8.89" y2="23.495" width="0.4064" layer="16"/>
-<wire x1="8.89" y1="23.495" x2="10.16" y2="22.225" width="0.4064" layer="16"/>
-<wire x1="10.16" y1="22.225" x2="13.97" y2="22.225" width="0.4064" layer="16"/>
-<wire x1="13.97" y1="22.225" x2="16.51" y2="19.685" width="0.4064" layer="16"/>
+<wire x1="12.7" y1="6.985" x2="12.7" y2="15.875" width="0.4064" layer="16"/>
+<wire x1="12.7" y1="15.875" x2="16.51" y2="19.685" width="0.4064" layer="16"/>
+<wire x1="8.89" y1="25.4" x2="8.89" y2="22.86" width="0.4064" layer="16"/>
+<wire x1="8.89" y1="22.86" x2="10.16" y2="21.59" width="0.4064" layer="16"/>
+<wire x1="10.16" y1="21.59" x2="14.605" y2="21.59" width="0.4064" layer="16"/>
+<wire x1="14.605" y1="21.59" x2="16.51" y2="19.685" width="0.4064" layer="16"/>
 </signal>
 </signals>
 </board>
