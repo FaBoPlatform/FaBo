@@ -23,7 +23,7 @@ void hts221::PowerOn()
   bool available = false;
   while(!available){
     byte tmp;
-    readI2c(0x27, 1, &tmp);
+    readI2c(HTS221_STATUS_REG, 1, &tmp);
      if((tmp & 0b1) != 0b1){
        Serial.println("Temp not use");
      }else if((tmp & 0b10) != 0b10){
