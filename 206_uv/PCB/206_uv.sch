@@ -23744,7 +23744,7 @@ Standard 0603 ceramic capacitor</description>
 </library>
 <library name="FaBo-Mems">
 <packages>
-<package name="SILICONLABS-SI1145">
+<package name="SILICONLABS-SI1132">
 <wire x1="-1" y1="1" x2="1" y2="1" width="0.127" layer="21"/>
 <wire x1="1" y1="1" x2="1" y2="-1" width="0.127" layer="21"/>
 <wire x1="1" y1="-1" x2="-1" y2="-1" width="0.127" layer="21"/>
@@ -23764,14 +23764,14 @@ Standard 0603 ceramic capacitor</description>
 </package>
 </packages>
 <symbols>
-<symbol name="SILILONLABS-SI1145">
+<symbol name="SILILONLABS-SI1132">
 <pin name="SDA" x="-12.7" y="5.08" length="middle"/>
 <pin name="SCL" x="-12.7" y="2.54" length="middle"/>
-<pin name="VDD" x="-12.7" y="0" length="middle"/>
+<pin name="VDD1" x="-12.7" y="0" length="middle"/>
 <pin name="INT" x="-12.7" y="-2.54" length="middle"/>
-<pin name="LED1" x="12.7" y="5.08" length="middle" rot="R180"/>
+<pin name="VDD4" x="12.7" y="5.08" length="middle" rot="R180"/>
 <pin name="GND" x="12.7" y="2.54" length="middle" rot="R180"/>
-<pin name="CVDD1" x="12.7" y="0" length="middle" rot="R180"/>
+<pin name="CVDD3" x="12.7" y="0" length="middle" rot="R180"/>
 <pin name="CVDD2" x="12.7" y="-2.54" length="middle" rot="R180"/>
 <wire x1="-7.62" y1="7.62" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="5.08" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
@@ -23779,26 +23779,26 @@ Standard 0603 ceramic capacitor</description>
 <wire x1="7.62" y1="-7.62" x2="7.62" y2="10.16" width="0.254" layer="94"/>
 <wire x1="7.62" y1="10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="10.16" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
-<text x="-2.54" y="7.62" size="1.27" layer="94">SI1145</text>
+<text x="-2.54" y="7.62" size="1.27" layer="94">SI1132</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="SL-SI1145">
-<description>SILICONLABS SI1145(PROXIMITY/UV/AMBIENT LIGHT SENSOR)</description>
+<deviceset name="SL-SI1132">
+<description>SiliconLabs SI1131(UV Index sensor)&lt;br&gt;</description>
 <gates>
-<gate name="G$1" symbol="SILILONLABS-SI1145" x="0" y="0"/>
+<gate name="G$1" symbol="SILILONLABS-SI1132" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SILICONLABS-SI1145">
+<device name="" package="SILICONLABS-SI1132">
 <connects>
-<connect gate="G$1" pin="CVDD1" pad="7"/>
 <connect gate="G$1" pin="CVDD2" pad="6"/>
+<connect gate="G$1" pin="CVDD3" pad="7"/>
 <connect gate="G$1" pin="GND" pad="8"/>
 <connect gate="G$1" pin="INT" pad="4"/>
-<connect gate="G$1" pin="LED1" pad="9"/>
 <connect gate="G$1" pin="SCL" pad="2"/>
 <connect gate="G$1" pin="SDA" pad="1"/>
-<connect gate="G$1" pin="VDD" pad="3"/>
+<connect gate="G$1" pin="VDD1" pad="3"/>
+<connect gate="G$1" pin="VDD4" pad="9"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -23823,16 +23823,15 @@ Standard 0603 ceramic capacitor</description>
 <part name="SUPPLY1" library="GClue" deviceset="3V3" device=""/>
 <part name="SUPPLY2" library="GClue" deviceset="3V3" device=""/>
 <part name="GND1" library="GClue" deviceset="GND" device=""/>
-<part name="SUPPLY4" library="GClue" deviceset="3V3" device=""/>
 <part name="U$3" library="FaBo" deviceset="LOGO_FABO" device="-M"/>
 <part name="C1" library="GClue" deviceset="CAP" device="-EIA0603" value="0.1uF"/>
 <part name="GND3" library="GClue" deviceset="GND" device=""/>
 <part name="SUPPLY5" library="GClue" deviceset="3V3" device=""/>
 <part name="U$4" library="GClue" deviceset="LOGO_OSHW_T" device="-BT"/>
-<part name="SI1145" library="FaBo-Mems" deviceset="SL-SI1145" device=""/>
 <part name="GND2" library="GClue" deviceset="GND" device=""/>
 <part name="R1" library="GClue" deviceset="RES" device="-EIA0603" value="4.7k"/>
 <part name="R2" library="GClue" deviceset="RES" device="-EIA0603" value="4.7k"/>
+<part name="SI1132" library="FaBo-Mems" deviceset="SL-SI1132" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -23845,16 +23844,15 @@ Standard 0603 ceramic capacitor</description>
 <instance part="SUPPLY1" gate="3V3" x="53.34" y="147.32"/>
 <instance part="SUPPLY2" gate="3V3" x="132.08" y="149.86"/>
 <instance part="GND1" gate="GND" x="68.58" y="88.9"/>
-<instance part="SUPPLY4" gate="3V3" x="228.6" y="149.86"/>
 <instance part="U$3" gate="G$1" x="226.06" y="15.24"/>
 <instance part="C1" gate="G$1" x="86.36" y="121.92"/>
 <instance part="GND3" gate="GND" x="86.36" y="88.9"/>
 <instance part="SUPPLY5" gate="3V3" x="86.36" y="147.32"/>
 <instance part="U$4" gate="G$1" x="248.92" y="12.7"/>
-<instance part="SI1145" gate="G$1" x="152.4" y="109.22"/>
 <instance part="GND2" gate="GND" x="170.18" y="99.06"/>
 <instance part="R1" gate="G$1" x="111.76" y="134.62" rot="R90"/>
 <instance part="R2" gate="G$1" x="121.92" y="134.62" rot="R90"/>
+<instance part="SI1132" gate="G$1" x="152.4" y="109.22"/>
 </instances>
 <busses>
 </busses>
@@ -23870,31 +23868,27 @@ Standard 0603 ceramic capacitor</description>
 <wire x1="121.92" y1="139.7" x2="121.92" y2="144.78" width="0.1524" layer="91"/>
 <junction x="121.92" y="144.78"/>
 <wire x1="132.08" y1="144.78" x2="132.08" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="SI1145" gate="G$1" pin="VDD"/>
 <wire x1="132.08" y1="109.22" x2="139.7" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="SI1145" gate="G$1" pin="CVDD1"/>
 <wire x1="165.1" y1="109.22" x2="175.26" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="109.22" x2="175.26" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="109.22" x2="175.26" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="114.3" x2="175.26" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="144.78" x2="132.08" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="SI1145" gate="G$1" pin="CVDD2"/>
 <wire x1="165.1" y1="106.68" x2="175.26" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="106.68" x2="175.26" y2="109.22" width="0.1524" layer="91"/>
 <junction x="175.26" y="109.22"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="R2" gate="G$1" pin="2"/>
+<pinref part="SI1132" gate="G$1" pin="VDD1"/>
+<pinref part="SI1132" gate="G$1" pin="CVDD3"/>
+<pinref part="SI1132" gate="G$1" pin="CVDD2"/>
+<pinref part="SI1132" gate="G$1" pin="VDD4"/>
+<wire x1="165.1" y1="114.3" x2="175.26" y2="114.3" width="0.1524" layer="91"/>
+<junction x="175.26" y="114.3"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="VCC"/>
 <pinref part="SUPPLY1" gate="3V3" pin="3V3"/>
 <wire x1="53.34" y1="121.92" x2="53.34" y2="147.32" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="SUPPLY4" gate="3V3" pin="3V3"/>
-<wire x1="223.52" y1="127" x2="228.6" y2="127" width="0.1524" layer="91"/>
-<wire x1="228.6" y1="127" x2="228.6" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="228.6" y1="129.54" x2="228.6" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="223.52" y1="129.54" x2="228.6" y2="129.54" width="0.1524" layer="91"/>
-<junction x="228.6" y="129.54"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="1"/>
@@ -23916,10 +23910,10 @@ Standard 0603 ceramic capacitor</description>
 <wire x1="86.36" y1="119.38" x2="86.36" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SI1145" gate="G$1" pin="GND"/>
 <wire x1="165.1" y1="111.76" x2="170.18" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="111.76" x2="170.18" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="GND" pin="GND"/>
+<pinref part="SI1132" gate="G$1" pin="GND"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -23934,8 +23928,8 @@ Standard 0603 ceramic capacitor</description>
 <label x="101.6" y="111.76" size="1.778" layer="95"/>
 <wire x1="121.92" y1="129.54" x2="121.92" y2="111.76" width="0.1524" layer="91"/>
 <junction x="121.92" y="111.76"/>
-<pinref part="SI1145" gate="G$1" pin="SCL"/>
 <pinref part="R2" gate="G$1" pin="1"/>
+<pinref part="SI1132" gate="G$1" pin="SCL"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -23948,16 +23942,10 @@ Standard 0603 ceramic capacitor</description>
 <wire x1="101.6" y1="114.3" x2="111.76" y2="114.3" width="0.1524" layer="91"/>
 <label x="101.6" y="114.3" size="1.778" layer="95"/>
 <wire x1="111.76" y1="129.54" x2="111.76" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="SI1145" gate="G$1" pin="SDA"/>
 <wire x1="111.76" y1="114.3" x2="139.7" y2="114.3" width="0.1524" layer="91"/>
 <junction x="111.76" y="114.3"/>
 <pinref part="R1" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<wire x1="228.6" y1="106.68" x2="228.6" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="228.6" y1="116.84" x2="223.52" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="SI1132" gate="G$1" pin="SDA"/>
 </segment>
 </net>
 </nets>
