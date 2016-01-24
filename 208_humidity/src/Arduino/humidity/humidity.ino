@@ -1,11 +1,11 @@
 //
-// FaBo Brick Sample
+// FaBo Humidity Brick
 //
 // brick_i2c_humidity
 //
 
 #include <Wire.h>
-#include "hts221.h"
+#include "fabo-hts221.h"
 
 void setup()
 {
@@ -23,11 +23,12 @@ void setup()
 
 void loop()
 { 
-  int temp = faboHumidity.Get_Temperature();
+  double temp = faboHumidity.GetTemperature()/10;
   double humidity = faboHumidity.GetHumidity()/10;
 
   Serial.println(temp);
+  Serial.println(" C");
   Serial.print(humidity);
   Serial.println(" %");
-  delay(5000);
+  delay(1000);
 }
