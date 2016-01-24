@@ -1,6 +1,6 @@
 #include "hts221.h"
 
-bool hts221::SearchDevice()
+bool hts221::searchDevice()
 {
   Serial.begin(115200);
   byte device = 0x00;
@@ -13,7 +13,7 @@ bool hts221::SearchDevice()
   }
 }
 
-void hts221::PowerOn()
+void hts221::powerOn()
 {
   int CTRL_REG1 = HTS221_PD_ON;
   CTRL_REG1 |= HTS221_ODR_1KHZ;
@@ -23,7 +23,7 @@ void hts221::PowerOn()
   bool available = false;
   while(!available){
     byte tmp;
-    readI2c(0x27, 1, &tmp);
+    readI2c(HTS221_STATUS_REG, 1, &tmp);
      if((tmp & 0b1) != 0b1){
        Serial.println("Temp not use");
      }else if((tmp & 0b10) != 0b10){
@@ -34,13 +34,13 @@ void hts221::PowerOn()
   }
 }
 
-void hts221::Configuration()
+void hts221::configuration()
 {
    int AV_CONF = HTS221_AVGT_256>>3 | HTS221_AVGH_512;
    writeI2c(HTS221_AV_CONF, AV_CONF);
 }
 
-int hts221::GetHumidity()
+int hts221::getHumidity()
 {
   uint16_t H0_T0_out, H1_T0_out, H_T_out;
   uint16_t H0_rh, H1_rh;
@@ -83,7 +83,7 @@ int hts221::GetHumidity()
   return humidity;
 }
 
-int hts221::GetTemperature()
+int hts221::getTemperature()
 {
   int16_t T0_out, T1_out, T_out, T0_degC_x8_u16, T1_degC_x8_u16;
   int16_t T0_degC, T1_degC;

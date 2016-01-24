@@ -9,7 +9,7 @@
 #define HTS221_CTRL_REG1 0x20
 #define HTS221_STATUS_REG 0x27
 
-// Temperature
+// Temperature calibration registers
 #define HTS221_T0_DEGC_X8 0x32
 #define HTS221_T1_DEGC_X8 0x33
 #define HTS221_T0_T1_DEGC_H2 0x35
@@ -43,11 +43,11 @@
 class hts221
 {
 public:
-  int Get_Temperature(void);
-  int GetHumidity(void);
-  void Configuration(void);
-  void PowerOn(void);
-  bool SearchDevice(void);
+  int getTemperature(void);
+  int getHumidity(void);
+  void configuration(void);
+  void powerOn(void);
+  bool searchDevice(void);
 private:
   void readI2c(byte register_addr, int num, byte *buf);
   void writeI2c(byte register_addr, byte value);
