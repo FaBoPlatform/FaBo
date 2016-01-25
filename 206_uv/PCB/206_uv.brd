@@ -142,8 +142,8 @@
 <board>
 <plain>
 <text x="25.4" y="14.605" size="0.8128" layer="21" font="vector" ratio="12" rot="R270" align="bottom-center">MADE IN JAPAN</text>
-<text x="3.81" y="6.6675" size="1.27" layer="21" font="vector" ratio="12" rot="R90">UV/Amient Light</text>
-<text x="5.08" y="6.6675" size="1.016" layer="21" font="vector" ratio="12" rot="R90">Rev.1.0.0</text>
+<text x="3.81" y="10.16" size="1.27" layer="21" font="vector" ratio="12" rot="R90">UV Index</text>
+<text x="5.08" y="10.16" size="1.016" layer="21" font="vector" ratio="12" rot="R90">Rev.1.0.0</text>
 <text x="13.97" y="33.655" size="2.54" layer="21" font="vector" ratio="12" align="bottom-center">#206</text>
 </plain>
 <libraries>

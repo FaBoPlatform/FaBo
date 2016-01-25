@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -362,7 +362,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </symbols>
 <devicesets>
 <deviceset name="SL-SI1132" prefix="IC" uservalue="yes">
-<description>SILICONLABS SI1145(PROXIMITY/UV/AMBIENT LIGHT SENSOR)</description>
+<description>SiliconLabs SI1131(UV Index sensor)&lt;br&gt;</description>
 <gates>
 <gate name="G$1" symbol="SILILONLABS-SI1132" x="0" y="0"/>
 </gates>
