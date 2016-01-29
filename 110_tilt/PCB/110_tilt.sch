@@ -31579,14 +31579,14 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <sheets>
 <sheet>
 <plain>
-<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.2</text>
+<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.3</text>
 </plain>
 <instances>
 <instance part="J1" gate="G$1" x="93.98" y="91.44"/>
 <instance part="U$1" gate="G$1" x="0" y="0"/>
 <instance part="U$3" gate="G$1" x="218.44" y="5.08"/>
 <instance part="U$2" gate="G$1" x="248.92" y="12.7"/>
-<instance part="U1" gate="G$1" x="157.48" y="83.82"/>
+<instance part="U1" gate="G$1" x="157.48" y="88.9"/>
 <instance part="R1" gate="G$1" x="124.46" y="86.36"/>
 </instances>
 <busses>
@@ -31594,11 +31594,13 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <nets>
 <net name="N$5" class="0">
 <segment>
-<wire x1="147.32" y1="81.28" x2="111.76" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="81.28" x2="111.76" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="76.2" x2="111.76" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="91.44" x2="101.6" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="VCC"/>
-<pinref part="U1" gate="G$1" pin="3"/>
+<wire x1="111.76" y1="76.2" x2="172.72" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="76.2" x2="172.72" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="4"/>
+<wire x1="172.72" y1="86.36" x2="167.64" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -31611,13 +31613,13 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <net name="N$3" class="0">
 <segment>
 <wire x1="129.54" y1="86.36" x2="137.16" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="86.36" x2="147.32" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="86.36" x2="137.16" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="96.52" x2="101.6" y2="96.52" width="0.1524" layer="91"/>
-<junction x="137.16" y="86.36"/>
 <pinref part="J1" gate="G$1" pin="I/O"/>
 <pinref part="R1" gate="G$1" pin="2"/>
-<pinref part="U1" gate="G$1" pin="1"/>
+<pinref part="U1" gate="G$1" pin="3"/>
+<wire x1="137.16" y1="86.36" x2="147.32" y2="86.36" width="0.1524" layer="91"/>
+<junction x="137.16" y="86.36"/>
 </segment>
 </net>
 </nets>
