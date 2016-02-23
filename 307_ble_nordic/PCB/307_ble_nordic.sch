@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -34059,12 +34059,14 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <sheets>
 <sheet>
 <plain>
-<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.0</text>
+<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.1</text>
 <text x="17.78" y="160.02" size="3.81" layer="94">Push Button</text>
 <text x="129.54" y="121.92" size="3.81" layer="94">MDBT40</text>
 <text x="20.32" y="121.92" size="3.81" layer="94">LED</text>
 <text x="205.74" y="165.1" size="3.81" layer="94">Debug</text>
-<text x="215.9" y="96.52" size="1.778" layer="97">P0_12 TX, P0_13 RX</text>
+<text x="215.9" y="91.44" size="1.778" layer="97">P0_12 RX, P0_13 TX</text>
+<text x="175.26" y="86.36" size="1.778" layer="91">RX</text>
+<text x="175.26" y="88.9" size="1.778" layer="91">TX</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="0" y="0"/>
@@ -34380,9 +34382,9 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pinref part="U$7" gate="G$1" pin="P0_12"/>
 </segment>
 <segment>
-<wire x1="231.14" y1="71.12" x2="246.38" y2="71.12" width="0.1524" layer="91"/>
-<label x="241.3" y="71.12" size="1.778" layer="95"/>
-<pinref part="J1" gate="G$1" pin="TX"/>
+<wire x1="231.14" y1="76.2" x2="246.38" y2="76.2" width="0.1524" layer="91"/>
+<label x="241.3" y="76.2" size="1.778" layer="95"/>
+<pinref part="J1" gate="G$1" pin="RX"/>
 </segment>
 </net>
 <net name="P0_13" class="0">
@@ -34392,9 +34394,9 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pinref part="U$7" gate="G$1" pin="P0_13"/>
 </segment>
 <segment>
-<wire x1="231.14" y1="76.2" x2="246.38" y2="76.2" width="0.1524" layer="91"/>
-<label x="241.3" y="76.2" size="1.778" layer="95"/>
-<pinref part="J1" gate="G$1" pin="RX"/>
+<wire x1="231.14" y1="71.12" x2="246.38" y2="71.12" width="0.1524" layer="91"/>
+<label x="241.3" y="71.12" size="1.778" layer="95"/>
+<pinref part="J1" gate="G$1" pin="TX"/>
 </segment>
 </net>
 <net name="P0_14" class="0">
