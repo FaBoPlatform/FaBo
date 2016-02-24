@@ -5,7 +5,7 @@
 //
 
 #define buttonPin A0 // リミットスイッチピン
-#define ledPin A1    // LEDピン
+#define ledPin 2     // LEDピン
 
 // リミットスイッチの状況取得用
 int buttonState = 0;
