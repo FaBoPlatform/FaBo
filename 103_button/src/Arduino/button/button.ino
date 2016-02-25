@@ -4,8 +4,8 @@
 // #103 Button Brick
 //
 
-#define buttonPin A0 // ボタンピン:A0
-#define ledPin 2     // LEDピン:D2
+#define buttonPin A0 // ボタンピン
+#define ledPin 2     // LEDピン
 
 // ボタンの押下状況取得用
 int buttonState = 0;
@@ -22,9 +22,9 @@ void loop(){
   buttonState = digitalRead(buttonPin);
 
   // ボタン押下判定
-  if (buttonState == HIGH) {        
-    // LED点灯
-    digitalWrite(ledPin, HIGH);  
+  if (buttonState == HIGH) {
+    // ボタンが押された場合、LED点灯
+    digitalWrite(ledPin, HIGH);
   } 
   else {
     // LED消灯
