@@ -1,27 +1,27 @@
 //
 // FaBo Brick Sample
 //
-// brick_analog_vibrator
+// #105 Vibrator Brick
 //
 
-int vibratorPin = A0;
-int buttonPin = A1;
+int vibratorPin = 2;
+int buttonPin = A0;
 
 int buttonState = 0;
 
 void setup() {
-  pinMode(buttonPin, INPUT); 
-  pinMode(vibratorPin, OUTPUT);         
+  pinMode(buttonPin, INPUT);
+  pinMode(vibratorPin, OUTPUT);
 }
 
 void loop(){
  
   buttonState = digitalRead(buttonPin);
 
-  if (buttonState == HIGH) {        
-    digitalWrite(vibratorPin, HIGH);  
-  } 
+  if (buttonState == HIGH) {
+    digitalWrite(vibratorPin, HIGH);
+  }
   else {
-    digitalWrite(vibratorPin, LOW); 
+    digitalWrite(vibratorPin, LOW);
   }
 }

@@ -1,21 +1,22 @@
 //
 // FaBo Brick Sample
 //
-// brick_analog_angle
+// #104 Angle Brick
 //
 
-int sensorPin = A0;    
-int ledPin = 5;
-int sensorValue = 0;
+int anglePin = A0;
+int ledPin = 3;
+
+int angleValue = 0;
 int outputValue = 0;
 
 void setup() {
   pinMode(ledPin, OUTPUT);  
-  pinMode(sensorPin, INPUT);  
+  pinMode(anglePin, INPUT);  
 }
 
 void loop() {
-  sensorValue = analogRead(sensorPin);  
-  outputValue = map(sensorValue, 0, 1023, 0, 255);  
+  angleValue = analogRead(anglePin);  
+  outputValue = map(angleValue, 0, 1023, 0, 255);  
   analogWrite(ledPin, outputValue);              
 }

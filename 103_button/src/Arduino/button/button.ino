@@ -1,11 +1,11 @@
 //
 // FaBo Brick Sample
 //
-// brick_analog_button
+// #103 Button Brick
 //
 
 int buttonPin = A0;
-int ledPin = A1;
+int ledPin = 2;
 
 int buttonState = 0;
 

@@ -1,10 +1,10 @@
 //
 // FaBo Brick Sample
 //
-// brick_analog_led
+// #101 LED Brick
 //
 
-int ledPin = A0;
+int ledPin = 2;
 
 void setup() {                
   pinMode(ledPin, OUTPUT);     
