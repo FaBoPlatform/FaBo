@@ -4,8 +4,8 @@
 // brick_analog_touch
 //
 
-int buttonPin = A0;
-int ledPin = A1;
+#define buttonPin A0
+#define ledPin 2
 
 int buttonState = 0;
 

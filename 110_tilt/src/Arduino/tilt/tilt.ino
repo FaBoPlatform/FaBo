@@ -5,7 +5,7 @@
 //
 
 int buttonPin = A0;
-int ledPin = A1;
+int ledPin = 2;
 
 int buttonState = 0;
 

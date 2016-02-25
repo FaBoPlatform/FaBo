@@ -4,14 +4,17 @@
 // brick_analog_light
 //
 
-int light_value = 0;
+#define lightPin A0
 
-void setup() {                
-  Serial.begin(9600);    
+int lightValue = 0;
+
+void setup() {
+  pinMode(lightPin,INPUT);
+  Serial.begin(9600);
 }
 
 void loop() {
-  light_value = analogRead(A0) ;  
-  Serial.println(light_value);
-  delay(100); 
+  lightValue = analogRead(lightPin);
+  Serial.println(lightValue);
+  delay(100);
 }
