@@ -28,10 +28,20 @@ void setup() {
 }
 
 void loop() {
-  Serial.println(read_hpa()); // 気圧
-  Serial.println(read_hpa_alt(212.0)); // 会津若松の標高:212m
-  Serial.println(read_temp()); // 温度
-  delay(500);
+  // 気圧
+  Serial.print(read_hpa());
+  Serial.println(" hPa");
+  // 温度
+  Serial.print(read_temp());
+  Serial.println(" C");
+
+  // 会津若松の標高:212mの気圧
+  Serial.println("");
+  Serial.print(read_hpa_alt(212.0));
+  Serial.println(" hPa");
+  Serial.println();
+
+  delay(1000);
 }
 
 
