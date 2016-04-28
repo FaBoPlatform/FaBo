@@ -1,4 +1,7 @@
-# brick_i2c_humidity
+# #208 Humidity I2C Brick
 
-#### Parts list
-- SI7005 [Silicon Lab](http://www.silabs.com/Support%20Documents/TechnicalDocs/Si7005.pdf)
+[#208 Humidity I2C Brick](http://fabo.io/208.html)
+
+- Eagle PCB
+- Schematic Image
+- Sample Code
