@@ -1,5 +1,7 @@
-# brick_i2c_lcd
+# #212 LCD I2C Brick
 
-#### Parts list
-- TX33C [Mouser](http://www.mouser.jp/ProductDetail/Bourns/TC33X-2-103E/?qs=fmZCN1JtwVHu68GrI%2FXOWQ%3D%3D)
-- PCF8474 [Mouser](http://www.mouser.jp/ProductDetail/NXP-Semiconductors/PCF8574AT-3518/?qs=sGAEpiMZZMvKM5ialpXrmrkl5p5Wk49C)
+[#212 LCD I2C Brick](http://fabo.io/212.html)
+
+- Eagle PCB
+- Schematic Image
+- Sample Code
