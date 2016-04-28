@@ -1,4 +1,7 @@
-# brick_i2c_color
+# #203 Color I2C Brick
 
-#### Parts list
-- S11059 [HAMAMATSU](http://www.hamamatsu.com/jp/ja/product/category/3100/4009/4153/S11059-02DT/index.html)
+[#203 Color I2C Brick](http://fabo.io/203.html)
+
+- Eagle PCB
+- Schematic Image
+- Sample Code
