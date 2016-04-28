@@ -1,7 +1,7 @@
-# brick_i2c_oled
+# #214 OLED I2C Brick
 
-#### Parts list
-- SSD1306 [Datasheet](http://www.buydisplay.com/download/ic/SSD1306.pdf)
-- 128x64 OLED [Buy led] (http://www.buydisplay.com/default/0-49-inch-oled-display-module-64x32-pixel-ssd1306-i2c-white-on-black)
+[#214 OLED I2C Brick](http://fabo.io/214.html)
 
-
+- Eagle PCB
+- Schematic Image
+- Sample Code
