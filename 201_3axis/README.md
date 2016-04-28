@@ -1,5 +1,7 @@
-# brick_i2c_3axis
+# #201 3Axis I2C Brick
 
-#### Parts list
-- MMA8451Q [Free Scale](http://www.freescale.com/ja/webapp/sps/site/prod_summary.jsp?code=MMA8451Q)
-- LIS3DSH [ST Micro](http://www.st-japan.co.jp/web/jp/catalog/sense_power/FM89/SC444/PF252716)
+[#201 3AXIS I2C Brick](http://fabo.io/201.html)
+
+- Eagle PCB
+- Schematic Image
+- Sample Code
