@@ -1,4 +1,7 @@
-# brick_i2c_templature
+# #207 Temperature I2C Brick
 
-#### Parts list
-- ADT7410 [Mouser](http://www.mouser.jp/Analog-Devices-Inc/Sensors/Temperature-Sensors/Board-Mount-Temperature-Sensors/ADT7410-Series/_/N-7gz7qZ1yyhlp3Z1yyh4l4)
+[#207 Temperature I2C Brick](http://fabo.io/207.html)
+
+- Eagle PCB
+- Schematic Image
+- Sample Code
