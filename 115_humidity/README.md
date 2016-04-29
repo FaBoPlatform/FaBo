@@ -1,4 +1,7 @@
-brick_humidity
-==============
+# #115 Humidity Brick
 
-Humidity
+[#115 Humidity Brick](http://fabo.io/115.html)
+
+- Eagle PCB
+- Schematic Image
+- Sample Code
