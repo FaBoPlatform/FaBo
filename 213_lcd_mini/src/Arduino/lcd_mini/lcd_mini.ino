@@ -1,28 +1,29 @@
 //
 // FaBo Brick Sample
 //
-// 213_lcd_mini
+// FaBo LCD mini I2C Brick
+//   http://fabo.io/213.html
 //
-// ST7032 Library Download from
-//  https://github.com/tomozh/arduino_ST7032
+// FaBoLCDmini_AQM0802A Library Download from
+//  https://github.com/FaBoPlatform/FaBoLCDmini-AQM0802A-Library
 //
 
 #include <Wire.h>
-#include <ST7032.h>
+#include <FaBoLCDmini_AQM0802A.h>
 
-ST7032 lcd;
+FaBoLCDmini_AQM0802A faboLCD;
 
 void setup() {
-  lcd.begin(8, 2);
-  lcd.setContrast(20);
-  lcd.print("Hello!");
+  faboLCD.begin();
+  faboLCD.print("Hello!");
   delay(3000);
-  lcd.clear();
+  faboLCD.clear();
+  delay(1000);
 }
 
 void loop() {
-  lcd.home();
-  lcd.print("FaBo LCD");
-  lcd.setCursor(1,1);
-  lcd.print(millis()/1000);
+  faboLCD.home();
+  faboLCD.print("FaBo LCD");
+  faboLCD.setCursor(1,1);
+  faboLCD.print(millis()/1000);
 }
