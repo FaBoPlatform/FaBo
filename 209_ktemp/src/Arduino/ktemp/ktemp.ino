@@ -1,22 +1,51 @@
 //
 // FaBo Brick Sample
 //
-// brick_i2c_ktemp
+// #209 Ktemp I2C Brick
 //
 
 #include <Wire.h>
 
 // スレーブデバイスのアドレス
-#define DEVICE_ADDR (0x69)
+int device_addr;
 
 void setup() {
-  Serial.begin(9600);
-  Serial.println("RESET");
-
   Wire.begin();
-  Wire.beginTransmission(DEVICE_ADDR); 
+  Serial.begin(9600);
+  
+  Serial.println("Device Check");
+  device_addr = address_check();
+  
+  if (device_addr == 0)
+  {
+    Serial.print("device not found");
+    while(1);
+  }
+
+  Wire.beginTransmission(device_addr); 
   Wire.write(0x9f); // 初期設定
   Wire.endTransmission();
+}
+
+byte address_check(){
+  byte addr;
+  byte error;
+  
+  // MCP3421のアドレスチェック 0x68-0x6F
+  for(addr = 0x68; addr < 0x70; addr++ )
+  {
+    Wire.beginTransmission(addr);
+    error = Wire.endTransmission();
+ 
+    if (error == 0)
+    {
+      Serial.print("I2C device address 0x");
+      Serial.println(addr, HEX);
+      return addr;
+    }
+  }
+  return 0;
+
 }
 
 void loop() {
@@ -29,7 +58,7 @@ void loop() {
   int cp = 407;  // プローブ補正値
   double temp;
 
-  Wire.requestFrom(DEVICE_ADDR, 4);
+  Wire.requestFrom(device_addr, 4);
   if (Wire.available() != 4) {
     Serial.println("read failed");
     delay(1000);
@@ -52,4 +81,3 @@ void loop() {
 
   delay(500);
 }
-
