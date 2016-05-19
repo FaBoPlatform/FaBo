@@ -1,8 +1,6 @@
-# Shield outin
+# #501 OUT/IN Shield for Arduino
 
-#### Parts list
+[#501 OUT/IN Shield for Arduino](http://fabo.io/501.html)
 
-- EG1218 ( [Mouser] (http://www.mouser.jp/Search/ProductDetail.aspx?R=EG1218virtualkey61200000virtualkey612-EG1218) )
-
-#### Version
-0.1 (2014/12/20)
+- Eagle PCB
+- Schematic Image
