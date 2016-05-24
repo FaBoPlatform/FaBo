@@ -1,7 +1,7 @@
 //
 // FaBo Brick Sample
 //
-// brick_analog_light
+// #109 Light Brick
 //
 
 //library
@@ -19,6 +19,6 @@ function loop()
   var value = light_pin.read()
   console.log('light: ' + value);
 
-  //100 milliseconds
-  setTimeout(loop,100);
+  //500 milliseconds
+  setTimeout(loop, 500);
 }

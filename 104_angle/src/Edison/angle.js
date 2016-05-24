@@ -1,7 +1,7 @@
 //
 // FaBo Brick Sample
 //
-// brick_analog_angle
+// #104 Angle Brick
 //
 
 //library
@@ -28,5 +28,5 @@ function loop()
   led_pin.write(value);
 
   //100 milliseconds
-  setTimeout(loop,100);
+  setTimeout(loop, 100);
 }

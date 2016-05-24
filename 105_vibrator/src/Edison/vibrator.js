@@ -1,7 +1,7 @@
 //
 // FaBo Brick Sample
 //
-// brick_analog_vibrator
+// #105 Vibrator Brick
 //
 
 //library
@@ -9,7 +9,7 @@ var m = require('mraa');
 
 //pin setup
 var button_pin   = new m.Gpio(14); //Button A0
-var vibrator_pin = new m.Gpio(15); //vibrator A1
+var vibrator_pin = new m.Gpio(2);  //vibrator D2
 
 button_pin.dir(m.DIR_IN);     //Button input
 vibrator_pin.dir(m.DIR_OUT);  //vibrator output
@@ -26,7 +26,7 @@ function loop()
   }
   else {
     vibrator_pin.write(0);
-  }  
+  }
 
-  setTimeout(loop,100);
+  setTimeout(loop, 10);
 }
