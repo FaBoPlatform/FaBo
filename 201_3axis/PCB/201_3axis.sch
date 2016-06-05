@@ -22443,6 +22443,15 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <rectangle x1="6.1379125" y1="5.72135" x2="6.81355" y2="5.73913125" layer="22" rot="R180"/>
 <rectangle x1="6.297934375" y1="5.73913125" x2="6.671309375" y2="5.75690625" layer="22" rot="R180"/>
 </package>
+<package name="SMD-JUMPER-2">
+<wire x1="1.27" y1="-0.8" x2="-1.27" y2="-0.8" width="0.1" layer="21"/>
+<wire x1="1.27" y1="-0.8" x2="1.27" y2="0.8" width="0.1" layer="21"/>
+<wire x1="-1.27" y1="-0.8" x2="-1.27" y2="0.8" width="0.1" layer="21"/>
+<wire x1="-1.27" y1="0.8" x2="1.27" y2="0.8" width="0.1" layer="21"/>
+<smd name="1" x="-0.6" y="0" dx="0.8" dy="1.2" layer="1" cream="no"/>
+<smd name="2" x="0.6" y="0" dx="0.8" dy="1.2" layer="1" cream="no"/>
+<text x="0" y="1.27" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="A4L-LOC">
@@ -32526,6 +32535,16 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <rectangle x1="-0.4699" y1="3.72618125" x2="0.5359375" y2="3.73125625" layer="94"/>
 <rectangle x1="-0.459740625" y1="3.731259375" x2="0.525778125" y2="3.736340625" layer="94"/>
 </symbol>
+<symbol name="SMD-JUMPER-2">
+<wire x1="-0.635" y1="0.381" x2="0.635" y2="0.381" width="1.27" layer="94" curve="-180" cap="flat"/>
+<text x="2.54" y="0.381" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-1.905" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="2" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<wire x1="0.635" y1="-0.381" x2="-0.635" y2="-0.381" width="1.27" layer="94" curve="-180" cap="flat"/>
+<wire x1="0" y1="2.54" x2="0" y2="0.762" width="0.381" layer="94"/>
+<wire x1="0" y1="-0.762" x2="0" y2="-2.54" width="0.381" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="A4L-LOC">
@@ -32624,6 +32643,22 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </technologies>
 </device>
 <device name="-T_M_BOTTOM" package="LOGO_OSHW_T_MS_BOTTOM">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SMD-JUMPER-2" prefix="SJ" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="SMD-JUMPER-2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SMD-JUMPER-2">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -33663,7 +33698,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0.254" drill="0">
+<class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
 <parts>
@@ -33681,7 +33716,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="GND2" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="GND3" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="GND4" library="FaBo-Supply" deviceset="GND" device=""/>
-<part name="GND5" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="GND6" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="3V2" library="FaBo-Supply" deviceset="3V3" device=""/>
 <part name="3V3" library="FaBo-Supply" deviceset="3V3" device=""/>
@@ -33696,6 +33730,10 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="C3" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="0.1uF"/>
 <part name="C4" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="0.1uF"/>
 <part name="GND9" library="FaBo-Supply" deviceset="GND" device=""/>
+<part name="SJ1" library="FaBo-etc" deviceset="SMD-JUMPER-2" device=""/>
+<part name="R2" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="10k"/>
+<part name="3V6" library="FaBo-Supply" deviceset="3V3" device=""/>
+<part name="GND10" library="FaBo-Supply" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -33717,7 +33755,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <instance part="GND2" gate="G$1" x="101.6" y="111.76"/>
 <instance part="GND3" gate="G$1" x="160.02" y="78.74"/>
 <instance part="GND4" gate="G$1" x="170.18" y="78.74"/>
-<instance part="GND5" gate="G$1" x="180.34" y="78.74"/>
 <instance part="GND6" gate="G$1" x="220.98" y="78.74"/>
 <instance part="3V2" gate="G$1" x="160.02" y="124.46"/>
 <instance part="3V3" gate="G$1" x="170.18" y="124.46"/>
@@ -33732,6 +33769,10 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <instance part="C3" gate="G$1" x="160.02" y="86.36" rot="R90"/>
 <instance part="C4" gate="G$1" x="170.18" y="86.36" rot="R90"/>
 <instance part="GND9" gate="G$1" x="81.28" y="45.72"/>
+<instance part="SJ1" gate="G$1" x="111.76" y="76.2"/>
+<instance part="R2" gate="G$1" x="111.76" y="55.88" rot="R90"/>
+<instance part="3V6" gate="G$1" x="111.76" y="91.44"/>
+<instance part="GND10" gate="G$1" x="111.76" y="45.72"/>
 </instances>
 <busses>
 </busses>
@@ -33806,12 +33847,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pinref part="C4" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="SDO"/>
-<wire x1="185.42" y1="104.14" x2="180.34" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="180.34" y1="104.14" x2="180.34" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="GND5" gate="G$1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="IC1" gate="G$1" pin="GND1"/>
 <wire x1="215.9" y1="96.52" x2="220.98" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="96.52" x2="220.98" y2="93.98" width="0.1524" layer="91"/>
@@ -33841,6 +33876,11 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pinref part="GND9" gate="G$1" pin="GND"/>
 <wire x1="66.04" y1="60.96" x2="81.28" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="60.96" x2="81.28" y2="45.72" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R2" gate="G$1" pin="1"/>
+<pinref part="GND10" gate="G$1" pin="GND"/>
+<wire x1="111.76" y1="53.34" x2="111.76" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SCL_HV" class="0">
@@ -33907,6 +33947,11 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="35.56" y1="71.12" x2="30.48" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="71.12" x2="30.48" y2="91.44" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="3V6" gate="G$1" pin="3V3"/>
+<pinref part="SJ1" gate="G$1" pin="1"/>
+<wire x1="111.76" y1="91.44" x2="111.76" y2="81.28" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$1" class="0">
 <segment>
@@ -33921,6 +33966,22 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pinref part="IC3" gate="G$1" pin="VREF2"/>
 <wire x1="66.04" y1="71.12" x2="71.12" y2="71.12" width="0.1524" layer="91"/>
 <junction x="71.12" y="71.12"/>
+</segment>
+</net>
+<net name="ADDRESS" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="SDO"/>
+<wire x1="185.42" y1="104.14" x2="149.86" y2="104.14" width="0.1524" layer="91"/>
+<label x="149.86" y="104.14" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SJ1" gate="G$1" pin="2"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="111.76" y1="71.12" x2="111.76" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="66.04" x2="111.76" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="66.04" x2="121.92" y2="66.04" width="0.1524" layer="91"/>
+<junction x="111.76" y="66.04"/>
+<label x="116.84" y="66.04" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
