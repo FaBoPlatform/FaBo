@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -33417,72 +33417,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="FaBo-LevelTranslator">
-<description>&lt;h3&gt;FaBo LevelTranslator&lt;/h3&gt;
-Level Translators&lt;br&gt;
-&lt;br&gt;</description>
-<packages>
-<package name="TI-PCA9306">
-<smd name="3" x="0.175" y="-0.395" dx="0.65" dy="0.2" layer="1" rot="R90"/>
-<smd name="6" x="0.175" y="0.395" dx="0.65" dy="0.2" layer="1" rot="R90"/>
-<smd name="7" x="-0.175" y="0.395" dx="0.65" dy="0.2" layer="1" rot="R90"/>
-<smd name="8" x="-0.525" y="0.395" dx="0.65" dy="0.2" layer="1" rot="R90"/>
-<smd name="5" x="0.525" y="0.395" dx="0.65" dy="0.2" layer="1" rot="R90"/>
-<smd name="4" x="0.525" y="-0.395" dx="0.65" dy="0.2" layer="1" rot="R90"/>
-<smd name="2" x="-0.175" y="-0.395" dx="0.65" dy="0.2" layer="1" rot="R90"/>
-<smd name="1" x="-0.525" y="-0.395" dx="0.65" dy="0.2" layer="1" rot="R90"/>
-<wire x1="-0.725" y1="0.525" x2="0.725" y2="0.525" width="0.1" layer="21"/>
-<wire x1="0.725" y1="0.525" x2="0.725" y2="-0.525" width="0.1" layer="21"/>
-<wire x1="0.725" y1="-0.525" x2="-0.725" y2="-0.525" width="0.1" layer="21"/>
-<wire x1="-0.725" y1="-0.525" x2="-0.725" y2="0.525" width="0.1" layer="21"/>
-<rectangle x1="-0.725" y1="-0.525" x2="-0.275" y2="0.07" layer="21"/>
-<text x="0" y="1.27" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
-<circle x="-1" y="-0.8" radius="0.125" width="0.25" layer="21"/>
-</package>
-</packages>
-<symbols>
-<symbol name="TI-PCA9306">
-<pin name="GND" x="15.24" y="-7.62" length="middle" rot="R180"/>
-<pin name="VREF1" x="-15.24" y="2.54" length="middle"/>
-<pin name="SCL1" x="-15.24" y="0" length="middle"/>
-<pin name="SDA1" x="-15.24" y="-2.54" length="middle"/>
-<pin name="SDA2" x="15.24" y="-2.54" length="middle" rot="R180"/>
-<pin name="SCL2" x="15.24" y="0" length="middle" rot="R180"/>
-<pin name="VREF2" x="15.24" y="2.54" length="middle" rot="R180"/>
-<pin name="EN" x="15.24" y="5.08" length="middle" rot="R180"/>
-<wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
-<text x="0" y="7.62" size="1.778" layer="94" align="bottom-center">PCA9306</text>
-<text x="-10.16" y="10.922" size="1.778" layer="95">&gt;NAME</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="TI-PCA9306" prefix="IC" uservalue="yes">
-<gates>
-<gate name="G$1" symbol="TI-PCA9306" x="0" y="0"/>
-</gates>
-<devices>
-<device name="DQE" package="TI-PCA9306">
-<connects>
-<connect gate="G$1" pin="EN" pad="8"/>
-<connect gate="G$1" pin="GND" pad="1"/>
-<connect gate="G$1" pin="SCL1" pad="3"/>
-<connect gate="G$1" pin="SCL2" pad="6"/>
-<connect gate="G$1" pin="SDA1" pad="4"/>
-<connect gate="G$1" pin="SDA2" pad="5"/>
-<connect gate="G$1" pin="VREF1" pad="2"/>
-<connect gate="G$1" pin="VREF2" pad="7"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="FaBo-Capacitor">
 <description>&lt;h3&gt;FaBo Capacitors&lt;/h3&gt;
 Capacitors&lt;br&gt;
@@ -33714,6 +33648,72 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="FaBo-LevelTranslator">
+<description>&lt;h3&gt;FaBo LevelTranslator&lt;/h3&gt;
+Level Translators&lt;br&gt;
+&lt;br&gt;</description>
+<packages>
+<package name="X2SON">
+<smd name="3" x="0.175" y="-0.395" dx="0.65" dy="0.2" layer="1" roundness="20" rot="R90"/>
+<smd name="6" x="0.175" y="0.395" dx="0.65" dy="0.2" layer="1" roundness="20" rot="R90"/>
+<smd name="7" x="-0.175" y="0.395" dx="0.65" dy="0.2" layer="1" roundness="20" rot="R90"/>
+<smd name="8" x="-0.525" y="0.395" dx="0.65" dy="0.2" layer="1" roundness="20" rot="R90"/>
+<smd name="5" x="0.525" y="0.395" dx="0.65" dy="0.2" layer="1" roundness="20" rot="R90"/>
+<smd name="4" x="0.525" y="-0.395" dx="0.65" dy="0.2" layer="1" roundness="20" rot="R90"/>
+<smd name="2" x="-0.175" y="-0.395" dx="0.65" dy="0.2" layer="1" roundness="20" rot="R90"/>
+<smd name="1" x="-0.525" y="-0.395" dx="0.65" dy="0.2" layer="1" roundness="20" rot="R90"/>
+<wire x1="-0.725" y1="0.525" x2="0.725" y2="0.525" width="0.1" layer="21"/>
+<wire x1="0.725" y1="0.525" x2="0.725" y2="-0.525" width="0.1" layer="21"/>
+<wire x1="0.725" y1="-0.525" x2="-0.725" y2="-0.525" width="0.1" layer="21"/>
+<wire x1="-0.725" y1="-0.525" x2="-0.725" y2="0.525" width="0.1" layer="21"/>
+<rectangle x1="-0.725" y1="-0.525" x2="-0.275" y2="0.07" layer="21"/>
+<text x="0" y="1.27" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+<circle x="-1.016" y="-0.7874" radius="0.1016" width="0.2286" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="PCA9306">
+<pin name="GND" x="15.24" y="-7.62" length="middle" rot="R180"/>
+<pin name="VREF1" x="-15.24" y="2.54" length="middle"/>
+<pin name="SCL1" x="-15.24" y="0" length="middle"/>
+<pin name="SDA1" x="-15.24" y="-2.54" length="middle"/>
+<pin name="SDA2" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="SCL2" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="VREF2" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="EN" x="15.24" y="5.08" length="middle" rot="R180"/>
+<wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<text x="0" y="7.62" size="1.778" layer="94" align="bottom-center">PCA9306</text>
+<text x="-10.16" y="10.922" size="1.778" layer="95">&gt;NAME</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="PCA9306" prefix="IC" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="PCA9306" x="0" y="0"/>
+</gates>
+<devices>
+<device name="DQER" package="X2SON">
+<connects>
+<connect gate="G$1" pin="EN" pad="8"/>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="SCL1" pad="3"/>
+<connect gate="G$1" pin="SCL2" pad="6"/>
+<connect gate="G$1" pin="SDA1" pad="4"/>
+<connect gate="G$1" pin="SDA2" pad="5"/>
+<connect gate="G$1" pin="VREF1" pad="2"/>
+<connect gate="G$1" pin="VREF2" pad="7"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -33742,7 +33742,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="3V2" library="FaBo-Supply" deviceset="3V3" device=""/>
 <part name="3V3" library="FaBo-Supply" deviceset="3V3" device=""/>
 <part name="3V4" library="FaBo-Supply" deviceset="3V3" device=""/>
-<part name="IC3" library="FaBo-LevelTranslator" deviceset="TI-PCA9306" device="DQE"/>
 <part name="C1" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="1uF"/>
 <part name="5V3" library="FaBo-Supply" deviceset="5V" device=""/>
 <part name="R1" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="200k"/>
@@ -33758,6 +33757,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="GND10" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="TP1" library="FaBo-Supply" deviceset="TP" device="-10"/>
 <part name="TP2" library="FaBo-Supply" deviceset="TP" device="-10"/>
+<part name="IC3" library="FaBo-LevelTranslator" deviceset="PCA9306" device="DQER"/>
 </parts>
 <sheets>
 <sheet>
@@ -33783,7 +33783,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <instance part="3V2" gate="G$1" x="160.02" y="124.46"/>
 <instance part="3V3" gate="G$1" x="170.18" y="124.46"/>
 <instance part="3V4" gate="G$1" x="180.34" y="124.46"/>
-<instance part="IC3" gate="G$1" x="50.8" y="68.58"/>
 <instance part="C1" gate="G$1" x="101.6" y="129.54" rot="R90"/>
 <instance part="5V3" gate="G$1" x="71.12" y="91.44"/>
 <instance part="R1" gate="G$1" x="71.12" y="81.28" rot="R90"/>
@@ -33799,6 +33798,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <instance part="GND10" gate="G$1" x="111.76" y="45.72"/>
 <instance part="TP1" gate="G$1" x="25.4" y="50.8"/>
 <instance part="TP2" gate="G$1" x="30.48" y="50.8"/>
+<instance part="IC3" gate="G$1" x="50.8" y="68.58"/>
 </instances>
 <busses>
 </busses>
@@ -33810,13 +33810,13 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <label x="149.86" y="99.06" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC3" gate="G$1" pin="SCL1"/>
 <wire x1="15.24" y1="68.58" x2="30.48" y2="68.58" width="0.1524" layer="91"/>
 <label x="15.24" y="68.58" size="1.778" layer="95"/>
 <pinref part="TP2" gate="G$1" pin="1"/>
 <wire x1="30.48" y1="68.58" x2="35.56" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="55.88" x2="30.48" y2="68.58" width="0.1524" layer="91"/>
 <junction x="30.48" y="68.58"/>
+<pinref part="IC3" gate="G$1" pin="SCL1"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -33826,13 +33826,13 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="149.86" y1="96.52" x2="185.42" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC3" gate="G$1" pin="SDA1"/>
 <wire x1="15.24" y1="66.04" x2="25.4" y2="66.04" width="0.1524" layer="91"/>
 <label x="15.24" y="66.04" size="1.778" layer="95"/>
 <pinref part="TP1" gate="G$1" pin="1"/>
 <wire x1="25.4" y1="66.04" x2="35.56" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="55.88" x2="25.4" y2="66.04" width="0.1524" layer="91"/>
 <junction x="25.4" y="66.04"/>
+<pinref part="IC3" gate="G$1" pin="SDA1"/>
 </segment>
 </net>
 <net name="5V" class="0">
@@ -33906,10 +33906,10 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="71.12" y1="50.8" x2="71.12" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC3" gate="G$1" pin="GND"/>
 <pinref part="GND9" gate="G$1" pin="GND"/>
 <wire x1="66.04" y1="60.96" x2="81.28" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="60.96" x2="81.28" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
@@ -33924,9 +33924,9 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <label x="40.64" y="147.32" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC3" gate="G$1" pin="SCL2"/>
 <wire x1="81.28" y1="68.58" x2="66.04" y2="68.58" width="0.1524" layer="91"/>
 <label x="76.2" y="68.58" size="1.778" layer="95"/>
+<pinref part="IC3" gate="G$1" pin="SCL2"/>
 </segment>
 </net>
 <net name="SDA_HV" class="0">
@@ -33936,9 +33936,9 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <label x="40.64" y="142.24" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC3" gate="G$1" pin="SDA2"/>
 <wire x1="81.28" y1="66.04" x2="66.04" y2="66.04" width="0.1524" layer="91"/>
 <label x="76.2" y="66.04" size="1.778" layer="95"/>
+<pinref part="IC3" gate="G$1" pin="SDA2"/>
 </segment>
 </net>
 <net name="3V3" class="0">
@@ -33976,10 +33976,10 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pinref part="3V4" gate="G$1" pin="3V3"/>
 </segment>
 <segment>
-<pinref part="IC3" gate="G$1" pin="VREF1"/>
 <pinref part="3V5" gate="G$1" pin="3V3"/>
 <wire x1="35.56" y1="71.12" x2="30.48" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="71.12" x2="30.48" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="G$1" pin="VREF1"/>
 </segment>
 <segment>
 <pinref part="3V6" gate="G$1" pin="3V3"/>
@@ -33993,13 +33993,13 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pinref part="C2" gate="G$1" pin="2"/>
 <wire x1="71.12" y1="78.74" x2="71.12" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="73.66" x2="71.12" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="IC3" gate="G$1" pin="EN"/>
 <wire x1="71.12" y1="71.12" x2="71.12" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="73.66" x2="71.12" y2="73.66" width="0.1524" layer="91"/>
 <junction x="71.12" y="73.66"/>
-<pinref part="IC3" gate="G$1" pin="VREF2"/>
 <wire x1="66.04" y1="71.12" x2="71.12" y2="71.12" width="0.1524" layer="91"/>
 <junction x="71.12" y="71.12"/>
+<pinref part="IC3" gate="G$1" pin="VREF2"/>
+<pinref part="IC3" gate="G$1" pin="EN"/>
 </segment>
 </net>
 <net name="ADDRESS" class="0">
