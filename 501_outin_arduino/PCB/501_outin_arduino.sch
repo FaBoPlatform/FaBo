@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -34828,17 +34828,17 @@ Level Translators&lt;br&gt;
 <wire x1="-0.5" y1="-0.675" x2="0.5" y2="-0.675" width="0.1" layer="21"/>
 <wire x1="-0.5" y1="-0.675" x2="-0.5" y2="0.675" width="0.1" layer="21"/>
 <wire x1="0.5" y1="-0.675" x2="0.5" y2="0.675" width="0.1" layer="21"/>
-<smd name="1" x="-0.25" y="0.525" dx="0.4" dy="0.2" layer="1"/>
-<smd name="2" x="-0.275" y="0.175" dx="0.35" dy="0.2" layer="1"/>
-<smd name="3" x="-0.275" y="-0.175" dx="0.35" dy="0.2" layer="1"/>
-<smd name="4" x="-0.275" y="-0.525" dx="0.35" dy="0.2" layer="1"/>
-<smd name="5" x="0.275" y="-0.525" dx="0.35" dy="0.2" layer="1"/>
-<smd name="6" x="0.275" y="-0.175" dx="0.35" dy="0.2" layer="1"/>
-<smd name="7" x="0.275" y="0.175" dx="0.35" dy="0.2" layer="1"/>
-<smd name="8" x="0.275" y="0.525" dx="0.35" dy="0.2" layer="1"/>
+<smd name="1" x="-0.35" y="0.525" dx="0.6" dy="0.2" layer="1" roundness="20"/>
+<smd name="2" x="-0.375" y="0.175" dx="0.55" dy="0.2" layer="1" roundness="20"/>
+<smd name="3" x="-0.375" y="-0.175" dx="0.55" dy="0.2" layer="1" roundness="20"/>
+<smd name="4" x="-0.375" y="-0.525" dx="0.55" dy="0.2" layer="1" roundness="20"/>
+<smd name="5" x="0.375" y="-0.525" dx="0.55" dy="0.2" layer="1" roundness="20"/>
+<smd name="6" x="0.375" y="-0.175" dx="0.55" dy="0.2" layer="1" roundness="20"/>
+<smd name="7" x="0.375" y="0.175" dx="0.55" dy="0.2" layer="1" roundness="20"/>
+<smd name="8" x="0.375" y="0.525" dx="0.55" dy="0.2" layer="1" roundness="20"/>
 <rectangle x1="-0.5" y1="0" x2="0" y2="0.675" layer="21"/>
 <text x="0" y="1.27" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
-<circle x="-0.7112" y="0.8636" radius="0.127" width="0.2032" layer="21"/>
+<circle x="-0.762" y="0.889" radius="0.1016" width="0.2032" layer="21"/>
 </package>
 </packages>
 <symbols>

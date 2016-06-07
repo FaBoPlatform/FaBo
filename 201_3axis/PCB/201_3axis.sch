@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.4.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -32778,6 +32778,9 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <circle x="-0.95" y="-0.4" radius="0.2" width="0.15" layer="21"/>
 <text x="0" y="2.54" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
 </package>
+<package name="TP-10">
+<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" thermals="no" cream="no"/>
+</package>
 </packages>
 <symbols>
 <symbol name="TI-LP2985">
@@ -32809,6 +32812,10 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="-1.905" y1="-2.54" x2="1.905" y2="-2.54" width="0.254" layer="94"/>
 <text x="-2.794" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="GND" x="0" y="0" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="TP">
+<pin name="1" x="0" y="5.08" visible="off" length="middle" rot="R270"/>
+<circle x="0" y="0" radius="1.27" width="0" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -32875,6 +32882,21 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </gates>
 <devices>
 <device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TP" prefix="TP" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="TP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-10" package="TP-10">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -33734,6 +33756,8 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="R2" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="10k"/>
 <part name="3V6" library="FaBo-Supply" deviceset="3V3" device=""/>
 <part name="GND10" library="FaBo-Supply" deviceset="GND" device=""/>
+<part name="TP1" library="FaBo-Supply" deviceset="TP" device="-10"/>
+<part name="TP2" library="FaBo-Supply" deviceset="TP" device="-10"/>
 </parts>
 <sheets>
 <sheet>
@@ -33773,6 +33797,8 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <instance part="R2" gate="G$1" x="111.76" y="55.88" rot="R90"/>
 <instance part="3V6" gate="G$1" x="111.76" y="91.44"/>
 <instance part="GND10" gate="G$1" x="111.76" y="45.72"/>
+<instance part="TP1" gate="G$1" x="25.4" y="50.8"/>
+<instance part="TP2" gate="G$1" x="30.48" y="50.8"/>
 </instances>
 <busses>
 </busses>
@@ -33785,8 +33811,12 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </segment>
 <segment>
 <pinref part="IC3" gate="G$1" pin="SCL1"/>
-<wire x1="25.4" y1="68.58" x2="35.56" y2="68.58" width="0.1524" layer="91"/>
-<label x="25.4" y="68.58" size="1.778" layer="95"/>
+<wire x1="15.24" y1="68.58" x2="30.48" y2="68.58" width="0.1524" layer="91"/>
+<label x="15.24" y="68.58" size="1.778" layer="95"/>
+<pinref part="TP2" gate="G$1" pin="1"/>
+<wire x1="30.48" y1="68.58" x2="35.56" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="55.88" x2="30.48" y2="68.58" width="0.1524" layer="91"/>
+<junction x="30.48" y="68.58"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -33797,8 +33827,12 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </segment>
 <segment>
 <pinref part="IC3" gate="G$1" pin="SDA1"/>
+<wire x1="15.24" y1="66.04" x2="25.4" y2="66.04" width="0.1524" layer="91"/>
+<label x="15.24" y="66.04" size="1.778" layer="95"/>
+<pinref part="TP1" gate="G$1" pin="1"/>
 <wire x1="25.4" y1="66.04" x2="35.56" y2="66.04" width="0.1524" layer="91"/>
-<label x="25.4" y="66.04" size="1.778" layer="95"/>
+<wire x1="25.4" y1="55.88" x2="25.4" y2="66.04" width="0.1524" layer="91"/>
+<junction x="25.4" y="66.04"/>
 </segment>
 </net>
 <net name="5V" class="0">
