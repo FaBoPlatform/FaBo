@@ -3067,16 +3067,16 @@ design rules under a new name.</description>
 <contactref element="C2" pad="1"/>
 <contactref element="R2" pad="1"/>
 <polygon width="0.2032" layer="16" spacing="0.1524">
-<vertex x="-0.635" y="-0.635"/>
-<vertex x="28.575" y="-0.635"/>
-<vertex x="28.575" y="40.005"/>
-<vertex x="-0.635" y="40.005"/>
+<vertex x="0" y="0"/>
+<vertex x="27.94" y="0"/>
+<vertex x="27.94" y="39.37"/>
+<vertex x="0" y="39.37"/>
 </polygon>
 <polygon width="0.2032" layer="1" spacing="0.1524">
-<vertex x="-0.635" y="-0.635"/>
-<vertex x="28.575" y="-0.635"/>
-<vertex x="28.575" y="40.005"/>
-<vertex x="-0.635" y="40.005"/>
+<vertex x="0" y="0"/>
+<vertex x="27.94" y="0"/>
+<vertex x="27.94" y="39.37"/>
+<vertex x="0" y="39.37"/>
 </polygon>
 <contactref element="IC3" pad="1"/>
 <via x="13.97" y="20.955" extent="1-16" drill="0.3048"/>
