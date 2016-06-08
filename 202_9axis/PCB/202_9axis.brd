@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.4.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -15,13 +15,13 @@
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
@@ -145,6 +145,7 @@
 <text x="5.08" y="10.795" size="1.016" layer="21" font="vector" ratio="12" rot="R90">Rev.1.0.3</text>
 <text x="25.4" y="14.605" size="0.8128" layer="21" font="vector" ratio="12" rot="R270" align="bottom-center">MADE IN JAPAN</text>
 <text x="13.97" y="33.655" size="2.54" layer="21" font="vector" ratio="12" align="bottom-center">#202</text>
+<text x="18.415" y="25.4" size="0.8128" layer="22" font="vector" ratio="12" rot="MR270" align="bottom-center">ADDRESS</text>
 </plain>
 <libraries>
 <library name="FaBo-Template">
@@ -4256,37 +4257,35 @@ design rules under a new name.</description>
 <element name="U$3" library="FaBo-etc" package="LOGO_FABO_MS" value="" x="25.4" y="14.605" rot="R90"/>
 <element name="U$2" library="FaBo-etc" package="LOGO_OSHW_T_MS_BOTTOM" value="" x="13.97" y="3.81"/>
 <element name="R1" library="FaBo-Resistors" package="0603" value="200k" x="13.97" y="14.605" smashed="yes">
-<attribute name="NAME" x="13.97" y="13.97" size="0.8128" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center"/>
+<attribute name="NAME" x="13.97" y="13.843" size="0.8128" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" x="13.97" y="14.605" size="0.8128" layer="27" font="vector" ratio="12" align="center"/>
 </element>
-<element name="TP1" library="FaBo-Supply" package="TP-10" value="" x="12.065" y="30.48" rot="MR0"/>
-<element name="TP2" library="FaBo-Supply" package="TP-10" value="" x="14.732" y="30.48" rot="MR0"/>
+<element name="TP1" library="FaBo-Supply" package="TP-10" value="" x="10.922" y="30.099" rot="MR0"/>
+<element name="TP2" library="FaBo-Supply" package="TP-10" value="" x="12.827" y="30.099" rot="MR0"/>
 <element name="IC3" library="FaBo-LevelTranslator" package="X2SON" value="" x="9.398" y="17.526" smashed="yes" rot="R180"/>
-<element name="SJ1" library="FaBo-Supply" package="SMD-JUMPER-2-OPEN" value="" x="19.558" y="25.4" smashed="yes" rot="MR270">
-<attribute name="NAME" x="18.288" y="25.4" size="0.8128" layer="26" font="vector" ratio="12" rot="MR270" align="bottom-center"/>
-</element>
+<element name="SJ1" library="FaBo-Supply" package="SMD-JUMPER-2-OPEN" value="OPEN" x="19.558" y="25.4" smashed="yes" rot="MR270"/>
 <element name="R2" library="FaBo-Resistors" package="0603" value="10k" x="17.78" y="18.415" smashed="yes">
-<attribute name="NAME" x="17.78" y="17.78" size="0.8128" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center"/>
+<attribute name="NAME" x="17.78" y="17.653" size="0.8128" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" x="17.78" y="18.415" size="0.8128" layer="27" font="vector" ratio="12" align="center"/>
 </element>
 <element name="C1" library="FaBo-Capacitor" package="0603" value="1uF" x="13.97" y="18.415" smashed="yes" rot="R180">
-<attribute name="NAME" x="13.97" y="17.78" size="0.8128" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center"/>
+<attribute name="NAME" x="13.97" y="17.653" size="0.8128" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" x="13.97" y="18.415" size="0.8128" layer="27" font="vector" ratio="12" rot="R180" align="center"/>
 </element>
 <element name="C2" library="FaBo-Capacitor" package="0603" value="0.1uF" x="10.16" y="14.605" smashed="yes">
-<attribute name="NAME" x="10.16" y="13.97" size="0.8128" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center"/>
+<attribute name="NAME" x="10.16" y="13.843" size="0.8128" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" x="10.16" y="14.605" size="0.8128" layer="27" font="vector" ratio="12" align="center"/>
 </element>
 <element name="C3" library="FaBo-Capacitor" package="0603" value="0.1uF" x="10.16" y="20.955" smashed="yes">
-<attribute name="NAME" x="10.16" y="20.32" size="0.8128" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center"/>
+<attribute name="NAME" x="10.16" y="20.193" size="0.8128" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" x="10.16" y="20.955" size="0.8128" layer="27" font="vector" ratio="12" align="center"/>
 </element>
 <element name="C4" library="FaBo-Capacitor" package="0603" value="0.1uF" x="17.78" y="20.955" smashed="yes" rot="R180">
-<attribute name="NAME" x="17.78" y="20.32" size="0.8128" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center"/>
+<attribute name="NAME" x="17.78" y="20.193" size="0.8128" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" x="17.78" y="20.955" size="0.8128" layer="27" font="vector" ratio="12" rot="R180" align="center"/>
 </element>
 <element name="C5" library="FaBo-Capacitor" package="0603" value="0.1uF" x="13.97" y="20.955" smashed="yes">
-<attribute name="NAME" x="13.97" y="20.32" size="0.8128" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center"/>
+<attribute name="NAME" x="13.97" y="20.193" size="0.8128" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" x="13.97" y="20.955" size="0.8128" layer="27" font="vector" ratio="12" align="center"/>
 </element>
 </elements>
@@ -4323,7 +4322,14 @@ design rules under a new name.</description>
 <via x="17.78" y="26.924" extent="1-16" drill="0.3048"/>
 <via x="15.367" y="29.21" extent="1-16" drill="0.3048"/>
 <via x="11.303" y="23.749" extent="1-16" drill="0.3048"/>
-<via x="11.43" y="27.051" extent="1-16" drill="0.3048"/>
+<via x="11.303" y="26.924" extent="1-16" drill="0.3048"/>
+<via x="8.763" y="24.257" extent="1-16" drill="0.3048"/>
+<via x="9.652" y="28.829" extent="1-16" drill="0.3048"/>
+<via x="7.366" y="26.416" extent="1-16" drill="0.3048"/>
+<via x="8.509" y="10.668" extent="1-16" drill="0.3048"/>
+<via x="13.97" y="10.922" extent="1-16" drill="0.3048"/>
+<via x="20.828" y="22.987" extent="1-16" drill="0.3048"/>
+<via x="18.415" y="22.479" extent="1-16" drill="0.3048"/>
 </signal>
 <signal name="5V">
 <contactref element="R1" pad="2"/>
@@ -4345,17 +4351,18 @@ design rules under a new name.</description>
 <contactref element="IC1" pad="24"/>
 <contactref element="TP1" pad="1"/>
 <contactref element="IC3" pad="4"/>
-<wire x1="12.065" y1="27.94" x2="12.065" y2="30.48" width="0.1524" layer="16"/>
 <wire x1="12.97" y1="27" x2="12.97" y2="27.543" width="0.1524" layer="1"/>
 <wire x1="12.97" y1="27.543" x2="12.573" y2="27.94" width="0.1524" layer="1"/>
-<wire x1="12.573" y1="27.94" x2="12.065" y2="27.94" width="0.1524" layer="1"/>
-<via x="12.065" y="27.94" extent="1-16" drill="0.3048"/>
-<wire x1="12.065" y1="27.94" x2="11.176" y2="27.94" width="0.1524" layer="16"/>
+<wire x1="12.573" y1="27.94" x2="11.938" y2="27.94" width="0.1524" layer="1"/>
+<via x="11.938" y="27.94" extent="1-16" drill="0.3048"/>
+<wire x1="11.938" y1="27.94" x2="11.176" y2="27.94" width="0.1524" layer="16"/>
 <wire x1="11.176" y1="27.94" x2="7.239" y2="24.003" width="0.1524" layer="16"/>
 <wire x1="7.239" y1="24.003" x2="7.239" y2="20.193" width="0.1524" layer="16"/>
 <wire x1="8.873" y1="17.921" x2="8.873" y2="18.559" width="0.1524" layer="1"/>
 <wire x1="8.873" y1="18.559" x2="7.239" y2="20.193" width="0.1524" layer="1"/>
 <via x="7.239" y="20.193" extent="1-16" drill="0.3048"/>
+<wire x1="10.922" y1="30.099" x2="10.922" y2="28.194" width="0.1524" layer="16"/>
+<wire x1="10.922" y1="28.194" x2="11.176" y2="27.94" width="0.1524" layer="16"/>
 </signal>
 <signal name="SCL">
 <contactref element="IC1" pad="23"/>
@@ -4369,7 +4376,7 @@ design rules under a new name.</description>
 <wire x1="13.37" y1="27" x2="13.37" y2="28.032" width="0.1524" layer="1"/>
 <wire x1="13.37" y1="28.032" x2="12.827" y2="28.575" width="0.1524" layer="1"/>
 <via x="12.827" y="28.575" extent="1-16" drill="0.3048"/>
-<wire x1="12.827" y1="28.575" x2="14.732" y2="30.48" width="0.1524" layer="16"/>
+<wire x1="12.827" y1="28.575" x2="12.827" y2="30.099" width="0.1524" layer="16"/>
 </signal>
 <signal name="3V3">
 <contactref element="IC3" pad="2"/>
