@@ -33751,7 +33751,7 @@ Level Translators&lt;br&gt;
 <part name="C3" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="0.1uF"/>
 <part name="C4" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="0.1uF"/>
 <part name="GND9" library="FaBo-Supply" deviceset="GND" device=""/>
-<part name="SJ1" library="FaBo-etc" deviceset="SMD-JUMPER-2" device=""/>
+<part name="SJ1" library="FaBo-etc" deviceset="SMD-JUMPER-2" device="" value="OPEN"/>
 <part name="R2" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="10k"/>
 <part name="3V6" library="FaBo-Supply" deviceset="3V3" device=""/>
 <part name="GND10" library="FaBo-Supply" deviceset="GND" device=""/>
