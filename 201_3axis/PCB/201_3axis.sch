@@ -32913,10 +32913,6 @@ Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;br&gt;
 https://creativecommons.org/licenses/by-sa/4.0/</description>
 <packages>
 <package name="FABO_BRICK_I2C">
-<pad name="GND" x="3.81" y="-12.065" drill="1" shape="long" rot="R90"/>
-<pad name="VCC" x="1.27" y="-12.065" drill="1" shape="long" rot="R90"/>
-<pad name="SDA" x="-1.27" y="-12.065" drill="1" shape="long" rot="R90"/>
-<pad name="SCL" x="-3.81" y="-12.065" drill="1" shape="long" rot="R90"/>
 <wire x1="-10.16" y1="-19.05" x2="10.16" y2="-19.05" width="0" layer="20"/>
 <wire x1="10.16" y1="-19.05" x2="13.97" y2="-15.24" width="0" layer="20" curve="90"/>
 <wire x1="13.97" y1="-15.24" x2="13.97" y2="6.35" width="0" layer="20"/>
@@ -32927,28 +32923,33 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pad name="P$3" x="-10.16" y="-15.24" drill="3" diameter="3.81"/>
 <pad name="P$4" x="10.16" y="-15.24" drill="3" diameter="3.81"/>
 <wire x1="-13.97" y1="6.35" x2="13.97" y2="6.35" width="0" layer="20" curve="-180"/>
-<text x="-3.81" y="-10.16" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">SCL</text>
-<text x="-1.27" y="-10.16" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">SDA</text>
-<text x="1.27" y="-10.16" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
-<text x="3.81" y="-10.16" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
+<text x="-3" y="-8.845" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">SCL</text>
+<text x="-1" y="-8.845" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">SDA</text>
+<text x="1" y="-8.845" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
+<text x="3" y="-8.845" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
 <circle x="-10.16" y="6.35" radius="2.55" width="0.127" layer="51"/>
 <circle x="-10.16" y="-15.24" radius="2.55" width="0.127" layer="51"/>
 <circle x="10.16" y="6.35" radius="2.55" width="0.127" layer="51"/>
 <circle x="10.16" y="-15.24" radius="2.55" width="0.127" layer="51"/>
-<wire x1="-6.35" y1="-12.065" x2="-6.35" y2="-25.465" width="0.127" layer="51"/>
-<wire x1="6.35" y1="-12.065" x2="6.35" y2="-25.465" width="0.127" layer="51"/>
-<wire x1="-6.35" y1="-25.465" x2="-3.8" y2="-25.465" width="0.127" layer="51"/>
-<wire x1="-3.8" y1="-25.465" x2="-2.8" y2="-25.465" width="0.127" layer="51"/>
-<wire x1="-2.8" y1="-25.465" x2="2.8" y2="-25.465" width="0.127" layer="51"/>
-<wire x1="2.8" y1="-25.465" x2="3.8" y2="-25.465" width="0.127" layer="51"/>
-<wire x1="3.8" y1="-25.465" x2="6.35" y2="-25.465" width="0.127" layer="51"/>
-<wire x1="-3.8" y1="-21.665" x2="-3.8" y2="-25.465" width="0.127" layer="51"/>
-<wire x1="-3.8" y1="-21.665" x2="3.8" y2="-21.665" width="0.127" layer="51"/>
-<wire x1="3.8" y1="-21.665" x2="3.8" y2="-25.465" width="0.127" layer="51"/>
-<wire x1="-2.8" y1="-25.465" x2="-2.8" y2="-23.065" width="0.127" layer="51"/>
-<wire x1="2.8" y1="-25.465" x2="2.8" y2="-23.065" width="0.127" layer="51"/>
-<wire x1="-2.8" y1="-23.065" x2="2.8" y2="-23.065" width="0.127" layer="51"/>
-<wire x1="-6.35" y1="-12.065" x2="6.35" y2="-12.065" width="0.127" layer="51"/>
+<pad name="GND" x="3" y="-10.795" drill="0.8" diameter="1.4224" shape="long" rot="R90"/>
+<pad name="VCC" x="1" y="-10.795" drill="0.8" diameter="1.4224" shape="long" rot="R90"/>
+<pad name="SDA" x="-1" y="-10.795" drill="0.8" diameter="1.4224" shape="long" rot="R90"/>
+<hole x="-4.5" y="-12.895" drill="1.1"/>
+<wire x1="-5" y1="-7.295" x2="-5" y2="-18.995" width="0.127" layer="51"/>
+<wire x1="5" y1="-7.295" x2="5" y2="-18.995" width="0.127" layer="51"/>
+<wire x1="-5" y1="-18.995" x2="-2" y2="-18.995" width="0.127" layer="51"/>
+<wire x1="-2" y1="-18.995" x2="2" y2="-18.995" width="0.127" layer="51"/>
+<wire x1="2" y1="-18.995" x2="5" y2="-18.995" width="0.127" layer="51"/>
+<hole x="4.5" y="-12.895" drill="1.1"/>
+<wire x1="-2" y1="-17.495" x2="2" y2="-17.495" width="0.127" layer="51"/>
+<wire x1="2" y1="-18.995" x2="2" y2="-17.495" width="0.127" layer="51"/>
+<wire x1="-2" y1="-18.995" x2="-2" y2="-17.495" width="0.127" layer="51"/>
+<pad name="SCL" x="-3" y="-10.795" drill="0.8" diameter="1.4224" shape="long" rot="R90"/>
+<wire x1="4.3" y1="-7.295" x2="4.3" y2="-11.295" width="0.127" layer="51"/>
+<wire x1="-4.3" y1="-7.295" x2="-4.3" y2="-11.295" width="0.127" layer="51"/>
+<wire x1="4.3" y1="-11.295" x2="-4.3" y2="-11.295" width="0.127" layer="51"/>
+<wire x1="5" y1="-7.295" x2="4.3" y2="-7.295" width="0.127" layer="51"/>
+<wire x1="-4.3" y1="-7.295" x2="-5" y2="-7.295" width="0.127" layer="51"/>
 </package>
 <package name="FABO_BRICK_I2C_BREAKOUT">
 <pad name="SCL" x="3.81" y="-10.16" drill="1" shape="long" rot="R90"/>
@@ -33583,6 +33584,16 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <text x="-2.25" y="0" size="0.8128" layer="25" font="vector" ratio="12" align="center-left">&gt;NAME</text>
 <text x="-2.25" y="-1" size="0.8128" layer="27" font="vector" ratio="12" align="top-left">&gt;VALUE</text>
 </package>
+<package name="0603-NARROW">
+<smd name="1" x="-0.85" y="0" dx="0.75" dy="1" layer="1"/>
+<smd name="2" x="0.85" y="0" dx="0.75" dy="1" layer="1"/>
+<text x="0" y="1.27" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.905" size="0.8128" layer="27" font="vector" ratio="12" align="center">&gt;VALUE</text>
+<wire x1="-1.27" y1="0.55" x2="1.27" y2="0.55" width="0.0508" layer="39"/>
+<wire x1="1.27" y1="0.55" x2="1.27" y2="-0.55" width="0.0508" layer="39"/>
+<wire x1="1.27" y1="-0.55" x2="-1.27" y2="-0.55" width="0.0508" layer="39"/>
+<wire x1="-1.27" y1="-0.55" x2="-1.27" y2="0.55" width="0.0508" layer="39"/>
+</package>
 </packages>
 <symbols>
 <symbol name="RESISTOR">
@@ -33636,6 +33647,15 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </technologies>
 </device>
 <device name="-AXL-REGULAR" package="AXL-REGULAR">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-0603-NARROW" package="0603-NARROW">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
