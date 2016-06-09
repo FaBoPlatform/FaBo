@@ -2944,11 +2944,11 @@ design rules under a new name.</description>
 <element name="J1" library="FaBo-Template" package="FABO_BRICK_I2C" value="" x="13.97" y="19.05"/>
 <element name="IC1" library="FaBo-Mems" package="FREESCALE-MPL115A2" value="" x="13.97" y="25.4" smashed="yes"/>
 <element name="C1" library="FaBo-Capacitor" package="0603" value="1uF" x="10.16" y="26.67" smashed="yes" rot="R90">
-<attribute name="NAME" x="8.89" y="26.67" size="0.8128" layer="25" font="vector" ratio="12" rot="R90" align="bottom-center"/>
+<attribute name="NAME" x="9.271" y="26.67" size="0.8128" layer="25" font="vector" ratio="12" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="10.16" y="26.67" size="0.8128" layer="27" font="vector" ratio="12" rot="R90" align="center"/>
 </element>
 <element name="C2" library="FaBo-Capacitor" package="0603" value="1uF" x="10.16" y="22.86" smashed="yes" rot="R90">
-<attribute name="NAME" x="8.89" y="22.86" size="0.8128" layer="25" font="vector" ratio="12" rot="R90" align="bottom-center"/>
+<attribute name="NAME" x="9.271" y="22.86" size="0.8128" layer="25" font="vector" ratio="12" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="10.16" y="22.86" size="0.8128" layer="27" font="vector" ratio="12" rot="R90" align="center"/>
 </element>
 <element name="U$2" library="FaBo-etc" package="LOGO_OSHW_M_BOTTOM" value="" x="13.97" y="3.175"/>
@@ -2973,25 +2973,25 @@ design rules under a new name.</description>
 </polygon>
 <via x="14.986" y="20.828" extent="1-16" drill="0.3048"/>
 <via x="11.684" y="22.733" extent="1-16" drill="0.3048"/>
-<via x="11.43" y="28.956" extent="1-16" drill="0.3048"/>
-<via x="7.239" y="27.051" extent="1-16" drill="0.3048"/>
-<via x="7.239" y="21.082" extent="1-16" drill="0.3048"/>
+<via x="11.557" y="28.829" extent="1-16" drill="0.3048"/>
+<via x="7.366" y="27.051" extent="1-16" drill="0.3048"/>
+<via x="7.366" y="21.082" extent="1-16" drill="0.3048"/>
 <via x="10.033" y="19.177" extent="1-16" drill="0.3048"/>
 <via x="13.716" y="19.05" extent="1-16" drill="0.3048"/>
-<via x="16.129" y="19.05" extent="1-16" drill="0.3048"/>
+<via x="15.875" y="18.923" extent="1-16" drill="0.3048"/>
 <via x="18.161" y="22.225" extent="1-16" drill="0.3048"/>
 <via x="17.907" y="27.432" extent="1-16" drill="0.3048"/>
 <via x="18.161" y="18.034" extent="1-16" drill="0.3048"/>
-<via x="16.256" y="15.367" extent="1-16" drill="0.3048"/>
-<via x="14.224" y="13.843" extent="1-16" drill="0.3048"/>
-<via x="12.954" y="15.748" extent="1-16" drill="0.3048"/>
+<via x="16.002" y="15.494" extent="1-16" drill="0.3048"/>
+<via x="14.097" y="13.843" extent="1-16" drill="0.3048"/>
+<via x="12.827" y="15.875" extent="1-16" drill="0.3048"/>
 <via x="11.938" y="12.065" extent="1-16" drill="0.3048"/>
 <via x="9.906" y="12.065" extent="1-16" drill="0.3048"/>
 <via x="13.97" y="11.811" extent="1-16" drill="0.3048"/>
 <via x="16.002" y="11.684" extent="1-16" drill="0.3048"/>
 <via x="12.065" y="21.082" extent="1-16" drill="0.3048"/>
 <via x="15.367" y="22.225" extent="1-16" drill="0.3048"/>
-<via x="7.239" y="24.13" extent="1-16" drill="0.3048"/>
+<via x="7.366" y="24.13" extent="1-16" drill="0.3048"/>
 </signal>
 <signal name="SCL">
 <contactref element="J1" pad="SCL"/>
