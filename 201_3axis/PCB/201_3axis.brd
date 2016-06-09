@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2736,10 +2736,10 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pad name="P$3" x="-10.16" y="-15.24" drill="3" diameter="3.81"/>
 <pad name="P$4" x="10.16" y="-15.24" drill="3" diameter="3.81"/>
 <wire x1="-13.97" y1="6.35" x2="13.97" y2="6.35" width="0" layer="20" curve="-180"/>
-<text x="-3" y="-8.845" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">SCL</text>
-<text x="-1" y="-8.845" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">SDA</text>
-<text x="1" y="-8.845" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
-<text x="3" y="-8.845" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
+<text x="-3" y="-9" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">SCL</text>
+<text x="-1" y="-9" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">SDA</text>
+<text x="1" y="-9" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
+<text x="3" y="-9" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
 <circle x="-10.16" y="6.35" radius="2.55" width="0.127" layer="51"/>
 <circle x="-10.16" y="-15.24" radius="2.55" width="0.127" layer="51"/>
 <circle x="10.16" y="6.35" radius="2.55" width="0.127" layer="51"/>
@@ -3281,11 +3281,11 @@ design rules under a new name.</description>
 <approved hash="5,1,aeab0cd61aae4300"/>
 <approved hash="5,1,64526c97b6a4db1c"/>
 <approved hash="5,1,797e4c19f7a4e7b0"/>
-<approved hash="5,1,ba24213e1cb67a9e"/>
 <approved hash="5,1,39cfaef6137276ba"/>
+<approved hash="5,1,ba24213e1cb67a9e"/>
 <approved hash="5,1,b3f18197caa4e7bf"/>
-<approved hash="5,1,644df376167273b8"/>
 <approved hash="5,1,e7a67cbe19b67f9c"/>
+<approved hash="5,1,644df376167273b8"/>
 <approved hash="5,1,ee733717dda4e7bd"/>
 <approved hash="5,1,92cc05f6137276b9"/>
 <approved hash="5,1,58f56c97b6a4e7bb"/>
