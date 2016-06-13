@@ -10242,25 +10242,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pad name="1" x="0" y="0" drill="2.8" diameter="3.1"/>
 <circle x="0" y="0" radius="2.1" width="0.1" layer="51"/>
 </package>
-<package name="TO-92">
-<wire x1="-2" y1="-1.59" x2="2" y2="-1.59" width="0.1" layer="21"/>
-<pad name="C" x="0" y="0" drill="1" diameter="1.9304" shape="octagon"/>
-<wire x1="-2" y1="-1.59" x2="2" y2="-1.59" width="0.1" layer="21" curve="-259.045263"/>
-<pad name="E" x="-2.54" y="0" drill="1" diameter="1.9304" shape="octagon"/>
-<pad name="B" x="2.54" y="0" drill="1" diameter="1.9304" shape="octagon"/>
-<text x="-2.54" y="3.175" size="0.8128" layer="25" font="vector" ratio="12">&gt;NAME</text>
-</package>
-<package name="SOT23-3">
-<wire x1="-0.8" y1="0.7" x2="-1.4" y2="0.7" width="0.127" layer="21"/>
-<wire x1="-1.4" y1="0.7" x2="-1.4" y2="-0.1" width="0.127" layer="21"/>
-<wire x1="0.8" y1="0.7" x2="1.4" y2="0.7" width="0.127" layer="21"/>
-<wire x1="1.4" y1="0.7" x2="1.4" y2="-0.1" width="0.127" layer="21"/>
-<smd name="1" x="-0.95" y="-1" dx="0.85" dy="0.9" layer="1"/>
-<smd name="2" x="0.95" y="-1" dx="0.85" dy="0.9" layer="1"/>
-<smd name="3" x="0" y="1.1" dx="0.85" dy="0.9" layer="1"/>
-<text x="0" y="1.905" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.905" size="0.8128" layer="27" font="vector" ratio="12" align="top-center">&gt;VALUE</text>
-</package>
 <package name="LOGO_OSHW_L">
 <rectangle x1="-2.339340625" y1="-3.05561875" x2="-2.278384375" y2="-3.04038125" layer="21"/>
 <rectangle x1="2.263140625" y1="-3.05561875" x2="2.308859375" y2="-3.04038125" layer="21"/>
@@ -24234,24 +24215,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <symbol name="SCREW-PAD">
 <circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
 </symbol>
-<symbol name="NPN">
-<wire x1="2.54" y1="2.54" x2="0.508" y2="1.524" width="0.1524" layer="94"/>
-<wire x1="1.778" y1="-1.524" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="1.27" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="-2.54" x2="1.778" y2="-1.524" width="0.1524" layer="94"/>
-<wire x1="1.54" y1="-2.04" x2="0.308" y2="-1.424" width="0.1524" layer="94"/>
-<wire x1="1.524" y1="-2.413" x2="2.286" y2="-2.413" width="0.254" layer="94"/>
-<wire x1="2.286" y1="-2.413" x2="1.778" y2="-1.778" width="0.254" layer="94"/>
-<wire x1="1.778" y1="-1.778" x2="1.524" y2="-2.286" width="0.254" layer="94"/>
-<wire x1="1.524" y1="-2.286" x2="1.905" y2="-2.286" width="0.254" layer="94"/>
-<wire x1="1.905" y1="-2.286" x2="1.778" y2="-2.032" width="0.254" layer="94"/>
-<text x="5.08" y="0" size="1.778" layer="95">&gt;NAME</text>
-<text x="5.08" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
-<rectangle x1="-0.254" y1="-2.54" x2="0.508" y2="2.54" layer="94"/>
-<pin name="B" x="-2.54" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
-<pin name="E" x="2.54" y="-5.08" visible="off" length="short" direction="pas" swaplevel="3" rot="R90"/>
-<pin name="C" x="2.54" y="5.08" visible="off" length="short" direction="pas" swaplevel="2" rot="R270"/>
-</symbol>
 <symbol name="LOGO_OSHW_T">
 <rectangle x1="-2.55778125" y1="-6.479540625" x2="-2.4511" y2="-6.474459375" layer="94"/>
 <rectangle x1="-0.840740625" y1="-6.479540625" x2="-0.754384375" y2="-6.474459375" layer="94"/>
@@ -32732,33 +32695,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="NPN" prefix="Q" uservalue="yes">
-<gates>
-<gate name="G$1" symbol="NPN" x="0" y="0"/>
-</gates>
-<devices>
-<device name="-2SC1815" package="TO-92">
-<connects>
-<connect gate="G$1" pin="B" pad="B"/>
-<connect gate="G$1" pin="C" pad="C"/>
-<connect gate="G$1" pin="E" pad="E"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-SMD" package="SOT23-3">
-<connects>
-<connect gate="G$1" pin="B" pad="1"/>
-<connect gate="G$1" pin="C" pad="3"/>
-<connect gate="G$1" pin="E" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="LOGO_OSHW" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="LOGO_OSHW_T" x="0" y="0"/>
@@ -33965,6 +33901,84 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="FaBo-Parts">
+<description>&lt;h3&gt;FaBo Parts&lt;/h3&gt;
+Parts&lt;br&gt;
+&lt;br&gt;
+Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;br&gt;
+https://creativecommons.org/licenses/by-sa/4.0/</description>
+<packages>
+<package name="TO-92">
+<wire x1="-2" y1="-1.59" x2="2" y2="-1.59" width="0.1" layer="51"/>
+<pad name="2" x="0" y="0" drill="1" diameter="1.9304" shape="octagon"/>
+<wire x1="-2" y1="-1.59" x2="2" y2="-1.59" width="0.1" layer="51" curve="-259.045263"/>
+<pad name="1" x="-2.54" y="0" drill="1" diameter="1.9304" shape="octagon"/>
+<pad name="3" x="2.54" y="0" drill="1" diameter="1.9304" shape="octagon"/>
+<text x="0" y="3.175" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+</package>
+<package name="SOT23">
+<smd name="3" x="0.03" y="1.1" dx="0.8" dy="0.9" layer="1"/>
+<smd name="1" x="-0.97" y="-1.1" dx="0.8" dy="0.9" layer="1"/>
+<smd name="2" x="0.97" y="-1.1" dx="0.8" dy="0.9" layer="1"/>
+<wire x1="-1.45" y1="-0.65" x2="1.45" y2="-0.65" width="0.127" layer="21"/>
+<wire x1="1.45" y1="-0.65" x2="1.45" y2="0.65" width="0.127" layer="21"/>
+<wire x1="1.45" y1="0.65" x2="-1.45" y2="0.65" width="0.127" layer="21"/>
+<wire x1="-1.45" y1="0.65" x2="-1.45" y2="-0.65" width="0.127" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="NPN">
+<wire x1="2.54" y1="2.54" x2="0.508" y2="1.524" width="0.1524" layer="94"/>
+<wire x1="1.778" y1="-1.524" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="1.27" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.778" y2="-1.524" width="0.1524" layer="94"/>
+<wire x1="1.54" y1="-2.04" x2="0.308" y2="-1.424" width="0.1524" layer="94"/>
+<wire x1="1.524" y1="-2.413" x2="2.286" y2="-2.413" width="0.254" layer="94"/>
+<wire x1="2.286" y1="-2.413" x2="1.778" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="1.778" y1="-1.778" x2="1.524" y2="-2.286" width="0.254" layer="94"/>
+<wire x1="1.524" y1="-2.286" x2="1.905" y2="-2.286" width="0.254" layer="94"/>
+<wire x1="1.905" y1="-2.286" x2="1.778" y2="-2.032" width="0.254" layer="94"/>
+<text x="5.08" y="0" size="1.778" layer="95">&gt;NAME</text>
+<text x="5.08" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="-2.54" x2="0.508" y2="2.54" layer="94"/>
+<pin name="B" x="-2.54" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="E" x="2.54" y="-5.08" visible="off" length="short" direction="pas" swaplevel="3" rot="R90"/>
+<pin name="C" x="2.54" y="5.08" visible="off" length="short" direction="pas" swaplevel="2" rot="R270"/>
+<text x="-1.27" y="-0.508" size="0.8128" layer="97" align="top-center">B</text>
+<text x="3.048" y="3.81" size="0.8128" layer="97" align="center-left">C</text>
+<text x="3.048" y="-3.81" size="0.8128" layer="97" align="center-left">E</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="NPN" prefix="Q" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="NPN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-2SC1815" package="TO-92">
+<connects>
+<connect gate="G$1" pin="B" pad="3"/>
+<connect gate="G$1" pin="C" pad="2"/>
+<connect gate="G$1" pin="E" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-SMD" package="SOT23">
+<connects>
+<connect gate="G$1" pin="B" pad="1"/>
+<connect gate="G$1" pin="C" pad="3"/>
+<connect gate="G$1" pin="E" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -33991,7 +34005,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="R4" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="10k"/>
 <part name="R5" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="10k"/>
 <part name="R6" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="10k"/>
-<part name="Q1" library="FaBo-etc" deviceset="NPN" device="-SMD"/>
 <part name="C1" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="0.1uF"/>
 <part name="5V1" library="FaBo-Supply" deviceset="5V" device=""/>
 <part name="5V2" library="FaBo-Supply" deviceset="5V" device=""/>
@@ -34011,6 +34024,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="GND8" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="GND9" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="U$2" library="FaBo-etc" deviceset="LOGO_OSHW" device="-M_BOTTOM"/>
+<part name="Q1" library="FaBo-Parts" deviceset="NPN" device="-SMD"/>
 </parts>
 <sheets>
 <sheet>
@@ -34034,7 +34048,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <instance part="R4" gate="G$1" x="182.88" y="127" rot="R90"/>
 <instance part="R5" gate="G$1" x="205.74" y="127" rot="R90"/>
 <instance part="R6" gate="G$1" x="228.6" y="127" rot="R90"/>
-<instance part="Q1" gate="G$1" x="134.62" y="142.24"/>
 <instance part="C1" gate="G$1" x="99.06" y="53.34" rot="R90"/>
 <instance part="5V1" gate="G$1" x="38.1" y="160.02"/>
 <instance part="5V2" gate="G$1" x="78.74" y="160.02"/>
@@ -34054,6 +34067,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <instance part="GND8" gate="G$1" x="99.06" y="45.72"/>
 <instance part="GND9" gate="G$1" x="134.62" y="45.72"/>
 <instance part="U$2" gate="G$1" x="248.92" y="12.7"/>
+<instance part="Q1" gate="G$1" x="134.62" y="142.24"/>
 </instances>
 <busses>
 </busses>
@@ -34327,8 +34341,8 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </segment>
 <segment>
 <wire x1="137.16" y1="137.16" x2="137.16" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="Q1" gate="G$1" pin="E"/>
 <pinref part="GND3" gate="G$1" pin="GND"/>
+<pinref part="Q1" gate="G$1" pin="E"/>
 </segment>
 <segment>
 <wire x1="182.88" y1="124.46" x2="182.88" y2="114.3" width="0.1524" layer="91"/>
