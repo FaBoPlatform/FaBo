@@ -33598,10 +33598,8 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </segment>
 <segment>
 <wire x1="193.04" y1="144.78" x2="193.04" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="137.16" x2="193.04" y2="127" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="134.62" x2="218.44" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="137.16" x2="193.04" y2="137.16" width="0.1524" layer="91"/>
-<junction x="193.04" y="137.16"/>
 <pinref part="LED5" gate="G$1" pin="VDD"/>
 <pinref part="5V5" gate="G$1" pin="5V"/>
 </segment>
@@ -33654,11 +33652,9 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pinref part="GND4" gate="G$1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="193.04" y1="119.38" x2="193.04" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="193.04" y1="111.76" x2="193.04" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="114.3" x2="210.82" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="111.76" x2="193.04" y2="111.76" width="0.1524" layer="91"/>
-<junction x="193.04" y="111.76"/>
 <pinref part="LED5" gate="G$1" pin="VSS"/>
 <pinref part="GND5" gate="G$1" pin="GND"/>
 </segment>
