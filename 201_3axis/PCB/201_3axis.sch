@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -33747,7 +33747,7 @@ Level Translators&lt;br&gt;
 <smd name="8" x="0" y="0.675" dx="0.7" dy="0.25" layer="1" roundness="30" rot="R90"/>
 <rectangle x1="-0.825" y1="0" x2="0" y2="0.825" layer="21"/>
 <text x="0" y="1.905" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
-<circle x="-1.27" y="1.27" radius="0.15" width="0.3" layer="21"/>
+<circle x="-1.2" y="1.2" radius="0.15" width="0.25" layer="21"/>
 </package>
 </packages>
 <symbols>
