@@ -129,7 +129,7 @@
 <plain>
 <text x="10.16" y="45.72" size="0.8128" layer="21" font="vector" ratio="12" rot="R180" align="bottom-center">MADE IN JAPAN</text>
 <text x="27.94" y="48.26" size="1.27" layer="21" font="vector" ratio="12">OUT/IN Shield for IchigoJam</text>
-<text x="27.94" y="46.99" size="1.016" layer="21" font="vector" ratio="12">Rev. 1.0.5</text>
+<text x="27.94" y="46.99" size="1.016" layer="21" font="vector" ratio="12">Rev. 1.0.6</text>
 <text x="17.78" y="46.99" size="2.54" layer="21" font="vector" ratio="12">#503</text>
 <text x="30.75" y="21.25" size="0.8128" layer="21" font="vector" ratio="12" rot="R270" align="center-left">GND</text>
 <text x="32.75" y="21.25" size="0.8128" layer="21" font="vector" ratio="12" rot="R270" align="center-left">VCC</text>
@@ -5348,18 +5348,6 @@ design rules under a new name.</description>
 <contactref element="IN2" pad="GND"/>
 <contactref element="IN3" pad="GND"/>
 <contactref element="IN4" pad="GND"/>
-<polygon width="0.1524" layer="16" spacing="0.1524">
-<vertex x="1.27" y="0.635"/>
-<vertex x="76.835" y="0.635"/>
-<vertex x="76.835" y="50.8"/>
-<vertex x="1.27" y="50.8"/>
-</polygon>
-<polygon width="0.1524" layer="1" spacing="0.1524">
-<vertex x="1.27" y="0.635"/>
-<vertex x="76.835" y="0.635"/>
-<vertex x="76.835" y="50.8"/>
-<vertex x="1.27" y="50.8"/>
-</polygon>
 <via x="4.064" y="32.004" extent="1-16" drill="0.3048"/>
 <via x="3.937" y="40.132" extent="1-16" drill="0.3048"/>
 <via x="8.509" y="43.18" extent="1-16" drill="0.3048"/>
@@ -5539,6 +5527,18 @@ design rules under a new name.</description>
 <via x="9.779" y="17.653" extent="1-16" drill="0.3048"/>
 <via x="6.858" y="13.589" extent="1-16" drill="0.3048"/>
 <via x="6.985" y="20.193" extent="1-16" drill="0.3048"/>
+<polygon width="0.2032" layer="16" spacing="0.2032">
+<vertex x="1.27" y="0.635"/>
+<vertex x="76.835" y="0.635"/>
+<vertex x="76.835" y="50.8"/>
+<vertex x="1.27" y="50.8"/>
+</polygon>
+<polygon width="0.2032" layer="1" spacing="0.2032">
+<vertex x="1.27" y="0.635"/>
+<vertex x="76.835" y="0.635"/>
+<vertex x="76.835" y="50.8"/>
+<vertex x="1.27" y="50.8"/>
+</polygon>
 </signal>
 <signal name="IN1">
 <contactref element="U1" pad="IN1"/>

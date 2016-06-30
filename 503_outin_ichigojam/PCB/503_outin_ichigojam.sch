@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -34652,7 +34652,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <sheets>
 <sheet>
 <plain>
-<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.5</text>
+<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.6</text>
 <text x="142.24" y="170.18" size="2.54" layer="97">IN (3pin Side 2mm pitch) x4</text>
 <text x="142.24" y="134.62" size="2.54" layer="97">OUT/BTN/LED/SOUND (3pin Top 2mm pitch) x9</text>
 <text x="17.78" y="73.66" size="2.54" layer="97">I2C/Serial (4pin Side 2mm pitch)</text>
