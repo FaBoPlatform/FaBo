@@ -148,7 +148,7 @@
 <wire x1="1.27" y1="30.48" x2="3.81" y2="30.48" width="0.1" layer="21"/>
 <wire x1="3.81" y1="6.35" x2="1.27" y2="6.35" width="0.1" layer="21"/>
 <wire x1="1.27" y1="6.35" x2="1.27" y2="30.48" width="0.1" layer="21"/>
-<text x="24.13" y="6.35" size="1.016" layer="22" font="vector" ratio="12" rot="MR0" align="bottom-center">Rev.1.0.4</text>
+<text x="24.13" y="6.35" size="1.016" layer="22" font="vector" ratio="12" rot="MR0" align="bottom-center">Rev.1.0.5</text>
 <text x="24.13" y="7.874" size="1.9304" layer="22" font="vector" ratio="12" rot="MR0" align="bottom-center">#710</text>
 <wire x1="3.81" y1="27.305" x2="3.81" y2="30.48" width="0.1" layer="21"/>
 <wire x1="3.81" y1="6.35" x2="3.81" y2="23.495" width="0.1" layer="21"/>
@@ -5674,13 +5674,13 @@ design rules under a new name.</description>
 <contactref element="J15" pad="1"/>
 <contactref element="J16" pad="1"/>
 <contactref element="J17" pad="1"/>
-<polygon width="0.1524" layer="16" spacing="0.1524">
+<polygon width="0.2032" layer="16" spacing="0.2032">
 <vertex x="0" y="0"/>
 <vertex x="27.94" y="0"/>
 <vertex x="27.94" y="39.37"/>
 <vertex x="0" y="39.37"/>
 </polygon>
-<polygon width="0.1524" layer="1" spacing="0.1524">
+<polygon width="0.2032" layer="1" spacing="0.2032">
 <vertex x="0" y="0"/>
 <vertex x="27.94" y="0"/>
 <vertex x="27.94" y="39.37"/>
