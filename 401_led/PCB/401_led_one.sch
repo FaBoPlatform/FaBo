@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -33363,6 +33363,9 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <package name="TP-10">
 <smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" thermals="no" cream="no"/>
 </package>
+<package name="TP-15">
+<smd name="1" x="0" y="0" dx="1.5" dy="1.5" layer="1" roundness="100" thermals="no" cream="no"/>
+</package>
 </packages>
 <symbols>
 <symbol name="5V">
@@ -33419,6 +33422,14 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="-15" package="TP-15">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 </devicesets>
@@ -33443,13 +33454,13 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="GND1" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="GND2" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="GND3" library="FaBo-Supply" deviceset="GND" device=""/>
-<part name="TP1" library="FaBo-Supply" deviceset="TP" device="-10"/>
 <part name="U$2" library="FaBo-etc" deviceset="LOGO_OSHW" device="-M_BOTTOM"/>
+<part name="TP1" library="FaBo-Supply" deviceset="TP" device="-15"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.3</text>
+<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.4</text>
 </plain>
 <instances>
 <instance part="J1" gate="G$1" x="96.52" y="96.52"/>
@@ -33462,8 +33473,8 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <instance part="GND1" gate="G$1" x="109.22" y="73.66"/>
 <instance part="GND2" gate="G$1" x="129.54" y="73.66"/>
 <instance part="GND3" gate="G$1" x="165.1" y="73.66"/>
-<instance part="TP1" gate="G$1" x="137.16" y="83.82"/>
 <instance part="U$2" gate="G$1" x="248.92" y="12.7"/>
+<instance part="TP1" gate="G$1" x="137.16" y="83.82"/>
 </instances>
 <busses>
 </busses>
@@ -33519,9 +33530,9 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <net name="N$1" class="0">
 <segment>
 <pinref part="LED1" gate="G$1" pin="DOUT"/>
-<pinref part="TP1" gate="G$1" pin="1"/>
 <wire x1="139.7" y1="93.98" x2="137.16" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="93.98" x2="137.16" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="TP1" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>

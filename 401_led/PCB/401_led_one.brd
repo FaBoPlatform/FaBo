@@ -142,7 +142,7 @@
 <board>
 <plain>
 <text x="3.81" y="7.62" size="1.27" layer="21" font="vector" ratio="12" rot="R90">ColorLED</text>
-<text x="5.08" y="7.62" size="1.016" layer="21" font="vector" ratio="12" rot="R90">Rev.1.0.3</text>
+<text x="5.08" y="7.62" size="1.016" layer="21" font="vector" ratio="12" rot="R90">Rev.1.0.4</text>
 <text x="22.86" y="12.065" size="0.8128" layer="21" font="vector" ratio="12" rot="R270" align="bottom-center">MADE IN JAPAN</text>
 <text x="12.7" y="27.305" size="2.54" layer="21" font="vector" ratio="12" align="bottom-center">#401</text>
 </plain>
@@ -2745,8 +2745,8 @@ Supply&lt;br&gt;
 Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;br&gt;
 https://creativecommons.org/licenses/by-sa/4.0/</description>
 <packages>
-<package name="TP-10">
-<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" thermals="no" cream="no"/>
+<package name="TP-15">
+<smd name="1" x="0" y="0" dx="1.5" dy="1.5" layer="1" roundness="100" thermals="no" cream="no"/>
 </package>
 </packages>
 </library>
@@ -2948,21 +2948,21 @@ design rules under a new name.</description>
 <attribute name="NAME" x="12.7" y="14.986" size="0.8128" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" x="12.7" y="15.875" size="0.8128" layer="27" font="vector" ratio="12" rot="R180" align="center"/>
 </element>
-<element name="TP1" library="FaBo-Supply" package="TP-10" value="" x="7.366" y="18.669" rot="MR0"/>
 <element name="U$2" library="FaBo-etc" package="LOGO_OSHW_M_BOTTOM" value="" x="12.7" y="3.175"/>
+<element name="TP1" library="FaBo-Supply" package="TP-15" value="" x="7.239" y="18.669" rot="MR0"/>
 </elements>
 <signals>
 <signal name="GND">
 <contactref element="J1" pad="GND"/>
 <contactref element="C1" pad="1"/>
 <contactref element="LED1" pad="3"/>
-<polygon width="0.1524" layer="16" spacing="0.1524">
+<polygon width="0.2032" layer="16" spacing="0.2032">
 <vertex x="0" y="0"/>
 <vertex x="25.4" y="0"/>
 <vertex x="25.4" y="33.02"/>
 <vertex x="0" y="33.02"/>
 </polygon>
-<polygon width="0.1524" layer="1" spacing="0.1524">
+<polygon width="0.2032" layer="1" spacing="0.2032">
 <vertex x="0" y="0"/>
 <vertex x="25.4" y="0"/>
 <vertex x="25.4" y="33.02"/>
@@ -2992,11 +2992,11 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$1">
 <contactref element="LED1" pad="2"/>
-<contactref element="TP1" pad="1"/>
 <wire x1="10.25" y1="18.67" x2="8.891" y2="18.67" width="0.3048" layer="1"/>
 <wire x1="8.891" y1="18.67" x2="8.763" y2="18.669" width="0.3048" layer="1"/>
 <via x="8.763" y="18.669" extent="1-16" drill="0.3048"/>
-<wire x1="8.763" y1="18.669" x2="7.366" y2="18.669" width="0.3048" layer="16"/>
+<contactref element="TP1" pad="1"/>
+<wire x1="7.239" y1="18.669" x2="8.763" y2="18.669" width="0.3048" layer="16"/>
 </signal>
 </signals>
 </board>
