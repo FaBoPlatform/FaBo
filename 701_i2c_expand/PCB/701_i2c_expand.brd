@@ -143,7 +143,7 @@
 <plain>
 <wire x1="2.54" y1="0" x2="54.61" y2="0" width="0" layer="20"/>
 <text x="8.89" y="3.175" size="1.27" layer="21" font="vector" ratio="12">I2C Expand</text>
-<text x="8.89" y="1.27" size="1.016" layer="21" font="vector" ratio="12">Rev.1.0.4</text>
+<text x="8.89" y="1.27" size="1.016" layer="21" font="vector" ratio="12">Rev.1.0.5</text>
 <wire x1="0" y1="2.54" x2="0" y2="26.67" width="0" layer="20"/>
 <wire x1="0" y1="2.54" x2="2.54" y2="0" width="0" layer="20" curve="90"/>
 <wire x1="57.15" y1="2.54" x2="57.15" y2="26.67" width="0" layer="20"/>
@@ -175,11 +175,11 @@
 <text x="29.5" y="10" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
 <text x="27.5" y="10" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">SDA</text>
 <text x="25.5" y="10" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">SCL</text>
-<text x="23.25" y="17" size="0.8128" layer="21" font="vector" ratio="12" rot="R180" align="bottom-center">I2C 2</text>
-<text x="33.75" y="17" size="0.8128" layer="21" font="vector" ratio="12" rot="R180" align="bottom-center">I2C 3</text>
-<text x="44.25" y="17" size="0.8128" layer="21" font="vector" ratio="12" rot="R180" align="bottom-center">I2C 4</text>
-<text x="12.75" y="17" size="0.8128" layer="21" font="vector" ratio="12" rot="R180" align="bottom-center">I2C 1</text>
-<text x="28.5" y="12" size="0.8128" layer="21" font="vector" ratio="12" align="bottom-center">TO SHIELD</text>
+<text x="23.25" y="16.873" size="0.8128" layer="21" font="vector" ratio="12" rot="R180" align="bottom-center">I2C 2</text>
+<text x="33.75" y="16.873" size="0.8128" layer="21" font="vector" ratio="12" rot="R180" align="bottom-center">I2C 3</text>
+<text x="44.25" y="16.873" size="0.8128" layer="21" font="vector" ratio="12" rot="R180" align="bottom-center">I2C 4</text>
+<text x="12.75" y="16.873" size="0.8128" layer="21" font="vector" ratio="12" rot="R180" align="bottom-center">I2C 1</text>
+<text x="28.5" y="12.127" size="0.8128" layer="21" font="vector" ratio="12" align="bottom-center">TO SHIELD</text>
 </plain>
 <libraries>
 <library name="gclue">
@@ -2932,17 +2932,17 @@ design rules under a new name.</description>
 <contactref element="I2C2" pad="GND"/>
 <contactref element="I2C3" pad="GND"/>
 <contactref element="I2C4" pad="GND"/>
-<polygon width="0.1524" layer="16" spacing="0.1524">
+<polygon width="0.2032" layer="16" spacing="0.2032">
 <vertex x="0" y="0"/>
-<vertex x="57.785" y="0"/>
-<vertex x="57.785" y="30.48"/>
-<vertex x="0" y="30.48"/>
+<vertex x="57.15" y="0"/>
+<vertex x="57.15" y="29.21"/>
+<vertex x="0" y="29.21"/>
 </polygon>
-<polygon width="0.1524" layer="1" spacing="0.1524">
+<polygon width="0.2032" layer="1" spacing="0.2032">
 <vertex x="0" y="0"/>
-<vertex x="57.785" y="0"/>
-<vertex x="57.785" y="30.48"/>
-<vertex x="0" y="30.48"/>
+<vertex x="57.15" y="0"/>
+<vertex x="57.15" y="29.21"/>
+<vertex x="0" y="29.21"/>
 </polygon>
 </signal>
 <signal name="SCL">
@@ -3021,6 +3021,135 @@ design rules under a new name.</description>
 <wire x1="30.48" y1="17.145" x2="31.75" y2="17.145" width="0.4064" layer="16"/>
 <wire x1="23.545" y1="17.145" x2="28.52" y2="17.145" width="0.4064" layer="16"/>
 <wire x1="28.52" y1="17.145" x2="29.5" y2="16.165" width="0.4064" layer="16"/>
+</signal>
+<signal name="N$1">
+<via x="13.589" y="24.638" extent="1-16" drill="0.3048"/>
+</signal>
+<signal name="N$2">
+<via x="15.494" y="26.924" extent="1-16" drill="0.3048"/>
+</signal>
+<signal name="N$3">
+<via x="18.415" y="24.765" extent="1-16" drill="0.3048"/>
+</signal>
+<signal name="N$4">
+<via x="24.511" y="24.511" extent="1-16" drill="0.3048"/>
+</signal>
+<signal name="N$5">
+<via x="26.289" y="26.797" extent="1-16" drill="0.3048"/>
+</signal>
+<signal name="N$6">
+<via x="28.575" y="24.765" extent="1-16" drill="0.3048"/>
+</signal>
+<signal name="N$7">
+<via x="34.417" y="24.511" extent="1-16" drill="0.3048"/>
+</signal>
+<signal name="N$8">
+<via x="36.703" y="26.67" extent="1-16" drill="0.3048"/>
+</signal>
+<signal name="N$9">
+<via x="39.243" y="24.638" extent="1-16" drill="0.3048"/>
+</signal>
+<signal name="N$10">
+<via x="47.752" y="26.289" extent="1-16" drill="0.3048"/>
+</signal>
+<signal name="N$11">
+<via x="45.593" y="24.384" extent="1-16" drill="0.3048"/>
+</signal>
+<signal name="N$12">
+<via x="41.91" y="27.178" extent="1-16" drill="0.3048"/>
+</signal>
+<signal name="N$13">
+<via x="31.369" y="27.051" extent="1-16" drill="0.3048"/>
+</signal>
+<signal name="N$14">
+<via x="31.369" y="24.892" extent="1-16" drill="0.3048"/>
+</signal>
+<signal name="N$15">
+<via x="20.828" y="27.051" extent="1-16" drill="0.3048"/>
+</signal>
+<signal name="N$16">
+<via x="7.366" y="26.924" extent="1-16" drill="0.3048"/>
+</signal>
+<signal name="N$17">
+<via x="9.652" y="24.765" extent="1-16" drill="0.3048"/>
+</signal>
+<signal name="N$18">
+<via x="4.572" y="20.32" extent="1-16" drill="0.3048"/>
+</signal>
+<signal name="N$19">
+<via x="7.366" y="20.32" extent="1-16" drill="0.3048"/>
+</signal>
+<signal name="N$20">
+<via x="8.636" y="16.891" extent="1-16" drill="0.3048"/>
+</signal>
+<signal name="N$21">
+<via x="6.35" y="15.24" extent="1-16" drill="0.3048"/>
+</signal>
+<signal name="N$22">
+<via x="8.509" y="13.97" extent="1-16" drill="0.3048"/>
+</signal>
+<signal name="N$23">
+<via x="15.367" y="16.256" extent="1-16" drill="0.3048"/>
+</signal>
+<signal name="N$24">
+<via x="15.367" y="14.097" extent="1-16" drill="0.3048"/>
+</signal>
+<signal name="N$25">
+<via x="22.352" y="16.383" extent="1-16" drill="0.3048"/>
+</signal>
+<signal name="N$26">
+<via x="22.987" y="14.224" extent="1-16" drill="0.3048"/>
+</signal>
+<signal name="N$27">
+<via x="25.781" y="15.621" extent="1-16" drill="0.3048"/>
+</signal>
+<signal name="N$28">
+<via x="28.575" y="15.748" extent="1-16" drill="0.3048"/>
+</signal>
+<signal name="N$29">
+<via x="24.384" y="12.065" extent="1-16" drill="0.3048"/>
+</signal>
+<signal name="N$30">
+<via x="26.67" y="12.065" extent="1-16" drill="0.3048"/>
+</signal>
+<signal name="N$31">
+<via x="28.575" y="11.557" extent="1-16" drill="0.3048"/>
+</signal>
+<signal name="N$32">
+<via x="30.607" y="11.557" extent="1-16" drill="0.3048"/>
+</signal>
+<signal name="N$33">
+<via x="30.861" y="15.748" extent="1-16" drill="0.3048"/>
+</signal>
+<signal name="N$34">
+<via x="18.161" y="19.685" extent="1-16" drill="0.3048"/>
+</signal>
+<signal name="N$35">
+<via x="28.448" y="20.574" extent="1-16" drill="0.3048"/>
+</signal>
+<signal name="N$36">
+<via x="38.989" y="20.701" extent="1-16" drill="0.3048"/>
+</signal>
+<signal name="N$37">
+<via x="33.655" y="15.621" extent="1-16" drill="0.3048"/>
+</signal>
+<signal name="N$38">
+<via x="41.783" y="15.621" extent="1-16" drill="0.3048"/>
+</signal>
+<signal name="N$39">
+<via x="38.354" y="15.621" extent="1-16" drill="0.3048"/>
+</signal>
+<signal name="N$40">
+<via x="45.466" y="17.018" extent="1-16" drill="0.3048"/>
+</signal>
+<signal name="N$41">
+<via x="26.289" y="5.842" extent="1-16" drill="0.3048"/>
+</signal>
+<signal name="N$42">
+<via x="28.448" y="6.223" extent="1-16" drill="0.3048"/>
+</signal>
+<signal name="N$43">
+<via x="30.48" y="5.588" extent="1-16" drill="0.3048"/>
 </signal>
 </signals>
 </board>
