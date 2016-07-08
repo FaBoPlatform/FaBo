@@ -129,7 +129,7 @@
 <plain>
 <text x="22.86" y="12.065" size="0.8128" layer="21" font="vector" ratio="12" rot="R90" align="top-center">MADE IN JAPAN</text>
 <text x="12.7" y="13.335" size="2.54" layer="21" font="vector" ratio="12" align="bottom-center">#117</text>
-<text x="3.81" y="8.89" size="1.27" layer="21" font="vector" ratio="12" rot="R90">Slide</text>
+<text x="3.81" y="8.89" size="1.27" layer="21" font="vector" ratio="12" rot="R90">Switch</text>
 <text x="5.08" y="8.89" size="1.016" layer="21" font="vector" ratio="12" rot="R90">Rev.1.0.0</text>
 <circle x="10.16" y="20.955" radius="0.6858" width="0.254" layer="21"/>
 <circle x="15.24" y="20.955" radius="0.762" width="0" layer="21"/>
