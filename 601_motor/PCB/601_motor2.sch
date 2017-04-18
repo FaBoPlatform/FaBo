@@ -27333,22 +27333,22 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="161.29" y1="27.94" x2="234.95" y2="27.94" width="0.1016" layer="94"/>
 <wire x1="234.95" y1="27.94" x2="256.54" y2="27.94" width="0.1016" layer="94"/>
 <wire x1="161.29" y1="22.86" x2="212.09" y2="22.86" width="0.1016" layer="94"/>
-<text x="172.72" y="24.13" size="2.54" layer="94">&gt;DRAWING_NAME</text>
-<text x="170.18" y="20.32" size="1.778" layer="94" align="center-left">&gt;LAST_DATE_TIME</text>
+<text x="175.26" y="24.13" size="2.54" layer="94">&gt;DRAWING_NAME</text>
+<text x="172.72" y="20.32" size="1.778" layer="94" align="center-left">&gt;LAST_DATE_TIME</text>
 <text x="223.52" y="20.32" size="1.778" layer="94" align="center-left">&gt;SHEET</text>
 <text x="213.36" y="20.32" size="1.778" layer="94" align="center-left">Sheet:</text>
 <frame x1="0" y1="0" x2="260.35" y2="179.07" columns="6" rows="4" layer="94"/>
 <text x="162.56" y="24.13" size="2.54" layer="94">Title:</text>
 <text x="162.56" y="20.32" size="1.778" layer="94" align="center-left">Date:</text>
-<text x="162.56" y="10.16" size="1.778" layer="94">Released under the Creative Commons</text>
-<text x="162.56" y="5.08" size="1.778" layer="94">https://creativecommons.org/licenses/by-sa/4.0/</text>
+<text x="162.56" y="8.636" size="1.27" layer="94">Released under the Creative Commons</text>
+<text x="162.56" y="5.08" size="1.27" layer="94">https://creativecommons.org/licenses/by-sa/4.0/</text>
 <text x="236.22" y="26.67" size="2.1844" layer="94" align="top-left">REV:</text>
 <wire x1="212.09" y1="22.86" x2="234.95" y2="22.86" width="0.1016" layer="94"/>
 <wire x1="161.29" y1="17.78" x2="212.09" y2="17.78" width="0.1016" layer="94"/>
 <wire x1="212.09" y1="17.78" x2="234.95" y2="17.78" width="0.1016" layer="94"/>
 <wire x1="234.95" y1="17.78" x2="256.54" y2="17.78" width="0.1016" layer="94"/>
 <wire x1="234.95" y1="17.78" x2="234.95" y2="22.86" width="0.1016" layer="94"/>
-<text x="162.56" y="7.62" size="1.778" layer="94">Attribution-ShareAlike 4.0 License</text>
+<text x="162.56" y="6.858" size="1.27" layer="94">Attribution-ShareAlike 4.0 License</text>
 <wire x1="234.95" y1="22.86" x2="234.95" y2="27.94" width="0.1016" layer="94"/>
 <wire x1="212.09" y1="17.78" x2="212.09" y2="22.86" width="0.1016" layer="94"/>
 </symbol>
@@ -39968,10 +39968,10 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <library name="FaBo-Terminal">
 <packages>
 <package name="ML-1400-S1">
-<pad name="LEFT1" x="-2.5" y="2.5" drill="0.8" shape="square"/>
-<pad name="RIGHT1" x="2.5" y="2.5" drill="0.8" shape="square"/>
-<pad name="LEFT2" x="-2.5" y="-2.5" drill="0.8" shape="square"/>
-<pad name="RIGHT2" x="2.5" y="-2.5" drill="0.8" shape="square"/>
+<pad name="LEFT1" x="-2.5" y="2.5" drill="1.5" shape="square"/>
+<pad name="RIGHT1" x="2.5" y="2.5" drill="1.5" shape="square"/>
+<pad name="LEFT2" x="-2.5" y="-2.5" drill="1.5" shape="square"/>
+<pad name="RIGHT2" x="2.5" y="-2.5" drill="1.5" shape="square"/>
 <wire x1="-5" y1="6.5" x2="-5" y2="-6.5" width="0.127" layer="21"/>
 <wire x1="-5" y1="-6.5" x2="5" y2="-6.5" width="0.127" layer="21"/>
 <wire x1="5" y1="-6.5" x2="5" y2="6.5" width="0.127" layer="21"/>
@@ -40032,7 +40032,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="I2C" library="FaBo-Template" deviceset="FABO_BRICK_I2C" device="-S04B-PASK-2"/>
 <part name="SOFT-SERIAL" library="FaBo-Template" deviceset="FABO_BRICK_SERIAL" device="-S04B-PASK-2"/>
 <part name="GND18" library="FaBo-etc" deviceset="GND" device=""/>
-<part name="SUPPLY7" library="FaBo-etc" deviceset="5V" device=""/>
 <part name="D9" library="FaBo-Template" deviceset="FABO_BRICK_3PIN" device="-HEADER"/>
 <part name="GND5" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="GND6" library="FaBo-etc" deviceset="GND" device=""/>
@@ -40051,10 +40050,8 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="R1" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="4.7k"/>
 <part name="R2" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="4.7k"/>
 <part name="GND11" library="FaBo-etc" deviceset="GND" device=""/>
-<part name="SUPPLY9" library="FaBo-etc" deviceset="5V" device=""/>
 <part name="D10" library="FaBo-Template" deviceset="FABO_BRICK_3PIN" device="-HEADER"/>
 <part name="GND12" library="FaBo-etc" deviceset="GND" device=""/>
-<part name="SUPPLY10" library="FaBo-etc" deviceset="5V" device=""/>
 <part name="D11" library="FaBo-Template" deviceset="FABO_BRICK_3PIN" device="-HEADER"/>
 <part name="GND14" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="C4" library="resistor" deviceset="CPOL-US" device="153CLV-0405" value="22uf"/>
@@ -40103,13 +40100,17 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="GND19" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="GND22" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="GND23" library="FaBo-etc" deviceset="GND" device=""/>
+<part name="P+5" library="supply1" deviceset="VCC" device=""/>
+<part name="P+6" library="supply1" deviceset="VCC" device=""/>
+<part name="P+7" library="supply1" deviceset="VCC" device=""/>
+<part name="R7" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="1K"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.1</text>
 <text x="114.3" y="99.06" size="2.54" layer="97">I2C/Serial (4pin Side 2mm pitch)</text>
-<text x="50.8" y="132.08" size="2.54" layer="97">DIGITAL (3pin Top 2mm pitch)</text>
+<text x="50.8" y="132.08" size="2.54" layer="97">PWM (3pin Top 2mm pitch)</text>
 <text x="53.34" y="167.64" size="2.54" layer="97">ANALOG (3pin Side 2mm pitch)</text>
 <text x="93.98" y="99.06" size="2.54" layer="97">I2C Pull-Up</text>
 <text x="182.88" y="170.18" size="2.54" layer="97">VOLTAGE SUPPLY</text>
@@ -40137,7 +40138,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <instance part="I2C" gate="G$1" x="134.62" y="78.74" rot="R90"/>
 <instance part="SOFT-SERIAL" gate="G$1" x="134.62" y="50.8" rot="R90"/>
 <instance part="GND18" gate="GND" x="71.12" y="111.76"/>
-<instance part="SUPPLY7" gate="5V" x="58.42" y="124.46"/>
 <instance part="D9" gate="G$1" x="58.42" y="111.76" rot="R90"/>
 <instance part="GND5" gate="GND" x="15.24" y="147.32"/>
 <instance part="GND6" gate="GND" x="99.06" y="144.78"/>
@@ -40156,10 +40156,8 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <instance part="R1" gate="G$1" x="99.06" y="68.58" rot="R90"/>
 <instance part="R2" gate="G$1" x="109.22" y="68.58" rot="R90"/>
 <instance part="GND11" gate="GND" x="96.52" y="111.76"/>
-<instance part="SUPPLY9" gate="5V" x="83.82" y="124.46"/>
 <instance part="D10" gate="G$1" x="83.82" y="111.76" rot="R90"/>
 <instance part="GND12" gate="GND" x="121.92" y="111.76"/>
-<instance part="SUPPLY10" gate="5V" x="109.22" y="124.46"/>
 <instance part="D11" gate="G$1" x="109.22" y="111.76" rot="R90"/>
 <instance part="GND14" gate="GND" x="33.02" y="104.14"/>
 <instance part="C4" gate="G$1" x="22.86" y="116.84" rot="R90"/>
@@ -40208,6 +40206,10 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <instance part="GND19" gate="GND" x="177.8" y="48.26"/>
 <instance part="GND22" gate="GND" x="193.04" y="137.16"/>
 <instance part="GND23" gate="GND" x="238.76" y="137.16"/>
+<instance part="P+5" gate="VCC" x="58.42" y="127"/>
+<instance part="P+6" gate="VCC" x="83.82" y="127"/>
+<instance part="P+7" gate="VCC" x="109.22" y="127"/>
+<instance part="R7" gate="G$1" x="220.98" y="60.96"/>
 </instances>
 <busses>
 </busses>
@@ -40411,11 +40413,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pinref part="I2C" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
-<wire x1="58.42" y1="124.46" x2="58.42" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="SUPPLY7" gate="5V" pin="5V"/>
-<pinref part="D9" gate="G$1" pin="VCC"/>
-</segment>
-<segment>
 <wire x1="86.36" y1="157.48" x2="86.36" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="SUPPLY20" gate="5V" pin="5V"/>
 <pinref part="A1" gate="G$1" pin="VCC"/>
@@ -40446,16 +40443,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="99.06" y1="93.98" x2="99.06" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="83.82" y1="124.46" x2="83.82" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="SUPPLY9" gate="5V" pin="5V"/>
-<pinref part="D10" gate="G$1" pin="VCC"/>
-</segment>
-<segment>
-<wire x1="109.22" y1="124.46" x2="109.22" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="SUPPLY10" gate="5V" pin="5V"/>
-<pinref part="D11" gate="G$1" pin="VCC"/>
-</segment>
-<segment>
 <wire x1="30.48" y1="25.4" x2="30.48" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="D2" gate="G$1" pin="VCC"/>
 <pinref part="5V8" gate="G$1" pin="5V"/>
@@ -40476,10 +40463,10 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pinref part="5V11" gate="G$1" pin="5V"/>
 </segment>
 <segment>
-<pinref part="U$10" gate="G$1" pin="A0"/>
-<wire x1="213.36" y1="60.96" x2="233.68" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="60.96" x2="233.68" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="SUPPLY31" gate="5V" pin="5V"/>
+<pinref part="R7" gate="G$1" pin="2"/>
+<wire x1="226.06" y1="60.96" x2="233.68" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R6" gate="G$1" pin="2"/>
@@ -40524,13 +40511,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="215.9" y1="109.22" x2="215.9" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="101.6" x2="226.06" y2="101.6" width="0.1524" layer="91"/>
 <label x="226.06" y="101.6" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="VS" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="VIN"/>
-<wire x1="20.32" y1="68.58" x2="10.16" y2="68.58" width="0.1524" layer="91"/>
-<label x="10.16" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RESET" class="0">
@@ -40890,6 +40870,33 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pinref part="C7" gate="G$1" pin="2"/>
 <wire x1="177.8" y1="111.76" x2="170.18" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="111.76" x2="170.18" y2="109.22" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="VIN"/>
+<wire x1="20.32" y1="68.58" x2="10.16" y2="68.58" width="0.1524" layer="91"/>
+<label x="10.16" y="68.58" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="58.42" y1="124.46" x2="58.42" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="D9" gate="G$1" pin="VCC"/>
+<pinref part="P+5" gate="VCC" pin="VCC"/>
+</segment>
+<segment>
+<wire x1="83.82" y1="124.46" x2="83.82" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="D10" gate="G$1" pin="VCC"/>
+<pinref part="P+6" gate="VCC" pin="VCC"/>
+</segment>
+<segment>
+<wire x1="109.22" y1="124.46" x2="109.22" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="D11" gate="G$1" pin="VCC"/>
+<pinref part="P+7" gate="VCC" pin="VCC"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="U$10" gate="G$1" pin="A0"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="213.36" y1="60.96" x2="218.44" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
