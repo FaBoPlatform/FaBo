@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.1">
+<eagle version="8.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -9,6 +9,8 @@
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="11" fill="3" visible="no" active="no"/>
+<layer number="15" name="Route15" color="10" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
@@ -76,6 +78,7 @@
 <layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="113" name="IDFDebug" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="115" name="sd" color="13" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
@@ -640,9 +643,9 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pad name="P$3" x="-10.16" y="-11.43" drill="3" diameter="3.81"/>
 <pad name="P$4" x="10.16" y="-11.43" drill="3" diameter="3.81"/>
 <wire x1="-13.97" y1="10.16" x2="13.97" y2="10.16" width="0" layer="20" curve="-180"/>
-<text x="-3.2606" y="-2.8532" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">I/O</text>
-<text x="-1.0066" y="-2.9548" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
-<text x="0.968" y="-2.9802" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
+<text x="-2.7526" y="-5.3932" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">I/O</text>
+<text x="-1.0066" y="-5.4948" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
+<text x="0.968" y="-5.5202" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
 <circle x="-10.16" y="10.16" radius="2.55" width="0.1" layer="51"/>
 <circle x="-10.16" y="-11.43" radius="2.55" width="0.1" layer="51"/>
 <circle x="10.16" y="10.16" radius="2.55" width="0.1" layer="51"/>
@@ -653,9 +656,9 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="-2" y1="-13.685" x2="2" y2="-13.685" width="0.1" layer="51"/>
 <wire x1="2" y1="-15.185" x2="2" y2="-13.685" width="0.1" layer="51"/>
 <wire x1="-2" y1="-15.185" x2="-2" y2="-13.685" width="0.1" layer="51"/>
-<smd name="V_I/O" x="-2.032" y="-3.302" dx="1.27" dy="1.27" layer="1"/>
-<smd name="V_VCC" x="-0.0508" y="-3.302" dx="1.27" dy="1.27" layer="1"/>
-<smd name="V_GND" x="2.0066" y="-3.302" dx="1.27" dy="1.27" layer="1"/>
+<smd name="V_I/O" x="-2.032" y="-3.302" dx="1.016" dy="1.27" layer="1"/>
+<smd name="V_VCC" x="-0.0508" y="-3.302" dx="1.016" dy="1.27" layer="1"/>
+<smd name="V_GND" x="2.0066" y="-3.302" dx="1.016" dy="1.27" layer="1"/>
 <wire x1="-2.032" y1="-3.4036" x2="-2.032" y2="-6.35" width="0.8128" layer="1"/>
 <wire x1="-0.0254" y1="-3.3274" x2="-0.0254" y2="-6.2738" width="0.8128" layer="1"/>
 <wire x1="2.0066" y1="-3.3782" x2="2.0066" y2="-6.3246" width="0.8128" layer="1"/>
