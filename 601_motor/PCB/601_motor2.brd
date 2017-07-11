@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.1.0">
+<eagle version="8.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -190,7 +190,7 @@
 <wire x1="23.876" y1="30.607" x2="23.876" y2="28.167" width="0.127" layer="21"/>
 <wire x1="20.066" y1="30.607" x2="20.066" y2="28.167" width="0.127" layer="21"/>
 <wire x1="31.931" y1="35.787" x2="31.931" y2="28.167" width="0.127" layer="21"/>
-<text x="32.7406" y="41.4528" size="0.8128" layer="21">Rev 1.0.8 Beta</text>
+<text x="32.7406" y="41.4528" size="0.8128" layer="21">Rev 1.0.9</text>
 <text x="24.9428" y="25.6032" size="1.778" layer="21">PWM</text>
 <text x="16.9672" y="41.275" size="1.6764" layer="21">#601</text>
 <text x="22.8092" y="41.275" size="1.6764" layer="21">MOTOR</text>
@@ -209,6 +209,9 @@
 <text x="56.2" y="36" size="1.778" layer="21">MOTOR1</text>
 <text x="56.4" y="12.8" size="1.778" layer="21">MOTOR2</text>
 <wire x1="31.931" y1="28.167" x2="31.931" y2="24.892" width="0.127" layer="21"/>
+<text x="44.5" y="11.5" size="0.8128" layer="21">ON</text>
+<text x="52.3" y="11.4" size="0.8128" layer="21">OFF</text>
+<text x="48.6" y="11.5" size="1.016" layer="21">VIN</text>
 </plain>
 <libraries>
 <library name="FaBo-Template">
@@ -7952,6 +7955,37 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </package>
 </packages>
 </library>
+<library name="FaBo-Switch">
+<description>&lt;h3&gt;FaBo Switch&lt;/h3&gt;
+switches&lt;br&gt;
+&lt;br&gt;
+Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;br&gt;
+https://creativecommons.org/licenses/by-sa/4.0/</description>
+<packages>
+<package name="EG1218">
+<wire x1="-5.842" y1="2.032" x2="5.842" y2="2.032" width="0.127" layer="51"/>
+<wire x1="5.842" y1="2.032" x2="5.842" y2="1.524" width="0.127" layer="51"/>
+<wire x1="5.842" y1="1.524" x2="5.334" y2="1.524" width="0.127" layer="51"/>
+<wire x1="5.334" y1="1.524" x2="5.334" y2="-1.524" width="0.127" layer="51"/>
+<wire x1="5.334" y1="-1.524" x2="5.842" y2="-1.524" width="0.127" layer="51"/>
+<wire x1="5.842" y1="-1.524" x2="5.842" y2="-2.032" width="0.127" layer="51"/>
+<wire x1="5.842" y1="-2.032" x2="-5.842" y2="-2.032" width="0.127" layer="51"/>
+<wire x1="-5.842" y1="-2.032" x2="-5.842" y2="-1.524" width="0.127" layer="51"/>
+<wire x1="-5.842" y1="-1.524" x2="-5.334" y2="-1.524" width="0.127" layer="51"/>
+<wire x1="-5.334" y1="-1.524" x2="-5.334" y2="1.524" width="0.127" layer="51"/>
+<wire x1="-5.334" y1="1.524" x2="-5.842" y2="1.524" width="0.127" layer="51"/>
+<wire x1="-5.842" y1="1.524" x2="-5.842" y2="2.032" width="0.127" layer="51"/>
+<wire x1="-2.286" y1="1.016" x2="2.286" y2="1.016" width="0.127" layer="51"/>
+<wire x1="2.286" y1="1.016" x2="2.286" y2="-1.016" width="0.127" layer="51"/>
+<wire x1="2.286" y1="-1.016" x2="-2.286" y2="-1.016" width="0.127" layer="51"/>
+<wire x1="-2.286" y1="-1.016" x2="-2.286" y2="1.016" width="0.127" layer="51"/>
+<pad name="2" x="0" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="1" x="-2.54" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="3" x="2.54" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<text x="-2.794" y="2.54" size="1.27" layer="25" font="vector" ratio="12">&gt;NAME</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -8184,7 +8218,9 @@ design rules under a new name.</description>
 <element name="U$12" library="FaBo-Terminal" package="ML-1400-S1" value="ML-1400-S1" x="61.75" y="30.55" rot="R90"/>
 <element name="U$13" library="FaBo-Terminal" package="ML-1400-S1" value="ML-1400-S1" x="61.75" y="20.55" rot="R90"/>
 <element name="U$15" library="FaBo-Supply" package="4UCON-DC" value="4UCON-DC" x="60.45" y="43.55" rot="R180"/>
-<element name="R7" library="FaBo-Resistors" package="0603" value="1K" x="46.9" y="16.8" rot="R180"/>
+<element name="R8" library="FaBo-Resistors" package="0603" value="0.4" x="43.4" y="13"/>
+<element name="R9" library="FaBo-Resistors" package="0603" value="0.4" x="43.3" y="22.8"/>
+<element name="." library="FaBo-Switch" package="EG1218" value="" x="49.6" y="9.1"/>
 </elements>
 <signals>
 <signal name="3V3">
@@ -8241,7 +8277,6 @@ design rules under a new name.</description>
 <via x="20.32" y="39.37" extent="1-16" drill="0.2"/>
 <via x="19.05" y="38.1" extent="1-16" drill="0.2"/>
 <via x="10.85" y="25.9" extent="1-16" drill="0.2"/>
-<via x="45.65" y="15.41" extent="1-16" drill="0.2"/>
 <via x="49.55" y="30.71" extent="1-16" drill="0.2"/>
 <via x="49.55" y="29.91" extent="1-16" drill="0.2"/>
 <via x="49.55" y="29.11" extent="1-16" drill="0.2"/>
@@ -8255,8 +8290,11 @@ design rules under a new name.</description>
 <via x="50.55" y="19.31" extent="1-16" drill="0.2"/>
 <via x="49.55" y="19.31" extent="1-16" drill="0.2"/>
 <via x="46.55" y="20.31" extent="1-16" drill="0.2"/>
-<via x="43.75" y="12.71" extent="1-16" drill="0.2"/>
+<via x="45.55" y="10.61" extent="1-16" drill="0.2"/>
 <via x="38.75" y="18.11" extent="1-16" drill="0.2"/>
+<contactref element="R8" pad="1"/>
+<contactref element="R9" pad="1"/>
+<contactref element="U$10" pad="7"/>
 </signal>
 <signal name="5V">
 <contactref element="U1" pad="5V"/>
@@ -8314,11 +8352,9 @@ design rules under a new name.</description>
 <wire x1="16.4" y1="40.894" x2="16.4" y2="34.544" width="0.6096" layer="1"/>
 <wire x1="8.382" y1="49.022" x2="16.4" y2="49.022" width="0.6096" layer="1"/>
 <wire x1="16.4" y1="49.022" x2="16.4" y2="40.894" width="0.6096" layer="1"/>
-<contactref element="R7" pad="2"/>
 <wire x1="46.1" y1="16.7" x2="46" y2="16.6" width="0.4064" layer="1"/>
 <wire x1="45.6" y1="16.8" x2="46.1" y2="16.7" width="0.4064" layer="1"/>
 <wire x1="44.25" y1="16.8" x2="45.6" y2="16.8" width="0.4064" layer="1"/>
-<wire x1="46" y1="16.6" x2="46.05" y2="16.8" width="0.4064" layer="1"/>
 </signal>
 <signal name="D6">
 <contactref element="U1" pad="D6"/>
@@ -8638,6 +8674,8 @@ design rules under a new name.</description>
 <wire x1="44.2" y1="24.2" x2="44.15" y2="24.15" width="0.254" layer="1"/>
 <via x="44.4" y="25.3" extent="1-16" drill="0.2"/>
 <via x="46.8" y="27.7" extent="1-16" drill="0.2"/>
+<contactref element="R9" pad="2"/>
+<wire x1="44.15" y1="24.15" x2="44.15" y2="22.8" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$4">
 <contactref element="U$10" pad="2"/>
@@ -8648,6 +8686,8 @@ design rules under a new name.</description>
 <wire x1="51.0806" y1="17.3806" x2="46.7" y2="14.2" width="0.254" layer="1"/>
 <wire x1="46.7" y1="14.2" x2="44.25" y2="14.2" width="0.254" layer="1"/>
 <wire x1="44.25" y1="14.2" x2="44.25" y2="14.3" width="0.254" layer="1"/>
+<contactref element="R8" pad="2"/>
+<wire x1="44.25" y1="14.3" x2="44.25" y2="13" width="0.2032" layer="1"/>
 </signal>
 <signal name="M1_1">
 <contactref element="U$8" pad="1"/>
@@ -8746,15 +8786,11 @@ design rules under a new name.</description>
 <wire x1="51.75210625" y1="20.7" x2="51.79270625" y2="20.6594" width="0.4064" layer="1"/>
 <wire x1="51.79270625" y1="20.6594" x2="52.2806" y2="20.6594" width="0.4064" layer="1"/>
 <wire x1="52.2806" y1="20.6594" x2="52.29" y2="20.65" width="0.4064" layer="1"/>
-<contactref element="U1" pad="VIN"/>
 <wire x1="56.8" y1="25.4" x2="56.8" y2="22.2" width="1.016" layer="1"/>
-<wire x1="56.8" y1="17.4" x2="56.8" y2="15" width="1.016" layer="1"/>
+<wire x1="56.8" y1="17.4" x2="56.8" y2="16.3" width="1.016" layer="1"/>
 <wire x1="56.8" y1="22.2" x2="56.8" y2="17.4" width="1.016" layer="16"/>
 <via x="56.8" y="17.4" extent="1-16" drill="0.6"/>
 <via x="56.8" y="22.2" extent="1-16" drill="0.6"/>
-<wire x1="45.8" y1="4" x2="45.8" y2="2.8" width="1.016" layer="1"/>
-<wire x1="56.8" y1="15" x2="45.8" y2="4" width="1.016" layer="1"/>
-<wire x1="45.8" y1="2.8" x2="45.72" y2="2.667" width="1.016" layer="1"/>
 <contactref element="D9" pad="VCC"/>
 <contactref element="D10" pad="VCC"/>
 <contactref element="D11" pad="VCC"/>
@@ -8773,18 +8809,17 @@ design rules under a new name.</description>
 <wire x1="25.6" y1="32" x2="28" y2="32" width="1.016" layer="1"/>
 <wire x1="28" y1="32" x2="28.067" y2="32.004" width="0.4064" layer="1"/>
 <wire x1="25.6" y1="32" x2="25.527" y2="32.004" width="0.4064" layer="1"/>
+<contactref element="." pad="1"/>
+<wire x1="56.8" y1="16.3" x2="47" y2="10.16" width="1.016" layer="1"/>
+<wire x1="47" y1="10.16" x2="47.06" y2="9.1" width="1.016" layer="1"/>
 </signal>
-<signal name="N$1">
-<contactref element="U$10" pad="7"/>
-<contactref element="R7" pad="1"/>
-<wire x1="48.2" y1="20.7" x2="47.8" y2="20.7" width="0.254" layer="1"/>
-<wire x1="48.7" y1="20.2" x2="48.2" y2="20.7" width="0.254" layer="1"/>
-<wire x1="48.7" y1="19.1" x2="48.7" y2="20.2" width="0.254" layer="1"/>
-<wire x1="48.1" y1="18.5" x2="48.7" y2="19.1" width="0.254" layer="1"/>
-<wire x1="47.9" y1="18.5" x2="48.1" y2="18.5" width="0.254" layer="1"/>
-<wire x1="47.7" y1="18.3" x2="47.9" y2="18.5" width="0.254" layer="1"/>
-<wire x1="47.75" y1="16.8" x2="47.7" y2="18.3" width="0.254" layer="1"/>
-<wire x1="47.8" y1="20.7" x2="47.79" y2="20.65" width="0.254" layer="1"/>
+<signal name="VIN">
+<contactref element="U1" pad="VIN"/>
+<contactref element="." pad="2"/>
+<wire x1="49.6" y1="6.1" x2="49.6" y2="9.1" width="1.016" layer="1"/>
+<wire x1="49.6" y1="6.1" x2="46.9684" y2="3.4684" width="1.016" layer="1"/>
+<wire x1="46.9684" y1="3.4684" x2="46.5214" y2="3.4684" width="1.016" layer="1"/>
+<wire x1="46.5214" y1="3.4684" x2="45.72" y2="2.667" width="1.016" layer="1"/>
 </signal>
 </signals>
 </board>
