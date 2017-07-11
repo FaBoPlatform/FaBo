@@ -76,6 +76,7 @@
 <layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="113" name="IDFDebug" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="115" name="sd" color="13" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
@@ -1589,6 +1590,77 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="FaBo-Parts">
+<description>&lt;h3&gt;FaBo Parts&lt;/h3&gt;
+Parts&lt;br&gt;
+&lt;br&gt;
+Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;br&gt;
+https://creativecommons.org/licenses/by-sa/4.0/</description>
+<packages>
+<package name="SOT23">
+<smd name="3" x="0.03" y="1.1" dx="0.8" dy="0.9" layer="1" roundness="20"/>
+<smd name="1" x="-0.97" y="-1.1" dx="0.8" dy="0.9" layer="1" roundness="20"/>
+<smd name="2" x="0.97" y="-1.1" dx="0.8" dy="0.9" layer="1" roundness="20"/>
+<wire x1="-1.45" y1="-0.65" x2="1.45" y2="-0.65" width="0.1" layer="21"/>
+<wire x1="1.45" y1="-0.65" x2="1.45" y2="0.65" width="0.1" layer="21"/>
+<wire x1="1.45" y1="0.65" x2="-1.45" y2="0.65" width="0.1" layer="21"/>
+<wire x1="-1.45" y1="0.65" x2="-1.45" y2="-0.65" width="0.1" layer="21"/>
+<text x="0" y="1.905" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+</package>
+</packages>
+<symbols>
+<symbol name="FAIRCHILD-FDN338">
+<pin name="G" x="-11.5" y="0" length="middle" direction="in"/>
+<pin name="S" x="0" y="-11" length="middle" direction="in" rot="R90"/>
+<pin name="D" x="0" y="11.5" length="middle" direction="in" rot="R270"/>
+<wire x1="-6.5" y1="3" x2="-6.5" y2="-3" width="0.254" layer="94"/>
+<wire x1="-6" y1="-2" x2="-6" y2="2" width="0.254" layer="94"/>
+<wire x1="0" y1="-6" x2="0" y2="-5.5" width="0.254" layer="94"/>
+<wire x1="0" y1="-5.5" x2="0" y2="-2" width="0.254" layer="94"/>
+<wire x1="0" y1="-2" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-0.1" y2="0" width="0.254" layer="94"/>
+<wire x1="-0.1" y1="0" x2="-5.5" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="6.5" x2="0" y2="6" width="0.254" layer="94"/>
+<wire x1="0" y1="6" x2="0" y2="2" width="0.254" layer="94"/>
+<wire x1="0" y1="2" x2="-6" y2="2" width="0.254" layer="94"/>
+<wire x1="0" y1="-2" x2="-6" y2="-2" width="0.254" layer="94"/>
+<wire x1="-6" y1="-2" x2="-6" y2="-3" width="0.254" layer="94"/>
+<wire x1="-6" y1="2" x2="-6" y2="3" width="0.254" layer="94"/>
+<wire x1="0" y1="-5.5" x2="2" y2="-5.5" width="0.254" layer="94"/>
+<wire x1="2" y1="-5.5" x2="2" y2="0.2" width="0.254" layer="94"/>
+<wire x1="2" y1="0.2" x2="2" y2="6" width="0.254" layer="94"/>
+<wire x1="2" y1="6" x2="0" y2="6" width="0.254" layer="94"/>
+<circle x="-0.5" y="0.5" radius="8.200609375" width="0.254" layer="94"/>
+<wire x1="-0.4" y1="0.4" x2="-0.1" y2="0" width="0.254" layer="94"/>
+<wire x1="-0.1" y1="0" x2="-0.5" y2="-0.5" width="0.254" layer="94"/>
+<wire x1="-0.5" y1="-0.5" x2="-0.5" y2="0.4" width="0.254" layer="94"/>
+<wire x1="1.4" y1="0.9" x2="1.5" y2="0.9" width="0.254" layer="94"/>
+<wire x1="1.5" y1="0.9" x2="2.6" y2="0.9" width="0.254" layer="94"/>
+<wire x1="2.6" y1="0.9" x2="2" y2="0.2" width="0.254" layer="94"/>
+<wire x1="2" y1="0.2" x2="1.5" y2="0.9" width="0.254" layer="94"/>
+<wire x1="1.4" y1="0.1" x2="2.7" y2="0.1" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="FAIRCHILD-FDN338">
+<gates>
+<gate name="G$1" symbol="FAIRCHILD-FDN338" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1620,6 +1692,12 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="GND5" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="GND6" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="GND7" library="FaBo-Supply" deviceset="GND" device=""/>
+<part name="SW1" library="FaBo-Parts" deviceset="FAIRCHILD-FDN338" device=""/>
+<part name="SW2" library="FaBo-Parts" deviceset="FAIRCHILD-FDN338" device=""/>
+<part name="SW3" library="FaBo-Parts" deviceset="FAIRCHILD-FDN338" device=""/>
+<part name="5V5" library="FaBo-Supply" deviceset="5V" device=""/>
+<part name="5V6" library="FaBo-Supply" deviceset="5V" device=""/>
+<part name="5V7" library="FaBo-Supply" deviceset="5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1647,6 +1725,12 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <instance part="GND5" gate="G$1" x="200.66" y="142.24"/>
 <instance part="GND6" gate="G$1" x="200.66" y="116.84"/>
 <instance part="GND7" gate="G$1" x="200.66" y="91.44"/>
+<instance part="SW1" gate="G$1" x="86.36" y="81.28"/>
+<instance part="SW2" gate="G$1" x="121.92" y="81.28"/>
+<instance part="SW3" gate="G$1" x="157.48" y="81.28"/>
+<instance part="5V5" gate="G$1" x="86.36" y="101.6"/>
+<instance part="5V6" gate="G$1" x="121.92" y="101.6"/>
+<instance part="5V7" gate="G$1" x="157.48" y="101.6"/>
 </instances>
 <busses>
 </busses>
@@ -1712,9 +1796,9 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pinref part="IC1" gate="G$1" pin="P0"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="VCC"/>
-<wire x1="182.88" y1="149.86" x2="200.66" y2="149.86" width="0.1524" layer="91"/>
-<label x="200.66" y="149.86" size="1.778" layer="95"/>
+<pinref part="SW1" gate="G$1" pin="G"/>
+<wire x1="74.86" y1="81.28" x2="66.04" y2="81.28" width="0.1524" layer="91"/>
+<label x="66.04" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO1" class="0">
@@ -1724,9 +1808,9 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pinref part="IC1" gate="G$1" pin="P1"/>
 </segment>
 <segment>
-<pinref part="J2" gate="G$1" pin="VCC"/>
-<wire x1="182.88" y1="124.46" x2="200.66" y2="124.46" width="0.1524" layer="91"/>
-<label x="200.66" y="124.46" size="1.778" layer="95"/>
+<wire x1="101.6" y1="81.28" x2="110.42" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="SW2" gate="G$1" pin="G"/>
+<label x="101.6" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO2" class="0">
@@ -1736,9 +1820,10 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pinref part="IC1" gate="G$1" pin="P2"/>
 </segment>
 <segment>
-<pinref part="J3" gate="G$1" pin="VCC"/>
-<wire x1="182.88" y1="99.06" x2="200.66" y2="99.06" width="0.1524" layer="91"/>
-<label x="200.66" y="99.06" size="1.778" layer="95"/>
+<wire x1="137.16" y1="81.28" x2="145.98" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="SW3" gate="G$1" pin="G"/>
+<wire x1="145.98" y1="81.28" x2="144.78" y2="81.28" width="0.1524" layer="91"/>
+<label x="137.16" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO3" class="0">
@@ -1862,6 +1947,21 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="45.72" y1="149.86" x2="45.72" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="5V1" gate="G$1" pin="5V"/>
 </segment>
+<segment>
+<pinref part="5V5" gate="G$1" pin="5V"/>
+<wire x1="86.36" y1="101.6" x2="86.36" y2="92.78" width="0.1524" layer="91"/>
+<pinref part="SW1" gate="G$1" pin="D"/>
+</segment>
+<segment>
+<pinref part="5V6" gate="G$1" pin="5V"/>
+<wire x1="121.92" y1="101.6" x2="121.92" y2="92.78" width="0.1524" layer="91"/>
+<pinref part="SW2" gate="G$1" pin="D"/>
+</segment>
+<segment>
+<pinref part="5V7" gate="G$1" pin="5V"/>
+<wire x1="157.48" y1="101.6" x2="157.48" y2="92.78" width="0.1524" layer="91"/>
+<pinref part="SW3" gate="G$1" pin="D"/>
+</segment>
 </net>
 <net name="N$4" class="0">
 <segment>
@@ -1869,6 +1969,42 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="182.88" y1="119.38" x2="200.66" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="119.38" x2="200.66" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="GND6" gate="G$1" pin="GND"/>
+</segment>
+</net>
+<net name="SW1" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="VCC"/>
+<wire x1="182.88" y1="149.86" x2="200.66" y2="149.86" width="0.1524" layer="91"/>
+<label x="200.66" y="149.86" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="86.36" y1="63.5" x2="86.36" y2="70.28" width="0.1524" layer="91"/>
+<pinref part="SW1" gate="G$1" pin="S"/>
+<label x="86.36" y="63.5" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SW2" class="0">
+<segment>
+<pinref part="J2" gate="G$1" pin="VCC"/>
+<wire x1="182.88" y1="124.46" x2="200.66" y2="124.46" width="0.1524" layer="91"/>
+<label x="200.66" y="124.46" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="121.92" y1="63.5" x2="121.92" y2="70.28" width="0.1524" layer="91"/>
+<pinref part="SW2" gate="G$1" pin="S"/>
+<label x="121.92" y="63.5" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SW3" class="0">
+<segment>
+<pinref part="J3" gate="G$1" pin="VCC"/>
+<wire x1="182.88" y1="99.06" x2="200.66" y2="99.06" width="0.1524" layer="91"/>
+<label x="200.66" y="99.06" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="157.48" y1="63.5" x2="157.48" y2="70.28" width="0.1524" layer="91"/>
+<pinref part="SW3" gate="G$1" pin="S"/>
+<label x="157.48" y="63.5" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
