@@ -21804,12 +21804,18 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="IN2" library="FaBo-Template" deviceset="FABO_BRICK_3PIN" device="-B03B-PASK-1"/>
 <part name="IN3" library="FaBo-Template" deviceset="FABO_BRICK_3PIN" device="-B03B-PASK-1"/>
 <part name="IN4" library="FaBo-Template" deviceset="FABO_BRICK_3PIN" device="-B03B-PASK-1"/>
+<part name="3V10" library="FaBo-Supply" deviceset="3V3" device=""/>
+<part name="3V14" library="FaBo-Supply" deviceset="3V3" device=""/>
+<part name="3V15" library="FaBo-Supply" deviceset="3V3" device=""/>
+<part name="R5" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="1K"/>
+<part name="R6" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="1K"/>
+<part name="R7" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="1K"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.8</text>
-<text x="142.24" y="170.18" size="2.54" layer="97">IN (3pin Side 2mm pitch) x4</text>
+<text x="121.92" y="170.18" size="2.54" layer="97">IN (3pin Side 2mm pitch) x4</text>
 <text x="142.24" y="134.62" size="2.54" layer="97">OUT/BTN/LED/SOUND (3pin Top 2mm pitch) x6</text>
 <text x="15.24" y="91.44" size="2.54" layer="97">I2C/Serial (4pin Side 2mm pitch)</text>
 <text x="88.9" y="91.44" size="2.54" layer="97">I2C PULL-UP</text>
@@ -21892,6 +21898,12 @@ CN5</text>
 <instance part="IN2" gate="G$1" x="177.8" y="147.32" rot="R90"/>
 <instance part="IN3" gate="G$1" x="205.74" y="147.32" rot="R90"/>
 <instance part="IN4" gate="G$1" x="233.68" y="147.32" rot="R90"/>
+<instance part="3V10" gate="G$1" x="167.64" y="167.64"/>
+<instance part="3V14" gate="G$1" x="195.58" y="167.64"/>
+<instance part="3V15" gate="G$1" x="223.52" y="167.64"/>
+<instance part="R5" gate="G$1" x="167.64" y="160.02" rot="R90"/>
+<instance part="R6" gate="G$1" x="195.58" y="160.02" rot="R90"/>
+<instance part="R7" gate="G$1" x="223.52" y="160.02" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -21974,6 +21986,21 @@ CN5</text>
 <pinref part="SOUND" gate="G$1" pin="VCC"/>
 <wire x1="205.74" y1="99.06" x2="205.74" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="3V18" gate="G$1" pin="3V3"/>
+</segment>
+<segment>
+<pinref part="R5" gate="G$1" pin="2"/>
+<pinref part="3V10" gate="G$1" pin="3V3"/>
+<wire x1="167.64" y1="165.1" x2="167.64" y2="167.64" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="3V14" gate="G$1" pin="3V3"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="195.58" y1="167.64" x2="195.58" y2="165.1" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="3V15" gate="G$1" pin="3V3"/>
+<pinref part="R7" gate="G$1" pin="2"/>
+<wire x1="223.52" y1="167.64" x2="223.52" y2="165.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -22141,6 +22168,9 @@ CN5</text>
 <wire x1="172.72" y1="165.1" x2="172.72" y2="154.94" width="0.1524" layer="91"/>
 <label x="172.72" y="160.02" size="1.778" layer="95" rot="R90"/>
 <pinref part="IN2" gate="G$1" pin="I/O"/>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="172.72" y1="154.94" x2="167.64" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="154.94" x2="167.64" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="30.48" y1="137.16" x2="45.72" y2="137.16" width="0.1524" layer="91"/>
@@ -22158,6 +22188,9 @@ CN5</text>
 <wire x1="200.66" y1="165.1" x2="200.66" y2="154.94" width="0.1524" layer="91"/>
 <label x="200.66" y="160.02" size="1.778" layer="95" rot="R90"/>
 <pinref part="IN3" gate="G$1" pin="I/O"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="195.58" y1="157.48" x2="195.58" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="154.94" x2="200.66" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="IN4" class="0">
@@ -22165,6 +22198,9 @@ CN5</text>
 <wire x1="228.6" y1="165.1" x2="228.6" y2="154.94" width="0.1524" layer="91"/>
 <label x="228.6" y="160.02" size="1.778" layer="95" rot="R90"/>
 <pinref part="IN4" gate="G$1" pin="I/O"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="223.52" y1="157.48" x2="223.52" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="154.94" x2="228.6" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="30.48" y1="132.08" x2="45.72" y2="132.08" width="0.1524" layer="91"/>
