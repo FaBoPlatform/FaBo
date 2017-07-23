@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="8.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -128,9 +128,10 @@
 <board>
 <plain>
 <text x="3.81" y="8.89" size="1.27" layer="21" font="vector" ratio="12" rot="R90">Button</text>
-<text x="5.08" y="8.89" size="1.016" layer="21" font="vector" ratio="12" rot="R90">Rev.1.0.4</text>
+<text x="5.08" y="8.89" size="1.016" layer="21" font="vector" ratio="12" rot="R90">LOW2HIGH</text>
 <text x="12.7" y="22.86" size="0.8128" layer="22" font="vector" ratio="12" rot="MR180" align="bottom-center">MADE IN JAPAN</text>
 <text x="21.59" y="12.065" size="2.54" layer="21" font="vector" ratio="12" rot="R90" align="center">#103</text>
+<text x="6.35" y="8.89" size="1.016" layer="21" font="vector" ratio="12" rot="R90">Rev.1.0.5</text>
 </plain>
 <libraries>
 <library name="FaBo-etc">
