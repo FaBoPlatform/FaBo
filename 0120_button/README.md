@@ -6,6 +6,9 @@
 
 <!--COLORME-->
 
+## 現在のVersion
+1.0.0
+
 ## Overview
 ボタンを使ったBrickです。I/OピンよりボタンのON/OFFの状態を取得することができます。
 ONを押すと、I/OピンとGNDがつながります。
