@@ -1,6 +1,6 @@
 # #102 Buzzer Brick
 
-<center>![](./img/102_buzzar.jpg)
+<center>![](./img/102_buzzer.jpg)
 
 <!--COLORME-->
 
@@ -13,7 +13,7 @@
 |◯|◯|◯|
 
 ## Schematic
-![](./img/102_buzzar_sch.png)
+![](./img/102_buzzer_sch.png)
 
 ## Docs
 
