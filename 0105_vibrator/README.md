@@ -8,17 +8,13 @@
 
 I/Oピンから振動モーターのON/OFFを制御することができます。
 
-## Connecting
-
-### Arduino
-アナログコネクタ(A0〜A5)、またはデジタルコネクタ(2〜13)のいずれかに接続します。
-
-![](/img/105_vibrator_sch.png)
-
 ## Support
 |Arduino|RaspberryPI|IchigoJam|
 |:--:|:--:|:--:|
 |◯|x|x|
+
+## Schematic
+![](/img/100_analog/schematic/105_vibrator_sch.png)
 
 ## Docs
 
@@ -31,9 +27,6 @@ I/Oピンから振動モーターのON/OFFを制御することができます�
 | Document |
 |:--|
 | [LA3R5-480AH1](http://akizukidenshi.com/catalog/g/gP-06744/) |
-
-## Schematic
-![](/img/100_analog/schematic/105_vibrator.png)
 
 ## Parts
 - 振動モーター LA3R5-480AH1
