@@ -1,6 +1,8 @@
 # #113 IR Receiver Brick
 
-<center>![](./img/113_ir_receive.jpg)
+<center>
+
+![](./img/113_ir_receive.jpg)
 <!--COLORME-->
 
 ## Overview
