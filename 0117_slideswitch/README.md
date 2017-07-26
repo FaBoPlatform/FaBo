@@ -1,6 +1,6 @@
 # #117 Switch Brick
 
-<center>![](./img/117_switch.jpg)
+<center>![](./img/117_slideswitch.jpg)
 <!--COLORME-->
 
 ## Overview
@@ -15,7 +15,7 @@ I/OピンよりスライドスイッチのON/OFFをデジタル値で取得で�
 
 ## Schematic
 
-![](./img/117_switch_sch.png)
+![](./img/117_slideswitch_sch.png)
 
 ## Parts
 - スライドスイッチ
