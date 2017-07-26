@@ -1,6 +1,7 @@
 # #120 Button Brick
 
-<center>![](/img/100_analog/product/103.jpg)
+<center>
+![](/img/100_analog/product/120.jpg)
 <!--COLORME-->
 
 ## Overview
@@ -15,7 +16,7 @@ ONを押すと、I/OピンとGNDがつながります。
 |◯|◯|◯|
 
 ## Schematic
-![](/img/100_analog/schematic/103_button.png)
+![](./image/120_button.png)
 
 ## Docs
 
