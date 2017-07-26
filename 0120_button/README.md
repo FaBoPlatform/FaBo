@@ -27,4 +27,4 @@ ONを押すと、I/OピンとGNDがつながります。
 - 12mm角タクトスイッチ
 
 ## GitHub
-- https://github.com/FaBoPlatform/FaBo/tree/master/120_button
+- https://github.com/FaBoPlatform/FaBo/tree/master/0120_button
