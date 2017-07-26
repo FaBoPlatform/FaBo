@@ -1,6 +1,8 @@
 # #116 Distance Brick
 
-<center>![](./img/116_distance.jpg)
+<center>
+
+![](./img/116_distance.jpg)
 <!--COLORME-->
 
 ## Overview
