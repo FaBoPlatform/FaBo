@@ -1,6 +1,8 @@
 # #119 Photo Reflector Brick
 
-<center>![](./img/119_reflector.jpg)
+<center>
+
+![](./img/119_reflector.jpg)
 <!--COLORME-->
 
 ## Overview
