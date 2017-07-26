@@ -15,7 +15,7 @@ ONを押すと、I/OピンとGNDがつながります。
 |◯|◯|◯|
 
 ## Schematic
-![](/img/100_analog/schematic/103_button.png)
+![](./image/120_button.png)
 
 ## Docs
 
