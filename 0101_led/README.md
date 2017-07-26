@@ -9,7 +9,6 @@
 LEDのBrickです。発光色は5色（青・緑・赤・白・黄）あります。Lチカのおともにもどうぞ。
 
 ※購入時は色の間違いにご注意ください。
-テスト
 
 ## Support
 |Arduino|RaspberryPI|IchigoJam|
