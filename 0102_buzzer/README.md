@@ -7,12 +7,6 @@
 ## Overview
 圧電ブザーを使ったBrickです。I/Oピンより、鳴らす音や音の長さを制御することができます。
 
-## Connecting
-### Arduino
-アナログコネクタ(A0〜A5)、またはデジタルコネクタ(2〜13)のいずれかに接続します。
-
-![](/img/100_analog/connect/102_buzzer_connect.jpg)
-
 ## Support
 |Arduino|RaspberryPI|IchigoJam|
 |:--:|:--:|:--:|
