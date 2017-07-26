@@ -1,6 +1,8 @@
 # #109 Light Brick
 
-<center>![](./img/109_light.jpg)
+<center>
+
+![](./img/109_light.jpg)
 <!--COLORME-->
 
 ## Overview
