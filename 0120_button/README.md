@@ -2,7 +2,7 @@
 
 <center>
 
-![](./img/120_button.png)
+![](./img/120_button.jpg)
 
 <!--COLORME-->
 
