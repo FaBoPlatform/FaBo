@@ -1,6 +1,8 @@
 # #118 Hall Brick
 
-<center>![](./img/118_hall.jpg)
+<center>
+
+![](./img/118_hall.jpg)
 <!--COLORME-->
 
 ## Overview
