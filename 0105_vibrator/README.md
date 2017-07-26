@@ -1,7 +1,35 @@
 # #105 Vibrator Brick
 
-[#105 Vibrator Brick](http://fabo.io/105.html)
+<center>![](./img/105_vibrator.jpg)
+<!--COLORME-->
 
-- Eagle PCB
-- Schematic Image
-- Sample Code
+## Overview
+振動モーターを使用したBrickです。
+
+I/Oピンから振動モーターのON/OFFを制御することができます。
+
+## Connecting
+
+### Arduino
+アナログコネクタ(A0〜A5)、またはデジタルコネクタ(2〜13)のいずれかに接続します。
+
+![](/img/105_vibrator_sch.png)
+
+## Support
+|Arduino|RaspberryPI|IchigoJam|
+|:--:|:--:|:--:|
+|◯|x|x|
+
+## Parts Specification
+| Document |
+|:--|
+| [LA3R5-480AH1](http://akizukidenshi.com/catalog/g/gP-06744/) |
+
+## Schematic
+![](/img/100_analog/schematic/105_vibrator.png)
+
+## Parts
+- 振動モーター LA3R5-480AH1
+
+## GitHub
+- https://github.com/FaBoPlatform/FaBo/tree/master/105_vibrator
