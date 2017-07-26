@@ -1,5 +1,7 @@
 # #108 Temperature Brick
-<center>![](./img/108_temperature.jpg)
+<center>
+
+![](./img/108_temperature.jpg)
 <!--COLORME-->
 
 ## Overview
