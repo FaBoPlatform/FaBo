@@ -14,7 +14,7 @@ I/Oピンから振動モーターのON/OFFを制御することができます�
 |◯|x|x|
 
 ## Schematic
-![](/img/100_analog/schematic/105_vibrator_sch.png)
+![](./img/105_vibrator_sch.png)
 
 ## Docs
 
