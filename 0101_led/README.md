@@ -1,6 +1,7 @@
 # #101 LED Brick
 
 <center>
+
 ![](./img/101_led.png)
 <!--COLORME-->
 
@@ -8,18 +9,6 @@
 LEDのBrickです。発光色は5色（青・緑・赤・白・黄）あります。Lチカのおともにもどうぞ。
 
 ※購入時は色の間違いにご注意ください。
-
-## Connecting
-### Arduino
-アナログコネクタ(A0〜A5)、またはデジタルコネクタ(2〜13)のいずれかに接続します。
-
-![](/img/100_analog/connect/101_led_connect.jpg)
-
-### Raspberry PI
-GPIOコネクタのいずれかに接続します。
-
-### IchigoJam
-OUTコネクタのいずれかに接続します。
 
 ## Support
 |Arduino|RaspberryPI|IchigoJam|
