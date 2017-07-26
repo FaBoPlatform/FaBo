@@ -1,6 +1,8 @@
 # #117 Switch Brick
 
-<center>![](./img/117_slideswitch.jpg)
+<center>
+
+![](./img/117_slideswitch.jpg)
 <!--COLORME-->
 
 ## Overview
