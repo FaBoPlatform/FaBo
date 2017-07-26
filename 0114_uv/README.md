@@ -16,12 +16,12 @@
 アナログ用コネクタ(IN2またはANA()で設定したコネクタ)のどれかに接続します。
 
 ## Support
-|Arduino|IchigoJam|
-|:--:|:--:|
-|◯|◯|
+|Arduino|RasPi|IchigoJam|
+|:--:|:--:|:--:|
+|◯|◯|◯|
 
 ## Schematic
-![](/img/114_uv_sch.png)
+![](./img/114_uv_sch.png)
 
 ## Docs
 
