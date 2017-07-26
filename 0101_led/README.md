@@ -1,7 +1,42 @@
 # #101 LED Brick
 
-[#101 LED Brick](http://fabo.io/101_A.html)
+<center>
+![](./img/101_led.png)
+<!--COLORME-->
 
-- Eagle PCB
-- Schematic Image
-- Sample Code
+## Overview
+LEDのBrickです。発光色は5色（青・緑・赤・白・黄）あります。Lチカのおともにもどうぞ。
+
+※購入時は色の間違いにご注意ください。
+
+## Connecting
+### Arduino
+アナログコネクタ(A0〜A5)、またはデジタルコネクタ(2〜13)のいずれかに接続します。
+
+![](/img/100_analog/connect/101_led_connect.jpg)
+
+### Raspberry PI
+GPIOコネクタのいずれかに接続します。
+
+### IchigoJam
+OUTコネクタのいずれかに接続します。
+
+## Support
+|Arduino|RaspberryPI|IchigoJam|
+|:--:|:--:|:--:|
+|◯|◯|◯|
+
+## Schematic
+![](./img/101_led_sch.png)
+
+## Docs
+
+* [Arduino用サンプル](http://docs.fabo.io/fabo/arduino/brick_analog/101_brick_analog_led.html)
+* [RaspPi用サンプル](http://docs.fabo.io/fabo/rasppi/brick_analog/101_brick_analog_led.html)
+* [IchogoJam用サンプル](http://docs.fabo.io/fabo/ichigojam/brick_analog/101_brick_analog_led.html)
+
+## Parts
+- 5mm LED(各色)
+
+## GitHub
+- https://github.com/FaBoPlatform/FaBo/tree/master/0101_led
