@@ -1,6 +1,8 @@
 # #105 Vibrator Brick
 
-<center>![](./img/105_vibrator.jpg)
+<center>
+
+![](./img/105_vibrator.jpg)
 <!--COLORME-->
 
 ## Overview
