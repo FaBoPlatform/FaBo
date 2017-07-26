@@ -7905,8 +7905,7 @@ design rules under a new name.</description>
 <via x="11.28" y="25.41" extent="1-16" drill="0.35"/>
 <via x="11.28" y="16.21" extent="1-16" drill="0.35"/>
 <via x="19.28" y="13.41" extent="1-16" drill="0.35"/>
-<via x="32.68" y="18.41" extent="1-16" drill="0.35"/>
-<via x="27.68" y="24.01" extent="1-16" drill="0.35"/>
+<via x="33.38" y="19.01" extent="1-16" drill="0.35"/>
 <via x="26.28" y="12.81" extent="1-16" drill="0.35"/>
 <via x="36.28" y="24.21" extent="1-16" drill="0.35"/>
 <via x="52.48" y="34.61" extent="1-16" drill="0.35"/>
@@ -7915,7 +7914,8 @@ design rules under a new name.</description>
 <via x="71.48" y="10.41" extent="1-16" drill="0.35"/>
 <via x="69.28" y="14.81" extent="1-16" drill="0.35"/>
 <via x="24.68" y="33.81" extent="1-16" drill="0.35"/>
-<wire x1="29.21" y1="20.76" x2="27.68" y2="24.01" width="0" layer="19" extent="1-1"/>
+<via x="26.43" y="20.56" extent="1-16" drill="0.35"/>
+<via x="27.53" y="23.86" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="IN1">
 <contactref element="IN1" pad="I/O"/>

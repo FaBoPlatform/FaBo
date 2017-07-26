@@ -1686,7 +1686,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="GND1" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="5V1" library="FaBo-Supply" deviceset="5V" device=""/>
 <part name="GND5" library="FaBo-Supply" deviceset="GND" device=""/>
-<part name="GND6" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="GND7" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="SW1" library="FaBo-Parts" deviceset="FAIRCHILD-FDN338" device=""/>
 <part name="SW2" library="FaBo-Parts" deviceset="FAIRCHILD-FDN338" device=""/>
@@ -1694,10 +1693,11 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="5V5" library="FaBo-Supply" deviceset="5V" device=""/>
 <part name="5V6" library="FaBo-Supply" deviceset="5V" device=""/>
 <part name="5V7" library="FaBo-Supply" deviceset="5V" device=""/>
-<part name="J-IN" library="FaBo-Template" deviceset="FABO_BRICK_I2C" device="-S04B-PASK-2"/>
-<part name="J1" library="FaBo-Template" deviceset="FABO_BRICK_I2C" device="-S04B-PASK-2"/>
-<part name="J2" library="FaBo-Template" deviceset="FABO_BRICK_I2C" device="-S04B-PASK-2"/>
-<part name="J3" library="FaBo-Template" deviceset="FABO_BRICK_I2C" device="-S04B-PASK-2"/>
+<part name="I2C" library="FaBo-Template" deviceset="FABO_BRICK_I2C" device="-S04B-PASK-2"/>
+<part name="LIDAR1" library="FaBo-Template" deviceset="FABO_BRICK_I2C" device="-S04B-PASK-2"/>
+<part name="LIDAR3" library="FaBo-Template" deviceset="FABO_BRICK_I2C" device="-S04B-PASK-2"/>
+<part name="LIDAR2" library="FaBo-Template" deviceset="FABO_BRICK_I2C" device="-S04B-PASK-2"/>
+<part name="GND6" library="FaBo-Supply" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1719,7 +1719,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <instance part="GND1" gate="G$1" x="45.72" y="139.7"/>
 <instance part="5V1" gate="G$1" x="45.72" y="154.94"/>
 <instance part="GND5" gate="G$1" x="200.66" y="142.24"/>
-<instance part="GND6" gate="G$1" x="200.66" y="116.84"/>
 <instance part="GND7" gate="G$1" x="200.66" y="91.44"/>
 <instance part="SW1" gate="G$1" x="86.36" y="81.28"/>
 <instance part="SW2" gate="G$1" x="121.92" y="81.28"/>
@@ -1727,10 +1726,11 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <instance part="5V5" gate="G$1" x="86.36" y="101.6"/>
 <instance part="5V6" gate="G$1" x="121.92" y="101.6"/>
 <instance part="5V7" gate="G$1" x="157.48" y="101.6"/>
-<instance part="J-IN" gate="G$1" x="20.32" y="152.4"/>
-<instance part="J1" gate="G$1" x="175.26" y="152.4"/>
-<instance part="J2" gate="G$1" x="175.26" y="127"/>
-<instance part="J3" gate="G$1" x="175.26" y="101.6"/>
+<instance part="I2C" gate="G$1" x="20.32" y="152.4"/>
+<instance part="LIDAR1" gate="G$1" x="175.26" y="152.4"/>
+<instance part="LIDAR3" gate="G$1" x="175.26" y="101.6"/>
+<instance part="LIDAR2" gate="G$1" x="175.26" y="127"/>
+<instance part="GND6" gate="G$1" x="200.66" y="114.3"/>
 </instances>
 <busses>
 </busses>
@@ -1744,24 +1744,24 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <segment>
 <wire x1="25.4" y1="154.94" x2="27.94" y2="154.94" width="0.1524" layer="91"/>
 <label x="38.1" y="154.94" size="1.778" layer="95"/>
-<pinref part="J-IN" gate="G$1" pin="SDA"/>
+<pinref part="I2C" gate="G$1" pin="SDA"/>
 <wire x1="27.94" y1="154.94" x2="38.1" y2="154.94" width="0.1524" layer="91"/>
 <junction x="27.94" y="154.94"/>
 </segment>
 <segment>
 <wire x1="182.88" y1="154.94" x2="193.04" y2="154.94" width="0.1524" layer="91"/>
 <label x="193.04" y="154.94" size="1.778" layer="95"/>
-<pinref part="J1" gate="G$1" pin="SDA"/>
+<pinref part="LIDAR1" gate="G$1" pin="SDA"/>
 </segment>
 <segment>
 <wire x1="182.88" y1="129.54" x2="193.04" y2="129.54" width="0.1524" layer="91"/>
 <label x="193.04" y="129.54" size="1.778" layer="95"/>
-<pinref part="J2" gate="G$1" pin="SDA"/>
+<pinref part="LIDAR2" gate="G$1" pin="SDA"/>
 </segment>
 <segment>
 <wire x1="182.88" y1="104.14" x2="193.04" y2="104.14" width="0.1524" layer="91"/>
 <label x="193.04" y="104.14" size="1.778" layer="95"/>
-<pinref part="J3" gate="G$1" pin="SDA"/>
+<pinref part="LIDAR3" gate="G$1" pin="SDA"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -1773,24 +1773,24 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <segment>
 <wire x1="25.4" y1="160.02" x2="27.94" y2="160.02" width="0.1524" layer="91"/>
 <label x="38.1" y="160.02" size="1.778" layer="95"/>
-<pinref part="J-IN" gate="G$1" pin="SCL"/>
+<pinref part="I2C" gate="G$1" pin="SCL"/>
 <wire x1="27.94" y1="160.02" x2="38.1" y2="160.02" width="0.1524" layer="91"/>
 <junction x="27.94" y="160.02"/>
 </segment>
 <segment>
 <wire x1="182.88" y1="160.02" x2="193.04" y2="160.02" width="0.1524" layer="91"/>
 <label x="193.04" y="160.02" size="1.778" layer="95"/>
-<pinref part="J1" gate="G$1" pin="SCL"/>
+<pinref part="LIDAR1" gate="G$1" pin="SCL"/>
 </segment>
 <segment>
 <wire x1="182.88" y1="134.62" x2="193.04" y2="134.62" width="0.1524" layer="91"/>
 <label x="193.04" y="134.62" size="1.778" layer="95"/>
-<pinref part="J2" gate="G$1" pin="SCL"/>
+<pinref part="LIDAR2" gate="G$1" pin="SCL"/>
 </segment>
 <segment>
 <wire x1="182.88" y1="109.22" x2="193.04" y2="109.22" width="0.1524" layer="91"/>
 <label x="193.04" y="109.22" size="1.778" layer="95"/>
-<pinref part="J3" gate="G$1" pin="SCL"/>
+<pinref part="LIDAR3" gate="G$1" pin="SCL"/>
 </segment>
 </net>
 <net name="GPIO0" class="0">
@@ -1906,20 +1906,26 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="27.94" y1="144.78" x2="45.72" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="144.78" x2="45.72" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="G$1" pin="GND"/>
-<pinref part="J-IN" gate="G$1" pin="GND"/>
+<pinref part="I2C" gate="G$1" pin="GND"/>
 <junction x="27.94" y="144.78"/>
 </segment>
 <segment>
 <wire x1="182.88" y1="144.78" x2="200.66" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="144.78" x2="200.66" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="GND5" gate="G$1" pin="GND"/>
-<pinref part="J1" gate="G$1" pin="GND"/>
+<pinref part="LIDAR1" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <wire x1="182.88" y1="93.98" x2="200.66" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="93.98" x2="200.66" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="GND7" gate="G$1" pin="GND"/>
-<pinref part="J3" gate="G$1" pin="GND"/>
+<pinref part="LIDAR3" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="LIDAR2" gate="G$1" pin="GND"/>
+<wire x1="182.88" y1="119.38" x2="200.66" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="119.38" x2="200.66" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="GND6" gate="G$1" pin="GND"/>
 </segment>
 </net>
 <net name="5V" class="0">
@@ -1952,7 +1958,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="27.94" y1="149.86" x2="45.72" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="149.86" x2="45.72" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="5V1" gate="G$1" pin="5V"/>
-<pinref part="J-IN" gate="G$1" pin="VCC"/>
+<pinref part="I2C" gate="G$1" pin="VCC"/>
 <junction x="27.94" y="149.86"/>
 </segment>
 <segment>
@@ -1971,19 +1977,11 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pinref part="SW3" gate="G$1" pin="D"/>
 </segment>
 </net>
-<net name="N$4" class="0">
-<segment>
-<wire x1="182.88" y1="119.38" x2="200.66" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="119.38" x2="200.66" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="GND6" gate="G$1" pin="GND"/>
-<pinref part="J2" gate="G$1" pin="GND"/>
-</segment>
-</net>
 <net name="SW1" class="0">
 <segment>
 <wire x1="182.88" y1="149.86" x2="200.66" y2="149.86" width="0.1524" layer="91"/>
 <label x="200.66" y="149.86" size="1.778" layer="95"/>
-<pinref part="J1" gate="G$1" pin="VCC"/>
+<pinref part="LIDAR1" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
 <wire x1="86.36" y1="63.5" x2="86.36" y2="70.28" width="0.1524" layer="91"/>
@@ -1995,7 +1993,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <segment>
 <wire x1="182.88" y1="124.46" x2="200.66" y2="124.46" width="0.1524" layer="91"/>
 <label x="200.66" y="124.46" size="1.778" layer="95"/>
-<pinref part="J2" gate="G$1" pin="VCC"/>
+<pinref part="LIDAR2" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
 <wire x1="121.92" y1="63.5" x2="121.92" y2="70.28" width="0.1524" layer="91"/>
@@ -2007,7 +2005,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <segment>
 <wire x1="182.88" y1="99.06" x2="200.66" y2="99.06" width="0.1524" layer="91"/>
 <label x="200.66" y="99.06" size="1.778" layer="95"/>
-<pinref part="J3" gate="G$1" pin="VCC"/>
+<pinref part="LIDAR3" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
 <wire x1="157.48" y1="63.5" x2="157.48" y2="70.28" width="0.1524" layer="91"/>
