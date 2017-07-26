@@ -1,6 +1,6 @@
 # #115 Humidity Brick
 
-<center>![](/img/115_humidity.jpg)
+<center>![](./img/115_humidity.jpg)
 <!--COLORME-->
 
 ## Overview
@@ -9,12 +9,12 @@
 温度、湿度の情報を取得することができます。
 
 ## Support
-|Arduino|
-|:--:|
-|◯|
+|Arduino|RaspberryPI|IchigoJam|
+|:--:|:--:|:--:|
+|◯|x|x|
 
 ## Schematic
-![](/img/115_humidity_sch.png)
+![](./img/115_humidity_sch.png)
 
 ## Docs
 
