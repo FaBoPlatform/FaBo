@@ -1,6 +1,8 @@
 # #104 Angle Brick
 
-<center>![](/img/100_analog/product/104.jpg)
+<center>
+
+![](/img/100_analog/product/104.jpg)
 <!--COLORME-->
 
 ## Overview
