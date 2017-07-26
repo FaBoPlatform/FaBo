@@ -2,7 +2,7 @@
 
 <center>
 
-![](/img/100_analog/product/104.jpg)
+![](./img/104_angle.jpg)
 <!--COLORME-->
 
 ## Overview
@@ -24,7 +24,7 @@ LED Brickの明るさを調節する際などに使用します。
 |◯|◯|◯|
 
 ##Schematic
-![](/img/100_analog/schematic/104_angle.png)
+![](./img/104_angle_sch.png)
 
 ## Docs
 
