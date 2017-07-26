@@ -20,6 +20,13 @@ I/Oピンから振動モーターのON/OFFを制御することができます�
 |:--:|:--:|:--:|
 |◯|x|x|
 
+## Docs
+
+* [Arduino用サンプル](http://docs.fabo.io/fabo/arduino/brick_analog/105_brick_analog_vibrator.html)
+* [RaspPi用サンプル](http://docs.fabo.io/fabo/rasppi/brick_analog/105_brick_analog_vibrator.html)
+* [IchogoJam用サンプル](http://docs.fabo.io/fabo/ichigojam/brick_analog/105_brick_analog_vibrator.html)
+
+
 ## Parts Specification
 | Document |
 |:--|

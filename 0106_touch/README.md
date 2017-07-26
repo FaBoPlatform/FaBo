@@ -12,6 +12,12 @@ I/Oピンより、感圧部分に加えられた力の大きさの変化をア�
 |:--:|:--:|:--:|
 |◯|◯|◯|
 
+## Docs
+
+* [Arduino用サンプル](http://docs.fabo.io/fabo/arduino/brick_analog/106_brick_analog_touch.html)
+* [RaspPi用サンプル](http://docs.fabo.io/fabo/rasppi/brick_analog/106_brick_analog_touch.html)
+* [IchogoJam用サンプル](http://docs.fabo.io/fabo/ichigojam/brick_analog/106_brick_analog_touch.html)
+
 ## Datasheet
 | Document |
 |:--|
