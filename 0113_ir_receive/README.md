@@ -32,4 +32,4 @@ I/Oピンから赤外線受信のON/OFFを取得することができます。
 - 赤外線フォトトランジスタ
 
 ## GitHub
-- https://github.com/FaBoPlatform/FaBo/tree/master/113_ir_receive
+- https://github.com/FaBoPlatform/FaBo/tree/master/0113_ir_receive

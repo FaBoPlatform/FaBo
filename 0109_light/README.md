@@ -31,4 +31,4 @@ CDSセルを使用した光センサーBrickです。
 - CDSセル(5mm)
 
 ## GitHub
-- https://github.com/FaBoPlatform/FaBo/tree/master/109_light
+- https://github.com/FaBoPlatform/FaBo/tree/master/0109_light

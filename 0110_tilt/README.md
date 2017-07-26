@@ -30,4 +30,4 @@ LED Brickを点灯/消灯させる際などに使用します。
 - 傾斜(振動)スイッチ
 
 ## GitHub
-- https://github.com/FaBoPlatform/FaBo/tree/master/110_tilt
+- https://github.com/FaBoPlatform/FaBo/tree/master/0110_tilt

@@ -16,7 +16,6 @@ LED Brickの明るさを調節する際などに使用します。
 ### IchigoJam
 アナログ用コネクタ(IN2またはANA()で設定したコネクタ)のどれかに接続します。
 
-
 ## Support
 |Arduino|RaspberryPI|IchigoJam|
 |:--:|:--:|:--:|
@@ -35,4 +34,4 @@ LED Brickの明るさを調節する際などに使用します。
 - ボリューム抵抗器A 10k
 
 ## GitHub
-- https://github.com/FaBoPlatform/FaBo/tree/master/104_angle
+- https://github.com/FaBoPlatform/FaBo/tree/master/0104_angle

@@ -10,7 +10,7 @@
 ## Support
 |Arduino|RaspberryPI|IchigoJam|
 |:--:|:--:|:--:|
-|◯|◯|◯|
+|◯|x|◯|
 
 ## Schematic
 ![](./img/102_buzzer_sch.png)
@@ -25,4 +25,4 @@
 - 圧電ブザー
 
 ## GitHub
-- https://github.com/FaBoPlatform/FaBo/tree/master/102_buzzer
+- https://github.com/FaBoPlatform/FaBo/tree/master/0102_buzzer

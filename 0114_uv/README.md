@@ -31,4 +31,4 @@
 - GaAsPフォトダイオードG6262
 
 ## GitHub
-- https://github.com/FaBoPlatform/FaBo/tree/master/114_uv
+- https://github.com/FaBoPlatform/FaBo/tree/master/0114_uv

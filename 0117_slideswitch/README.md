@@ -1,5 +1,24 @@
 # #117 Switch Brick
 
-[#117 Switch Brick](http://fabo.io/117.html)
+<center>![](./img/117_switch.jpg)
+<!--COLORME-->
 
-- Eagle PCB
+## Overview
+スライドスイッチを使用したBrickです。
+
+I/OピンよりスライドスイッチのON/OFFをデジタル値で取得できます。
+
+## Support
+|Arduino|RaspberryPI|IchigoJam|
+|:--:|:--:|:--:|
+|◯|◯|◯|
+
+## Schematic
+
+![](./img/117_switch_sch.png)
+
+## Parts
+- スライドスイッチ
+
+## GitHub
+https://github.com/FaBoPlatform/FaBo/tree/master/0117_slideswitch

@@ -31,4 +31,4 @@
 - IC温度センサ LM61CIZ
 
 ## GitHub
-- https://github.com/FaBoPlatform/FaBo/tree/master/108_temperature
+- https://github.com/FaBoPlatform/FaBo/tree/master/0108_temperature

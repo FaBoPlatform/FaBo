@@ -31,4 +31,4 @@
 - 湿温度センサモジュールDHT11
 
 ## GitHub
-- https://github.com/FaBoPlatform/FaBo/tree/master/115_humidity
+- https://github.com/FaBoPlatform/FaBo/tree/master/0115_humidity

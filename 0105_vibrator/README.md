@@ -32,4 +32,4 @@ I/Oピンから振動モーターのON/OFFを制御することができます�
 - 振動モーター LA3R5-480AH1
 
 ## GitHub
-- https://github.com/FaBoPlatform/FaBo/tree/master/105_vibrator
+- https://github.com/FaBoPlatform/FaBo/tree/master/0105_vibrator
