@@ -16,6 +16,12 @@ I/Oピンから赤外線LEDをON/OFFを制御することができます。
 ## Schematic
 ![](./img/112_ir_led_sch.png)
 
+## Docs
+
+* [Arduino用サンプル](http://docs.fabo.io/fabo/arduino/brick_analog/112_brick_analog_ir_led.html)
+* [RaspPi用サンプル](http://docs.fabo.io/fabo/rasppi/brick_analog/112_brick_analog_ir_led.html)
+* [IchogoJam用サンプル](http://docs.fabo.io/fabo/ichigojam/brick_analog/112_brick_analog_ir_led.html)
+
 ## Parts Specification
 | Document |
 |:--|

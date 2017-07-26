@@ -20,6 +20,12 @@ LED Brickを点灯/消灯させる際などに使用します。
 ## Schematic
 ![](./img/110_tilt_sch.png)
 
+## Docs
+
+* [Arduino用サンプル](http://docs.fabo.io/fabo/arduino/brick_analog/110_brick_analog_tilt.html)
+* [RaspPi用サンプル](http://docs.fabo.io/fabo/rasppi/brick_analog/110_brick_analog_tilt.html)
+* [IchogoJam用サンプル](http://docs.fabo.io/fabo/ichigojam/brick_analog/110_brick_analog_tilt.html)
+
 ## Parts
 - 傾斜(振動)スイッチ
 

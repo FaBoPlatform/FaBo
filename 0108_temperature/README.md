@@ -1,5 +1,5 @@
 # #108 Temperature Brick
-<center>![](/img/108_temperature.jpg)
+<center>![](./img/108_temperature.jpg)
 <!--COLORME-->
 
 ## Overview
@@ -14,6 +14,13 @@
 
 ## Schematic
 ![](./img/108_temperature_sch.png)
+
+## Docs
+
+* [Arduino用サンプル](http://docs.fabo.io/fabo/arduino/brick_analog/108_brick_analog_temperature.html)
+* [RaspPi用サンプル](http://docs.fabo.io/fabo/rasppi/brick_analog/108_brick_analog_temperature.html)
+* [IchogoJam用サンプル](http://docs.fabo.io/fabo/ichigojam/brick_analog/108_brick_analog_temperature.html)
+
 
 ## LM61CIZ Datasheet
 | Document |
