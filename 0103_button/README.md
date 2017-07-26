@@ -1,12 +1,11 @@
-# #120 Button Brick
+# 103 Button Brick
 
 <center>
-![](/img/100_analog/product/120.jpg)
+![](./img/103_button.jpg)
 <!--COLORME-->
 
 ## Overview
 ボタンを使ったBrickです。I/OピンよりボタンのON/OFFの状態を取得することができます。
-ONを押すと、I/OピンとGNDがつながります。
 
 ※ボタンカバー部分の色はランダムで送付するため色のご指定はできません。あらかじめご了承ください。
 
@@ -16,7 +15,7 @@ ONを押すと、I/OピンとGNDがつながります。
 |◯|◯|◯|
 
 ## Schematic
-![](./image/120_button.png)
+![](./img/103_button_sch.png)
 
 ## Docs
 
