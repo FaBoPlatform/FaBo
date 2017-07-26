@@ -1,6 +1,7 @@
 # #107 LimitSwitch Brick
 
-<center>![](./img/107_limitswitch.jpg)
+<center>
+![](./img/107_limitswitch.jpg)
 <!--COLORME-->
 
 ## Overview
