@@ -28,3 +28,4 @@
 * [0203 color](/0203_color/README.md)
 * [0204 barometer](/0204_barometer/README.md)
 * [0205 Proximity](/0205_proximity/README.md)
+* [0206 UV](/0206_uv/README.md)
