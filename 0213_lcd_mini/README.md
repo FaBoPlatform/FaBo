@@ -1,6 +1,8 @@
 # #213 LCD mini I2C Brick
 
-<center>![](./img/213_lcdmini.jpg)
+<center>
+
+![](./img/213_lcdmini.jpg)
 <!--COLORME-->
 
 ## Overview
