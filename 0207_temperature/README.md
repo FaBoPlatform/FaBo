@@ -1,6 +1,8 @@
 # #207 Temperature I2C Brick
 
-<center>![](./img/207_temperature.jpg)
+<center>
+
+![](./img/207_temperature.jpg)
 <!--COLORME-->
 
 ## Overview
@@ -25,14 +27,13 @@ I2Cでデータを取得できます。
 | 0x48 |
 
 ## Schematic
-![](/img/200_i2c/schematic/207_temperature_sch.png)
+![](./img/207_temperature_sch.png)
 
 ## Docs
 
 * [Arduino用サンプル](http://docs.fabo.io/fabo/arduino/brick_i2c/207_brick_i2c_temperature.html)
 * [RaspPi用サンプル](http://docs.fabo.io/fabo/rasppi/brick_i2c/207_brick_i2c_temperature.html)
 * [IchogoJam用サンプル](http://docs.fabo.io/fabo/ichigojam/brick_i2c/207_brick_i2c_temperature.html)
-
 
 ## Parts
 - Analog Devices ADT7410
