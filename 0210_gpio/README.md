@@ -1,6 +1,8 @@
 # #210 GPIO I2C Brick
 
-<center>![](./img/210_gpio.jpg)
+<center>
+
+![](./img/210_gpio.jpg)
 <!--COLORME-->
 
 ## Overview
