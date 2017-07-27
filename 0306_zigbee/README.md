@@ -1,7 +1,4 @@
-# #304 USB Serial Brick
+# #306 ZigBee Serial Brick
 
-[#304 USB Serial Brick](http://fabo.io/304.html)
-
-- Eagle PCB
-- Schematic Image
-- Sample Code
+## Overview
+ZigBee通信ができるBrickです。

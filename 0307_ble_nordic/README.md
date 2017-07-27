@@ -1,6 +1,38 @@
 # #307 BLE Nordic Serial Brick
 
-[#307 BLE Nordic Serial Brick](http://fabo.io/307.html)
+<center>
 
-- Eagle PCB
-- Schematic Image
+![](./img/0307_ble_nordic.jpg)
+<!--COLORME-->
+
+## Overview
+NRF51モジュールを使用したBLE（Bluetooth Low Energy）のBrickです。
+
+シリアルにて制御できるFirmwareが書き込まれているため、Arduino等からシリアル通信にてBLEを制御することができます。
+
+BLEの転送レートは115200bpsに設定してあります。
+
+## Connecting
+Serialコネクタへ接続します。
+
+![](/img/300_serial/connect/307_ble_nordic_connect.jpg)
+
+## Support
+|Arduino|RaspberryPI|
+|:--:|:--:|
+|◯|◯|
+
+## MDBT40 Datasheet
+
+|Document|
+|--|
+|[MDBT40 Datasheet](http://www.raytac.com/download/MDBT40/MDBT40%20spec-Version%20A4.pdf)|
+
+## Schematic
+![](./img/0307_ble_nordic_sch.png)
+
+## Parts
+- raytac MDBT40
+
+## GitHub
+- https://github.com/FaBoPlatform/FaBo/tree/master/307_ble_nordic
