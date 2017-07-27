@@ -1,17 +1,14 @@
 # #211 7Segment LED I2C Brick
 
-<center>![](./img/211_7seg.jpg)
+<center>
+
+![](./img/211_7seg.jpg)
 <!--COLORME-->
 
 ## Overview
 ７セグメントLEDを使ったBrickです。
 
 I2Cで表示パターンを制御できます。
-
-## Connecting
-I2Cコネクタへ接続します。
-
-<center>![](/img/200_i2c/connect/211_7seg_connect.jpg)
 
 ## Support
 |Arduino|RaspberryPI|IchigoJam|
@@ -31,7 +28,7 @@ I2Cコネクタへ接続します。
 FaBo Brickでは、初期値に0x20が設定されています。Brick裏面のソルダージャンパーで設定を変更できます。
 
 ## Schematic
-![](./img/200_i2c/211_7seg_sch.png)
+![](./img/211_7seg_sch.png)
 
 ## Docs
 
