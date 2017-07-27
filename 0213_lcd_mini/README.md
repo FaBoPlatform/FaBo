@@ -2,7 +2,7 @@
 
 <center>
 
-![](./img/213_lcdmini.jpg)
+![](./img/213_lcd_mini.jpg)
 <!--COLORME-->
 
 ## Overview
