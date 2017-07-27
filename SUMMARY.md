@@ -30,4 +30,7 @@
 * [0205 Proximity](/0205_proximity/README.md)
 * [0206 UV](/0206_uv/README.md)
 * [0207 Temperlature](/0207_temperature/README.md)
+* [0208 Humidty](/0208_humidity/README.md)
+* [0209 KTemp](/0209_ktemp/README.md)
+* [0210 GPIO](/0210_gpio/README.md)
 
