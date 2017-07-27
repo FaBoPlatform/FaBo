@@ -24,3 +24,7 @@
 * [0119 Reflector](/0119_reflector/README.md)
 * [0120 Button](/0120_button/README.md)
 * [0201 3axis](/0201_3axis/README.md)
+* [0202 9axis](/0202_9axis/README.md)
+* [0203 color](/0203_color/README.md)
+* [0204 barometer](/0204_barometer/README.md)
+* [0205 Proximity](/0205_proximity/README.md)
