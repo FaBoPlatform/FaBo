@@ -1,6 +1,8 @@
 # #217 Ambient Light I2C Brick
 
-<center>![](./img/217_ambientlight.jpg)
+<center>
+
+![](./img/217_ambientlight.jpg)
 <!--COLORME-->
 
 ## Overview
@@ -24,7 +26,7 @@ I2Cで明るさを取得することができます。
 | 0x44 |
 
 ## Schematic
-![](/img/200_i2c/schematic/217_ambientlight.png)
+![](./img/217_ambientlight_sch.png)
 
 ## Docs
 
