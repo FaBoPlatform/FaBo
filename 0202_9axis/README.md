@@ -1,17 +1,14 @@
 # #202 9Axis I2C Brick
 
-<center>![](/img/200_i2c/product/202.jpg)
+<center>
+
+![](/img/202_9axis.jpg)
 <!--COLORME-->
 
 ## Overview
 1チップで3軸加速度、3軸ジャイロ、3軸コンパスを取得できるセンサを使用したBrickです。
 
 I2Cでデータを取得できます。
-
-## Connecting
-I2Cコネクタへ接続します。
-
-![](./img/202_9axis_connect.jpg)
 
 ## Support
 |Arduino|RaspberryPI|
