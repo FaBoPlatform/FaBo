@@ -38,9 +38,9 @@ I2Cで3軸の加速度データを取得することがきます。
 
 ## Docs
 
-* [Arduino用サンプル](http://docs.fabo.io/fabo/arduino/brick_analog/201_brick_i2c_3axis.html)
-* [RaspPi用サンプル](http://docs.fabo.io/fabo/rasppi/brick_analog/201_brick_i2c_3axis.html)
-* [IchogoJam用サンプル](http://docs.fabo.io/fabo/ichigojam/brick_analog/201_brick_i2c_3axis.html)
+* [Arduino用サンプル](http://docs.fabo.io/fabo/arduino/brick_i2c/201_brick_i2c_3axis.html)
+* [RaspPi用サンプル](http://docs.fabo.io/fabo/rasppi/brick_i2c/201_brick_i2c_3axis.html)
+* [IchogoJam用サンプル](http://docs.fabo.io/fabo/ichigojam/brick_i2c/201_brick_i2c_3axis.html)
 
 
 ## Parts
