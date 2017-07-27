@@ -1,6 +1,8 @@
 # #204 Barometer I2C Brick
 
-<center>![](./img/204_barometer.jpg)
+<center>
+
+![](./img/204_barometer.jpg)
 <!--COLORME-->
 
 ## Overview
@@ -24,7 +26,7 @@ I2Cでデータを取得できます。
 | 0x60 |
 
 ## Schematic
-![](/img/200_i2c/schematic/204_barometer_sch.png)
+![](./img/204_barometer_sch.png)
 
 ## Docs
 
