@@ -24,7 +24,7 @@ I2Cで表示データを制御できます。
 | 0x3E |
 
 ## Schematic
-![](./img/213_lcd_mini.png)
+![](./img/213_lcd_mini_sch.png)
 
 
 ## Docs
