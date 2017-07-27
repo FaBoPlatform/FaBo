@@ -1,6 +1,8 @@
 # #215 RTC I2C Brick
 
-<center>![](./img/215_rtc.jpg)
+<center>
+
+![](./img/215_rtc.jpg)
 <!--COLORME-->
 
 ## Overview
@@ -23,7 +25,7 @@ I2Cでデータを取得できます。
 | 0x51 |
 
 ## Schematic
-![](./img/215_rtc.png)
+![](./img/215_rtc_sch.png)
 
 ## Docs
 
