@@ -33,4 +33,10 @@
 * [0208 Humidty](/0208_humidity/README.md)
 * [0209 KTemp](/0209_ktemp/README.md)
 * [0210 GPIO](/0210_gpio/README.md)
+* [0211 7seg](/0211_7seg/README.md)
+* [0212 lcd](/0212_lcd/README.md)
+* [0213 lcdmini](/0213_lcdmini/README.md)
+* [0214 oled](/0214_oled/README.md)
+* [0215 rtc](/0215_rtc/README.md)
+* [0217 ambientlight](/0217_ambientlight/README.md)
 
