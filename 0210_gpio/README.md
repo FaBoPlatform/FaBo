@@ -26,7 +26,7 @@ I2Cで8個のLEDを制御できます。
 | 0x20 |
 
 ## Schematic
-![](/img/200_i2c/schematic/210_gpio.png)
+![](./img/210_gpio_sch.png)
 
 ## Docs
 
