@@ -1,6 +1,8 @@
 # #214 OLED I2C Brick
 
-<center>![](./img/214_oled.jpg)
+<center>
+
+![](./img/214_oled.jpg)
 <!--COLORME-->
 
 ## Overview
@@ -25,7 +27,6 @@ I2Cで表示データを制御できます。
 
 ## Schematic
 ![](./img/214_oled_sch.png)
-
 
 ## Docs
 
