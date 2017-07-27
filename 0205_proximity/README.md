@@ -1,17 +1,14 @@
 # #205 Proximity I2C Brick
 
-<center>![](./img/205_proximity.jpg)
+<center>
+
+![](./img/205_proximity.jpg)
 <!--COLORME-->
 
 ## Overview
 近接センサーを使ったBrickです。
 
 I2Cでデータを取得できます。
-
-## Connecting
-I2Cコネクタへ接続します。
-
-![](/img/200_i2c/connect/205_proximity_connect.jpg)
 
 ## Support
 |Arduino|RaspberryPI|IchigoJam|Edison|
