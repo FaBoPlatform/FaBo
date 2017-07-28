@@ -1,6 +1,6 @@
 # #401 ColorLED One
 
-<center>![](./img/401_led.jpg)
+<center>![](./img/401_led_one.jpg)
 <!--COLORME-->
 
 ## Overview
@@ -17,7 +17,7 @@ RGB Color LEDを使ったBrickです。
 |[WS2812B Datasheet](http://www.adafruit.com/datasheets/WS2812B.pdf)|
 
 ## Schematic
-![](./img/401_led_one.png)
+![](./img/401_led_one_one.png)
 
 ## Parts
 - RGB LED WS2812B
