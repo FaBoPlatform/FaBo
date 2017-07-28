@@ -60,6 +60,8 @@
 * [0507 outin_dragonboard](/0507_outin_dragonboard/README.md)
 * [0508 outin_imp](/0508_outin_imp/README.md)
 * [0601 motor](/0601_motor/README.md)
+* [0602_stmotor](/0602_stmotor/README.md)
+* [0603_ct](/0603_ct/README.md)
 * [0604 romwriter](/0604_romwriter/README.md)
 * [0605 motor_rasppi](/0605_motor_rasppi/README.md)
 * [0606 motor_ichigojam](/0606_motor_ichigojam/README.md)
