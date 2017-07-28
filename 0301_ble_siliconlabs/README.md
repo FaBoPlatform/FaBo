@@ -30,7 +30,7 @@ Serialコネクタは、Arduino用、RaspberryPI用、Ichigojam用のOUT/INシ�
 |[BLE113 Datasheet](http://www.mouser.com/catalog/specsheets/Bluegiga_Technologies_BLE113_Datasheet.pdf)|
 
 ## Schematic
-![](/img/301_ble_siliconlabs_sch.png)
+![](./img/301_ble_siliconlabs_sch.png)
 
 ## Docs
 
