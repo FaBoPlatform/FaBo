@@ -56,7 +56,7 @@
 * [0502 outin_raspberrypi](/0502_outin_raspberrypi/README.md)
 * [0503 outin_ichigojam](/0503_outin_ichigojam/README.md)
 * [0505 outin_ichigojam](/0505_outin_kinomacreate/README.md)
-* [0506 outin_raspberrypi_zero](/0505_outin_raspbberypi_zero/README.md)
+* [0506 outin_raspberrypi_zero](/0506_outin_raspberrypizero/README.md)
 * [0507 outin_dragonboard](/0507_outin_dragonboard/README.md)
 * [0508 outin_imp](/0508_outin_imp/README.md)
 * [0601 motor](/0601_motor/README.md)
