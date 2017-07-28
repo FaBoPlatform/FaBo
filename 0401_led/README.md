@@ -1,7 +1,26 @@
-# #401 ColorLED One Brick
+# #401 ColorLED One
 
-[#401 ColorLED One Brick](http://fabo.io/401.html)
+<center>![](./img/401_led.jpg)
+<!--COLORME-->
 
-- Eagle PCB
-- Schematic Image
-- Sample Code
+## Overview
+RGB Color LEDを使ったBrickです。
+
+## Support
+|Arduino|RaspberryPI|
+|:--:|:--:|
+|◯|◯|
+
+## WS2812B Datasheet
+|Document|
+|--|
+|[WS2812B Datasheet](http://www.adafruit.com/datasheets/WS2812B.pdf)|
+
+## Schematic
+![](./img/401_led_one.png)
+
+## Parts
+- RGB LED WS2812B
+
+## GitHub
+- https://github.com/FaBoPlatform/FaBo/tree/master/401_led
