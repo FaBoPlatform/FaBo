@@ -20,7 +20,7 @@ SiliconLabs BLE113を使用したBLE（Bluetooth Low Energy）のBrickです。
 |[BLE113 Datasheet](http://www.mouser.com/catalog/specsheets/Bluegiga_Technologies_BLE113_Datasheet.pdf)|
 
 ## Schematic
-![](./img/301_ble_siliconlabs.png)
+![](./img/301_ble_siliconlabs_sch.png)
 
 ## Docs
 
