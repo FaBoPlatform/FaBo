@@ -7,11 +7,7 @@
 
 ## Overview
 SiliconLabs BLE113を使用したBLE（Bluetooth Low Energy）のBrickです。
-シリアルにて制御できるFirmwareが書き込まれているため、Arduino等からシリアル通信にてBLEを制御することができます。
-
-BLEの転送レートは9600bpsに設定してあります。
-
-写真はArduinoの接続例です。
+シリアルから、コマンドで制御して操作します。
 
 ## Support
 |Arduino|RaspberryPI|IchigoJam|
