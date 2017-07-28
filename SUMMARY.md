@@ -70,7 +70,7 @@
 * [0703 breakout_i2c](/0703_breakout_i2c/README.md)
 * [0704 breakout_serial](/0704_breakout_serial/README.md)
 * [0705 breakout_3pin_2mm](/0705_breakout_3pin_2mm/README.md)
-* [0706 breakout_i2c_2mm](/0706_0706_breakout_i2c_2mm/README.md)
+* [0706 breakout_i2c_2mm](/0706_breakout_i2c_2mm/README.md)
 * [0707 breakout_serial_2mm](/0707_breakout_serial_2mm/README.md)
 * [0708 universal_3pin](/0708_universal_3pin/README.md)
 * [0709 universal_i2c](/0709_universal_i2c/README.md)
