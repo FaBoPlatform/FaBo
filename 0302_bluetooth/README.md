@@ -10,11 +10,6 @@ Bluetooth通信ができるBrickです。
 
 PCやスマートフォンなどの端末とシリアル通信することができます。
 
-## Connecting
-Serialコネクタへ接続します。
-
-![](/img/300_serial/connect/302_bluetooth_connect.jpg)
-
 ## Support
 |Arduino|RaspberryPI|IchigoJam|
 |:--:|:--:|:--:|
