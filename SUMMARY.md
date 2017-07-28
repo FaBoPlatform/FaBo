@@ -80,7 +80,7 @@
 * [0714 breakout_arduino_spi](/0714_breakout_arduino_spi/README.md)
 * [0715 repeater_i2c](/0715_repeater_i2c/README.md)
 * [1101 case_arduino_uno](/1101_case_arduino_uno/README.md)
-* [1102 case_ardino_mega](/1102_case_ardino_mega/README.md)
+* [1102 case_ardino_mega](/1102_case_arduino_mega/README.md)
 * [1103 case_arduino_yun](/1103_case_arduino_yun/README.md)
 * [1104 case_raspberrypi](/1104_case_raspberrypi/README.md)
 * [1105 case_ichigojam](/1105_case_ichigojam/README.md)
