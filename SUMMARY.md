@@ -98,4 +98,8 @@
 * [1301 cable_3pin](/1301_cable_3pin/README.md)
 * [1302 cable_4pin](1302_cable_4pin/README.md)
 * [1401 Cardboard Plus](/1401_cardboardplus/README.md)
+* [1501 propeller](/1501_propeller/README.md)
+* [1502 matrix_plate](/1502_matrix_plate/README.md)
+* [1503 smartlight](/1503_smartlight/README.md)
+* [1504 remotecontroller](/1504_remotecontroller/README.md)
 
