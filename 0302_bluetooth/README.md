@@ -55,6 +55,10 @@ sudo screen /dev/tty.XXXXX 115200
 
 * 終了する場合、[Ctrl+A]->[Ctrl+¥]->[Y]の順にキーを押す
 
+## Docs
+
+* [Arduino用サンプル](http://docs.fabo.io/fabo/arduino/brick_serial/302_brick_serial_bluetooth.html)
+* [RaspPi用サンプル](http://docs.fabo.io/fabo/rasppi/brick_serial/302_brick_serial_bluetooth.html)
 
 ## Github
 * Arduino
