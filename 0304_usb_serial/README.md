@@ -10,7 +10,7 @@ FT232RLを使用した、USBシリアル通信ができるBrickです。
 
 ## Support
 |Arduino|RaspberryPI|IchigoJam|
-|:--:|:--:|:--:|:--:|
+|:--:|:--:|:--:|
 |◯|◯|◯|
 
 ## FT232RL Datasheet
