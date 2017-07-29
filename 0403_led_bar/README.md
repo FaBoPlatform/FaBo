@@ -2,7 +2,7 @@
 
 <center>
   
-![](/img/403_led_bar.jpg)
+![](./img/403_led_bar.jpg)
 <!--COLORME-->
 
 ## Overview
