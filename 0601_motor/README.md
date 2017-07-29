@@ -42,5 +42,6 @@ Arduino UNO R3/R2では使用可能です。
 
 | モーター | Slave Address |
 |:--:|:--:|
-| Motor1 | |
-| Motor2 | |
+| Motor1 | 0x64 |
+| Motor2 | 0x63 |
+
