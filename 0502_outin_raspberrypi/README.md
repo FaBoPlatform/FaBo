@@ -2,7 +2,7 @@
 
 <center>
   
-![](./img/502_outin_rasppi.jpg)
+![](./img/502_outin_raspberrypi.jpg)
 <!--COLORME-->
 
 ## Overview
