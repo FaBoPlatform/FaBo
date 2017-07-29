@@ -1,8 +1,6 @@
-# Shield outin
+# #504 OUT/IN Shield for Chirimen
 
-#### Parts list
+<!--COLORME-->
 
-- EG1218 ( [Mouser] (http://www.mouser.jp/Search/ProductDetail.aspx?R=EG1218virtualkey61200000virtualkey612-EG1218) )
-
-#### Version
-0.1 (2014/12/20)
+## Overview
+ChirimenとBrickに対応した各種センサーやボタンを、コネクタに挿すだけで簡単に使いはじめることができるChirimen対応シールドです。
