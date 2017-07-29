@@ -43,3 +43,5 @@ Arduino UNO R3/R2では使用可能です。
 ## 回路図
 
 ![](./img/601_motor_arduino_sch.png)
+
+
