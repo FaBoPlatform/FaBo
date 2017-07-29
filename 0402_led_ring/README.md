@@ -2,7 +2,7 @@
 
 <center>
   
-![](./img/402_led.jpg)
+![](./img/402_led_ring.jpg)
 <!--COLORME-->
 
 ## Overview
@@ -19,7 +19,7 @@ RGB Color LEDをRing状に12個配置したBrickです。
 |[WS2812B Datasheet](http://www.adafruit.com/datasheets/WS2812B.pdf)|
 
 ## Schematic
-![](./img/402_led_ring.png)
+![](./img/402_led_ring_sch.png)
 
 ## Parts
 - RGB LED WS2812B
