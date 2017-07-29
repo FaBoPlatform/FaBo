@@ -1,8 +1,13 @@
-# Shield outin
+# #505 OUT/IN Shield for Kinoma Create
 
-#### Parts list
+<center>
+  
+![](./img/500_kinomacreate.jpg)
+<!--COLORME-->
 
-- EG1218 ( [Mouser] (http://www.mouser.jp/Search/ProductDetail.aspx?R=EG1218virtualkey61200000virtualkey612-EG1218) )
+## Overview
+OUT/IN Shield for Kinoma Createは、Kinoma Createと各種センサーやボタンをケーブルを1本接続するだけで使えるKinoma Create対応シールドです。
 
-#### Version
-0.1 (2014/12/20)
+Kinoma Create本体は含まれません。別途、お買い求めください。
+
+![](./img/500_kinomacreate_sch.jpg)
