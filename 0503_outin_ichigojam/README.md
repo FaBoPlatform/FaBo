@@ -34,7 +34,7 @@ I2Cを使用する場合、プルアップ設定ジャンパをON側に設定し
 ### シリアルコネクタ(4pin)
 
 ## Schematic
-![](./img/503_outin_ichigojam.png)
+![](./img/503_outin_ichigojam_sch.png)
 
 ## GitHub
 - https://github.com/FaBoPlatform/FaBo/tree/master/503_outin_ichigojam
