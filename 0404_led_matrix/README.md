@@ -1,6 +1,28 @@
-# #404 ColorLED Matrix Brick
+# #404 ColorLED Matrix
 
-[#404 ColorLED Matrix Brick](http://fabo.io/404.html)
+<center>
+  
+![](./img/404_led_matrix.jpg)
+<!--COLORME-->
 
-- Eagle PCB
-- Schematic Image
+## Overview
+RGB Color LEDを使った、8☓8 MatrixのBrickです。
+
+## Support
+|Arduino|RaspberryPI|
+|:--:|:--:|
+|◯|◯|
+
+## WS2812B Datasheet
+|Document|
+|--|
+|[WS2812B Datasheet](http://www.adafruit.com/datasheets/WS2812B.pdf)|
+
+## Schematic
+![](./img/404_led_matrix_sch.png)
+
+## Parts
+- RGB LED WS2812B
+
+## GitHub
+- https://github.com/FaBoPlatform/FaBo/tree/master/404_led_matrix
