@@ -38,5 +38,9 @@ Arduino UNO R3/R2では使用可能です。
 |:--:|
 | [DRV8830](http://www.tij.co.jp/jp/lit/ds/symlink/drv8830.pdf) |
 
+## Slave Address
 
-
+| モーター | Slave Address |
+|:--:|:--:|
+| Motor1 | |
+| Motor2 | |
