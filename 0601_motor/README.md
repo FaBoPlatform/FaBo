@@ -1,36 +1,71 @@
-# Shield_motor
+# #601 Motor Shield for Arduino
 
-## Version
-- 0.1 (2014/12/20)
+<center>
+  
+![](./img/600_motor_product.jpg)
+<!--COLORME-->
 
-## Parts list
-- TA7291FG ( [DigiKey](http://www.digikey.jp/product-detail/ja/TA7291FG(O,EL)/TA7291FG(OEL)CT-ND/1730107) )
+## Overview
+2個のDCモーターを制御することができるシールドです。
 
-## Sample
-Motor Sample1[Source](https://github.com/FaBo1/controller_motor/blob/master/Arduino/MotorSample1/MotorSample1.ino) <br>
-```
-// Using #402 Module Motor, #202 Controller Motor
-void setup() 
-{ 
-  pinMode(3, OUTPUT);
-  pinMode(4, OUTPUT);
-  pinMode(5, OUTPUT);
-} 
+モーターを動かすには外部からの電源供給が必要になります。
 
-void loop()
-{
-  digitalWrite(3, HIGH); 
-  digitalWrite(4, LOW);   
-  analogWrite(5, 255); // 0-255 強さ
+## コネクタ
 
-  delay(10);
-}
-```
+### DCモータ用コネクタ
+- Moter1用コネクタ
+ - D2 (信号1)
+ - D4 (信号2)
+- Moter2用コネクタ
+ - D5 (信号1)
+ - D7 (信号2)
+- 外部電源(DCモータ用)
+
+### アナログコネクタ
+- A0
+- A1
+
+### デジタルコネクタ
+- D12
+- D13
+
+### PWM/Servoコネクタ
+- サーボモータ接続用コネクタ
+ - PWMに対応するD9
+
+### シリアルコネクタ
+SoftwareSerialとして使用するため、RX,TXはそれぞれ、D12,D13になります
+
+### I2Cコネクタ
+Arduino MEGAではR3以降から対応になります。
+Arduino UNO R3/R2では使用可能です。
 
 
-## Using Method
-[analogRead()](http://arduino.cc/de/Reference/AnalogRead)<br>
-[map()](http://arduino.cc/de/Reference/Map)<br>
+## PIN配置について
+モーターシールドのピンは以下のようになっています。
 
-## Example
-Robot Car Kit
+| Pin |モーターNo| 説明 |
+| -- | -- | -- |
+| D2 | 1 | 信号1 |
+| D3 | 1 | 出力値設定 |
+| D4 | 1 | 信号2 |
+
+| Pin |モーターNo| 説明 |
+| -- | -- | -- |
+| D5 | 2 | 信号1 |
+| D6 | 2 | 出力値設定 |
+| D7 | 2 | 信号2 |
+
+
+## 動作方法について
+モーター（モータードライバ）に対して2つの信号を送り、その組み合わせによってモーターを制御することができます。
+
+| 信号1 | 信号2 | 動作 |
+| -- | -- | -- |
+| <font color='#FF0000'>HIGH | <font color='#0000FF'>LOW | 前進 |
+| <font color='#0000FF'>LOW | <font color='#FF0000'>HIGH | 後退 |
+| <font color='#0000FF'>LOW | <font color='#0000FF'>LOW | 静止 |
+
+<font color='#FF0000'> 信号1、信号2の両方をHIGHにすると、部品が壊れる可能性があるので設定しないようにして下さい。
+
+
