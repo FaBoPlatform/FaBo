@@ -2,7 +2,7 @@
 
 <center>
   
-![](./img/500_outin_arduino.jpg)
+![](./img/501_outin_arduino.jpg)
 <!--COLORME-->
 
 ## Overview
