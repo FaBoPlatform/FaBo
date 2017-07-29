@@ -33,6 +33,19 @@ Arduino UNO R3/R2では使用可能です。
 
 ![](./img/601_motor_arduino_sch.png)
 
-## Datasheet
+## DRV8830 Datasheet
+| Document |
+|:--:|
+| [DRV8830](http://www.tij.co.jp/jp/lit/ds/symlink/drv8830.pdf) |
+
+## Register
+MPU-9250は、三軸加速度、ジャイロ用とコンパス用の2つのI2C Slave Addressがあります。
+
+### MPU-9250(三軸加速度、ジャイロ)
+
+|Slave Address|
+|:--:|
+|0x68|
+
 
 
