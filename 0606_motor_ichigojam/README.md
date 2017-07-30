@@ -1,6 +1,10 @@
-# #503 OUT/IN Shield for IchigoJam
+# #606 ROM Writer for Arduino
 
-[#503 OUT/IN Shield for IchigoJam](http://fabo.io/503.html)
+<center>
+  
+![](./img/606_motor_ichigojam.jpg)
+<!--COLORME-->
 
-- Eagle PCB
-- Schematic Image
+## 回路図
+
+![](./img/606_motor_ichigojam_sch.png)
