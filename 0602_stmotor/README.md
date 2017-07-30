@@ -2,7 +2,7 @@
 
 <center>
   
-![](./img/602_stmoto.jpg)
+![](./img/602_stmotor.jpg)
 <!--COLORME-->
 
 ## 回路図
