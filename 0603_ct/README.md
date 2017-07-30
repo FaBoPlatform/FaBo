@@ -1,4 +1,4 @@
-# #602 Stepping Motor for Arduino
+# #603 CT Sensor for Arduino
 
 <center>
   
