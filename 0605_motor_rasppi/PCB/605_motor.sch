@@ -14239,8 +14239,8 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <text x="17.78" y="99.06" size="2.54" layer="97">Serial (4pin Side 2mm pitch)</text>
 <text x="162.56" y="134.62" size="2.54" layer="97">GPIO/Servo (3pin Top 2.54mm pitch) x5</text>
 <text x="162.56" y="53.34" size="2.54" layer="97">Analog(3pin Top 2mm pitch) x4</text>
-<text x="292.1" y="243.84" size="2.54" layer="97">Motor 1(Slave Address 0x64)</text>
-<text x="292.1" y="193.04" size="2.54" layer="97">Motor 2(Slave Address 0x65)</text>
+<text x="292.1" y="238.76" size="2.54" layer="97">Motor 1(Slave Address 0x64)</text>
+<text x="292.1" y="187.96" size="2.54" layer="97">Motor 2(Slave Address 0x63)</text>
 </plain>
 <instances>
 <instance part="U$14" gate="G$1" x="345.44" y="5.08"/>
