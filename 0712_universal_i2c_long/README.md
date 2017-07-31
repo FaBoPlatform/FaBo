@@ -1,6 +1,14 @@
-# #503 OUT/IN Shield for IchigoJam
+# #712 Serial Universal
 
-[#503 OUT/IN Shield for IchigoJam](http://fabo.io/503.html)
+<center>
 
-- Eagle PCB
-- Schematic Image
+![](./img/712_universal_i2c_long.jpg)
+<!--COLORME-->
+
+## Overview
+I2C Universalは、プロトタイピング用のBrickです。
+部品を実装することでオリジナルのBrickを作成することができます。
+
+## 回路図
+
+![](./img/712_universal_i2c_long_sch.png)
