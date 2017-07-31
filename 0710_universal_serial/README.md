@@ -1,6 +1,7 @@
 # #710 Serial Universal
 
 <center>
+
 ![](./img/710_universal_serial.jpg)
 <!--COLORME-->
 
