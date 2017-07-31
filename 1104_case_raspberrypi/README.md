@@ -11,7 +11,7 @@ Raspberry PI2 model B用のアクリル製ケースです。
 
 ## 図面
 
-![](./img/1104_case_raspberrypi_cad.jpg)
+![](./img/1104_case_raspberrypi_cad.png)
 
 **ケースのデザインは予告なく変更される場合があります。**
 
