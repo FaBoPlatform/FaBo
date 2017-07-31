@@ -1,6 +1,13 @@
-# #503 OUT/IN Shield for IchigoJam
+# #710 Serial Universal
 
-[#503 OUT/IN Shield for IchigoJam](http://fabo.io/503.html)
+<center>
+![](./img/710_universal_serial.jpg)
+<!--COLORME-->
 
-- Eagle PCB
-- Schematic Image
+## Overview
+Serial Universalは、プロトタイピング用のBrickです。
+部品を実装することでオリジナルのBrickを作成することができます。
+
+## 回路図
+
+![](./img/710_universal_serial_sch.png)
