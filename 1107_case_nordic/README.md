@@ -21,7 +21,7 @@ Nordic Semiconductor社のnRF51-DK用アクリル製ケースです。
 
 ## ケース構成
 
-![](/img/1100_case/manual/nordic_00.jpg)
+![](./img/nordic_00.jpg)
 
 (1)が一番下、(6)が一番上になります。
 
