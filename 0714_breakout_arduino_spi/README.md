@@ -1,6 +1,14 @@
-# #503 OUT/IN Shield for IchigoJam
+# #714 Arduino SPI
 
-[#503 OUT/IN Shield for IchigoJam](http://fabo.io/503.html)
+<center>
 
-- Eagle PCB
-- Schematic Image
+![](./img/714_arduino_spi.jpg)
+<!--COLORME-->
+
+## Overview
+Arduino SPIは、プロトタイピング用のBrickです。
+部品を実装することでオリジナルのBrickを作成することができます。
+
+## 回路図
+
+![](./img/714_arduino_spi_sch.png)
