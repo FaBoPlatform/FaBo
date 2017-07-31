@@ -1,6 +1,13 @@
-# #503 OUT/IN Shield for IchigoJam
+# #707 Serial Breakout
 
-[#503 OUT/IN Shield for IchigoJam](http://fabo.io/503.html)
+<center>
+  
+![](./img/707_breakout_serial.jpg)
+<!--COLORME-->
 
-- Eagle PCB
-- Schematic Image
+## Overview
+Serial Breakoutは、FaBo Brick用Serialの2mmピッチコネクタと2.54mmピンヘッダの変換用ボードです。ブレッドボード等に挿して使用します。
+
+## 回路図
+
+![](./img/707_breakout_serial_sch.png)
