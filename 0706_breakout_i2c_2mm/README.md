@@ -1,6 +1,10 @@
-# #503 OUT/IN Shield for IchigoJam
+# #706 I2C Breakout
 
-[#503 OUT/IN Shield for IchigoJam](http://fabo.io/503.html)
+<center>![](/img/706_i2c_breakout.jpg)
+<!--COLORME-->
 
-- Eagle PCB
-- Schematic Image
+## Overview
+I2C Breakoutは、FaBo Brick用I2Cの2mmピッチコネクタと2.54mmピンヘッダの変換用ボードです。ブレッドボード等に挿して使用します。
+
+## 回路図
+
