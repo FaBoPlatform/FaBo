@@ -1,6 +1,14 @@
-# #503 OUT/IN Shield for IchigoJam
+# #708 3Pin Universal
 
-[#503 OUT/IN Shield for IchigoJam](http://fabo.io/503.html)
+<center>
 
-- Eagle PCB
-- Schematic Image
+![](./img/708_breakout_3pin.jpg)
+<!--COLORME-->
+
+## Overview
+3Pin Universalは、プロトタイピング用のBrickです。
+部品を実装することでオリジナルのBrickを作成することができます。
+
+## 図面
+
+![](./img/708_breakout_3pin_sch.png)
