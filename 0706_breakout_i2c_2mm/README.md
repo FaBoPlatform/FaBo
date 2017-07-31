@@ -8,3 +8,4 @@ I2C Breakoutは、FaBo Brick用I2Cの2mmピッチコネクタと2.54mmピンヘ�
 
 ## 回路図
 
+![](/img/706_i2c_breakout_sch.png)
