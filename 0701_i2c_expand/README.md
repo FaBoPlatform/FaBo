@@ -1,6 +1,12 @@
-# #503 OUT/IN Shield for IchigoJam
+# #701 OUT/IN I2C Expand board
+<center>
+![](./img/701_i2c_expand.jpg)
+<!--COLORME-->
 
-[#503 OUT/IN Shield for IchigoJam](http://fabo.io/503.html)
+## Overview
+OUT/IN Shieldに複数のI2C Brickを接続するための拡張ボードです。
 
-- Eagle PCB
-- Schematic Image
+## 回路図
+
+![](./img/701_i2c_expand_sch.png)
+
