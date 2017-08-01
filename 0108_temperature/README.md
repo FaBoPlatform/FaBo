@@ -32,8 +32,5 @@
 ## Parts
 - IC温度センサ LM61CIZ
 
-## Community
-<a href="https://gitter.im/FaBoPlatform/Lobby" target="_blank"><img src="https://badges.gitter.im/gitterHQ/developers.svg" alt="Gitter"></a>
-
 ## GitHub
 - https://github.com/FaBoPlatform/FaBo/tree/master/0108_temperature
