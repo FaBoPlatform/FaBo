@@ -1,7 +1,5 @@
 # #113 IR Receiver Brick
 
-<center>
-
 ![](./img/113_ir_receive.jpg)
 <!--COLORME-->
 
@@ -32,6 +30,9 @@ I/Oピンから赤外線受信のON/OFFを取得することができます。
 
 ## Parts
 - 赤外線フォトトランジスタ
+
+## Community
+<a href="https://gitter.im/FaBoPlatform/Lobby" target="_blank"><img src="https://badges.gitter.im/gitterHQ/developers.svg" alt="Gitter"></a>
 
 ## GitHub
 - https://github.com/FaBoPlatform/FaBo/tree/master/0113_ir_receive
