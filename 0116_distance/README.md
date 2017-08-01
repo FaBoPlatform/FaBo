@@ -1,7 +1,5 @@
 # #116 Distance Brick
 
-<center>
-
 ![](./img/116_distance.jpg)
 <!--COLORME-->
 
@@ -30,6 +28,9 @@ I/Oピンより距離センサーの正面についているレンズから物�
 
 ## Parts
 - 距離センサーモジュール GP2Y0A21YK
+
+## Community
+<a href="https://gitter.im/FaBoPlatform/Lobby" target="_blank"><img src="https://badges.gitter.im/gitterHQ/developers.svg" alt="Gitter"></a>
 
 ## GitHub
 - https://github.com/FaBoPlatform/FaBo/tree/master/116_distance
