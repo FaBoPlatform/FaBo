@@ -27,8 +27,5 @@ Hallセンサーです。
 |:--|
 | [A3144](http://www.allegromicro.com/~/media/Files/Datasheets/A3141-2-3-4-Datasheet.ashx?la=en&hash=BDFBC7C77BB7B12835643BE0F99A3490376C46BB) |
 
-## Community
-<a href="https://gitter.im/FaBoPlatform/Lobby" target="_blank"><img src="https://badges.gitter.im/gitterHQ/developers.svg" alt="Gitter"></a>
-
 ## GitHub
 - https://github.com/FaBoPlatform/FaBo/tree/master/0118_hall
