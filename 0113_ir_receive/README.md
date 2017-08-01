@@ -18,9 +18,9 @@ I/Oピンから赤外線受信のON/OFFを取得することができます。
 
 ## Docs
 
-* [Arduino用サンプル](http://docs.fabo.io/fabo/arduino/brick_analog/113_brick_analog_ir_receiver.html)
-* [RaspPi用サンプル](http://docs.fabo.io/fabo/rasppi/brick_analog/113_brick_analog_ir_receiver.html)
-* [IchogoJam用サンプル](http://docs.fabo.io/fabo/ichigojam/brick_analog/113_brick_analog_ir_receiver.html)
+* [Arduino用サンプル](http://docs.fabo.io/fabo/arduino/brick_analog/113_brick_analog_ir_receive.html)
+* [RaspPi用サンプル](http://docs.fabo.io/fabo/rasppi/brick_analog/113_brick_analog_ir_receive.html)
+* [IchogoJam用サンプル](http://docs.fabo.io/fabo/ichigojam/brick_analog/113_brick_analog_ir_receive.html)
 
 ## Parts Specification
 | Document |
