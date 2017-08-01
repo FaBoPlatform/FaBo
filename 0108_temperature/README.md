@@ -27,10 +27,13 @@
 ## LM61CIZ Datasheet
 | Document |
 |:--|
-| [LM61CIZ Datasheet](http://akizukidenshi.com/catalog/g/gI-02726/) |
+| [LM61CIZ Datasheet](http://l-w-i.net/ds/LM61-j.pdf) |
 
 ## Parts
 - IC温度センサ LM61CIZ
+
+## Community
+<a href="https://gitter.im/FaBoPlatform/Lobby" target="_blank"><img src="https://badges.gitter.im/gitterHQ/developers.svg" alt="Gitter"></a>
 
 ## GitHub
 - https://github.com/FaBoPlatform/FaBo/tree/master/0108_temperature
