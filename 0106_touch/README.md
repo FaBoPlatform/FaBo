@@ -31,8 +31,5 @@ I/Oピンより、感圧部分に加えられた力の大きさの変化をア�
 ## Parts
 - 感圧センサー
 
-## Community
-<a href="https://gitter.im/FaBoPlatform/Lobby" target="_blank"><img src="https://badges.gitter.im/gitterHQ/developers.svg" alt="Gitter"></a>
-
 ## GitHub
 - https://github.com/FaBoPlatform/FaBo/tree/master/106_touch
