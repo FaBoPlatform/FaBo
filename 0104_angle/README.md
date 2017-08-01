@@ -12,12 +12,6 @@ I/Oピンからアナログ値を取得することができます。
 
 LED Brickの明るさを調節する際などに使用します。
 
-### Raspberry PI
-アナログコネクタ(A0〜A7)のいずれかに接続します。
-
-### IchigoJam
-アナログ用コネクタ(IN2またはANA()で設定したコネクタ)のどれかに接続します。
-
 ## Support
 |Arduino|RaspberryPI|IchigoJam|
 |:--:|:--:|:--:|
@@ -34,6 +28,9 @@ LED Brickの明るさを調節する際などに使用します。
 
 ## Parts
 - ボリューム抵抗器A 10k
+
+## Community
+<a href="https://gitter.im/FaBoPlatform/Lobby" target="_blank"><img src="https://badges.gitter.im/gitterHQ/developers.svg" alt="Gitter"></a>
 
 ## GitHub
 - https://github.com/FaBoPlatform/FaBo/tree/master/0104_angle
