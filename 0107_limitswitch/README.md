@@ -1,7 +1,5 @@
 # #107 LimitSwitch Brick
 
-<center>
-
 ![](./img/107_limitswitch.jpg)
 <!--COLORME-->
 
@@ -28,6 +26,9 @@ I/OピンよりスイッチのON/OFFの状態を取得することができま�
 
 ## Parts
 - リミットスイッチ
+
+## Community
+<a href="https://gitter.im/FaBoPlatform/Lobby" target="_blank"><img src="https://badges.gitter.im/gitterHQ/developers.svg" alt="Gitter"></a>
 
 ## GitHub
 - https://github.com/FaBoPlatform/FaBo/tree/master/107_limitswitch
