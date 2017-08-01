@@ -20,9 +20,9 @@ I/OピンよりスイッチのON/OFFの状態を取得することができま�
 
 ## Docs
 
-* [Arduino用サンプル](http://docs.fabo.io/fabo/arduino/brick_analog/107_brick_analog_limitswicth.html)
-* [RaspPi用サンプル](http://docs.fabo.io/fabo/rasppi/brick_analog/107_brick_analog_limitswicth.html)
-* [IchogoJam用サンプル](http://docs.fabo.io/fabo/ichigojam/brick_analog/107_brick_analog_limitswicth.html)
+* [Arduino用サンプル](http://docs.fabo.io/fabo/arduino/brick_analog/107_brick_analog_limitswitch.html)
+* [RaspPi用サンプル](http://docs.fabo.io/fabo/rasppi/brick_analog/107_brick_analog_limitswitch.html)
+* [IchogoJam用サンプル](http://docs.fabo.io/fabo/ichigojam/brick_analog/107_brick_analog_limitswitch.html)
 
 ## Parts
 - リミットスイッチ
