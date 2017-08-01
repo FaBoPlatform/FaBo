@@ -1,7 +1,5 @@
 # #109 Light Brick
 
-<center>
-
 ![](./img/109_light.jpg)
 <!--COLORME-->
 
@@ -31,6 +29,9 @@ CDSセルを使用した光センサーBrickです。
 
 ## Parts
 - CDSセル(5mm)
+
+## Community
+<a href="https://gitter.im/FaBoPlatform/Lobby" target="_blank"><img src="https://badges.gitter.im/gitterHQ/developers.svg" alt="Gitter"></a>
 
 ## GitHub
 - https://github.com/FaBoPlatform/FaBo/tree/master/0109_light
