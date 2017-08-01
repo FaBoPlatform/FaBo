@@ -18,9 +18,9 @@ CDSセルを使用した光センサーBrickです。
 
 ## Docs
 
-* [Arduino用サンプル](http://docs.fabo.io/fabo/arduino/brick_analog/109_brick_analog_light.html)
-* [RaspPi用サンプル](http://docs.fabo.io/fabo/rasppi/brick_analog/109_brick_analog_light.html)
-* [IchogoJam用サンプル](http://docs.fabo.io/fabo/ichigojam/brick_analog/109_brick_analog_light.html)
+* [Arduino用サンプル](http://docs.fabo.io/fabo/arduino/brick_analog/109_brick_analog_ambientlight.html)
+* [RaspPi用サンプル](http://docs.fabo.io/fabo/rasppi/brick_analog/109_brick_analog_ambientlight.html)
+* [IchogoJam用サンプル](http://docs.fabo.io/fabo/ichigojam/brick_analog/109_brick_analog_ambientlight.html)
 
 ## Parts Specification
 | Document |
