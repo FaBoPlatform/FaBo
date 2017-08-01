@@ -30,8 +30,6 @@ I/Oピンから赤外線LEDをON/OFFを制御することができます。
 ## Parts
 - 5mm 赤外線LED OSI5LA5113A
 
-## Community
-<a href="https://gitter.im/FaBoPlatform/Lobby" target="_blank"><img src="https://badges.gitter.im/gitterHQ/developers.svg" alt="Gitter"></a>
 
 ## GitHub
 - https://github.com/FaBoPlatform/FaBo/tree/master/0112_ir_led
