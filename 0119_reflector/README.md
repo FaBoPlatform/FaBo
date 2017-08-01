@@ -6,7 +6,7 @@
 <!--COLORME-->
 
 ## Overview
-Hallセンサーです。
+フォトリフレクターです。ロボットカーのライントレース等で使用できます。
 
 ## Support
 |Arduino|RaspberryPI|IchigoJam|
@@ -26,6 +26,9 @@ Hallセンサーです。
 | Document |
 |:--|
 | LBR-127HLD |
+
+## Community
+<a href="https://gitter.im/FaBoPlatform/Lobby" target="_blank"><img src="https://badges.gitter.im/gitterHQ/developers.svg" alt="Gitter"></a>
 
 ## GitHub
 - https://github.com/FaBoPlatform/FaBo/tree/master/0119_reflector
