@@ -21,8 +21,8 @@
 ## Docs
 
 * [Arduino用サンプル](http://docs.fabo.io/fabo/arduino/brick_analog/115_brick_analog_humidity.html)
-* [RaspPi用サンプル](http://docs.fabo.io/fabo/rasppi/brick_analog/115_brick_analog_humidity.html)
-* [IchogoJam用サンプル](http://docs.fabo.io/fabo/ichigojam/brick_analog/115_brick_analog_humidity.html)
+* RaspPi用サンプル (非対応)
+* IchogoJam用サンプル (非対応)
 
 ## Parts Specification
 | Document |
@@ -31,6 +31,9 @@
 
 ## Parts
 - 湿温度センサモジュールDHT11
+
+## Community
+<a href="https://gitter.im/FaBoPlatform/Lobby" target="_blank"><img src="https://badges.gitter.im/gitterHQ/developers.svg" alt="Gitter"></a>
 
 ## GitHub
 - https://github.com/FaBoPlatform/FaBo/tree/master/0115_humidity
