@@ -25,12 +25,15 @@ ONを押すと、I/OピンとGNDがつながります。
 
 ## Docs
 
-* [Arduino用サンプル](http://docs.fabo.io/fabo/arduino/brick_analog/103_brick_analog_button.html)
-* [RaspPi用サンプル](http://docs.fabo.io/fabo/rasppi/brick_analog/103_brick_analog_button.html)
-* [IchogoJam用サンプル](http://docs.fabo.io/fabo/ichigojam/brick_analog/103_brick_analog_button.html)
+* [Arduino用サンプル](http://docs.fabo.io/fabo/arduino/brick_analog/120_brick_analog_button.html)
+* [RaspPi用サンプル](http://docs.fabo.io/fabo/rasppi/brick_analog/120_brick_analog_button.html)
+* [IchogoJam用サンプル](http://docs.fabo.io/fabo/ichigojam/brick_analog/120_brick_analog_button.html)
 
 ## Parts
 - 12mm角タクトスイッチ
+
+## Community
+<a href="https://gitter.im/FaBoPlatform/Lobby" target="_blank"><img src="https://badges.gitter.im/gitterHQ/developers.svg" alt="Gitter"></a>
 
 ## GitHub
 - https://github.com/FaBoPlatform/FaBo/tree/master/0120_button
