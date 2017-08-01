@@ -27,7 +27,7 @@ LEDのBrickです。発光色は5色（青・緑・赤・白・黄）ありま�
 
 ## Community
 
-<a href="https://gitter.im/FaBoPlatform/Lobby" target="_blank"><img src="https://badges.gitter.im/gitterHQ/developers.svg" alt="Gitter"></a>
+[![Gitter]("https://badges.gitter.im/gitterHQ/developers.svg")](https://gitter.im/FaBoPlatform/Lobby)
 
 ## GitHub
 - https://github.com/FaBoPlatform/FaBo/tree/master/0101_led
