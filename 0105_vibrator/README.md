@@ -1,7 +1,5 @@
 # #105 Vibrator Brick
 
-<center>
-
 ![](./img/105_vibrator.jpg)
 <!--COLORME-->
 
@@ -15,6 +13,8 @@ I/Oピンから振動モーターのON/OFFを制御することができます�
 |:--:|:--:|:--:|
 |◯|x|x|
 
+* RaspPiとIchigoJamは、GPIOの出力が3.3Vのためモーターが振動しません。
+
 ## Schematic
 ![](./img/105_vibrator_sch.png)
 
@@ -24,7 +24,6 @@ I/Oピンから振動モーターのON/OFFを制御することができます�
 * [RaspPi用サンプル](http://docs.fabo.io/fabo/rasppi/brick_analog/105_brick_analog_vibrator.html)
 * [IchogoJam用サンプル](http://docs.fabo.io/fabo/ichigojam/brick_analog/105_brick_analog_vibrator.html)
 
-
 ## Parts Specification
 | Document |
 |:--|
@@ -32,6 +31,9 @@ I/Oピンから振動モーターのON/OFFを制御することができます�
 
 ## Parts
 - 振動モーター LA3R5-480AH1
+
+## Community
+<a href="https://gitter.im/FaBoPlatform/Lobby" target="_blank"><img src="https://badges.gitter.im/gitterHQ/developers.svg" alt="Gitter"></a>
 
 ## GitHub
 - https://github.com/FaBoPlatform/FaBo/tree/master/0105_vibrator
