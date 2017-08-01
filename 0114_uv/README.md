@@ -27,6 +27,11 @@
 * [RaspPi用サンプル](http://docs.fabo.io/fabo/rasppi/brick_analog/114_brick_analog_uv.html)
 * [IchogoJam用サンプル](http://docs.fabo.io/fabo/ichigojam/brick_analog/114_brick_analog_ir_uv.html)
 
+## Parts Specification
+| Document |
+|:--|
+| [GaAsPフォトダイオードG6262](https://www.hamamatsu.com/resources/pdf/ssd/g5645_etc_kgpd1004j.pdf) |
+
 ## Parts
 - GaAsPフォトダイオードG6262
 
