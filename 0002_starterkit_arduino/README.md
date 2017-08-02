@@ -6,7 +6,7 @@
 ## Overview
 Arduinoで、FaBo Brickをちょっと使ってみたい！という方に、手軽にはじめられるキットです。
 
-![](/img/001_starterkit/docs/002_doc.jpg)
+![](/img/002_doc.jpg)
 
 専用ケースに入れてお届けします。
 
