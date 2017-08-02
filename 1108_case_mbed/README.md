@@ -1,6 +1,4 @@
 # #1108 Mbed(Nucleo)ケース
-
-<center>
  
 ![](./img/1108_case_mbed.jpg)
 <!--COLORME-->
