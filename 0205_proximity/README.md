@@ -13,6 +13,10 @@ I2Cでデータを取得できます。
 |:--:|:--:|:--:|:--:|
 |◯|◯|◯|◯|
 
+## Schematic
+![](./img/205_proximity_sch.png)
+
+
 ## VCNL4010 Datasheet
 | Document |
 |:--|
@@ -22,9 +26,6 @@ I2Cでデータを取得できます。
 | I2C Slave Address |
 |:-- |
 | 0x13 |
-
-## Schematic
-![](./img/205_proximity_sch.png)
 
 ## Docs
 
