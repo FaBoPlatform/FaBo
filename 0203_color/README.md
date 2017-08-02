@@ -9,9 +9,12 @@
 センサーより読み取った赤、緑、青、赤外線(明るさ)の4つのデータを、I2Cにて取得することができます。
 
 ## Support
-|Arduino|RaspberryPI|IchigoJam|Edison|
-|:--:|:--:|:--:|:--:|
-|◯|◯|◯|◯|
+|Arduino|RaspberryPI|IchigoJam|
+|:--:|:--:|:--:|
+|◯|◯|◯|
+
+## Schematic
+![](./img/203_color_sch.png)
 
 ## S11059 Datasheet
 | Document |
@@ -22,9 +25,6 @@
 | Slave Address |
 | -- |
 | 0x2A |
-
-## Schematic
-![](./img/203_color_sch.png)
 
 ## Docs
 
