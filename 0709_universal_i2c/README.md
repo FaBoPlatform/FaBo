@@ -1,7 +1,5 @@
 # #709 I2C Universal
 
-<center>
-  
 ![](./img/709_universal_i2c.jpg)
 <!--COLORME-->
 
