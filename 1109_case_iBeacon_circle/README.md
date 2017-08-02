@@ -1,7 +1,5 @@
 # #1109 Circle iBeaconケース
 
-<center>
-
 ![](./img/1109_case_ibeacon_circle.jpg)
 <!--COLORME-->
 
@@ -11,8 +9,6 @@
 FaBo製「#801 iBeacon Circle」用のアクリル製ケースです。
 
 ## 図面
-
-
 
 **ケースのデザインは予告なく変更される場合があります。**
 
