@@ -9,13 +9,12 @@
 I2Cでデータを取得できます。
 
 ## Support
-|Arduino|RaspberryPI|IchigoJam|Edison|
-|:--:|:--:|:--:|:--:|
-|◯|◯|◯|◯|
+|Arduino|RaspberryPI|IchigoJam|
+|:--:|:--:|:--:|
+|◯|◯|◯|
 
 ## Schematic
 ![](./img/205_proximity_sch.png)
-
 
 ## VCNL4010 Datasheet
 | Document |
