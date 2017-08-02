@@ -1,7 +1,5 @@
 # #307 BLE Nordic Serial Brick
 
-<center>
-
 ![](./img/307_ble_nordic.jpg)
 <!--COLORME-->
 
@@ -17,14 +15,14 @@ BLEの転送レートは115200bpsに設定してあります。
 |:--:|:--:|
 |◯|◯|
 
+## Schematic
+![](./img/307_ble_nordic_sch.png)
+
 ## MDBT40 Datasheet
 
 |Document|
 |--|
 |[MDBT40 Datasheet](http://www.raytac.com/download/MDBT40/MDBT40%20spec-Version%20A4.pdf)|
-
-## Schematic
-![](./img/307_ble_nordic_sch.png)
 
 ## Parts
 - raytac MDBT40
