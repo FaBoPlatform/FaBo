@@ -1,7 +1,5 @@
 # #205 Proximity I2C Brick
 
-<center>
-
 ![](./img/205_proximity.jpg)
 <!--COLORME-->
 
