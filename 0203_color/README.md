@@ -1,7 +1,5 @@
 # #203 Color I2C Brick
 
-<center>
-
 ![](./img/203_color.jpg)
 <!--COLORME-->
 
