@@ -1,7 +1,5 @@
 # #605 Motor Driver for Rasberry Pi
 
-<center>
-  
 ![](./img/605_motor_rasppi.jpg)
 <!--COLORME-->
 
