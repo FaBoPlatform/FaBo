@@ -1,5 +1,4 @@
 # #1106 Edisonケース
-<center>
   
 ![](./img/1106_case_edison.jpg)
 <!--COLORME-->
