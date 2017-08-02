@@ -15,6 +15,9 @@ I2Cで表示パターンを制御できます。
 |:--:|:--:|:--:|
 |◯|◯|◯|
 
+## Schematic
+![](./img/211_7seg_sch.png)
+
 ## TLC59208F Datasheet
 | Document |
 | -- |
@@ -26,9 +29,6 @@ I2Cで表示パターンを制御できます。
 | LOW | LOW | LOW | 0x20 |
 
 FaBo Brickでは、初期値に0x20が設定されています。Brick裏面のソルダージャンパーで設定を変更できます。
-
-## Schematic
-![](./img/211_7seg_sch.png)
 
 ## Docs
 
