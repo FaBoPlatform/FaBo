@@ -1,7 +1,5 @@
 # #204 Barometer I2C Brick
 
-<center>
-
 ![](./img/204_barometer.jpg)
 <!--COLORME-->
 
