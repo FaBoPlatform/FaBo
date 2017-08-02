@@ -1,6 +1,6 @@
 # #801 iBeacon type1
 
-![](./img/0801_ibeacon_type1.jpg)
+![](./img/801_ibeacon_type1.jpg)
 
 ## Overview
 
@@ -8,4 +8,4 @@
 
 ## 回路図
 
-![](./img/0801_ibeacon_type1_sch.png)
+![](./img/801_ibeacon_type1_sch.png)
