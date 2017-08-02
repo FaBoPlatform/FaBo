@@ -1,7 +1,5 @@
 # #206 UV Index I2C Brick
 
-<center>
-
 ![](./img/206_uv.jpg)
 <!--COLORME-->
 
@@ -10,14 +8,20 @@
 
 I2Cでデータを取得できます。
 
-## Si1133 Datasheet
-| Document |
-|:--|
-| [Si1133 Datasheet](http://www.silabs.com/Support%20Documents/TechnicalDocs/Si1133.pdf) |
+## Support
+|Arduino|RaspberryPI|IchigoJam|
+|:--:|:--:|:--:|
+|◯|◯|◯|
 
 ## Schematic
 
 ![](./img/206_uv_sch.png)
+
+
+## Si1133 Datasheet
+| Document |
+|:--|
+| [Si1133 Datasheet](http://www.silabs.com/Support%20Documents/TechnicalDocs/Si1133.pdf) |
 
 ## Docs
 
