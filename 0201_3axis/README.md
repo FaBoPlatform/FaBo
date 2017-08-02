@@ -1,6 +1,8 @@
 # #201 3Axis I2C Brick
 
-<center>![](./img/201_3axis.jpg)
+
+![](./img/201_3axis.jpg)
+
 <!--COLORME-->
 
 ## Overview
@@ -27,7 +29,7 @@ I2Cで3軸の加速度データを取得することがきます。
 |:--|
 | [ADXL345 Datasheet](http://www.analog.com/media/en/technical-documentation/data-sheets/ADXL345.pdf) |
 
-## Register
+## Slave Address
 | I2C Slave Address |
 |:-- |
 | 0x53 |
