@@ -1,6 +1,3 @@
-# #217 Ambient Light I2C Brick
+# #218 Hall
 
-[#217 Ambient Light I2C Brick](http://fabo.io/217.html)
-
-- Eagle PCB
-- Schematic Image
+現在開発中
