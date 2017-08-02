@@ -14,6 +14,9 @@ I2Cでデータを取得できます。
 |:--:|:--:|:--:|
 |◯|◯|◯|
 
+## Schematic
+![](./img/215_rtc_sch.png)
+
 ## PCF2129 Datasheet
 | Document |
 | -- |
@@ -23,9 +26,6 @@ I2Cでデータを取得できます。
 | Slave Address |
 | -- |
 | 0x51 |
-
-## Schematic
-![](./img/215_rtc_sch.png)
 
 ## Docs
 
