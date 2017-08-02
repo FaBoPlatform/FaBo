@@ -1,7 +1,5 @@
 # #1102 Arduino MEGAケース
 
-<center>
-
 ![](./img/1102_case_arduino_mega.jpg)
 <!--COLORME-->
 
