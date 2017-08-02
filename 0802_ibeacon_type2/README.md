@@ -8,4 +8,4 @@
 
 ## 回路図
 
-![](./img/802_ibeacon_type1_sch.png)
+![](./img/802_ibeacon_type2_sch.png)
