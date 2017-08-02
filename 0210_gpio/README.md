@@ -1,6 +1,5 @@
 # #210 GPIO I2C Brick
 
-<center>
 
 ![](./img/210_gpio.jpg)
 <!--COLORME-->
@@ -15,6 +14,9 @@ I2Cで8個のLEDを制御できます。
 |:--:|:--:|:--:|
 |◯|◯|◯|
 
+## Schematic
+![](./img/210_gpio_sch.png)
+
 ## PCAL6408 Datasheet
 | Document |
 | -- |
@@ -24,9 +26,6 @@ I2Cで8個のLEDを制御できます。
 | Slave Address |
 | -- |
 | 0x20 |
-
-## Schematic
-![](./img/210_gpio_sch.png)
 
 ## Docs
 
