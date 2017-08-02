@@ -1,7 +1,5 @@
 # #404 ColorLED Matrix
 
-<center>
-  
 ![](./img/404_led_matrix.jpg)
 <!--COLORME-->
 
@@ -13,13 +11,13 @@ RGB Color LEDを使った、8☓8 MatrixのBrickです。
 |:--:|:--:|
 |◯|◯|
 
+## Schematic
+![](./img/404_led_matrix_sch.png)
+
 ## WS2812B Datasheet
 |Document|
 |--|
 |[WS2812B Datasheet](http://www.adafruit.com/datasheets/WS2812B.pdf)|
-
-## Schematic
-![](./img/404_led_matrix_sch.png)
 
 ## Parts
 - RGB LED WS2812B
