@@ -1,12 +1,15 @@
 # #601 Motor Shield for Arduino
 
-<center>
-  
+
 ![](./img/601_motor_arduino.jpg)
 <!--COLORME-->
 
 ## Overview
 I2C対応のMotor Driver(DRV8830)を2個搭載し、2つのモーター制御が可能です。
+
+## 回路図
+
+![](./img/601_motor_arduino_sch.png)
 
 ## コネクタ
 
@@ -28,10 +31,6 @@ SoftwareSerialとして使用するため、RX,TXはそれぞれ、D12,D13にな
 ### I2Cコネクタ
 Arduino MEGAではR3以降から対応になります。
 Arduino UNO R3/R2では使用可能です。
-
-## 回路図
-
-![](./img/601_motor_arduino_sch.png)
 
 ## DRV8830 Datasheet
 | Document |
