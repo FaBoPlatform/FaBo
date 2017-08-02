@@ -24,6 +24,11 @@ I2Cで3軸の加速度データを取得することがきます。
 |:--:|:--:|:--:|
 |◯|◯|◯|
 
+
+## Schematic
+![](./img/201_3axis_sch.png)
+
+
 ## ADXL345 Datasheet
 | Document |
 |:--|
@@ -33,9 +38,6 @@ I2Cで3軸の加速度データを取得することがきます。
 | I2C Slave Address |
 |:-- |
 | 0x53 |
-
-## Schematic
-![](./img/201_3axis_sch.png)
 
 
 ## Docs
