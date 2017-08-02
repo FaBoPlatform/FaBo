@@ -1,7 +1,5 @@
 # #207 Temperature I2C Brick
 
-<center>
-
 ![](./img/207_temperature.jpg)
 <!--COLORME-->
 
@@ -12,9 +10,14 @@ I2Cでデータを取得できます。
 計測できる範囲は−55度〜150度です。
 
 ## Support
+
 |Arduino|RaspberryPI|IchigoJam|
-|:--:|:--:|:--:|:--:|
+|:--:|:--:|:--:|
 |◯|◯|◯|
+
+## Schematic
+![](./img/207_temperature_sch.png)
+
 
 ## ADT7410 Datasheet
 | Document |
@@ -26,8 +29,6 @@ I2Cでデータを取得できます。
 | -- |
 | 0x48 |
 
-## Schematic
-![](./img/207_temperature_sch.png)
 
 ## Docs
 
