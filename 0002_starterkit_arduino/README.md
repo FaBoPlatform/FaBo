@@ -1,7 +1,6 @@
 # #002 FaBo Starter Kit for Arduino
 
-<center>
-![](/img/001_starterkit/product/002.jpg)
+![](./img/002_starterkit_arduino.jpg)
 <!--COLORME-->
 
 ## Overview
