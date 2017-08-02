@@ -1,7 +1,5 @@
 # #1110 Square iBeaconケース
 
-<center>
-
 ![](./img/1110_case_ibeacon_square.jpg)
 <!--COLORME-->
 
