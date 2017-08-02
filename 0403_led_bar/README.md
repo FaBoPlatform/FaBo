@@ -1,7 +1,5 @@
 # #403 ColorLED Bar
 
-<center>
-  
 ![](./img/403_led_bar.jpg)
 <!--COLORME-->
 
