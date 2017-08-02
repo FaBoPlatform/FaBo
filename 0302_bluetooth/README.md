@@ -1,8 +1,6 @@
 # #302 Bluetooth Serial Brick
 
-<center>![]
-
-(./img/302_bluetooth.jpg)
+![](./img/302_bluetooth.jpg)
 <!--COLORME-->
 
 ## Overview
@@ -15,15 +13,14 @@ PCやスマートフォンなどの端末とシリアル通信することがで
 |:--:|:--:|:--:|
 |◯|◯|◯|
 
+## Schematic
+![](./img/302_bluetooth_sch.png)
+
 ## RN-42 Datasheet
 
 |Document|
 |--|
 |[RN-42 Datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/rn-42-ds-v2.32r.pdf)|
-
-## Schematic
-![](./img/302_bluetooth_sch.png)
-
 
 ### Macでのシリアル通信確認
 * Arduino(またはRaspberryPI)にBluetoothを接続した状態でPCと接続
