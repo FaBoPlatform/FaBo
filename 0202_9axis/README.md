@@ -14,13 +14,16 @@ I2Cでデータを取得できます。
 |:--:|:--:|
 |◯|◯|
 
+## Schematic
+![](./img/202_9axis_sch.png)
+
 ## MPU-9250 Datasheet
 | Document |
 |:--:|
 | [MPU-9250 Register Map](http://43zrtwysvxb2gf29r5o0athu.wpengine.netdna-cdn.com/wp-content/uploads/2015/02/MPU-9250-Register-Map.pdf) |
 | [MPU-9250 Datasheet](http://43zrtwysvxb2gf29r5o0athu.wpengine.netdna-cdn.com/wp-content/uploads/2015/02/MPU-9250-Datasheet.pdf) |
 
-## Register
+## Slave Address
 MPU-9250は、三軸加速度、ジャイロ用とコンパス用の2つのI2C Slave Addressがあります。
 
 ### MPU-9250(三軸加速度、ジャイロ)
@@ -34,8 +37,6 @@ MPU-9250は、三軸加速度、ジャイロ用とコンパス用の2つのI2C S
 |:--:|
 |0x0C|
 
-## Schematic
-![](./img/202_9axis_sch.png)
 
 ## Docs
 
