@@ -1,7 +1,5 @@
 # #208 Humidity I2C Brick
 
-<center>
-
 ![](./img/208_humidity.jpg)
 <!--COLORME-->
 
@@ -14,6 +12,9 @@ I2Cでデータを取得できます。
 |:--:|:--:|
 |◯|◯|
 
+## Schematic
+![](./img/208_humidity_sch.png)
+
 ## HTS221 Datasheet
 | Document |
 | -- |
@@ -23,9 +24,6 @@ I2Cでデータを取得できます。
 | Slave Address |
 | -- |
 | 0x5F |
-
-## Schematic
-![](./img/208_humidity_sch.png)
 
 ## Docs
 
