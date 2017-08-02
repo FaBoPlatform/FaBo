@@ -1,7 +1,5 @@
 # #213 LCD mini I2C Brick
 
-<center>
-
 ![](./img/213_lcd_mini.jpg)
 <!--COLORME-->
 
@@ -15,6 +13,9 @@ I2Cで表示データを制御できます。
 |:--:|:--:|
 |◯|◯|
 
+## Schematic
+![](./img/213_lcd_mini_sch.png)
+
 ## AQM0802A Datasheet
 | Document |
 | -- |
@@ -24,10 +25,6 @@ I2Cで表示データを制御できます。
 | I2C Slave Address |
 |:-- |
 | 0x3E |
-
-## Schematic
-![](./img/213_lcd_mini_sch.png)
-
 
 ## Docs
 
