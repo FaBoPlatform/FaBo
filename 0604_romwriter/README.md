@@ -1,7 +1,5 @@
 # #604 ROM Writer for Arduino
 
-<center>
-  
 ![](./img/604_romwriter.jpg)
 <!--COLORME-->
 
