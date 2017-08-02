@@ -1,7 +1,5 @@
 # #212 LCD I2C Brick
 
-<center>
-
 ![](./img/212_lcd.jpg)
 <!--COLORME-->
 
@@ -15,6 +13,9 @@ I2Cで表示データを制御できます。
 |:--:|:--:|
 |◯|◯|
 
+## Schematic
+![](./img/212_lcd_sch.png)
+
 ## PCF8574 Datasheet
 | Document |
 |:--|
@@ -26,9 +27,6 @@ I2Cで表示データを制御できます。
 | LOW | LOW | LOW | 0x20 |
 
 FaBo Brickでは、初期値に0x20が設定されています。Brick表面のソルダージャンパーで設定を変更できます。
-
-## Schematic
-![](./img/212_lcd_sch.png)
 
 ## Docs
 
