@@ -1,12 +1,15 @@
 # #506 OUT/IN Shield for Raspberry Pi Zero
 
-<center>![](./img/506_outin_raspberrypi_zero.jpg)
+![](./img/506_outin_raspberrypi_zero.jpg)
 <!--COLORME-->
 
 ## Overview
 OUT/IN Shield for Raspberry Pi Zeroは、Raspberry Pi Zeroと各種センサーやボタンをケーブルを1本接続するだけで使えるRaspberry Pi Zero対応シールドです。
 
 Raspberry Pi Zero本体は含まれません。別途、お買い求めください。
+
+## Schematic
+![](./img/506_outin_raspberrypi_zero_sch.png)
 
 ### アナログコネクタ(3pin)
 - A0
@@ -46,9 +49,6 @@ GPIO23/GPIO24/GPIO25/GPIO26/GPIO27
 
 ### シリアルコネクタ(4pin)
 ### I2Cコネクタ(4pin)
-
-## Schematic
-![](./img/506_outin_raspberrypi_zero_sch.png)
 
 ## GitHub
 - https://github.com/FaBoPlatform/FaBo/tree/master/506_outin_raspberrypi_zero
