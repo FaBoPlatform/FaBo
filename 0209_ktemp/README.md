@@ -10,9 +10,12 @@ K型熱電対を接続できるBrickです。
 I2Cでデータを取得できます。
 
 ## Support
-|Arduino|RaspberryPI|IchigoJam|Edison|
-|:--:|:--:|:--:|:--:|
-|◯|◯|◯|◯|
+|Arduino|RaspberryPI|IchigoJam|
+|:--:|:--:|:--:|
+|◯|◯|◯|
+
+## Schematic
+![](./img/209_ktemp_sch.png)
 
 ## MCP3421 Datasheet
 | Document |
@@ -25,9 +28,6 @@ I2Cでデータを取得できます。
 | 0x68 - 0x6F |
 MCP3421のSlave Addressは0x68〜0x6Fのものが存在し、その値は工場出荷時に決まっており、後から変更することはできません。
 FaBoBrickでは、0x68、または0x69の２種類を使用しています。
-
-## Schematic
-![](./img/209_ktemp_sch.png)
 
 ## Docs
 
