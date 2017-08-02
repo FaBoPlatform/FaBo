@@ -1,6 +1,3 @@
-# #503 OUT/IN Shield for IchigoJam
+# #703 Breakout i2c
 
-[#503 OUT/IN Shield for IchigoJam](http://fabo.io/503.html)
-
-- Eagle PCB
-- Schematic Image
+discontinued
