@@ -1,5 +1,4 @@
 # #1111 RaspberryPi Zeroケース
-<center>
 
 ![](./img/1111_case_raspberrypi_zero.jpg)
 <!--COLORME-->
