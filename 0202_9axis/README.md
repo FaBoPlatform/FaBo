@@ -1,7 +1,7 @@
 # #202 9Axis I2C Brick
 
 
-![](/img/202_9axis.jpg)
+![](./img/202_9axis.jpg)
 <!--COLORME-->
 
 ## Overview
