@@ -1,5 +1,4 @@
 # #1113 Arduino Leonardoケース
-<center>
   
 ![](./img/1113_case_arduino_leonardo.jpg)
 <!--COLORME-->
