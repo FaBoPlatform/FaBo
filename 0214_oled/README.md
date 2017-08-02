@@ -15,6 +15,9 @@ I2Cで表示データを制御できます。
 |:--:|:--:|:--:|
 |◯|◯|◯|
 
+## Schematic
+![](./img/214_oled_sch.png)
+
 ## ER-OLED0.96 Datasheet
 | Document |
 | -- |
@@ -24,9 +27,6 @@ I2Cで表示データを制御できます。
 | Slave Address |
 | -- |
 | 0x3C |
-
-## Schematic
-![](./img/214_oled_sch.png)
 
 ## Docs
 
