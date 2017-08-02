@@ -1,26 +1,28 @@
 # #301 BLE SiliconLabs Serial Brick
 
-<center>![]
+![](./img/301_ble_siliconlabs.jpg)
 
-(./img/301_ble_siliconlabs.jpg)
 <!--COLORME-->
 
 ## Overview
+
 SiliconLabs BLE113を使用したBLE（Bluetooth Low Energy）のBrickです。
 シリアルから、コマンドで制御して操作します。
 
 ## Support
+
 |Arduino|RaspberryPI|IchigoJam|
 |:--:|:--:|:--:|
 |◯|◯|×|
 
+## Schematic
+![](./img/301_ble_siliconlabs_sch.png)
+
 ## BLE113 Datasheet
+
 |Document|
 |--|
 |[BLE113 Datasheet](http://www.mouser.com/catalog/specsheets/Bluegiga_Technologies_BLE113_Datasheet.pdf)|
-
-## Schematic
-![](./img/301_ble_siliconlabs_sch.png)
 
 ## Docs
 
