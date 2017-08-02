@@ -1,6 +1,5 @@
 # #502 OUT/IN Shield for Raspberry Pi
 
-<center>
   
 ![](./img/502_outin_raspberrypi.jpg)
 <!--COLORME-->
@@ -9,6 +8,9 @@
 OUT/IN Shield for Raspberry Piは、Raspberry Piと各種センサーやボタンをケーブルを1本接続するだけで使えるRaspberry Pi対応シールドです。
 
 Raspberry Pi本体、およびRaspberry Piケースは含まれません。別途、お買い求めください。
+
+## Schematic
+![](./img/502_outin_raspberrypi_sch.png)
 
 ### アナログコネクタ(3pin)
 - A0
@@ -88,9 +90,6 @@ sudo apt-get install python-dev
 sudo apt-get install python-smbus
 sudo pip install spidev
 ```
-
-## Schematic
-![](./img/502_outin_raspberrypi_sch.png)
 
 ## GitHub
 - https://github.com/FaBoPlatform/FaBo/tree/master/502_outin_raspberrypi

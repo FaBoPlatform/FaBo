@@ -1,7 +1,5 @@
 # #713 Serial Universal
 
-<center>
-
 ![](./img/713_universal_serial_long.jpg)
 <!--COLORME-->
 

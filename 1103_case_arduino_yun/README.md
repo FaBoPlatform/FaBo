@@ -1,5 +1,4 @@
 # #1103 Arduino YUNケース
-<center>
 
 ![](./img/1103_case_arduino_yun.jpg)
 <!--COLORME-->

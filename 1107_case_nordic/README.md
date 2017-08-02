@@ -1,7 +1,5 @@
 # #1107 Nordic(nRF51-DK)ケース
 
-<center>
-
 ![](./img/1107_case_nordic.jpg)
 <!--COLORME-->
 

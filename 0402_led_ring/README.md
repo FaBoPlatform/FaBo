@@ -1,7 +1,5 @@
 # #402 ColorLED Ring
 
-<center>
-  
 ![](./img/402_led_ring.jpg)
 <!--COLORME-->
 
@@ -13,13 +11,13 @@ RGB Color LEDをRing状に12個配置したBrickです。
 |:--:|:--:|
 |◯|◯|
 
+## Schematic
+![](./img/402_led_ring_sch.png)
+
 ## WS2812B Datasheet
 |Document|
 |--|
 |[WS2812B Datasheet](http://www.adafruit.com/datasheets/WS2812B.pdf)|
-
-## Schematic
-![](./img/402_led_ring_sch.png)
 
 ## Parts
 - RGB LED WS2812B

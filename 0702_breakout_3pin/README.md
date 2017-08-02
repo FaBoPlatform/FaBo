@@ -1,6 +1,3 @@
-# #503 OUT/IN Shield for IchigoJam
+# #702 Breakout 3pin
 
-[#503 OUT/IN Shield for IchigoJam](http://fabo.io/503.html)
-
-- Eagle PCB
-- Schematic Image
+discontinued

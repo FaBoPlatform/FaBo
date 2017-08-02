@@ -1,5 +1,4 @@
 # #1104 RaspberryPi2 model Bケース
-<center>
 
 ![](./img/1104_case_raspberrypi.jpg)
 <!--COLORME-->

@@ -1,6 +1,4 @@
 # #503 OUT/IN Shield for IchigoJam
-
-<center>
   
 ![](./img/503_outin_ichigojam.jpg)
 <!--COLORME-->
@@ -9,6 +7,9 @@
 OUT/IN Shield for IchigoJamは、IchigoJamと各種センサーやボタンをケーブルを1本接続するだけで使えるIchigoJam対応シールドです。
 
 IchigoJam本体、およびIchigoJamケースは含まれません。別途、お買い求めください。
+
+## Schematic
+![](./img/503_outin_ichigojam_sch.png)
 
 ### INコネクタ(3pin)
 - IN1
@@ -32,9 +33,6 @@ IchigoJam本体、およびIchigoJamケースは含まれません。別途、�
 I2Cを使用する場合、プルアップ設定ジャンパをON側に設定してください。
 
 ### シリアルコネクタ(4pin)
-
-## Schematic
-![](./img/503_outin_ichigojam_sch.png)
 
 ## GitHub
 - https://github.com/FaBoPlatform/FaBo/tree/master/503_outin_ichigojam

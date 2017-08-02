@@ -1,7 +1,5 @@
 # #707 Serial Breakout
 
-<center>
-  
 ![](./img/707_breakout_serial.jpg)
 <!--COLORME-->
 

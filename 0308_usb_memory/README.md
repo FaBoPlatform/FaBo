@@ -13,14 +13,14 @@ USB Mass Storageプロトコルに対応したBrickです。USB Memoryへの読�
 |:--:|:--:|:--:|
 |◯|◯|△|
 
+## Schematic
+![](./img/308_usb_memory_sch.png)
+
 ##  Datasheet
 
 |Document|
 |--|
 |[VNC1L](http://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_VNC1L.pdf)|
-
-## Schematic
-![](./img/308_usb_memory_sch.png)
 
 ## Parts
 - VNC1L

@@ -1,6 +1,5 @@
 # #1112 BeagleBoneケース
 
-<center>
 ![](./img/1112_case_beaglebone.jpg)
 <!--COLORME-->
 

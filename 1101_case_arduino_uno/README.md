@@ -1,5 +1,4 @@
 # #1101 Arduino UNOケース
-<center>
 
 ![](./img/1101_case_arduino_uno.jpg)
 <!--COLORME-->

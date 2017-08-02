@@ -1,5 +1,4 @@
 # #1114 DragonBoardケース
-<center>
 
 ![](./img/1114_case_dragonboard.jpg)
 <!--COLORME-->

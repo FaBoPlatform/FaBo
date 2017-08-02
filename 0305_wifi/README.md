@@ -15,13 +15,13 @@ Wifi通信ができるBrickです。TCPクライアントやアクセスポイ�
 |:--:|
 |◯|
 
+## Schematic
+![](./img/305_wifi.png)
+
 ## ESP-WROOM-02 Datasheet
 |Document|
 |--|
 |[ESP-WROOM-02 Datasheet Page](https://espressif.com/en/products/hardware/esp-wroom-02/resources)|
-
-## Schematic
-![](./img/305_wifi.png)
 
 ##ATコマンドとは？
 ATコマンドは、電話回線（モデム）に対して制御するのに開発され、現在でも使われております。WiFiBrickには、あらかじめファームウェアがインストール済みで、ATコマンドの文字列の信号をこのBrickに送信することにより命令ができるようになっています。

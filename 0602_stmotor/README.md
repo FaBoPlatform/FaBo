@@ -1,6 +1,5 @@
 # #602 Stepping Motor for Arduino
 
-<center>
   
 ![](./img/602_stmotor.jpg)
 <!--COLORME-->

@@ -1,7 +1,5 @@
 # #1105 IchigoJam Uケース
 
-<center>
-
 ![](./img/1105_case_ichigojam.jpg)
 <!--COLORME-->
 

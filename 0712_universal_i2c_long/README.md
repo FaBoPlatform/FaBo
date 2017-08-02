@@ -1,6 +1,5 @@
 # #712 Serial Universal
 
-<center>
 
 ![](./img/712_universal_i2c_long.jpg)
 <!--COLORME-->

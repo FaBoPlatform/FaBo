@@ -1,6 +1,4 @@
 # #603 CT Sensor for Arduino
-
-<center>
   
 ![](./img/603_ct.jpg)
 <!--COLORME-->

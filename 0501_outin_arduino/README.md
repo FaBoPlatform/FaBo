@@ -10,6 +10,9 @@ OUT/IN Shield for Arduinoは、Arduinoと各種センサーやボタンをケー
 
 Arduino本体、およびArduino UNOケースは含まれません。別途、お買い求めください。
 
+## Schematic
+![](./img/501_outin_arduino_sch.png)
+
 ### アナログコネクタ(3pin)
 - A0
 - A1
@@ -83,9 +86,6 @@ Arduino UNO R3/R2では使用可能です。
 ![](./img/501_docs_007.jpg)
 
 左端をRESERVEDピン、右端をA5ピンに挿します。A6、A7には挿しません。
-
-## Schematic
-![](./img/501_outin_arduino_sch.png)
 
 ## GitHub
 - https://github.com/FaBoPlatform/FaBo/tree/master/501_outin_arduino

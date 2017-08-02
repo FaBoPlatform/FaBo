@@ -1,7 +1,5 @@
 # #505 OUT/IN Shield for Kinoma Create
 
-<center>
-  
 ![](./img/505_kinomacreate.jpg)
 <!--COLORME-->
 
