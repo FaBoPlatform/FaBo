@@ -1,6 +1,11 @@
-# #503 OUT/IN Shield for IchigoJam
+# #802 iBeacon type2
 
-[#503 OUT/IN Shield for IchigoJam](http://fabo.io/503.html)
+![](./img/802_ibeacon_type2.jpg)
 
-- Eagle PCB
-- Schematic Image
+## Overview
+
+丸型iBeaconです。
+
+## 回路図
+
+![](./img/802_ibeacon_type1_sch.png)
