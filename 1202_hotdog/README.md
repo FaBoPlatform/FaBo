@@ -1,2 +1,2 @@
 # HotDog
-![](/img/kit/manual/car_manual001.jpg)
+![](/img/type1_00.png)
