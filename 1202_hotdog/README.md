@@ -1,2 +1,2 @@
 # HotDog
-![](/img/type1_00.png)
+![](/img/type1_01.png)
