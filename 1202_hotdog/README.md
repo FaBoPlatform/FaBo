@@ -6,7 +6,7 @@
 
 ![](./img/type1_01.png)
 
-<ln>
+<lr>
 
 ![](./img/type1_02.png)
 
