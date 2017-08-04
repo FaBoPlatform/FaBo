@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.4.0">
+<eagle version="8.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1409,6 +1409,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <sheets>
 <sheet>
 <plain>
+<text x="243.84" y="20.32" size="1.778" layer="113">1.0.1</text>
 </plain>
 <instances>
 <instance part="JP1" gate="G$1" x="56.56" y="33.02" smashed="yes">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.4.0">
+<eagle version="8.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -360,29 +360,6 @@ Pogo pins- HW-11044</description>
 </package>
 </packages>
 <symbols>
-<symbol name="A4L-LOC">
-<wire x1="256.54" y1="3.81" x2="256.54" y2="8.89" width="0.1016" layer="94"/>
-<wire x1="256.54" y1="8.89" x2="256.54" y2="13.97" width="0.1016" layer="94"/>
-<wire x1="256.54" y1="13.97" x2="256.54" y2="19.05" width="0.1016" layer="94"/>
-<wire x1="256.54" y1="19.05" x2="256.54" y2="24.13" width="0.1016" layer="94"/>
-<wire x1="161.29" y1="3.81" x2="161.29" y2="24.13" width="0.1016" layer="94"/>
-<wire x1="161.29" y1="24.13" x2="215.265" y2="24.13" width="0.1016" layer="94"/>
-<wire x1="215.265" y1="24.13" x2="256.54" y2="24.13" width="0.1016" layer="94"/>
-<wire x1="246.38" y1="3.81" x2="246.38" y2="8.89" width="0.1016" layer="94"/>
-<wire x1="246.38" y1="8.89" x2="256.54" y2="8.89" width="0.1016" layer="94"/>
-<wire x1="246.38" y1="8.89" x2="215.265" y2="8.89" width="0.1016" layer="94"/>
-<wire x1="215.265" y1="8.89" x2="215.265" y2="3.81" width="0.1016" layer="94"/>
-<wire x1="215.265" y1="8.89" x2="215.265" y2="13.97" width="0.1016" layer="94"/>
-<wire x1="215.265" y1="13.97" x2="256.54" y2="13.97" width="0.1016" layer="94"/>
-<wire x1="215.265" y1="13.97" x2="215.265" y2="19.05" width="0.1016" layer="94"/>
-<wire x1="215.265" y1="19.05" x2="256.54" y2="19.05" width="0.1016" layer="94"/>
-<wire x1="215.265" y1="19.05" x2="215.265" y2="24.13" width="0.1016" layer="94"/>
-<text x="217.17" y="20.32" size="2.54" layer="94">&gt;DRAWING_NAME</text>
-<text x="217.17" y="10.16" size="2.286" layer="94">&gt;LAST_DATE_TIME</text>
-<text x="230.505" y="5.08" size="2.54" layer="94">&gt;SHEET</text>
-<text x="216.916" y="4.953" size="2.54" layer="94">Sheet:</text>
-<frame x1="0" y1="0" x2="260.35" y2="179.07" columns="6" rows="4" layer="94"/>
-</symbol>
 <symbol name="PIN-HEAER-SMT(1.27MM)2X5">
 <text x="-7.54" y="-2.58" size="1.27" layer="94">1</text>
 <wire x1="7.62" y1="5.08" x2="7.62" y2="6.35" width="0.254" layer="94"/>
@@ -423,19 +400,6 @@ Pogo pins- HW-11044</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="A4L-LOC">
-<description>FRAME A4</description>
-<gates>
-<gate name="G$1" symbol="A4L-LOC" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="PIN-HEADER-SMT(1.27MM)2X5">
 <description>PIN-HEADER-SMT (1.27MM) 2x5</description>
 <gates>
@@ -1142,6 +1106,60 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="FaBo-etc">
+<description>&lt;h3&gt;FaBo etc&lt;/h3&gt;
+etc/etc...&lt;br&gt;
+&lt;br&gt;
+Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;br&gt;
+https://creativecommons.org/licenses/by-sa/4.0/</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="A4L-LOC">
+<wire x1="256.54" y1="3.81" x2="256.54" y2="17.78" width="0.1016" layer="94"/>
+<wire x1="256.54" y1="17.78" x2="256.54" y2="27.94" width="0.1016" layer="94"/>
+<wire x1="161.29" y1="3.81" x2="161.29" y2="17.78" width="0.1016" layer="94"/>
+<wire x1="161.29" y1="17.78" x2="161.29" y2="22.86" width="0.1016" layer="94"/>
+<wire x1="161.29" y1="22.86" x2="161.29" y2="27.94" width="0.1016" layer="94"/>
+<wire x1="161.29" y1="27.94" x2="234.95" y2="27.94" width="0.1016" layer="94"/>
+<wire x1="234.95" y1="27.94" x2="256.54" y2="27.94" width="0.1016" layer="94"/>
+<wire x1="161.29" y1="22.86" x2="212.09" y2="22.86" width="0.1016" layer="94"/>
+<text x="175.26" y="24.13" size="2.54" layer="94">&gt;DRAWING_NAME</text>
+<text x="172.72" y="20.32" size="1.778" layer="94" align="center-left">&gt;LAST_DATE_TIME</text>
+<text x="223.52" y="20.32" size="1.778" layer="94" align="center-left">&gt;SHEET</text>
+<text x="213.36" y="20.32" size="1.778" layer="94" align="center-left">Sheet:</text>
+<frame x1="0" y1="0" x2="260.35" y2="179.07" columns="6" rows="4" layer="94"/>
+<text x="162.56" y="24.13" size="2.54" layer="94">Title:</text>
+<text x="162.56" y="20.32" size="1.778" layer="94" align="center-left">Date:</text>
+<text x="162.56" y="8.636" size="1.27" layer="94">Released under the Creative Commons</text>
+<text x="162.56" y="5.08" size="1.27" layer="94">https://creativecommons.org/licenses/by-sa/4.0/</text>
+<text x="236.22" y="26.67" size="2.1844" layer="94" align="top-left">REV:</text>
+<wire x1="212.09" y1="22.86" x2="234.95" y2="22.86" width="0.1016" layer="94"/>
+<wire x1="161.29" y1="17.78" x2="212.09" y2="17.78" width="0.1016" layer="94"/>
+<wire x1="212.09" y1="17.78" x2="234.95" y2="17.78" width="0.1016" layer="94"/>
+<wire x1="234.95" y1="17.78" x2="256.54" y2="17.78" width="0.1016" layer="94"/>
+<wire x1="234.95" y1="17.78" x2="234.95" y2="22.86" width="0.1016" layer="94"/>
+<text x="162.56" y="6.858" size="1.27" layer="94">Attribution-ShareAlike 4.0 License</text>
+<wire x1="234.95" y1="22.86" x2="234.95" y2="27.94" width="0.1016" layer="94"/>
+<wire x1="212.09" y1="17.78" x2="212.09" y2="22.86" width="0.1016" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="A4L-LOC">
+<description>FRAME A4</description>
+<gates>
+<gate name="G$1" symbol="A4L-LOC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1153,7 +1171,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </classes>
 <parts>
 <part name="JP2" library="SparkFun-Connectors" deviceset="M03X2" device=""/>
-<part name="U$3" library="GClue" deviceset="A4L-LOC" device=""/>
 <part name="GND2" library="SparkFun" deviceset="GND" device=""/>
 <part name="P+3" library="SparkFun" deviceset="3.3V" device=""/>
 <part name="U$5" library="GClue" deviceset="PIN-HEADER-SMT(1.27MM)2X5" device=""/>
@@ -1165,14 +1182,15 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="GND4" library="SparkFun" deviceset="GND" device=""/>
 <part name="P+4" library="SparkFun" deviceset="3.3V" device=""/>
 <part name=".." library="FaBo-Template" deviceset="FABO_BRICK_SERIAL" device="-S04B-PASK-2"/>
+<part name="U$3" library="FaBo-etc" deviceset="A4L-LOC" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="243.84" y="20.32" size="1.778" layer="113">1.0.2</text>
 </plain>
 <instances>
 <instance part="JP2" gate="G$1" x="106.68" y="50.8"/>
-<instance part="U$3" gate="G$1" x="0" y="0"/>
 <instance part="GND2" gate="1" x="27.94" y="38.1"/>
 <instance part="P+3" gate="G$1" x="27.94" y="63.5"/>
 <instance part="U$5" gate="G$1" x="40.64" y="55.88" rot="R270"/>
@@ -1184,6 +1202,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <instance part="GND4" gate="1" x="88.9" y="86.36"/>
 <instance part="P+4" gate="G$1" x="96.52" y="104.14"/>
 <instance part=".." gate="G$1" x="73.66" y="101.6"/>
+<instance part="U$3" gate="G$1" x="0" y="0"/>
 </instances>
 <busses>
 </busses>
