@@ -76,3 +76,7 @@ RemoteController Kitは、「#112 IR LED Brick」用のキットで、前後左�
 ### 7.下部をアクリルパーツ(6)で固定して完成です。
 
 ![](./img/ir10.jpg)
+
+## Github
+
+https://github.com/FaBoPlatform/FaBo/tree/master/1503_smartlight
