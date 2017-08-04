@@ -1,7 +1,5 @@
 # #104 Angle Brick
 
-<center>
-
 ![](./img/104_angle.jpg)
 <!--COLORME-->
 
