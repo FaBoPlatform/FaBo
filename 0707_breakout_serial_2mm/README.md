@@ -9,3 +9,7 @@ Serial Breakoutは、FaBo Brick用Serialの2mmピッチコネクタと2.54mmピ�
 ## 回路図
 
 ![](./img/707_breakout_serial_sch.png)
+
+## Github
+
+https://github.com/FaBoPlatform/FaBo/tree/master/0707_breakout_serial_2mm
