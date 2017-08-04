@@ -12,3 +12,7 @@
 ## 図面
 
 ![](./img/708_breakout_3pin_sch.png)
+
+## Github
+
+https://github.com/FaBoPlatform/FaBo/tree/master/0708_universal_3pin
