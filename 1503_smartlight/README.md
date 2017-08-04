@@ -104,3 +104,7 @@ M3-35ネジで固定して完成です。
 ## 土台完成
 
 ![](./img/dodai6.jpg)
+
+## Github
+
+https://github.com/FaBoPlatform/FaBo/tree/master/1503_smartlight
