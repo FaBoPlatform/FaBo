@@ -11,3 +11,7 @@ Repeater I2Cを経由する事で、I2Cのケーブルを延長できます。
 ## 回路図
 
 ![](./img/715_repeater_i2c_sch.png)
+
+## Github
+
+https://github.com/FaBoPlatform/FaBo/tree/master/0715_repeater_i2c
