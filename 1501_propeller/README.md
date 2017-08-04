@@ -1,6 +1,4 @@
 # #1501 Propeller Kit
-
-<center>
   
 ![](./img/1501_propeller.jpg)
 <!--COLORME-->
@@ -90,3 +88,6 @@ Propeller Kitは、Arduinoなどから制御できる扇風機のキットです
 
 前者で作成したプロペラ本体を土台のサーボギアに取り付けて完成です。
 
+## Github
+
+https://github.com/FaBoPlatform/FaBo/tree/master/1501_propeller

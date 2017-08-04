@@ -66,3 +66,7 @@ Aのネジ穴にM3-12プラネジを下から差し込んでおきます。
 ゴムクッションはお好みでお使いください。
 
 ネジが長いと感じる方はニッパーなどでカットしてください。
+
+## Github
+
+https://github.com/FaBoPlatform/FaBo/tree/master/1106_case_intel_edison

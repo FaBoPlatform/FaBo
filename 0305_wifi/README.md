@@ -1,7 +1,5 @@
 # #305 Wifi Serial Brick
 
-<center>
-
 ![](./img/305_wifi.jpg)
 <!--COLORME-->
 

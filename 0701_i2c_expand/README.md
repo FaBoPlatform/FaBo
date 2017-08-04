@@ -11,3 +11,6 @@ OUT/IN Shieldに複数のI2C Brickを接続するための拡張ボードです�
 
 ![](./img/701_i2c_expand_sch.png)
 
+## Guthub
+
+https://github.com/FaBoPlatform/FaBo/tree/master/0701_i2c_expand

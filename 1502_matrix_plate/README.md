@@ -60,6 +60,9 @@ Matrix Plate Kitは、#404 ColorLED Matrixを直立させるためのキット�
 
 ![](./img/ml07.jpg)
 
+## Github
+
+https://github.com/FaBoPlatform/FaBo/tree/master/1502_matrix_plate
 
 
 

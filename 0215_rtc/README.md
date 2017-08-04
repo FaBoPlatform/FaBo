@@ -1,7 +1,5 @@
 # #215 RTC I2C Brick
 
-<center>
-
 ![](./img/215_rtc.jpg)
 <!--COLORME-->
 

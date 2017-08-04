@@ -45,3 +45,7 @@ FaBo製「#801 iBeacon Circle」用のアクリル製ケースです。
 
 ## 注意
 防水・防塵ではありません。
+
+## Github
+
+https://github.com/FaBoPlatform/FaBo/tree/master/1109_case_iBeacon_circle

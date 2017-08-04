@@ -53,3 +53,7 @@ Nordic Semiconductor社のnRF51-DK用アクリル製ケースです。
 ゴムクッションはお好みでお使いください。
 
 ネジが長いと感じる方はニッパーなどでカットしてください。
+
+## Github
+
+https://github.com/FaBoPlatform/FaBo/tree/master/1107_case_nordic
