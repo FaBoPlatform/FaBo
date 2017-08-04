@@ -42,3 +42,7 @@ Raspberry PI Zero用のアクリル製ケースです。
 4.　(2)を裏返しにしてネジに通し、ナットで固定して完成です。
 
 ![](./img/raspizero_04.jpg)
+
+## Github
+
+https://github.com/FaBoPlatform/FaBo/tree/master/1111_case_raspberrypi_zero
