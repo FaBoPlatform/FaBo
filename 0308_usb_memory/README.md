@@ -1,7 +1,5 @@
 # #308 USB Memory Serial Brick
 
-<center>
-
 ![](./img/308_usb_memory.jpg)
 <!--COLORME-->
 
