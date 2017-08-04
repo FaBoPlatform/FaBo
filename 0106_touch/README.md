@@ -1,5 +1,4 @@
 # #106 Touch Brick
-<center>
 
 ![](./img/106_touch.jpg)
 <!--COLORME-->
