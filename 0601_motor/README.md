@@ -44,3 +44,6 @@ Arduino UNO R3/R2では使用可能です。
 | Motor1 | 0x64 |
 | Motor2 | 0x63 |
 
+## Github
+
+https://github.com/FaBoPlatform/FaBo/tree/master/0601_motor
