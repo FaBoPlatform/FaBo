@@ -190,3 +190,7 @@
 ![](./img/type1_20.png)
 
 <hr>
+
+## Github
+
+https://github.com/FaBoPlatform/FaBo/tree/master/1202_hotdog
