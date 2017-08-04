@@ -42,3 +42,7 @@ Arduino Leonardo用のアクリル製ケースです。
 ゴムクッションはお好みでお使いください。
 
 ネジが長いと感じる方はニッパーなどでカットしてください。
+
+## Github
+
+https://github.com/FaBoPlatform/FaBo/tree/master/1113_case_arduino_leonardo
