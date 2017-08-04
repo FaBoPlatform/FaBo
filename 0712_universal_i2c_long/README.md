@@ -11,3 +11,7 @@ I2C Universalは、プロトタイピング用のBrickです。
 ## 回路図
 
 ![](./img/712_universal_i2c_long_sch.png)
+
+## Github
+
+https://github.com/FaBoPlatform/FaBo/blob/master/0712_universal_i2c_long/README.md
