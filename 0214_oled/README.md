@@ -1,7 +1,5 @@
 # #214 OLED I2C Brick
 
-<center>
-
 ![](./img/214_oled.jpg)
 <!--COLORME-->
 
