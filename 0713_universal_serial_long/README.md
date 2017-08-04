@@ -10,3 +10,7 @@ Serial Universalは、プロトタイピング用のBrickです。
 ## 回路図
 
 ![](./img/713_universal_serial_long_sch.png)
+
+## Github
+
+https://github.com/FaBoPlatform/FaBo/blob/master/0713_universal_serial_long/README.md
