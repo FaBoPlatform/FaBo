@@ -90,3 +90,4 @@ Propeller Kitは、Arduinoなどから制御できる扇風機のキットです
 
 ## Github
 
+https://github.com/FaBoPlatform/FaBo/tree/master/1501_propeller
