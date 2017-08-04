@@ -1,5 +1,7 @@
 # HotDog
 
+![](./img/1202_hotdog.jpg)
+
 主な構成パーツ
 
 ![](./img/type1_00.png)
