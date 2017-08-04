@@ -45,3 +45,7 @@ Arduino UNO用のアクリル製ケースです。
 ゴムクッションはお好みでお使いください。
 
 ネジが長いと感じる方はニッパーなどでカットしてください。
+
+## Guthub
+
+https://github.com/FaBoPlatform/FaBo/tree/master/1101_case_arduino_uno
