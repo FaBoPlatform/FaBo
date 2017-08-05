@@ -54,3 +54,7 @@ Arduino、Raspberry Pi、IchigoJamなどマイコン本体は含まれません�
 |#1302|[4Pinケーブル](http://fabo.io/1302.html)|5本|
 
 商品入替え、または販売中止などの理由により、予告なく内容物が変更される場合があります。
+
+## Github
+
+https://github.com/FaBoPlatform/FaBo/tree/master/0001_starterkit_complete
