@@ -29,3 +29,7 @@ Arduino本体は含まれません。別途、お買い求めください。
 LED Brickの色はお選びいただけません。
 
 商品入替え、または販売中止などの理由により、予告なく内容物が変更される場合があります。
+
+## Github
+
+https://github.com/FaBoPlatform/FaBo/tree/master/0002_starterkit_arduino
