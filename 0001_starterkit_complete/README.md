@@ -57,6 +57,8 @@ Arduino、Raspberry Pi、IchigoJamなどマイコン本体は含まれません�
 |#1301|[3Pinケーブル](http://fabo.io/1301.html)|5本|
 |#1302|[4Pinケーブル](http://fabo.io/1302.html)|5本|
 
+42個のBrickと10本の線のセットになっています。
+
 商品入替え、または販売中止などの理由により、予告なく内容物が変更される場合があります。
 
 ## Github
