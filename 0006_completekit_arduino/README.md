@@ -31,7 +31,7 @@ Arduino本体は含まれません。別途、お買い求めください。
 |#117|[Switch Brick](http://fabo.io/117.html)|1個|
 |#118|[Hall Brick](http://fabo.io/118.html)|1個|
 |#119|[PhotoReflector Brick](http://fabo.io/119.html)|1個|
-[#120|[Button Brick](http://fabo.io/120.html)|1個|
+|[#120|[Button Brick](http://fabo.io/120.html)|1個|
 |#201|[3Axis I2C Brick](http://fabo.io/201.html)|1個|
 |#202|[9Axis I2C Brick](http://fabo.io/202.html)|1個|
 |#203|[Color I2C Brick](http://fabo.io/203.html)|1個|
