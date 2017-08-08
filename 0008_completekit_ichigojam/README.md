@@ -33,7 +33,7 @@ IchigoJamなどマイコン本体は含まれません。別途、お買い求�
 |#120|[Button Brick](http://fabo.io/120.html)|1個|
 |#302|[Bluetooth Brick](http://fabo.io/302.html)|1個|
 |#503|[OUT/IN Shield for IchigoJam](http://fabo.io/503.html)|1個|
-|#1301|[3Pinケーブル](http://fabo.io/1301.html)|5本|
+|#1301|[3Pinケーブル](http://fabo.io/1301.html)|2本|
 |#1302|[4Pinケーブル](http://fabo.io/1302.html)|5本|
 
 商品入替え、または販売中止などの理由により、予告なく内容物が変更される場合があります。
