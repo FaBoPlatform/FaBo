@@ -2,6 +2,12 @@
 
 ![](./img/1202_hotdog.jpg)
 
+## HotDog Web
+
+http://hotdog.fabo.io/
+
+## 組み立てマニュアル
+
 主な構成パーツ
 
 ![](./img/type1_00.png)

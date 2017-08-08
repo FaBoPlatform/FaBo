@@ -14,7 +14,7 @@ Arduino、Raspberry Pi、IchigoJamなどマイコン本体は含まれません�
 
 |ID|Brick|数量|
 |--|--|--|
-|#101|[LED(Blue, Green, Red, White, Yellow)](http://fabo.io/101_A.html)|各1個|
+|#101|[LED(Blue, Green, Red, White, Yellow)](http://fabo.io/101_A.html)|各1個の合計5個|
 |#102|[Buzzer Brick](http://fabo.io/102.html)|1個|
 |#103|[Button Brick](http://fabo.io/103.html)|1個|
 |#104|[Angle Brick](http://fabo.io/104.html)|1個|
@@ -28,6 +28,9 @@ Arduino、Raspberry Pi、IchigoJamなどマイコン本体は含まれません�
 |#113|[IR Receiver Brick](http://fabo.io/113.html)|1個|
 |#115|[Humidity Brick](http://fabo.io/115.html)|1個|
 |#116|[Distance Brick](http://fabo.io/116.html)|1個|
+|#117|[Switch Brick](http://fabo.io/117.html)|1個|
+|#118|[Hall Brick](http://fabo.io/118.html)|1個|
+|#119|[Reflector Brick](http://fabo.io/119.html)|2個|
 |#201|[3Axis I2C Brick](http://fabo.io/201.html)|1個|
 |#202|[9Axis I2C Brick](http://fabo.io/202.html)|1個|
 |#203|[Color I2C Brick](http://fabo.io/203.html)|1個|
@@ -41,6 +44,7 @@ Arduino、Raspberry Pi、IchigoJamなどマイコン本体は含まれません�
 |#213|[LCD mini I2C Brick](http://fabo.io/213.html)|1個|
 |#215|[RTC I2C Brick](http://fabo.io/215.html)|1個|
 |#217|[Ambient Light I2C Brick](http://fabo.io/217.html)|1個|
+|#302|[Bluetooth Serial Brick](http://fabo.io/302.html)|1個|
 |#307|[BLE Nordic Serial Brick](http://fabo.io/307.html)|1個|
 |#401|[ColorLED One Brick](http://fabo.io/401.html)|1個|
 |#402|[ColorLED Ring Brick](http://fabo.io/402.html)|1個|
@@ -52,6 +56,8 @@ Arduino、Raspberry Pi、IchigoJamなどマイコン本体は含まれません�
 |#701|[I2C Expand Board](http://fabo.io/701.html)|1個|
 |#1301|[3Pinケーブル](http://fabo.io/1301.html)|5本|
 |#1302|[4Pinケーブル](http://fabo.io/1302.html)|5本|
+
+42個のBrickと10本の線のセットになっています。
 
 商品入替え、または販売中止などの理由により、予告なく内容物が変更される場合があります。
 
