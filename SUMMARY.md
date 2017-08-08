@@ -1,8 +1,10 @@
 # Summary
-* [0001 Complete](/0001_starterkit_complete/README.md)
 * [0002 StarterKit Arduino](/0002_starterkit_arduino/README.md)
 * [0003 StarterKit RaspPi](/0003_starterkit_raspberrypi/README.md)
 * [0004 StarterKit IchigoJam](/0004_starterkit_ichigojam/README.md)
+* [0006_completekit_arduino](/0006_completekit_arduino/README.md)
+* [0007_completekit_raspberrypi](/0007_completekit_raspberrypi/README.md)
+* [0008_completekit_ichigojam](/0008_completekit_ichigojam/README.md)
 * [0101 LED](/0101_led/README.md)
 * [0102 Buzzar](/0102_buzzer/README.md)
 * [0103 Button](/0103_button/README.md)
