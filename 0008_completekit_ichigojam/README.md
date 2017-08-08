@@ -28,6 +28,10 @@ IchigoJamなどマイコン本体は含まれません。別途、お買い求�
 |#113|[IR Receiver Brick](http://fabo.io/113.html)|1個|
 |#115|[Humidity Brick](http://fabo.io/115.html)|1個|
 |#116|[Distance Brick](http://fabo.io/116.html)|1個|
+|#117|[Switch Brick](http://fabo.io/117.html)|1個|
+|#118|[Hall Brick](http://fabo.io/118.html)|1個|
+|#119|[PhotoReflector Brick](http://fabo.io/119.html)|1個|
+[#120|[Button Brick](http://fabo.io/120.html)|1個|
 |#503|[OUT/IN Shield for IchigoJam](http://fabo.io/503.html)|1個|
 |#701|[I2C Expand Board](http://fabo.io/701.html)|1個|
 |#1301|[3Pinケーブル](http://fabo.io/1301.html)|5本|
