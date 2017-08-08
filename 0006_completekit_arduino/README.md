@@ -45,6 +45,7 @@ Arduino本体は含まれません。別途、お買い求めください。
 |#213|[LCD mini I2C Brick](http://fabo.io/213.html)|1個|
 |#215|[RTC I2C Brick](http://fabo.io/215.html)|1個|
 |#217|[Ambient Light I2C Brick](http://fabo.io/217.html)|1個|
+|#302|[Bluetooth Brick](http://fabo.io/302.html)|1個|
 |#307|[BLE Nordic Serial Brick](http://fabo.io/307.html)|1個|
 |#401|[ColorLED One Brick](http://fabo.io/401.html)|1個|
 |#402|[ColorLED Ring Brick](http://fabo.io/402.html)|1個|

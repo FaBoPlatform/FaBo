@@ -28,7 +28,7 @@ Raspberry Pi本体は含まれません。別途、お買い求めください�
 |#117|[Switch Brick](http://fabo.io/117.html)|1個|
 |#118|[Hall Brick](http://fabo.io/118.html)|1個|
 |#119|[PhotoReflector Brick](http://fabo.io/119.html)|1個|
-|[#120|[Button Brick](http://fabo.io/120.html)|1個|
+|#120|[Button Brick](http://fabo.io/120.html)|1個|
 |#201|[3Axis I2C Brick](http://fabo.io/201.html)|1個|
 |#202|[9Axis I2C Brick](http://fabo.io/202.html)|1個|
 |#203|[Color I2C Brick](http://fabo.io/203.html)|1個|
@@ -42,6 +42,7 @@ Raspberry Pi本体は含まれません。別途、お買い求めください�
 |#213|[LCD mini I2C Brick](http://fabo.io/213.html)|1個|
 |#215|[RTC I2C Brick](http://fabo.io/215.html)|1個|
 |#217|[Ambient Light I2C Brick](http://fabo.io/217.html)|1個|
+|#302|[Bluetooth Brick](http://fabo.io/302.html)|1個|
 |#307|[BLE Nordic Serial Brick](http://fabo.io/307.html)|1個|
 |#401|[ColorLED One Brick](http://fabo.io/401.html)|1個|
 |#402|[ColorLED Ring Brick](http://fabo.io/402.html)|1個|
