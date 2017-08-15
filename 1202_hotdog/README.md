@@ -27,7 +27,17 @@ http://hotdog.fabo.io/
 
 ![](./img/motor_gear.png)
 
-モーターは６V、六角シャフトは150mmを使用します。
+六角シャフトは、SINGLE GEARBOX付属のシャフトから、150mmシャフトに取り替えます。
+
+![](./img/replace01.png)
+
+モーターも、SINGLE GEARBOX付属のモーターから、6Vモーターに取り替えます。
+
+![](./img/replace02.png)
+
+完成図
+
+![](./img/motor.png)
 
 <hr>
 
