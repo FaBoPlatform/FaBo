@@ -156,6 +156,8 @@ http://hotdog.fabo.io/
 
 バッテリー落下防止用ネジを裏から２か所取り付けます。
 
+![](./img/build_parts06.png)
+
 使用ネジ（M3-12ｍｍ）
 
 <hr>
