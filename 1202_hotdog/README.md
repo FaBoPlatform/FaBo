@@ -110,6 +110,8 @@ http://hotdog.fabo.io/
 
 サーボの向きに注意してください。
 
+![](./img/build_parts03.png)
+
 使用ネジ（M3-12ｍｍ）２本
 
 <hr>
