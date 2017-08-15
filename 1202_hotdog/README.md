@@ -74,6 +74,8 @@ http://hotdog.fabo.io/
 
 向きに注意してください。
 
+![](./img/servo03.png)
+
 使用ネジ（M3-12ｍｍ）1本
 
 <hr>
