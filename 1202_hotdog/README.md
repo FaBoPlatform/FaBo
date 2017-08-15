@@ -84,7 +84,7 @@ http://hotdog.fabo.io/
 
 ![](./img/type1_03.png)
 
-![](./img/build01.png)
+![](./img/build_parts01.png)
 
 <hr>
 
