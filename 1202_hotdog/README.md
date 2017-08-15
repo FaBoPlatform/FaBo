@@ -25,6 +25,8 @@ http://hotdog.fabo.io/
 
 ギヤ比は 114.7 : 1　組み立てます。
 
+![](./img/motor_dear.png)
+
 モーターは６V、六角シャフトは150mmを使用します。
 
 <hr>
