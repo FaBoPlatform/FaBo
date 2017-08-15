@@ -55,6 +55,11 @@ http://hotdog.fabo.io/
 
 # サーボの組み立て
 
+
+![](./img/servo01.png)
+
+![](./img/servo02.png)
+
 ギヤを中心（初期位置）にします。
 
 方法
@@ -69,7 +74,7 @@ http://hotdog.fabo.io/
 
 向きに注意してください。
 
-使用ネジ（M3-12ｍｍ）２本
+使用ネジ（M3-12ｍｍ）1本
 
 <hr>
 
@@ -93,9 +98,6 @@ http://hotdog.fabo.io/
 
 # サーボの取り付け
 
-![](./img/servo01.png)
-
-![](./img/servo02.png)
 
 ![](./img/type1_05.png)
 
