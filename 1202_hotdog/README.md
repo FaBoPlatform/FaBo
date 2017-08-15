@@ -82,9 +82,9 @@ http://hotdog.fabo.io/
 
 # フロントマウンターの取り付け
 
-![](./img/build01.png)
-
 ![](./img/type1_03.png)
+
+![](./img/build01.png)
 
 <hr>
 
