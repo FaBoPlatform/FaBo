@@ -93,6 +93,10 @@ http://hotdog.fabo.io/
 
 # サーボの取り付け
 
+![](./img/servo01.png)
+
+![](./img/servo02.png)
+
 ![](./img/type1_05.png)
 
 上から固定パーツで挟むように取り付けます。
