@@ -146,6 +146,8 @@ http://hotdog.fabo.io/
 
 ![](./img/type1_10.png)
 
+![](./img/build_parts05.png)
+
 <hr>
 
 # バッテリーキャリアの組み立て
