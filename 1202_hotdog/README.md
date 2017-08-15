@@ -82,6 +82,8 @@ http://hotdog.fabo.io/
 
 # フロントマウンターの取り付け
 
+![](./img/build01.png)
+
 ![](./img/type1_03.png)
 
 <hr>
@@ -99,7 +101,6 @@ http://hotdog.fabo.io/
 <hr>
 
 # サーボの取り付け
-
 
 ![](./img/type1_05.png)
 
