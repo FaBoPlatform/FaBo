@@ -176,6 +176,8 @@ http://hotdog.fabo.io/
 
 上部シャーシの後部裏に取り付けます。
 
+![](./img/build_parts08.png)
+
 使用ネジ（M3-12ｍｍ）２本
 
 ![](./img/type1_13.png)
