@@ -34016,92 +34016,54 @@ MEMS&lt;br&gt;
 Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;br&gt;
 https://creativecommons.org/licenses/by-sa/4.0/</description>
 <packages>
-<package name="BOSCH-BMX055">
-<smd name="4" x="1.35" y="0" dx="0.675" dy="0.25" layer="1"/>
-<wire x1="-1.5" y1="2.25" x2="-1.5" y2="-2.25" width="0.0762" layer="22"/>
-<wire x1="-1.5" y1="-2.25" x2="1.5" y2="-2.25" width="0.0762" layer="22"/>
-<wire x1="1.5" y1="-2.25" x2="1.5" y2="2.25" width="0.0762" layer="22"/>
-<wire x1="1.5" y1="2.25" x2="-1.5" y2="2.25" width="0.0762" layer="22"/>
-<smd name="3" x="1.35" y="0.5" dx="0.675" dy="0.25" layer="1"/>
-<smd name="2" x="1.35" y="1" dx="0.675" dy="0.25" layer="1"/>
-<smd name="1" x="1.35" y="1.5" dx="0.675" dy="0.25" layer="1"/>
-<smd name="5" x="1.35" y="-0.5" dx="0.675" dy="0.25" layer="1"/>
-<smd name="6" x="1.35" y="-1" dx="0.675" dy="0.25" layer="1"/>
-<smd name="7" x="1.35" y="-1.5" dx="0.675" dy="0.25" layer="1"/>
-<smd name="14" x="-1.35" y="0" dx="0.675" dy="0.25" layer="1"/>
-<smd name="15" x="-1.35" y="0.5" dx="0.675" dy="0.25" layer="1"/>
-<smd name="16" x="-1.35" y="1" dx="0.675" dy="0.25" layer="1"/>
-<smd name="17" x="-1.35" y="1.5" dx="0.675" dy="0.25" layer="1"/>
-<smd name="13" x="-1.35" y="-0.5" dx="0.675" dy="0.25" layer="1"/>
-<smd name="12" x="-1.35" y="-1" dx="0.675" dy="0.25" layer="1"/>
-<smd name="11" x="-1.35" y="-1.5" dx="0.675" dy="0.25" layer="1"/>
-<smd name="19" x="0" y="2.1" dx="0.675" dy="0.25" layer="1" rot="R90"/>
-<smd name="18" x="-0.5" y="2.1" dx="0.675" dy="0.25" layer="1" rot="R90"/>
-<smd name="20" x="0.5" y="2.1" dx="0.675" dy="0.25" layer="1" rot="R90"/>
-<smd name="8" x="0.5" y="-2.1" dx="0.675" dy="0.25" layer="1" rot="R90"/>
-<smd name="9" x="0" y="-2.1" dx="0.675" dy="0.25" layer="1" rot="R90"/>
-<smd name="10" x="-0.5" y="-2.1" dx="0.675" dy="0.25" layer="1" rot="R90"/>
-<rectangle x1="1" y1="1.8" x2="1.2" y2="2" layer="22"/>
-<text x="-2" y="2.6" size="0.8128" layer="21">&gt;NAME</text>
+<package name="SO-8">
+<smd name="1" x="-1.85" y="-2.7" dx="1.25" dy="0.6" layer="1" rot="R90"/>
+<smd name="2" x="-0.58" y="-2.7" dx="1.25" dy="0.6" layer="1" rot="R90"/>
+<smd name="3" x="0.69" y="-2.7" dx="1.25" dy="0.6" layer="1" rot="R90"/>
+<smd name="4" x="1.96" y="-2.7" dx="1.25" dy="0.6" layer="1" rot="R90"/>
+<smd name="5" x="1.96" y="2.55" dx="1.25" dy="0.6" layer="1" rot="R90"/>
+<smd name="6" x="0.69" y="2.55" dx="1.25" dy="0.6" layer="1" rot="R90"/>
+<smd name="7" x="-0.58" y="2.55" dx="1.25" dy="0.6" layer="1" rot="R90"/>
+<smd name="8" x="-1.85" y="2.55" dx="1.25" dy="0.6" layer="1" rot="R90"/>
+<wire x1="-2.5" y1="-2" x2="2.5" y2="-2" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-2" x2="2.5" y2="2" width="0.127" layer="21"/>
+<wire x1="2.5" y1="2" x2="-2.5" y2="2" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="2" x2="-2.5" y2="-2" width="0.127" layer="21"/>
+<circle x="-1.6764" y="-1.0668" radius="0.369828125" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
-<symbol name="BOSCH-BMX055">
-<pin name="INT2" x="17.78" y="7.62" length="middle" rot="R180"/>
-<pin name="DRDYM" x="17.78" y="5.08" length="middle" rot="R180"/>
-<pin name="VDD" x="17.78" y="2.54" length="middle" rot="R180"/>
-<pin name="GNDA" x="17.78" y="0" length="middle" rot="R180"/>
-<pin name="CSB2" x="17.78" y="-2.54" length="middle" rot="R180"/>
-<pin name="GNDIO" x="17.78" y="-5.08" length="middle" rot="R180"/>
-<pin name="PS" x="17.78" y="-7.62" length="middle" rot="R180"/>
-<pin name="NC@8" x="2.54" y="-17.78" length="middle" rot="R90"/>
-<pin name="SCX" x="0" y="-17.78" length="middle" rot="R90"/>
-<pin name="INT5" x="-2.54" y="-17.78" length="middle" rot="R90"/>
-<pin name="SDX" x="-17.78" y="-7.62" length="middle"/>
-<pin name="SDO2" x="-17.78" y="-5.08" length="middle"/>
-<pin name="VDDIO" x="-17.78" y="-2.54" length="middle"/>
-<pin name="INT3" x="-17.78" y="0" length="middle"/>
-<pin name="INT4" x="-17.78" y="2.54" length="middle"/>
-<pin name="CSB1" x="-17.78" y="5.08" length="middle"/>
-<pin name="SDO1" x="-17.78" y="7.62" length="middle"/>
-<pin name="NC@18" x="-2.54" y="17.78" length="middle" rot="R270"/>
-<pin name="INT1" x="0" y="17.78" length="middle" rot="R270"/>
-<pin name="CSB3" x="2.54" y="17.78" length="middle" rot="R270"/>
-<wire x1="-12.7" y1="12.7" x2="12.7" y2="12.7" width="0.254" layer="94"/>
-<wire x1="12.7" y1="12.7" x2="12.7" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-12.7" x2="-12.7" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="-12.7" x2="-12.7" y2="12.7" width="0.254" layer="94"/>
-<text x="-3.54" y="-1" size="1.27" layer="94">BMX055</text>
+<symbol name="ST-ST25DV64K">
+<pin name="V_EH" x="-12.7" y="5.08" length="middle"/>
+<pin name="AC0" x="-12.7" y="2.54" length="middle"/>
+<pin name="AC1" x="-12.7" y="0" length="middle"/>
+<pin name="VSS" x="-12.7" y="-2.54" length="middle"/>
+<pin name="VCC" x="12.7" y="5.08" length="middle" rot="R180"/>
+<pin name="GPO" x="12.7" y="2.54" length="middle" rot="R180"/>
+<pin name="SCL" x="12.7" y="0" length="middle" rot="R180"/>
+<pin name="SDA" x="12.7" y="-2.54" length="middle" rot="R180"/>
+<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="BO-BMX055">
+<deviceset name="ST-ST25DV64K">
 <gates>
-<gate name="G$1" symbol="BOSCH-BMX055" x="0" y="0"/>
+<gate name="G$1" symbol="ST-ST25DV64K" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="BOSCH-BMX055">
+<device name="" package="SO-8">
 <connects>
-<connect gate="G$1" pin="CSB1" pad="16"/>
-<connect gate="G$1" pin="CSB2" pad="5"/>
-<connect gate="G$1" pin="CSB3" pad="20"/>
-<connect gate="G$1" pin="DRDYM" pad="2"/>
-<connect gate="G$1" pin="GNDA" pad="4"/>
-<connect gate="G$1" pin="GNDIO" pad="6"/>
-<connect gate="G$1" pin="INT1" pad="19"/>
-<connect gate="G$1" pin="INT2" pad="1"/>
-<connect gate="G$1" pin="INT3" pad="14"/>
-<connect gate="G$1" pin="INT4" pad="15"/>
-<connect gate="G$1" pin="INT5" pad="10"/>
-<connect gate="G$1" pin="NC@18" pad="18"/>
-<connect gate="G$1" pin="NC@8" pad="8"/>
-<connect gate="G$1" pin="PS" pad="7"/>
-<connect gate="G$1" pin="SCX" pad="9"/>
-<connect gate="G$1" pin="SDO1" pad="17"/>
-<connect gate="G$1" pin="SDO2" pad="12"/>
-<connect gate="G$1" pin="SDX" pad="11"/>
-<connect gate="G$1" pin="VDD" pad="3"/>
-<connect gate="G$1" pin="VDDIO" pad="13"/>
+<connect gate="G$1" pin="AC0" pad="2"/>
+<connect gate="G$1" pin="AC1" pad="3"/>
+<connect gate="G$1" pin="GPO" pad="7"/>
+<connect gate="G$1" pin="SCL" pad="6"/>
+<connect gate="G$1" pin="SDA" pad="5"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
+<connect gate="G$1" pin="VSS" pad="4"/>
+<connect gate="G$1" pin="V_EH" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -34209,6 +34171,96 @@ Level Translators&lt;br&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="pinhead" urn="urn:adsk.eagle:library:325">
+<description>&lt;b&gt;Pin Header Connectors&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="1X02" library_version="1">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="1.27" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="-0.635" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="0.635" x2="2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<pad name="1" x="-1.27" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="1.27" y="0" drill="1.016" shape="long" rot="R90"/>
+<text x="-2.6162" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.54" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
+<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
+</package>
+<package name="1X02/90" library_version="1">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="-2.54" y1="-1.905" x2="0" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="0" y1="-1.905" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="6.985" x2="-1.27" y2="1.27" width="0.762" layer="21"/>
+<wire x1="0" y1="-1.905" x2="2.54" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-1.905" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="0.635" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="6.985" x2="1.27" y2="1.27" width="0.762" layer="21"/>
+<pad name="1" x="-1.27" y="-3.81" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="1.27" y="-3.81" drill="1.016" shape="long" rot="R90"/>
+<text x="-3.175" y="-3.81" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="4.445" y="-3.81" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-1.651" y1="0.635" x2="-0.889" y2="1.143" layer="21"/>
+<rectangle x1="0.889" y1="0.635" x2="1.651" y2="1.143" layer="21"/>
+<rectangle x1="-1.651" y1="-2.921" x2="-0.889" y2="-1.905" layer="21"/>
+<rectangle x1="0.889" y1="-2.921" x2="1.651" y2="-1.905" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="PINHD2" library_version="1">
+<wire x1="-6.35" y1="-2.54" x2="1.27" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.27" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="5.08" x2="-6.35" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="-6.35" y1="5.08" x2="-6.35" y2="-2.54" width="0.4064" layer="94"/>
+<text x="-6.35" y="5.715" size="1.778" layer="95">&gt;NAME</text>
+<text x="-6.35" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-2.54" y="2.54" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="2" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="PINHD-1X2" prefix="JP" uservalue="yes" library_version="1">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="PINHD2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="1X02">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="/90" package="1X02/90">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -34244,20 +34296,17 @@ Level Translators&lt;br&gt;
 <part name="R2" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="4.7k"/>
 <part name="3V6" library="FaBo-Supply" deviceset="3V3" device=""/>
 <part name="3V7" library="FaBo-Supply" deviceset="3V3" device=""/>
-<part name="BMX055" library="FaBo-Mems" deviceset="BO-BMX055" device=""/>
-<part name="GND12" library="FaBo-Supply" deviceset="GND" device=""/>
-<part name="GND13" library="FaBo-Supply" deviceset="GND" device=""/>
-<part name="3V8" library="FaBo-Supply" deviceset="3V3" device=""/>
 <part name="C7" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="100nF"/>
-<part name="GND14" library="FaBo-Supply" deviceset="GND" device=""/>
-<part name="3V2" library="FaBo-Supply" deviceset="3V3" device=""/>
-<part name="C3" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="100nF"/>
+<part name="U$4" library="FaBo-Mems" deviceset="ST-ST25DV64K" device=""/>
+<part name="GND5" library="FaBo-Supply" deviceset="GND" device=""/>
+<part name="3V3" library="FaBo-Supply" deviceset="3V3" device=""/>
 <part name="GND4" library="FaBo-Supply" deviceset="GND" device=""/>
+<part name="ANTENNA" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.0.Beta</text>
+<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.4</text>
 </plain>
 <instances>
 <instance part="J1" gate="G$1" x="20.32" y="132.08"/>
@@ -34285,15 +34334,12 @@ Level Translators&lt;br&gt;
 <instance part="R2" gate="G$1" x="43.18" y="66.04" rot="R90"/>
 <instance part="3V6" gate="G$1" x="43.18" y="76.2"/>
 <instance part="3V7" gate="G$1" x="33.02" y="76.2"/>
-<instance part="BMX055" gate="G$1" x="198.12" y="119.38"/>
-<instance part="GND12" gate="G$1" x="226.06" y="109.22"/>
-<instance part="GND13" gate="G$1" x="231.14" y="114.3"/>
-<instance part="3V8" gate="G$1" x="241.3" y="127"/>
-<instance part="C7" gate="G$1" x="241.3" y="93.98" rot="R90"/>
-<instance part="GND14" gate="G$1" x="241.3" y="86.36"/>
-<instance part="3V2" gate="G$1" x="149.86" y="127"/>
-<instance part="C3" gate="G$1" x="149.86" y="106.68" rot="R90"/>
-<instance part="GND4" gate="G$1" x="149.86" y="96.52"/>
+<instance part="C7" gate="G$1" x="215.9" y="68.58" rot="R90"/>
+<instance part="U$4" gate="G$1" x="177.8" y="71.12"/>
+<instance part="GND5" gate="G$1" x="152.4" y="63.5"/>
+<instance part="3V3" gate="G$1" x="200.66" y="86.36"/>
+<instance part="GND4" gate="G$1" x="215.9" y="60.96"/>
+<instance part="ANTENNA" gate="G$1" x="160.02" y="116.84"/>
 </instances>
 <busses>
 </busses>
@@ -34351,33 +34397,22 @@ Level Translators&lt;br&gt;
 <pinref part="GND3" gate="G$1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="BMX055" gate="G$1" pin="GNDIO"/>
-<pinref part="GND12" gate="G$1" pin="GND"/>
-<wire x1="215.9" y1="114.3" x2="226.06" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="114.3" x2="226.06" y2="109.22" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="BMX055" gate="G$1" pin="GNDA"/>
-<pinref part="GND13" gate="G$1" pin="GND"/>
-<wire x1="215.9" y1="119.38" x2="231.14" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="231.14" y1="119.38" x2="231.14" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="VSS"/>
+<pinref part="GND5" gate="G$1" pin="GND"/>
+<wire x1="165.1" y1="68.58" x2="152.4" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="68.58" x2="152.4" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C7" gate="G$1" pin="1"/>
-<wire x1="241.3" y1="91.44" x2="241.3" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="GND14" gate="G$1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="149.86" y1="104.14" x2="149.86" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="66.04" x2="215.9" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="GND4" gate="G$1" pin="GND"/>
 </segment>
 </net>
 <net name="SDA" class="0">
 <segment>
-<wire x1="160.02" y1="114.3" x2="180.34" y2="114.3" width="0.1524" layer="91"/>
-<label x="160.02" y="114.3" size="1.778" layer="95"/>
-<pinref part="BMX055" gate="G$1" pin="SDO2"/>
+<wire x1="200.66" y1="68.58" x2="190.5" y2="68.58" width="0.1524" layer="91"/>
+<label x="200.66" y="68.58" size="1.778" layer="95"/>
+<pinref part="U$4" gate="G$1" pin="SDA"/>
 </segment>
 <segment>
 <wire x1="22.86" y1="50.8" x2="43.18" y2="50.8" width="0.1524" layer="91"/>
@@ -34395,10 +34430,9 @@ Level Translators&lt;br&gt;
 </net>
 <net name="SCL" class="0">
 <segment>
-<wire x1="190.5" y1="88.9" x2="198.12" y2="88.9" width="0.1524" layer="91"/>
-<label x="190.5" y="88.9" size="1.778" layer="95"/>
-<pinref part="BMX055" gate="G$1" pin="SCX"/>
-<wire x1="198.12" y1="88.9" x2="198.12" y2="101.6" width="0.1524" layer="91"/>
+<label x="200.66" y="71.12" size="1.778" layer="95"/>
+<wire x1="200.66" y1="71.12" x2="190.5" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="SCL"/>
 </segment>
 <segment>
 <wire x1="22.86" y1="53.34" x2="33.02" y2="53.34" width="0.1524" layer="91"/>
@@ -34441,25 +34475,13 @@ Level Translators&lt;br&gt;
 <wire x1="43.18" y1="76.2" x2="43.18" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="BMX055" gate="G$1" pin="VDD"/>
-<wire x1="215.9" y1="121.92" x2="241.3" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="241.3" y1="121.92" x2="241.3" y2="127" width="0.1524" layer="91"/>
-<pinref part="3V8" gate="G$1" pin="3V3"/>
-<pinref part="BMX055" gate="G$1" pin="PS"/>
-<wire x1="215.9" y1="111.76" x2="220.98" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="111.76" x2="220.98" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="101.6" x2="241.3" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="241.3" y1="121.92" x2="241.3" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="VCC"/>
+<wire x1="190.5" y1="76.2" x2="200.66" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="76.2" x2="200.66" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="3V3" gate="G$1" pin="3V3"/>
 <pinref part="C7" gate="G$1" pin="2"/>
-<wire x1="241.3" y1="101.6" x2="241.3" y2="99.06" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="BMX055" gate="G$1" pin="VDDIO"/>
-<wire x1="180.34" y1="116.84" x2="149.86" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="116.84" x2="149.86" y2="127" width="0.1524" layer="91"/>
-<pinref part="C3" gate="G$1" pin="2"/>
-<wire x1="149.86" y1="116.84" x2="149.86" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="3V2" gate="G$1" pin="3V3"/>
+<wire x1="200.66" y1="76.2" x2="215.9" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="76.2" x2="215.9" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SCL_HV" class="0">
@@ -34501,9 +34523,40 @@ Level Translators&lt;br&gt;
 <pinref part="IC3" gate="G$1" pin="EN"/>
 </segment>
 </net>
+<net name="ANTENA0" class="0">
+<segment>
+<pinref part="U$4" gate="G$1" pin="AC0"/>
+<wire x1="165.1" y1="73.66" x2="152.4" y2="73.66" width="0.1524" layer="91"/>
+<label x="152.4" y="73.66" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="ANTENNA" gate="G$1" pin="1"/>
+<wire x1="157.48" y1="119.38" x2="139.7" y2="119.38" width="0.1524" layer="91"/>
+<label x="139.7" y="119.38" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ANTENA1" class="0">
+<segment>
+<pinref part="U$4" gate="G$1" pin="AC1"/>
+<wire x1="165.1" y1="71.12" x2="152.4" y2="71.12" width="0.1524" layer="91"/>
+<label x="152.4" y="71.12" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="ANTENNA" gate="G$1" pin="2"/>
+<wire x1="157.48" y1="116.84" x2="139.7" y2="116.84" width="0.1524" layer="91"/>
+<label x="139.7" y="116.84" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="8.2" severity="warning">
+Since Version 8.2, Eagle supports online libraries. The ids
+of those online libraries will not be understood (or retained)
+with this version.
+</note>
+</compatibility>
 </eagle>

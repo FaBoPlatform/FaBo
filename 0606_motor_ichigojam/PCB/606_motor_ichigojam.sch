@@ -76,6 +76,7 @@
 <layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="113" name="IDFDebug" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="115" name="sd" color="13" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
@@ -14715,6 +14716,15 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pad name="GND1" x="0.5" y="0" drill="1.5" shape="square" rot="R90"/>
 <pad name="GND2" x="2.6" y="-2.8" drill="1.5" shape="square" rot="R90"/>
 </package>
+<package name="1206">
+<smd name="P$1" x="-1.5" y="0" dx="1" dy="1.6" layer="1"/>
+<smd name="P$2" x="1.5" y="0" dx="1" dy="1.6" layer="1"/>
+<wire x1="-2" y1="0.8" x2="2" y2="0.8" width="0.127" layer="21"/>
+<wire x1="2" y1="0.8" x2="2" y2="-0.8" width="0.127" layer="21"/>
+<wire x1="2" y1="-0.8" x2="-2" y2="-0.8" width="0.127" layer="21"/>
+<wire x1="-2" y1="-0.8" x2="-2" y2="0.8" width="0.127" layer="21"/>
+<text x="-2.01421875" y="1.05918125" size="0.8128" layer="25">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="3V3">
@@ -14747,6 +14757,21 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pin name="GNDBREAK" x="7.62" y="0" visible="off" length="short" rot="R180"/>
 <pin name="GND" x="7.62" y="-2.54" visible="off" length="short" rot="R180"/>
 <pin name="PWR" x="7.62" y="2.54" visible="off" length="short" rot="R180"/>
+</symbol>
+<symbol name="POLYSWITCH">
+<pin name="1" x="-5.08" y="0" visible="off" length="point"/>
+<pin name="2" x="5.08" y="0" visible="off" length="point" rot="R180"/>
+<wire x1="-2.54" y1="1.016" x2="2.54" y2="1.016" width="0.254" layer="94"/>
+<wire x1="2.54" y1="1.016" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-1.016" x2="-2.54" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-1.016" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="1.016" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.032" x2="1.778" y2="2.032" width="0.254" layer="94"/>
+<wire x1="1.778" y1="2.032" x2="-2.286" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
+<text x="0" y="2.54" size="1.778" layer="95" align="bottom-center">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -14797,6 +14822,22 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <connect gate="G$1" pin="GND" pad="GND1"/>
 <connect gate="G$1" pin="GNDBREAK" pad="GND2"/>
 <connect gate="G$1" pin="PWR" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="POLYSWITCH">
+<gates>
+<gate name="G$1" symbol="POLYSWITCH" x="0" y="0"/>
+</gates>
+<devices>
+<device name="MF-NSML1" package="1206">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -21810,6 +21851,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="R5" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="1K"/>
 <part name="R6" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="1K"/>
 <part name="R7" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="1K"/>
+<part name="P1" library="FaBo-Supply" deviceset="POLYSWITCH" device="MF-NSML1"/>
 </parts>
 <sheets>
 <sheet>
@@ -21904,6 +21946,7 @@ CN5</text>
 <instance part="R5" gate="G$1" x="167.64" y="160.02" rot="R90"/>
 <instance part="R6" gate="G$1" x="195.58" y="160.02" rot="R90"/>
 <instance part="R7" gate="G$1" x="223.52" y="160.02" rot="R90"/>
+<instance part="P1" gate="G$1" x="73.66" y="27.94" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -22385,12 +22428,6 @@ CN5</text>
 </net>
 <net name="VCC" class="0">
 <segment>
-<pinref part="P+1" gate="VCC" pin="VCC"/>
-<pinref part="U$15" gate="G$1" pin="PWR"/>
-<wire x1="58.42" y1="17.78" x2="73.66" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="17.78" x2="73.66" y2="38.1" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <wire x1="27.94" y1="35.56" x2="27.94" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="P+2" gate="VCC" pin="VCC"/>
 <pinref part="C10" gate="G$1" pin="2"/>
@@ -22415,6 +22452,11 @@ CN5</text>
 <pinref part="PWM2" gate="G$1" pin="VCC"/>
 <wire x1="149.86" y1="58.42" x2="149.86" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="P+3" gate="VCC" pin="VCC"/>
+</segment>
+<segment>
+<pinref part="P1" gate="G$1" pin="2"/>
+<pinref part="P+1" gate="VCC" pin="VCC"/>
+<wire x1="73.66" y1="33.02" x2="73.66" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GPIO21" class="0">
@@ -22499,6 +22541,14 @@ CN5</text>
 <wire x1="109.22" y1="48.26" x2="109.22" y2="58.42" width="0.1524" layer="91"/>
 <label x="109.22" y="48.26" size="1.778" layer="95" rot="R90"/>
 <pinref part="R1" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="U$15" gate="G$1" pin="PWR"/>
+<wire x1="58.42" y1="17.78" x2="73.66" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="P1" gate="G$1" pin="1"/>
+<wire x1="73.66" y1="17.78" x2="73.66" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

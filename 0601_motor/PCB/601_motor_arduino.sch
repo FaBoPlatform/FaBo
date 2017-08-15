@@ -76,6 +76,7 @@
 <layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="113" name="IDFDebug" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="115" name="sd" color="13" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
@@ -141,7 +142,7 @@
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
-<library name="supply1">
+<library name="supply1" urn="urn:adsk.eagle:library:371">
 <description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
  GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
  Please keep in mind, that these devices are necessary for the
@@ -175,7 +176,7 @@
 </deviceset>
 </devicesets>
 </library>
-<library name="resistor">
+<library name="resistor" urn="urn:adsk.eagle:library:348">
 <description>&lt;b&gt;Resistors, Capacitors, Inductors&lt;/b&gt;&lt;p&gt;
 Based on the previous libraries:
 &lt;ul&gt;
@@ -39520,6 +39521,15 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pad name="GND1" x="0.5" y="0" drill="1.5" shape="square" rot="R90"/>
 <pad name="GND2" x="2.6" y="-2.8" drill="1.5" shape="square" rot="R90"/>
 </package>
+<package name="1206">
+<smd name="P$1" x="-1.5" y="0" dx="1" dy="1.6" layer="1"/>
+<smd name="P$2" x="1.5" y="0" dx="1" dy="1.6" layer="1"/>
+<wire x1="-2" y1="0.8" x2="2" y2="0.8" width="0.127" layer="21"/>
+<wire x1="2" y1="0.8" x2="2" y2="-0.8" width="0.127" layer="21"/>
+<wire x1="2" y1="-0.8" x2="-2" y2="-0.8" width="0.127" layer="21"/>
+<wire x1="-2" y1="-0.8" x2="-2" y2="0.8" width="0.127" layer="21"/>
+<text x="-2.01421875" y="1.05918125" size="0.8128" layer="25">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="5V">
@@ -39546,6 +39556,21 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pin name="GNDBREAK" x="7.62" y="0" visible="off" length="short" rot="R180"/>
 <pin name="GND" x="7.62" y="-2.54" visible="off" length="short" rot="R180"/>
 <pin name="PWR" x="7.62" y="2.54" visible="off" length="short" rot="R180"/>
+</symbol>
+<symbol name="POLYSWITCH">
+<pin name="1" x="-5.08" y="0" visible="off" length="point"/>
+<pin name="2" x="5.08" y="0" visible="off" length="point" rot="R180"/>
+<wire x1="-2.54" y1="1.016" x2="2.54" y2="1.016" width="0.254" layer="94"/>
+<wire x1="2.54" y1="1.016" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-1.016" x2="-2.54" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-1.016" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="1.016" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.032" x2="1.778" y2="2.032" width="0.254" layer="94"/>
+<wire x1="1.778" y1="2.032" x2="-2.286" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
+<text x="0" y="2.54" size="1.778" layer="95" align="bottom-center">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -39583,6 +39608,22 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <connect gate="G$1" pin="GND" pad="GND1"/>
 <connect gate="G$1" pin="GNDBREAK" pad="GND2"/>
 <connect gate="G$1" pin="PWR" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="POLYSWITCH">
+<gates>
+<gate name="G$1" symbol="POLYSWITCH" x="0" y="0"/>
+</gates>
+<devices>
+<device name="MF-NSML1" package="1206">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40150,7 +40191,7 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <part name="GND12" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="D11" library="FaBo-Template" deviceset="FABO_BRICK_3PIN" device="-HEADER"/>
 <part name="GND14" library="FaBo-etc" deviceset="GND" device=""/>
-<part name="C4" library="resistor" deviceset="CPOL-US" device="153CLV-0405" value="22uf"/>
+<part name="C4" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="CPOL-US" device="153CLV-0405" value="22uf"/>
 <part name="C5" library="FaBo-etc" deviceset="CAP" device="-EIA0603" value="0.1uF"/>
 <part name="D2" library="FaBo-Template" deviceset="FABO_BRICK_3PIN" device="-B03B-PASK-1"/>
 <part name="D4" library="FaBo-Template" deviceset="FABO_BRICK_3PIN" device="-B03B-PASK-1"/>
@@ -40176,11 +40217,11 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <part name="R6" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="1K"/>
 <part name="SUPPLY35" library="FaBo-etc" deviceset="5V" device=""/>
 <part name="SUPPLY36" library="FaBo-etc" deviceset="5V" device=""/>
-<part name="C6" library="resistor" deviceset="CPOL-US" device="153CLV-0405" value="100uf"/>
-<part name="P+1" library="supply1" deviceset="VCC" device=""/>
-<part name="P+2" library="supply1" deviceset="VCC" device=""/>
-<part name="P+3" library="supply1" deviceset="VCC" device=""/>
-<part name="P+4" library="supply1" deviceset="VCC" device=""/>
+<part name="C6" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="CPOL-US" device="153CLV-0405" value="100uf"/>
+<part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="C7" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="0.1uF"/>
 <part name="C8" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="0.1uF"/>
 <part name="C10" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="0.1uF"/>
@@ -40195,15 +40236,16 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <part name="GND19" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="GND22" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="GND23" library="FaBo-etc" deviceset="GND" device=""/>
-<part name="P+5" library="supply1" deviceset="VCC" device=""/>
-<part name="P+6" library="supply1" deviceset="VCC" device=""/>
-<part name="P+7" library="supply1" deviceset="VCC" device=""/>
+<part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="P+7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="R8" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="0.4"/>
 <part name="R9" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="0.4"/>
 <part name="GND24" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="GND25" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="GND26" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="." library="FaBo-Switch" deviceset="SLIDE" device="-EG1218"/>
+<part name="P1" library="FaBo-Supply" deviceset="POLYSWITCH" device="MF-NSML1"/>
 </parts>
 <sheets>
 <sheet>
@@ -40315,6 +40357,7 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <instance part="GND25" gate="GND" x="157.48" y="99.06"/>
 <instance part="GND26" gate="GND" x="228.6" y="63.5"/>
 <instance part="." gate="G$1" x="147.32" y="20.32"/>
+<instance part="P1" gate="G$1" x="238.76" y="157.48" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -40958,12 +41001,6 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 </net>
 <net name="VCC" class="0">
 <segment>
-<pinref part="P+1" gate="VCC" pin="VCC"/>
-<pinref part="U$15" gate="G$1" pin="PWR"/>
-<wire x1="223.52" y1="147.32" x2="238.76" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="238.76" y1="147.32" x2="238.76" y2="167.64" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <wire x1="193.04" y1="165.1" x2="193.04" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="C6" gate="G$1" pin="+"/>
 <pinref part="P+2" gate="VCC" pin="VCC"/>
@@ -41014,6 +41051,11 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <wire x1="144.78" y1="25.4" x2="144.78" y2="33.02" width="0.1524" layer="91"/>
 <label x="144.78" y="33.02" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="P1" gate="G$1" pin="2"/>
+<pinref part="P+1" gate="VCC" pin="VCC"/>
+<wire x1="238.76" y1="162.56" x2="238.76" y2="167.64" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="VIN" class="0">
 <segment>
@@ -41027,6 +41069,14 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <label x="147.32" y="10.16" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="U$15" gate="G$1" pin="PWR"/>
+<wire x1="223.52" y1="147.32" x2="238.76" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="P1" gate="G$1" pin="1"/>
+<wire x1="238.76" y1="147.32" x2="238.76" y2="152.4" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
@@ -41036,6 +41086,11 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <note version="6.3" minversion="6.2.2" severity="warning">
 Since Version 6.2.2 text objects can contain more than one line,
 which will not be processed correctly with this version.
+</note>
+<note version="8.2" severity="warning">
+Since Version 8.2, Eagle supports online libraries. The ids
+of those online libraries will not be understood (or retained)
+with this version.
 </note>
 </compatibility>
 </eagle>

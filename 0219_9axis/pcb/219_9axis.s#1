@@ -34257,7 +34257,7 @@ Level Translators&lt;br&gt;
 <sheets>
 <sheet>
 <plain>
-<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.0.Beta</text>
+<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.4</text>
 </plain>
 <instances>
 <instance part="J1" gate="G$1" x="20.32" y="132.08"/>
