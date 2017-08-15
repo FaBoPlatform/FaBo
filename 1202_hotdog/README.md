@@ -96,6 +96,8 @@ http://hotdog.fabo.io/
 
 裏から差し込んで固定します。
 
+![](./img/build_parts02.png)
+
 使用ネジ（M2.6-15ｍｍ）４本
 
 <hr>
