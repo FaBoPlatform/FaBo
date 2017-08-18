@@ -21856,7 +21856,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <sheets>
 <sheet>
 <plain>
-<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.8</text>
+<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.2.Beta</text>
 <text x="121.92" y="170.18" size="2.54" layer="97">IN (3pin Side 2mm pitch) x4</text>
 <text x="142.24" y="134.62" size="2.54" layer="97">OUT/BTN/LED/SOUND (3pin Top 2mm pitch) x6</text>
 <text x="15.24" y="91.44" size="2.54" layer="97">I2C/Serial (4pin Side 2mm pitch)</text>

@@ -14273,7 +14273,7 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <sheets>
 <sheet>
 <plain>
-<text x="373.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.6</text>
+<text x="373.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.3.Beta</text>
 <text x="162.56" y="243.84" size="2.54" layer="97">GPIO (3pin Side 2mm pitch) x4</text>
 <text x="17.78" y="55.88" size="2.54" layer="97">I2C(4pin Side 2mm pitch) x3</text>
 <text x="162.56" y="93.98" size="2.54" layer="97">Analog(3pin Side 2mm pitch) x4</text>

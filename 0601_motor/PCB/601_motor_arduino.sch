@@ -40250,7 +40250,7 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <sheets>
 <sheet>
 <plain>
-<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.9</text>
+<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.10.Beta</text>
 <text x="121.92" y="99.06" size="2.54" layer="97">I2C/Serial (4pin)</text>
 <text x="50.8" y="132.08" size="2.54" layer="97">PWM (3pin Top 2mm pitch)</text>
 <text x="53.34" y="167.64" size="2.54" layer="97">ANALOG (3pin Side 2mm pitch)</text>

@@ -167,7 +167,7 @@
 <text x="54.7" y="6.7" size="0.8128" layer="21">I2C PULL-UP</text>
 <text x="63.7" y="3.8" size="1.27" layer="21" rot="R90">ON</text>
 <text x="22.1" y="46.1" size="1.778" layer="21">#606 Motor Shield </text>
-<text x="22" y="44" size="1.016" layer="21">Ver 1.0.2</text>
+<text x="22" y="44" size="1.016" layer="21">Ver 1.0.2.Beta</text>
 <text x="11.3" y="43.8" size="0.8128" layer="21">MADE IN JAPAN</text>
 <text x="45.3" y="46.95" size="1.778" layer="21">5V</text>
 </plain>
