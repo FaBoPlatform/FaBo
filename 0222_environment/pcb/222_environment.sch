@@ -1115,13 +1115,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pin name="1" x="0" y="5.08" visible="off" length="middle" rot="R270"/>
 <circle x="0" y="0" radius="1.27" width="0" layer="94"/>
 </symbol>
-<symbol name="1V8">
-<description>1.8V</description>
-<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.2032" layer="94"/>
-<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.2032" layer="94"/>
-<text x="-1.27" y="3.556" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1V8" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="5V" prefix="5V">
@@ -1197,19 +1190,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 </connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="1V8" prefix="1V8">
-<description>Supply</description>
-<gates>
-<gate name="G$1" symbol="1V8" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -34230,10 +34210,6 @@ Level Translators&lt;br&gt;
 <part name="TP2" library="FaBo-Supply" deviceset="TP" device="-15"/>
 <part name="R1" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="4.7k"/>
 <part name="R2" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="4.7k"/>
-<part name="1V1" library="FaBo-Supply" deviceset="1V8" device=""/>
-<part name="1V3" library="FaBo-Supply" deviceset="1V8" device=""/>
-<part name="1V4" library="FaBo-Supply" deviceset="1V8" device=""/>
-<part name="1V5" library="FaBo-Supply" deviceset="1V8" device=""/>
 <part name="B1" library="FaBo-Mems" deviceset="BO-BME680" device=""/>
 <part name="+3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="C5" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="100nf"/>
@@ -34242,6 +34218,10 @@ Level Translators&lt;br&gt;
 <part name="+3V2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="+3V3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="+3V4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="+3V5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="+3V6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -34270,10 +34250,6 @@ Level Translators&lt;br&gt;
 <instance part="TP2" gate="G$1" x="53.34" y="35.56"/>
 <instance part="R1" gate="G$1" x="33.02" y="66.04" rot="R90"/>
 <instance part="R2" gate="G$1" x="43.18" y="66.04" rot="R90"/>
-<instance part="1V1" gate="G$1" x="93.98" y="149.86"/>
-<instance part="1V3" gate="G$1" x="53.34" y="76.2"/>
-<instance part="1V4" gate="G$1" x="43.18" y="76.2"/>
-<instance part="1V5" gate="G$1" x="33.02" y="76.2"/>
 <instance part="B1" gate="G$1" x="172.72" y="81.28"/>
 <instance part="+3V1" gate="G$1" x="139.7" y="93.98"/>
 <instance part="C5" gate="G$1" x="139.7" y="63.5" rot="R90"/>
@@ -34282,6 +34258,10 @@ Level Translators&lt;br&gt;
 <instance part="+3V2" gate="G$1" x="200.66" y="88.9"/>
 <instance part="GND12" gate="1" x="193.04" y="83.82"/>
 <instance part="GND13" gate="1" x="154.94" y="66.04"/>
+<instance part="+3V3" gate="G$1" x="53.34" y="78.74"/>
+<instance part="+3V4" gate="G$1" x="43.18" y="78.74"/>
+<instance part="+3V5" gate="G$1" x="33.02" y="78.74"/>
+<instance part="+3V6" gate="G$1" x="93.98" y="152.4"/>
 </instances>
 <busses>
 </busses>
@@ -34443,33 +34423,6 @@ Level Translators&lt;br&gt;
 <pinref part="IC3" gate="G$1" pin="EN"/>
 </segment>
 </net>
-<net name="1V8" class="0">
-<segment>
-<wire x1="93.98" y1="149.86" x2="93.98" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="134.62" x2="93.98" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="134.62" x2="93.98" y2="134.62" width="0.1524" layer="91"/>
-<junction x="93.98" y="134.62"/>
-<pinref part="C1" gate="G$1" pin="2"/>
-<pinref part="IC2" gate="G$1" pin="VOUT"/>
-<pinref part="1V1" gate="G$1" pin="1V8"/>
-</segment>
-<segment>
-<wire x1="58.42" y1="55.88" x2="53.34" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="55.88" x2="53.34" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="IC3" gate="G$1" pin="VREF1"/>
-<pinref part="1V3" gate="G$1" pin="1V8"/>
-</segment>
-<segment>
-<pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="43.18" y1="76.2" x2="43.18" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="1V4" gate="G$1" pin="1V8"/>
-</segment>
-<segment>
-<pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="33.02" y1="76.2" x2="33.02" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="1V5" gate="G$1" pin="1V8"/>
-</segment>
-</net>
 <net name="+3V3" class="0">
 <segment>
 <pinref part="B1" gate="G$1" pin="VDD"/>
@@ -34489,6 +34442,31 @@ Level Translators&lt;br&gt;
 <wire x1="187.96" y1="81.28" x2="200.66" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="81.28" x2="200.66" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="+3V2" gate="G$1" pin="+3V3"/>
+</segment>
+<segment>
+<wire x1="58.42" y1="55.88" x2="53.34" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="55.88" x2="53.34" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="G$1" pin="VREF1"/>
+<pinref part="+3V3" gate="G$1" pin="+3V3"/>
+</segment>
+<segment>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="43.18" y1="76.2" x2="43.18" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="+3V4" gate="G$1" pin="+3V3"/>
+</segment>
+<segment>
+<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="33.02" y1="76.2" x2="33.02" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="+3V5" gate="G$1" pin="+3V3"/>
+</segment>
+<segment>
+<wire x1="93.98" y1="149.86" x2="93.98" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="134.62" x2="93.98" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="134.62" x2="93.98" y2="134.62" width="0.1524" layer="91"/>
+<junction x="93.98" y="134.62"/>
+<pinref part="C1" gate="G$1" pin="2"/>
+<pinref part="IC2" gate="G$1" pin="VOUT"/>
+<pinref part="+3V6" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
 </nets>

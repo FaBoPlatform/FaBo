@@ -1093,12 +1093,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <text x="-1.27" y="3.556" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="5V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
-<symbol name="3V3">
-<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.2032" layer="94"/>
-<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.2032" layer="94"/>
-<text x="-1.27" y="3.556" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="3V3" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
 <symbol name="GND">
 <wire x1="-1.905" y1="-2.54" x2="1.905" y2="-2.54" width="0.254" layer="94"/>
 <text x="-2.794" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
@@ -1126,19 +1120,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <deviceset name="5V" prefix="5V">
 <gates>
 <gate name="G$1" symbol="5V" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="3V3" prefix="3V3">
-<description>Supply</description>
-<gates>
-<gate name="G$1" symbol="3V3" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -34016,54 +33997,64 @@ MEMS&lt;br&gt;
 Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;br&gt;
 https://creativecommons.org/licenses/by-sa/4.0/</description>
 <packages>
-<package name="SO-8">
-<smd name="1" x="-1.85" y="-2.7" dx="1.25" dy="0.6" layer="1" rot="R90"/>
-<smd name="2" x="-0.58" y="-2.7" dx="1.25" dy="0.6" layer="1" rot="R90"/>
-<smd name="3" x="0.69" y="-2.7" dx="1.25" dy="0.6" layer="1" rot="R90"/>
-<smd name="4" x="1.96" y="-2.7" dx="1.25" dy="0.6" layer="1" rot="R90"/>
-<smd name="5" x="1.96" y="2.55" dx="1.25" dy="0.6" layer="1" rot="R90"/>
-<smd name="6" x="0.69" y="2.55" dx="1.25" dy="0.6" layer="1" rot="R90"/>
-<smd name="7" x="-0.58" y="2.55" dx="1.25" dy="0.6" layer="1" rot="R90"/>
-<smd name="8" x="-1.85" y="2.55" dx="1.25" dy="0.6" layer="1" rot="R90"/>
-<wire x1="-2.5" y1="-2" x2="2.5" y2="-2" width="0.127" layer="21"/>
-<wire x1="2.5" y1="-2" x2="2.5" y2="2" width="0.127" layer="21"/>
-<wire x1="2.5" y1="2" x2="-2.5" y2="2" width="0.127" layer="21"/>
-<wire x1="-2.5" y1="2" x2="-2.5" y2="-2" width="0.127" layer="21"/>
-<circle x="-1.6764" y="-1.0668" radius="0.369828125" width="0.127" layer="21"/>
+<package name="AMS-CSS811">
+<smd name="3" x="-1.27" y="0" dx="0.8" dy="0.4" layer="1"/>
+<smd name="2" x="-1.27" y="0.6" dx="0.8" dy="0.4" layer="1"/>
+<smd name="1" x="-1.27" y="1.2" dx="0.8" dy="0.4" layer="1"/>
+<smd name="4" x="-1.27" y="-0.6" dx="0.8" dy="0.4" layer="1"/>
+<smd name="5" x="-1.27" y="-1.2" dx="0.8" dy="0.4" layer="1"/>
+<smd name="6" x="1.27" y="0" dx="0.8" dy="0.4" layer="1"/>
+<smd name="7" x="1.27" y="0.6" dx="0.8" dy="0.4" layer="1"/>
+<smd name="8" x="1.27" y="1.2" dx="0.8" dy="0.4" layer="1"/>
+<smd name="9" x="1.27" y="-0.6" dx="0.8" dy="0.4" layer="1"/>
+<smd name="10" x="1.27" y="-1.2" dx="0.8" dy="0.4" layer="1"/>
+<wire x1="-1.35" y1="2" x2="1.35" y2="2" width="0.127" layer="21"/>
+<wire x1="1.35" y1="2" x2="1.35" y2="-2" width="0.127" layer="21"/>
+<wire x1="1.35" y1="-2" x2="-1.35" y2="-2" width="0.127" layer="21"/>
+<wire x1="-1.35" y1="-2" x2="-1.35" y2="2" width="0.127" layer="21"/>
+<circle x="-1" y="1.7" radius="0.1" width="0.127" layer="21"/>
+<smd name="EP" x="0" y="0" dx="1.3" dy="2.5" layer="1" roundness="100"/>
 </package>
 </packages>
 <symbols>
-<symbol name="ST-ST25DV64K">
-<pin name="V_EH" x="-12.7" y="5.08" length="middle"/>
-<pin name="AC0" x="-12.7" y="2.54" length="middle"/>
-<pin name="AC1" x="-12.7" y="0" length="middle"/>
-<pin name="VSS" x="-12.7" y="-2.54" length="middle"/>
-<pin name="VCC" x="12.7" y="5.08" length="middle" rot="R180"/>
-<pin name="GPO" x="12.7" y="2.54" length="middle" rot="R180"/>
-<pin name="SCL" x="12.7" y="0" length="middle" rot="R180"/>
-<pin name="SDA" x="12.7" y="-2.54" length="middle" rot="R180"/>
-<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
-<wire x1="7.62" y1="7.62" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<symbol name="AMS-CSS811">
+<pin name="ADDR" x="-15.24" y="5.08" length="middle"/>
+<pin name="RST" x="-15.24" y="2.54" length="middle"/>
+<pin name="INT" x="-15.24" y="0" length="middle"/>
+<pin name="PWM" x="-15.24" y="-2.54" length="middle"/>
+<pin name="SENSE" x="-15.24" y="-5.08" length="middle"/>
+<pin name="SCL" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="SDA" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="AUX" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="WAKE" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="VDD" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<wire x1="-10.16" y1="7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<text x="-10.16" y="8.128" size="1.27" layer="95">&gt;NAME</text>
+<pin name="GND" x="0" y="-12.7" length="middle" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="ST-ST25DV64K">
+<deviceset name="AM-CSS811" prefix="C">
 <gates>
-<gate name="G$1" symbol="ST-ST25DV64K" x="0" y="0"/>
+<gate name="G$1" symbol="AMS-CSS811" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SO-8">
+<device name="" package="AMS-CSS811">
 <connects>
-<connect gate="G$1" pin="AC0" pad="2"/>
-<connect gate="G$1" pin="AC1" pad="3"/>
-<connect gate="G$1" pin="GPO" pad="7"/>
-<connect gate="G$1" pin="SCL" pad="6"/>
-<connect gate="G$1" pin="SDA" pad="5"/>
-<connect gate="G$1" pin="VCC" pad="8"/>
-<connect gate="G$1" pin="VSS" pad="4"/>
-<connect gate="G$1" pin="V_EH" pad="1"/>
+<connect gate="G$1" pin="ADDR" pad="1"/>
+<connect gate="G$1" pin="AUX" pad="8"/>
+<connect gate="G$1" pin="GND" pad="EP"/>
+<connect gate="G$1" pin="INT" pad="3"/>
+<connect gate="G$1" pin="PWM" pad="4"/>
+<connect gate="G$1" pin="RST" pad="2"/>
+<connect gate="G$1" pin="SCL" pad="10"/>
+<connect gate="G$1" pin="SDA" pad="9"/>
+<connect gate="G$1" pin="SENSE" pad="5"/>
+<connect gate="G$1" pin="VDD" pad="6"/>
+<connect gate="G$1" pin="WAKE" pad="7"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -34171,39 +34162,32 @@ Level Translators&lt;br&gt;
 </deviceset>
 </devicesets>
 </library>
-<library name="FaBo-Connetor">
+<library name="supply1" urn="urn:adsk.eagle:library:371">
+<description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
+ GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
+ Please keep in mind, that these devices are necessary for the
+ automatic wiring of the supply signals.&lt;p&gt;
+ The pin name defined in the symbol is identical to the net which is to be wired automatically.&lt;p&gt;
+ In this library the device names are the same as the pin names of the symbols, therefore the correct signal names appear next to the supply symbols in the schematic.&lt;p&gt;
+ &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="HIROSE-UF.L">
-<smd name="GND@1" x="-1.5" y="0" dx="2.2" dy="1" layer="1" rot="R90"/>
-<smd name="GND@2" x="1.5" y="0" dx="2.2" dy="1" layer="1" rot="R90"/>
-<smd name="SIG" x="0" y="-1.5" dx="1" dy="1" layer="1"/>
-<wire x1="-1.3" y1="1.3" x2="1.3" y2="1.3" width="0.127" layer="21"/>
-<wire x1="1.3" y1="1.3" x2="1.3" y2="-1.3" width="0.127" layer="21"/>
-<wire x1="1.3" y1="-1.3" x2="-1.3" y2="-1.3" width="0.127" layer="21"/>
-<wire x1="-1.3" y1="-1.3" x2="-1.3" y2="1.3" width="0.127" layer="21"/>
-</package>
 </packages>
 <symbols>
-<symbol name="HIROSE-U.FL">
-<pin name="GND" x="-7.62" y="2.54" length="middle"/>
-<pin name="SIG" x="-7.62" y="-2.54" length="middle"/>
-<wire x1="-2.54" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<symbol name="+3V3">
+<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="+3V3" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="HIROSE-U.FL" prefix="UF" uservalue="yes">
+<deviceset name="+3V3" prefix="+3V3">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
-<gate name="G$1" symbol="HIROSE-U.FL" x="0" y="0"/>
+<gate name="G$1" symbol="+3V3" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="HIROSE-UF.L">
-<connects>
-<connect gate="G$1" pin="GND" pad="GND@1 GND@2"/>
-<connect gate="G$1" pin="SIG" pad="SIG"/>
-</connects>
+<device name="">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -34227,12 +34211,10 @@ Level Translators&lt;br&gt;
 <part name="U$3" library="FaBo-etc" deviceset="LOGO_FABO" device="-M"/>
 <part name="5V3" library="FaBo-Supply" deviceset="5V" device=""/>
 <part name="R3" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="200k"/>
-<part name="3V5" library="FaBo-Supply" deviceset="3V3" device=""/>
 <part name="GND9" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="GND10" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="5V1" library="FaBo-Supply" deviceset="5V" device=""/>
 <part name="5V2" library="FaBo-Supply" deviceset="5V" device=""/>
-<part name="3V1" library="FaBo-Supply" deviceset="3V3" device=""/>
 <part name="C1" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="1uF"/>
 <part name="C2" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="0.1uF"/>
 <part name="U$2" library="FaBo-etc" deviceset="LOGO_OSHW" device="-M_BOTTOM"/>
@@ -34245,19 +34227,21 @@ Level Translators&lt;br&gt;
 <part name="TP2" library="FaBo-Supply" deviceset="TP" device="-15"/>
 <part name="R1" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="4.7k"/>
 <part name="R2" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="4.7k"/>
-<part name="3V6" library="FaBo-Supply" deviceset="3V3" device=""/>
-<part name="3V7" library="FaBo-Supply" deviceset="3V3" device=""/>
-<part name="C7" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="100nF"/>
-<part name="U$4" library="FaBo-Mems" deviceset="ST-ST25DV64K" device=""/>
-<part name="GND5" library="FaBo-Supply" deviceset="GND" device=""/>
-<part name="3V3" library="FaBo-Supply" deviceset="3V3" device=""/>
+<part name="+3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="C3" library="FaBo-Mems" deviceset="AM-CSS811" device=""/>
+<part name="+3V2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="+3V3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="+3V4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="GND4" library="FaBo-Supply" deviceset="GND" device=""/>
-<part name="UF1" library="FaBo-Connetor" deviceset="HIROSE-U.FL" device=""/>
+<part name="C4" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="4.7uF"/>
+<part name="GND5" library="FaBo-Supply" deviceset="GND" device=""/>
+<part name="+3V5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="R4" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="4.7k"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.4</text>
+<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.0.Beta</text>
 </plain>
 <instances>
 <instance part="J1" gate="G$1" x="20.32" y="132.08"/>
@@ -34265,12 +34249,10 @@ Level Translators&lt;br&gt;
 <instance part="U$3" gate="G$1" x="218.44" y="5.08"/>
 <instance part="5V3" gate="G$1" x="93.98" y="76.2"/>
 <instance part="R3" gate="G$1" x="93.98" y="66.04" rot="R90"/>
-<instance part="3V5" gate="G$1" x="53.34" y="76.2"/>
 <instance part="GND9" gate="G$1" x="93.98" y="30.48"/>
 <instance part="GND10" gate="G$1" x="104.14" y="30.48"/>
 <instance part="5V1" gate="G$1" x="33.02" y="149.86"/>
 <instance part="5V2" gate="G$1" x="53.34" y="149.86"/>
-<instance part="3V1" gate="G$1" x="93.98" y="149.86"/>
 <instance part="C1" gate="G$1" x="93.98" y="124.46" rot="R90"/>
 <instance part="C2" gate="G$1" x="93.98" y="38.1" rot="R90"/>
 <instance part="U$2" gate="G$1" x="248.92" y="12.7"/>
@@ -34283,14 +34265,16 @@ Level Translators&lt;br&gt;
 <instance part="TP2" gate="G$1" x="53.34" y="35.56"/>
 <instance part="R1" gate="G$1" x="33.02" y="66.04" rot="R90"/>
 <instance part="R2" gate="G$1" x="43.18" y="66.04" rot="R90"/>
-<instance part="3V6" gate="G$1" x="43.18" y="76.2"/>
-<instance part="3V7" gate="G$1" x="33.02" y="76.2"/>
-<instance part="C7" gate="G$1" x="215.9" y="68.58" rot="R90"/>
-<instance part="U$4" gate="G$1" x="177.8" y="71.12"/>
-<instance part="GND5" gate="G$1" x="152.4" y="63.5"/>
-<instance part="3V3" gate="G$1" x="200.66" y="86.36"/>
-<instance part="GND4" gate="G$1" x="215.9" y="60.96"/>
-<instance part="UF1" gate="G$1" x="165.1" y="116.84"/>
+<instance part="+3V1" gate="G$1" x="215.9" y="137.16"/>
+<instance part="C3" gate="G$1" x="175.26" y="132.08"/>
+<instance part="+3V2" gate="G$1" x="43.18" y="78.74"/>
+<instance part="+3V3" gate="G$1" x="33.02" y="78.74"/>
+<instance part="+3V4" gate="G$1" x="93.98" y="152.4"/>
+<instance part="GND4" gate="G$1" x="175.26" y="111.76"/>
+<instance part="C4" gate="G$1" x="215.9" y="111.76" rot="R90"/>
+<instance part="GND5" gate="G$1" x="215.9" y="99.06"/>
+<instance part="+3V5" gate="G$1" x="144.78" y="154.94"/>
+<instance part="R4" gate="G$1" x="144.78" y="142.24" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -34348,23 +34332,17 @@ Level Translators&lt;br&gt;
 <pinref part="GND3" gate="G$1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="VSS"/>
-<pinref part="GND5" gate="G$1" pin="GND"/>
-<wire x1="165.1" y1="68.58" x2="152.4" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="68.58" x2="152.4" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="C3" gate="G$1" pin="GND"/>
+<wire x1="175.26" y1="119.38" x2="175.26" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="GND4" gate="G$1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C7" gate="G$1" pin="1"/>
-<wire x1="215.9" y1="66.04" x2="215.9" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="GND4" gate="G$1" pin="GND"/>
+<pinref part="C4" gate="G$1" pin="1"/>
+<pinref part="GND5" gate="G$1" pin="GND"/>
+<wire x1="215.9" y1="109.22" x2="215.9" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SDA" class="0">
-<segment>
-<wire x1="200.66" y1="68.58" x2="190.5" y2="68.58" width="0.1524" layer="91"/>
-<label x="200.66" y="68.58" size="1.778" layer="95"/>
-<pinref part="U$4" gate="G$1" pin="SDA"/>
-</segment>
 <segment>
 <wire x1="22.86" y1="50.8" x2="43.18" y2="50.8" width="0.1524" layer="91"/>
 <label x="22.86" y="50.8" size="1.778" layer="95"/>
@@ -34378,13 +34356,13 @@ Level Translators&lt;br&gt;
 <wire x1="43.18" y1="63.5" x2="43.18" y2="50.8" width="0.1524" layer="91"/>
 <junction x="43.18" y="50.8"/>
 </segment>
+<segment>
+<pinref part="C3" gate="G$1" pin="SDA"/>
+<wire x1="190.5" y1="134.62" x2="200.66" y2="134.62" width="0.1524" layer="91"/>
+<label x="200.66" y="134.62" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SCL" class="0">
-<segment>
-<label x="200.66" y="71.12" size="1.778" layer="95"/>
-<wire x1="200.66" y1="71.12" x2="190.5" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="SCL"/>
-</segment>
 <segment>
 <wire x1="22.86" y1="53.34" x2="33.02" y2="53.34" width="0.1524" layer="91"/>
 <label x="22.86" y="53.34" size="1.778" layer="95"/>
@@ -34398,41 +34376,10 @@ Level Translators&lt;br&gt;
 <wire x1="33.02" y1="63.5" x2="33.02" y2="53.34" width="0.1524" layer="91"/>
 <junction x="33.02" y="53.34"/>
 </segment>
-</net>
-<net name="3V3" class="0">
 <segment>
-<pinref part="3V5" gate="G$1" pin="3V3"/>
-<wire x1="58.42" y1="55.88" x2="53.34" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="55.88" x2="53.34" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="IC3" gate="G$1" pin="VREF1"/>
-</segment>
-<segment>
-<wire x1="93.98" y1="149.86" x2="93.98" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="134.62" x2="93.98" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="134.62" x2="93.98" y2="134.62" width="0.1524" layer="91"/>
-<junction x="93.98" y="134.62"/>
-<pinref part="3V1" gate="G$1" pin="3V3"/>
-<pinref part="C1" gate="G$1" pin="2"/>
-<pinref part="IC2" gate="G$1" pin="VOUT"/>
-</segment>
-<segment>
-<pinref part="3V7" gate="G$1" pin="3V3"/>
-<pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="33.02" y1="76.2" x2="33.02" y2="71.12" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="3V6" gate="G$1" pin="3V3"/>
-<pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="43.18" y1="76.2" x2="43.18" y2="71.12" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U$4" gate="G$1" pin="VCC"/>
-<wire x1="190.5" y1="76.2" x2="200.66" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="76.2" x2="200.66" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="3V3" gate="G$1" pin="3V3"/>
-<pinref part="C7" gate="G$1" pin="2"/>
-<wire x1="200.66" y1="76.2" x2="215.9" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="76.2" x2="215.9" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="C3" gate="G$1" pin="SCL"/>
+<wire x1="190.5" y1="137.16" x2="200.66" y2="137.16" width="0.1524" layer="91"/>
+<label x="200.66" y="137.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SCL_HV" class="0">
@@ -34474,28 +34421,61 @@ Level Translators&lt;br&gt;
 <pinref part="IC3" gate="G$1" pin="EN"/>
 </segment>
 </net>
-<net name="ANTENA0" class="0">
+<net name="N$3" class="0">
 <segment>
-<pinref part="U$4" gate="G$1" pin="AC0"/>
-<wire x1="165.1" y1="73.66" x2="152.4" y2="73.66" width="0.1524" layer="91"/>
-<label x="152.4" y="73.66" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="157.48" y1="119.38" x2="139.7" y2="119.38" width="0.1524" layer="91"/>
-<label x="139.7" y="119.38" size="1.778" layer="95"/>
-<pinref part="UF1" gate="G$1" pin="GND"/>
+<wire x1="58.42" y1="55.88" x2="53.34" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="G$1" pin="VREF1"/>
 </segment>
 </net>
-<net name="ANTENA1" class="0">
+<net name="+3V3" class="0">
 <segment>
-<pinref part="U$4" gate="G$1" pin="AC1"/>
-<wire x1="165.1" y1="71.12" x2="152.4" y2="71.12" width="0.1524" layer="91"/>
-<label x="152.4" y="71.12" size="1.778" layer="95"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="43.18" y1="76.2" x2="43.18" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="+3V2" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
-<wire x1="157.48" y1="114.3" x2="139.7" y2="114.3" width="0.1524" layer="91"/>
-<label x="139.7" y="114.3" size="1.778" layer="95"/>
-<pinref part="UF1" gate="G$1" pin="SIG"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="33.02" y1="76.2" x2="33.02" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="+3V3" gate="G$1" pin="+3V3"/>
+</segment>
+<segment>
+<wire x1="93.98" y1="149.86" x2="93.98" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="134.62" x2="93.98" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="134.62" x2="93.98" y2="134.62" width="0.1524" layer="91"/>
+<junction x="93.98" y="134.62"/>
+<pinref part="C1" gate="G$1" pin="2"/>
+<pinref part="IC2" gate="G$1" pin="VOUT"/>
+<pinref part="+3V4" gate="G$1" pin="+3V3"/>
+</segment>
+<segment>
+<pinref part="C3" gate="G$1" pin="VDD"/>
+<pinref part="+3V1" gate="G$1" pin="+3V3"/>
+<wire x1="190.5" y1="127" x2="215.9" y2="127" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="127" x2="215.9" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="127" x2="215.9" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="C4" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="R4" gate="G$1" pin="2"/>
+<pinref part="+3V5" gate="G$1" pin="+3V3"/>
+<wire x1="144.78" y1="147.32" x2="144.78" y2="152.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="C3" gate="G$1" pin="PWM"/>
+<wire x1="160.02" y1="129.54" x2="154.94" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="129.54" x2="154.94" y2="127" width="0.1524" layer="91"/>
+<pinref part="C3" gate="G$1" pin="SENSE"/>
+<wire x1="154.94" y1="127" x2="160.02" y2="127" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="C3" gate="G$1" pin="RST"/>
+<wire x1="160.02" y1="134.62" x2="144.78" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="134.62" x2="144.78" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="R4" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>
@@ -34503,4 +34483,11 @@ Level Translators&lt;br&gt;
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="8.2" severity="warning">
+Since Version 8.2, Eagle supports online libraries. The ids
+of those online libraries will not be understood (or retained)
+with this version.
+</note>
+</compatibility>
 </eagle>
