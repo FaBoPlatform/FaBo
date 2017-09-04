@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -11469,6 +11469,8 @@ design rules under a new name.</description>
 <element name="R14" library="FaBo-Resistors" package="0603" value="0.4" x="67.1" y="31.5" rot="R180"/>
 <element name="R15" library="FaBo-Resistors" package="0603" value="0.4" x="67.1" y="21.6" rot="R180"/>
 <element name="P1" library="FaBo-Supply" package="1206" value="POLYSWITCHMF-NSML1" x="69.5" y="11.7"/>
+<element name="R13" library="FaBo-Resistors" package="0603" value="10K" x="21.8" y="15"/>
+<element name="R16" library="FaBo-Resistors" package="0603" value="10K" x="21.7" y="17.4"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -11505,9 +11507,7 @@ design rules under a new name.</description>
 <contactref element="R2" pad="1"/>
 <contactref element="C3" pad="1"/>
 <contactref element="U$10" pad="5"/>
-<contactref element="U$9" pad="25"/>
 <contactref element="U$9" pad="14"/>
-<contactref element="U$9" pad="23"/>
 <contactref element="C5" pad="2"/>
 <contactref element="C6" pad="2"/>
 <contactref element="C7" pad="1"/>
@@ -11521,18 +11521,6 @@ design rules under a new name.</description>
 <contactref element="R10" pad="1"/>
 <contactref element="R11" pad="1"/>
 <contactref element="R12" pad="1"/>
-<polygon width="0.254" layer="16">
-<vertex x="0" y="0"/>
-<vertex x="86" y="0"/>
-<vertex x="86" y="58"/>
-<vertex x="0" y="58"/>
-</polygon>
-<polygon width="0.254" layer="1">
-<vertex x="0" y="0"/>
-<vertex x="86" y="0"/>
-<vertex x="86" y="58"/>
-<vertex x="0" y="58"/>
-</polygon>
 <via x="15.7" y="45.2" extent="1-16" drill="0.2"/>
 <via x="12.2" y="42" extent="1-16" drill="0.2"/>
 <via x="6" y="35.8" extent="1-16" drill="0.2"/>
@@ -11572,6 +11560,21 @@ design rules under a new name.</description>
 <via x="63.15" y="25.75" extent="1-16" drill="0.2"/>
 <via x="64.1" y="25.75" extent="1-16" drill="0.2"/>
 <contactref element="U$10" pad="7"/>
+<contactref element="R13" pad="1"/>
+<contactref element="R16" pad="1"/>
+<polygon width="0.2" layer="16">
+<vertex x="0" y="0"/>
+<vertex x="86" y="0"/>
+<vertex x="86" y="57"/>
+<vertex x="0" y="57"/>
+</polygon>
+<polygon width="0.2" layer="1">
+<vertex x="0" y="0"/>
+<vertex x="86" y="0"/>
+<vertex x="86" y="57"/>
+<vertex x="0" y="57"/>
+</polygon>
+<wire x1="20.9" y1="29.4" x2="24.35" y2="29.55" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SDA">
 <contactref element="U1" pad="3"/>
@@ -11618,12 +11621,12 @@ design rules under a new name.</description>
 <wire x1="8.358475" y1="21.4906" x2="9.160325" y2="21.4906" width="0.254" layer="1"/>
 <wire x1="9.15" y1="13.5" x2="8.75" y2="13.5" width="0.254" layer="1"/>
 <wire x1="8.75" y1="13.5" x2="8.75" y2="14" width="0.254" layer="1"/>
-<wire x1="21" y1="15" x2="18" y2="15" width="0.254" layer="1"/>
+<wire x1="20" y1="15" x2="18" y2="15" width="0.254" layer="1"/>
 <wire x1="17" y1="14" x2="18" y2="15" width="0.254" layer="16"/>
 <wire x1="8.75" y1="14" x2="17" y2="14" width="0.254" layer="16"/>
 <via x="18" y="15" extent="1-16" drill="0.2"/>
-<wire x1="18.83" y1="20.0675" x2="21" y2="20.0675" width="0.254" layer="1"/>
-<wire x1="21" y1="20.0675" x2="21" y2="15" width="0.254" layer="1"/>
+<wire x1="18.83" y1="20.0675" x2="20" y2="20.0675" width="0.254" layer="1"/>
+<wire x1="20" y1="20.0675" x2="20" y2="15" width="0.254" layer="1"/>
 <wire x1="59.4" y1="29.2" x2="59.4" y2="25.95" width="0.254" layer="1"/>
 <wire x1="59.1" y1="29.5" x2="59.4" y2="29.2" width="0.254" layer="1"/>
 <wire x1="59.1" y1="30.5" x2="59.1" y2="29.5" width="0.254" layer="1"/>
@@ -12478,6 +12481,30 @@ design rules under a new name.</description>
 <contactref element="P1" pad="P$1"/>
 <wire x1="69" y1="8.6" x2="69" y2="10.7" width="2" layer="1"/>
 <wire x1="69" y1="10.7" x2="68" y2="11.7" width="2" layer="1"/>
+</signal>
+<signal name="N$7">
+<contactref element="U$9" pad="23"/>
+<contactref element="R16" pad="2"/>
+<wire x1="23.2" y1="17.4" x2="22.55" y2="17.4" width="0.2" layer="1"/>
+<wire x1="23.6" y1="17.8" x2="23.2" y2="17.4" width="0.2" layer="1"/>
+<wire x1="23.6" y1="22.7" x2="23.6" y2="17.8" width="0.2" layer="1"/>
+<wire x1="18.9" y1="22.7" x2="23.6" y2="22.7" width="0.2" layer="1"/>
+<wire x1="18.9" y1="22.7" x2="18.83" y2="22.6675" width="0.2" layer="1"/>
+</signal>
+<signal name="N$8">
+<contactref element="U$9" pad="25"/>
+<contactref element="R13" pad="2"/>
+<wire x1="22.2" y1="15" x2="22.65" y2="15" width="0.2" layer="1"/>
+<wire x1="22.1" y1="15.1" x2="22.2" y2="15" width="0.2" layer="1"/>
+<wire x1="22.1" y1="16.4" x2="22.1" y2="15.1" width="0.2" layer="1"/>
+<wire x1="22.1" y1="20.7" x2="22.1" y2="16.4" width="0.2" layer="16"/>
+<wire x1="21.2" y1="21.6" x2="22.1" y2="20.7" width="0.2" layer="1"/>
+<wire x1="20.4" y1="21.6" x2="21.2" y2="21.6" width="0.2" layer="1"/>
+<wire x1="20.2" y1="21.4" x2="20.4" y2="21.6" width="0.2" layer="1"/>
+<wire x1="18.9" y1="21.4" x2="20.2" y2="21.4" width="0.2" layer="1"/>
+<wire x1="18.9" y1="21.4" x2="18.83" y2="21.3675" width="0.2" layer="1"/>
+<via x="22.1" y="16.4" extent="1-16" drill="0.35"/>
+<via x="22.1" y="20.7" extent="1-16" drill="0.35"/>
 </signal>
 </signals>
 </board>

@@ -14269,6 +14269,8 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <part name="R15" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="0.4"/>
 <part name="GND20" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="P1" library="FaBo-Supply" deviceset="POLYSWITCH" device="MF-NSML1"/>
+<part name="R13" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="10K"/>
+<part name="R16" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="10K"/>
 </parts>
 <sheets>
 <sheet>
@@ -14359,8 +14361,8 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <instance part="GND37" gate="1" x="345.44" y="40.64"/>
 <instance part="GND38" gate="1" x="299.72" y="40.64"/>
 <instance part="GND28" gate="GND" x="81.28" y="76.2"/>
-<instance part="GND29" gate="GND" x="81.28" y="96.52"/>
-<instance part="GND39" gate="GND" x="81.28" y="119.38"/>
+<instance part="GND29" gate="GND" x="81.28" y="86.36"/>
+<instance part="GND39" gate="GND" x="81.28" y="114.3"/>
 <instance part="R5" gate="G$1" x="129.54" y="134.62"/>
 <instance part="R6" gate="G$1" x="129.54" y="132.08"/>
 <instance part="R7" gate="G$1" x="129.54" y="129.54"/>
@@ -14406,6 +14408,8 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <instance part="R15" gate="G$1" x="274.32" y="220.98" rot="R90"/>
 <instance part="GND20" gate="GND" x="353.06" y="180.34"/>
 <instance part="P1" gate="G$1" x="345.44" y="63.5" rot="R90"/>
+<instance part="R13" gate="G$1" x="81.28" y="91.44" rot="R90"/>
+<instance part="R16" gate="G$1" x="81.28" y="119.38" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -14642,22 +14646,10 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <wire x1="345.44" y1="48.26" x2="330.2" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$9" gate="G$1" pin="EXTCLK"/>
-<pinref part="GND29" gate="GND" pin="GND"/>
-<wire x1="88.9" y1="99.06" x2="81.28" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="99.06" x2="81.28" y2="96.52" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="U$9" gate="G$1" pin="VSS"/>
 <pinref part="GND28" gate="GND" pin="GND"/>
 <wire x1="88.9" y1="78.74" x2="81.28" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="78.74" x2="81.28" y2="76.2" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U$9" gate="G$1" pin="OE"/>
-<wire x1="88.9" y1="127" x2="81.28" y2="127" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="127" x2="81.28" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="GND39" gate="GND" pin="GND"/>
 </segment>
 <segment>
 <pinref part="C5" gate="G$1" pin="2"/>
@@ -14696,6 +14688,16 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <pinref part="GND20" gate="GND" pin="GND"/>
 <wire x1="347.98" y1="182.88" x2="353.06" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="353.06" y1="182.88" x2="353.06" y2="180.34" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R13" gate="G$1" pin="1"/>
+<pinref part="GND29" gate="GND" pin="GND"/>
+<wire x1="81.28" y1="88.9" x2="81.28" y2="86.36" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND39" gate="GND" pin="GND"/>
+<pinref part="R16" gate="G$1" pin="1"/>
+<wire x1="81.28" y1="114.3" x2="81.28" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -15502,6 +15504,22 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <wire x1="330.2" y1="53.34" x2="345.44" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="P1" gate="G$1" pin="1"/>
 <wire x1="345.44" y1="53.34" x2="345.44" y2="58.42" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="U$9" gate="G$1" pin="OE"/>
+<wire x1="88.9" y1="127" x2="81.28" y2="127" width="0.1524" layer="91"/>
+<pinref part="R16" gate="G$1" pin="2"/>
+<wire x1="81.28" y1="124.46" x2="81.28" y2="127" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="U$9" gate="G$1" pin="EXTCLK"/>
+<wire x1="88.9" y1="99.06" x2="81.28" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="R13" gate="G$1" pin="2"/>
+<wire x1="81.28" y1="96.52" x2="81.28" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
