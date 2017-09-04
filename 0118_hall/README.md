@@ -16,9 +16,9 @@ Hallセンサーです。
 
 ## Docs
 
-* [Arduino用サンプル](http://docs.fabo.io/fabo/arduino/brick_analog/118_brick_analog_hall.html) [現在作成中]
-* [RaspPi用サンプル](http://docs.fabo.io/fabo/rasppi/brick_analog/118_brick_analog_hall.html) [現在作成中]
-* [IchogoJam用サンプル](http://docs.fabo.io/fabo/ichigojam/brick_analog/118_brick_analog_hall.html) [現在作成中]
+* [Arduino用サンプル](http://docs.fabo.io/fabo/arduino/brick_analog/118_brick_analog_hall.html)
+* [現在作成中]
+* [現在作成中]
 
 ## Parts Specification
 | Document |

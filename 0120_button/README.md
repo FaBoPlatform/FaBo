@@ -24,8 +24,8 @@ ONを押すと、I/OピンとGNDがつながります。
 ## Docs
 
 * [Arduino用サンプル](http://docs.fabo.io/fabo/arduino/brick_analog/120_brick_analog_button.html)
-* [RaspPi用サンプル](http://docs.fabo.io/fabo/rasppi/brick_analog/120_brick_analog_button.html)
-* [IchogoJam用サンプル](http://docs.fabo.io/fabo/ichigojam/brick_analog/120_brick_analog_button.html)
+* [現在開発中]
+* [現在開発中]
 
 ## Parts
 - 12mm角タクトスイッチ
