@@ -23,7 +23,9 @@
 
 モーターは付属のモーターから、6Vモーターに取り替えます。
 
-![](.hotdog/img/replace02.png)
+※２個用意します。
+
+![](https://github.com/FaBoPlatform/FaBo/blob/master/1202_hotdog/img/replace02.png)
 
 完成図
 
