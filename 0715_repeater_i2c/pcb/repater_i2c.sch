@@ -1220,6 +1220,156 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="FaBo-Resistors">
+<description>&lt;h3&gt;FaBo Resistors&lt;/h3&gt;
+Resistors&lt;br&gt;
+&lt;br&gt;
+Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;br&gt;
+https://creativecommons.org/licenses/by-sa/4.0/</description>
+<packages>
+<package name="0603">
+<wire x1="-1.48" y1="0.6" x2="1.48" y2="0.6" width="0.0508" layer="39"/>
+<wire x1="1.48" y1="0.6" x2="1.48" y2="-0.6" width="0.0508" layer="39"/>
+<wire x1="1.48" y1="-0.6" x2="-1.48" y2="-0.6" width="0.0508" layer="39"/>
+<wire x1="-1.48" y1="-0.6" x2="-1.48" y2="0.6" width="0.0508" layer="39"/>
+<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1" roundness="20"/>
+<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1" roundness="20"/>
+<text x="0" y="0.889" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+<text x="0" y="0" size="0.8128" layer="27" font="vector" ratio="12" align="center">&gt;VALUE</text>
+<rectangle x1="-0.195" y1="-0.3" x2="0.195" y2="0.3" layer="35"/>
+</package>
+<package name="0402">
+<wire x1="0.7" y1="0.25" x2="-0.7" y2="0.25" width="0.05" layer="21"/>
+<wire x1="-0.7" y1="0.25" x2="-0.7" y2="-0.25" width="0.05" layer="21"/>
+<wire x1="-0.7" y1="-0.25" x2="0.7" y2="-0.25" width="0.05" layer="21"/>
+<wire x1="0.7" y1="-0.25" x2="0.7" y2="0.25" width="0.05" layer="21"/>
+<smd name="P$1" x="-0.46" y="0" dx="0.5" dy="0.5" layer="1"/>
+<smd name="P$2" x="0.46" y="0" dx="0.5" dy="0.5" layer="1"/>
+<text x="-0.77" y="0.31" size="0.5" layer="25">&gt;NAME</text>
+</package>
+<package name="0402-NO_SILK">
+<smd name="1" x="-0.475" y="0" dx="0.5" dy="0.55" layer="1" roundness="30"/>
+<smd name="2" x="0.475" y="0" dx="0.5" dy="0.55" layer="1" roundness="30"/>
+<text x="-1.016" y="0" size="0.8128" layer="25" font="vector" ratio="12" align="center-right">&gt;NAME</text>
+<wire x1="-0.5" y1="0.25" x2="0.5" y2="0.25" width="0" layer="51"/>
+<wire x1="-0.5" y1="-0.25" x2="0.5" y2="-0.25" width="0" layer="51"/>
+<wire x1="-0.5" y1="-0.25" x2="-0.5" y2="0.25" width="0" layer="51"/>
+<wire x1="0.5" y1="-0.25" x2="0.5" y2="0.25" width="0" layer="51"/>
+<text x="0" y="-0.635" size="0.8128" layer="27" font="vector" ratio="12" align="top-center">&gt;VALUE</text>
+</package>
+<package name="AXL-REGULAR">
+<wire x1="-2.5" y1="0.6" x2="2.5" y2="0.6" width="0.1" layer="21"/>
+<wire x1="2.5" y1="0.6" x2="2.5" y2="-0.6" width="0.1" layer="21"/>
+<wire x1="2.5" y1="-0.6" x2="-2.5" y2="-0.6" width="0.1" layer="21"/>
+<wire x1="-2.5" y1="-0.6" x2="-2.5" y2="0.6" width="0.1" layer="21"/>
+<pad name="1" x="-3.81" y="0" drill="1" diameter="1.9304" shape="octagon"/>
+<pad name="2" x="3.81" y="0" drill="1" diameter="1.9304" shape="octagon"/>
+<text x="-2.25" y="0" size="0.8128" layer="25" font="vector" ratio="12" align="center-left">&gt;NAME</text>
+<text x="-2.25" y="-1" size="0.8128" layer="27" font="vector" ratio="12" align="top-left">&gt;VALUE</text>
+</package>
+<package name="0603-NARROW">
+<smd name="1" x="-0.85" y="0" dx="0.71" dy="1" layer="1" roundness="20"/>
+<smd name="2" x="0.85" y="0" dx="0.71" dy="1" layer="1" roundness="20"/>
+<text x="0" y="0.762" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+<text x="0" y="0" size="0.8128" layer="27" font="vector" ratio="12" align="center">&gt;VALUE</text>
+<wire x1="-1.27" y1="0.55" x2="1.27" y2="0.55" width="0.0508" layer="39"/>
+<wire x1="1.27" y1="0.55" x2="1.27" y2="-0.55" width="0.0508" layer="39"/>
+<wire x1="1.27" y1="-0.55" x2="-1.27" y2="-0.55" width="0.0508" layer="39"/>
+<wire x1="-1.27" y1="-0.55" x2="-1.27" y2="0.55" width="0.0508" layer="39"/>
+</package>
+<package name="0805">
+<text x="0" y="0.889" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+<smd name="1" x="-1.25" y="0" dx="1" dy="1.2" layer="1"/>
+<smd name="2" x="1.25" y="0" dx="1" dy="1.2" layer="1"/>
+<text x="-2.159" y="-1.651" size="0.8128" layer="27">&gt;VALUE</text>
+<wire x1="-1.76" y1="0.6" x2="1.76" y2="0.6" width="0.127" layer="39"/>
+<wire x1="1.76" y1="0.6" x2="1.76" y2="-0.6" width="0.127" layer="39"/>
+<wire x1="1.76" y1="-0.6" x2="-1.78" y2="-0.6" width="0.127" layer="39"/>
+<wire x1="-1.78" y1="-0.6" x2="-1.78" y2="0.6016" width="0.127" layer="39"/>
+</package>
+</packages>
+<symbols>
+<symbol name="RESISTOR">
+<pin name="1" x="-2.54" y="0" visible="off" length="point"/>
+<pin name="2" x="5.08" y="0" visible="off" length="point" rot="R180"/>
+<wire x1="5.08" y1="0" x2="3.556" y2="0" width="0.1524" layer="94"/>
+<text x="-2.286" y="1.524" size="1.4224" layer="95">&gt;NAME</text>
+<text x="-2.286" y="-1.524" size="1.4224" layer="96" align="top-left">&gt;VALUE</text>
+<wire x1="-1.27" y1="0" x2="-2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-0.762" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="-0.762" y1="1.016" x2="0" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="0" y1="-1.016" x2="0.762" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="0.762" y1="1.016" x2="1.524" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="1.524" y1="-1.016" x2="2.286" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="2.286" y1="1.016" x2="3.048" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="3.048" y1="-1.016" x2="3.556" y2="0" width="0.1524" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="RESISTOR" prefix="R" uservalue="yes">
+<description>RESISTOR</description>
+<gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-0603" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-0402" package="0402">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-0402-NO_SILK" package="0402-NO_SILK">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-AXL-REGULAR" package="AXL-REGULAR">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-0603-NARROW" package="0603-NARROW">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-0805" package="0805">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1240,6 +1390,10 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="VCC3" library="FaBo-Supply" deviceset="VCC" device=""/>
 <part name="VCC4" library="FaBo-Supply" deviceset="VCC" device=""/>
 <part name="GND3" library="FaBo-Supply" deviceset="GND" device=""/>
+<part name="R1" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="4.7K"/>
+<part name="R2" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="4.7K"/>
+<part name="VCC2" library="FaBo-Supply" deviceset="VCC" device=""/>
+<part name="VCC5" library="FaBo-Supply" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1249,13 +1403,17 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <instance part="U$1" gate="G$1" x="0" y="0"/>
 <instance part="PCA9515" gate="G$1" x="91.44" y="71.12"/>
 <instance part="J1" gate="G$1" x="30.48" y="71.12"/>
-<instance part="J2" gate="G$1" x="160.02" y="71.12" rot="R180"/>
+<instance part="J2" gate="G$1" x="195.58" y="71.12" rot="R180"/>
 <instance part="GND1" gate="G$1" x="55.88" y="58.42"/>
 <instance part="GND2" gate="G$1" x="91.44" y="48.26"/>
 <instance part="VCC1" gate="G$1" x="91.44" y="91.44"/>
 <instance part="VCC3" gate="G$1" x="55.88" y="73.66"/>
-<instance part="VCC4" gate="G$1" x="127" y="88.9"/>
-<instance part="GND3" gate="G$1" x="139.7" y="86.36"/>
+<instance part="VCC4" gate="G$1" x="162.56" y="88.9"/>
+<instance part="GND3" gate="G$1" x="175.26" y="86.36"/>
+<instance part="R1" gate="G$1" x="109.22" y="86.36" rot="R90"/>
+<instance part="R2" gate="G$1" x="127" y="86.36" rot="R90"/>
+<instance part="VCC2" gate="G$1" x="109.22" y="96.52"/>
+<instance part="VCC5" gate="G$1" x="127" y="96.52"/>
 </instances>
 <busses>
 </busses>
@@ -1299,10 +1457,10 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="GND"/>
-<wire x1="152.4" y1="78.74" x2="147.32" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="78.74" x2="147.32" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="91.44" x2="139.7" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="91.44" x2="139.7" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="78.74" x2="182.88" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="78.74" x2="182.88" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="91.44" x2="175.26" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="91.44" x2="175.26" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="G$1" pin="GND"/>
 </segment>
 </net>
@@ -1320,33 +1478,49 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="VCC"/>
-<wire x1="152.4" y1="73.66" x2="127" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="127" y1="73.66" x2="127" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="73.66" x2="162.56" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="73.66" x2="162.56" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="VCC4" gate="G$1" pin="VCC"/>
+</segment>
+<segment>
+<pinref part="R1" gate="G$1" pin="2"/>
+<pinref part="VCC2" gate="G$1" pin="VCC"/>
+<wire x1="109.22" y1="91.44" x2="109.22" y2="96.52" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R2" gate="G$1" pin="2"/>
+<pinref part="VCC5" gate="G$1" pin="VCC"/>
+<wire x1="127" y1="91.44" x2="127" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SDA_OUT" class="0">
 <segment>
 <pinref part="J2" gate="G$1" pin="SDA"/>
-<wire x1="152.4" y1="68.58" x2="137.16" y2="68.58" width="0.1524" layer="91"/>
-<label x="137.16" y="68.58" size="1.778" layer="95"/>
+<wire x1="187.96" y1="68.58" x2="172.72" y2="68.58" width="0.1524" layer="91"/>
+<label x="172.72" y="68.58" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="PCA9515" gate="G$1" pin="SDA1"/>
-<wire x1="106.68" y1="76.2" x2="114.3" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="76.2" x2="109.22" y2="76.2" width="0.1524" layer="91"/>
 <label x="114.3" y="76.2" size="1.778" layer="95"/>
+<wire x1="109.22" y1="76.2" x2="114.3" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="83.82" x2="109.22" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="SCL_OUT" class="0">
 <segment>
 <pinref part="J2" gate="G$1" pin="SCL"/>
-<wire x1="152.4" y1="63.5" x2="137.16" y2="63.5" width="0.1524" layer="91"/>
-<label x="137.16" y="63.5" size="1.778" layer="95"/>
+<wire x1="187.96" y1="63.5" x2="172.72" y2="63.5" width="0.1524" layer="91"/>
+<label x="172.72" y="63.5" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="PCA9515" gate="G$1" pin="SCL1"/>
-<wire x1="106.68" y1="73.66" x2="114.3" y2="73.66" width="0.1524" layer="91"/>
-<label x="114.3" y="73.66" size="1.778" layer="95"/>
+<label x="137.16" y="73.66" size="1.778" layer="95"/>
+<wire x1="106.68" y1="73.66" x2="127" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="127" y1="73.66" x2="137.16" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="127" y1="73.66" x2="127" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="R2" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>

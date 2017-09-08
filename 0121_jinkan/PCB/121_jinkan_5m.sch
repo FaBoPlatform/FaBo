@@ -33242,9 +33242,9 @@ Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;br&gt;
 https://creativecommons.org/licenses/by-sa/4.0/</description>
 <packages>
 <package name="EKMB">
-<pad name="GND" x="-2.5" y="2.5" drill="0.85" shape="long"/>
-<pad name="OUT" x="2.5" y="2.5" drill="0.85" shape="long"/>
-<pad name="VDD" x="2.5" y="-2.5" drill="0.85" shape="long"/>
+<pad name="GND" x="-2" y="2" drill="0.85" shape="long"/>
+<pad name="OUT" x="2" y="2" drill="0.85" shape="long"/>
+<pad name="VDD" x="2" y="-2" drill="0.85" shape="long"/>
 <circle x="0" y="0" radius="5.5" width="0.127" layer="21"/>
 </package>
 </packages>
@@ -33291,11 +33291,28 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <text x="-1.27" y="3.556" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="VCC" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
+<symbol name="GND">
+<wire x1="-1.905" y1="-2.54" x2="1.905" y2="-2.54" width="0.254" layer="94"/>
+<text x="-2.794" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="GND" x="0" y="0" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="VCC" prefix="VCC">
 <gates>
 <gate name="G$1" symbol="VCC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GND" prefix="GND">
+<gates>
+<gate name="G$1" symbol="GND" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -33547,8 +33564,12 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="VCC1" library="FaBo-Supply" deviceset="VCC" device=""/>
 <part name="VCC2" library="FaBo-Supply" deviceset="VCC" device=""/>
 <part name="VCC3" library="FaBo-Supply" deviceset="VCC" device=""/>
-<part name="R1" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603"/>
-<part name="R2" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603"/>
+<part name="R1" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="33K"/>
+<part name="R2" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="10K"/>
+<part name="R3" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="33K"/>
+<part name="GND1" library="FaBo-Supply" deviceset="GND" device=""/>
+<part name="GND2" library="FaBo-Supply" deviceset="GND" device=""/>
+<part name="GND3" library="FaBo-Supply" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -33567,28 +33588,42 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <instance part="VCC3" gate="G$1" x="210.82" y="116.84"/>
 <instance part="R1" gate="G$1" x="182.88" y="96.52"/>
 <instance part="R2" gate="G$1" x="198.12" y="81.28"/>
+<instance part="R3" gate="G$1" x="210.82" y="71.12" rot="R270"/>
+<instance part="GND1" gate="G$1" x="124.46" y="78.74"/>
+<instance part="GND2" gate="G$1" x="210.82" y="58.42"/>
+<instance part="GND3" gate="G$1" x="165.1" y="78.74"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="GND"/>
-<wire x1="152.4" y1="86.36" x2="106.68" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="86.36" x2="152.4" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="U$4" gate="G$1" pin="GND"/>
-<wire x1="152.4" y1="73.66" x2="165.1" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="73.66" x2="165.1" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="78.74" x2="165.1" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="GND3" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="GND"/>
+<pinref part="GND1" gate="G$1" pin="GND"/>
+<wire x1="106.68" y1="86.36" x2="124.46" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="86.36" x2="124.46" y2="78.74" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R3" gate="G$1" pin="2"/>
+<pinref part="GND2" gate="G$1" pin="GND"/>
+<wire x1="210.82" y1="66.04" x2="210.82" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="I/O" class="0">
 <segment>
-<wire x1="210.82" y1="78.74" x2="210.82" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="81.28" x2="210.82" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="SW1" gate="G$1" pin="S"/>
-<label x="213.36" y="78.74" size="1.778" layer="95"/>
+<label x="215.9" y="81.28" size="1.778" layer="95"/>
 <pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="210.82" y1="81.28" x2="210.82" y2="85.52" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="81.28" x2="210.82" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="210.82" y1="81.28" x2="210.82" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="I/O"/>
