@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.4.0">
+<eagle version="8.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -50,6 +50,8 @@
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -74,7 +76,9 @@
 <layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="113" name="IDFDebug" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="115" name="sd" color="13" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
+<layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
@@ -83,6 +87,7 @@
 <layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="129" name="Mask" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="yes"/>
@@ -119,11 +124,21 @@
 <layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
+<layer number="225" name="225bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="226" name="226bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="227" name="227bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="228" name="228bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="229" name="229bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="230" name="230bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="231" name="Eagle3D_PG1" color="7" fill="1" visible="no" active="no"/>
+<layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="no" active="no"/>
+<layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="no" active="no"/>
 <layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="no" active="yes"/>
+<layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
@@ -32182,6 +32197,93 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="-3" y1="-3.1" x2="-3" y2="-3.6" width="0.127" layer="51"/>
 <wire x1="3" y1="-3.1" x2="3" y2="-3.6" width="0.127" layer="51"/>
 </package>
+<package name="FABO_BRICK_I2S_S05B-PASK-2_LONG">
+<pad name="GND" x="-3" y="0" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<pad name="VCC" x="-1" y="0" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<pad name="DATA" x="1" y="0" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<hole x="6.5" y="2.1" drill="1.1"/>
+<wire x1="7" y1="-3.5" x2="7" y2="8.2" width="0.1" layer="51"/>
+<wire x1="-5" y1="-3.5" x2="-5" y2="8.2" width="0.1" layer="51"/>
+<wire x1="7" y1="8.2" x2="3" y2="8.2" width="0.1" layer="51"/>
+<wire x1="3" y1="8.2" x2="-1" y2="8.2" width="0.1" layer="51"/>
+<wire x1="-1" y1="8.2" x2="-5" y2="8.2" width="0.1" layer="51"/>
+<text x="1" y="-3.81" size="0.8128" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center">&gt;NAME</text>
+<hole x="-4.5" y="2.1" drill="1.1"/>
+<wire x1="3" y1="6.7" x2="-1" y2="6.7" width="0.1" layer="51"/>
+<wire x1="-1" y1="8.2" x2="-1" y2="6.7" width="0.1" layer="51"/>
+<wire x1="3" y1="8.2" x2="3" y2="6.7" width="0.1" layer="51"/>
+<pad name="BCLK" x="3" y="0" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<wire x1="-4.3" y1="-3.5" x2="-4.3" y2="0.5" width="0.1" layer="51"/>
+<wire x1="6.3" y1="-3.5" x2="6.3" y2="0.5" width="0.1" layer="51"/>
+<wire x1="-4.3" y1="0.5" x2="6.3" y2="0.5" width="0.1" layer="51"/>
+<wire x1="-5" y1="-3.5" x2="-4.3" y2="-3.5" width="0.1" layer="51"/>
+<wire x1="6.3" y1="-3.5" x2="7" y2="-3.5" width="0.1" layer="51"/>
+<pad name="WS" x="5" y="0" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+</package>
+<package name="FABO_BRICK_I2S_S05B-PASK-2_LONG_BOTTOM">
+<pad name="WS" x="-4.27" y="-3.81" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<pad name="BCLK" x="-2.27" y="-3.81" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<pad name="DATA" x="-0.27" y="-3.81" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<hole x="5.23" y="-1.71" drill="1.1"/>
+<wire x1="5.73" y1="-7.31" x2="5.73" y2="4.39" width="0.1" layer="51"/>
+<wire x1="-6.27" y1="-7.31" x2="-6.27" y2="4.39" width="0.1" layer="51"/>
+<wire x1="5.73" y1="4.39" x2="1.73" y2="4.39" width="0.1" layer="51"/>
+<wire x1="1.73" y1="4.39" x2="-2.27" y2="4.39" width="0.1" layer="51"/>
+<wire x1="-2.27" y1="4.39" x2="-6.27" y2="4.39" width="0.1" layer="51"/>
+<text x="-0.27" y="-7.62" size="0.8128" layer="26" font="vector" ratio="12" rot="R180" align="bottom-center">&gt;NAME</text>
+<hole x="-5.77" y="-1.71" drill="1.1"/>
+<wire x1="1.73" y1="2.89" x2="-2.27" y2="2.89" width="0.1" layer="51"/>
+<wire x1="-2.27" y1="4.39" x2="-2.27" y2="2.89" width="0.1" layer="51"/>
+<wire x1="1.73" y1="4.39" x2="1.73" y2="2.89" width="0.1" layer="51"/>
+<pad name="VCC" x="1.73" y="-3.81" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<wire x1="-5.57" y1="-7.31" x2="-5.57" y2="-3.31" width="0.1" layer="51"/>
+<wire x1="5.03" y1="-7.31" x2="5.03" y2="-3.31" width="0.1" layer="51"/>
+<wire x1="-5.57" y1="-3.31" x2="5.03" y2="-3.31" width="0.1" layer="51"/>
+<wire x1="-6.27" y1="-7.31" x2="-5.57" y2="-7.31" width="0.1" layer="51"/>
+<wire x1="5.03" y1="-7.31" x2="5.73" y2="-7.31" width="0.1" layer="51"/>
+<pad name="GND" x="3.73" y="-3.81" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+</package>
+<package name="FABO_BRICK_I2S">
+<wire x1="-10.16" y1="-17.78" x2="10.16" y2="-17.78" width="0" layer="20"/>
+<wire x1="10.16" y1="-17.78" x2="13.97" y2="-13.97" width="0" layer="20" curve="90"/>
+<wire x1="13.97" y1="-13.97" x2="13.97" y2="7.62" width="0" layer="20"/>
+<wire x1="-10.16" y1="-17.78" x2="-13.97" y2="-13.97" width="0" layer="20" curve="-90"/>
+<wire x1="-13.97" y1="7.62" x2="-13.97" y2="-13.97" width="0" layer="20"/>
+<pad name="P$1" x="-10.16" y="7.62" drill="3" diameter="3.81"/>
+<pad name="P$2" x="10.16" y="7.62" drill="3" diameter="3.81"/>
+<pad name="P$3" x="-10.16" y="-13.97" drill="3" diameter="3.81"/>
+<pad name="P$4" x="10.16" y="-13.97" drill="3" diameter="3.81"/>
+<wire x1="-13.97" y1="7.62" x2="13.97" y2="7.62" width="0" layer="20" curve="-180"/>
+<text x="4" y="-7.73" size="0.6096" layer="22" font="vector" ratio="12" rot="R90" align="center-left">WS</text>
+<text x="0" y="-7.73" size="0.6096" layer="22" font="vector" ratio="12" rot="R90" align="center-left">DATA</text>
+<text x="-2" y="-7.73" size="0.6096" layer="22" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
+<text x="-4" y="-7.73" size="0.6096" layer="22" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
+<circle x="-10.16" y="7.62" radius="2.55" width="0.1" layer="51"/>
+<circle x="-10.16" y="-13.97" radius="2.55" width="0.1" layer="51"/>
+<circle x="10.16" y="7.62" radius="2.55" width="0.1" layer="51"/>
+<circle x="10.16" y="-13.97" radius="2.55" width="0.1" layer="51"/>
+<pad name="BCLK" x="2" y="-9.525" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<pad name="DATA" x="0" y="-9.525" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<pad name="VCC" x="-2" y="-9.525" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<hole x="-5.5" y="-11.625" drill="1.1"/>
+<wire x1="-6" y1="-6.025" x2="-6" y2="-17.725" width="0.1" layer="51"/>
+<wire x1="6" y1="-6.025" x2="6" y2="-17.725" width="0.1" layer="51"/>
+<wire x1="-6" y1="-17.725" x2="-2" y2="-17.725" width="0.1" layer="51"/>
+<wire x1="-2" y1="-17.725" x2="2" y2="-17.725" width="0.1" layer="51"/>
+<wire x1="2" y1="-17.725" x2="6" y2="-17.725" width="0.1" layer="51"/>
+<hole x="5.5" y="-11.625" drill="1.1"/>
+<wire x1="-2" y1="-16.225" x2="2" y2="-16.225" width="0.1" layer="51"/>
+<wire x1="2" y1="-17.725" x2="2" y2="-16.225" width="0.1" layer="51"/>
+<wire x1="-2" y1="-17.725" x2="-2" y2="-16.225" width="0.1" layer="51"/>
+<pad name="GND" x="-4" y="-9.525" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<wire x1="5.3" y1="-6.025" x2="5.3" y2="-10.025" width="0.1" layer="51"/>
+<wire x1="-5.3" y1="-6.025" x2="-5.3" y2="-10.025" width="0.1" layer="51"/>
+<wire x1="5.3" y1="-10.025" x2="-5.3" y2="-10.025" width="0.1" layer="51"/>
+<wire x1="6" y1="-6.025" x2="5.3" y2="-6.025" width="0.1" layer="51"/>
+<wire x1="-5.3" y1="-6.025" x2="-6" y2="-6.025" width="0.1" layer="51"/>
+<pad name="WS" x="4" y="-9.525" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<text x="2" y="-7.73" size="0.6096" layer="22" font="vector" ratio="12" rot="R90" align="center-left">BCLK</text>
+</package>
 </packages>
 <symbols>
 <symbol name="FABO_BRICK_3PIN">
@@ -32215,6 +32317,18 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pin name="VCC" x="7.62" y="-2.54" visible="pin" length="middle" rot="R180"/>
 <pin name="GND" x="7.62" y="-7.62" visible="pin" length="middle" rot="R180"/>
 <text x="-7.62" y="10.668" size="1.4224" layer="95">&gt;NAME</text>
+</symbol>
+<symbol name="FABO_BRICK_I2S">
+<wire x1="5.08" y1="12.7" x2="5.08" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-12.7" x2="-5.08" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-12.7" x2="-5.08" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="12.7" x2="5.08" y2="12.7" width="0.254" layer="94"/>
+<pin name="WS" x="10.16" y="10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="BCLK" x="10.16" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="DATA" x="10.16" y="0" visible="pin" length="middle" rot="R180"/>
+<pin name="VCC" x="10.16" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<text x="-5.08" y="13.208" size="1.778" layer="95">&gt;NAME</text>
+<pin name="GND" x="10.16" y="-10.16" visible="pin" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -32583,6 +32697,49 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="FABO_BRICK_I2S">
+<gates>
+<gate name="G$1" symbol="FABO_BRICK_I2S" x="0" y="0"/>
+</gates>
+<devices>
+<device name="LONG" package="FABO_BRICK_I2S_S05B-PASK-2_LONG">
+<connects>
+<connect gate="G$1" pin="BCLK" pad="BCLK"/>
+<connect gate="G$1" pin="DATA" pad="DATA"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+<connect gate="G$1" pin="WS" pad="WS"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="LONG_BOTTOM" package="FABO_BRICK_I2S_S05B-PASK-2_LONG_BOTTOM">
+<connects>
+<connect gate="G$1" pin="BCLK" pad="BCLK"/>
+<connect gate="G$1" pin="DATA" pad="DATA"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+<connect gate="G$1" pin="WS" pad="WS"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="" package="FABO_BRICK_I2S">
+<connects>
+<connect gate="G$1" pin="BCLK" pad="BCLK"/>
+<connect gate="G$1" pin="DATA" pad="DATA"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+<connect gate="G$1" pin="WS" pad="WS"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="FaBo-ADC">
@@ -32776,13 +32933,10 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="GPIO13" library="FaBo-Template" deviceset="FABO_BRICK_3PIN" device="-B03B-PASK-1"/>
 <part name="GPIO16" library="FaBo-Template" deviceset="FABO_BRICK_3PIN" device="-B03B-PASK-1"/>
 <part name="GPIO17" library="FaBo-Template" deviceset="FABO_BRICK_3PIN" device="-B03B-PASK-1"/>
-<part name="GPIO18" library="FaBo-Template" deviceset="FABO_BRICK_3PIN" device="-B03B-PASK-1"/>
 <part name="SUPPLY1" library="FaBo-etc" deviceset="5V" device=""/>
 <part name="SUPPLY8" library="FaBo-etc" deviceset="5V" device=""/>
-<part name="SUPPLY21" library="FaBo-etc" deviceset="5V" device=""/>
 <part name="GND10" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="GND20" library="FaBo-etc" deviceset="GND" device=""/>
-<part name="GND22" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="SUPPLY22" library="FaBo-etc" deviceset="5V" device=""/>
 <part name="GND23" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="SERIAL" library="FaBo-Template" deviceset="FABO_BRICK_SERIAL" device="-S04B-PASK-2"/>
@@ -32837,23 +32991,20 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="GPIO25S" library="FaBo-Template" deviceset="FABO_BRICK_3PIN" device="-HEADER"/>
 <part name="GPIO26S" library="FaBo-Template" deviceset="FABO_BRICK_3PIN" device="-HEADER"/>
 <part name="GPIO27S" library="FaBo-Template" deviceset="FABO_BRICK_3PIN" device="-HEADER"/>
-<part name="GPIO20" library="FaBo-Template" deviceset="FABO_BRICK_3PIN" device="-B03B-PASK-1"/>
-<part name="GPIO21" library="FaBo-Template" deviceset="FABO_BRICK_3PIN" device="-B03B-PASK-1"/>
 <part name="GPIO22" library="FaBo-Template" deviceset="FABO_BRICK_3PIN" device="-B03B-PASK-1"/>
-<part name="SUPPLY27" library="FaBo-etc" deviceset="5V" device=""/>
 <part name="SUPPLY28" library="FaBo-etc" deviceset="5V" device=""/>
 <part name="SUPPLY29" library="FaBo-etc" deviceset="5V" device=""/>
-<part name="GND28" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="GND29" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="GND30" library="FaBo-etc" deviceset="GND" device=""/>
-<part name="SUPPLY30" library="FaBo-etc" deviceset="5V" device=""/>
-<part name="GND31" library="FaBo-etc" deviceset="GND" device=""/>
-<part name="GPIO19" library="FaBo-Template" deviceset="FABO_BRICK_3PIN" device="-B03B-PASK-1"/>
-<part name="SUPPLY32" library="FaBo-etc" deviceset="5V" device=""/>
-<part name="GND33" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="U$4" library="FaBo-etc" deviceset="LOGO_OSHW" device="-T_M_BOTTOM"/>
 <part name="U$1" library="FaBo-etc" deviceset="A3L-LOC" device=""/>
 <part name="GPIO23S" library="FaBo-Template" deviceset="FABO_BRICK_3PIN" device="-HEADER"/>
+<part name="I2S(OUT)" library="FaBo-Template" deviceset="FABO_BRICK_I2S" device="LONG"/>
+<part name="GND22" library="FaBo-etc" deviceset="GND" device=""/>
+<part name="SUPPLY21" library="FaBo-etc" deviceset="5V" device=""/>
+<part name="I2S(IN)" library="FaBo-Template" deviceset="FABO_BRICK_I2S" device="LONG"/>
+<part name="GND31" library="FaBo-etc" deviceset="GND" device=""/>
+<part name="SUPPLY30" library="FaBo-etc" deviceset="5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -32866,6 +33017,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <text x="162.56" y="203.2" size="2.54" layer="97">GPIO (3pin Top 2mm pitch) x8</text>
 <text x="162.56" y="134.62" size="2.54" layer="97">GPIO/Servo (3pin Top 2.54mm pitch) x5</text>
 <text x="162.56" y="53.34" size="2.54" layer="97">Analog(3pin Top 2mm pitch) x4</text>
+<text x="86.36" y="149.86" size="2.54" layer="97">I2S (5pin Top 2.54mm pitch) x2</text>
 </plain>
 <instances>
 <instance part="U$14" gate="G$1" x="345.44" y="5.08"/>
@@ -32888,13 +33040,10 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <instance part="GPIO13" gate="G$1" x="170.18" y="180.34" rot="R90"/>
 <instance part="GPIO16" gate="G$1" x="198.12" y="180.34" rot="R90"/>
 <instance part="GPIO17" gate="G$1" x="226.06" y="180.34" rot="R90"/>
-<instance part="GPIO18" gate="G$1" x="254" y="180.34" rot="R90"/>
 <instance part="SUPPLY1" gate="5V" x="198.12" y="193.04"/>
 <instance part="SUPPLY8" gate="5V" x="226.06" y="193.04"/>
-<instance part="SUPPLY21" gate="5V" x="254" y="193.04"/>
 <instance part="GND10" gate="GND" x="210.82" y="180.34"/>
 <instance part="GND20" gate="GND" x="238.76" y="180.34"/>
-<instance part="GND22" gate="GND" x="266.7" y="180.34"/>
 <instance part="SUPPLY22" gate="5V" x="170.18" y="193.04"/>
 <instance part="GND23" gate="GND" x="182.88" y="180.34"/>
 <instance part="SERIAL" gate="G$1" x="30.48" y="76.2" rot="R90"/>
@@ -32949,23 +33098,20 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <instance part="GPIO25S" gate="G$1" x="226.06" y="111.76" rot="R90"/>
 <instance part="GPIO26S" gate="G$1" x="254" y="111.76" rot="R90"/>
 <instance part="GPIO27S" gate="G$1" x="281.94" y="111.76" rot="R90"/>
-<instance part="GPIO20" gate="G$1" x="198.12" y="152.4" rot="R90"/>
-<instance part="GPIO21" gate="G$1" x="226.06" y="152.4" rot="R90"/>
 <instance part="GPIO22" gate="G$1" x="254" y="152.4" rot="R90"/>
-<instance part="SUPPLY27" gate="5V" x="226.06" y="165.1"/>
 <instance part="SUPPLY28" gate="5V" x="254" y="165.1"/>
 <instance part="SUPPLY29" gate="5V" x="170.18" y="124.46"/>
-<instance part="GND28" gate="GND" x="238.76" y="152.4"/>
 <instance part="GND29" gate="GND" x="266.7" y="152.4"/>
 <instance part="GND30" gate="GND" x="182.88" y="111.76"/>
-<instance part="SUPPLY30" gate="5V" x="198.12" y="165.1"/>
-<instance part="GND31" gate="GND" x="210.82" y="152.4"/>
-<instance part="GPIO19" gate="G$1" x="170.18" y="152.4" rot="R90"/>
-<instance part="SUPPLY32" gate="5V" x="170.18" y="165.1"/>
-<instance part="GND33" gate="GND" x="182.88" y="152.4"/>
 <instance part="U$4" gate="G$1" x="375.92" y="12.7"/>
 <instance part="U$1" gate="G$1" x="0" y="0"/>
 <instance part="GPIO23S" gate="G$1" x="170.18" y="111.76" rot="R90"/>
+<instance part="I2S(OUT)" gate="G$1" x="101.6" y="109.22" rot="R90"/>
+<instance part="GND22" gate="GND" x="119.38" y="111.76"/>
+<instance part="SUPPLY21" gate="5V" x="106.68" y="134.62"/>
+<instance part="I2S(IN)" gate="G$1" x="101.6" y="68.58" rot="R90"/>
+<instance part="GND31" gate="GND" x="119.38" y="71.12"/>
+<instance part="SUPPLY30" gate="5V" x="106.68" y="93.98"/>
 </instances>
 <busses>
 </busses>
@@ -33069,13 +33215,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pinref part="GND20" gate="GND" pin="GND"/>
 <wire x1="231.14" y1="193.04" x2="238.76" y2="193.04" width="0.1524" layer="91"/>
 <wire x1="238.76" y1="193.04" x2="238.76" y2="180.34" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="GPIO18" gate="G$1" pin="GND"/>
-<wire x1="259.08" y1="187.96" x2="259.08" y2="193.04" width="0.1524" layer="91"/>
-<pinref part="GND22" gate="GND" pin="GND"/>
-<wire x1="259.08" y1="193.04" x2="266.7" y2="193.04" width="0.1524" layer="91"/>
-<wire x1="266.7" y1="193.04" x2="266.7" y2="180.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="175.26" y1="78.74" x2="175.26" y2="83.82" width="0.1524" layer="91"/>
@@ -33191,20 +33330,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pinref part="GPIO27S" gate="G$1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="GPIO20" gate="G$1" pin="GND"/>
-<wire x1="203.2" y1="160.02" x2="203.2" y2="165.1" width="0.1524" layer="91"/>
-<pinref part="GND31" gate="GND" pin="GND"/>
-<wire x1="203.2" y1="165.1" x2="210.82" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="165.1" x2="210.82" y2="152.4" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="GPIO21" gate="G$1" pin="GND"/>
-<wire x1="231.14" y1="160.02" x2="231.14" y2="165.1" width="0.1524" layer="91"/>
-<pinref part="GND28" gate="GND" pin="GND"/>
-<wire x1="231.14" y1="165.1" x2="238.76" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="238.76" y1="165.1" x2="238.76" y2="152.4" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="GPIO22" gate="G$1" pin="GND"/>
 <wire x1="259.08" y1="160.02" x2="259.08" y2="165.1" width="0.1524" layer="91"/>
 <pinref part="GND29" gate="GND" pin="GND"/>
@@ -33219,11 +33344,18 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pinref part="GPIO23S" gate="G$1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="GPIO19" gate="G$1" pin="GND"/>
-<wire x1="175.26" y1="160.02" x2="175.26" y2="165.1" width="0.1524" layer="91"/>
-<pinref part="GND33" gate="GND" pin="GND"/>
-<wire x1="175.26" y1="165.1" x2="182.88" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="182.88" y1="165.1" x2="182.88" y2="152.4" width="0.1524" layer="91"/>
+<pinref part="I2S(OUT)" gate="G$1" pin="GND"/>
+<wire x1="111.76" y1="119.38" x2="111.76" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="134.62" x2="119.38" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="134.62" x2="119.38" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="GND22" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="I2S(IN)" gate="G$1" pin="GND"/>
+<wire x1="111.76" y1="78.74" x2="111.76" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="93.98" x2="119.38" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="93.98" x2="119.38" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="GND31" gate="GND" pin="GND"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -33313,9 +33445,14 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pinref part="U1" gate="G$1" pin="GPIO18"/>
 </segment>
 <segment>
-<pinref part="GPIO18" gate="G$1" pin="I/O"/>
-<wire x1="248.92" y1="198.12" x2="248.92" y2="187.96" width="0.1524" layer="91"/>
-<label x="248.92" y="187.96" size="1.778" layer="95" rot="R90"/>
+<pinref part="I2S(OUT)" gate="G$1" pin="BCLK"/>
+<wire x1="96.52" y1="119.38" x2="96.52" y2="134.62" width="0.1524" layer="91"/>
+<label x="96.52" y="134.62" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="I2S(IN)" gate="G$1" pin="BCLK"/>
+<wire x1="96.52" y1="78.74" x2="96.52" y2="93.98" width="0.1524" layer="91"/>
+<label x="96.52" y="93.98" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="GPIO23" class="0">
@@ -33459,11 +33596,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="226.06" y1="187.96" x2="226.06" y2="193.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="GPIO18" gate="G$1" pin="VCC"/>
-<pinref part="SUPPLY21" gate="5V" pin="5V"/>
-<wire x1="254" y1="187.96" x2="254" y2="193.04" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="SUPPLY6" gate="5V" pin="5V"/>
 <wire x1="170.18" y1="83.82" x2="170.18" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="A0" gate="G$1" pin="VCC"/>
@@ -33549,16 +33681,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pinref part="GPIO27S" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
-<pinref part="SUPPLY30" gate="5V" pin="5V"/>
-<pinref part="GPIO20" gate="G$1" pin="VCC"/>
-<wire x1="198.12" y1="165.1" x2="198.12" y2="160.02" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="SUPPLY27" gate="5V" pin="5V"/>
-<pinref part="GPIO21" gate="G$1" pin="VCC"/>
-<wire x1="226.06" y1="165.1" x2="226.06" y2="160.02" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="GPIO22" gate="G$1" pin="VCC"/>
 <pinref part="SUPPLY28" gate="5V" pin="5V"/>
 <wire x1="254" y1="160.02" x2="254" y2="165.1" width="0.1524" layer="91"/>
@@ -33569,9 +33691,14 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pinref part="GPIO23S" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
-<pinref part="GPIO19" gate="G$1" pin="VCC"/>
-<pinref part="SUPPLY32" gate="5V" pin="5V"/>
-<wire x1="170.18" y1="160.02" x2="170.18" y2="165.1" width="0.1524" layer="91"/>
+<pinref part="I2S(OUT)" gate="G$1" pin="VCC"/>
+<wire x1="106.68" y1="119.38" x2="106.68" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="SUPPLY21" gate="5V" pin="5V"/>
+</segment>
+<segment>
+<pinref part="I2S(IN)" gate="G$1" pin="VCC"/>
+<wire x1="106.68" y1="78.74" x2="106.68" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="SUPPLY30" gate="5V" pin="5V"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
@@ -33773,9 +33900,14 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <label x="15.24" y="182.88" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="GPIO19" gate="G$1" pin="I/O"/>
-<wire x1="165.1" y1="170.18" x2="165.1" y2="160.02" width="0.1524" layer="91"/>
-<label x="165.1" y="160.02" size="1.778" layer="95" rot="R90"/>
+<pinref part="I2S(OUT)" gate="G$1" pin="WS"/>
+<wire x1="91.44" y1="119.38" x2="91.44" y2="134.62" width="0.1524" layer="91"/>
+<label x="91.44" y="134.62" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="I2S(IN)" gate="G$1" pin="WS"/>
+<wire x1="91.44" y1="78.74" x2="91.44" y2="93.98" width="0.1524" layer="91"/>
+<label x="91.44" y="93.98" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="GPIO20" class="0">
@@ -33785,9 +33917,9 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <label x="68.58" y="180.34" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="GPIO20" gate="G$1" pin="I/O"/>
-<wire x1="193.04" y1="170.18" x2="193.04" y2="160.02" width="0.1524" layer="91"/>
-<label x="193.04" y="160.02" size="1.778" layer="95" rot="R90"/>
+<pinref part="I2S(OUT)" gate="G$1" pin="DATA"/>
+<wire x1="101.6" y1="119.38" x2="101.6" y2="134.62" width="0.1524" layer="91"/>
+<label x="101.6" y="134.62" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="GPIO21" class="0">
@@ -33797,9 +33929,9 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <label x="68.58" y="177.8" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="GPIO21" gate="G$1" pin="I/O"/>
-<wire x1="220.98" y1="170.18" x2="220.98" y2="160.02" width="0.1524" layer="91"/>
-<label x="220.98" y="160.02" size="1.778" layer="95" rot="R90"/>
+<pinref part="I2S(IN)" gate="G$1" pin="DATA"/>
+<wire x1="101.6" y1="78.74" x2="101.6" y2="93.98" width="0.1524" layer="91"/>
+<label x="101.6" y="93.98" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="GPIO26" class="0">
