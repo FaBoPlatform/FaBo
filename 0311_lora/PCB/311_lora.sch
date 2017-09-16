@@ -2133,11 +2133,12 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="SJ1" library="FaBo-Supply" deviceset="SMD-JUMPER-2" device="-OPEN" value="OPEN"/>
 <part name="3V4" library="FaBo-Supply" deviceset="3V3" device=""/>
 <part name="U$2" library="FaBo-LoRa" deviceset="ES920LR" device=""/>
+<part name="3V7" library="FaBo-Supply" deviceset="3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.2</text>
+<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.0Beta1</text>
 <text x="5.08" y="60.96" size="3.81" layer="94">Reset Button</text>
 <text x="43.18" y="60.96" size="3.81" layer="94">Debug</text>
 <text x="5.08" y="116.84" size="2.54" layer="94">TX</text>
@@ -2185,6 +2186,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <instance part="SJ1" gate="G$1" x="30.48" y="45.72"/>
 <instance part="3V4" gate="G$1" x="30.48" y="55.88"/>
 <instance part="U$2" gate="G$1" x="137.16" y="81.28"/>
+<instance part="3V7" gate="G$1" x="172.72" y="81.28"/>
 </instances>
 <busses>
 </busses>
@@ -2387,6 +2389,12 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="30.48" y1="55.88" x2="30.48" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="SJ1" gate="G$1" pin="1"/>
 <pinref part="3V4" gate="G$1" pin="3V3"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="PTC1/SW_INT"/>
+<wire x1="160.02" y1="71.12" x2="172.72" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="71.12" x2="172.72" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="3V7" gate="G$1" pin="3V3"/>
 </segment>
 </net>
 <net name="RX_LV" class="0">

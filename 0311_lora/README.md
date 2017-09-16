@@ -1,1 +1,1 @@
-# #310 USB Memory Serial Brick
+# #311 LoRa Module
