@@ -10831,19 +10831,19 @@ Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;br&gt;
 https://creativecommons.org/licenses/by-sa/4.0/</description>
 <packages>
 <package name="FABO_BRICK_3PIN_B03B-PASK-1">
-<pad name="GND" x="-2" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="GND" x="-2" y="0" drill="0.9" diameter="1.4224" shape="octagon"/>
 <pad name="VCC" x="0" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
 <pad name="I/O" x="2" y="0" drill="0.8" diameter="1.4224" shape="square"/>
 <hole x="3.5" y="1.7" drill="1.1"/>
-<wire x1="4" y1="-3.1" x2="4" y2="2.2" width="0.127" layer="51"/>
-<wire x1="-4" y1="-3.1" x2="-4" y2="2.2" width="0.127" layer="51"/>
-<wire x1="4" y1="2.2" x2="-4" y2="2.2" width="0.127" layer="51"/>
-<wire x1="4" y1="-3.1" x2="2" y2="-3.1" width="0.127" layer="51"/>
-<wire x1="2" y1="-3.1" x2="-2" y2="-3.1" width="0.127" layer="51"/>
-<wire x1="-2" y1="-3.1" x2="-4" y2="-3.1" width="0.127" layer="51"/>
-<wire x1="2" y1="-3.6" x2="-2" y2="-3.6" width="0.127" layer="51"/>
-<wire x1="-2" y1="-3.6" x2="-2" y2="-3.1" width="0.127" layer="51"/>
-<wire x1="2" y1="-3.6" x2="2" y2="-3.1" width="0.127" layer="51"/>
+<wire x1="4" y1="-3.1" x2="4" y2="2.2" width="0.1" layer="51"/>
+<wire x1="-4" y1="-3.1" x2="-4" y2="2.2" width="0.1" layer="51"/>
+<wire x1="4" y1="2.2" x2="-4" y2="2.2" width="0.1" layer="51"/>
+<wire x1="4" y1="-3.1" x2="2" y2="-3.1" width="0.1" layer="51"/>
+<wire x1="2" y1="-3.1" x2="-2" y2="-3.1" width="0.1" layer="51"/>
+<wire x1="-2" y1="-3.1" x2="-4" y2="-3.1" width="0.1" layer="51"/>
+<wire x1="2" y1="-3.6" x2="-2" y2="-3.6" width="0.1" layer="51"/>
+<wire x1="-2" y1="-3.6" x2="-2" y2="-3.1" width="0.1" layer="51"/>
+<wire x1="2" y1="-3.6" x2="2" y2="-3.1" width="0.1" layer="51"/>
 <text x="0" y="3.175" size="1.27" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
 </package>
 <package name="FABO_BRICK_SERIAL_S04B-PASK-2">
@@ -10991,10 +10991,15 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <library name="FaBo-Capacitor">
 <packages>
 <package name="0603">
-<smd name="1" x="-0.75" y="0" dx="0.8" dy="0.8" layer="1"/>
-<smd name="2" x="0.75" y="0" dx="0.8" dy="0.8" layer="1"/>
-<text x="0" y="0.635" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-0.635" size="0.8128" layer="27" font="vector" ratio="12" rot="R180" align="bottom-center">&gt;VALUE</text>
+<wire x1="-1.48" y1="0.6" x2="1.48" y2="0.6" width="0.0508" layer="39"/>
+<wire x1="1.48" y1="0.6" x2="1.48" y2="-0.6" width="0.0508" layer="39"/>
+<wire x1="1.48" y1="-0.6" x2="-1.48" y2="-0.6" width="0.0508" layer="39"/>
+<wire x1="-1.48" y1="-0.6" x2="-1.48" y2="0.6" width="0.0508" layer="39"/>
+<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1" roundness="20"/>
+<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1" roundness="20"/>
+<text x="0" y="0.889" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+<text x="0" y="0" size="0.8128" layer="27" font="vector" ratio="12" align="center">&gt;VALUE</text>
+<rectangle x1="-0.195" y1="-0.3" x2="0.195" y2="0.3" layer="35"/>
 </package>
 </packages>
 </library>
@@ -11332,7 +11337,7 @@ design rules under a new name.</description>
 <wire x1="61.8744" y1="32.004" x2="58.2168" y2="32.004" width="0.1524" layer="1"/>
 <wire x1="64.9224" y1="35.052" x2="61.8744" y2="32.004" width="0.1524" layer="1"/>
 <wire x1="65.532" y1="35.052" x2="64.9224" y2="35.052" width="0.1524" layer="1"/>
-<wire x1="58.2168" y1="32.004" x2="58.1406" y2="31.8904" width="0.1524" layer="1"/>
+<wire x1="58.2168" y1="32.004" x2="58.1406" y2="31.9904" width="0.1524" layer="1"/>
 <wire x1="65.532" y1="35.052" x2="65.5548" y2="35.0666" width="0.1524" layer="1"/>
 <wire x1="65.6844" y1="45.8724" x2="65.6844" y2="43.1292" width="0.1524" layer="1"/>
 <wire x1="68.58" y1="48.768" x2="65.6844" y2="45.8724" width="0.1524" layer="1"/>
@@ -11843,7 +11848,7 @@ design rules under a new name.</description>
 <wire x1="65.532" y1="24.9936" x2="65.5548" y2="25.0666" width="0.1524" layer="1"/>
 <wire x1="57.15" y1="30.3276" x2="58.0644" y2="30.3276" width="0.1524" layer="1"/>
 <wire x1="55.626" y1="28.8036" x2="57.15" y2="30.3276" width="0.1524" layer="1"/>
-<wire x1="58.0644" y1="30.3276" x2="58.1406" y2="30.3904" width="0.1524" layer="1"/>
+<wire x1="58.0644" y1="30.3276" x2="58.1406" y2="30.2904" width="0.1524" layer="1"/>
 <wire x1="55.626" y1="28.8036" x2="55.5752" y2="28.7706" width="0.1524" layer="1"/>
 <wire x1="55.4736" y1="28.8036" x2="54.4068" y2="28.8036" width="0.1524" layer="1"/>
 <wire x1="54.4068" y1="28.8036" x2="54.3052" y2="28.7706" width="0.1524" layer="1"/>
@@ -11852,7 +11857,7 @@ design rules under a new name.</description>
 <wire x1="60.8076" y1="30.48" x2="63.246" y2="32.9184" width="0.1524" layer="1"/>
 <wire x1="58.2168" y1="30.48" x2="60.8076" y2="30.48" width="0.1524" layer="1"/>
 <wire x1="65.532" y1="32.9184" x2="65.5548" y2="33.0666" width="0.1524" layer="1"/>
-<wire x1="58.2168" y1="30.48" x2="58.1406" y2="30.3904" width="0.1524" layer="1"/>
+<wire x1="58.2168" y1="30.48" x2="58.1406" y2="30.2904" width="0.1524" layer="1"/>
 <wire x1="64.4652" y1="39.9288" x2="65.532" y2="40.9956" width="0.1524" layer="16"/>
 <wire x1="64.4652" y1="34.1376" x2="64.4652" y2="39.9288" width="0.1524" layer="16"/>
 <wire x1="65.532" y1="33.0708" x2="64.4652" y2="34.1376" width="0.1524" layer="16"/>

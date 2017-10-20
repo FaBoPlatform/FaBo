@@ -1442,13 +1442,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <label x="63.5" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="J1" gate="G$1" pin="GND"/>
-<wire x1="38.1" y1="63.5" x2="55.88" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="63.5" x2="55.88" y2="58.42" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="GND" class="0">
 <segment>
 <pinref part="PCA9515" gate="G$1" pin="GND"/>
@@ -1462,6 +1455,12 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="182.88" y1="91.44" x2="175.26" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="91.44" x2="175.26" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="GND"/>
+<wire x1="38.1" y1="63.5" x2="55.88" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="63.5" x2="55.88" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="GND1" gate="G$1" pin="GND"/>
 </segment>
 </net>
 <net name="VCC" class="0">

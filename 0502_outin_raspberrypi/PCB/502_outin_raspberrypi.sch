@@ -31173,45 +31173,6 @@ FaBo Bricks/Beacons/Breakouts&lt;br&gt;
 Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;br&gt;
 https://creativecommons.org/licenses/by-sa/4.0/</description>
 <packages>
-<package name="FABO_BRICK_3PIN">
-<pad name="IN/OUT" x="-2.54" y="-8.89" drill="1" diameter="1.778" shape="octagon" rot="R90"/>
-<pad name="VCC" x="0" y="-8.89" drill="1" diameter="1.778" shape="octagon" rot="R90"/>
-<pad name="GND" x="2.54" y="-8.89" drill="1" diameter="1.6764" shape="square" rot="R90"/>
-<text x="-2.54" y="-7.62" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">I/O</text>
-<text x="0" y="-7.62" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
-<text x="2.54" y="-7.62" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
-<wire x1="-10.16" y1="-16.51" x2="10.16" y2="-16.51" width="0" layer="20"/>
-<wire x1="10.16" y1="-16.51" x2="12.7" y2="-13.97" width="0" layer="20" curve="90"/>
-<wire x1="12.7" y1="-13.97" x2="12.7" y2="3.81" width="0" layer="20"/>
-<wire x1="-10.16" y1="-16.51" x2="-12.7" y2="-13.97" width="0" layer="20" curve="-90"/>
-<wire x1="-12.7" y1="3.81" x2="-12.7" y2="-13.97" width="0" layer="20"/>
-<wire x1="-5.08" y1="-16.51" x2="-5.08" y2="-8.89" width="0.127" layer="21"/>
-<pad name="P$5" x="-8.89" y="3.81" drill="3" diameter="3.81"/>
-<pad name="P$6" x="8.89" y="3.81" drill="3" diameter="3.81"/>
-<pad name="P$7" x="-8.89" y="-12.7" drill="3" diameter="3.81"/>
-<pad name="P$8" x="8.89" y="-12.7" drill="3" diameter="3.81"/>
-<wire x1="-12.7" y1="3.81" x2="12.7" y2="3.81" width="0" layer="20" curve="-180"/>
-<circle x="-8.89" y="3.81" radius="2.55" width="0.127" layer="51"/>
-<circle x="-8.89" y="-12.7" radius="2.55" width="0.127" layer="51"/>
-<circle x="8.89" y="3.81" radius="2.55" width="0.127" layer="51"/>
-<circle x="8.89" y="-12.7" radius="2.55" width="0.127" layer="51"/>
-<wire x1="-5.08" y1="-8.89" x2="-5.08" y2="-22.29" width="0.127" layer="51"/>
-<wire x1="5.08" y1="-8.89" x2="5.08" y2="-22.29" width="0.127" layer="51"/>
-<wire x1="-5.08" y1="-22.29" x2="-3.8" y2="-22.29" width="0.127" layer="51"/>
-<wire x1="-3.8" y1="-22.29" x2="-2.8" y2="-22.29" width="0.127" layer="51"/>
-<wire x1="-2.8" y1="-22.29" x2="2.8" y2="-22.29" width="0.127" layer="51"/>
-<wire x1="2.8" y1="-22.29" x2="3.8" y2="-22.29" width="0.127" layer="51"/>
-<wire x1="3.8" y1="-22.29" x2="5.08" y2="-22.29" width="0.127" layer="51"/>
-<wire x1="-3.8" y1="-18.49" x2="-3.8" y2="-22.29" width="0.127" layer="51"/>
-<wire x1="-3.8" y1="-18.49" x2="3.8" y2="-18.49" width="0.127" layer="51"/>
-<wire x1="3.8" y1="-18.49" x2="3.8" y2="-22.29" width="0.127" layer="51"/>
-<wire x1="-2.8" y1="-22.29" x2="-2.8" y2="-19.89" width="0.127" layer="51"/>
-<wire x1="2.8" y1="-22.29" x2="2.8" y2="-19.89" width="0.127" layer="51"/>
-<wire x1="-2.8" y1="-19.89" x2="2.8" y2="-19.89" width="0.127" layer="51"/>
-<wire x1="5.08" y1="-16.51" x2="5.08" y2="-8.89" width="0.127" layer="21"/>
-<wire x1="-3.81" y1="-8.89" x2="-5.08" y2="-8.89" width="0.127" layer="21"/>
-<wire x1="5.08" y1="-8.89" x2="3.81" y2="-8.89" width="0.127" layer="21"/>
-</package>
 <package name="FABO_BRICK_3PIN_BIG">
 <pad name="IN/OUT" x="-2.54" y="-15.24" drill="1" shape="long" rot="R90"/>
 <pad name="VCC" x="0" y="-15.24" drill="1" shape="long" rot="R90"/>
@@ -31250,32 +31211,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="5.08" y1="-24.13" x2="5.08" y2="-15.24" width="0.127" layer="21"/>
 <wire x1="-3.81" y1="-15.24" x2="-5.08" y2="-15.24" width="0.127" layer="21"/>
 <wire x1="5.08" y1="-15.24" x2="3.81" y2="-15.24" width="0.127" layer="21"/>
-</package>
-<package name="FABO_BRICK_3PIN_CONNECTOR">
-<pad name="IN/OUT" x="2.54" y="0" drill="1" diameter="1.778" shape="octagon" rot="R270"/>
-<pad name="VCC" x="0" y="0" drill="1" diameter="1.778" shape="octagon" rot="R270"/>
-<pad name="GND" x="-2.54" y="0" drill="1" diameter="1.778" shape="octagon" rot="R270"/>
-<text x="2.54" y="1.27" size="0.6096" layer="51" font="vector" ratio="10" rot="R90" align="center-left">I/O</text>
-<text x="0" y="1.27" size="0.6096" layer="51" font="vector" ratio="10" rot="R90" align="center-left">VCC</text>
-<text x="-2.54" y="1.27" size="0.6096" layer="51" font="vector" ratio="10" rot="R90" align="center-left">GND</text>
-<wire x1="5.08" y1="7.62" x2="5.08" y2="0" width="0.127" layer="21"/>
-<wire x1="5.08" y1="0" x2="5.08" y2="13.4" width="0.127" layer="51"/>
-<wire x1="-5.08" y1="0" x2="-5.08" y2="13.4" width="0.127" layer="51"/>
-<wire x1="5.08" y1="13.4" x2="3.8" y2="13.4" width="0.127" layer="51"/>
-<wire x1="3.8" y1="13.4" x2="2.8" y2="13.4" width="0.127" layer="51"/>
-<wire x1="2.8" y1="13.4" x2="-2.8" y2="13.4" width="0.127" layer="51"/>
-<wire x1="-2.8" y1="13.4" x2="-3.8" y2="13.4" width="0.127" layer="51"/>
-<wire x1="-3.8" y1="13.4" x2="-5.08" y2="13.4" width="0.127" layer="51"/>
-<wire x1="3.8" y1="9.6" x2="3.8" y2="13.4" width="0.127" layer="51"/>
-<wire x1="3.8" y1="9.6" x2="-3.8" y2="9.6" width="0.127" layer="51"/>
-<wire x1="-3.8" y1="9.6" x2="-3.8" y2="13.4" width="0.127" layer="51"/>
-<wire x1="2.8" y1="13.4" x2="2.8" y2="11" width="0.127" layer="51"/>
-<wire x1="-2.8" y1="13.4" x2="-2.8" y2="11" width="0.127" layer="51"/>
-<wire x1="2.8" y1="11" x2="-2.8" y2="11" width="0.127" layer="51"/>
-<wire x1="-5.08" y1="7.62" x2="-5.08" y2="0" width="0.127" layer="21"/>
-<wire x1="3.81" y1="0" x2="5.08" y2="0" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="0" x2="-3.81" y2="0" width="0.127" layer="21"/>
-<text x="0" y="-2.54" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
 </package>
 <package name="FABO_BRICK_3PIN_MIDDLE">
 <pad name="IN/OUT" x="-2.54" y="-13.97" drill="1" shape="long" rot="R90"/>
@@ -31316,90 +31251,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="-3.81" y1="-13.97" x2="-5.08" y2="-13.97" width="0.127" layer="21"/>
 <wire x1="5.08" y1="-13.97" x2="3.81" y2="-13.97" width="0.127" layer="21"/>
 </package>
-<package name="FABO_BRICK_3PIN_UNIVERSAL">
-<pad name="IN/OUT" x="-2.54" y="-8.89" drill="1" diameter="1.778" shape="octagon" rot="R90"/>
-<pad name="VCC" x="0" y="-8.89" drill="1" diameter="1.778" shape="octagon" rot="R90"/>
-<pad name="GND" x="2.54" y="-8.89" drill="1" diameter="1.6764" shape="square" rot="R90"/>
-<text x="-2.54" y="-7.62" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">I/O</text>
-<text x="0" y="-7.62" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
-<text x="2.54" y="-7.62" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
-<wire x1="-10.16" y1="-16.51" x2="10.16" y2="-16.51" width="0" layer="20"/>
-<wire x1="10.16" y1="-16.51" x2="12.7" y2="-13.97" width="0" layer="20" curve="90"/>
-<wire x1="12.7" y1="-13.97" x2="12.7" y2="3.81" width="0" layer="20"/>
-<wire x1="-10.16" y1="-16.51" x2="-12.7" y2="-13.97" width="0" layer="20" curve="-90"/>
-<wire x1="-12.7" y1="3.81" x2="-12.7" y2="-13.97" width="0" layer="20"/>
-<wire x1="-5.08" y1="-16.51" x2="-5.08" y2="-8.89" width="0.127" layer="21"/>
-<pad name="P$5" x="-8.89" y="3.81" drill="3" diameter="3.81"/>
-<pad name="P$6" x="8.89" y="3.81" drill="3" diameter="3.81"/>
-<pad name="P$7" x="-8.89" y="-12.7" drill="3" diameter="3.81"/>
-<pad name="P$8" x="8.89" y="-12.7" drill="3" diameter="3.81"/>
-<wire x1="-12.7" y1="3.81" x2="12.7" y2="3.81" width="0" layer="20" curve="-180"/>
-<circle x="-8.89" y="3.81" radius="2.55" width="0.127" layer="51"/>
-<circle x="-8.89" y="-12.7" radius="2.55" width="0.127" layer="51"/>
-<circle x="8.89" y="3.81" radius="2.55" width="0.127" layer="51"/>
-<circle x="8.89" y="-12.7" radius="2.55" width="0.127" layer="51"/>
-<wire x1="-5.08" y1="-8.89" x2="-5.08" y2="-22.29" width="0.127" layer="51"/>
-<wire x1="5.08" y1="-8.89" x2="5.08" y2="-22.29" width="0.127" layer="51"/>
-<wire x1="-5.08" y1="-22.29" x2="-3.8" y2="-22.29" width="0.127" layer="51"/>
-<wire x1="-3.8" y1="-22.29" x2="-2.8" y2="-22.29" width="0.127" layer="51"/>
-<wire x1="-2.8" y1="-22.29" x2="2.8" y2="-22.29" width="0.127" layer="51"/>
-<wire x1="2.8" y1="-22.29" x2="3.8" y2="-22.29" width="0.127" layer="51"/>
-<wire x1="3.8" y1="-22.29" x2="5.08" y2="-22.29" width="0.127" layer="51"/>
-<wire x1="-3.8" y1="-18.49" x2="-3.8" y2="-22.29" width="0.127" layer="51"/>
-<wire x1="-3.8" y1="-18.49" x2="3.8" y2="-18.49" width="0.127" layer="51"/>
-<wire x1="3.8" y1="-18.49" x2="3.8" y2="-22.29" width="0.127" layer="51"/>
-<wire x1="-2.8" y1="-22.29" x2="-2.8" y2="-19.89" width="0.127" layer="51"/>
-<wire x1="2.8" y1="-22.29" x2="2.8" y2="-19.89" width="0.127" layer="51"/>
-<wire x1="-2.8" y1="-19.89" x2="2.8" y2="-19.89" width="0.127" layer="51"/>
-<wire x1="5.08" y1="-16.51" x2="5.08" y2="-8.89" width="0.127" layer="21"/>
-<wire x1="-3.81" y1="-8.89" x2="-5.08" y2="-8.89" width="0.127" layer="21"/>
-<wire x1="5.08" y1="-8.89" x2="3.81" y2="-8.89" width="0.127" layer="21"/>
-<pad name="P$4" x="5.08" y="-3.81" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$9" x="7.62" y="-3.81" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$11" x="-5.08" y="-3.81" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$12" x="-7.62" y="-3.81" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$15" x="-7.62" y="-1.27" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$16" x="-5.08" y="-1.27" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$17" x="-2.54" y="-1.27" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$18" x="0" y="-1.27" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$19" x="2.54" y="-1.27" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$20" x="5.08" y="-1.27" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$21" x="7.62" y="-1.27" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$23" x="5.08" y="1.27" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$24" x="2.54" y="1.27" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$25" x="0" y="1.27" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$26" x="-2.54" y="1.27" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$27" x="-5.08" y="1.27" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$28" x="-5.08" y="3.81" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$29" x="-2.54" y="3.81" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$30" x="0" y="3.81" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$31" x="2.54" y="3.81" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$32" x="5.08" y="3.81" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$33" x="5.08" y="6.35" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$34" x="2.54" y="6.35" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$35" x="0" y="6.35" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$36" x="-2.54" y="6.35" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$37" x="-5.08" y="6.35" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$38" x="-5.08" y="8.89" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$39" x="-7.62" y="8.89" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$41" x="-2.54" y="8.89" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$42" x="0" y="8.89" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$43" x="2.54" y="8.89" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$44" x="5.08" y="8.89" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$45" x="7.62" y="8.89" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$47" x="7.62" y="11.43" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$48" x="5.08" y="11.43" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$49" x="2.54" y="11.43" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$50" x="0" y="11.43" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$51" x="-2.54" y="11.43" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$52" x="-5.08" y="11.43" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$53" x="-7.62" y="11.43" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$54" x="-2.54" y="13.97" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$55" x="-5.08" y="13.97" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$56" x="0" y="13.97" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$57" x="2.54" y="13.97" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$58" x="5.08" y="13.97" drill="1" diameter="1.778" shape="octagon"/>
-</package>
 <package name="FABO_BRICK_3PIN_CONNECTOR_I">
 <pad name="GND" x="-2.54" y="0.127" drill="1" diameter="1.778" shape="octagon" rot="R90"/>
 <pad name="VCC" x="0" y="-0.127" drill="1" diameter="1.778" shape="octagon" rot="R90"/>
@@ -31421,19 +31272,19 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="-5.08" y1="-2.54" x2="5.08" y2="-2.54" width="0.127" layer="21"/>
 </package>
 <package name="FABO_BRICK_3PIN_B03B-PASK-1">
-<pad name="GND" x="-2" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="GND" x="-2" y="0" drill="0.9" diameter="1.4224" shape="octagon"/>
 <pad name="VCC" x="0" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
 <pad name="I/O" x="2" y="0" drill="0.8" diameter="1.4224" shape="square"/>
 <hole x="3.5" y="1.7" drill="1.1"/>
-<wire x1="4" y1="-3.1" x2="4" y2="2.2" width="0.127" layer="51"/>
-<wire x1="-4" y1="-3.1" x2="-4" y2="2.2" width="0.127" layer="51"/>
-<wire x1="4" y1="2.2" x2="-4" y2="2.2" width="0.127" layer="51"/>
-<wire x1="4" y1="-3.1" x2="2" y2="-3.1" width="0.127" layer="51"/>
-<wire x1="2" y1="-3.1" x2="-2" y2="-3.1" width="0.127" layer="51"/>
-<wire x1="-2" y1="-3.1" x2="-4" y2="-3.1" width="0.127" layer="51"/>
-<wire x1="2" y1="-3.6" x2="-2" y2="-3.6" width="0.127" layer="51"/>
-<wire x1="-2" y1="-3.6" x2="-2" y2="-3.1" width="0.127" layer="51"/>
-<wire x1="2" y1="-3.6" x2="2" y2="-3.1" width="0.127" layer="51"/>
+<wire x1="4" y1="-3.1" x2="4" y2="2.2" width="0.1" layer="51"/>
+<wire x1="-4" y1="-3.1" x2="-4" y2="2.2" width="0.1" layer="51"/>
+<wire x1="4" y1="2.2" x2="-4" y2="2.2" width="0.1" layer="51"/>
+<wire x1="4" y1="-3.1" x2="2" y2="-3.1" width="0.1" layer="51"/>
+<wire x1="2" y1="-3.1" x2="-2" y2="-3.1" width="0.1" layer="51"/>
+<wire x1="-2" y1="-3.1" x2="-4" y2="-3.1" width="0.1" layer="51"/>
+<wire x1="2" y1="-3.6" x2="-2" y2="-3.6" width="0.1" layer="51"/>
+<wire x1="-2" y1="-3.6" x2="-2" y2="-3.1" width="0.1" layer="51"/>
+<wire x1="2" y1="-3.6" x2="2" y2="-3.1" width="0.1" layer="51"/>
 <text x="0" y="3.175" size="1.27" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
 </package>
 <package name="FABO_BRICK_3PIN_B03B-PASK-1_SILK">
@@ -31454,226 +31305,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <text x="-2" y="-4" size="0.8128" layer="21" font="vector" ratio="12" rot="R270" align="center-left">GND</text>
 <text x="0" y="-4" size="0.8128" layer="21" font="vector" ratio="12" rot="R270" align="center-left">VCC</text>
 <text x="2" y="-4" size="0.8128" layer="21" font="vector" ratio="12" rot="R270" align="center-left">I/O</text>
-</package>
-<package name="FABO_BRICK_SERIAL">
-<wire x1="-10.16" y1="-19.05" x2="10.16" y2="-19.05" width="0" layer="20"/>
-<wire x1="10.16" y1="-19.05" x2="13.97" y2="-15.24" width="0" layer="20" curve="90"/>
-<wire x1="13.97" y1="-15.24" x2="13.97" y2="6.35" width="0" layer="20"/>
-<wire x1="-10.16" y1="-19.05" x2="-13.97" y2="-15.24" width="0" layer="20" curve="-90"/>
-<pad name="GND" x="3.81" y="-10.16" drill="1" shape="long" rot="R90"/>
-<pad name="VCC" x="1.27" y="-10.16" drill="1" shape="long" rot="R90"/>
-<pad name="RX" x="-3.81" y="-10.16" drill="1" shape="long" rot="R90"/>
-<pad name="TX" x="-1.27" y="-10.16" drill="1" shape="long" rot="R90"/>
-<wire x1="-13.97" y1="6.35" x2="-13.97" y2="-15.24" width="0" layer="20"/>
-<wire x1="-6.35" y1="-19.05" x2="-6.35" y2="-10.16" width="0.127" layer="21"/>
-<wire x1="6.35" y1="-10.16" x2="6.35" y2="-19.05" width="0.127" layer="21"/>
-<pad name="P$5" x="-10.16" y="6.35" drill="3" diameter="3.81"/>
-<pad name="P$6" x="10.16" y="6.35" drill="3" diameter="3.81"/>
-<pad name="P$7" x="-10.16" y="-15.24" drill="3" diameter="3.81"/>
-<pad name="P$8" x="10.16" y="-15.24" drill="3" diameter="3.81"/>
-<wire x1="-13.97" y1="6.35" x2="13.97" y2="6.35" width="0" layer="20" curve="-180"/>
-<text x="-3.81" y="-8.255" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">RX</text>
-<text x="-1.27" y="-8.255" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">TX</text>
-<text x="1.27" y="-8.255" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
-<text x="3.81" y="-8.255" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
-<circle x="-10.16" y="6.35" radius="2.55" width="0.127" layer="51"/>
-<circle x="-10.16" y="-15.24" radius="2.55" width="0.127" layer="51"/>
-<circle x="10.16" y="6.35" radius="2.55" width="0.127" layer="51"/>
-<circle x="10.16" y="-15.24" radius="2.55" width="0.127" layer="51"/>
-<wire x1="-6.35" y1="-10.16" x2="-5.08" y2="-10.16" width="0.127" layer="21"/>
-<wire x1="5.08" y1="-10.16" x2="6.35" y2="-10.16" width="0.127" layer="21"/>
-<wire x1="-6.35" y1="-10.16" x2="-6.35" y2="-23.56" width="0.127" layer="51"/>
-<wire x1="6.35" y1="-10.16" x2="6.35" y2="-23.56" width="0.127" layer="51"/>
-<wire x1="-6.35" y1="-23.56" x2="-3.8" y2="-23.56" width="0.127" layer="51"/>
-<wire x1="-3.8" y1="-23.56" x2="-2.8" y2="-23.56" width="0.127" layer="51"/>
-<wire x1="-2.8" y1="-23.56" x2="2.8" y2="-23.56" width="0.127" layer="51"/>
-<wire x1="2.8" y1="-23.56" x2="3.8" y2="-23.56" width="0.127" layer="51"/>
-<wire x1="3.8" y1="-23.56" x2="6.35" y2="-23.56" width="0.127" layer="51"/>
-<wire x1="-3.8" y1="-19.76" x2="-3.8" y2="-23.56" width="0.127" layer="51"/>
-<wire x1="-3.8" y1="-19.76" x2="3.8" y2="-19.76" width="0.127" layer="51"/>
-<wire x1="3.8" y1="-19.76" x2="3.8" y2="-23.56" width="0.127" layer="51"/>
-<wire x1="-2.8" y1="-23.56" x2="-2.8" y2="-21.16" width="0.127" layer="51"/>
-<wire x1="2.8" y1="-23.56" x2="2.8" y2="-21.16" width="0.127" layer="51"/>
-<wire x1="-2.8" y1="-21.16" x2="2.8" y2="-21.16" width="0.127" layer="51"/>
-</package>
-<package name="FABO_BRICK_SERIAL_CONNECTOR">
-<pad name="GND" x="-3.81" y="0" drill="1" diameter="1.778" shape="octagon" rot="R90"/>
-<pad name="VCC" x="-1.27" y="0" drill="1" diameter="1.778" shape="octagon" rot="R90"/>
-<pad name="RX" x="3.81" y="0" drill="1" diameter="1.778" shape="octagon" rot="R90"/>
-<pad name="TX" x="1.27" y="0" drill="1" diameter="1.778" shape="octagon" rot="R90"/>
-<text x="0" y="-3.175" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
-<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
-<rectangle x1="-4.064" y1="-0.254" x2="-3.556" y2="0.254" layer="51"/>
-<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
-<rectangle x1="3.556" y1="-0.254" x2="4.064" y2="0.254" layer="51"/>
-<wire x1="-6.35" y1="13.4" x2="-6.35" y2="0" width="0.127" layer="51"/>
-<wire x1="6.35" y1="13.4" x2="6.35" y2="0" width="0.127" layer="51"/>
-<wire x1="-6.35" y1="13.4" x2="-3.8" y2="13.4" width="0.127" layer="51"/>
-<wire x1="-3.8" y1="13.4" x2="3.8" y2="13.4" width="0.127" layer="51"/>
-<wire x1="3.8" y1="13.4" x2="6.35" y2="13.4" width="0.127" layer="51"/>
-<wire x1="-6.35" y1="0" x2="-5.5" y2="0" width="0.127" layer="51"/>
-<wire x1="6.35" y1="0" x2="5.5" y2="0" width="0.127" layer="51"/>
-<wire x1="-3.8" y1="13.4" x2="-3.8" y2="9.6" width="0.127" layer="51"/>
-<wire x1="3.8" y1="13.4" x2="3.8" y2="9.6" width="0.127" layer="51"/>
-<wire x1="-2.8" y1="12" x2="-2.8" y2="9.6" width="0.127" layer="51"/>
-<wire x1="2.8" y1="12" x2="2.8" y2="9.6" width="0.127" layer="51"/>
-<wire x1="-2.8" y1="12" x2="2.8" y2="12" width="0.127" layer="51"/>
-<wire x1="-3.8" y1="9.6" x2="-2.8" y2="9.6" width="0.127" layer="51"/>
-<wire x1="2.8" y1="9.6" x2="3.8" y2="9.6" width="0.127" layer="51"/>
-<text x="-3.81" y="1.905" size="0.6096" layer="51" font="vector" ratio="10" rot="R90" align="center-left">GND</text>
-<text x="-1.27" y="1.905" size="0.6096" layer="51" font="vector" ratio="10" rot="R90" align="center-left">VCC</text>
-<text x="3.81" y="1.905" size="0.6096" layer="51" font="vector" ratio="10" rot="R90" align="center-left">RX</text>
-<text x="1.27" y="1.905" size="0.6096" layer="51" font="vector" ratio="10" rot="R90" align="center-left">TX</text>
-</package>
-<package name="FABO_BRICK_SERIAL_UNIVERSAL">
-<wire x1="-10.16" y1="-19.05" x2="10.16" y2="-19.05" width="0" layer="20"/>
-<wire x1="10.16" y1="-19.05" x2="13.97" y2="-15.24" width="0" layer="20" curve="90"/>
-<wire x1="13.97" y1="-15.24" x2="13.97" y2="6.35" width="0" layer="20"/>
-<wire x1="-10.16" y1="-19.05" x2="-13.97" y2="-15.24" width="0" layer="20" curve="-90"/>
-<pad name="GND" x="3.81" y="-10.16" drill="1" shape="long" rot="R90"/>
-<pad name="VCC" x="1.27" y="-10.16" drill="1" shape="long" rot="R90"/>
-<pad name="RX" x="-3.81" y="-10.16" drill="1" shape="long" rot="R90"/>
-<pad name="TX" x="-1.27" y="-10.16" drill="1" shape="long" rot="R90"/>
-<wire x1="-13.97" y1="6.35" x2="-13.97" y2="-15.24" width="0" layer="20"/>
-<wire x1="-6.35" y1="-19.05" x2="-6.35" y2="-10.16" width="0.127" layer="21"/>
-<wire x1="6.35" y1="-10.16" x2="6.35" y2="-19.05" width="0.127" layer="21"/>
-<pad name="P$5" x="-10.16" y="6.35" drill="3" diameter="3.81"/>
-<pad name="P$6" x="10.16" y="6.35" drill="3" diameter="3.81"/>
-<pad name="P$7" x="-10.16" y="-15.24" drill="3" diameter="3.81"/>
-<pad name="P$8" x="10.16" y="-15.24" drill="3" diameter="3.81"/>
-<wire x1="-13.97" y1="6.35" x2="13.97" y2="6.35" width="0" layer="20" curve="-180"/>
-<text x="-3.81" y="-8.255" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">RX</text>
-<text x="-1.27" y="-8.255" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">TX</text>
-<text x="1.27" y="-8.255" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
-<text x="3.81" y="-8.255" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
-<circle x="-10.16" y="6.35" radius="2.55" width="0.127" layer="51"/>
-<circle x="-10.16" y="-15.24" radius="2.55" width="0.127" layer="51"/>
-<circle x="10.16" y="6.35" radius="2.55" width="0.127" layer="51"/>
-<circle x="10.16" y="-15.24" radius="2.55" width="0.127" layer="51"/>
-<wire x1="-6.35" y1="-10.16" x2="-5.08" y2="-10.16" width="0.127" layer="21"/>
-<wire x1="5.08" y1="-10.16" x2="6.35" y2="-10.16" width="0.127" layer="21"/>
-<wire x1="-6.35" y1="-10.16" x2="-6.35" y2="-23.56" width="0.127" layer="51"/>
-<wire x1="6.35" y1="-10.16" x2="6.35" y2="-23.56" width="0.127" layer="51"/>
-<wire x1="-6.35" y1="-23.56" x2="-3.8" y2="-23.56" width="0.127" layer="51"/>
-<wire x1="-3.8" y1="-23.56" x2="-2.8" y2="-23.56" width="0.127" layer="51"/>
-<wire x1="-2.8" y1="-23.56" x2="2.8" y2="-23.56" width="0.127" layer="51"/>
-<wire x1="2.8" y1="-23.56" x2="3.8" y2="-23.56" width="0.127" layer="51"/>
-<wire x1="3.8" y1="-23.56" x2="6.35" y2="-23.56" width="0.127" layer="51"/>
-<wire x1="-3.8" y1="-19.76" x2="-3.8" y2="-23.56" width="0.127" layer="51"/>
-<wire x1="-3.8" y1="-19.76" x2="3.8" y2="-19.76" width="0.127" layer="51"/>
-<wire x1="3.8" y1="-19.76" x2="3.8" y2="-23.56" width="0.127" layer="51"/>
-<wire x1="-2.8" y1="-23.56" x2="-2.8" y2="-21.16" width="0.127" layer="51"/>
-<wire x1="2.8" y1="-23.56" x2="2.8" y2="-21.16" width="0.127" layer="51"/>
-<wire x1="-2.8" y1="-21.16" x2="2.8" y2="-21.16" width="0.127" layer="51"/>
-<pad name="P$1" x="-1.27" y="0" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$2" x="1.27" y="0" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$3" x="3.81" y="0" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$4" x="6.35" y="0" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$9" x="8.89" y="0" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$10" x="8.89" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$11" x="-3.81" y="0" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$12" x="-6.35" y="0" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$13" x="-8.89" y="0" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$14" x="-8.89" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$15" x="-1.27" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$16" x="-3.81" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$17" x="-6.35" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$18" x="1.27" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$19" x="3.81" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$20" x="6.35" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$21" x="6.35" y="-5.08" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$22" x="8.89" y="-5.08" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$23" x="-6.35" y="-5.08" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$24" x="-8.89" y="-5.08" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$25" x="-8.89" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$26" x="-6.35" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$27" x="-3.81" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$28" x="-1.27" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$29" x="1.27" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$30" x="3.81" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$31" x="6.35" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$32" x="8.89" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$33" x="-6.35" y="5.08" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$34" x="-3.81" y="5.08" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$35" x="-1.27" y="5.08" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$36" x="1.27" y="5.08" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$37" x="3.81" y="5.08" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$38" x="6.35" y="5.08" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$39" x="-6.35" y="7.62" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$40" x="-3.81" y="7.62" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$41" x="-1.27" y="7.62" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$42" x="1.27" y="7.62" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$43" x="3.81" y="7.62" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$44" x="6.35" y="7.62" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$45" x="-6.35" y="10.16" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$46" x="-3.81" y="10.16" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$47" x="-1.27" y="10.16" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$48" x="1.27" y="10.16" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$49" x="3.81" y="10.16" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$50" x="6.35" y="10.16" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$51" x="-8.89" y="10.16" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$52" x="8.89" y="10.16" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$53" x="-8.89" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$54" x="-8.89" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$55" x="-6.35" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$56" x="-3.81" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$57" x="-1.27" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$58" x="1.27" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$59" x="3.81" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$60" x="6.35" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$61" x="8.89" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$62" x="-6.35" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$63" x="-3.81" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$64" x="-1.27" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$65" x="1.27" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$66" x="3.81" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$67" x="6.35" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$68" x="8.89" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$69" x="-3.81" y="17.78" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$70" x="-1.27" y="17.78" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$71" x="1.27" y="17.78" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$72" x="3.81" y="17.78" drill="1" diameter="1.778" shape="octagon"/>
-</package>
-<package name="FABO_BRICK_SERIAL_LONG">
-<wire x1="-10.16" y1="-17.78" x2="10.16" y2="-17.78" width="0" layer="20"/>
-<wire x1="10.16" y1="-17.78" x2="13.97" y2="-13.97" width="0" layer="20" curve="90"/>
-<wire x1="13.97" y1="-13.97" x2="13.97" y2="16.51" width="0" layer="20"/>
-<wire x1="-10.16" y1="-17.78" x2="-13.97" y2="-13.97" width="0" layer="20" curve="-90"/>
-<pad name="GND" x="3.81" y="-8.89" drill="1" shape="long" rot="R90"/>
-<pad name="VCC" x="1.27" y="-8.89" drill="1" shape="long" rot="R90"/>
-<pad name="RX" x="-3.81" y="-8.89" drill="1" shape="long" rot="R90"/>
-<pad name="TX" x="-1.27" y="-8.89" drill="1" shape="long" rot="R90"/>
-<wire x1="-13.97" y1="16.51" x2="-13.97" y2="-13.97" width="0" layer="20"/>
-<wire x1="-6.35" y1="-17.78" x2="-6.35" y2="-8.89" width="0.127" layer="21"/>
-<wire x1="6.35" y1="-8.89" x2="6.35" y2="-17.78" width="0.127" layer="21"/>
-<pad name="P$5" x="-10.16" y="7.62" drill="3" diameter="3.81"/>
-<pad name="P$6" x="10.16" y="7.62" drill="3" diameter="3.81"/>
-<pad name="P$7" x="-10.16" y="-13.97" drill="3" diameter="3.81"/>
-<pad name="P$8" x="10.16" y="-13.97" drill="3" diameter="3.81"/>
-<wire x1="-13.97" y1="16.51" x2="13.97" y2="16.51" width="0" layer="20" curve="-180"/>
-<text x="-3.81" y="-6.985" size="0.8128" layer="21" font="vector" ratio="12" rot="R90" align="center-left">RX</text>
-<text x="-1.27" y="-6.985" size="0.8128" layer="21" font="vector" ratio="12" rot="R90" align="center-left">TX</text>
-<text x="1.27" y="-6.985" size="0.8128" layer="21" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
-<text x="3.81" y="-6.985" size="0.8128" layer="21" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
-<circle x="-10.16" y="7.62" radius="2.55" width="0.127" layer="51"/>
-<circle x="-10.16" y="-13.97" radius="2.55" width="0.127" layer="51"/>
-<circle x="10.16" y="7.62" radius="2.55" width="0.127" layer="51"/>
-<circle x="10.16" y="-13.97" radius="2.55" width="0.127" layer="51"/>
-<wire x1="-6.35" y1="-8.89" x2="-5.08" y2="-8.89" width="0.127" layer="21"/>
-<wire x1="5.08" y1="-8.89" x2="6.35" y2="-8.89" width="0.127" layer="21"/>
-<wire x1="-6.35" y1="-8.89" x2="-6.35" y2="-22.29" width="0.127" layer="51"/>
-<wire x1="6.35" y1="-8.89" x2="6.35" y2="-22.29" width="0.127" layer="51"/>
-<wire x1="-6.35" y1="-22.29" x2="-3.8" y2="-22.29" width="0.127" layer="51"/>
-<wire x1="-3.8" y1="-22.29" x2="-2.8" y2="-22.29" width="0.127" layer="51"/>
-<wire x1="-2.8" y1="-22.29" x2="2.8" y2="-22.29" width="0.127" layer="51"/>
-<wire x1="2.8" y1="-22.29" x2="3.8" y2="-22.29" width="0.127" layer="51"/>
-<wire x1="3.8" y1="-22.29" x2="6.35" y2="-22.29" width="0.127" layer="51"/>
-<wire x1="-3.8" y1="-18.49" x2="-3.8" y2="-22.29" width="0.127" layer="51"/>
-<wire x1="-3.8" y1="-18.49" x2="3.8" y2="-18.49" width="0.127" layer="51"/>
-<wire x1="3.8" y1="-18.49" x2="3.8" y2="-22.29" width="0.127" layer="51"/>
-<wire x1="-2.8" y1="-22.29" x2="-2.8" y2="-19.89" width="0.127" layer="51"/>
-<wire x1="2.8" y1="-22.29" x2="2.8" y2="-19.89" width="0.127" layer="51"/>
-<wire x1="-2.8" y1="-19.89" x2="2.8" y2="-19.89" width="0.127" layer="51"/>
 </package>
 <package name="FABO_BRICK_SERIAL_S04B-PASK-2">
 <pad name="GND" x="-3" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
@@ -31761,57 +31392,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pad name="RX" x="3" y="0" drill="0.8" diameter="1.4224" shape="square"/>
 <text x="3" y="-4" size="0.8128" layer="21" font="vector" ratio="12" rot="R270" align="center-left">RX</text>
 </package>
-<package name="FABO_BRICK_3PIN_BREAKOUT">
-<pad name="GND" x="-2.54" y="-10.16" drill="1" diameter="1.778" shape="octagon" rot="R90"/>
-<pad name="VCC" x="0" y="-10.16" drill="1" diameter="1.778" shape="octagon" rot="R90"/>
-<pad name="I/O" x="2.54" y="-10.16" drill="1" diameter="1.6764" shape="square" rot="R90"/>
-<text x="2.54" y="-8.89" size="0.8128" layer="21" font="vector" ratio="12" rot="R90" align="center-left">I/O</text>
-<text x="0" y="-8.89" size="0.8128" layer="21" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
-<text x="-2.54" y="-8.89" size="0.8128" layer="21" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
-<wire x1="5.08" y1="-12.7" x2="7.62" y2="-10.16" width="0" layer="20" curve="90"/>
-<wire x1="7.62" y1="-10.16" x2="7.62" y2="3.81" width="0" layer="20"/>
-<wire x1="-5.08" y1="-12.7" x2="-7.62" y2="-10.16" width="0" layer="20" curve="-90"/>
-<wire x1="-7.62" y1="3.81" x2="-7.62" y2="-10.16" width="0" layer="20"/>
-<wire x1="-7.62" y1="3.81" x2="7.62" y2="3.81" width="0" layer="20" curve="-180"/>
-<wire x1="-5.08" y1="-12.7" x2="5.08" y2="-12.7" width="0" layer="20"/>
-</package>
-<package name="FABO_BRICK_SERIAL_BREAKOUT">
-<pad name="GND" x="-3.81" y="-10.16" drill="1" shape="long" rot="R90"/>
-<pad name="VCC" x="-1.27" y="-10.16" drill="1" shape="long" rot="R90"/>
-<pad name="TX" x="1.27" y="-10.16" drill="1" shape="long" rot="R90"/>
-<pad name="RX" x="3.81" y="-10.16" drill="1" shape="long" rot="R90"/>
-<wire x1="6.35" y1="-12.7" x2="8.89" y2="-10.16" width="0" layer="20" curve="90"/>
-<wire x1="8.89" y1="-10.16" x2="8.89" y2="3.81" width="0" layer="20"/>
-<wire x1="-6.35" y1="-12.7" x2="-8.89" y2="-10.16" width="0" layer="20" curve="-90"/>
-<wire x1="-8.89" y1="3.81" x2="-8.89" y2="-10.16" width="0" layer="20"/>
-<wire x1="-8.89" y1="3.81" x2="8.89" y2="3.81" width="0" layer="20" curve="-180"/>
-<text x="-1.27" y="-8.255" size="0.8128" layer="21" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
-<text x="-3.81" y="-8.255" size="0.8128" layer="21" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
-<wire x1="-6.35" y1="-12.7" x2="6.35" y2="-12.7" width="0" layer="20"/>
-<text x="1.27" y="-8.255" size="0.8128" layer="21" font="vector" ratio="12" rot="R90" align="center-left">TX</text>
-<text x="3.81" y="-8.255" size="0.8128" layer="21" font="vector" ratio="12" rot="R90" align="center-left">RX</text>
-</package>
-<package name="FABO_BRICK_SERIAL_B04B-PASK-1">
-<pad name="GND" x="-3" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
-<pad name="VCC" x="-1" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
-<pad name="TX" x="1" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
-<hole x="4.5" y="1.7" drill="1.1"/>
-<wire x1="5" y1="-3.1" x2="5" y2="2.2" width="0.127" layer="51"/>
-<wire x1="-5" y1="-3.1" x2="-5" y2="2.2" width="0.127" layer="51"/>
-<wire x1="5" y1="2.2" x2="-5" y2="2.2" width="0.127" layer="51"/>
-<wire x1="5" y1="-3.1" x2="3" y2="-3.1" width="0.127" layer="51"/>
-<text x="0" y="-4.445" size="1.27" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center">&gt;NAME</text>
-<wire x1="3" y1="-3.1" x2="-3" y2="-3.1" width="0.127" layer="51"/>
-<wire x1="-3" y1="-3.1" x2="-5" y2="-3.1" width="0.127" layer="51"/>
-<wire x1="3" y1="-3.6" x2="-3" y2="-3.6" width="0.127" layer="51"/>
-<text x="-3" y="-1" size="0.6096" layer="51" font="vector" ratio="12" rot="R270" align="center-left">GND</text>
-<text x="-1" y="-1" size="0.6096" layer="51" font="vector" ratio="12" rot="R270" align="center-left">VCC</text>
-<text x="1" y="-1" size="0.6096" layer="51" font="vector" ratio="12" rot="R270" align="center-left">TX</text>
-<pad name="RX" x="3" y="0" drill="0.8" diameter="1.4224" shape="square"/>
-<text x="3" y="-1" size="0.6096" layer="51" font="vector" ratio="12" rot="R270" align="center-left">RX</text>
-<wire x1="-3" y1="-3.1" x2="-3" y2="-3.6" width="0.127" layer="51"/>
-<wire x1="3" y1="-3.1" x2="3" y2="-3.6" width="0.127" layer="51"/>
-</package>
 <package name="FABO_BRICK_SERIAL_B04B-PASK-1_SILK">
 <pad name="GND" x="-3" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
 <pad name="VCC" x="-1" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
@@ -31869,205 +31449,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="-3.3" y1="-3.5" x2="-3.3" y2="0.5" width="0.127" layer="51"/>
 <wire x1="3.3" y1="-3.5" x2="3.3" y2="0.5" width="0.127" layer="51"/>
 <wire x1="3.3" y1="0.5" x2="-3.3" y2="0.5" width="0.127" layer="51"/>
-</package>
-<package name="FABO_BRICK_I2C">
-<pad name="GND" x="3.81" y="-10.16" drill="1" shape="long" rot="R90"/>
-<pad name="VCC" x="1.27" y="-10.16" drill="1" shape="long" rot="R90"/>
-<pad name="SDA" x="-1.27" y="-10.16" drill="1" shape="long" rot="R90"/>
-<pad name="SCL" x="-3.81" y="-10.16" drill="1" shape="long" rot="R90"/>
-<wire x1="-10.16" y1="-19.05" x2="10.16" y2="-19.05" width="0" layer="20"/>
-<wire x1="10.16" y1="-19.05" x2="13.97" y2="-15.24" width="0" layer="20" curve="90"/>
-<wire x1="13.97" y1="-15.24" x2="13.97" y2="6.35" width="0" layer="20"/>
-<wire x1="-10.16" y1="-19.05" x2="-13.97" y2="-15.24" width="0" layer="20" curve="-90"/>
-<wire x1="-13.97" y1="6.35" x2="-13.97" y2="-15.24" width="0" layer="20"/>
-<wire x1="-6.35" y1="-19.05" x2="-6.35" y2="-10.16" width="0.127" layer="21"/>
-<wire x1="6.35" y1="-10.16" x2="6.35" y2="-19.05" width="0.127" layer="21"/>
-<pad name="P$1" x="-10.16" y="6.35" drill="3" diameter="3.81"/>
-<pad name="P$2" x="10.16" y="6.35" drill="3" diameter="3.81"/>
-<pad name="P$3" x="-10.16" y="-15.24" drill="3" diameter="3.81"/>
-<pad name="P$4" x="10.16" y="-15.24" drill="3" diameter="3.81"/>
-<wire x1="-13.97" y1="6.35" x2="13.97" y2="6.35" width="0" layer="20" curve="-180"/>
-<text x="-3.81" y="-8.255" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">SCL</text>
-<text x="-1.27" y="-8.255" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">SDA</text>
-<text x="1.27" y="-8.255" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
-<text x="3.81" y="-8.255" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
-<circle x="-10.16" y="6.35" radius="2.55" width="0.127" layer="51"/>
-<circle x="-10.16" y="-15.24" radius="2.55" width="0.127" layer="51"/>
-<circle x="10.16" y="6.35" radius="2.55" width="0.127" layer="51"/>
-<circle x="10.16" y="-15.24" radius="2.55" width="0.127" layer="51"/>
-<wire x1="-6.35" y1="-10.16" x2="-5.08" y2="-10.16" width="0.127" layer="21"/>
-<wire x1="5.08" y1="-10.16" x2="6.35" y2="-10.16" width="0.127" layer="21"/>
-<wire x1="-6.35" y1="-10.16" x2="-6.35" y2="-23.56" width="0.127" layer="51"/>
-<wire x1="6.35" y1="-10.16" x2="6.35" y2="-23.56" width="0.127" layer="51"/>
-<wire x1="-6.35" y1="-23.56" x2="-3.8" y2="-23.56" width="0.127" layer="51"/>
-<wire x1="-3.8" y1="-23.56" x2="-2.8" y2="-23.56" width="0.127" layer="51"/>
-<wire x1="-2.8" y1="-23.56" x2="2.8" y2="-23.56" width="0.127" layer="51"/>
-<wire x1="2.8" y1="-23.56" x2="3.8" y2="-23.56" width="0.127" layer="51"/>
-<wire x1="3.8" y1="-23.56" x2="6.35" y2="-23.56" width="0.127" layer="51"/>
-<wire x1="-3.8" y1="-19.76" x2="-3.8" y2="-23.56" width="0.127" layer="51"/>
-<wire x1="-3.8" y1="-19.76" x2="3.8" y2="-19.76" width="0.127" layer="51"/>
-<wire x1="3.8" y1="-19.76" x2="3.8" y2="-23.56" width="0.127" layer="51"/>
-<wire x1="-2.8" y1="-23.56" x2="-2.8" y2="-21.16" width="0.127" layer="51"/>
-<wire x1="2.8" y1="-23.56" x2="2.8" y2="-21.16" width="0.127" layer="51"/>
-<wire x1="-2.8" y1="-21.16" x2="2.8" y2="-21.16" width="0.127" layer="51"/>
-</package>
-<package name="FABO_BRICK_I2C_BREAKOUT">
-<pad name="SCL" x="3.81" y="-10.16" drill="1" shape="long" rot="R90"/>
-<pad name="SDA" x="1.27" y="-10.16" drill="1" shape="long" rot="R90"/>
-<pad name="VCC" x="-1.27" y="-10.16" drill="1" shape="long" rot="R90"/>
-<pad name="GND" x="-3.81" y="-10.16" drill="1" shape="long" rot="R90"/>
-<wire x1="6.35" y1="-12.7" x2="8.89" y2="-10.16" width="0" layer="20" curve="90"/>
-<wire x1="8.89" y1="-10.16" x2="8.89" y2="3.81" width="0" layer="20"/>
-<wire x1="-6.35" y1="-12.7" x2="-8.89" y2="-10.16" width="0" layer="20" curve="-90"/>
-<wire x1="-8.89" y1="3.81" x2="-8.89" y2="-10.16" width="0" layer="20"/>
-<wire x1="-8.89" y1="3.81" x2="8.89" y2="3.81" width="0" layer="20" curve="-180"/>
-<text x="-1.27" y="-8.255" size="0.8128" layer="21" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
-<text x="-3.81" y="-8.255" size="0.8128" layer="21" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
-<wire x1="-6.35" y1="-12.7" x2="6.35" y2="-12.7" width="0" layer="20"/>
-<text x="1.27" y="-8.255" size="0.8128" layer="21" font="vector" ratio="12" rot="R90" align="center-left">SDA</text>
-<text x="3.81" y="-8.255" size="0.8128" layer="21" font="vector" ratio="12" rot="R90" align="center-left">SCL</text>
-</package>
-<package name="FABO_BRICK_I2C_UNIVERSAL">
-<pad name="GND" x="3.81" y="-10.16" drill="1" shape="long" rot="R90"/>
-<pad name="VCC" x="1.27" y="-10.16" drill="1" shape="long" rot="R90"/>
-<pad name="SDA" x="-1.27" y="-10.16" drill="1" shape="long" rot="R90"/>
-<pad name="SCL" x="-3.81" y="-10.16" drill="1" shape="long" rot="R90"/>
-<wire x1="-10.16" y1="-19.05" x2="10.16" y2="-19.05" width="0" layer="20"/>
-<wire x1="10.16" y1="-19.05" x2="13.97" y2="-15.24" width="0" layer="20" curve="90"/>
-<wire x1="13.97" y1="-15.24" x2="13.97" y2="6.35" width="0" layer="20"/>
-<wire x1="-10.16" y1="-19.05" x2="-13.97" y2="-15.24" width="0" layer="20" curve="-90"/>
-<wire x1="-13.97" y1="6.35" x2="-13.97" y2="-15.24" width="0" layer="20"/>
-<wire x1="-6.35" y1="-19.05" x2="-6.35" y2="-10.16" width="0.127" layer="21"/>
-<wire x1="6.35" y1="-10.16" x2="6.35" y2="-19.05" width="0.127" layer="21"/>
-<pad name="P$1" x="-10.16" y="6.35" drill="3" diameter="3.81"/>
-<pad name="P$2" x="10.16" y="6.35" drill="3" diameter="3.81"/>
-<pad name="P$3" x="-10.16" y="-15.24" drill="3" diameter="3.81"/>
-<pad name="P$4" x="10.16" y="-15.24" drill="3" diameter="3.81"/>
-<wire x1="-13.97" y1="6.35" x2="13.97" y2="6.35" width="0" layer="20" curve="-180"/>
-<text x="-3.81" y="-8.255" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">SCL</text>
-<text x="-1.27" y="-8.255" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">SDA</text>
-<text x="1.27" y="-8.255" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
-<text x="3.81" y="-8.255" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
-<circle x="-10.16" y="6.35" radius="2.55" width="0.127" layer="51"/>
-<circle x="-10.16" y="-15.24" radius="2.55" width="0.127" layer="51"/>
-<circle x="10.16" y="6.35" radius="2.55" width="0.127" layer="51"/>
-<circle x="10.16" y="-15.24" radius="2.55" width="0.127" layer="51"/>
-<wire x1="-6.35" y1="-10.16" x2="-5.08" y2="-10.16" width="0.127" layer="21"/>
-<wire x1="5.08" y1="-10.16" x2="6.35" y2="-10.16" width="0.127" layer="21"/>
-<wire x1="-6.35" y1="-10.16" x2="-6.35" y2="-23.56" width="0.127" layer="51"/>
-<wire x1="6.35" y1="-10.16" x2="6.35" y2="-23.56" width="0.127" layer="51"/>
-<wire x1="-6.35" y1="-23.56" x2="-3.8" y2="-23.56" width="0.127" layer="51"/>
-<wire x1="-3.8" y1="-23.56" x2="-2.8" y2="-23.56" width="0.127" layer="51"/>
-<wire x1="-2.8" y1="-23.56" x2="2.8" y2="-23.56" width="0.127" layer="51"/>
-<wire x1="2.8" y1="-23.56" x2="3.8" y2="-23.56" width="0.127" layer="51"/>
-<wire x1="3.8" y1="-23.56" x2="6.35" y2="-23.56" width="0.127" layer="51"/>
-<wire x1="-3.8" y1="-19.76" x2="-3.8" y2="-23.56" width="0.127" layer="51"/>
-<wire x1="-3.8" y1="-19.76" x2="3.8" y2="-19.76" width="0.127" layer="51"/>
-<wire x1="3.8" y1="-19.76" x2="3.8" y2="-23.56" width="0.127" layer="51"/>
-<wire x1="-2.8" y1="-23.56" x2="-2.8" y2="-21.16" width="0.127" layer="51"/>
-<wire x1="2.8" y1="-23.56" x2="2.8" y2="-21.16" width="0.127" layer="51"/>
-<wire x1="-2.8" y1="-21.16" x2="2.8" y2="-21.16" width="0.127" layer="51"/>
-<pad name="P$9" x="6.35" y="-5.08" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$10" x="8.89" y="-5.08" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$12" x="-6.35" y="-5.08" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$13" x="-8.89" y="-5.08" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$18" x="-8.89" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$19" x="-8.89" y="0" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$20" x="-8.89" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$21" x="-6.35" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$22" x="-6.35" y="0" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$23" x="-6.35" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$24" x="-3.81" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$25" x="-3.81" y="0" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$26" x="-3.81" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$27" x="-1.27" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$28" x="-1.27" y="0" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$29" x="-1.27" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$30" x="1.27" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$31" x="3.81" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$32" x="6.35" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$33" x="8.89" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$35" x="1.27" y="0" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$36" x="3.81" y="0" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$37" x="6.35" y="0" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$38" x="8.89" y="0" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$40" x="1.27" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$41" x="3.81" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$42" x="6.35" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$43" x="8.89" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$45" x="6.35" y="5.08" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$46" x="3.81" y="5.08" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$47" x="1.27" y="5.08" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$48" x="-1.27" y="5.08" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$49" x="-3.81" y="5.08" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$50" x="-6.35" y="5.08" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$51" x="-6.35" y="7.62" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$52" x="-3.81" y="7.62" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$53" x="-1.27" y="7.62" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$54" x="1.27" y="7.62" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$55" x="3.81" y="7.62" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$56" x="6.35" y="7.62" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$57" x="6.35" y="10.16" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$58" x="8.89" y="10.16" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$60" x="3.81" y="10.16" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$61" x="1.27" y="10.16" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$62" x="-1.27" y="10.16" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$63" x="-3.81" y="10.16" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$64" x="-6.35" y="10.16" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$65" x="-8.89" y="10.16" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$67" x="-8.89" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$68" x="-6.35" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$69" x="-3.81" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$70" x="-1.27" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$71" x="1.27" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$72" x="3.81" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$73" x="6.35" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$74" x="8.89" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$75" x="8.89" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$76" x="6.35" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$77" x="3.81" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$78" x="1.27" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$79" x="-1.27" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$80" x="-3.81" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$81" x="-6.35" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$82" x="-8.89" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$83" x="-3.81" y="17.78" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$84" x="-1.27" y="17.78" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$85" x="1.27" y="17.78" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="P$86" x="3.81" y="17.78" drill="1" diameter="1.778" shape="octagon"/>
-</package>
-<package name="FABO_BRICK_I2C_CONNECTOR">
-<pad name="GND" x="-3.81" y="0" drill="1" diameter="1.778" shape="octagon" rot="R90"/>
-<pad name="VCC" x="-1.27" y="0" drill="1" diameter="1.778" shape="octagon" rot="R90"/>
-<pad name="SDA" x="1.27" y="0" drill="1" diameter="1.778" shape="octagon" rot="R90"/>
-<pad name="SCL" x="3.81" y="0" drill="1" diameter="1.778" shape="octagon" rot="R90"/>
-<text x="0" y="-3.175" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
-<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
-<rectangle x1="-4.064" y1="-0.254" x2="-3.556" y2="0.254" layer="51"/>
-<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
-<rectangle x1="3.556" y1="-0.254" x2="4.064" y2="0.254" layer="51"/>
-<wire x1="-6.35" y1="13.4" x2="-6.35" y2="0" width="0.127" layer="51"/>
-<wire x1="6.35" y1="0" x2="6.35" y2="13.4" width="0.127" layer="51"/>
-<wire x1="-6.35" y1="13.4" x2="-3.8" y2="13.4" width="0.127" layer="51"/>
-<wire x1="-3.8" y1="13.4" x2="3.8" y2="13.4" width="0.127" layer="51"/>
-<wire x1="3.8" y1="13.4" x2="6.35" y2="13.4" width="0.127" layer="51"/>
-<wire x1="6.35" y1="0" x2="5.5" y2="0" width="0.127" layer="51"/>
-<wire x1="-3.8" y1="13.4" x2="-3.8" y2="9.6" width="0.127" layer="51"/>
-<wire x1="-2.8" y1="12" x2="-2.8" y2="9.6" width="0.127" layer="51"/>
-<wire x1="3.8" y1="13.4" x2="3.8" y2="9.6" width="0.127" layer="51"/>
-<wire x1="2.8" y1="12" x2="2.8" y2="9.6" width="0.127" layer="51"/>
-<wire x1="-3.8" y1="9.6" x2="-2.8" y2="9.6" width="0.127" layer="51"/>
-<wire x1="3.8" y1="9.6" x2="2.8" y2="9.6" width="0.127" layer="51"/>
-<wire x1="-2.8" y1="12" x2="2.8" y2="12" width="0.127" layer="51"/>
-<text x="-3.81" y="1.905" size="0.6096" layer="51" font="vector" ratio="10" rot="R90" align="center-left">GND</text>
-<text x="-1.27" y="1.905" size="0.6096" layer="51" font="vector" ratio="10" rot="R90" align="center-left">VCC</text>
-<text x="1.27" y="1.905" size="0.6096" layer="51" font="vector" ratio="10" rot="R90" align="center-left">SDA</text>
-<text x="3.81" y="1.905" size="0.6096" layer="51" font="vector" ratio="10" rot="R90" align="center-left">SCL</text>
-<wire x1="-6.35" y1="0" x2="-5.5" y2="0" width="0.127" layer="51"/>
-<wire x1="-6.35" y1="8.89" x2="-6.35" y2="0" width="0.127" layer="21"/>
-<wire x1="-6.35" y1="0" x2="-5.5" y2="0" width="0.127" layer="21"/>
-<wire x1="6.35" y1="0" x2="5.5" y2="0" width="0.127" layer="21"/>
-<wire x1="6.35" y1="0" x2="6.35" y2="8.89" width="0.127" layer="21"/>
 </package>
 <package name="FABO_BRICK_I2C_S04B-PASK-2">
 <pad name="GND" x="-3" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
@@ -32155,27 +31536,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pad name="SCL" x="3" y="0" drill="0.8" diameter="1.4224" shape="square"/>
 <text x="3" y="-4" size="0.8128" layer="21" font="vector" ratio="12" rot="R270" align="center-left">SCL</text>
 </package>
-<package name="FABO_BRICK_I2C_B04B-PASK-1">
-<pad name="GND" x="-3" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
-<pad name="VCC" x="-1" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
-<pad name="SDA" x="1" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
-<hole x="4.5" y="1.7" drill="1.1"/>
-<wire x1="5" y1="-3.1" x2="5" y2="2.2" width="0.127" layer="51"/>
-<wire x1="-5" y1="-3.1" x2="-5" y2="2.2" width="0.127" layer="51"/>
-<wire x1="5" y1="2.2" x2="-5" y2="2.2" width="0.127" layer="51"/>
-<wire x1="5" y1="-3.1" x2="3" y2="-3.1" width="0.127" layer="51"/>
-<text x="0" y="-4.445" size="1.27" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center">&gt;NAME</text>
-<wire x1="3" y1="-3.1" x2="-3" y2="-3.1" width="0.127" layer="51"/>
-<wire x1="-3" y1="-3.1" x2="-5" y2="-3.1" width="0.127" layer="51"/>
-<wire x1="3" y1="-3.6" x2="-3" y2="-3.6" width="0.127" layer="51"/>
-<text x="-3" y="-1" size="0.6096" layer="51" font="vector" ratio="12" rot="R270" align="center-left">GND</text>
-<text x="-1" y="-1" size="0.6096" layer="51" font="vector" ratio="12" rot="R270" align="center-left">VCC</text>
-<text x="1" y="-1" size="0.6096" layer="51" font="vector" ratio="12" rot="R270" align="center-left">SDA</text>
-<pad name="SCL" x="3" y="0" drill="0.8" diameter="1.4224" shape="square"/>
-<text x="3" y="-1" size="0.6096" layer="51" font="vector" ratio="12" rot="R270" align="center-left">SCL</text>
-<wire x1="-3" y1="-3.1" x2="-3" y2="-3.6" width="0.127" layer="51"/>
-<wire x1="3" y1="-3.1" x2="3" y2="-3.6" width="0.127" layer="51"/>
-</package>
 <package name="FABO_BRICK_I2C_B04B-PASK-1_SILK">
 <pad name="GND" x="-3" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
 <pad name="VCC" x="-1" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
@@ -32243,7 +31603,1613 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="5.03" y1="-7.31" x2="5.73" y2="-7.31" width="0.1" layer="51"/>
 <pad name="GND" x="3.73" y="-3.81" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
 </package>
-<package name="FABO_BRICK_I2S">
+<package name="FABO_BRICK_3PIN">
+<text x="-2" y="-6.25" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">I/O</text>
+<text x="0" y="-6.25" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
+<text x="2" y="-6.25" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
+<wire x1="-8.89" y1="-16.51" x2="8.89" y2="-16.51" width="0" layer="20"/>
+<wire x1="8.89" y1="-16.51" x2="12.7" y2="-12.7" width="0" layer="20" curve="90"/>
+<wire x1="12.7" y1="-12.7" x2="12.7" y2="3.81" width="0" layer="20"/>
+<wire x1="-8.89" y1="-16.51" x2="-12.7" y2="-12.7" width="0" layer="20" curve="-90"/>
+<wire x1="-12.7" y1="3.81" x2="-12.7" y2="-12.7" width="0" layer="20"/>
+<pad name="P$1" x="-8.89" y="3.81" drill="3" diameter="3.81"/>
+<pad name="P$2" x="8.89" y="3.81" drill="3" diameter="3.81"/>
+<pad name="P$3" x="-8.89" y="-12.7" drill="3" diameter="3.81"/>
+<pad name="P$4" x="8.89" y="-12.7" drill="3" diameter="3.81"/>
+<wire x1="-12.7" y1="3.81" x2="12.7" y2="3.81" width="0" layer="20" curve="-180"/>
+<circle x="-8.89" y="3.81" radius="2.55" width="0.1" layer="51"/>
+<circle x="-8.89" y="-12.7" radius="2.55" width="0.1" layer="51"/>
+<circle x="8.89" y="3.81" radius="2.55" width="0.1" layer="51"/>
+<circle x="8.89" y="-12.7" radius="2.55" width="0.1" layer="51"/>
+<pad name="GND" x="2" y="-8.255" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<pad name="VCC" x="0" y="-8.255" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<pad name="I/O" x="-2" y="-8.255" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<hole x="-3.5" y="-10.355" drill="1.1"/>
+<wire x1="-4" y1="-4.755" x2="-4" y2="-16.455" width="0.1" layer="51"/>
+<wire x1="4" y1="-4.755" x2="4" y2="-16.455" width="0.1" layer="51"/>
+<wire x1="-4" y1="-16.455" x2="-2" y2="-16.455" width="0.1" layer="51"/>
+<wire x1="-2" y1="-16.455" x2="2" y2="-16.455" width="0.1" layer="51"/>
+<wire x1="2" y1="-16.455" x2="4" y2="-16.455" width="0.1" layer="51"/>
+<wire x1="-4" y1="-4.755" x2="-3.3" y2="-4.755" width="0.1" layer="51"/>
+<hole x="3.5" y="-10.355" drill="1.1"/>
+<wire x1="3.3" y1="-4.755" x2="4" y2="-4.755" width="0.1" layer="51"/>
+<wire x1="-2" y1="-14.955" x2="2" y2="-14.955" width="0.1" layer="51"/>
+<wire x1="2" y1="-16.455" x2="2" y2="-14.955" width="0.1" layer="51"/>
+<wire x1="-2" y1="-16.455" x2="-2" y2="-14.955" width="0.1" layer="51"/>
+<wire x1="3.3" y1="-4.755" x2="3.3" y2="-8.755" width="0.1" layer="51"/>
+<wire x1="-3.3" y1="-4.755" x2="-3.3" y2="-8.755" width="0.1" layer="51"/>
+<wire x1="-3.3" y1="-8.755" x2="3.3" y2="-8.755" width="0.1" layer="51"/>
+</package>
+<package name="FABO_BRICK_3PIN_BREAKOUT">
+<pad name="GND" x="-2.54" y="-10.795" drill="1" shape="long" rot="R90"/>
+<pad name="VCC" x="0" y="-10.795" drill="1" shape="long" rot="R90"/>
+<pad name="I/O" x="2.54" y="-10.795" drill="1" shape="long" rot="R90"/>
+<text x="2.54" y="-8.636" size="0.8128" layer="21" font="vector" ratio="12" rot="R90" align="center-left">I/O</text>
+<text x="0" y="-8.636" size="0.8128" layer="21" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
+<text x="-2.54" y="-8.636" size="0.8128" layer="21" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
+<wire x1="5.08" y1="-13.97" x2="7.62" y2="-11.43" width="0" layer="20" curve="90"/>
+<wire x1="7.62" y1="-11.43" x2="7.62" y2="3.81" width="0" layer="20"/>
+<wire x1="-5.08" y1="-13.97" x2="-7.62" y2="-11.43" width="0" layer="20" curve="-90"/>
+<wire x1="-7.62" y1="3.81" x2="-7.62" y2="-11.43" width="0" layer="20"/>
+<wire x1="-7.62" y1="3.81" x2="7.62" y2="3.81" width="0" layer="20" curve="-180"/>
+<wire x1="-5.08" y1="-13.97" x2="5.08" y2="-13.97" width="0" layer="20"/>
+</package>
+<package name="FABO_BRICK_3PIN_CONNECTOR">
+<pad name="IN/OUT" x="2.54" y="0" drill="1" shape="long" rot="R270"/>
+<pad name="VCC" x="0" y="0" drill="1" shape="long" rot="R270"/>
+<pad name="GND" x="-2.54" y="0" drill="1" shape="long" rot="R270"/>
+<text x="2.54" y="1.905" size="0.6096" layer="51" font="vector" ratio="12" rot="R90" align="center-left">I/O</text>
+<text x="0" y="1.905" size="0.6096" layer="51" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
+<text x="-2.54" y="1.905" size="0.6096" layer="51" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
+<wire x1="5.08" y1="13.4" x2="3.8" y2="13.4" width="0.1" layer="51"/>
+<wire x1="3.8" y1="13.4" x2="2.8" y2="13.4" width="0.1" layer="51"/>
+<wire x1="-2.8" y1="13.4" x2="-3.8" y2="13.4" width="0.1" layer="51"/>
+<wire x1="-3.8" y1="13.4" x2="-5.08" y2="13.4" width="0.1" layer="51"/>
+<wire x1="3.8" y1="9.6" x2="3.8" y2="13.4" width="0.1" layer="51"/>
+<wire x1="3.8" y1="9.6" x2="-3.8" y2="9.6" width="0.1" layer="51"/>
+<wire x1="-3.8" y1="9.6" x2="-3.8" y2="13.4" width="0.1" layer="51"/>
+<wire x1="2.8" y1="13.4" x2="2.8" y2="11" width="0.1" layer="51"/>
+<wire x1="-2.8" y1="13.4" x2="-2.8" y2="11" width="0.1" layer="51"/>
+<wire x1="2.8" y1="11" x2="-2.8" y2="11" width="0.1" layer="51"/>
+<text x="0" y="-1.905" size="0.8128" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center">&gt;NAME</text>
+<wire x1="-5.08" y1="0" x2="-5.08" y2="13.4" width="0.1" layer="51"/>
+<wire x1="5.08" y1="0" x2="5.08" y2="13.4" width="0.1" layer="51"/>
+<wire x1="2.8" y1="13.4" x2="-2.8" y2="13.4" width="0.1" layer="51"/>
+<wire x1="-5.08" y1="0" x2="-5.08" y2="13.4" width="0.1" layer="21"/>
+<wire x1="5.08" y1="0" x2="5.08" y2="13.4" width="0.1" layer="21"/>
+<wire x1="5.08" y1="13.4" x2="-5.08" y2="13.4" width="0.1" layer="21"/>
+<wire x1="-3.81" y1="0" x2="-5.08" y2="0" width="0.1" layer="21"/>
+<wire x1="5.08" y1="0" x2="3.81" y2="0" width="0.1" layer="21"/>
+</package>
+<package name="FABO_BRICK_3PIN_UNIVERSAL">
+<text x="-2" y="-6.5" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">I/O</text>
+<text x="0" y="-6.5" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
+<text x="2" y="-6.5" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
+<wire x1="-8.89" y1="-16.51" x2="8.89" y2="-16.51" width="0" layer="20"/>
+<wire x1="8.89" y1="-16.51" x2="12.7" y2="-12.7" width="0" layer="20" curve="90"/>
+<wire x1="12.7" y1="-12.7" x2="12.7" y2="3.81" width="0" layer="20"/>
+<wire x1="-8.89" y1="-16.51" x2="-12.7" y2="-12.7" width="0" layer="20" curve="-90"/>
+<wire x1="-12.7" y1="3.81" x2="-12.7" y2="-12.7" width="0" layer="20"/>
+<pad name="P$5" x="-8.89" y="3.81" drill="3" diameter="3.81"/>
+<pad name="P$6" x="8.89" y="3.81" drill="3" diameter="3.81"/>
+<pad name="P$7" x="-8.89" y="-12.7" drill="3" diameter="3.81"/>
+<pad name="P$8" x="8.89" y="-12.7" drill="3" diameter="3.81"/>
+<wire x1="-12.7" y1="3.81" x2="12.7" y2="3.81" width="0" layer="20" curve="-180"/>
+<circle x="-8.89" y="3.81" radius="2.55" width="0.1" layer="51"/>
+<circle x="-8.89" y="-12.7" radius="2.55" width="0.1" layer="51"/>
+<circle x="8.89" y="3.81" radius="2.55" width="0.1" layer="51"/>
+<circle x="8.89" y="-12.7" radius="2.55" width="0.1" layer="51"/>
+<pad name="P$15" x="-7.62" y="-1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$16" x="-5.08" y="-1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$20" x="5.08" y="-1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$21" x="7.62" y="-1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$23" x="5.08" y="1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$24" x="2.54" y="1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$25" x="0" y="1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$26" x="-2.54" y="1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$27" x="-5.08" y="1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$28" x="-5.08" y="3.81" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$29" x="-2.54" y="3.81" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$30" x="0" y="3.81" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$31" x="2.54" y="3.81" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$32" x="5.08" y="3.81" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$33" x="5.08" y="6.35" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$34" x="2.54" y="6.35" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$35" x="0" y="6.35" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$36" x="-2.54" y="6.35" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$37" x="-5.08" y="6.35" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$38" x="-5.08" y="8.89" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$39" x="-7.62" y="8.89" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$41" x="-2.54" y="8.89" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$42" x="0" y="8.89" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$43" x="2.54" y="8.89" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$44" x="5.08" y="8.89" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$45" x="7.62" y="8.89" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$47" x="7.62" y="11.43" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$48" x="5.08" y="11.43" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$49" x="2.54" y="11.43" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$50" x="0" y="11.43" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$51" x="-2.54" y="11.43" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$52" x="-5.08" y="11.43" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$53" x="-7.62" y="11.43" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$54" x="-2.54" y="13.97" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$55" x="-5.08" y="13.97" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$56" x="0" y="13.97" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$57" x="2.54" y="13.97" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$58" x="5.08" y="13.97" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="GND" x="2" y="-8.255" drill="0.9" diameter="1.4224" shape="long" rot="R270"/>
+<pad name="VCC" x="0" y="-8.255" drill="0.9" diameter="1.4224" shape="long" rot="R270"/>
+<pad name="I/O" x="-2" y="-8.255" drill="0.9" diameter="1.4224" shape="long" rot="R270"/>
+<hole x="-3.5" y="-10.355" drill="1.1"/>
+<wire x1="-4" y1="-4.755" x2="-4" y2="-16.455" width="0.1" layer="51"/>
+<wire x1="4" y1="-4.755" x2="4" y2="-16.455" width="0.1" layer="51"/>
+<wire x1="-4" y1="-16.455" x2="-2" y2="-16.455" width="0.1" layer="51"/>
+<wire x1="-2" y1="-16.455" x2="2" y2="-16.455" width="0.1" layer="51"/>
+<wire x1="2" y1="-16.455" x2="4" y2="-16.455" width="0.1" layer="51"/>
+<wire x1="-4" y1="-4.755" x2="-3.3" y2="-4.755" width="0.1" layer="51"/>
+<hole x="3.5" y="-10.355" drill="1.1"/>
+<wire x1="3.3" y1="-4.755" x2="4" y2="-4.755" width="0.1" layer="51"/>
+<wire x1="-2" y1="-14.955" x2="2" y2="-14.955" width="0.1" layer="51"/>
+<wire x1="2" y1="-16.455" x2="2" y2="-14.955" width="0.1" layer="51"/>
+<wire x1="-2" y1="-16.455" x2="-2" y2="-14.955" width="0.1" layer="51"/>
+<wire x1="3.3" y1="-4.755" x2="3.3" y2="-8.755" width="0.1" layer="51"/>
+<wire x1="-3.3" y1="-4.755" x2="-3.3" y2="-8.755" width="0.1" layer="51"/>
+<wire x1="-3.3" y1="-8.755" x2="3.3" y2="-8.755" width="0.1" layer="51"/>
+<pad name="P$1" x="-2.54" y="-1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$2" x="0" y="-1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$3" x="2.54" y="-1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$4" x="5.08" y="-3.81" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$9" x="7.62" y="-3.81" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$10" x="-5.08" y="-3.81" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$11" x="-7.62" y="-3.81" drill="1" diameter="1.778" shape="octagon"/>
+</package>
+<package name="FABO_BRICK_3PIN_CONNECTOR_NARROW">
+<pad name="IN/OUT" x="2.54" y="0" drill="1" diameter="1.778" shape="octagon" rot="R270"/>
+<pad name="VCC" x="0" y="0" drill="1" diameter="1.778" shape="octagon" rot="R270"/>
+<pad name="GND" x="-2.54" y="0" drill="1" diameter="1.778" shape="octagon" rot="R270"/>
+<text x="2.54" y="1.905" size="0.6096" layer="51" font="vector" ratio="12" rot="R90" align="center-left">I/O</text>
+<text x="0" y="1.905" size="0.6096" layer="51" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
+<text x="-2.54" y="1.905" size="0.6096" layer="51" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
+<wire x1="5.08" y1="13.4" x2="3.8" y2="13.4" width="0.1" layer="51"/>
+<wire x1="3.8" y1="13.4" x2="2.8" y2="13.4" width="0.1" layer="51"/>
+<wire x1="-2.8" y1="13.4" x2="-3.8" y2="13.4" width="0.1" layer="51"/>
+<wire x1="-3.8" y1="13.4" x2="-5.08" y2="13.4" width="0.1" layer="51"/>
+<wire x1="3.8" y1="9.6" x2="3.8" y2="13.4" width="0.1" layer="51"/>
+<wire x1="3.8" y1="9.6" x2="-3.8" y2="9.6" width="0.1" layer="51"/>
+<wire x1="-3.8" y1="9.6" x2="-3.8" y2="13.4" width="0.1" layer="51"/>
+<wire x1="2.8" y1="13.4" x2="2.8" y2="11" width="0.1" layer="51"/>
+<wire x1="-2.8" y1="13.4" x2="-2.8" y2="11" width="0.1" layer="51"/>
+<wire x1="2.8" y1="11" x2="-2.8" y2="11" width="0.1" layer="51"/>
+<text x="0" y="-1.905" size="0.8128" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center">&gt;NAME</text>
+<wire x1="-5.08" y1="0" x2="-5.08" y2="13.4" width="0.1" layer="51"/>
+<wire x1="5.08" y1="0" x2="5.08" y2="13.4" width="0.1" layer="51"/>
+<wire x1="2.8" y1="13.4" x2="-2.8" y2="13.4" width="0.1" layer="51"/>
+<wire x1="-5.08" y1="0" x2="-5.08" y2="13.4" width="0.1" layer="21"/>
+<wire x1="5.08" y1="0" x2="5.08" y2="13.4" width="0.1" layer="21"/>
+<wire x1="5.08" y1="13.4" x2="-5.08" y2="13.4" width="0.1" layer="21"/>
+<wire x1="-3.81" y1="0" x2="-5.08" y2="0" width="0.1" layer="21"/>
+<wire x1="5.08" y1="0" x2="3.81" y2="0" width="0.1" layer="21"/>
+</package>
+<package name="FABO_BRICK_3PIN_S03B-PASK-2_LONG">
+<pad name="GND" x="-2" y="0" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<pad name="VCC" x="0" y="0" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<pad name="I/O" x="2" y="0" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<hole x="3.5" y="2.1" drill="1.1"/>
+<wire x1="4" y1="-3.5" x2="4" y2="8.2" width="0.1" layer="51"/>
+<wire x1="-4" y1="-3.5" x2="-4" y2="8.2" width="0.1" layer="51"/>
+<wire x1="4" y1="8.2" x2="2" y2="8.2" width="0.1" layer="51"/>
+<wire x1="2" y1="8.2" x2="-2" y2="8.2" width="0.1" layer="51"/>
+<wire x1="-2" y1="8.2" x2="-4" y2="8.2" width="0.1" layer="51"/>
+<wire x1="4" y1="-3.5" x2="3.3" y2="-3.5" width="0.1" layer="51"/>
+<text x="0" y="-4.445" size="0.8128" layer="25" font="vector" ratio="12" align="top-center">&gt;NAME</text>
+<hole x="-3.5" y="2.1" drill="1.1"/>
+<wire x1="-3.3" y1="-3.5" x2="-4" y2="-3.5" width="0.1" layer="51"/>
+<wire x1="2" y1="6.7" x2="-2" y2="6.7" width="0.1" layer="51"/>
+<wire x1="-2" y1="8.2" x2="-2" y2="6.7" width="0.1" layer="51"/>
+<wire x1="2" y1="8.2" x2="2" y2="6.7" width="0.1" layer="51"/>
+<wire x1="-3.3" y1="-3.5" x2="-3.3" y2="0.5" width="0.1" layer="51"/>
+<wire x1="3.3" y1="-3.5" x2="3.3" y2="0.5" width="0.1" layer="51"/>
+<wire x1="3.3" y1="0.5" x2="-3.3" y2="0.5" width="0.1" layer="51"/>
+</package>
+<package name="FABO_BRICK_3PIN_VOLTERA">
+<pad name="GND" x="2" y="-6.858" drill="0.8" diameter="1.4224" shape="long" rot="R270"/>
+<pad name="VCC" x="0" y="-6.858" drill="0.8" diameter="1.4224" shape="long" rot="R270"/>
+<pad name="I/O" x="-2" y="-6.858" drill="0.8" diameter="1.4224" shape="long" rot="R270"/>
+<hole x="-3.5" y="-8.958" drill="1.1"/>
+<wire x1="-4" y1="-3.358" x2="-4" y2="-15.058" width="0.127" layer="51"/>
+<wire x1="4" y1="-3.358" x2="4" y2="-15.058" width="0.127" layer="51"/>
+<wire x1="-4" y1="-15.058" x2="-2" y2="-15.058" width="0.127" layer="51"/>
+<wire x1="-2" y1="-15.058" x2="2" y2="-15.058" width="0.127" layer="51"/>
+<wire x1="2" y1="-15.058" x2="4" y2="-15.058" width="0.127" layer="51"/>
+<wire x1="-4" y1="-3.358" x2="-3.3" y2="-3.358" width="0.127" layer="51"/>
+<hole x="3.5" y="-8.958" drill="1.1"/>
+<wire x1="3.3" y1="-3.358" x2="4" y2="-3.358" width="0.127" layer="51"/>
+<wire x1="-2" y1="-13.558" x2="2" y2="-13.558" width="0.127" layer="51"/>
+<wire x1="2" y1="-15.058" x2="2" y2="-13.558" width="0.127" layer="51"/>
+<wire x1="-2" y1="-15.058" x2="-2" y2="-13.558" width="0.127" layer="51"/>
+<text x="2" y="-8.128" size="0.6096" layer="51" font="vector" ratio="12" rot="R270" align="center-left">GND</text>
+<text x="0" y="-8.128" size="0.6096" layer="51" font="vector" ratio="12" rot="R270" align="center-left">VCC</text>
+<text x="-2" y="-8.128" size="0.6096" layer="51" font="vector" ratio="12" rot="R270" align="center-left">I/O</text>
+<wire x1="3.3" y1="-3.358" x2="3.3" y2="-7.358" width="0.127" layer="51"/>
+<wire x1="-3.3" y1="-3.358" x2="-3.3" y2="-7.358" width="0.127" layer="51"/>
+<wire x1="-3.3" y1="-7.358" x2="3.3" y2="-7.358" width="0.127" layer="51"/>
+<wire x1="-10.16" y1="-15.24" x2="10.16" y2="-15.24" width="0" layer="20"/>
+<wire x1="10.16" y1="-15.24" x2="13.97" y2="-11.43" width="0" layer="20" curve="90"/>
+<wire x1="13.97" y1="-11.43" x2="13.97" y2="10.16" width="0" layer="20"/>
+<wire x1="-10.16" y1="-15.24" x2="-13.97" y2="-11.43" width="0" layer="20" curve="-90"/>
+<wire x1="-13.97" y1="10.16" x2="-13.97" y2="-11.43" width="0" layer="20"/>
+<pad name="P$1" x="-10.16" y="10.16" drill="3" diameter="3.81"/>
+<pad name="P$2" x="10.16" y="10.16" drill="3" diameter="3.81"/>
+<pad name="P$3" x="-10.16" y="-11.43" drill="3" diameter="3.81"/>
+<pad name="P$4" x="10.16" y="-11.43" drill="3" diameter="3.81"/>
+<wire x1="-13.97" y1="10.16" x2="13.97" y2="10.16" width="0" layer="20" curve="-180"/>
+<text x="-2.7526" y="-5.3932" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">I/O</text>
+<text x="-1.0066" y="-5.4948" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
+<text x="0.968" y="-5.5202" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
+<circle x="-10.16" y="10.16" radius="2.55" width="0.1" layer="51"/>
+<circle x="-10.16" y="-11.43" radius="2.55" width="0.1" layer="51"/>
+<circle x="10.16" y="10.16" radius="2.55" width="0.1" layer="51"/>
+<circle x="10.16" y="-11.43" radius="2.55" width="0.1" layer="51"/>
+<wire x1="-5" y1="-15.185" x2="-2" y2="-15.185" width="0.1" layer="51"/>
+<wire x1="-2" y1="-15.185" x2="2" y2="-15.185" width="0.1" layer="51"/>
+<wire x1="2" y1="-15.185" x2="5" y2="-15.185" width="0.1" layer="51"/>
+<wire x1="-2" y1="-13.685" x2="2" y2="-13.685" width="0.1" layer="51"/>
+<wire x1="2" y1="-15.185" x2="2" y2="-13.685" width="0.1" layer="51"/>
+<wire x1="-2" y1="-15.185" x2="-2" y2="-13.685" width="0.1" layer="51"/>
+<smd name="V_I/O" x="-2.032" y="-3.302" dx="1.016" dy="1.27" layer="1"/>
+<smd name="V_VCC" x="-0.0508" y="-3.302" dx="1.016" dy="1.27" layer="1"/>
+<smd name="V_GND" x="2.0066" y="-3.302" dx="1.016" dy="1.27" layer="1"/>
+<wire x1="-2.032" y1="-3.4036" x2="-2.032" y2="-6.35" width="0.8128" layer="1"/>
+<wire x1="-0.0254" y1="-3.3274" x2="-0.0254" y2="-6.2738" width="0.8128" layer="1"/>
+<wire x1="2.0066" y1="-3.3782" x2="2.0066" y2="-6.3246" width="0.8128" layer="1"/>
+</package>
+<package name="FABO_BRICK_SERIAL">
+<wire x1="-10.16" y1="-19.05" x2="10.16" y2="-19.05" width="0" layer="20"/>
+<wire x1="10.16" y1="-19.05" x2="13.97" y2="-15.24" width="0" layer="20" curve="90"/>
+<wire x1="13.97" y1="-15.24" x2="13.97" y2="6.35" width="0" layer="20"/>
+<wire x1="-10.16" y1="-19.05" x2="-13.97" y2="-15.24" width="0" layer="20" curve="-90"/>
+<wire x1="-13.97" y1="6.35" x2="-13.97" y2="-15.24" width="0" layer="20"/>
+<pad name="P$1" x="-10.16" y="6.35" drill="3" diameter="3.81"/>
+<pad name="P$2" x="10.16" y="6.35" drill="3" diameter="3.81"/>
+<pad name="P$3" x="-10.16" y="-15.24" drill="3" diameter="3.81"/>
+<pad name="P$4" x="10.16" y="-15.24" drill="3" diameter="3.81"/>
+<wire x1="-13.97" y1="6.35" x2="13.97" y2="6.35" width="0" layer="20" curve="-180"/>
+<text x="-3" y="-9" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">RX</text>
+<text x="-1" y="-9" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">TX</text>
+<text x="1" y="-9" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
+<text x="3" y="-9" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
+<circle x="-10.16" y="6.35" radius="2.55" width="0.1" layer="51"/>
+<circle x="-10.16" y="-15.24" radius="2.55" width="0.1" layer="51"/>
+<circle x="10.16" y="6.35" radius="2.55" width="0.1" layer="51"/>
+<circle x="10.16" y="-15.24" radius="2.55" width="0.1" layer="51"/>
+<pad name="GND" x="3" y="-10.795" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<pad name="VCC" x="1" y="-10.795" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<pad name="TX" x="-1" y="-10.795" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<hole x="-4.5" y="-12.895" drill="1.1"/>
+<wire x1="-5" y1="-7.295" x2="-5" y2="-18.995" width="0.1" layer="51"/>
+<wire x1="5" y1="-7.295" x2="5" y2="-18.995" width="0.1" layer="51"/>
+<wire x1="-5" y1="-18.995" x2="-2" y2="-18.995" width="0.1" layer="51"/>
+<wire x1="-2" y1="-18.995" x2="2" y2="-18.995" width="0.1" layer="51"/>
+<wire x1="2" y1="-18.995" x2="5" y2="-18.995" width="0.1" layer="51"/>
+<wire x1="-5" y1="-7.295" x2="-4.3" y2="-7.295" width="0.1" layer="51"/>
+<hole x="4.5" y="-12.895" drill="1.1"/>
+<wire x1="4.3" y1="-7.295" x2="5" y2="-7.295" width="0.1" layer="51"/>
+<wire x1="-2" y1="-17.495" x2="2" y2="-17.495" width="0.1" layer="51"/>
+<wire x1="2" y1="-18.995" x2="2" y2="-17.495" width="0.1" layer="51"/>
+<wire x1="-2" y1="-18.995" x2="-2" y2="-17.495" width="0.1" layer="51"/>
+<pad name="RX" x="-3" y="-10.795" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<wire x1="4.3" y1="-7.295" x2="4.3" y2="-11.295" width="0.1" layer="51"/>
+<wire x1="-4.3" y1="-7.295" x2="-4.3" y2="-11.295" width="0.1" layer="51"/>
+<wire x1="-4.3" y1="-11.295" x2="4.3" y2="-11.295" width="0.1" layer="51"/>
+</package>
+<package name="FABO_BRICK_SERIAL_BREAKOUT">
+<pad name="GND" x="-3.81" y="-10.16" drill="1" shape="long" rot="R90"/>
+<pad name="VCC" x="-1.27" y="-10.16" drill="1" shape="long" rot="R90"/>
+<pad name="TX" x="1.27" y="-10.16" drill="1" shape="long" rot="R90"/>
+<pad name="RX" x="3.81" y="-10.16" drill="1" shape="long" rot="R90"/>
+<wire x1="6.35" y1="-12.7" x2="8.89" y2="-10.16" width="0" layer="20" curve="90"/>
+<wire x1="8.89" y1="-10.16" x2="8.89" y2="3.81" width="0" layer="20"/>
+<wire x1="-6.35" y1="-12.7" x2="-8.89" y2="-10.16" width="0" layer="20" curve="-90"/>
+<wire x1="-8.89" y1="3.81" x2="-8.89" y2="-10.16" width="0" layer="20"/>
+<wire x1="-8.89" y1="3.81" x2="8.89" y2="3.81" width="0" layer="20" curve="-180"/>
+<text x="-1.27" y="-8.001" size="0.8128" layer="21" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
+<text x="-3.81" y="-8.001" size="0.8128" layer="21" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
+<wire x1="-6.35" y1="-12.7" x2="6.35" y2="-12.7" width="0" layer="20"/>
+<text x="1.27" y="-8.001" size="0.8128" layer="21" font="vector" ratio="12" rot="R90" align="center-left">TX</text>
+<text x="3.81" y="-8.001" size="0.8128" layer="21" font="vector" ratio="12" rot="R90" align="center-left">RX</text>
+</package>
+<package name="FABO_BRICK_SERIAL_CONNECTOR">
+<pad name="GND" x="-3.81" y="0" drill="1" shape="long" rot="R90"/>
+<pad name="VCC" x="-1.27" y="0" drill="1" shape="long" rot="R90"/>
+<pad name="RX" x="3.81" y="0" drill="1" shape="long" rot="R90"/>
+<pad name="TX" x="1.27" y="0" drill="1" shape="long" rot="R90"/>
+<text x="0" y="-1.905" size="0.8128" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center">&gt;NAME</text>
+<wire x1="-6.35" y1="13.4" x2="-6.35" y2="0" width="0.127" layer="51"/>
+<wire x1="6.35" y1="13.4" x2="6.35" y2="0" width="0.127" layer="51"/>
+<wire x1="-6.35" y1="13.4" x2="-3.8" y2="13.4" width="0.127" layer="51"/>
+<wire x1="-3.8" y1="13.4" x2="3.8" y2="13.4" width="0.127" layer="51"/>
+<wire x1="3.8" y1="13.4" x2="6.35" y2="13.4" width="0.127" layer="51"/>
+<wire x1="-3.8" y1="13.4" x2="-3.8" y2="9.6" width="0.127" layer="51"/>
+<wire x1="3.8" y1="13.4" x2="3.8" y2="9.6" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="12" x2="-2.8" y2="9.6" width="0.127" layer="51"/>
+<wire x1="2.8" y1="12" x2="2.8" y2="9.6" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="12" x2="2.8" y2="12" width="0.127" layer="51"/>
+<wire x1="-3.8" y1="9.6" x2="-2.8" y2="9.6" width="0.127" layer="51"/>
+<wire x1="2.8" y1="9.6" x2="3.8" y2="9.6" width="0.127" layer="51"/>
+<text x="-3.81" y="1.905" size="0.8128" layer="51" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
+<text x="-1.27" y="1.905" size="0.8128" layer="51" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
+<text x="3.81" y="1.905" size="0.8128" layer="51" font="vector" ratio="12" rot="R90" align="center-left">RX</text>
+<text x="1.27" y="1.905" size="0.8128" layer="51" font="vector" ratio="12" rot="R90" align="center-left">TX</text>
+<wire x1="-6.35" y1="13.4" x2="-6.35" y2="0" width="0.1" layer="21"/>
+<wire x1="6.35" y1="13.4" x2="6.35" y2="0" width="0.1" layer="21"/>
+<wire x1="-6.35" y1="13.4" x2="6.35" y2="13.4" width="0.1" layer="21"/>
+<wire x1="-6.35" y1="0" x2="-5.08" y2="0" width="0.1" layer="21"/>
+<wire x1="5.08" y1="0" x2="6.35" y2="0" width="0.1" layer="21"/>
+</package>
+<package name="FABO_BRICK_SERIAL_UNIVERSAL">
+<wire x1="-10.16" y1="-19.05" x2="10.16" y2="-19.05" width="0" layer="20"/>
+<wire x1="10.16" y1="-19.05" x2="13.97" y2="-15.24" width="0" layer="20" curve="90"/>
+<wire x1="13.97" y1="-15.24" x2="13.97" y2="6.35" width="0" layer="20"/>
+<wire x1="-10.16" y1="-19.05" x2="-13.97" y2="-15.24" width="0" layer="20" curve="-90"/>
+<wire x1="-13.97" y1="6.35" x2="-13.97" y2="-15.24" width="0" layer="20"/>
+<pad name="P$5" x="-10.16" y="6.35" drill="3" diameter="3.81"/>
+<pad name="P$6" x="10.16" y="6.35" drill="3" diameter="3.81"/>
+<pad name="P$7" x="-10.16" y="-15.24" drill="3" diameter="3.81"/>
+<pad name="P$8" x="10.16" y="-15.24" drill="3" diameter="3.81"/>
+<wire x1="-13.97" y1="6.35" x2="13.97" y2="6.35" width="0" layer="20" curve="-180"/>
+<text x="-3" y="-9" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">RX</text>
+<text x="-1" y="-9" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">TX</text>
+<text x="1" y="-9" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
+<text x="3" y="-9" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
+<circle x="-10.16" y="6.35" radius="2.55" width="0.127" layer="51"/>
+<circle x="-10.16" y="-15.24" radius="2.55" width="0.1" layer="51"/>
+<circle x="10.16" y="6.35" radius="2.55" width="0.127" layer="51"/>
+<circle x="10.16" y="-15.24" radius="2.55" width="0.1" layer="51"/>
+<pad name="P$1" x="-1.27" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$2" x="1.27" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$3" x="3.81" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$4" x="6.35" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$9" x="8.89" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$10" x="8.89" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$11" x="-3.81" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$12" x="-6.35" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$13" x="-8.89" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$14" x="-8.89" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$15" x="-1.27" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$16" x="-3.81" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$17" x="-6.35" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$18" x="1.27" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$19" x="3.81" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$20" x="6.35" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$21" x="6.35" y="-5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$22" x="8.89" y="-5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$23" x="-6.35" y="-5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$24" x="-8.89" y="-5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$25" x="-8.89" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$26" x="-6.35" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$27" x="-3.81" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$28" x="-1.27" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$29" x="1.27" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$30" x="3.81" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$31" x="6.35" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$32" x="8.89" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$33" x="-6.35" y="5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$34" x="-3.81" y="5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$35" x="-1.27" y="5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$36" x="1.27" y="5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$37" x="3.81" y="5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$38" x="6.35" y="5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$39" x="-6.35" y="7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$40" x="-3.81" y="7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$41" x="-1.27" y="7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$42" x="1.27" y="7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$43" x="3.81" y="7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$44" x="6.35" y="7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$45" x="-6.35" y="10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$46" x="-3.81" y="10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$47" x="-1.27" y="10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$48" x="1.27" y="10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$49" x="3.81" y="10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$50" x="6.35" y="10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$51" x="-8.89" y="10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$52" x="8.89" y="10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$53" x="-8.89" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$54" x="-8.89" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$55" x="-6.35" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$56" x="-3.81" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$57" x="-1.27" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$58" x="1.27" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$59" x="3.81" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$60" x="6.35" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$61" x="8.89" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$62" x="-6.35" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$63" x="-3.81" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$64" x="-1.27" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$65" x="1.27" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$66" x="3.81" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$67" x="6.35" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$68" x="8.89" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$69" x="-3.81" y="17.78" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$70" x="-1.27" y="17.78" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$71" x="1.27" y="17.78" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$72" x="3.81" y="17.78" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$73" x="-8.89" y="-7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$74" x="-6.35" y="-7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$79" x="6.35" y="-7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$80" x="8.89" y="-7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="GND" x="3" y="-10.795" drill="0.9" diameter="1.4224" shape="long" rot="R270"/>
+<pad name="VCC" x="1" y="-10.795" drill="0.9" diameter="1.4224" shape="long" rot="R270"/>
+<pad name="TX" x="-1" y="-10.795" drill="0.9" diameter="1.4224" shape="long" rot="R270"/>
+<pad name="RX" x="-3" y="-10.795" drill="0.9" diameter="1.4224" shape="long" rot="R270"/>
+<wire x1="4.3" y1="-11.295" x2="-4.3" y2="-11.295" width="0.1" layer="51"/>
+<hole x="-4.5" y="-12.895" drill="1.1"/>
+<wire x1="-5" y1="-7.295" x2="-5" y2="-18.995" width="0.1" layer="51"/>
+<wire x1="5" y1="-7.295" x2="5" y2="-18.995" width="0.1" layer="51"/>
+<wire x1="-5" y1="-18.995" x2="-2" y2="-18.995" width="0.1" layer="51"/>
+<wire x1="-2" y1="-18.995" x2="2" y2="-18.995" width="0.1" layer="51"/>
+<wire x1="2" y1="-18.995" x2="5" y2="-18.995" width="0.1" layer="51"/>
+<hole x="4.5" y="-12.895" drill="1.1"/>
+<wire x1="-2" y1="-17.495" x2="2" y2="-17.495" width="0.1" layer="51"/>
+<wire x1="2" y1="-18.995" x2="2" y2="-17.495" width="0.1" layer="51"/>
+<wire x1="-2" y1="-18.995" x2="-2" y2="-17.495" width="0.1" layer="51"/>
+<wire x1="4.3" y1="-7.295" x2="4.3" y2="-11.295" width="0.1" layer="51"/>
+<wire x1="-4.3" y1="-7.295" x2="-4.3" y2="-11.295" width="0.1" layer="51"/>
+<wire x1="5" y1="-7.295" x2="4.3" y2="-7.295" width="0.1" layer="51"/>
+<wire x1="-4.3" y1="-7.295" x2="-5" y2="-7.295" width="0.1" layer="51"/>
+</package>
+<package name="FABO_BRICK_SERIAL_LONG">
+<wire x1="-10.16" y1="-19.05" x2="10.16" y2="-19.05" width="0" layer="20"/>
+<wire x1="10.16" y1="-19.05" x2="13.97" y2="-15.24" width="0" layer="20" curve="90"/>
+<wire x1="13.97" y1="-15.24" x2="13.97" y2="15.24" width="0" layer="20"/>
+<wire x1="-10.16" y1="-19.05" x2="-13.97" y2="-15.24" width="0" layer="20" curve="-90"/>
+<pad name="GND" x="3.81" y="-12.065" drill="1" shape="long" rot="R90"/>
+<pad name="VCC" x="1.27" y="-12.065" drill="1" shape="long" rot="R90"/>
+<pad name="RX" x="-3.81" y="-12.065" drill="1" shape="long" rot="R90"/>
+<pad name="TX" x="-1.27" y="-12.065" drill="1" shape="long" rot="R90"/>
+<wire x1="-13.97" y1="15.24" x2="-13.97" y2="-15.24" width="0" layer="20"/>
+<pad name="P$5" x="-10.16" y="6.35" drill="3" diameter="3.81"/>
+<pad name="P$6" x="10.16" y="6.35" drill="3" diameter="3.81"/>
+<pad name="P$7" x="-10.16" y="-15.24" drill="3" diameter="3.81"/>
+<pad name="P$8" x="10.16" y="-15.24" drill="3" diameter="3.81"/>
+<wire x1="-13.97" y1="15.24" x2="13.97" y2="15.24" width="0" layer="20" curve="-180"/>
+<text x="-3.81" y="-10.16" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">RX</text>
+<text x="-1.27" y="-10.16" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">TX</text>
+<text x="1.27" y="-10.16" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
+<text x="3.81" y="-10.16" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
+<circle x="-10.16" y="6.35" radius="2.55" width="0.127" layer="51"/>
+<circle x="-10.16" y="-15.24" radius="2.55" width="0.127" layer="51"/>
+<circle x="10.16" y="6.35" radius="2.55" width="0.127" layer="51"/>
+<circle x="10.16" y="-15.24" radius="2.55" width="0.127" layer="51"/>
+<wire x1="-6.35" y1="-12.065" x2="-6.35" y2="-25.465" width="0.127" layer="51"/>
+<wire x1="6.35" y1="-12.065" x2="6.35" y2="-25.465" width="0.127" layer="51"/>
+<wire x1="-6.35" y1="-25.465" x2="-3.8" y2="-25.465" width="0.127" layer="51"/>
+<wire x1="-3.8" y1="-25.465" x2="-2.8" y2="-25.465" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="-25.465" x2="2.8" y2="-25.465" width="0.127" layer="51"/>
+<wire x1="2.8" y1="-25.465" x2="3.8" y2="-25.465" width="0.127" layer="51"/>
+<wire x1="3.8" y1="-25.465" x2="6.35" y2="-25.465" width="0.127" layer="51"/>
+<wire x1="-3.8" y1="-21.665" x2="-3.8" y2="-25.465" width="0.127" layer="51"/>
+<wire x1="-3.8" y1="-21.665" x2="3.8" y2="-21.665" width="0.127" layer="51"/>
+<wire x1="3.8" y1="-21.665" x2="3.8" y2="-25.465" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="-25.465" x2="-2.8" y2="-23.065" width="0.127" layer="51"/>
+<wire x1="2.8" y1="-25.465" x2="2.8" y2="-23.065" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="-23.065" x2="2.8" y2="-23.065" width="0.127" layer="51"/>
+<wire x1="-6.35" y1="-12.065" x2="6.35" y2="-12.065" width="0.127" layer="51"/>
+</package>
+<package name="FABO_BRICK_SERIAL_B04B-PASK-1">
+<pad name="GND" x="-3" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="VCC" x="-1" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="TX" x="1" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
+<hole x="4.5" y="1.7" drill="1.1"/>
+<wire x1="5" y1="-3.1" x2="5" y2="2.2" width="0.1" layer="51"/>
+<wire x1="-5" y1="-3.1" x2="-5" y2="2.2" width="0.1" layer="51"/>
+<wire x1="5" y1="2.2" x2="-5" y2="2.2" width="0.1" layer="51"/>
+<wire x1="5" y1="-3.1" x2="3" y2="-3.1" width="0.1" layer="51"/>
+<text x="0" y="-4.445" size="1.27" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center">&gt;NAME</text>
+<wire x1="3" y1="-3.1" x2="-3" y2="-3.1" width="0.1" layer="51"/>
+<wire x1="-3" y1="-3.1" x2="-5" y2="-3.1" width="0.1" layer="51"/>
+<wire x1="3" y1="-3.6" x2="-3" y2="-3.6" width="0.1" layer="51"/>
+<text x="-3" y="-1" size="0.6096" layer="51" font="vector" ratio="12" rot="R270" align="center-left">GND</text>
+<text x="-1" y="-1" size="0.6096" layer="51" font="vector" ratio="12" rot="R270" align="center-left">VCC</text>
+<text x="1" y="-1" size="0.6096" layer="51" font="vector" ratio="12" rot="R270" align="center-left">TX</text>
+<pad name="RX" x="3" y="0" drill="0.8" diameter="1.4224" shape="square"/>
+<text x="3" y="-1" size="0.6096" layer="51" font="vector" ratio="12" rot="R270" align="center-left">RX</text>
+<wire x1="-3" y1="-3.1" x2="-3" y2="-3.6" width="0.1" layer="51"/>
+<wire x1="3" y1="-3.1" x2="3" y2="-3.6" width="0.1" layer="51"/>
+</package>
+<package name="FABO_BRICK_SERIAL_S04B-PASK-2_LONG">
+<pad name="GND" x="-3" y="0" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<pad name="VCC" x="-1" y="0" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<pad name="TX" x="1" y="0" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<hole x="4.5" y="2.1" drill="1.1"/>
+<wire x1="5" y1="-3.5" x2="5" y2="8.2" width="0.1" layer="51"/>
+<wire x1="-5" y1="-3.5" x2="-5" y2="8.2" width="0.1" layer="51"/>
+<wire x1="5" y1="8.2" x2="2" y2="8.2" width="0.1" layer="51"/>
+<wire x1="2" y1="8.2" x2="-2" y2="8.2" width="0.1" layer="51"/>
+<wire x1="-2" y1="8.2" x2="-5" y2="8.2" width="0.1" layer="51"/>
+<wire x1="5" y1="-3.5" x2="4.3" y2="-3.5" width="0.1" layer="51"/>
+<text x="0" y="-4.445" size="0.8128" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center">&gt;NAME</text>
+<hole x="-4.5" y="2.1" drill="1.1"/>
+<wire x1="-4.3" y1="-3.5" x2="-5" y2="-3.5" width="0.1" layer="51"/>
+<wire x1="2" y1="6.7" x2="-2" y2="6.7" width="0.1" layer="51"/>
+<wire x1="-2" y1="8.2" x2="-2" y2="6.7" width="0.1" layer="51"/>
+<wire x1="2" y1="8.2" x2="2" y2="6.7" width="0.1" layer="51"/>
+<pad name="RX" x="3" y="0" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<wire x1="-4.3" y1="-3.5" x2="-4.3" y2="0.5" width="0.1" layer="51"/>
+<wire x1="4.3" y1="-3.5" x2="4.3" y2="0.5" width="0.1" layer="51"/>
+<wire x1="4.3" y1="0.5" x2="-4.3" y2="0.5" width="0.1" layer="51"/>
+</package>
+<package name="FABO_BRICK_SERIAL_2HOLE">
+<wire x1="-10.16" y1="-19.05" x2="10.16" y2="-19.05" width="0" layer="20"/>
+<wire x1="10.16" y1="-19.05" x2="13.97" y2="-15.24" width="0" layer="20" curve="90"/>
+<wire x1="13.97" y1="-15.24" x2="13.97" y2="6.35" width="0" layer="20"/>
+<wire x1="-10.16" y1="-19.05" x2="-13.97" y2="-15.24" width="0" layer="20" curve="-90"/>
+<wire x1="-13.97" y1="6.35" x2="-13.97" y2="-15.24" width="0" layer="20"/>
+<pad name="P$1" x="-10.16" y="-15.24" drill="3" diameter="3.81"/>
+<pad name="P$2" x="10.16" y="-15.24" drill="3" diameter="3.81"/>
+<wire x1="-13.97" y1="6.35" x2="13.97" y2="6.35" width="0" layer="20" curve="-180"/>
+<text x="-3" y="-9" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">RX</text>
+<text x="-1" y="-9" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">TX</text>
+<text x="1" y="-9" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
+<text x="3" y="-9" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
+<circle x="-10.16" y="-15.24" radius="2.55" width="0.1" layer="51"/>
+<circle x="10.16" y="-15.24" radius="2.55" width="0.1" layer="51"/>
+<pad name="GND" x="3" y="-10.795" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<pad name="VCC" x="1" y="-10.795" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<pad name="TX" x="-1" y="-10.795" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<hole x="-4.5" y="-12.895" drill="1.1"/>
+<wire x1="-5" y1="-7.295" x2="-5" y2="-18.995" width="0.1" layer="51"/>
+<wire x1="5" y1="-7.295" x2="5" y2="-18.995" width="0.1" layer="51"/>
+<wire x1="-5" y1="-18.995" x2="-2" y2="-18.995" width="0.1" layer="51"/>
+<wire x1="-2" y1="-18.995" x2="2" y2="-18.995" width="0.1" layer="51"/>
+<wire x1="2" y1="-18.995" x2="5" y2="-18.995" width="0.1" layer="51"/>
+<wire x1="-5" y1="-7.295" x2="-4.3" y2="-7.295" width="0.1" layer="51"/>
+<hole x="4.5" y="-12.895" drill="1.1"/>
+<wire x1="4.3" y1="-7.295" x2="5" y2="-7.295" width="0.1" layer="51"/>
+<wire x1="-2" y1="-17.495" x2="2" y2="-17.495" width="0.1" layer="51"/>
+<wire x1="2" y1="-18.995" x2="2" y2="-17.495" width="0.1" layer="51"/>
+<wire x1="-2" y1="-18.995" x2="-2" y2="-17.495" width="0.1" layer="51"/>
+<pad name="RX" x="-3" y="-10.795" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<wire x1="4.3" y1="-7.295" x2="4.3" y2="-11.295" width="0.1" layer="51"/>
+<wire x1="-4.3" y1="-7.295" x2="-4.3" y2="-11.295" width="0.1" layer="51"/>
+<wire x1="-4.3" y1="-11.295" x2="4.3" y2="-11.295" width="0.1" layer="51"/>
+</package>
+<package name="FABO_BRICK_SERIAL_UNIVERSAL_LONG">
+<wire x1="-17.78" y1="-29.21" x2="17.78" y2="-29.21" width="0" layer="20"/>
+<wire x1="17.78" y1="-29.21" x2="21.59" y2="-25.4" width="0" layer="20" curve="90"/>
+<wire x1="21.59" y1="-25.4" x2="21.59" y2="7.62" width="0" layer="20"/>
+<wire x1="-17.78" y1="-29.21" x2="-21.59" y2="-25.4" width="0" layer="20" curve="-90"/>
+<wire x1="-21.59" y1="7.62" x2="-21.59" y2="-25.4" width="0" layer="20"/>
+<pad name="P$1" x="-17.78" y="7.62" drill="3" diameter="3.81"/>
+<pad name="P$2" x="17.78" y="7.62" drill="3" diameter="3.81"/>
+<pad name="P$3" x="-17.78" y="-25.4" drill="3" diameter="3.81"/>
+<pad name="P$4" x="17.78" y="-25.4" drill="3" diameter="3.81"/>
+<wire x1="-21.59" y1="7.62" x2="21.59" y2="7.62" width="0" layer="20" curve="-180"/>
+<circle x="-17.78" y="7.62" radius="2.55" width="0.1" layer="51"/>
+<circle x="-17.78" y="-25.4" radius="2.55" width="0.1" layer="51"/>
+<circle x="17.78" y="7.62" radius="2.55" width="0.1" layer="51"/>
+<circle x="17.78" y="-25.4" radius="2.55" width="0.1" layer="51"/>
+<pad name="P$9" x="8.89" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$10" x="-8.89" y="-17.78" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$12" x="-13.97" y="-15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$21" x="-13.97" y="-12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$22" x="-13.97" y="-10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$23" x="-13.97" y="-7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$24" x="-11.43" y="-12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$25" x="-11.43" y="-10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$26" x="-11.43" y="-7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$27" x="-8.89" y="-12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$28" x="-8.89" y="-10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$29" x="-8.89" y="-7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$30" x="-6.35" y="-12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$31" x="-3.81" y="-12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$32" x="-1.27" y="-12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$33" x="1.27" y="-12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$35" x="-6.35" y="-10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$36" x="-3.81" y="-10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$37" x="-1.27" y="-10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$38" x="1.27" y="-10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$40" x="-6.35" y="-7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$41" x="-3.81" y="-7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$42" x="-1.27" y="-7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$43" x="1.27" y="-7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$45" x="-1.27" y="-5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$46" x="-3.81" y="-5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$47" x="-6.35" y="-5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$48" x="-8.89" y="-5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$49" x="-11.43" y="-5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$50" x="-13.97" y="-5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$51" x="-13.97" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$52" x="-11.43" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$53" x="-8.89" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$54" x="-6.35" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$55" x="-3.81" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$56" x="-1.27" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$57" x="8.89" y="-7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$58" x="6.35" y="-7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$60" x="8.89" y="-10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$61" x="8.89" y="-12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$62" x="8.89" y="-15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$63" x="8.89" y="-17.78" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$64" x="-13.97" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$65" x="6.35" y="-10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$67" x="6.35" y="-12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$68" x="6.35" y="-15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$69" x="6.35" y="-17.78" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$70" x="3.81" y="-7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$71" x="3.81" y="-10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$72" x="3.81" y="-12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$74" x="6.35" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$75" x="-8.89" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$76" x="1.27" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$77" x="3.81" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$78" x="3.81" y="-5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$79" x="1.27" y="-5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$80" x="-1.27" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$83" x="-11.43" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$84" x="-6.35" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$85" x="-3.81" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$5" x="-13.97" y="-17.78" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$7" x="6.35" y="-5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$8" x="8.89" y="-5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="GND" x="3" y="-20.955" drill="0.9" diameter="1.4224" shape="long" rot="R270"/>
+<pad name="VCC" x="1" y="-20.955" drill="0.9" diameter="1.4224" shape="long" rot="R270"/>
+<pad name="TX" x="-1" y="-20.955" drill="0.9" diameter="1.4224" shape="long" rot="R270"/>
+<pad name="RX" x="-3" y="-20.955" drill="0.9" diameter="1.4224" shape="long" rot="R270"/>
+<wire x1="4.3" y1="-21.455" x2="-4.3" y2="-21.455" width="0.1" layer="51"/>
+<hole x="-4.5" y="-23.055" drill="1.1"/>
+<wire x1="-5" y1="-17.455" x2="-5" y2="-29.155" width="0.1" layer="51"/>
+<wire x1="5" y1="-17.455" x2="5" y2="-29.155" width="0.1" layer="51"/>
+<wire x1="-5" y1="-29.155" x2="-2" y2="-29.155" width="0.1" layer="51"/>
+<wire x1="-2" y1="-29.155" x2="2" y2="-29.155" width="0.1" layer="51"/>
+<wire x1="2" y1="-29.155" x2="5" y2="-29.155" width="0.1" layer="51"/>
+<hole x="4.5" y="-23.055" drill="1.1"/>
+<wire x1="-2" y1="-27.655" x2="2" y2="-27.655" width="0.1" layer="51"/>
+<wire x1="2" y1="-29.155" x2="2" y2="-27.655" width="0.1" layer="51"/>
+<wire x1="-2" y1="-29.155" x2="-2" y2="-27.655" width="0.1" layer="51"/>
+<wire x1="4.3" y1="-17.455" x2="4.3" y2="-21.455" width="0.1" layer="51"/>
+<wire x1="-4.3" y1="-17.455" x2="-4.3" y2="-21.455" width="0.1" layer="51"/>
+<wire x1="5" y1="-17.455" x2="4.3" y2="-17.455" width="0.1" layer="51"/>
+<wire x1="-4.3" y1="-17.455" x2="-5" y2="-17.455" width="0.1" layer="51"/>
+<pad name="P$11" x="-11.43" y="-15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$14" x="-11.43" y="-17.78" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$15" x="-8.89" y="-15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$16" x="-6.35" y="-15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$44" x="1.27" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$59" x="3.81" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$66" x="6.35" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$87" x="8.89" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$88" x="-13.97" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$89" x="-13.97" y="5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$90" x="-13.97" y="7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$94" x="-11.43" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$95" x="-11.43" y="5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$96" x="-11.43" y="7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$97" x="-8.89" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$98" x="-8.89" y="5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$99" x="-8.89" y="7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$100" x="-6.35" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$101" x="-6.35" y="5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$102" x="-6.35" y="7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$103" x="-3.81" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$104" x="-3.81" y="5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$105" x="-3.81" y="7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$106" x="-1.27" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$107" x="-1.27" y="5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$108" x="-1.27" y="7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$109" x="1.27" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$110" x="1.27" y="5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$111" x="1.27" y="7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$112" x="3.81" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$113" x="3.81" y="5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$114" x="3.81" y="7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$115" x="6.35" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$116" x="6.35" y="5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$117" x="6.35" y="7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$118" x="8.89" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$119" x="8.89" y="5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$120" x="8.89" y="7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$121" x="6.35" y="10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$122" x="6.35" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$123" x="6.35" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$124" x="6.35" y="17.78" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$125" x="6.35" y="20.32" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$126" x="6.35" y="22.86" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$127" x="8.89" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$128" x="8.89" y="17.78" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$129" x="8.89" y="20.32" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$130" x="3.81" y="10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$131" x="3.81" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$132" x="3.81" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$133" x="3.81" y="17.78" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$134" x="3.81" y="20.32" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$135" x="3.81" y="22.86" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$137" x="1.27" y="10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$138" x="1.27" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$139" x="1.27" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$140" x="1.27" y="17.78" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$141" x="1.27" y="20.32" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$142" x="1.27" y="22.86" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$143" x="1.27" y="25.4" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$144" x="-1.27" y="10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$145" x="-1.27" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$146" x="-1.27" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$147" x="-1.27" y="17.78" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$148" x="-1.27" y="20.32" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$149" x="-1.27" y="22.86" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$150" x="-1.27" y="25.4" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$151" x="-3.81" y="10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$152" x="-3.81" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$153" x="-3.81" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$154" x="-3.81" y="17.78" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$155" x="-3.81" y="20.32" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$156" x="-3.81" y="22.86" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$157" x="-3.81" y="25.4" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$136" x="-6.35" y="10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$158" x="-6.35" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$159" x="-6.35" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$160" x="-6.35" y="17.78" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$161" x="-6.35" y="20.32" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$162" x="-6.35" y="22.86" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$163" x="-6.35" y="25.4" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$164" x="-8.89" y="10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$165" x="-8.89" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$166" x="-8.89" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$167" x="-8.89" y="17.78" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$168" x="-8.89" y="20.32" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$169" x="-8.89" y="22.86" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$170" x="13.97" y="10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$171" x="-11.43" y="10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$172" x="-11.43" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$173" x="-11.43" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$174" x="-11.43" y="17.78" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$175" x="-11.43" y="20.32" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$176" x="13.97" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$177" x="-13.97" y="10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$178" x="-13.97" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$179" x="-13.97" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$180" x="-13.97" y="17.78" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$181" x="13.97" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$182" x="11.43" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$185" x="11.43" y="-5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$186" x="11.43" y="-17.78" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$188" x="11.43" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$189" x="11.43" y="-12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$190" x="11.43" y="17.78" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$191" x="11.43" y="-15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$192" x="11.43" y="20.32" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$193" x="11.43" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$194" x="11.43" y="7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$195" x="11.43" y="-10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$196" x="11.43" y="5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$197" x="11.43" y="-7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$198" x="8.89" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$199" x="11.43" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$200" x="8.89" y="10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$201" x="11.43" y="10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$202" x="8.89" y="22.86" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$203" x="11.43" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$204" x="3.81" y="25.4" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$205" x="6.35" y="25.4" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$6" x="-6.35" y="-17.78" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$13" x="13.97" y="-17.78" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$17" x="13.97" y="-15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$18" x="13.97" y="-12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$19" x="13.97" y="-10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$20" x="13.97" y="-7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$34" x="13.97" y="-5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$39" x="13.97" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$73" x="13.97" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$81" x="13.97" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$82" x="13.97" y="5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$86" x="13.97" y="7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$91" x="13.97" y="17.78" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$92" x="11.43" y="22.86" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$93" x="13.97" y="20.32" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$183" x="-13.97" y="20.32" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$184" x="-11.43" y="22.86" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$187" x="16.51" y="-17.78" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$206" x="16.51" y="-15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$207" x="16.51" y="-12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$208" x="16.51" y="-10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$209" x="16.51" y="-7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$210" x="16.51" y="-5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$211" x="16.51" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$212" x="16.51" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$213" x="16.51" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$214" x="16.51" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$215" x="16.51" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$216" x="16.51" y="17.78" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$217" x="-16.51" y="-17.78" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$218" x="-16.51" y="-15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$219" x="-16.51" y="-12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$220" x="-16.51" y="-10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$221" x="-16.51" y="-7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$222" x="-16.51" y="-5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$223" x="-16.51" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$224" x="-16.51" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$225" x="-16.51" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$226" x="-16.51" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$227" x="-16.51" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$228" x="-16.51" y="17.78" drill="1" diameter="1.778" shape="octagon"/>
+</package>
+<package name="FABO_BRICK_SERIAL_USB">
+<wire x1="-10.16" y1="-19.05" x2="10.16" y2="-19.05" width="0" layer="20"/>
+<wire x1="10.16" y1="-19.05" x2="13.97" y2="-15.24" width="0" layer="20" curve="90"/>
+<wire x1="13.97" y1="-15.24" x2="13.97" y2="6.35" width="0" layer="20"/>
+<wire x1="-10.16" y1="-19.05" x2="-13.97" y2="-15.24" width="0" layer="20" curve="-90"/>
+<wire x1="-13.97" y1="6.35" x2="-13.97" y2="-15.24" width="0" layer="20"/>
+<pad name="P$1" x="-10.16" y="6.35" drill="3" diameter="3.81"/>
+<pad name="P$2" x="10.16" y="6.35" drill="3" diameter="3.81"/>
+<pad name="P$3" x="-10.16" y="-15.24" drill="3" diameter="3.81"/>
+<pad name="P$4" x="10.16" y="-15.24" drill="3" diameter="3.81"/>
+<text x="-3" y="-9" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">RX</text>
+<text x="-1" y="-9" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">TX</text>
+<text x="1" y="-9" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
+<text x="3" y="-9" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
+<circle x="-10.16" y="6.35" radius="2.55" width="0.1" layer="51"/>
+<circle x="-10.16" y="-15.24" radius="2.55" width="0.1" layer="51"/>
+<circle x="10.16" y="6.35" radius="2.55" width="0.1" layer="51"/>
+<circle x="10.16" y="-15.24" radius="2.55" width="0.1" layer="51"/>
+<pad name="GND" x="3" y="-10.795" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<pad name="VCC" x="1" y="-10.795" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<pad name="TX" x="-1" y="-10.795" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<hole x="-4.5" y="-12.895" drill="1.1"/>
+<wire x1="-5" y1="-7.295" x2="-5" y2="-18.995" width="0.1" layer="51"/>
+<wire x1="5" y1="-7.295" x2="5" y2="-18.995" width="0.1" layer="51"/>
+<wire x1="-5" y1="-18.995" x2="-2" y2="-18.995" width="0.1" layer="51"/>
+<wire x1="-2" y1="-18.995" x2="2" y2="-18.995" width="0.1" layer="51"/>
+<wire x1="2" y1="-18.995" x2="5" y2="-18.995" width="0.1" layer="51"/>
+<wire x1="-5" y1="-7.295" x2="-4.3" y2="-7.295" width="0.1" layer="51"/>
+<hole x="4.5" y="-12.895" drill="1.1"/>
+<wire x1="4.3" y1="-7.295" x2="5" y2="-7.295" width="0.1" layer="51"/>
+<wire x1="-2" y1="-17.495" x2="2" y2="-17.495" width="0.1" layer="51"/>
+<wire x1="2" y1="-18.995" x2="2" y2="-17.495" width="0.1" layer="51"/>
+<wire x1="-2" y1="-18.995" x2="-2" y2="-17.495" width="0.1" layer="51"/>
+<pad name="RX" x="-3" y="-10.795" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<wire x1="4.3" y1="-7.295" x2="4.3" y2="-11.295" width="0.1" layer="51"/>
+<wire x1="-4.3" y1="-7.295" x2="-4.3" y2="-11.295" width="0.1" layer="51"/>
+<wire x1="-4.3" y1="-11.295" x2="4.3" y2="-11.295" width="0.1" layer="51"/>
+<wire x1="-5.715" y1="19.05" x2="5.715" y2="19.05" width="0" layer="20"/>
+<wire x1="-13.97" y1="6.35" x2="-5.715" y2="19.05" width="0" layer="20" curve="-66"/>
+<wire x1="13.97" y1="6.35" x2="5.715" y2="19.05" width="0" layer="20" curve="66"/>
+</package>
+<package name="FABO_BRICK_SERIAL_VOLTERA">
+<wire x1="-8.89" y1="-19.05" x2="11.43" y2="-19.05" width="0" layer="20"/>
+<wire x1="11.43" y1="-19.05" x2="15.24" y2="-15.24" width="0" layer="20" curve="90"/>
+<wire x1="15.24" y1="-15.24" x2="15.24" y2="6.35" width="0" layer="20"/>
+<wire x1="-8.89" y1="-19.05" x2="-12.7" y2="-15.24" width="0" layer="20" curve="-90"/>
+<wire x1="-12.7" y1="6.35" x2="-12.7" y2="-15.24" width="0" layer="20"/>
+<pad name="P$1" x="-8.89" y="6.35" drill="3" diameter="3.81"/>
+<pad name="P$2" x="11.43" y="6.35" drill="3" diameter="3.81"/>
+<pad name="P$3" x="-8.89" y="-15.24" drill="3" diameter="3.81"/>
+<pad name="P$4" x="11.43" y="-15.24" drill="3" diameter="3.81"/>
+<wire x1="-12.7" y1="6.35" x2="15.24" y2="6.35" width="0" layer="20" curve="-180"/>
+<text x="-2.5428" y="-9.127" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">RX</text>
+<text x="-0.7206" y="-9.2032" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">TX</text>
+<text x="1.2794" y="-9.0508" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
+<text x="3.254" y="-9.0762" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
+<circle x="-8.89" y="6.35" radius="2.55" width="0.1" layer="51"/>
+<circle x="-8.89" y="-15.24" radius="2.55" width="0.1" layer="51"/>
+<circle x="11.43" y="6.35" radius="2.55" width="0.1" layer="51"/>
+<circle x="11.43" y="-15.24" radius="2.55" width="0.1" layer="51"/>
+<pad name="GND1" x="4.27" y="-10.795" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<pad name="VCC1" x="2.27" y="-10.795" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<pad name="SDA" x="0.27" y="-10.795" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<hole x="-3.23" y="-12.895" drill="1.1"/>
+<wire x1="-3.73" y1="-7.295" x2="-3.73" y2="-18.995" width="0.1" layer="51"/>
+<wire x1="6.27" y1="-7.295" x2="6.27" y2="-18.995" width="0.1" layer="51"/>
+<wire x1="-3.73" y1="-18.995" x2="-0.73" y2="-18.995" width="0.1" layer="51"/>
+<wire x1="-0.73" y1="-18.995" x2="3.27" y2="-18.995" width="0.1" layer="51"/>
+<wire x1="3.27" y1="-18.995" x2="6.27" y2="-18.995" width="0.1" layer="51"/>
+<hole x="5.77" y="-12.895" drill="1.1"/>
+<wire x1="-0.73" y1="-17.495" x2="3.27" y2="-17.495" width="0.1" layer="51"/>
+<wire x1="3.27" y1="-18.995" x2="3.27" y2="-17.495" width="0.1" layer="51"/>
+<wire x1="-0.73" y1="-18.995" x2="-0.73" y2="-17.495" width="0.1" layer="51"/>
+<pad name="SCL" x="-1.73" y="-10.795" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<wire x1="5.57" y1="-7.295" x2="5.57" y2="-11.295" width="0.1" layer="51"/>
+<wire x1="-3.03" y1="-7.295" x2="-3.03" y2="-11.295" width="0.1" layer="51"/>
+<wire x1="5.57" y1="-11.295" x2="-3.03" y2="-11.295" width="0.1" layer="51"/>
+<wire x1="6.27" y1="-7.295" x2="5.57" y2="-7.295" width="0.1" layer="51"/>
+<wire x1="-3.03" y1="-7.295" x2="-3.73" y2="-7.295" width="0.1" layer="51"/>
+<smd name="V_RX" x="-1.778" y="-7.112" dx="1.016" dy="1.27" layer="1"/>
+<smd name="V_TX" x="0.254" y="-7.112" dx="1.016" dy="1.27" layer="1"/>
+<smd name="V_VCC" x="2.2352" y="-7.112" dx="1.016" dy="1.27" layer="1"/>
+<smd name="V_GND" x="4.2926" y="-7.112" dx="1.016" dy="1.27" layer="1"/>
+<wire x1="-1.778" y1="-7.1882" x2="-1.778" y2="-9.8806" width="0.8128" layer="1"/>
+<wire x1="0.254" y1="-7.2136" x2="0.254" y2="-9.906" width="0.8128" layer="1"/>
+<wire x1="2.2606" y1="-7.1374" x2="2.2606" y2="-9.8298" width="0.8128" layer="1"/>
+<wire x1="4.2926" y1="-7.1882" x2="4.2926" y2="-9.8806" width="0.8128" layer="1"/>
+</package>
+<package name="FABO_BRICK_SERIAL_LONGER">
+<wire x1="-10.16" y1="-25.4" x2="10.16" y2="-25.4" width="0" layer="20"/>
+<wire x1="10.16" y1="-25.4" x2="13.97" y2="-21.59" width="0" layer="20" curve="90"/>
+<wire x1="13.97" y1="-21.59" x2="13.97" y2="16.51" width="0" layer="20"/>
+<wire x1="-10.16" y1="-25.4" x2="-13.97" y2="-21.59" width="0" layer="20" curve="-90"/>
+<pad name="GND" x="3.81" y="-18.415" drill="1" shape="long" rot="R90"/>
+<pad name="VCC" x="1.27" y="-18.415" drill="1" shape="long" rot="R90"/>
+<pad name="RX" x="-3.81" y="-18.415" drill="1" shape="long" rot="R90"/>
+<pad name="TX" x="-1.27" y="-18.415" drill="1" shape="long" rot="R90"/>
+<wire x1="-13.97" y1="16.51" x2="-13.97" y2="-21.59" width="0" layer="20"/>
+<pad name="P$5" x="-10.16" y="0" drill="3" diameter="3.81"/>
+<pad name="P$6" x="10.16" y="0" drill="3" diameter="3.81"/>
+<pad name="P$7" x="-10.16" y="-21.59" drill="3" diameter="3.81"/>
+<pad name="P$8" x="10.16" y="-21.59" drill="3" diameter="3.81"/>
+<wire x1="-13.97" y1="16.51" x2="13.97" y2="16.51" width="0" layer="20" curve="-180"/>
+<text x="-3.81" y="-16.51" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">RX</text>
+<text x="-1.27" y="-16.51" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">TX</text>
+<text x="1.27" y="-16.51" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
+<text x="3.81" y="-16.51" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
+<circle x="-10.16" y="0" radius="2.55" width="0.127" layer="51"/>
+<circle x="-10.16" y="-21.59" radius="2.55" width="0.127" layer="51"/>
+<circle x="10.16" y="0" radius="2.55" width="0.127" layer="51"/>
+<circle x="10.16" y="-21.59" radius="2.55" width="0.127" layer="51"/>
+<wire x1="-6.35" y1="-18.415" x2="-6.35" y2="-31.815" width="0.127" layer="51"/>
+<wire x1="6.35" y1="-18.415" x2="6.35" y2="-31.815" width="0.127" layer="51"/>
+<wire x1="-6.35" y1="-31.815" x2="-3.8" y2="-31.815" width="0.127" layer="51"/>
+<wire x1="-3.8" y1="-31.815" x2="-2.8" y2="-31.815" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="-31.815" x2="2.8" y2="-31.815" width="0.127" layer="51"/>
+<wire x1="2.8" y1="-31.815" x2="3.8" y2="-31.815" width="0.127" layer="51"/>
+<wire x1="3.8" y1="-31.815" x2="6.35" y2="-31.815" width="0.127" layer="51"/>
+<wire x1="-3.8" y1="-28.015" x2="-3.8" y2="-31.815" width="0.127" layer="51"/>
+<wire x1="-3.8" y1="-28.015" x2="3.8" y2="-28.015" width="0.127" layer="51"/>
+<wire x1="3.8" y1="-28.015" x2="3.8" y2="-31.815" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="-31.815" x2="-2.8" y2="-29.415" width="0.127" layer="51"/>
+<wire x1="2.8" y1="-31.815" x2="2.8" y2="-29.415" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="-29.415" x2="2.8" y2="-29.415" width="0.127" layer="51"/>
+<wire x1="-6.35" y1="-18.415" x2="6.35" y2="-18.415" width="0.127" layer="51"/>
+</package>
+<package name="FABO_BRICK_I2C">
+<wire x1="-10.16" y1="-19.05" x2="10.16" y2="-19.05" width="0" layer="20"/>
+<wire x1="10.16" y1="-19.05" x2="13.97" y2="-15.24" width="0" layer="20" curve="90"/>
+<wire x1="13.97" y1="-15.24" x2="13.97" y2="6.35" width="0" layer="20"/>
+<wire x1="-10.16" y1="-19.05" x2="-13.97" y2="-15.24" width="0" layer="20" curve="-90"/>
+<wire x1="-13.97" y1="6.35" x2="-13.97" y2="-15.24" width="0" layer="20"/>
+<pad name="P$1" x="-10.16" y="6.35" drill="3" diameter="3.81"/>
+<pad name="P$2" x="10.16" y="6.35" drill="3" diameter="3.81"/>
+<pad name="P$3" x="-10.16" y="-15.24" drill="3" diameter="3.81"/>
+<pad name="P$4" x="10.16" y="-15.24" drill="3" diameter="3.81"/>
+<wire x1="-13.97" y1="6.35" x2="13.97" y2="6.35" width="0" layer="20" curve="-180"/>
+<text x="-3" y="-9" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">SCL</text>
+<text x="-1" y="-9" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">SDA</text>
+<text x="1" y="-9" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
+<text x="3" y="-9" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
+<circle x="-10.16" y="6.35" radius="2.55" width="0.1" layer="51"/>
+<circle x="-10.16" y="-15.24" radius="2.55" width="0.1" layer="51"/>
+<circle x="10.16" y="6.35" radius="2.55" width="0.1" layer="51"/>
+<circle x="10.16" y="-15.24" radius="2.55" width="0.1" layer="51"/>
+<pad name="GND" x="3" y="-10.795" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<pad name="VCC" x="1" y="-10.795" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<pad name="SDA" x="-1" y="-10.795" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<hole x="-4.5" y="-12.895" drill="1.1"/>
+<wire x1="-5" y1="-7.295" x2="-5" y2="-18.995" width="0.1" layer="51"/>
+<wire x1="5" y1="-7.295" x2="5" y2="-18.995" width="0.1" layer="51"/>
+<wire x1="-5" y1="-18.995" x2="-2" y2="-18.995" width="0.1" layer="51"/>
+<wire x1="-2" y1="-18.995" x2="2" y2="-18.995" width="0.1" layer="51"/>
+<wire x1="2" y1="-18.995" x2="5" y2="-18.995" width="0.1" layer="51"/>
+<hole x="4.5" y="-12.895" drill="1.1"/>
+<wire x1="-2" y1="-17.495" x2="2" y2="-17.495" width="0.1" layer="51"/>
+<wire x1="2" y1="-18.995" x2="2" y2="-17.495" width="0.1" layer="51"/>
+<wire x1="-2" y1="-18.995" x2="-2" y2="-17.495" width="0.1" layer="51"/>
+<pad name="SCL" x="-3" y="-10.795" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<wire x1="4.3" y1="-7.295" x2="4.3" y2="-11.295" width="0.1" layer="51"/>
+<wire x1="-4.3" y1="-7.295" x2="-4.3" y2="-11.295" width="0.1" layer="51"/>
+<wire x1="4.3" y1="-11.295" x2="-4.3" y2="-11.295" width="0.1" layer="51"/>
+<wire x1="5" y1="-7.295" x2="4.3" y2="-7.295" width="0.1" layer="51"/>
+<wire x1="-4.3" y1="-7.295" x2="-5" y2="-7.295" width="0.1" layer="51"/>
+</package>
+<package name="FABO_BRICK_I2C_BREAKOUT">
+<pad name="SCL" x="3.81" y="-10.16" drill="1" shape="long" rot="R90"/>
+<pad name="SDA" x="1.27" y="-10.16" drill="1" shape="long" rot="R90"/>
+<pad name="VCC" x="-1.27" y="-10.16" drill="1" shape="long" rot="R90"/>
+<pad name="GND" x="-3.81" y="-10.16" drill="1" shape="long" rot="R90"/>
+<wire x1="6.35" y1="-12.7" x2="8.89" y2="-10.16" width="0" layer="20" curve="90"/>
+<wire x1="8.89" y1="-10.16" x2="8.89" y2="3.81" width="0" layer="20"/>
+<wire x1="-6.35" y1="-12.7" x2="-8.89" y2="-10.16" width="0" layer="20" curve="-90"/>
+<wire x1="-8.89" y1="3.81" x2="-8.89" y2="-10.16" width="0" layer="20"/>
+<wire x1="-8.89" y1="3.81" x2="8.89" y2="3.81" width="0" layer="20" curve="-180"/>
+<text x="-1.27" y="-8.001" size="0.8128" layer="21" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
+<text x="-3.81" y="-8.001" size="0.8128" layer="21" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
+<wire x1="-6.35" y1="-12.7" x2="6.35" y2="-12.7" width="0" layer="20"/>
+<text x="1.27" y="-8.001" size="0.8128" layer="21" font="vector" ratio="12" rot="R90" align="center-left">SDA</text>
+<text x="3.81" y="-8.001" size="0.8128" layer="21" font="vector" ratio="12" rot="R90" align="center-left">SCL</text>
+</package>
+<package name="FABO_BRICK_I2C_UNIVERSAL">
+<wire x1="-10.16" y1="-19.05" x2="10.16" y2="-19.05" width="0" layer="20"/>
+<wire x1="10.16" y1="-19.05" x2="13.97" y2="-15.24" width="0" layer="20" curve="90"/>
+<wire x1="13.97" y1="-15.24" x2="13.97" y2="6.35" width="0" layer="20"/>
+<wire x1="-10.16" y1="-19.05" x2="-13.97" y2="-15.24" width="0" layer="20" curve="-90"/>
+<wire x1="-13.97" y1="6.35" x2="-13.97" y2="-15.24" width="0" layer="20"/>
+<pad name="P$1" x="-10.16" y="6.35" drill="3" diameter="3.81"/>
+<pad name="P$2" x="10.16" y="6.35" drill="3" diameter="3.81"/>
+<pad name="P$3" x="-10.16" y="-15.24" drill="3" diameter="3.81"/>
+<pad name="P$4" x="10.16" y="-15.24" drill="3" diameter="3.81"/>
+<wire x1="-13.97" y1="6.35" x2="13.97" y2="6.35" width="0" layer="20" curve="-180"/>
+<text x="-3" y="-9" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">SCL</text>
+<text x="-1" y="-9" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">SDA</text>
+<text x="1" y="-9" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
+<text x="3" y="-9" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
+<circle x="-10.16" y="6.35" radius="2.55" width="0.1" layer="51"/>
+<circle x="-10.16" y="-15.24" radius="2.55" width="0.1" layer="51"/>
+<circle x="10.16" y="6.35" radius="2.55" width="0.1" layer="51"/>
+<circle x="10.16" y="-15.24" radius="2.55" width="0.1" layer="51"/>
+<pad name="P$9" x="6.35" y="-5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$10" x="8.89" y="-5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$12" x="-6.35" y="-5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$13" x="-8.89" y="-5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$18" x="-8.89" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$19" x="-8.89" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$20" x="-8.89" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$21" x="-6.35" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$22" x="-6.35" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$23" x="-6.35" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$24" x="-3.81" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$25" x="-3.81" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$26" x="-3.81" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$27" x="-1.27" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$28" x="-1.27" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$29" x="-1.27" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$30" x="1.27" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$31" x="3.81" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$32" x="6.35" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$33" x="8.89" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$35" x="1.27" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$36" x="3.81" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$37" x="6.35" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$38" x="8.89" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$40" x="1.27" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$41" x="3.81" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$42" x="6.35" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$43" x="8.89" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$45" x="6.35" y="5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$46" x="3.81" y="5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$47" x="1.27" y="5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$48" x="-1.27" y="5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$49" x="-3.81" y="5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$50" x="-6.35" y="5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$51" x="-6.35" y="7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$52" x="-3.81" y="7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$53" x="-1.27" y="7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$54" x="1.27" y="7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$55" x="3.81" y="7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$56" x="6.35" y="7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$57" x="6.35" y="10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$58" x="8.89" y="10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$60" x="3.81" y="10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$61" x="1.27" y="10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$62" x="-1.27" y="10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$63" x="-3.81" y="10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$64" x="-6.35" y="10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$65" x="-8.89" y="10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$67" x="-8.89" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$68" x="-6.35" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$69" x="-3.81" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$70" x="-1.27" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$71" x="1.27" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$72" x="3.81" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$73" x="6.35" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$74" x="8.89" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$75" x="8.89" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$76" x="6.35" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$77" x="3.81" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$78" x="1.27" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$79" x="-1.27" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$80" x="-3.81" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$81" x="-6.35" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$82" x="-8.89" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$83" x="-3.81" y="17.78" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$84" x="-1.27" y="17.78" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$85" x="1.27" y="17.78" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$86" x="3.81" y="17.78" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$5" x="-6.35" y="-7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$6" x="-8.89" y="-7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$7" x="6.35" y="-7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$8" x="8.89" y="-7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="GND" x="3" y="-10.795" drill="0.9" diameter="1.4224" shape="long" rot="R270"/>
+<pad name="VCC" x="1" y="-10.795" drill="0.9" diameter="1.4224" shape="long" rot="R270"/>
+<pad name="SDA" x="-1" y="-10.795" drill="0.9" diameter="1.4224" shape="long" rot="R270"/>
+<pad name="SCL" x="-3" y="-10.795" drill="0.9" diameter="1.4224" shape="long" rot="R270"/>
+<wire x1="4.3" y1="-11.295" x2="-4.3" y2="-11.295" width="0.1" layer="51"/>
+<hole x="-4.5" y="-12.895" drill="1.1"/>
+<wire x1="-5" y1="-7.295" x2="-5" y2="-18.995" width="0.1" layer="51"/>
+<wire x1="5" y1="-7.295" x2="5" y2="-18.995" width="0.1" layer="51"/>
+<wire x1="-5" y1="-18.995" x2="-2" y2="-18.995" width="0.1" layer="51"/>
+<wire x1="-2" y1="-18.995" x2="2" y2="-18.995" width="0.1" layer="51"/>
+<wire x1="2" y1="-18.995" x2="5" y2="-18.995" width="0.1" layer="51"/>
+<hole x="4.5" y="-12.895" drill="1.1"/>
+<wire x1="-2" y1="-17.495" x2="2" y2="-17.495" width="0.1" layer="51"/>
+<wire x1="2" y1="-18.995" x2="2" y2="-17.495" width="0.1" layer="51"/>
+<wire x1="-2" y1="-18.995" x2="-2" y2="-17.495" width="0.1" layer="51"/>
+<wire x1="4.3" y1="-7.295" x2="4.3" y2="-11.295" width="0.1" layer="51"/>
+<wire x1="-4.3" y1="-7.295" x2="-4.3" y2="-11.295" width="0.1" layer="51"/>
+<wire x1="5" y1="-7.295" x2="4.3" y2="-7.295" width="0.1" layer="51"/>
+<wire x1="-4.3" y1="-7.295" x2="-5" y2="-7.295" width="0.1" layer="51"/>
+</package>
+<package name="FABO_BRICK_I2C_CONNECTOR">
+<pad name="GND" x="-3.81" y="0" drill="1" shape="long" rot="R90"/>
+<pad name="VCC" x="-1.27" y="0" drill="1" shape="long" rot="R90"/>
+<pad name="SDA" x="1.27" y="0" drill="1" shape="long" rot="R90"/>
+<pad name="SCL" x="3.81" y="0" drill="1" shape="long" rot="R90"/>
+<text x="0" y="-1.905" size="0.8128" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center">&gt;NAME</text>
+<wire x1="-6.35" y1="13.4" x2="-6.35" y2="0" width="0.127" layer="51"/>
+<wire x1="6.35" y1="0" x2="6.35" y2="13.4" width="0.127" layer="51"/>
+<wire x1="-6.35" y1="13.4" x2="-3.8" y2="13.4" width="0.127" layer="51"/>
+<wire x1="3.8" y1="13.4" x2="6.35" y2="13.4" width="0.127" layer="51"/>
+<wire x1="-3.8" y1="13.4" x2="-3.8" y2="9.6" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="12" x2="-2.8" y2="9.6" width="0.127" layer="51"/>
+<wire x1="3.8" y1="13.4" x2="3.8" y2="9.6" width="0.127" layer="51"/>
+<wire x1="2.8" y1="12" x2="2.8" y2="9.6" width="0.127" layer="51"/>
+<wire x1="-3.8" y1="9.6" x2="-2.8" y2="9.6" width="0.127" layer="51"/>
+<wire x1="3.8" y1="9.6" x2="2.8" y2="9.6" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="12" x2="2.8" y2="12" width="0.127" layer="51"/>
+<text x="-3.81" y="1.905" size="0.8128" layer="51" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
+<text x="-1.27" y="1.905" size="0.8128" layer="51" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
+<text x="1.27" y="1.905" size="0.8128" layer="51" font="vector" ratio="12" rot="R90" align="center-left">SDA</text>
+<text x="3.81" y="1.905" size="0.8128" layer="51" font="vector" ratio="12" rot="R90" align="center-left">SCL</text>
+<wire x1="-6.35" y1="1.97" x2="-6.35" y2="0" width="0.1" layer="21"/>
+<wire x1="6.35" y1="1.97" x2="6.35" y2="0" width="0.1" layer="21"/>
+<wire x1="-3.8" y1="13.4" x2="3.8" y2="13.4" width="0.127" layer="51"/>
+<wire x1="-6.35" y1="0" x2="-5.08" y2="0" width="0.1" layer="21"/>
+<wire x1="5.08" y1="0" x2="6.35" y2="0" width="0.1" layer="21"/>
+</package>
+<package name="FABO_BRICK_I2C_B04B-PASK-1">
+<pad name="GND" x="-3" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="VCC" x="-1" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="SDA" x="1" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
+<hole x="4.5" y="1.7" drill="1.1"/>
+<wire x1="5" y1="-3.1" x2="5" y2="2.2" width="0.1" layer="51"/>
+<wire x1="-5" y1="-3.1" x2="-5" y2="2.2" width="0.1" layer="51"/>
+<wire x1="5" y1="2.2" x2="-5" y2="2.2" width="0.1" layer="51"/>
+<wire x1="5" y1="-3.1" x2="3" y2="-3.1" width="0.1" layer="51"/>
+<text x="0" y="-4.445" size="1.27" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center">&gt;NAME</text>
+<wire x1="3" y1="-3.1" x2="-3" y2="-3.1" width="0.1" layer="51"/>
+<wire x1="-3" y1="-3.1" x2="-5" y2="-3.1" width="0.1" layer="51"/>
+<wire x1="3" y1="-3.6" x2="-3" y2="-3.6" width="0.1" layer="51"/>
+<text x="-3" y="-1" size="0.6096" layer="51" font="vector" ratio="12" rot="R270" align="center-left">GND</text>
+<text x="-1" y="-1" size="0.6096" layer="51" font="vector" ratio="12" rot="R270" align="center-left">VCC</text>
+<text x="1" y="-1" size="0.6096" layer="51" font="vector" ratio="12" rot="R270" align="center-left">SDA</text>
+<pad name="SCL" x="3" y="0" drill="0.8" diameter="1.4224" shape="square"/>
+<text x="3" y="-1" size="0.6096" layer="51" font="vector" ratio="12" rot="R270" align="center-left">SCL</text>
+<wire x1="-3" y1="-3.1" x2="-3" y2="-3.6" width="0.1" layer="51"/>
+<wire x1="3" y1="-3.1" x2="3" y2="-3.6" width="0.1" layer="51"/>
+</package>
+<package name="FABO_BRICK_I2C_OLED">
+<wire x1="-10.16" y1="-19.05" x2="10.16" y2="-19.05" width="0" layer="20"/>
+<wire x1="10.16" y1="-19.05" x2="13.97" y2="-15.24" width="0" layer="20" curve="90"/>
+<wire x1="13.97" y1="-15.24" x2="13.97" y2="19.05" width="0" layer="20"/>
+<wire x1="-10.16" y1="-19.05" x2="-13.97" y2="-15.24" width="0" layer="20" curve="-90"/>
+<wire x1="-13.97" y1="19.05" x2="-13.97" y2="-15.24" width="0" layer="20"/>
+<pad name="P$1" x="-10.16" y="-15.24" drill="3" diameter="3.81"/>
+<pad name="P$2" x="10.16" y="-15.24" drill="3" diameter="3.81"/>
+<text x="-3" y="-9" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">SCL</text>
+<text x="-1" y="-9" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">SDA</text>
+<text x="1" y="-9" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
+<text x="3" y="-9" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
+<circle x="-10.16" y="-15.24" radius="2.55" width="0.1" layer="51"/>
+<circle x="10.16" y="-15.24" radius="2.55" width="0.1" layer="51"/>
+<wire x1="-12.7" y1="20.32" x2="12.7" y2="20.32" width="0" layer="20"/>
+<wire x1="13.97" y1="19.05" x2="12.7" y2="20.32" width="0" layer="20" curve="90"/>
+<wire x1="-12.7" y1="20.32" x2="-13.97" y2="19.05" width="0" layer="20" curve="90"/>
+<pad name="GND" x="3" y="-10.795" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<pad name="VCC" x="1" y="-10.795" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<pad name="SDA" x="-1" y="-10.795" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<hole x="-4.5" y="-12.895" drill="1.1"/>
+<wire x1="-5" y1="-7.295" x2="-5" y2="-18.995" width="0.1" layer="51"/>
+<wire x1="5" y1="-7.295" x2="5" y2="-18.995" width="0.1" layer="51"/>
+<wire x1="-5" y1="-18.995" x2="-2" y2="-18.995" width="0.1" layer="51"/>
+<wire x1="-2" y1="-18.995" x2="2" y2="-18.995" width="0.1" layer="51"/>
+<wire x1="2" y1="-18.995" x2="5" y2="-18.995" width="0.1" layer="51"/>
+<hole x="4.5" y="-12.895" drill="1.1"/>
+<wire x1="-2" y1="-17.495" x2="2" y2="-17.495" width="0.1" layer="51"/>
+<wire x1="2" y1="-18.995" x2="2" y2="-17.495" width="0.1" layer="51"/>
+<wire x1="-2" y1="-18.995" x2="-2" y2="-17.495" width="0.1" layer="51"/>
+<pad name="SCL" x="-3" y="-10.795" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<wire x1="4.3" y1="-7.295" x2="4.3" y2="-11.295" width="0.1" layer="51"/>
+<wire x1="-4.3" y1="-7.295" x2="-4.3" y2="-11.295" width="0.1" layer="51"/>
+<wire x1="4.3" y1="-11.295" x2="-4.3" y2="-11.295" width="0.1" layer="51"/>
+<wire x1="5" y1="-7.295" x2="4.3" y2="-7.295" width="0.1" layer="51"/>
+<wire x1="-4.3" y1="-7.295" x2="-5" y2="-7.295" width="0.1" layer="51"/>
+</package>
+<package name="FABO_BRICK_I2C_S04B-PASK-2_LONG">
+<pad name="GND" x="-3" y="0" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<pad name="VCC" x="-1" y="0" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<pad name="SDA" x="1" y="0" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<hole x="4.5" y="2.1" drill="1.1"/>
+<wire x1="5" y1="-3.5" x2="5" y2="8.2" width="0.1" layer="51"/>
+<wire x1="-5" y1="-3.5" x2="-5" y2="8.2" width="0.1" layer="51"/>
+<wire x1="5" y1="8.2" x2="2" y2="8.2" width="0.1" layer="51"/>
+<wire x1="2" y1="8.2" x2="-2" y2="8.2" width="0.1" layer="51"/>
+<wire x1="-2" y1="8.2" x2="-5" y2="8.2" width="0.1" layer="51"/>
+<text x="0" y="-3.81" size="0.8128" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center">&gt;NAME</text>
+<hole x="-4.5" y="2.1" drill="1.1"/>
+<wire x1="2" y1="6.7" x2="-2" y2="6.7" width="0.1" layer="51"/>
+<wire x1="-2" y1="8.2" x2="-2" y2="6.7" width="0.1" layer="51"/>
+<wire x1="2" y1="8.2" x2="2" y2="6.7" width="0.1" layer="51"/>
+<pad name="SCL" x="3" y="0" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<wire x1="-4.3" y1="-3.5" x2="-4.3" y2="0.5" width="0.1" layer="51"/>
+<wire x1="4.3" y1="-3.5" x2="4.3" y2="0.5" width="0.1" layer="51"/>
+<wire x1="-4.3" y1="0.5" x2="4.3" y2="0.5" width="0.1" layer="51"/>
+<wire x1="-5" y1="-3.5" x2="-4.3" y2="-3.5" width="0.1" layer="51"/>
+<wire x1="4.3" y1="-3.5" x2="5" y2="-3.5" width="0.1" layer="51"/>
+</package>
+<package name="FABO_BRICK_I2C_UNIVERSAL_LONG">
+<wire x1="-17.78" y1="-29.21" x2="17.78" y2="-29.21" width="0" layer="20"/>
+<wire x1="17.78" y1="-29.21" x2="21.59" y2="-25.4" width="0" layer="20" curve="90"/>
+<wire x1="21.59" y1="-25.4" x2="21.59" y2="7.62" width="0" layer="20"/>
+<wire x1="-17.78" y1="-29.21" x2="-21.59" y2="-25.4" width="0" layer="20" curve="-90"/>
+<wire x1="-21.59" y1="7.62" x2="-21.59" y2="-25.4" width="0" layer="20"/>
+<pad name="P$1" x="-17.78" y="7.62" drill="3" diameter="3.81"/>
+<pad name="P$2" x="17.78" y="7.62" drill="3" diameter="3.81"/>
+<pad name="P$3" x="-17.78" y="-25.4" drill="3" diameter="3.81"/>
+<pad name="P$4" x="17.78" y="-25.4" drill="3" diameter="3.81"/>
+<wire x1="-21.59" y1="7.62" x2="21.59" y2="7.62" width="0" layer="20" curve="-180"/>
+<circle x="-17.78" y="7.62" radius="2.55" width="0.1" layer="51"/>
+<circle x="-17.78" y="-25.4" radius="2.55" width="0.1" layer="51"/>
+<circle x="17.78" y="7.62" radius="2.55" width="0.1" layer="51"/>
+<circle x="17.78" y="-25.4" radius="2.55" width="0.1" layer="51"/>
+<pad name="P$9" x="8.89" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$10" x="-8.89" y="-17.78" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$12" x="-13.97" y="-15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$21" x="-13.97" y="-12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$22" x="-13.97" y="-10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$23" x="-13.97" y="-7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$24" x="-11.43" y="-12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$25" x="-11.43" y="-10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$26" x="-11.43" y="-7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$27" x="-8.89" y="-12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$28" x="-8.89" y="-10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$29" x="-8.89" y="-7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$30" x="-6.35" y="-12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$31" x="-3.81" y="-12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$32" x="-1.27" y="-12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$33" x="1.27" y="-12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$35" x="-6.35" y="-10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$36" x="-3.81" y="-10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$37" x="-1.27" y="-10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$38" x="1.27" y="-10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$40" x="-6.35" y="-7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$41" x="-3.81" y="-7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$42" x="-1.27" y="-7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$43" x="1.27" y="-7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$45" x="-1.27" y="-5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$46" x="-3.81" y="-5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$47" x="-6.35" y="-5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$48" x="-8.89" y="-5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$49" x="-11.43" y="-5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$50" x="-13.97" y="-5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$51" x="-13.97" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$52" x="-11.43" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$53" x="-8.89" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$54" x="-6.35" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$55" x="-3.81" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$56" x="-1.27" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$57" x="8.89" y="-7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$58" x="6.35" y="-7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$60" x="8.89" y="-10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$61" x="8.89" y="-12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$62" x="8.89" y="-15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$63" x="8.89" y="-17.78" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$64" x="-13.97" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$65" x="6.35" y="-10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$67" x="6.35" y="-12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$68" x="6.35" y="-15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$69" x="6.35" y="-17.78" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$70" x="3.81" y="-7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$71" x="3.81" y="-10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$72" x="3.81" y="-12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$74" x="6.35" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$75" x="-8.89" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$76" x="1.27" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$77" x="3.81" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$78" x="3.81" y="-5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$79" x="1.27" y="-5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$80" x="-1.27" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$83" x="-11.43" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$84" x="-6.35" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$85" x="-3.81" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$5" x="-13.97" y="-17.78" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$7" x="6.35" y="-5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$8" x="8.89" y="-5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="GND" x="3" y="-20.955" drill="0.9" diameter="1.4224" shape="long" rot="R270"/>
+<pad name="VCC" x="1" y="-20.955" drill="0.9" diameter="1.4224" shape="long" rot="R270"/>
+<pad name="SDA" x="-1" y="-20.955" drill="0.9" diameter="1.4224" shape="long" rot="R270"/>
+<pad name="SCL" x="-3" y="-20.955" drill="0.9" diameter="1.4224" shape="long" rot="R270"/>
+<wire x1="4.3" y1="-21.455" x2="-4.3" y2="-21.455" width="0.1" layer="51"/>
+<hole x="-4.5" y="-23.055" drill="1.1"/>
+<wire x1="-5" y1="-17.455" x2="-5" y2="-29.155" width="0.1" layer="51"/>
+<wire x1="5" y1="-17.455" x2="5" y2="-29.155" width="0.1" layer="51"/>
+<wire x1="-5" y1="-29.155" x2="-2" y2="-29.155" width="0.1" layer="51"/>
+<wire x1="-2" y1="-29.155" x2="2" y2="-29.155" width="0.1" layer="51"/>
+<wire x1="2" y1="-29.155" x2="5" y2="-29.155" width="0.1" layer="51"/>
+<hole x="4.5" y="-23.055" drill="1.1"/>
+<wire x1="-2" y1="-27.655" x2="2" y2="-27.655" width="0.1" layer="51"/>
+<wire x1="2" y1="-29.155" x2="2" y2="-27.655" width="0.1" layer="51"/>
+<wire x1="-2" y1="-29.155" x2="-2" y2="-27.655" width="0.1" layer="51"/>
+<wire x1="4.3" y1="-17.455" x2="4.3" y2="-21.455" width="0.1" layer="51"/>
+<wire x1="-4.3" y1="-17.455" x2="-4.3" y2="-21.455" width="0.1" layer="51"/>
+<wire x1="5" y1="-17.455" x2="4.3" y2="-17.455" width="0.1" layer="51"/>
+<wire x1="-4.3" y1="-17.455" x2="-5" y2="-17.455" width="0.1" layer="51"/>
+<pad name="P$11" x="-11.43" y="-15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$14" x="-11.43" y="-17.78" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$15" x="-8.89" y="-15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$16" x="-6.35" y="-15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$44" x="1.27" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$59" x="3.81" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$66" x="6.35" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$87" x="8.89" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$88" x="-13.97" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$89" x="-13.97" y="5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$90" x="-13.97" y="7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$94" x="-11.43" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$95" x="-11.43" y="5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$96" x="-11.43" y="7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$97" x="-8.89" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$98" x="-8.89" y="5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$99" x="-8.89" y="7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$100" x="-6.35" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$101" x="-6.35" y="5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$102" x="-6.35" y="7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$103" x="-3.81" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$104" x="-3.81" y="5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$105" x="-3.81" y="7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$106" x="-1.27" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$107" x="-1.27" y="5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$108" x="-1.27" y="7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$109" x="1.27" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$110" x="1.27" y="5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$111" x="1.27" y="7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$112" x="3.81" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$113" x="3.81" y="5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$114" x="3.81" y="7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$115" x="6.35" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$116" x="6.35" y="5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$117" x="6.35" y="7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$118" x="8.89" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$119" x="8.89" y="5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$120" x="8.89" y="7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$121" x="6.35" y="10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$122" x="6.35" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$123" x="6.35" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$124" x="6.35" y="17.78" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$125" x="6.35" y="20.32" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$126" x="6.35" y="22.86" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$127" x="8.89" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$128" x="8.89" y="17.78" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$129" x="8.89" y="20.32" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$130" x="3.81" y="10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$131" x="3.81" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$132" x="3.81" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$133" x="3.81" y="17.78" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$134" x="3.81" y="20.32" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$135" x="3.81" y="22.86" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$137" x="1.27" y="10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$138" x="1.27" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$139" x="1.27" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$140" x="1.27" y="17.78" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$141" x="1.27" y="20.32" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$142" x="1.27" y="22.86" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$143" x="1.27" y="25.4" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$144" x="-1.27" y="10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$145" x="-1.27" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$146" x="-1.27" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$147" x="-1.27" y="17.78" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$148" x="-1.27" y="20.32" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$149" x="-1.27" y="22.86" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$150" x="-1.27" y="25.4" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$151" x="-3.81" y="10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$152" x="-3.81" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$153" x="-3.81" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$154" x="-3.81" y="17.78" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$155" x="-3.81" y="20.32" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$156" x="-3.81" y="22.86" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$157" x="-3.81" y="25.4" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$136" x="-6.35" y="10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$158" x="-6.35" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$159" x="-6.35" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$160" x="-6.35" y="17.78" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$161" x="-6.35" y="20.32" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$162" x="-6.35" y="22.86" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$163" x="-6.35" y="25.4" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$164" x="-8.89" y="10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$165" x="-8.89" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$166" x="-8.89" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$167" x="-8.89" y="17.78" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$168" x="-8.89" y="20.32" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$169" x="-8.89" y="22.86" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$170" x="13.97" y="10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$171" x="-11.43" y="10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$172" x="-11.43" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$173" x="-11.43" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$174" x="-11.43" y="17.78" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$175" x="-11.43" y="20.32" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$176" x="13.97" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$177" x="-13.97" y="10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$178" x="-13.97" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$179" x="-13.97" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$180" x="-13.97" y="17.78" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$181" x="13.97" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$182" x="11.43" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$185" x="11.43" y="-5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$186" x="11.43" y="-17.78" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$188" x="11.43" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$189" x="11.43" y="-12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$190" x="11.43" y="17.78" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$191" x="11.43" y="-15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$192" x="11.43" y="20.32" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$193" x="11.43" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$194" x="11.43" y="7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$195" x="11.43" y="-10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$196" x="11.43" y="5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$197" x="11.43" y="-7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$198" x="8.89" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$199" x="11.43" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$200" x="8.89" y="10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$201" x="11.43" y="10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$202" x="8.89" y="22.86" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$203" x="11.43" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$204" x="3.81" y="25.4" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$205" x="6.35" y="25.4" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$6" x="-6.35" y="-17.78" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$13" x="13.97" y="-17.78" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$17" x="13.97" y="-15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$18" x="13.97" y="-12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$19" x="13.97" y="-10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$20" x="13.97" y="-7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$34" x="13.97" y="-5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$39" x="13.97" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$73" x="13.97" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$81" x="13.97" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$82" x="13.97" y="5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$86" x="13.97" y="7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$91" x="13.97" y="17.78" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$92" x="11.43" y="22.86" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$93" x="13.97" y="20.32" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$183" x="-13.97" y="20.32" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$184" x="-11.43" y="22.86" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$187" x="16.51" y="-17.78" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$206" x="16.51" y="-15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$207" x="16.51" y="-12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$208" x="16.51" y="-10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$209" x="16.51" y="-7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$210" x="16.51" y="-5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$211" x="16.51" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$212" x="16.51" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$213" x="16.51" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$214" x="16.51" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$215" x="16.51" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$216" x="16.51" y="17.78" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$217" x="-16.51" y="-17.78" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$218" x="-16.51" y="-15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$219" x="-16.51" y="-12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$220" x="-16.51" y="-10.16" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$221" x="-16.51" y="-7.62" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$222" x="-16.51" y="-5.08" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$223" x="-16.51" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$224" x="-16.51" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$225" x="-16.51" y="2.54" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$226" x="-16.51" y="12.7" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$227" x="-16.51" y="15.24" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="P$228" x="-16.51" y="17.78" drill="1" diameter="1.778" shape="octagon"/>
+</package>
+<package name="FABO_BRICK_I2C_S04B-VOLTERA-PASK-2">
+<pad name="GND" x="-3" y="-2.54" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="VCC" x="-1" y="-2.54" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="SDA" x="1" y="-2.54" drill="0.8" diameter="1.4224" shape="octagon"/>
+<hole x="4.5" y="-0.44" drill="1.1"/>
+<wire x1="5" y1="-6.04" x2="5" y2="5.66" width="0.127" layer="51"/>
+<wire x1="-5" y1="-6.04" x2="-5" y2="5.66" width="0.127" layer="51"/>
+<wire x1="5" y1="5.66" x2="2" y2="5.66" width="0.127" layer="51"/>
+<wire x1="2" y1="5.66" x2="-2" y2="5.66" width="0.127" layer="51"/>
+<wire x1="-2" y1="5.66" x2="-5" y2="5.66" width="0.127" layer="51"/>
+<text x="0" y="-6.985" size="1.27" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center">&gt;NAME</text>
+<hole x="-4.5" y="-0.44" drill="1.1"/>
+<wire x1="2" y1="4.16" x2="-2" y2="4.16" width="0.127" layer="51"/>
+<wire x1="-2" y1="5.66" x2="-2" y2="4.16" width="0.127" layer="51"/>
+<wire x1="2" y1="5.66" x2="2" y2="4.16" width="0.127" layer="51"/>
+<text x="-3" y="-1.27" size="0.6096" layer="51" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
+<text x="-1" y="-1.27" size="0.6096" layer="51" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
+<text x="1" y="-1.27" size="0.6096" layer="51" font="vector" ratio="12" rot="R90" align="center-left">SDA</text>
+<pad name="SCL" x="3" y="-2.54" drill="0.8" diameter="1.4224" shape="square"/>
+<text x="3" y="-1.27" size="0.6096" layer="51" font="vector" ratio="12" rot="R90" align="center-left">SCL</text>
+<wire x1="-4.3" y1="-6.04" x2="-4.3" y2="-2.04" width="0.127" layer="51"/>
+<wire x1="4.3" y1="-6.04" x2="4.3" y2="-2.04" width="0.127" layer="51"/>
+<wire x1="-4.3" y1="-2.04" x2="4.3" y2="-2.04" width="0.127" layer="51"/>
+<wire x1="-5" y1="-6.04" x2="-4.3" y2="-6.04" width="0.127" layer="51"/>
+<wire x1="4.3" y1="-6.04" x2="5" y2="-6.04" width="0.127" layer="51"/>
+<smd name="V_GND" x="-2.9972" y="-4.9022" dx="1.27" dy="1.27" layer="1"/>
+<wire x1="-2.9972" y1="-3.3274" x2="-2.9972" y2="-4.8514" width="0.8128" layer="1"/>
+<wire x1="-1.016" y1="-3.3528" x2="-1.016" y2="-4.8768" width="0.8128" layer="1"/>
+<wire x1="0.9906" y1="-3.3528" x2="0.9906" y2="-4.8768" width="0.8128" layer="1"/>
+<wire x1="2.9718" y1="-3.3528" x2="2.9718" y2="-4.8768" width="0.8128" layer="1"/>
+<smd name="V_VCC" x="-1.016" y="-4.9022" dx="1.27" dy="1.27" layer="1"/>
+<smd name="V_SDA" x="0.9652" y="-4.8768" dx="1.27" dy="1.27" layer="1"/>
+<smd name="V_SCL" x="2.9464" y="-4.8768" dx="1.27" dy="1.27" layer="1"/>
+</package>
+<package name="FABO_BRICK_I2C_VOLTERA">
+<wire x1="-10.16" y1="-16.51" x2="10.16" y2="-16.51" width="0" layer="20"/>
+<wire x1="10.16" y1="-16.51" x2="13.97" y2="-12.7" width="0" layer="20" curve="90"/>
+<wire x1="13.97" y1="-12.7" x2="13.97" y2="8.89" width="0" layer="20"/>
+<wire x1="-10.16" y1="-16.51" x2="-13.97" y2="-12.7" width="0" layer="20" curve="-90"/>
+<wire x1="-13.97" y1="8.89" x2="-13.97" y2="-12.7" width="0" layer="20"/>
+<pad name="P$1" x="-10.16" y="8.89" drill="3" diameter="3.81"/>
+<pad name="P$2" x="10.16" y="8.89" drill="3" diameter="3.81"/>
+<pad name="P$3" x="-10.16" y="-12.7" drill="3" diameter="3.81"/>
+<pad name="P$4" x="10.16" y="-12.7" drill="3" diameter="3.81"/>
+<wire x1="-13.97" y1="8.89" x2="13.97" y2="8.89" width="0" layer="20" curve="-180"/>
+<text x="-3.8128" y="-6.841" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">SCL</text>
+<text x="-1.9906" y="-6.9172" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">SDA</text>
+<text x="0.0094" y="-6.7648" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
+<text x="1.984" y="-6.7902" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
+<circle x="-10.16" y="8.89" radius="2.55" width="0.1" layer="51"/>
+<circle x="-10.16" y="-12.7" radius="2.55" width="0.1" layer="51"/>
+<circle x="10.16" y="8.89" radius="2.55" width="0.1" layer="51"/>
+<circle x="10.16" y="-12.7" radius="2.55" width="0.1" layer="51"/>
+<pad name="GND" x="3" y="-8.255" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<pad name="VCC" x="1" y="-8.255" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<pad name="SDA" x="-1" y="-8.255" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<hole x="-4.5" y="-10.355" drill="1.1"/>
+<wire x1="-5" y1="-4.755" x2="-5" y2="-16.455" width="0.1" layer="51"/>
+<wire x1="5" y1="-4.755" x2="5" y2="-16.455" width="0.1" layer="51"/>
+<wire x1="-5" y1="-16.455" x2="-2" y2="-16.455" width="0.1" layer="51"/>
+<wire x1="-2" y1="-16.455" x2="2" y2="-16.455" width="0.1" layer="51"/>
+<wire x1="2" y1="-16.455" x2="5" y2="-16.455" width="0.1" layer="51"/>
+<hole x="4.5" y="-10.355" drill="1.1"/>
+<wire x1="-2" y1="-14.955" x2="2" y2="-14.955" width="0.1" layer="51"/>
+<wire x1="2" y1="-16.455" x2="2" y2="-14.955" width="0.1" layer="51"/>
+<wire x1="-2" y1="-16.455" x2="-2" y2="-14.955" width="0.1" layer="51"/>
+<pad name="SCL" x="-3" y="-8.255" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<wire x1="4.3" y1="-4.755" x2="4.3" y2="-8.755" width="0.1" layer="51"/>
+<wire x1="-4.3" y1="-4.755" x2="-4.3" y2="-8.755" width="0.1" layer="51"/>
+<wire x1="4.3" y1="-8.755" x2="-4.3" y2="-8.755" width="0.1" layer="51"/>
+<wire x1="5" y1="-4.755" x2="4.3" y2="-4.755" width="0.1" layer="51"/>
+<wire x1="-4.3" y1="-4.755" x2="-5" y2="-4.755" width="0.1" layer="51"/>
+<smd name="V_SCL" x="-3.048" y="-4.572" dx="1.016" dy="1.27" layer="1"/>
+<smd name="V_SDA" x="-1.016" y="-4.572" dx="1.016" dy="1.27" layer="1"/>
+<smd name="V_VCC" x="0.9652" y="-4.572" dx="1.016" dy="1.27" layer="1"/>
+<smd name="V_GND" x="3.0226" y="-4.572" dx="1.016" dy="1.27" layer="1"/>
+<wire x1="-3.048" y1="-4.6482" x2="-3.048" y2="-7.3406" width="0.8128" layer="1"/>
+<wire x1="-1.016" y1="-4.6736" x2="-1.016" y2="-7.366" width="0.8128" layer="1"/>
+<wire x1="0.9906" y1="-4.5974" x2="0.9906" y2="-7.2898" width="0.8128" layer="1"/>
+<wire x1="3.0226" y1="-4.6482" x2="3.0226" y2="-7.3406" width="0.8128" layer="1"/>
+</package>
+<package name="FABO_BRICK_I2C_LONG">
+<wire x1="-10.16" y1="-16.51" x2="10.16" y2="-16.51" width="0" layer="20"/>
+<wire x1="10.16" y1="-16.51" x2="13.97" y2="-12.7" width="0" layer="20" curve="90"/>
+<wire x1="13.97" y1="-12.7" x2="13.97" y2="17.78" width="0" layer="20"/>
+<wire x1="-10.16" y1="-16.51" x2="-13.97" y2="-12.7" width="0" layer="20" curve="-90"/>
+<pad name="GND" x="3.81" y="-9.525" drill="1" shape="long" rot="R90"/>
+<pad name="VCC" x="1.27" y="-9.525" drill="1" shape="long" rot="R90"/>
+<pad name="SCL" x="-3.81" y="-9.525" drill="1" shape="long" rot="R90"/>
+<pad name="SDA" x="-1.27" y="-9.525" drill="1" shape="long" rot="R90"/>
+<wire x1="-13.97" y1="17.78" x2="-13.97" y2="-12.7" width="0" layer="20"/>
+<pad name="P$5" x="-10.16" y="8.89" drill="3" diameter="3.81"/>
+<pad name="P$6" x="10.16" y="8.89" drill="3" diameter="3.81"/>
+<pad name="P$7" x="-10.16" y="-12.7" drill="3" diameter="3.81"/>
+<pad name="P$8" x="10.16" y="-12.7" drill="3" diameter="3.81"/>
+<wire x1="-13.97" y1="17.78" x2="13.97" y2="17.78" width="0" layer="20" curve="-180"/>
+<text x="-3.81" y="-7.62" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">SCL</text>
+<text x="-1.27" y="-7.62" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">SDA</text>
+<text x="1.27" y="-7.62" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
+<text x="3.81" y="-7.62" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
+<circle x="-10.16" y="8.89" radius="2.55" width="0.127" layer="51"/>
+<circle x="-10.16" y="-12.7" radius="2.55" width="0.127" layer="51"/>
+<circle x="10.16" y="8.89" radius="2.55" width="0.127" layer="51"/>
+<circle x="10.16" y="-12.7" radius="2.55" width="0.127" layer="51"/>
+<wire x1="-6.35" y1="-9.525" x2="-6.35" y2="-22.925" width="0.127" layer="51"/>
+<wire x1="6.35" y1="-9.525" x2="6.35" y2="-22.925" width="0.127" layer="51"/>
+<wire x1="-6.35" y1="-22.925" x2="-3.8" y2="-22.925" width="0.127" layer="51"/>
+<wire x1="-3.8" y1="-22.925" x2="-2.8" y2="-22.925" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="-22.925" x2="2.8" y2="-22.925" width="0.127" layer="51"/>
+<wire x1="2.8" y1="-22.925" x2="3.8" y2="-22.925" width="0.127" layer="51"/>
+<wire x1="3.8" y1="-22.925" x2="6.35" y2="-22.925" width="0.127" layer="51"/>
+<wire x1="-3.8" y1="-19.125" x2="-3.8" y2="-22.925" width="0.127" layer="51"/>
+<wire x1="-3.8" y1="-19.125" x2="3.8" y2="-19.125" width="0.127" layer="51"/>
+<wire x1="3.8" y1="-19.125" x2="3.8" y2="-22.925" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="-22.925" x2="-2.8" y2="-20.525" width="0.127" layer="51"/>
+<wire x1="2.8" y1="-22.925" x2="2.8" y2="-20.525" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="-20.525" x2="2.8" y2="-20.525" width="0.127" layer="51"/>
+<wire x1="-6.35" y1="-9.525" x2="6.35" y2="-9.525" width="0.127" layer="51"/>
+</package>
+<package name="FABO_BRICK_I2S_BOTTOM">
 <wire x1="-10.16" y1="-17.78" x2="10.16" y2="-17.78" width="0" layer="20"/>
 <wire x1="10.16" y1="-17.78" x2="13.97" y2="-13.97" width="0" layer="20" curve="90"/>
 <wire x1="13.97" y1="-13.97" x2="13.97" y2="7.62" width="0" layer="20"/>
@@ -32284,6 +33250,47 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pad name="WS" x="4" y="-9.525" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
 <text x="2" y="-7.73" size="0.6096" layer="22" font="vector" ratio="12" rot="R90" align="center-left">BCLK</text>
 </package>
+<package name="FABO_BRICK_I2S">
+<wire x1="-10.16" y1="-16.51" x2="10.16" y2="-16.51" width="0" layer="20"/>
+<wire x1="10.16" y1="-16.51" x2="13.97" y2="-12.7" width="0" layer="20" curve="90"/>
+<wire x1="13.97" y1="-12.7" x2="13.97" y2="8.89" width="0" layer="20"/>
+<wire x1="-10.16" y1="-16.51" x2="-13.97" y2="-12.7" width="0" layer="20" curve="-90"/>
+<wire x1="-13.97" y1="8.89" x2="-13.97" y2="-12.7" width="0" layer="20"/>
+<pad name="P$1" x="-10.16" y="8.89" drill="3" diameter="3.81"/>
+<pad name="P$2" x="10.16" y="8.89" drill="3" diameter="3.81"/>
+<pad name="P$3" x="-10.16" y="-12.7" drill="3" diameter="3.81"/>
+<pad name="P$4" x="10.16" y="-12.7" drill="3" diameter="3.81"/>
+<wire x1="-13.97" y1="8.89" x2="13.97" y2="8.89" width="0" layer="20" curve="-180"/>
+<text x="4" y="-6.46" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
+<text x="0" y="-6.46" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">DATA</text>
+<text x="-2" y="-6.46" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">BCLK</text>
+<text x="-4" y="-6.46" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">WS</text>
+<circle x="-10.16" y="8.89" radius="2.55" width="0.1" layer="51"/>
+<circle x="-10.16" y="-12.7" radius="2.55" width="0.1" layer="51"/>
+<circle x="10.16" y="8.89" radius="2.55" width="0.1" layer="51"/>
+<circle x="10.16" y="-12.7" radius="2.55" width="0.1" layer="51"/>
+<pad name="VCC" x="2" y="-8.255" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<pad name="DATA" x="0" y="-8.255" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<pad name="BCLK" x="-2" y="-8.255" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<hole x="-5.5" y="-10.355" drill="1.1"/>
+<wire x1="-6" y1="-4.755" x2="-6" y2="-16.455" width="0.1" layer="51"/>
+<wire x1="6" y1="-4.755" x2="6" y2="-16.455" width="0.1" layer="51"/>
+<wire x1="-6" y1="-16.455" x2="-2" y2="-16.455" width="0.1" layer="51"/>
+<wire x1="-2" y1="-16.455" x2="2" y2="-16.455" width="0.1" layer="51"/>
+<wire x1="2" y1="-16.455" x2="6" y2="-16.455" width="0.1" layer="51"/>
+<hole x="5.5" y="-10.355" drill="1.1"/>
+<wire x1="-2" y1="-14.955" x2="2" y2="-14.955" width="0.1" layer="51"/>
+<wire x1="2" y1="-16.455" x2="2" y2="-14.955" width="0.1" layer="51"/>
+<wire x1="-2" y1="-16.455" x2="-2" y2="-14.955" width="0.1" layer="51"/>
+<pad name="WS" x="-4" y="-8.255" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<wire x1="5.3" y1="-4.755" x2="5.3" y2="-8.755" width="0.1" layer="51"/>
+<wire x1="-5.3" y1="-4.755" x2="-5.3" y2="-8.755" width="0.1" layer="51"/>
+<wire x1="5.3" y1="-8.755" x2="-5.3" y2="-8.755" width="0.1" layer="51"/>
+<wire x1="6" y1="-4.755" x2="5.3" y2="-4.755" width="0.1" layer="51"/>
+<wire x1="-5.3" y1="-4.755" x2="-6" y2="-4.755" width="0.1" layer="51"/>
+<pad name="GND" x="4" y="-8.255" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<text x="2" y="-6.46" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
+</package>
 </packages>
 <symbols>
 <symbol name="FABO_BRICK_3PIN">
@@ -32305,7 +33312,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pin name="RX" x="7.62" y="7.62" visible="pin" length="middle" rot="R180"/>
 <pin name="VCC" x="7.62" y="-2.54" visible="pin" length="middle" rot="R180"/>
 <pin name="GND" x="7.62" y="-7.62" visible="pin" length="middle" rot="R180"/>
-<text x="-7.62" y="10.668" size="1.4224" layer="95">&gt;NAME</text>
+<text x="-7.62" y="10.668" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="FABO_BRICK_I2C">
 <wire x1="2.54" y1="10.16" x2="2.54" y2="-10.16" width="0.254" layer="94"/>
@@ -32316,7 +33323,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pin name="SDA" x="7.62" y="2.54" visible="pin" length="middle" rot="R180"/>
 <pin name="VCC" x="7.62" y="-2.54" visible="pin" length="middle" rot="R180"/>
 <pin name="GND" x="7.62" y="-7.62" visible="pin" length="middle" rot="R180"/>
-<text x="-7.62" y="10.668" size="1.4224" layer="95">&gt;NAME</text>
+<text x="-7.62" y="10.668" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="FABO_BRICK_I2S">
 <wire x1="5.08" y1="12.7" x2="5.08" y2="-12.7" width="0.254" layer="94"/>
@@ -32341,7 +33348,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <device name="" package="FABO_BRICK_3PIN">
 <connects>
 <connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="I/O" pad="IN/OUT"/>
+<connect gate="G$1" pin="I/O" pad="I/O"/>
 <connect gate="G$1" pin="VCC" pad="VCC"/>
 </connects>
 <technologies>
@@ -32391,7 +33398,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <device name="-UNIVERSAL" package="FABO_BRICK_3PIN_UNIVERSAL">
 <connects>
 <connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="I/O" pad="IN/OUT"/>
+<connect gate="G$1" pin="I/O" pad="I/O"/>
 <connect gate="G$1" pin="VCC" pad="VCC"/>
 </connects>
 <technologies>
@@ -32443,6 +33450,36 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <connect gate="G$1" pin="GND" pad="GND"/>
 <connect gate="G$1" pin="I/O" pad="I/O"/>
 <connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-CONNECTOR_NARROW" package="FABO_BRICK_3PIN_CONNECTOR_NARROW">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="I/O" pad="IN/OUT"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-S03B-PASK-2_LONG" package="FABO_BRICK_3PIN_S03B-PASK-2_LONG">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="I/O" pad="I/O"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-VOLTERA" package="FABO_BRICK_3PIN_VOLTERA">
+<connects>
+<connect gate="G$1" pin="GND" pad="V_GND"/>
+<connect gate="G$1" pin="I/O" pad="V_I/O"/>
+<connect gate="G$1" pin="VCC" pad="V_VCC"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -32577,6 +33614,72 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="-S04B-PASK-2_LONG" package="FABO_BRICK_SERIAL_S04B-PASK-2_LONG">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="RX" pad="RX"/>
+<connect gate="G$1" pin="TX" pad="TX"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-2_HOLE" package="FABO_BRICK_SERIAL_2HOLE">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="RX" pad="RX"/>
+<connect gate="G$1" pin="TX" pad="TX"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-UNIVERSAL_LONG" package="FABO_BRICK_SERIAL_UNIVERSAL_LONG">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="RX" pad="RX"/>
+<connect gate="G$1" pin="TX" pad="TX"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-USB" package="FABO_BRICK_SERIAL_USB">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="RX" pad="RX"/>
+<connect gate="G$1" pin="TX" pad="TX"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-VORTERA" package="FABO_BRICK_SERIAL_VOLTERA">
+<connects>
+<connect gate="G$1" pin="GND" pad="V_GND"/>
+<connect gate="G$1" pin="RX" pad="V_RX"/>
+<connect gate="G$1" pin="TX" pad="V_TX"/>
+<connect gate="G$1" pin="VCC" pad="V_VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-LONGER" package="FABO_BRICK_SERIAL_LONGER">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="RX" pad="RX"/>
+<connect gate="G$1" pin="TX" pad="TX"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="FABO_BRICK_I2C" prefix="J" uservalue="yes">
@@ -32695,6 +33798,72 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="-OLED" package="FABO_BRICK_I2C_OLED">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="SCL" pad="SCL"/>
+<connect gate="G$1" pin="SDA" pad="SDA"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-S04B-PASK-2_LONG" package="FABO_BRICK_I2C_S04B-PASK-2_LONG">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="SCL" pad="SCL"/>
+<connect gate="G$1" pin="SDA" pad="SDA"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-UNIVERSAL_LONG" package="FABO_BRICK_I2C_UNIVERSAL_LONG">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="SCL" pad="SCL"/>
+<connect gate="G$1" pin="SDA" pad="SDA"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-VOLTERA-S04B-RASK-2" package="FABO_BRICK_I2C_S04B-VOLTERA-PASK-2">
+<connects>
+<connect gate="G$1" pin="GND" pad="V_GND"/>
+<connect gate="G$1" pin="SCL" pad="V_SCL"/>
+<connect gate="G$1" pin="SDA" pad="V_SDA"/>
+<connect gate="G$1" pin="VCC" pad="V_VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-VOLTERA_I2C" package="FABO_BRICK_I2C_VOLTERA">
+<connects>
+<connect gate="G$1" pin="GND" pad="V_GND"/>
+<connect gate="G$1" pin="SCL" pad="V_SCL"/>
+<connect gate="G$1" pin="SDA" pad="V_SDA"/>
+<connect gate="G$1" pin="VCC" pad="V_VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-LONG" package="FABO_BRICK_I2C_LONG">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="SCL" pad="SCL"/>
+<connect gate="G$1" pin="SDA" pad="SDA"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="FABO_BRICK_I2S">
@@ -32715,6 +33884,18 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </technologies>
 </device>
 <device name="LONG_BOTTOM" package="FABO_BRICK_I2S_S05B-PASK-2_LONG_BOTTOM">
+<connects>
+<connect gate="G$1" pin="BCLK" pad="BCLK"/>
+<connect gate="G$1" pin="DATA" pad="DATA"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+<connect gate="G$1" pin="WS" pad="WS"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="BOTTOM" package="FABO_BRICK_I2S_BOTTOM">
 <connects>
 <connect gate="G$1" pin="BCLK" pad="BCLK"/>
 <connect gate="G$1" pin="DATA" pad="DATA"/>
@@ -32840,29 +34021,83 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <text x="-0.77" y="0.31" size="0.5" layer="25">&gt;NAME</text>
 </package>
 <package name="0603">
-<smd name="1" x="-0.75" y="0" dx="0.8" dy="0.8" layer="1"/>
-<smd name="2" x="0.75" y="0" dx="0.8" dy="0.8" layer="1"/>
-<text x="0" y="0.635" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-0.635" size="0.8128" layer="27" font="vector" ratio="12" rot="R180" align="bottom-center">&gt;VALUE</text>
+<wire x1="-1.48" y1="0.6" x2="1.48" y2="0.6" width="0.0508" layer="39"/>
+<wire x1="1.48" y1="0.6" x2="1.48" y2="-0.6" width="0.0508" layer="39"/>
+<wire x1="1.48" y1="-0.6" x2="-1.48" y2="-0.6" width="0.0508" layer="39"/>
+<wire x1="-1.48" y1="-0.6" x2="-1.48" y2="0.6" width="0.0508" layer="39"/>
+<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1" roundness="20"/>
+<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1" roundness="20"/>
+<text x="0" y="0.889" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+<text x="0" y="0" size="0.8128" layer="27" font="vector" ratio="12" align="center">&gt;VALUE</text>
+<rectangle x1="-0.195" y1="-0.3" x2="0.195" y2="0.3" layer="35"/>
 </package>
 <package name="0402-NO_SILK">
-<smd name="P$1" x="-0.46" y="0" dx="0.5" dy="0.5" layer="1"/>
-<smd name="P$2" x="0.46" y="0" dx="0.5" dy="0.5" layer="1"/>
-<text x="0" y="0.635" size="0.6096" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+<smd name="1" x="-0.475" y="0" dx="0.5" dy="0.55" layer="1" roundness="30"/>
+<smd name="2" x="0.475" y="0" dx="0.5" dy="0.55" layer="1" roundness="30"/>
+<text x="-1.016" y="0" size="0.8128" layer="25" font="vector" ratio="12" align="center-right">&gt;NAME</text>
+<wire x1="-0.5" y1="0.25" x2="0.5" y2="0.25" width="0" layer="51"/>
+<wire x1="-0.5" y1="-0.25" x2="0.5" y2="-0.25" width="0" layer="51"/>
+<wire x1="-0.5" y1="-0.25" x2="-0.5" y2="0.25" width="0" layer="51"/>
+<wire x1="0.5" y1="-0.25" x2="0.5" y2="0.25" width="0" layer="51"/>
+<text x="0" y="-0.635" size="0.8128" layer="27" font="vector" ratio="12" align="top-center">&gt;VALUE</text>
+</package>
+<package name="PTH-SMALL">
+<wire x1="-2.54" y1="1.27" x2="2.54" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="-1.27" x2="-2.54" y2="-1.27" width="0.2032" layer="21"/>
+<pad name="1" x="-1.27" y="0" drill="0.7" diameter="1.651" shape="octagon"/>
+<pad name="2" x="1.27" y="0" drill="0.7" diameter="1.651" shape="octagon"/>
+<text x="-2.54" y="1.905" size="1.27" layer="25" font="vector" ratio="12">&gt;NAME</text>
+<text x="-2.54" y="-3.175" size="1.27" layer="27" font="vector" ratio="12">&gt;VALUE</text>
+<wire x1="-2.54" y1="1.27" x2="-2.54" y2="-1.27" width="0.2032" layer="21" curve="100"/>
+<wire x1="2.54" y1="-1.27" x2="2.54" y2="1.27" width="0.2032" layer="21" curve="100"/>
+</package>
+<package name="0603-NARROW">
+<smd name="1" x="-0.85" y="0" dx="0.71" dy="1" layer="1" roundness="20"/>
+<smd name="2" x="0.85" y="0" dx="0.71" dy="1" layer="1" roundness="20"/>
+<text x="0" y="0.889" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+<text x="0" y="0" size="0.8128" layer="27" font="vector" ratio="12" align="center">&gt;VALUE</text>
+<rectangle x1="-0.195" y1="-0.3" x2="0.195" y2="0.3" layer="35"/>
+<wire x1="-1.27" y1="0.55" x2="1.27" y2="0.55" width="0.0508" layer="39"/>
+<wire x1="-1.27" y1="-0.55" x2="1.27" y2="-0.55" width="0.0508" layer="39"/>
+<wire x1="-1.27" y1="-0.55" x2="-1.27" y2="0.55" width="0.0508" layer="39"/>
+<wire x1="1.27" y1="-0.55" x2="1.27" y2="0.55" width="0.0508" layer="39"/>
+</package>
+<package name="0805">
+<text x="0" y="0.889" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+<smd name="1" x="-1.254" y="0" dx="1" dy="1.2" layer="1"/>
+<smd name="2" x="0.746" y="0" dx="1" dy="1.2" layer="1"/>
+<wire x1="-1.8542" y1="-0.6858" x2="1.3462" y2="-0.6858" width="0.127" layer="21"/>
+<wire x1="1.3462" y1="-0.6858" x2="1.3462" y2="0.6858" width="0.127" layer="21"/>
+<wire x1="1.3462" y1="0.6858" x2="-1.8542" y2="0.6858" width="0.127" layer="21"/>
+<wire x1="-1.8542" y1="0.6858" x2="-1.8542" y2="-0.6858" width="0.127" layer="21"/>
+<wire x1="-1.8542" y1="-0.6858" x2="1.3462" y2="-0.6858" width="0.127" layer="39"/>
+<wire x1="1.3462" y1="-0.6858" x2="1.3462" y2="0.6858" width="0.127" layer="39"/>
+<wire x1="1.3462" y1="0.6858" x2="-1.8542" y2="0.6858" width="0.127" layer="39"/>
+<text x="-2.159" y="-1.651" size="0.8128" layer="27">&gt;VALUE</text>
+</package>
+<package name="1206">
+<smd name="-" x="-1.2" y="0" dx="1.4" dy="1.6" layer="1"/>
+<smd name="+" x="1.2" y="0" dx="1.4" dy="1.6" layer="1"/>
+<text x="0" y="1.135" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.135" size="0.8128" layer="27" font="vector" ratio="12" rot="R180" align="bottom-center">&gt;VALUE</text>
+<wire x1="-1.96" y1="0.87" x2="1.94173125" y2="0.87" width="0.127" layer="21"/>
+<wire x1="1.9" y1="-0.88" x2="-1.96" y2="-0.87" width="0.127" layer="21"/>
+<wire x1="-1.96" y1="-0.87" x2="-1.96" y2="0.87" width="0.127" layer="21"/>
+<wire x1="1.96" y1="-0.87545" x2="1.96" y2="0.873384375" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
 <symbol name="CAPACITOR">
 <pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas"/>
 <pin name="2" x="5.08" y="0" visible="off" length="point" direction="pas" rot="R180"/>
-<text x="3.302" y="3.048" size="1.4224" layer="95" rot="R180">&gt;NAME</text>
-<text x="3.81" y="-1.778" size="1.4224" layer="96" rot="R180">&gt;VALUE</text>
-<wire x1="0.508" y1="1.524" x2="0.508" y2="0" width="0.254" layer="94"/>
-<wire x1="0.508" y1="0" x2="0.508" y2="-1.524" width="0.254" layer="94"/>
-<wire x1="1.524" y1="1.524" x2="1.524" y2="0" width="0.254" layer="94"/>
-<wire x1="1.524" y1="0" x2="1.524" y2="-1.524" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="0" x2="0.508" y2="0" width="0.254" layer="94"/>
-<wire x1="5.08" y1="0" x2="1.524" y2="0" width="0.254" layer="94"/>
+<text x="-2.286" y="2.286" size="1.4224" layer="95">&gt;NAME</text>
+<text x="-2.286" y="-2.286" size="1.4224" layer="96" align="top-left">&gt;VALUE</text>
+<wire x1="0.762" y1="1.524" x2="0.762" y2="0" width="0.508" layer="94"/>
+<wire x1="0.762" y1="0" x2="0.762" y2="-1.524" width="0.508" layer="94"/>
+<wire x1="1.778" y1="1.524" x2="1.778" y2="0" width="0.508" layer="94"/>
+<wire x1="1.778" y1="0" x2="1.778" y2="-1.524" width="0.508" layer="94"/>
+<wire x1="-2.54" y1="0" x2="0.762" y2="0" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="0" x2="1.778" y2="0" width="0.1524" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -32892,8 +34127,44 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </device>
 <device name="-0402-NO_SILK" package="0402-NO_SILK">
 <connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-PTH_SMALL" package="PTH-SMALL">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-0603_NARROW" package="0603-NARROW">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-0805" package="0805">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-1206" package="1206">
+<connects>
+<connect gate="G$1" pin="1" pad="+"/>
+<connect gate="G$1" pin="2" pad="-"/>
 </connects>
 <technologies>
 <technology name=""/>
