@@ -34375,11 +34375,6 @@ Level Translators&lt;br&gt;
 </net>
 <net name="SDA" class="0">
 <segment>
-<wire x1="160.02" y1="114.3" x2="180.34" y2="114.3" width="0.1524" layer="91"/>
-<label x="160.02" y="114.3" size="1.778" layer="95"/>
-<pinref part="BMX055" gate="G$1" pin="SDO2"/>
-</segment>
-<segment>
 <wire x1="22.86" y1="50.8" x2="43.18" y2="50.8" width="0.1524" layer="91"/>
 <label x="22.86" y="50.8" size="1.778" layer="95"/>
 <wire x1="43.18" y1="50.8" x2="48.26" y2="50.8" width="0.1524" layer="91"/>
@@ -34391,6 +34386,11 @@ Level Translators&lt;br&gt;
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="43.18" y1="63.5" x2="43.18" y2="50.8" width="0.1524" layer="91"/>
 <junction x="43.18" y="50.8"/>
+</segment>
+<segment>
+<pinref part="BMX055" gate="G$1" pin="SDX"/>
+<wire x1="180.34" y1="111.76" x2="160.02" y2="111.76" width="0.1524" layer="91"/>
+<label x="160.02" y="111.76" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SCL" class="0">
