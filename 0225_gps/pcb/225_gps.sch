@@ -34420,6 +34420,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="TP3" library="FaBo-Supply" deviceset="TP" device="-15"/>
 <part name="TP4" library="FaBo-Supply" deviceset="TP" device="-15"/>
 <part name="R5" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="10K"/>
+<part name="1V5" library="FaBo-Supply" deviceset="1V8" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -34462,6 +34463,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <instance part="TP3" gate="G$1" x="185.42" y="134.62"/>
 <instance part="TP4" gate="G$1" x="149.86" y="81.28"/>
 <instance part="R5" gate="G$1" x="137.16" y="66.04" rot="R90"/>
+<instance part="1V5" gate="G$1" x="50.8" y="76.2"/>
 </instances>
 <busses>
 </busses>
@@ -34616,12 +34618,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pinref part="IC3" gate="G$1" pin="EN"/>
 </segment>
 </net>
-<net name="N$3" class="0">
-<segment>
-<wire x1="58.42" y1="55.88" x2="53.34" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="IC3" gate="G$1" pin="VREF1"/>
-</segment>
-</net>
 <net name="RESET" class="0">
 <segment>
 <pinref part="RESET" gate="G$1" pin="2"/>
@@ -34667,6 +34663,12 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pinref part="1V4" gate="G$1" pin="1V8"/>
 <wire x1="167.64" y1="152.4" x2="182.88" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="152.4" x2="182.88" y2="160.02" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="58.42" y1="55.88" x2="50.8" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="G$1" pin="VREF1"/>
+<wire x1="50.8" y1="55.88" x2="50.8" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="1V5" gate="G$1" pin="1V8"/>
 </segment>
 </net>
 <net name="N$4" class="0">
