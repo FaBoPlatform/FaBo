@@ -1136,15 +1136,14 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <package name="TP-15">
 <smd name="1" x="0" y="0" dx="1.5" dy="1.5" layer="1" roundness="100" thermals="no" cream="no"/>
 </package>
-<package name="SMD-JUMPER-2-CLOSE">
+<package name="SMD-JUMPER-2-SHORT">
 <wire x1="1.27" y1="-0.8" x2="-1.27" y2="-0.8" width="0.1" layer="21"/>
 <wire x1="1.27" y1="-0.8" x2="1.27" y2="0.8" width="0.1" layer="21"/>
 <wire x1="-1.27" y1="-0.8" x2="-1.27" y2="0.8" width="0.1" layer="21"/>
 <wire x1="-1.27" y1="0.8" x2="1.27" y2="0.8" width="0.1" layer="21"/>
-<smd name="1" x="-0.6" y="0" dx="0.8" dy="1.2" layer="1" cream="no"/>
-<smd name="2" x="0.6" y="0" dx="0.8" dy="1.2" layer="1" cream="no"/>
+<smd name="1" x="-0.6096" y="0" dx="1.0668" dy="1.2" layer="1"/>
+<smd name="2" x="0.6096" y="0" dx="1.0668" dy="1.2" layer="1"/>
 <text x="0" y="1.27" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
-<wire x1="-0.6" y1="0" x2="0.6" y2="0" width="0.3048" layer="1"/>
 </package>
 <package name="SMD-JUMPER-2-OPEN">
 <wire x1="1.27" y1="-0.8" x2="-1.27" y2="-0.8" width="0.1" layer="21"/>
@@ -1154,6 +1153,15 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <smd name="1" x="-0.6" y="0" dx="0.8" dy="1.2" layer="1" cream="no"/>
 <smd name="2" x="0.6" y="0" dx="0.8" dy="1.2" layer="1" cream="no"/>
 <text x="0" y="1.27" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+</package>
+<package name="SMD-JUMPER-0603">
+<smd name="1" x="-0.85" y="0" dx="0.71" dy="1" layer="1" roundness="20"/>
+<smd name="2" x="0.85" y="0" dx="0.71" dy="1" layer="1" roundness="20"/>
+<text x="0" y="0.762" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+<wire x1="-1.27" y1="0.55" x2="1.27" y2="0.55" width="0.0508" layer="39"/>
+<wire x1="1.27" y1="0.55" x2="1.27" y2="-0.55" width="0.0508" layer="39"/>
+<wire x1="1.27" y1="-0.55" x2="-1.27" y2="-0.55" width="0.0508" layer="39"/>
+<wire x1="-1.27" y1="-0.55" x2="-1.27" y2="0.55" width="0.0508" layer="39"/>
 </package>
 </packages>
 <symbols>
@@ -1186,12 +1194,14 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <circle x="0" y="0" radius="1.27" width="0" layer="94"/>
 </symbol>
 <symbol name="SMD-JUMPER-2">
-<wire x1="-0.635" y1="1.651" x2="0.635" y2="1.651" width="1.27" layer="94" curve="-180" cap="flat"/>
-<text x="2.54" y="2.54" size="1.778" layer="95">&gt;NAME</text>
-<text x="2.54" y="0.762" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
-<pin name="1" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
-<pin name="2" x="0" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
-<wire x1="0.635" y1="0.889" x2="-0.635" y2="0.889" width="1.27" layer="94" curve="-180" cap="flat"/>
+<text x="0" y="0.508" size="1.27" layer="95" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.778" size="1.27" layer="96" align="top-center">&gt;VALUE</text>
+<pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas"/>
+<pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" rot="R180"/>
+<wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="1.27" y2="0" width="0.254" layer="94"/>
+<circle x="-1.27" y="0" radius="0.508" width="0" layer="94"/>
+<circle x="1.27" y="0" radius="0.508" width="0" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1279,7 +1289,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <gate name="G$1" symbol="SMD-JUMPER-2" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-CLOSE" package="SMD-JUMPER-2-CLOSE">
+<device name="-SHORT" package="SMD-JUMPER-2-SHORT">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -1289,6 +1299,15 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </technologies>
 </device>
 <device name="-OPEN" package="SMD-JUMPER-2-OPEN">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-0603" package="SMD-JUMPER-0603">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -34434,10 +34453,11 @@ Level Translators&lt;br&gt;
 <part name="+3V7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="C6" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="4.7uF"/>
 <part name="GND7" library="FaBo-Supply" deviceset="GND" device=""/>
-<part name="SJ1" library="FaBo-Supply" deviceset="SMD-JUMPER-2" device="-CLOSE" value="CLOSE"/>
 <part name="GND8" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="R6" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="100K"/>
 <part name="+3V8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="+3V9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="SJ1" library="FaBo-Supply" deviceset="SMD-JUMPER-2" device="-OPEN"/>
 </parts>
 <sheets>
 <sheet>
@@ -34476,16 +34496,17 @@ Level Translators&lt;br&gt;
 <instance part="GND5" gate="G$1" x="215.9" y="104.14"/>
 <instance part="+3V5" gate="G$1" x="144.78" y="154.94"/>
 <instance part="R4" gate="G$1" x="144.78" y="142.24" rot="R90"/>
-<instance part="R5" gate="G$1" x="124.46" y="129.54"/>
+<instance part="R5" gate="G$1" x="127" y="129.54"/>
 <instance part="+3V6" gate="G$1" x="116.84" y="139.7"/>
-<instance part="T1" gate="G$1" x="137.16" y="129.54"/>
+<instance part="T1" gate="G$1" x="139.7" y="129.54"/>
 <instance part="+3V7" gate="G$1" x="213.36" y="71.12"/>
 <instance part="C6" gate="G$1" x="213.36" y="45.72" rot="R90"/>
 <instance part="GND7" gate="G$1" x="213.36" y="35.56"/>
-<instance part="SJ1" gate="G$1" x="152.4" y="149.86"/>
-<instance part="GND8" gate="G$1" x="152.4" y="144.78"/>
-<instance part="R6" gate="G$1" x="152.4" y="162.56" rot="R90"/>
+<instance part="GND8" gate="G$1" x="152.4" y="142.24"/>
+<instance part="R6" gate="G$1" x="157.48" y="149.86" rot="R90"/>
 <instance part="+3V8" gate="G$1" x="152.4" y="172.72"/>
+<instance part="+3V9" gate="G$1" x="48.26" y="78.74"/>
+<instance part="SJ1" gate="G$1" x="152.4" y="149.86" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -34558,9 +34579,9 @@ Level Translators&lt;br&gt;
 <wire x1="213.36" y1="43.18" x2="213.36" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SJ1" gate="G$1" pin="2"/>
 <pinref part="GND8" gate="G$1" pin="GND"/>
-<wire x1="152.4" y1="147.32" x2="152.4" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="147.32" x2="152.4" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="SJ1" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -34642,12 +34663,6 @@ Level Translators&lt;br&gt;
 <pinref part="IC3" gate="G$1" pin="EN"/>
 </segment>
 </net>
-<net name="N$3" class="0">
-<segment>
-<wire x1="58.42" y1="55.88" x2="53.34" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="IC3" gate="G$1" pin="VREF1"/>
-</segment>
-</net>
 <net name="+3V3" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
@@ -34684,7 +34699,7 @@ Level Translators&lt;br&gt;
 <segment>
 <pinref part="R5" gate="G$1" pin="1"/>
 <pinref part="+3V6" gate="G$1" pin="+3V3"/>
-<wire x1="121.92" y1="129.54" x2="116.84" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="129.54" x2="116.84" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="129.54" x2="116.84" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -34693,9 +34708,19 @@ Level Translators&lt;br&gt;
 <pinref part="C6" gate="G$1" pin="2"/>
 </segment>
 <segment>
+<pinref part="IC3" gate="G$1" pin="VREF1"/>
+<wire x1="58.42" y1="55.88" x2="48.26" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="55.88" x2="48.26" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="+3V9" gate="G$1" pin="+3V3"/>
+</segment>
+<segment>
+<pinref part="SJ1" gate="G$1" pin="2"/>
 <pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="157.48" y1="154.94" x2="157.48" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="162.56" x2="152.4" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="152.4" x2="152.4" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="+3V8" gate="G$1" pin="+3V3"/>
-<wire x1="152.4" y1="167.64" x2="152.4" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="162.56" x2="152.4" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -34705,7 +34730,7 @@ Level Translators&lt;br&gt;
 <wire x1="154.94" y1="129.54" x2="154.94" y2="127" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="SENSE"/>
 <wire x1="154.94" y1="127" x2="160.02" y2="127" width="0.1524" layer="91"/>
-<wire x1="154.94" y1="129.54" x2="142.24" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="129.54" x2="144.78" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="T1" gate="G$1" pin="P$2"/>
 </segment>
 </net>
@@ -34720,7 +34745,7 @@ Level Translators&lt;br&gt;
 <net name="N$5" class="0">
 <segment>
 <pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="129.54" y1="129.54" x2="132.08" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="129.54" x2="134.62" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="T1" gate="G$1" pin="P$1"/>
 </segment>
 </net>
@@ -34728,12 +34753,8 @@ Level Translators&lt;br&gt;
 <segment>
 <pinref part="C3" gate="G$1" pin="ADDR"/>
 <wire x1="160.02" y1="137.16" x2="157.48" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="137.16" x2="157.48" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="157.48" x2="152.4" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="SJ1" gate="G$1" pin="1"/>
-<wire x1="152.4" y1="157.48" x2="152.4" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="152.4" y1="157.48" x2="152.4" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="137.16" x2="157.48" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
