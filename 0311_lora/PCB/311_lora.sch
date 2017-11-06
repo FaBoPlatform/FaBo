@@ -2487,11 +2487,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </net>
 <net name="RX" class="0">
 <segment>
-<wire x1="114.3" y1="76.2" x2="104.14" y2="76.2" width="0.1524" layer="91"/>
-<label x="104.14" y="76.2" size="1.778" layer="95"/>
-<pinref part="U$2" gate="G$1" pin="PTA1/RX"/>
-</segment>
-<segment>
 <wire x1="48.26" y1="91.44" x2="53.34" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="91.44" x2="58.42" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="91.44" x2="63.5" y2="91.44" width="0.1524" layer="91"/>
@@ -2504,13 +2499,13 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pinref part="R5" gate="G$1" pin="1"/>
 <pinref part="Q2" gate="G$1" pin="S"/>
 </segment>
-</net>
-<net name="TX" class="0">
 <segment>
 <wire x1="114.3" y1="78.74" x2="104.14" y2="78.74" width="0.1524" layer="91"/>
 <label x="104.14" y="78.74" size="1.778" layer="95"/>
 <pinref part="U$2" gate="G$1" pin="PTA2/TX"/>
 </segment>
+</net>
+<net name="TX" class="0">
 <segment>
 <wire x1="5.08" y1="91.44" x2="10.16" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="10.16" y1="91.44" x2="15.24" y2="91.44" width="0.1524" layer="91"/>
@@ -2523,6 +2518,11 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <junction x="10.16" y="91.44"/>
 <pinref part="R3" gate="G$1" pin="1"/>
 <pinref part="Q1" gate="G$1" pin="S"/>
+</segment>
+<segment>
+<wire x1="114.3" y1="76.2" x2="104.14" y2="76.2" width="0.1524" layer="91"/>
+<label x="104.14" y="76.2" size="1.778" layer="95"/>
+<pinref part="U$2" gate="G$1" pin="PTA1/RX"/>
 </segment>
 </net>
 <net name="3V3" class="0">
