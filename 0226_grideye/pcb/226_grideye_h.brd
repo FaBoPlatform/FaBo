@@ -142,10 +142,11 @@
 </layers>
 <board>
 <plain>
-<text x="2.105" y="8.33" size="1.27" layer="21" font="vector" ratio="12" rot="R90">GridEye</text>
-<text x="4.065" y="8.53" size="1.016" layer="21" font="vector" ratio="12" rot="R90">Rev.1.0.0.Beta</text>
+<text x="2.105" y="7.33" size="1.27" layer="21" font="vector" ratio="12" rot="R90">GridEye</text>
+<text x="5.065" y="7.53" size="1.016" layer="21" font="vector" ratio="12" rot="R90">Rev.1.0.0.Beta</text>
 <text x="25.4" y="14.605" size="0.8128" layer="21" font="vector" ratio="12" rot="R270" align="bottom-center">MADE IN JAPAN</text>
-<text x="7.52" y="12.555" size="2.54" layer="21" font="vector" ratio="12" rot="R90" align="bottom-center">#226</text>
+<text x="8.52" y="11.555" size="2.54" layer="21" font="vector" ratio="12" rot="R90" align="bottom-center">#226</text>
+<text x="3.565" y="7.53" size="1.016" layer="21" font="vector" ratio="12" rot="R90">High gain</text>
 </plain>
 <libraries>
 <library name="FaBo-Template">
