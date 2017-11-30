@@ -12461,6 +12461,43 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="-4.046" y1="-13.645" x2="-4.046" y2="-17.645" width="0.1" layer="51"/>
 <wire x1="-4.046" y1="-17.645" x2="4.554" y2="-17.645" width="0.1" layer="51"/>
 </package>
+<package name="FABO_BRICK_3PIN_LONG">
+<text x="-2" y="-4.98" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">I/O</text>
+<text x="0" y="-4.98" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
+<text x="2" y="-4.98" size="0.6096" layer="21" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
+<wire x1="-8.89" y1="-15.24" x2="8.89" y2="-15.24" width="0" layer="20"/>
+<wire x1="8.89" y1="-15.24" x2="12.7" y2="-11.43" width="0" layer="20" curve="90"/>
+<wire x1="12.7" y1="-11.43" x2="12.7" y2="26.67" width="0" layer="20"/>
+<wire x1="-8.89" y1="-15.24" x2="-12.7" y2="-11.43" width="0" layer="20" curve="-90"/>
+<wire x1="-12.7" y1="26.67" x2="-12.7" y2="-11.43" width="0" layer="20"/>
+<pad name="P$1" x="-8.89" y="5.08" drill="3" diameter="3.81"/>
+<pad name="P$2" x="8.89" y="5.08" drill="3" diameter="3.81"/>
+<pad name="P$3" x="-8.89" y="-11.43" drill="3" diameter="3.81"/>
+<pad name="P$4" x="8.89" y="-11.43" drill="3" diameter="3.81"/>
+<wire x1="-12.7" y1="26.67" x2="12.7" y2="26.67" width="0" layer="20" curve="-180"/>
+<circle x="-8.89" y="5.08" radius="2.55" width="0.1" layer="51"/>
+<circle x="-8.89" y="-11.43" radius="2.55" width="0.1" layer="51"/>
+<circle x="8.89" y="5.08" radius="2.55" width="0.1" layer="51"/>
+<circle x="8.89" y="-11.43" radius="2.55" width="0.1" layer="51"/>
+<pad name="GND" x="2" y="-6.985" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<pad name="VCC" x="0" y="-6.985" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<pad name="I/O" x="-2" y="-6.985" drill="0.9" diameter="1.4224" shape="long" rot="R90"/>
+<hole x="-3.5" y="-9.085" drill="1.1"/>
+<wire x1="-4" y1="-3.485" x2="-4" y2="-15.185" width="0.1" layer="51"/>
+<wire x1="4" y1="-3.485" x2="4" y2="-15.185" width="0.1" layer="51"/>
+<wire x1="-4" y1="-15.185" x2="-2" y2="-15.185" width="0.1" layer="51"/>
+<wire x1="-2" y1="-15.185" x2="2" y2="-15.185" width="0.1" layer="51"/>
+<wire x1="2" y1="-15.185" x2="4" y2="-15.185" width="0.1" layer="51"/>
+<wire x1="-4" y1="-3.485" x2="-3.3" y2="-3.485" width="0.1" layer="51"/>
+<hole x="3.5" y="-9.085" drill="1.1"/>
+<wire x1="3.3" y1="-3.485" x2="4" y2="-3.485" width="0.1" layer="51"/>
+<wire x1="-2" y1="-13.685" x2="2" y2="-13.685" width="0.1" layer="51"/>
+<wire x1="2" y1="-15.185" x2="2" y2="-13.685" width="0.1" layer="51"/>
+<wire x1="-2" y1="-15.185" x2="-2" y2="-13.685" width="0.1" layer="51"/>
+<wire x1="3.3" y1="-3.485" x2="3.3" y2="-7.485" width="0.1" layer="51"/>
+<wire x1="-3.3" y1="-3.485" x2="-3.3" y2="-7.485" width="0.1" layer="51"/>
+<wire x1="-3.3" y1="-7.485" x2="3.3" y2="-7.485" width="0.1" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="FABO_BRICK_3PIN">
@@ -12638,6 +12675,16 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <connect gate="G$1" pin="GND" pad="V_GND"/>
 <connect gate="G$1" pin="I/O" pad="V_I/O"/>
 <connect gate="G$1" pin="VCC" pad="V_VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-LONG" package="FABO_BRICK_3PIN_LONG">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="I/O" pad="I/O"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -13914,15 +13961,6 @@ Supply&lt;br&gt;
 Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;br&gt;
 https://creativecommons.org/licenses/by-sa/4.0/</description>
 <packages>
-<package name="4UCON-DC">
-<pad name="VCC" x="5.5" y="0" drill="1.5" shape="square" rot="R90"/>
-<wire x1="-5.5" y1="2.5" x2="5.5" y2="2.5" width="0.127" layer="21"/>
-<wire x1="5.5" y1="2.5" x2="5.5" y2="-2.5" width="0.127" layer="21"/>
-<wire x1="5.5" y1="-2.5" x2="-5.5" y2="-2.5" width="0.127" layer="21"/>
-<wire x1="-5.5" y1="-2.5" x2="-5.5" y2="2.5" width="0.127" layer="21"/>
-<pad name="GND1" x="0.5" y="0" drill="1.5" shape="square" rot="R90"/>
-<pad name="GND2" x="2.6" y="-2.8" drill="1.5" shape="square" rot="R90"/>
-</package>
 <package name="1206">
 <smd name="P$1" x="-1.5" y="0" dx="1" dy="1.6" layer="1"/>
 <smd name="P$2" x="1.5" y="0" dx="1" dy="1.6" layer="1"/>
@@ -13932,22 +13970,20 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="-2" y1="-0.8" x2="-2" y2="0.8" width="0.127" layer="21"/>
 <text x="-2.01421875" y="1.05918125" size="0.8128" layer="25">&gt;NAME</text>
 </package>
+<package name="M04339A0">
+<hole x="0" y="0" drill="1.6"/>
+<wire x1="-3.75" y1="3.5" x2="3.75" y2="3.5" width="0.127" layer="21"/>
+<wire x1="3.75" y1="3.5" x2="3.75" y2="-9" width="0.127" layer="21"/>
+<wire x1="3.75" y1="-9" x2="-3.75" y2="-9" width="0.127" layer="21"/>
+<wire x1="-3.75" y1="-9" x2="-3.75" y2="3.5" width="0.127" layer="21"/>
+<pad name="P$1" x="3.2" y="0" drill="1.6" shape="square"/>
+<pad name="P$2" x="-3.2" y="0" drill="1.6" shape="square"/>
+<pad name="GND@2" x="-3.2" y="-6.5" drill="1.6" shape="square"/>
+<pad name="GND@3" x="3.3" y="-6.5" drill="1.6" shape="square"/>
+<pad name="VCC" x="0" y="-9" drill="2" shape="square"/>
+</package>
 </packages>
 <symbols>
-<symbol name="DC-JACK">
-<wire x1="-5.08" y1="-2.54" x2="-2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="0" x2="0" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="0" y1="-2.54" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="5.08" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
-<text x="-5.08" y="5.08" size="1.778" layer="96">&gt;VALUE</text>
-<text x="-5.08" y="-5.08" size="1.778" layer="95">&gt;NAME</text>
-<rectangle x1="-5.08" y1="1.778" x2="5.08" y2="3.302" layer="94"/>
-<pin name="GNDBREAK" x="7.62" y="0" visible="off" length="short" rot="R180"/>
-<pin name="GND" x="7.62" y="-2.54" visible="off" length="short" rot="R180"/>
-<pin name="PWR" x="7.62" y="2.54" visible="off" length="short" rot="R180"/>
-</symbol>
 <symbol name="3V3">
 <wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.2032" layer="94"/>
 <wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.2032" layer="94"/>
@@ -13969,25 +14005,22 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
 <text x="0" y="2.54" size="1.778" layer="95" align="bottom-center">&gt;NAME</text>
 </symbol>
+<symbol name="DC-JACK">
+<wire x1="-5.08" y1="-2.54" x2="-2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="5.08" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
+<text x="-5.08" y="5.08" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-5.08" y="-5.08" size="1.778" layer="95">&gt;NAME</text>
+<rectangle x1="-5.08" y1="1.778" x2="5.08" y2="3.302" layer="94"/>
+<pin name="GNDBREAK" x="7.62" y="0" visible="off" length="short" rot="R180"/>
+<pin name="GND" x="7.62" y="-2.54" visible="off" length="short" rot="R180"/>
+<pin name="PWR" x="7.62" y="2.54" visible="off" length="short" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
-<deviceset name="4UCON-DC">
-<gates>
-<gate name="G$1" symbol="DC-JACK" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="4UCON-DC">
-<connects>
-<connect gate="G$1" pin="GND" pad="GND1"/>
-<connect gate="G$1" pin="GNDBREAK" pad="GND2"/>
-<connect gate="G$1" pin="PWR" pad="VCC"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="3V3" prefix="3V3">
 <description>Supply</description>
 <gates>
@@ -14010,6 +14043,23 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DC-JACK" prefix="P" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="DC-JACK" x="0" y="0"/>
+</gates>
+<devices>
+<device name="MA04339A0" package="M04339A0">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND@2"/>
+<connect gate="G$1" pin="GNDBREAK" pad="GND@3"/>
+<connect gate="G$1" pin="PWR" pad="VCC"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -14247,6 +14297,95 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 </deviceset>
 </devicesets>
 </library>
+<library name="FaBo-Transistor">
+<packages>
+<package name="AOD417">
+<smd name="D" x="0" y="2.1" dx="4.82" dy="4.2" layer="1"/>
+<smd name="G" x="-2.286" y="-4.1" dx="3" dy="1.6" layer="1" rot="R90"/>
+<smd name="S" x="2.286" y="-4.1" dx="3" dy="1.6" layer="1" rot="R90"/>
+<wire x1="-3.3" y1="3.81" x2="3.3" y2="3.81" width="0.127" layer="21"/>
+<wire x1="3.3" y1="3.81" x2="3.3" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="3.3" y1="-2.54" x2="-3.3" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-3.3" y1="-2.54" x2="-3.3" y2="3.81" width="0.127" layer="21"/>
+<text x="-1.44" y="-1.77" size="0.6096" layer="21">AOD417</text>
+<text x="3.9" y="2.3" size="1.27" layer="25">&gt;NAME</text>
+</package>
+</packages>
+<symbols>
+<symbol name="AOD417">
+<pin name="D" x="-7.62" y="0" visible="pad" length="short"/>
+<pin name="S" x="7.62" y="0" visible="pad" length="short" rot="R180"/>
+<wire x1="-5.08" y1="0" x2="-2.54" y2="0" width="0.15" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="-2.54" width="0.15" layer="94"/>
+<wire x1="5.08" y1="0" x2="2.54" y2="0" width="0.15" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.15" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-5.08" y2="2.54" width="0.15" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="0.508" y2="2.54" width="0.15" layer="94"/>
+<wire x1="0.508" y1="2.54" x2="5.08" y2="2.54" width="0.15" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="0" width="0.15" layer="94"/>
+<wire x1="0.508" y1="2.54" x2="-0.254" y2="1.778" width="0.15" layer="94"/>
+<wire x1="-0.254" y1="1.778" x2="-0.254" y2="3.302" width="0.15" layer="94"/>
+<wire x1="-0.254" y1="3.302" x2="0.508" y2="2.54" width="0.15" layer="94"/>
+<wire x1="-0.1778" y1="3.0734" x2="-0.1778" y2="1.9812" width="0.15" layer="94"/>
+<wire x1="-0.1778" y1="1.9812" x2="0.3556" y2="2.5146" width="0.15" layer="94"/>
+<wire x1="0.3556" y1="2.5146" x2="0.3556" y2="2.5654" width="0.15" layer="94"/>
+<wire x1="0.3556" y1="2.5654" x2="-0.0762" y2="2.9972" width="0.15" layer="94"/>
+<wire x1="-0.0762" y1="2.9972" x2="-0.0762" y2="2.2606" width="0.15" layer="94"/>
+<wire x1="-0.0762" y1="2.2352" x2="-0.0762" y2="2.2606" width="0.15" layer="94"/>
+<wire x1="-0.0762" y1="2.2606" x2="0.254" y2="2.5908" width="0.15" layer="94"/>
+<wire x1="0.254" y1="2.5908" x2="0.1524" y2="2.5908" width="0.15" layer="94"/>
+<wire x1="0.1524" y1="2.5908" x2="0" y2="2.7432" width="0.15" layer="94"/>
+<wire x1="0" y1="2.7432" x2="0" y2="2.5654" width="0.15" layer="94"/>
+<wire x1="0" y1="2.5654" x2="0" y2="2.4892" width="0.15" layer="94"/>
+<wire x1="0" y1="2.4892" x2="0.0254" y2="2.4638" width="0.15" layer="94"/>
+<wire x1="0.0254" y1="2.4638" x2="0.0508" y2="2.4638" width="0.15" layer="94"/>
+<wire x1="0.0508" y1="2.4638" x2="0.1524" y2="2.5654" width="0.15" layer="94"/>
+<wire x1="0.1524" y1="2.5654" x2="0" y2="2.5654" width="0.15" layer="94"/>
+<wire x1="0.508" y1="3.302" x2="0.508" y2="1.778" width="0.15" layer="94"/>
+<wire x1="-3.048" y1="-2.54" x2="-2.032" y2="-2.54" width="0.15" layer="94"/>
+<wire x1="2.032" y1="-2.54" x2="3.048" y2="-2.54" width="0.15" layer="94"/>
+<wire x1="-0.508" y1="-2.54" x2="0" y2="-2.54" width="0.15" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0.508" y2="-2.54" width="0.15" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="0" width="0.15" layer="94"/>
+<wire x1="0" y1="0" x2="2.54" y2="0" width="0.15" layer="94"/>
+<wire x1="0.0254" y1="-0.1016" x2="-0.3302" y2="-0.4572" width="0.15" layer="94"/>
+<wire x1="-0.3302" y1="-0.4572" x2="0.3556" y2="-0.4572" width="0.15" layer="94"/>
+<wire x1="0.3556" y1="-0.4572" x2="0.0254" y2="-0.127" width="0.15" layer="94"/>
+<wire x1="0.0254" y1="-0.127" x2="0.0254" y2="-0.2286" width="0.15" layer="94"/>
+<wire x1="0.0254" y1="-0.2286" x2="-0.127" y2="-0.381" width="0.15" layer="94"/>
+<wire x1="-0.127" y1="-0.381" x2="0.127" y2="-0.381" width="0.15" layer="94"/>
+<wire x1="0.127" y1="-0.381" x2="0.127" y2="-0.3048" width="0.15" layer="94"/>
+<wire x1="0.127" y1="-0.3048" x2="0.0762" y2="-0.254" width="0.15" layer="94"/>
+<wire x1="0.0762" y1="-0.254" x2="0.127" y2="-0.254" width="0.15" layer="94"/>
+<wire x1="0.127" y1="-0.254" x2="0.254" y2="-0.381" width="0.15" layer="94"/>
+<wire x1="-3.048" y1="-3.302" x2="2.5654" y2="-3.2766" width="0.15" layer="94"/>
+<wire x1="2.5654" y1="-3.2766" x2="2.54" y2="-5.0546" width="0.15" layer="94"/>
+<pin name="G" x="2.54" y="-7.62" visible="off" length="short" rot="R90"/>
+<text x="-6.5278" y="-1.9812" size="1.27" layer="94">D</text>
+<text x="5.207" y="-1.7526" size="1.27" layer="94">S</text>
+<text x="0.0508" y="-7.1882" size="1.27" layer="94">G</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="AOD417" prefix="M" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="AOD417" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="AOD417">
+<connects>
+<connect gate="G$1" pin="D" pad="D"/>
+<connect gate="G$1" pin="G" pad="G"/>
+<connect gate="G$1" pin="S" pad="S"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -14362,7 +14501,6 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <part name="C1" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="0.1uf"/>
 <part name="U$12" library="FaBo-Terminal" deviceset="ML-1400-S1" device=""/>
 <part name="U$13" library="FaBo-Terminal" deviceset="ML-1400-S1" device=""/>
-<part name="U$15" library="FaBo-Supply" deviceset="4UCON-DC" device=""/>
 <part name="MODE" library="FaBo-Switch" deviceset="SLIDE" device="-EG1218"/>
 <part name="3V1" library="FaBo-Supply" deviceset="3V3" device=""/>
 <part name="3V2" library="FaBo-Supply" deviceset="3V3" device=""/>
@@ -14393,14 +14531,15 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <part name="R21" library="FaBo-Resistors" deviceset="RESISTOR" device="-0402" value="10K"/>
 <part name="R22" library="FaBo-Resistors" deviceset="RESISTOR" device="-0402" value="10K"/>
 <part name="A4" library="FaBo-Capacitor" deviceset="CAPACITOR-ALUMIN" device="_H13"/>
+<part name="M1" library="FaBo-Transistor" deviceset="AOD417" device=""/>
+<part name="P2" library="FaBo-Supply" deviceset="DC-JACK" device="MA04339A0"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="373.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.3.Beta</text>
+<text x="373.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.4</text>
 <text x="162.56" y="243.84" size="2.54" layer="97">GPIO (3pin Side 2mm pitch) x4</text>
 <text x="17.78" y="55.88" size="2.54" layer="97">I2C(4pin Side 2mm pitch) x3</text>
-<text x="162.56" y="93.98" size="2.54" layer="97">Analog(3pin Side 2mm pitch) x4</text>
 <text x="17.78" y="99.06" size="2.54" layer="97">Serial (4pin Side 2mm pitch)</text>
 <text x="162.56" y="134.62" size="2.54" layer="97">GPIO/Servo (3pin Top 2.54mm pitch) x5</text>
 <text x="162.56" y="53.34" size="2.54" layer="97">Analog(3pin Top 2mm pitch) x4</text>
@@ -14480,7 +14619,7 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <instance part="R4" gate="G$1" x="350.52" y="172.72"/>
 <instance part="SUPPLY35" gate="5V" x="360.68" y="175.26"/>
 <instance part="SUPPLY36" gate="5V" x="363.22" y="226.06"/>
-<instance part="GND37" gate="1" x="345.44" y="40.64"/>
+<instance part="GND37" gate="1" x="345.44" y="35.56"/>
 <instance part="GND38" gate="1" x="299.72" y="40.64"/>
 <instance part="GND28" gate="GND" x="86.36" y="76.2"/>
 <instance part="GND29" gate="GND" x="50.8" y="86.36"/>
@@ -14490,7 +14629,7 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <instance part="R7" gate="G$1" x="129.54" y="129.54"/>
 <instance part="R8" gate="G$1" x="129.54" y="127"/>
 <instance part="R9" gate="G$1" x="129.54" y="121.92"/>
-<instance part="P+1" gate="VCC" x="345.44" y="76.2"/>
+<instance part="P+1" gate="VCC" x="375.92" y="71.12"/>
 <instance part="P+2" gate="VCC" x="299.72" y="73.66"/>
 <instance part="P+3" gate="VCC" x="294.64" y="177.8"/>
 <instance part="P+4" gate="VCC" x="294.64" y="228.6"/>
@@ -14513,7 +14652,6 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <instance part="C1" gate="G$1" x="139.7" y="203.2" rot="R90"/>
 <instance part="U$12" gate="G$1" x="370.84" y="203.2"/>
 <instance part="U$13" gate="G$1" x="360.68" y="152.4"/>
-<instance part="U$15" gate="G$1" x="322.58" y="50.8"/>
 <instance part="MODE" gate="G$1" x="210.82" y="175.26" rot="R90"/>
 <instance part="3V1" gate="G$1" x="22.86" y="236.22"/>
 <instance part="3V2" gate="G$1" x="223.52" y="198.12"/>
@@ -14528,7 +14666,7 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <instance part="R14" gate="G$1" x="269.24" y="170.18" rot="R90"/>
 <instance part="R15" gate="G$1" x="274.32" y="220.98" rot="R90"/>
 <instance part="GND20" gate="GND" x="353.06" y="180.34"/>
-<instance part="P1" gate="G$1" x="345.44" y="63.5" rot="R90"/>
+<instance part="P1" gate="G$1" x="345.44" y="53.34"/>
 <instance part="R16" gate="G$1" x="81.28" y="119.38" rot="R90"/>
 <instance part="GND22" gate="GND" x="55.88" y="81.28"/>
 <instance part="GND23" gate="GND" x="60.96" y="76.2"/>
@@ -14544,6 +14682,8 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <instance part="R21" gate="G$1" x="76.2" y="73.66" rot="R90"/>
 <instance part="R22" gate="G$1" x="81.28" y="71.12" rot="R90"/>
 <instance part="A4" gate="G$1" x="299.72" y="58.42" rot="R90"/>
+<instance part="M1" gate="G$1" x="363.22" y="53.34"/>
+<instance part="P2" gate="G$1" x="322.58" y="50.8"/>
 </instances>
 <busses>
 </busses>
@@ -14772,11 +14912,15 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <segment>
 <pinref part="GND37" gate="1" pin="GND"/>
 <wire x1="345.44" y1="50.8" x2="345.44" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="U$15" gate="G$1" pin="GNDBREAK"/>
 <wire x1="345.44" y1="48.26" x2="345.44" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="330.2" y1="50.8" x2="345.44" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="U$15" gate="G$1" pin="GND"/>
 <wire x1="345.44" y1="48.26" x2="330.2" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="M1" gate="G$1" pin="G"/>
+<wire x1="365.76" y1="45.72" x2="365.76" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="365.76" y1="43.18" x2="345.44" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="345.44" y1="43.18" x2="345.44" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="P2" gate="G$1" pin="GNDBREAK"/>
+<pinref part="P2" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="U$9" gate="G$1" pin="VSS"/>
@@ -15636,9 +15780,10 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <pinref part="P+10" gate="VCC" pin="VCC"/>
 </segment>
 <segment>
-<pinref part="P1" gate="G$1" pin="2"/>
+<pinref part="M1" gate="G$1" pin="S"/>
+<wire x1="370.84" y1="53.34" x2="375.92" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="375.92" y1="53.34" x2="375.92" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
-<wire x1="345.44" y1="68.58" x2="345.44" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="3V3" class="0">
@@ -15663,10 +15808,9 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="U$15" gate="G$1" pin="PWR"/>
-<wire x1="330.2" y1="53.34" x2="345.44" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="330.2" y1="53.34" x2="340.36" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="P1" gate="G$1" pin="1"/>
-<wire x1="345.44" y1="53.34" x2="345.44" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="P2" gate="G$1" pin="PWR"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -15731,6 +15875,13 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <wire x1="88.9" y1="83.82" x2="81.28" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="83.82" x2="81.28" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="R22" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="P1" gate="G$1" pin="2"/>
+<pinref part="M1" gate="G$1" pin="D"/>
+<wire x1="350.52" y1="53.34" x2="355.6" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
