@@ -145,7 +145,7 @@
 <board>
 <plain>
 <text x="50.45" y="16.87" size="1.27" layer="21" font="vector" ratio="12" rot="R90">for RaspPi</text>
-<text x="52.45" y="16.615" size="1.27" layer="21" font="vector" ratio="12" rot="R90">Rev 1.0.5 B</text>
+<text x="52.45" y="16.615" size="1.27" layer="21" font="vector" ratio="12" rot="R90">Rev 1.0.5 C</text>
 <text x="13.355" y="3.79" size="0.8128" layer="21" font="vector" ratio="12" rot="R180" align="bottom-center">MADE IN JAPAN</text>
 <text x="76.3" y="1.7075" size="2.54" layer="21" font="vector" ratio="12" rot="R90">5V</text>
 <text x="27" y="10.25" size="0.8128" layer="21" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
@@ -12465,19 +12465,6 @@ design rules under a new name.</description>
 <wire x1="38.7975" y1="27.605" x2="41.3375" y2="27.605" width="0.8128" layer="1"/>
 <wire x1="41.3375" y1="27.605" x2="53.145" y2="27.605" width="0.8128" layer="1"/>
 <wire x1="53.145" y1="27.605" x2="64.5" y2="16.25" width="0.8128" layer="1"/>
-<wire x1="27.87201875" y1="23.81193125" x2="27.859690625" y2="23.597603125" width="0.254" layer="1"/>
-<wire x1="27.845815625" y1="23.2651" x2="27.85958125" y2="22.87870625" width="0.254" layer="1"/>
-<wire x1="27.845815625" y1="23.2651" x2="27.845575" y2="23.241765625" width="0.254" layer="1"/>
-<wire x1="28.27073125" y1="18.1881" x2="24.18926875" y2="18.1881" width="0.254" layer="1"/>
-<wire x1="24.18926875" y1="18.1881" x2="24.0256" y2="18.35176875" width="0.254" layer="1"/>
-<wire x1="31.1775" y1="27.605" x2="27.84680625" y2="27.605" width="0.254" layer="1"/>
-<wire x1="27.84680625" y1="27.605" x2="27.87201875" y2="23.81193125" width="0.254" layer="1"/>
-<wire x1="27.845575" y1="23.241765625" x2="27.83946875" y2="23.08221875" width="0.254" layer="1"/>
-<wire x1="27.83946875" y1="23.08221875" x2="28.03946875" y2="21.6068375" width="0.254" layer="1"/>
-<wire x1="28.03946875" y1="21.6068375" x2="28.27073125" y2="18.1881" width="0.254" layer="1"/>
-<wire x1="24.0256" y1="18.35176875" x2="24.0256" y2="27.9744" width="0.254" layer="1"/>
-<wire x1="27.859690625" y1="23.597603125" x2="27.845815625" y2="23.597603125" width="0.254" layer="1"/>
-<wire x1="27.845815625" y1="23.597603125" x2="27.845815625" y2="23.2651" width="0.254" layer="1"/>
 <wire x1="75.545315625" y1="11.7" x2="75.349884375" y2="11.60456875" width="1.016" layer="1"/>
 <contactref element="A4" pad="PLUS"/>
 <wire x1="78.7" y1="10.04" x2="78.8" y2="11.25" width="1.27" layer="1"/>
