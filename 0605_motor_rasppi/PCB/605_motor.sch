@@ -13918,12 +13918,31 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 </symbol>
+<symbol name="VCC">
+<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="VCC" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="GND" prefix="GND">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="1" symbol="GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VCC" prefix="P+">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="VCC" symbol="VCC" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -14000,12 +14019,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pin name="GND" x="7.62" y="-2.54" visible="off" length="short" rot="R180"/>
 <pin name="PWR" x="7.62" y="2.54" visible="off" length="short" rot="R180"/>
 </symbol>
-<symbol name="VCC">
-<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.2032" layer="94"/>
-<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.2032" layer="94"/>
-<text x="-1.27" y="3.556" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="VCC" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="3V3" prefix="3V3">
@@ -14048,18 +14061,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <connect gate="G$1" pin="GNDBREAK" pad="GND@3"/>
 <connect gate="G$1" pin="PWR" pad="VCC"/>
 </connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="VCC" prefix="VCC">
-<gates>
-<gate name="G$1" symbol="VCC" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -14477,6 +14478,15 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <part name="R7" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="220"/>
 <part name="R8" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="220"/>
 <part name="R9" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="220"/>
+<part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="P+7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="P+8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="P+9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="P+10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="C5" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="0.1uf"/>
 <part name="C6" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="22uf"/>
 <part name="GND6" library="FaBo-etc" deviceset="GND" device=""/>
@@ -14523,15 +14533,6 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <part name="M1" library="FaBo-Transistor" deviceset="AOD417" device=""/>
 <part name="P2" library="FaBo-Supply" deviceset="DC-JACK" device="MA04339A0"/>
 <part name="SUPPLY1" library="FaBo-etc" deviceset="5V" device=""/>
-<part name="VCC1" library="FaBo-Supply" deviceset="VCC" device="" value="B_VCC"/>
-<part name="VCC2" library="FaBo-Supply" deviceset="VCC" device="" value="B_VCC"/>
-<part name="VCC3" library="FaBo-Supply" deviceset="VCC" device="" value="B_VCC"/>
-<part name="VCC4" library="FaBo-Supply" deviceset="VCC" device="" value="B_VCC"/>
-<part name="VCC5" library="FaBo-Supply" deviceset="VCC" device="" value="B_VCC"/>
-<part name="VCC6" library="FaBo-Supply" deviceset="VCC" device="" value="B_VCC"/>
-<part name="VCC7" library="FaBo-Supply" deviceset="VCC" device="" value="B_VCC"/>
-<part name="VCC8" library="FaBo-Supply" deviceset="VCC" device="" value="B_VCC"/>
-<part name="VCC9" library="FaBo-Supply" deviceset="VCC" device="" value="B_VCC"/>
 </parts>
 <sheets>
 <sheet>
@@ -14628,6 +14629,15 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <instance part="R7" gate="G$1" x="129.54" y="129.54"/>
 <instance part="R8" gate="G$1" x="129.54" y="127"/>
 <instance part="R9" gate="G$1" x="129.54" y="121.92"/>
+<instance part="P+1" gate="VCC" x="375.92" y="71.12"/>
+<instance part="P+2" gate="VCC" x="299.72" y="73.66"/>
+<instance part="P+3" gate="VCC" x="294.64" y="177.8"/>
+<instance part="P+4" gate="VCC" x="294.64" y="228.6"/>
+<instance part="P+6" gate="VCC" x="281.94" y="127"/>
+<instance part="P+7" gate="VCC" x="254" y="127"/>
+<instance part="P+8" gate="VCC" x="226.06" y="127"/>
+<instance part="P+9" gate="VCC" x="198.12" y="127"/>
+<instance part="P+10" gate="VCC" x="170.18" y="127"/>
 <instance part="C5" gate="G$1" x="78.74" y="236.22"/>
 <instance part="C6" gate="G$1" x="78.74" y="228.6"/>
 <instance part="GND6" gate="GND" x="93.98" y="223.52"/>
@@ -14674,15 +14684,6 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <instance part="M1" gate="G$1" x="363.22" y="53.34"/>
 <instance part="P2" gate="G$1" x="322.58" y="50.8"/>
 <instance part="SUPPLY1" gate="5V" x="101.6" y="147.32"/>
-<instance part="VCC1" gate="G$1" x="170.18" y="124.46"/>
-<instance part="VCC2" gate="G$1" x="198.12" y="124.46"/>
-<instance part="VCC3" gate="G$1" x="226.06" y="124.46"/>
-<instance part="VCC4" gate="G$1" x="254" y="124.46"/>
-<instance part="VCC5" gate="G$1" x="281.94" y="124.46"/>
-<instance part="VCC6" gate="G$1" x="299.72" y="71.12"/>
-<instance part="VCC7" gate="G$1" x="375.92" y="68.58"/>
-<instance part="VCC8" gate="G$1" x="294.64" y="175.26"/>
-<instance part="VCC9" gate="G$1" x="294.64" y="226.06"/>
 </instances>
 <busses>
 </busses>
@@ -15723,66 +15724,66 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 </net>
 <net name="VCC" class="0">
 <segment>
-<wire x1="170.18" y1="119.38" x2="170.18" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="GPIO23S" gate="G$1" pin="VCC"/>
-<pinref part="VCC1" gate="G$1" pin="VCC"/>
-</segment>
-<segment>
-<wire x1="198.12" y1="124.46" x2="198.12" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="GPIO24S" gate="G$1" pin="VCC"/>
-<pinref part="VCC2" gate="G$1" pin="VCC"/>
-</segment>
-<segment>
-<wire x1="226.06" y1="124.46" x2="226.06" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="GPIO25S" gate="G$1" pin="VCC"/>
-<pinref part="VCC3" gate="G$1" pin="VCC"/>
-</segment>
-<segment>
-<wire x1="254" y1="119.38" x2="254" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="GPIO26S" gate="G$1" pin="VCC"/>
-<pinref part="VCC4" gate="G$1" pin="VCC"/>
-</segment>
-<segment>
-<wire x1="281.94" y1="119.38" x2="281.94" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="GPIO27S" gate="G$1" pin="VCC"/>
-<pinref part="VCC5" gate="G$1" pin="VCC"/>
-</segment>
-<segment>
-<pinref part="M1" gate="G$1" pin="S"/>
-<wire x1="370.84" y1="53.34" x2="375.92" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="375.92" y1="53.34" x2="375.92" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="VCC7" gate="G$1" pin="VCC"/>
-</segment>
-<segment>
 <wire x1="299.72" y1="71.12" x2="299.72" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="P+2" gate="VCC" pin="VCC"/>
 <pinref part="C10" gate="G$1" pin="2"/>
 <wire x1="299.72" y1="66.04" x2="299.72" y2="63.6016" width="0.1524" layer="91"/>
 <wire x1="299.72" y1="66.04" x2="287.02" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="287.02" y1="66.04" x2="287.02" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="A4" gate="G$1" pin="+"/>
-<pinref part="VCC6" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
 <pinref part="C3" gate="G$1" pin="2"/>
 <wire x1="294.64" y1="175.26" x2="294.64" y2="172.72" width="0.1524" layer="91"/>
 <pinref part="U$10" gate="G$1" pin="VCC"/>
 <wire x1="302.26" y1="175.26" x2="294.64" y2="175.26" width="0.1524" layer="91"/>
+<pinref part="P+3" gate="VCC" pin="VCC"/>
 <junction x="294.64" y="175.26"/>
 <pinref part="C8" gate="G$1" pin="2"/>
 <wire x1="294.64" y1="175.26" x2="284.48" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="284.48" y1="175.26" x2="284.48" y2="172.72" width="0.1524" layer="91"/>
-<pinref part="VCC8" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
 <pinref part="U$8" gate="G$1" pin="VCC"/>
 <wire x1="302.26" y1="226.06" x2="294.64" y2="226.06" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="2"/>
 <wire x1="294.64" y1="223.52" x2="294.64" y2="226.06" width="0.1524" layer="91"/>
+<pinref part="P+4" gate="VCC" pin="VCC"/>
 <junction x="294.64" y="226.06"/>
 <pinref part="C7" gate="G$1" pin="2"/>
 <wire x1="294.64" y1="226.06" x2="287.02" y2="226.06" width="0.1524" layer="91"/>
 <wire x1="287.02" y1="226.06" x2="287.02" y2="223.52" width="0.1524" layer="91"/>
-<pinref part="VCC9" gate="G$1" pin="VCC"/>
+</segment>
+<segment>
+<wire x1="281.94" y1="119.38" x2="281.94" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="GPIO27S" gate="G$1" pin="VCC"/>
+<pinref part="P+6" gate="VCC" pin="VCC"/>
+</segment>
+<segment>
+<wire x1="254" y1="119.38" x2="254" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="GPIO26S" gate="G$1" pin="VCC"/>
+<pinref part="P+7" gate="VCC" pin="VCC"/>
+</segment>
+<segment>
+<wire x1="226.06" y1="124.46" x2="226.06" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="GPIO25S" gate="G$1" pin="VCC"/>
+<pinref part="P+8" gate="VCC" pin="VCC"/>
+</segment>
+<segment>
+<wire x1="198.12" y1="124.46" x2="198.12" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="GPIO24S" gate="G$1" pin="VCC"/>
+<pinref part="P+9" gate="VCC" pin="VCC"/>
+</segment>
+<segment>
+<wire x1="170.18" y1="119.38" x2="170.18" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="GPIO23S" gate="G$1" pin="VCC"/>
+<pinref part="P+10" gate="VCC" pin="VCC"/>
+</segment>
+<segment>
+<pinref part="M1" gate="G$1" pin="S"/>
+<wire x1="370.84" y1="53.34" x2="375.92" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="375.92" y1="53.34" x2="375.92" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="P+1" gate="VCC" pin="VCC"/>
 </segment>
 </net>
 <net name="3V3" class="0">
