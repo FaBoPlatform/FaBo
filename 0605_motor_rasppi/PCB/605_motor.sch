@@ -14482,7 +14482,6 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
-<part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="P+7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="P+8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
@@ -14533,6 +14532,7 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <part name="A4" library="FaBo-Capacitor" deviceset="CAPACITOR-ALUMIN" device="_H13"/>
 <part name="M1" library="FaBo-Transistor" deviceset="AOD417" device=""/>
 <part name="P2" library="FaBo-Supply" deviceset="DC-JACK" device="MA04339A0"/>
+<part name="SUPPLY1" library="FaBo-etc" deviceset="5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -14633,7 +14633,6 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <instance part="P+2" gate="VCC" x="299.72" y="73.66"/>
 <instance part="P+3" gate="VCC" x="294.64" y="177.8"/>
 <instance part="P+4" gate="VCC" x="294.64" y="228.6"/>
-<instance part="P+5" gate="VCC" x="101.6" y="149.86"/>
 <instance part="P+6" gate="VCC" x="281.94" y="127"/>
 <instance part="P+7" gate="VCC" x="254" y="127"/>
 <instance part="P+8" gate="VCC" x="226.06" y="127"/>
@@ -14684,6 +14683,7 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <instance part="A4" gate="G$1" x="299.72" y="58.42" rot="R90"/>
 <instance part="M1" gate="G$1" x="363.22" y="53.34"/>
 <instance part="P2" gate="G$1" x="322.58" y="50.8"/>
+<instance part="SUPPLY1" gate="5V" x="101.6" y="147.32"/>
 </instances>
 <busses>
 </busses>
@@ -15307,6 +15307,14 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <wire x1="363.22" y1="223.52" x2="363.22" y2="226.06" width="0.1524" layer="91"/>
 <pinref part="SUPPLY36" gate="5V" pin="5V"/>
 </segment>
+<segment>
+<pinref part="U$9" gate="G$1" pin="VDD"/>
+<wire x1="101.6" y1="142.24" x2="101.6" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="C9" gate="G$1" pin="2"/>
+<wire x1="101.6" y1="144.78" x2="101.6" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="144.78" x2="109.22" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="SUPPLY1" gate="5V" pin="5V"/>
+</segment>
 </net>
 <net name="MOSI" class="0">
 <segment>
@@ -15745,14 +15753,6 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <pinref part="C7" gate="G$1" pin="2"/>
 <wire x1="294.64" y1="226.06" x2="287.02" y2="226.06" width="0.1524" layer="91"/>
 <wire x1="287.02" y1="226.06" x2="287.02" y2="223.52" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U$9" gate="G$1" pin="VDD"/>
-<wire x1="101.6" y1="142.24" x2="101.6" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="P+5" gate="VCC" pin="VCC"/>
-<pinref part="C9" gate="G$1" pin="2"/>
-<wire x1="101.6" y1="144.78" x2="101.6" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="144.78" x2="109.22" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="281.94" y1="119.38" x2="281.94" y2="124.46" width="0.1524" layer="91"/>
