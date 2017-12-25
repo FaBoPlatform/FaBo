@@ -14122,7 +14122,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="5V4" library="FaBo-Supply" deviceset="5V" device=""/>
 <part name="SJ1" library="FaBo-Supply" deviceset="SMD-JUMPER-2" device="-OPEN" value="OPEN"/>
 <part name="TP1" library="FaBo-Supply" deviceset="TP" device="-15"/>
-<part name="GND7" library="FaBo-Supply" deviceset="GND" device=""/>
+<part name="GND7" library="FaBo-Supply" deviceset="GND" device="" value="GND_RELAY"/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="U$8" library="FaBo-etc" deviceset="A4L-LOC" device=""/>
 <part name="U1" library="FaBo-Relay" deviceset="941-RELAY" device=""/>
@@ -14157,26 +14157,26 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="P+9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="U7" library="FaBo-Relay" deviceset="941-RELAY" device=""/>
 <part name="T7" library="FaBo-Transistor" deviceset="MOSFET" device="SOT-323"/>
-<part name="GND20" library="FaBo-Supply" deviceset="GND" device=""/>
+<part name="GND20" library="FaBo-Supply" deviceset="GND" device="" value="GND_RELAY"/>
 <part name="RELAY7" library="FaBo-Terminal" deviceset="ML-1400-S1" device=""/>
 <part name="GND21" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="P+10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="U8" library="FaBo-Relay" deviceset="941-RELAY" device=""/>
 <part name="T8" library="FaBo-Transistor" deviceset="MOSFET" device="SOT-323"/>
-<part name="GND23" library="FaBo-Supply" deviceset="GND" device=""/>
+<part name="GND23" library="FaBo-Supply" deviceset="GND" device="" value="GND_RELAY"/>
 <part name="RELAY8" library="FaBo-Terminal" deviceset="ML-1400-S1" device=""/>
 <part name="GND24" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="P+11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="U$5" library="FaBo-Supply" deviceset="2DC-G213" device=""/>
 <part name="J1" library="FaBo-Template" deviceset="FABO_BRICK_I2C" device="-S04B-PASK-2_LONG"/>
-<part name="GND5" library="FaBo-Supply" deviceset="GND" device=""/>
+<part name="GND5" library="FaBo-Supply" deviceset="GND" device="" value="GND_RELAY"/>
 <part name="R10" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603-NARROW" value="10k"/>
 <part name="GND6" library="FaBo-Supply" deviceset="GND" device=""/>
-<part name="GND8" library="FaBo-Supply" deviceset="GND" device=""/>
-<part name="GND10" library="FaBo-Supply" deviceset="GND" device=""/>
-<part name="GND12" library="FaBo-Supply" deviceset="GND" device=""/>
-<part name="GND14" library="FaBo-Supply" deviceset="GND" device=""/>
-<part name="GND16" library="FaBo-Supply" deviceset="GND" device=""/>
+<part name="GND_RELAY" library="FaBo-Supply" deviceset="GND" device="" value="GND_RELAY"/>
+<part name="GND10" library="FaBo-Supply" deviceset="GND" device="" value="GND_RELAY"/>
+<part name="GND12" library="FaBo-Supply" deviceset="GND" device="" value="GND_RELAY"/>
+<part name="GND14" library="FaBo-Supply" deviceset="GND" device="" value="GND_RELAY"/>
+<part name="GND16" library="FaBo-Supply" deviceset="GND" device="" value="GND_RELAY"/>
 <part name="D11" library="FaBo-Diode" deviceset="DIODE" device="DO-214AC"/>
 <part name="D12" library="FaBo-Diode" deviceset="DIODE" device="DO-214AC"/>
 <part name="D13" library="FaBo-Diode" deviceset="DIODE" device="DO-214AC"/>
@@ -14545,12 +14545,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="66.04" y1="86.36" x2="66.04" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$5" gate="G$1" pin="GND"/>
-<pinref part="GND7" gate="G$1" pin="GND"/>
-<wire x1="114.3" y1="48.26" x2="119.38" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="48.26" x2="119.38" y2="43.18" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="R10" gate="G$1" pin="2"/>
 <wire x1="203.2" y1="170.18" x2="203.2" y2="172.72" width="0.1524" layer="91"/>
 <pinref part="GND6" gate="G$1" pin="GND"/>
@@ -14703,6 +14697,14 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="190.5" y1="53.34" x2="193.04" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="GND_RELAY" class="0">
+<segment>
+<pinref part="U$5" gate="G$1" pin="GND"/>
+<pinref part="GND7" gate="G$1" pin="GND"/>
+<wire x1="114.3" y1="48.26" x2="119.38" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="48.26" x2="119.38" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -14753,7 +14755,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <instance part="GND24" gate="G$1" x="160.02" y="40.64"/>
 <instance part="P+11" gate="VCC" x="139.7" y="50.8"/>
 <instance part="GND5" gate="G$1" x="35.56" y="121.92"/>
-<instance part="GND8" gate="G$1" x="119.38" y="119.38"/>
+<instance part="GND_RELAY" gate="G$1" x="119.38" y="119.38"/>
 <instance part="GND10" gate="G$1" x="208.28" y="119.38"/>
 <instance part="GND12" gate="G$1" x="35.56" y="68.58"/>
 <instance part="GND14" gate="G$1" x="121.92" y="66.04"/>
@@ -14834,56 +14836,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pinref part="RELAY8" gate="G$1" pin="PIN2"/>
 <wire x1="160.02" y1="50.8" x2="160.02" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="GND24" gate="G$1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="GND5" gate="G$1" pin="GND"/>
-<pinref part="T1" gate="G$1" pin="S"/>
-<wire x1="33.02" y1="134.62" x2="35.56" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="121.92" x2="35.56" y2="134.62" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="GND8" gate="G$1" pin="GND"/>
-<pinref part="T2" gate="G$1" pin="S"/>
-<wire x1="116.84" y1="132.08" x2="119.38" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="132.08" x2="119.38" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="119.38" x2="119.38" y2="129.54" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="GND10" gate="G$1" pin="GND"/>
-<pinref part="T3" gate="G$1" pin="S"/>
-<wire x1="205.74" y1="132.08" x2="208.28" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="132.08" x2="208.28" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="119.38" x2="208.28" y2="129.54" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="GND12" gate="G$1" pin="GND"/>
-<pinref part="T4" gate="G$1" pin="S"/>
-<wire x1="33.02" y1="81.28" x2="35.56" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="68.58" x2="35.56" y2="81.28" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="GND14" gate="G$1" pin="GND"/>
-<pinref part="T5" gate="G$1" pin="S"/>
-<wire x1="119.38" y1="78.74" x2="121.92" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="66.04" x2="121.92" y2="78.74" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="GND16" gate="G$1" pin="GND"/>
-<pinref part="T6" gate="G$1" pin="S"/>
-<wire x1="208.28" y1="81.28" x2="210.82" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="68.58" x2="210.82" y2="81.28" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="GND20" gate="G$1" pin="GND"/>
-<pinref part="T7" gate="G$1" pin="S"/>
-<wire x1="33.02" y1="22.86" x2="38.1" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="10.16" x2="38.1" y2="22.86" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="GND23" gate="G$1" pin="GND"/>
-<pinref part="T8" gate="G$1" pin="S"/>
-<wire x1="119.38" y1="22.86" x2="121.92" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="10.16" x2="121.92" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND30" gate="G$1" pin="GND"/>
@@ -15286,6 +15238,58 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <label x="7.62" y="30.48" size="1.778" layer="95" rot="R90" xref="yes"/>
 <pinref part="LED7" gate="G$1" pin="ANODE"/>
 <wire x1="7.62" y1="22.86" x2="7.62" y2="25.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="GND_RELAY" class="0">
+<segment>
+<pinref part="GND5" gate="G$1" pin="GND"/>
+<pinref part="T1" gate="G$1" pin="S"/>
+<wire x1="33.02" y1="134.62" x2="35.56" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="121.92" x2="35.56" y2="134.62" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND_RELAY" gate="G$1" pin="GND"/>
+<pinref part="T2" gate="G$1" pin="S"/>
+<wire x1="116.84" y1="132.08" x2="119.38" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="132.08" x2="119.38" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="119.38" x2="119.38" y2="129.54" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND10" gate="G$1" pin="GND"/>
+<pinref part="T3" gate="G$1" pin="S"/>
+<wire x1="205.74" y1="132.08" x2="208.28" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="132.08" x2="208.28" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="119.38" x2="208.28" y2="129.54" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND12" gate="G$1" pin="GND"/>
+<pinref part="T4" gate="G$1" pin="S"/>
+<wire x1="33.02" y1="81.28" x2="35.56" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="68.58" x2="35.56" y2="81.28" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND14" gate="G$1" pin="GND"/>
+<pinref part="T5" gate="G$1" pin="S"/>
+<wire x1="119.38" y1="78.74" x2="121.92" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="66.04" x2="121.92" y2="78.74" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND16" gate="G$1" pin="GND"/>
+<pinref part="T6" gate="G$1" pin="S"/>
+<wire x1="208.28" y1="81.28" x2="210.82" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="68.58" x2="210.82" y2="81.28" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND20" gate="G$1" pin="GND"/>
+<pinref part="T7" gate="G$1" pin="S"/>
+<wire x1="33.02" y1="22.86" x2="38.1" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="10.16" x2="38.1" y2="22.86" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND23" gate="G$1" pin="GND"/>
+<pinref part="T8" gate="G$1" pin="S"/>
+<wire x1="119.38" y1="22.86" x2="121.92" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="10.16" x2="121.92" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
