@@ -145,7 +145,7 @@
 <board>
 <plain>
 <text x="50.45" y="16.87" size="1.27" layer="21" font="vector" ratio="12" rot="R90">for RaspPi</text>
-<text x="52.45" y="16.615" size="1.27" layer="21" font="vector" ratio="12" rot="R90">Rev 1.0.5 C</text>
+<text x="52.45" y="16.615" size="1.27" layer="21" font="vector" ratio="12" rot="R90">Rev 1.0.6 A</text>
 <text x="13.355" y="3.79" size="0.8128" layer="21" font="vector" ratio="12" rot="R180" align="bottom-center">MADE IN JAPAN</text>
 <text x="76.3" y="1.7075" size="2.54" layer="21" font="vector" ratio="12" rot="R90">5V</text>
 <text x="27" y="10.25" size="0.8128" layer="21" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
@@ -8925,18 +8925,12 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <text x="0" y="0" size="0.8128" layer="27" font="vector" ratio="12" align="center">&gt;VALUE</text>
 <rectangle x1="-0.195" y1="-0.3" x2="0.195" y2="0.3" layer="35"/>
 </package>
-<package name="H13">
-<wire x1="-6.65" y1="6.65" x2="4.0586" y2="6.6454" width="0.127" layer="21"/>
-<wire x1="4.24" y1="-6.67" x2="-6.65" y2="-6.65" width="0.127" layer="21"/>
-<wire x1="-6.65" y1="-6.65" x2="-6.65" y2="6.65" width="0.127" layer="21"/>
-<wire x1="6.65" y1="-5" x2="6.65" y2="5" width="0.127" layer="21"/>
-<wire x1="6.65" y1="5" x2="4.1008" y2="6.6654" width="0.127" layer="21"/>
-<wire x1="4.1008" y1="6.6654" x2="3.1208" y2="6.6654" width="0.127" layer="21"/>
-<wire x1="6.65" y1="-5" x2="4.24" y2="-6.69" width="0.127" layer="21"/>
-<smd name="PLUS" x="5" y="0" dx="5.3" dy="1.8" layer="1"/>
-<smd name="MINUS" x="-5" y="0" dx="5.3" dy="1.8" layer="1"/>
-<text x="-6.096" y="7.3152" size="1.27" layer="25">&gt;NAME</text>
-<text x="-6.1722" y="-8.509" size="1.27" layer="27">&gt;VALUE</text>
+<package name="D10">
+<circle x="0" y="0" radius="5" width="0.127" layer="21"/>
+<pad name="+" x="-2.5" y="0" drill="0.6" shape="square"/>
+<pad name="-" x="2.5" y="0" drill="0.6" shape="square"/>
+<text x="-3.81" y="5.08" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.81" y="-6.35" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 </library>
@@ -9059,18 +9053,20 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="2" y1="-0.8" x2="-2" y2="-0.8" width="0.127" layer="21"/>
 <wire x1="-2" y1="-0.8" x2="-2" y2="0.8" width="0.127" layer="21"/>
 <text x="-2.01421875" y="1.05918125" size="0.8128" layer="25">&gt;NAME</text>
+<text x="-2.032" y="-1.778" size="0.8128" layer="27">&gt;VALUE</text>
 </package>
-<package name="M04339A0">
-<hole x="0" y="0" drill="1.6"/>
-<wire x1="-3.75" y1="3.5" x2="3.75" y2="3.5" width="0.127" layer="21"/>
-<wire x1="3.75" y1="3.5" x2="3.75" y2="-9" width="0.127" layer="21"/>
-<wire x1="3.75" y1="-9" x2="-3.75" y2="-9" width="0.127" layer="21"/>
-<wire x1="-3.75" y1="-9" x2="-3.75" y2="3.5" width="0.127" layer="21"/>
-<pad name="P$1" x="3.2" y="0" drill="1.6" shape="square"/>
-<pad name="P$2" x="-3.2" y="0" drill="1.6" shape="square"/>
-<pad name="GND@2" x="-3.2" y="-6.5" drill="1.6" shape="square"/>
-<pad name="GND@3" x="3.3" y="-6.5" drill="1.6" shape="square"/>
-<pad name="VCC" x="0" y="-9" drill="2" shape="square"/>
+<package name="2DC-G213-B66">
+<hole x="0" y="3.25" drill="1.6"/>
+<pad name="VCC" x="0" y="-6" drill="1.1" diameter="3"/>
+<wire x1="-4.75" y1="6" x2="-4.75" y2="-7.2" width="0.127" layer="21"/>
+<wire x1="-4.75" y1="-7.2" x2="4.75" y2="-7.2" width="0.127" layer="21"/>
+<wire x1="4.75" y1="-7.2" x2="4.75" y2="6" width="0.127" layer="21"/>
+<wire x1="4.75" y1="6" x2="-4.75" y2="6" width="0.127" layer="21"/>
+<pad name="GND" x="0" y="0" drill="3.3" diameter="5" rot="R180"/>
+<pad name="GND-BREAKER@1" x="-4.826" y="-4.222" drill="2.159" diameter="3"/>
+<pad name="GND-BREAKER@3" x="4.699" y="-3.968" drill="2.159" diameter="3"/>
+<pad name="GND-BREAKE@2" x="-4.699" y="0.477" drill="2.159" diameter="3"/>
+<pad name="GND-BREAKER@4" x="4.699" y="0.477" drill="2.159" diameter="3"/>
 </package>
 </packages>
 </library>
@@ -11481,7 +11477,7 @@ design rules under a new name.</description>
 <element name="U$4" library="FaBo-Logo" package="LOGO_OSHW_T_MS" value="" x="20.2" y="35.3" rot="R90"/>
 <element name="R14" library="FaBo-Resistors" package="0603" value="0.4" x="67.1" y="31.5" rot="R180"/>
 <element name="R15" library="FaBo-Resistors" package="0603" value="0.4" x="67.1" y="21.6" rot="R180"/>
-<element name="P1" library="FaBo-Supply" package="1206" value="POLYSWITCHMF-NSML1" x="64.16" y="13.77" rot="R180"/>
+<element name="P1" library="FaBo-Supply" package="1206" value="POLYSWITCH1206" x="64.16" y="13.77" rot="R180"/>
 <element name="R16" library="FaBo-Resistors" package="0603" value="10K" x="21.7" y="17.4"/>
 <element name="R13" library="FaBo-Resistors" package="0402" value="10K" x="21.6" y="14.6"/>
 <element name="R17" library="FaBo-Resistors" package="0402" value="10K" x="26.2" y="18.9" rot="R180"/>
@@ -11490,9 +11486,9 @@ design rules under a new name.</description>
 <element name="R20" library="FaBo-Resistors" package="0402" value="10K" x="26.2" y="21.4" rot="R180"/>
 <element name="R21" library="FaBo-Resistors" package="0402" value="10K" x="26.2" y="22.2" rot="R180"/>
 <element name="R22" library="FaBo-Resistors" package="0402" value="10K" x="18" y="21.6" rot="R90"/>
-<element name="A4" library="FaBo-Capacitor" package="H13" value="" x="78.7" y="15.04" rot="R270"/>
 <element name="M1" library="FaBo-Transistor" package="AOD417" value="" x="59.07" y="13.7" rot="R90"/>
-<element name="P2" library="FaBo-Supply" package="M04339A0" value="" x="68" y="2.3" rot="R180"/>
+<element name="P2" library="FaBo-Supply" package="2DC-G213-B66" value="" x="68" y="2.3" rot="R180"/>
+<element name="A4" library="FaBo-Capacitor" package="D10" value="" x="79.17" y="16.21" rot="R90"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -11603,11 +11599,14 @@ design rules under a new name.</description>
 <via x="29.7" y="21.7" extent="1-16" drill="0.3"/>
 <via x="27.5" y="19.2" extent="1-16" drill="0.3"/>
 <via x="21.65" y="26.45" extent="1-16" drill="0.3"/>
-<contactref element="A4" pad="MINUS"/>
 <contactref element="M1" pad="G"/>
-<contactref element="P2" pad="GND@3"/>
-<contactref element="P2" pad="GND@2"/>
+<contactref element="P2" pad="GND-BREAKE@2"/>
+<contactref element="P2" pad="GND"/>
 <via x="18.34" y="30.68" extent="1-16" drill="0.3"/>
+<contactref element="P2" pad="GND-BREAKER@1"/>
+<contactref element="P2" pad="GND-BREAKER@3"/>
+<contactref element="P2" pad="GND-BREAKER@4"/>
+<contactref element="A4" pad="-"/>
 </signal>
 <signal name="SDA">
 <contactref element="U1" pad="3"/>
@@ -12420,9 +12419,7 @@ design rules under a new name.</description>
 <contactref element="C7" pad="2"/>
 <contactref element="C8" pad="2"/>
 <contactref element="C10" pad="2"/>
-<wire x1="76.421234375" y1="11.586009375" x2="78.5" y2="11.55" width="1.6764" layer="1"/>
-<wire x1="75.5" y1="13.85" x2="75.349884375" y2="11.60456875" width="1.6764" layer="1"/>
-<wire x1="75.5" y1="13.85" x2="69.3" y2="13.95" width="1.6764" layer="1"/>
+<wire x1="69.3" y1="13.95" x2="75.5" y2="13.85" width="1.6764" layer="1"/>
 <wire x1="69.3" y1="13.95" x2="69.45" y2="14.05" width="1.6764" layer="1"/>
 <wire x1="69.45" y1="14.05" x2="69.45" y2="16.15" width="1.6764" layer="1"/>
 <wire x1="64.5" y1="16.25" x2="69.45" y2="16.15" width="1.6764" layer="1"/>
@@ -12478,17 +12475,14 @@ design rules under a new name.</description>
 <wire x1="38.7975" y1="27.605" x2="41.3375" y2="27.605" width="0.8128" layer="1"/>
 <wire x1="41.3375" y1="27.605" x2="53.145" y2="27.605" width="0.8128" layer="1"/>
 <wire x1="53.145" y1="27.605" x2="64.5" y2="16.25" width="0.8128" layer="1"/>
-<wire x1="75.545315625" y1="11.7" x2="75.349884375" y2="11.60456875" width="1.016" layer="1"/>
-<contactref element="A4" pad="PLUS"/>
-<wire x1="78.7" y1="10.04" x2="78.8" y2="11.25" width="1.27" layer="1"/>
-<wire x1="78.8" y1="11.25" x2="78.5" y2="11.55" width="1.27" layer="1"/>
-<wire x1="75.349884375" y1="11.60456875" x2="76.402675" y2="11.60456875" width="1.27" layer="1"/>
-<wire x1="76.402675" y1="11.60456875" x2="76.421234375" y2="11.586009375" width="1.27" layer="1"/>
 <contactref element="M1" pad="S"/>
 <wire x1="63.17" y1="15.986" x2="64.8" y2="15.95" width="1.27" layer="1"/>
 <wire x1="64.8" y1="15.95" x2="64.5" y2="16.25" width="1.27" layer="1"/>
 <wire x1="64.25" y1="20.75" x2="64.27440625" y2="20.75053125" width="0.1524" layer="1"/>
 <wire x1="64.25" y1="20.75" x2="64.5025" y2="20.2825" width="0.1524" layer="1"/>
+<contactref element="A4" pad="+"/>
+<wire x1="75.5" y1="13.85" x2="79.03" y2="13.85" width="1.27" layer="1"/>
+<wire x1="79.03" y1="13.85" x2="79.17" y2="13.71" width="1.27" layer="1"/>
 </signal>
 <signal name="N$1">
 </signal>
@@ -12523,8 +12517,9 @@ design rules under a new name.</description>
 <wire x1="67.86" y1="11.35" x2="67.8486875" y2="11.36244375" width="1.27" layer="1"/>
 <contactref element="P2" pad="VCC"/>
 <wire x1="67.8486875" y1="11.36244375" x2="65.66" y2="13.77" width="1.27" layer="1"/>
-<wire x1="68" y1="11.5" x2="67.8486875" y2="11.36244375" width="0.1524" layer="1"/>
-<wire x1="68" y1="11.5" x2="68" y2="11.3" width="0.1524" layer="1"/>
+<wire x1="67.95604375" y1="11.460040625" x2="67.8486875" y2="11.36244375" width="0.1524" layer="1"/>
+<wire x1="68" y1="8.3" x2="68" y2="11.416084375" width="1.27" layer="1"/>
+<wire x1="68" y1="11.416084375" x2="67.95604375" y2="11.460040625" width="1.27" layer="1"/>
 </signal>
 <signal name="N$7">
 <contactref element="U$9" pad="23"/>

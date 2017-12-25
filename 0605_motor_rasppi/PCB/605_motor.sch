@@ -13250,6 +13250,13 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="2" y1="3.25" x2="-3.25" y2="3.25" width="0.127" layer="21"/>
 <wire x1="-3.25" y1="3.25" x2="-3.25" y2="-3.25" width="0.127" layer="21"/>
 </package>
+<package name="D10">
+<circle x="0" y="0" radius="5" width="0.127" layer="21"/>
+<pad name="+" x="-2.5" y="0" drill="0.6" shape="square"/>
+<pad name="-" x="2.5" y="0" drill="0.6" shape="square"/>
+<text x="-3.81" y="5.08" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.81" y="-6.35" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="CAPACITOR">
@@ -13367,6 +13374,15 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <connects>
 <connect gate="G$1" pin="+" pad="PLUS"/>
 <connect gate="G$1" pin="-" pad="MINUS"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_D10" package="D10">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -13969,6 +13985,20 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="2" y1="-0.8" x2="-2" y2="-0.8" width="0.127" layer="21"/>
 <wire x1="-2" y1="-0.8" x2="-2" y2="0.8" width="0.127" layer="21"/>
 <text x="-2.01421875" y="1.05918125" size="0.8128" layer="25">&gt;NAME</text>
+<text x="-2.032" y="-1.778" size="0.8128" layer="27">&gt;VALUE</text>
+</package>
+<package name="2DC-G213-B66">
+<hole x="0" y="3.25" drill="1.6"/>
+<pad name="VCC" x="0" y="-6" drill="1.1" diameter="3"/>
+<wire x1="-4.75" y1="6" x2="-4.75" y2="-7.2" width="0.127" layer="21"/>
+<wire x1="-4.75" y1="-7.2" x2="4.75" y2="-7.2" width="0.127" layer="21"/>
+<wire x1="4.75" y1="-7.2" x2="4.75" y2="6" width="0.127" layer="21"/>
+<wire x1="4.75" y1="6" x2="-4.75" y2="6" width="0.127" layer="21"/>
+<pad name="GND" x="0" y="0" drill="3.3" diameter="5" rot="R180"/>
+<pad name="GND-BREAKER@1" x="-4.826" y="-4.222" drill="2.159" diameter="3"/>
+<pad name="GND-BREAKER@3" x="4.699" y="-3.968" drill="2.159" diameter="3"/>
+<pad name="GND-BREAKE@2" x="-4.699" y="0.477" drill="2.159" diameter="3"/>
+<pad name="GND-BREAKER@4" x="4.699" y="0.477" drill="2.159" diameter="3"/>
 </package>
 <package name="M04339A0">
 <hole x="0" y="0" drill="1.6"/>
@@ -13981,6 +14011,25 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pad name="GND@2" x="-3.2" y="-6.5" drill="1.6" shape="square"/>
 <pad name="GND@3" x="3.3" y="-6.5" drill="1.6" shape="square"/>
 <pad name="VCC" x="0" y="-9" drill="2" shape="square"/>
+</package>
+<package name="1210">
+<smd name="P$1" x="-1.5" y="0" dx="1" dy="2.5" layer="1"/>
+<smd name="P$2" x="1.5" y="0" dx="1" dy="2.5" layer="1"/>
+<wire x1="-2" y1="1.308" x2="2" y2="1.308" width="0.127" layer="21"/>
+<wire x1="2" y1="1.308" x2="2" y2="-1.308" width="0.127" layer="21"/>
+<wire x1="2" y1="-1.308" x2="-2" y2="-1.308" width="0.127" layer="21"/>
+<wire x1="-2" y1="-1.308" x2="-2" y2="1.308" width="0.127" layer="21"/>
+<text x="-2.01421875" y="1.56718125" size="0.8128" layer="25">&gt;NAME</text>
+<text x="-2.032" y="-2.286" size="0.8128" layer="27">&gt;VALUE</text>
+</package>
+<package name="4UCON-DC">
+<pad name="VCC" x="5.5" y="0" drill="1.5" shape="square" rot="R90"/>
+<wire x1="-5.5" y1="2.5" x2="5.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="5.5" y1="2.5" x2="5.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="5.5" y1="-2.5" x2="-5.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-5.5" y1="-2.5" x2="-5.5" y2="2.5" width="0.127" layer="21"/>
+<pad name="GND1" x="0.5" y="0" drill="1.5" shape="square" rot="R90"/>
+<pad name="GND2" x="2.6" y="-2.8" drill="1.5" shape="square" rot="R90"/>
 </package>
 </packages>
 <symbols>
@@ -14039,7 +14088,16 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <gate name="G$1" symbol="POLYSWITCH" x="0" y="0"/>
 </gates>
 <devices>
-<device name="MF-NSML1" package="1206">
+<device name="1206" package="1206">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1210" package="1210">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
@@ -14055,10 +14113,30 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <gate name="G$1" symbol="DC-JACK" x="0" y="0"/>
 </gates>
 <devices>
-<device name="MA04339A0" package="M04339A0">
+<device name="4UCON-DC" package="4UCON-DC">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND1"/>
+<connect gate="G$1" pin="GNDBREAK" pad="GND2"/>
+<connect gate="G$1" pin="PWR" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="M04339A0" package="M04339A0">
 <connects>
 <connect gate="G$1" pin="GND" pad="GND@2"/>
 <connect gate="G$1" pin="GNDBREAK" pad="GND@3"/>
+<connect gate="G$1" pin="PWR" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="2DC-G232-B66" package="2DC-G213-B66">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="GNDBREAK" pad="GND-BREAKE@2 GND-BREAKER@1 GND-BREAKER@3 GND-BREAKER@4"/>
 <connect gate="G$1" pin="PWR" pad="VCC"/>
 </connects>
 <technologies>
@@ -14514,7 +14592,7 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <part name="R14" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="0.4"/>
 <part name="R15" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="0.4"/>
 <part name="GND20" library="FaBo-etc" deviceset="GND" device=""/>
-<part name="P1" library="FaBo-Supply" deviceset="POLYSWITCH" device="MF-NSML1"/>
+<part name="P1" library="FaBo-Supply" deviceset="POLYSWITCH" device="1206"/>
 <part name="R16" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="10K"/>
 <part name="GND22" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="GND23" library="FaBo-etc" deviceset="GND" device=""/>
@@ -14529,10 +14607,10 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <part name="R20" library="FaBo-Resistors" deviceset="RESISTOR" device="-0402" value="10K"/>
 <part name="R21" library="FaBo-Resistors" deviceset="RESISTOR" device="-0402" value="10K"/>
 <part name="R22" library="FaBo-Resistors" deviceset="RESISTOR" device="-0402" value="10K"/>
-<part name="A4" library="FaBo-Capacitor" deviceset="CAPACITOR-ALUMIN" device="_H13"/>
 <part name="M1" library="FaBo-Transistor" deviceset="AOD417" device=""/>
-<part name="P2" library="FaBo-Supply" deviceset="DC-JACK" device="MA04339A0"/>
+<part name="P2" library="FaBo-Supply" deviceset="DC-JACK" device="2DC-G232-B66"/>
 <part name="SUPPLY1" library="FaBo-etc" deviceset="5V" device=""/>
+<part name="A4" library="FaBo-Capacitor" deviceset="CAPACITOR-ALUMIN" device="_D10"/>
 </parts>
 <sheets>
 <sheet>
@@ -14680,10 +14758,10 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <instance part="R20" gate="G$1" x="71.12" y="76.2" rot="R90"/>
 <instance part="R21" gate="G$1" x="76.2" y="73.66" rot="R90"/>
 <instance part="R22" gate="G$1" x="81.28" y="71.12" rot="R90"/>
-<instance part="A4" gate="G$1" x="299.72" y="58.42" rot="R90"/>
 <instance part="M1" gate="G$1" x="363.22" y="53.34"/>
 <instance part="P2" gate="G$1" x="322.58" y="50.8"/>
 <instance part="SUPPLY1" gate="5V" x="101.6" y="147.32"/>
+<instance part="A4" gate="G$1" x="299.72" y="58.42" rot="R90"/>
 </instances>
 <busses>
 </busses>
