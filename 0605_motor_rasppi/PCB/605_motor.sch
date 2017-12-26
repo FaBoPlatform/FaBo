@@ -14686,6 +14686,10 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <part name="SUPPLY1" library="FaBo-etc" deviceset="5V" device=""/>
 <part name="P2" library="FaBo-Supply" deviceset="DC-JACK" device="M04339A0"/>
 <part name="A5" library="FaBo-Capacitor" deviceset="CAPACITOR-ALUMIN" device="_D12_5"/>
+<part name="GPIO28S" library="FaBo-Template" deviceset="FABO_BRICK_3PIN" device="-HEADER"/>
+<part name="GND42" library="FaBo-etc" deviceset="GND" device=""/>
+<part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="R23" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="220"/>
 </parts>
 <sheets>
 <sheet>
@@ -14837,6 +14841,10 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <instance part="SUPPLY1" gate="5V" x="101.6" y="147.32"/>
 <instance part="P2" gate="G$1" x="322.58" y="50.8"/>
 <instance part="A5" gate="G$1" x="299.72" y="58.42" rot="R90"/>
+<instance part="GPIO28S" gate="G$1" x="309.88" y="111.76" rot="R90"/>
+<instance part="GND42" gate="GND" x="322.58" y="111.76"/>
+<instance part="P+5" gate="VCC" x="309.88" y="127"/>
+<instance part="R23" gate="G$1" x="129.54" y="119.38"/>
 </instances>
 <busses>
 </busses>
@@ -15158,6 +15166,13 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <pinref part="GND41" gate="GND" pin="GND"/>
 <wire x1="81.28" y1="60.96" x2="81.28" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="R22" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="GPIO28S" gate="G$1" pin="GND"/>
+<wire x1="314.96" y1="119.38" x2="314.96" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="314.96" y1="124.46" x2="322.58" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="322.58" y1="124.46" x2="322.58" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="GND42" gate="GND" pin="GND"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -15938,6 +15953,11 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <wire x1="375.92" y1="53.34" x2="375.92" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
 </segment>
+<segment>
+<pinref part="GPIO28S" gate="G$1" pin="VCC"/>
+<wire x1="309.88" y1="119.38" x2="309.88" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="P+5" gate="VCC" pin="VCC"/>
+</segment>
 </net>
 <net name="3V3" class="0">
 <segment>
@@ -16035,6 +16055,25 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <pinref part="P1" gate="G$1" pin="2"/>
 <pinref part="M1" gate="G$1" pin="D"/>
 <wire x1="350.52" y1="53.34" x2="355.6" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="PWM5" class="0">
+<segment>
+<pinref part="GPIO28S" gate="G$1" pin="I/O"/>
+<wire x1="304.8" y1="119.38" x2="304.8" y2="127" width="0.1524" layer="91"/>
+<label x="304.8" y="119.38" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="R23" gate="G$1" pin="2"/>
+<wire x1="134.62" y1="119.38" x2="142.24" y2="119.38" width="0.1524" layer="91"/>
+<label x="142.24" y="119.38" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LED5" class="0">
+<segment>
+<wire x1="116.84" y1="119.38" x2="127" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="R23" gate="G$1" pin="1"/>
+<pinref part="U$9" gate="G$1" pin="LED5"/>
 </segment>
 </net>
 </nets>
