@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.2">
+<eagle version="8.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -13254,8 +13255,59 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <circle x="0" y="0" radius="5" width="0.127" layer="21"/>
 <pad name="+" x="-2.5" y="0" drill="0.6" shape="square"/>
 <pad name="-" x="2.5" y="0" drill="0.6" shape="square"/>
-<text x="-3.81" y="5.08" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.81" y="-6.35" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-3.246121875" y="5.4483" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.36041875" y="-6.687821875" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="0" y1="4.97078125" x2="0" y2="4.3307" width="0.127" layer="21"/>
+<text x="1.361434375" y="1.12014375" size="2.54" layer="21">-</text>
+<wire x1="0" y1="4.231640625" x2="0" y2="-4.99871875" width="0.127" layer="21"/>
+<wire x1="0.111759375" y1="4.88188125" x2="0.69088125" y2="4.88188125" width="0.127" layer="21"/>
+<wire x1="0.69088125" y1="4.88188125" x2="0.69088125" y2="4.866640625" width="0.127" layer="21"/>
+<wire x1="1.140459375" y1="4.79551875" x2="0.08381875" y2="4.79551875" width="0.127" layer="21"/>
+<wire x1="0.08381875" y1="4.79551875" x2="0.08381875" y2="4.78281875" width="0.127" layer="21"/>
+<wire x1="0.015240625" y1="4.7244" x2="1.63321875" y2="4.7244" width="0.127" layer="21"/>
+<wire x1="1.63321875" y1="4.7244" x2="1.63321875" y2="4.612640625" width="0.127" layer="21"/>
+<wire x1="1.63321875" y1="4.612640625" x2="0.04318125" y2="4.612640625" width="0.127" layer="21"/>
+<wire x1="0.04318125" y1="4.612640625" x2="0.04318125" y2="4.569459375" width="0.127" layer="21"/>
+<wire x1="0.04318125" y1="4.569459375" x2="0.05588125" y2="4.569459375" width="0.127" layer="21"/>
+<wire x1="0.05588125" y1="4.569459375" x2="0.05588125" y2="4.52881875" width="0.127" layer="21"/>
+<wire x1="0.05588125" y1="4.52881875" x2="1.73228125" y2="4.52881875" width="0.127" layer="21"/>
+<wire x1="1.98628125" y1="4.52881875" x2="1.73228125" y2="4.52881875" width="0.127" layer="21"/>
+<wire x1="1.73228125" y1="4.52881875" x2="1.73228125" y2="4.569459375" width="0.127" layer="21"/>
+<wire x1="1.73228125" y1="4.569459375" x2="1.98628125" y2="4.569459375" width="0.127" layer="21"/>
+<wire x1="1.98628125" y1="4.569459375" x2="2.212340625" y2="4.3434" width="0.127" layer="21"/>
+<wire x1="2.212340625" y1="4.3434" x2="0.1143" y2="4.3434" width="0.127" layer="21"/>
+<wire x1="0.1143" y1="4.3434" x2="0.08381875" y2="4.37388125" width="0.127" layer="21"/>
+<wire x1="0.08381875" y1="4.37388125" x2="0.08381875" y2="4.445" width="0.127" layer="21"/>
+<wire x1="0.08381875" y1="4.445" x2="0.07111875" y2="4.4577" width="0.127" layer="21"/>
+<wire x1="0.07111875" y1="4.4577" x2="2.237740625" y2="4.4577" width="0.127" layer="21"/>
+<wire x1="2.237740625" y1="4.4577" x2="2.37998125" y2="4.315459375" width="0.127" layer="21"/>
+<wire x1="2.37998125" y1="4.315459375" x2="0.015240625" y2="4.315459375" width="0.127" layer="21"/>
+<wire x1="0.015240625" y1="4.315459375" x2="0" y2="4.3307" width="0.127" layer="21"/>
+<wire x1="0" y1="4.3307" x2="0" y2="4.231640625" width="0.127" layer="21"/>
+<wire x1="0" y1="4.231640625" x2="2.60858125" y2="4.231640625" width="0.127" layer="21"/>
+<wire x1="2.60858125" y1="4.231640625" x2="2.62128125" y2="4.218940625" width="0.127" layer="21"/>
+<wire x1="2.62128125" y1="4.218940625" x2="2.677159375" y2="4.218940625" width="0.127" layer="21"/>
+<wire x1="2.677159375" y1="4.218940625" x2="2.74828125" y2="4.14781875" width="0.127" layer="21"/>
+<wire x1="2.74828125" y1="4.14781875" x2="0.04318125" y2="4.14781875" width="0.127" layer="21"/>
+<wire x1="0.04318125" y1="4.14781875" x2="0.04318125" y2="4.03351875" width="0.127" layer="21"/>
+<wire x1="0.04318125" y1="4.03351875" x2="2.83464375" y2="4.03351875" width="0.127" layer="21"/>
+<wire x1="2.83464375" y1="4.03351875" x2="2.87528125" y2="3.99288125" width="0.127" layer="21"/>
+<wire x1="2.87528125" y1="3.99288125" x2="2.9845" y2="3.99288125" width="0.127" layer="21"/>
+<wire x1="2.9845" y1="3.99288125" x2="3.0988" y2="3.87858125" width="0.127" layer="21"/>
+<wire x1="3.0988" y1="3.87858125" x2="0.015240625" y2="3.87858125" width="0.127" layer="21"/>
+<wire x1="0.015240625" y1="3.87858125" x2="0.015240625" y2="3.9090625" width="0.127" layer="21"/>
+<wire x1="0.015240625" y1="3.9090625" x2="0.07111875" y2="3.964940625" width="0.127" layer="21"/>
+<wire x1="0.07111875" y1="3.964940625" x2="2.733040625" y2="3.964940625" width="0.127" layer="21"/>
+<wire x1="2.733040625" y1="3.964940625" x2="2.76098125" y2="3.99288125" width="0.127" layer="21"/>
+</package>
+<package name="D12.5">
+<circle x="0.027940625" y="0.254" radius="6.25" width="0.127" layer="21"/>
+<pad name="+" x="-2.472059375" y="0.254" drill="0.6" shape="square"/>
+<pad name="-" x="2.527940625" y="0.254" drill="0.6" shape="square"/>
+<text x="-3.21818125" y="6.8605375" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.2791375" y="-7.9603625" size="1.27" layer="27">&gt;VALUE</text>
+<text x="1.389375" y="2.501903125" size="2.54" layer="21">-</text>
+<wire x1="0.027940625" y1="6.43381875" x2="0.027940625" y2="-5.95121875" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -13380,6 +13432,15 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </technologies>
 </device>
 <device name="_D10" package="D10">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_D12_5" package="D12.5">
 <connects>
 <connect gate="G$1" pin="+" pad="+"/>
 <connect gate="G$1" pin="-" pad="-"/>
@@ -13929,12 +13990,12 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <packages>
 </packages>
 <symbols>
-<symbol name="GND">
+<symbol name="GND" urn="urn:adsk.eagle:symbol:26925/1" library_version="1">
 <wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
 <text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 </symbol>
-<symbol name="VCC">
+<symbol name="VCC" urn="urn:adsk.eagle:symbol:26928/1" library_version="1">
 <wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
 <text x="-2.54" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
@@ -13942,7 +14003,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="GND" prefix="GND">
+<deviceset name="GND" urn="urn:adsk.eagle:component:26954/1" prefix="GND" library_version="1">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="1" symbol="GND" x="0" y="0"/>
@@ -13955,7 +14016,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="VCC" prefix="P+">
+<deviceset name="VCC" urn="urn:adsk.eagle:component:26957/1" prefix="P+" library_version="1">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="VCC" symbol="VCC" x="0" y="0"/>
@@ -13987,31 +14048,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <text x="-2.01421875" y="1.05918125" size="0.8128" layer="25">&gt;NAME</text>
 <text x="-2.032" y="-1.778" size="0.8128" layer="27">&gt;VALUE</text>
 </package>
-<package name="2DC-G213-B66">
-<hole x="0" y="3.25" drill="1.6"/>
-<pad name="VCC" x="0" y="-6" drill="1.1" diameter="3"/>
-<wire x1="-4.75" y1="6" x2="-4.75" y2="-7.2" width="0.127" layer="21"/>
-<wire x1="-4.75" y1="-7.2" x2="4.75" y2="-7.2" width="0.127" layer="21"/>
-<wire x1="4.75" y1="-7.2" x2="4.75" y2="6" width="0.127" layer="21"/>
-<wire x1="4.75" y1="6" x2="-4.75" y2="6" width="0.127" layer="21"/>
-<pad name="GND" x="0" y="0" drill="3.3" diameter="5" rot="R180"/>
-<pad name="GND-BREAKER@1" x="-4.826" y="-4.222" drill="2.159" diameter="3"/>
-<pad name="GND-BREAKER@3" x="4.699" y="-3.968" drill="2.159" diameter="3"/>
-<pad name="GND-BREAKE@2" x="-4.699" y="0.477" drill="2.159" diameter="3"/>
-<pad name="GND-BREAKER@4" x="4.699" y="0.477" drill="2.159" diameter="3"/>
-</package>
-<package name="M04339A0">
-<hole x="0" y="0" drill="1.6"/>
-<wire x1="-3.75" y1="3.5" x2="3.75" y2="3.5" width="0.127" layer="21"/>
-<wire x1="3.75" y1="3.5" x2="3.75" y2="-9" width="0.127" layer="21"/>
-<wire x1="3.75" y1="-9" x2="-3.75" y2="-9" width="0.127" layer="21"/>
-<wire x1="-3.75" y1="-9" x2="-3.75" y2="3.5" width="0.127" layer="21"/>
-<pad name="P$1" x="3.2" y="0" drill="1.6" shape="square"/>
-<pad name="P$2" x="-3.2" y="0" drill="1.6" shape="square"/>
-<pad name="GND@2" x="-3.2" y="-6.5" drill="1.6" shape="square"/>
-<pad name="GND@3" x="3.3" y="-6.5" drill="1.6" shape="square"/>
-<pad name="VCC" x="0" y="-9" drill="2" shape="square"/>
-</package>
 <package name="1210">
 <smd name="P$1" x="-1.5" y="0" dx="1" dy="2.5" layer="1"/>
 <smd name="P$2" x="1.5" y="0" dx="1" dy="2.5" layer="1"/>
@@ -14030,6 +14066,31 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="-5.5" y1="-2.5" x2="-5.5" y2="2.5" width="0.127" layer="21"/>
 <pad name="GND1" x="0.5" y="0" drill="1.5" shape="square" rot="R90"/>
 <pad name="GND2" x="2.6" y="-2.8" drill="1.5" shape="square" rot="R90"/>
+</package>
+<package name="M04339A0">
+<hole x="0" y="0" drill="1.6"/>
+<wire x1="-3.75" y1="3.5" x2="3.75" y2="3.5" width="0.127" layer="21"/>
+<wire x1="3.75" y1="3.5" x2="3.75" y2="-9" width="0.127" layer="21"/>
+<wire x1="3.75" y1="-9" x2="-3.75" y2="-9" width="0.127" layer="21"/>
+<wire x1="-3.75" y1="-9" x2="-3.75" y2="3.5" width="0.127" layer="21"/>
+<pad name="P$1" x="3.2" y="0" drill="1.6" shape="square"/>
+<pad name="P$2" x="-3.2" y="0" drill="1.6" shape="square"/>
+<pad name="GND@2" x="-3.2" y="-6.5" drill="1.6" shape="square"/>
+<pad name="GND@3" x="3.3" y="-6.5" drill="1.6" shape="square"/>
+<pad name="VCC" x="0" y="-9" drill="2" shape="square"/>
+</package>
+<package name="2DC-G213-B66">
+<hole x="0" y="3.25" drill="1.6"/>
+<pad name="VCC" x="0" y="-6" drill="1.1" diameter="3"/>
+<wire x1="-4.75" y1="6" x2="-4.75" y2="-7.2" width="0.127" layer="21"/>
+<wire x1="-4.75" y1="-7.2" x2="4.75" y2="-7.2" width="0.127" layer="21"/>
+<wire x1="4.75" y1="-7.2" x2="4.75" y2="6" width="0.127" layer="21"/>
+<wire x1="4.75" y1="6" x2="-4.75" y2="6" width="0.127" layer="21"/>
+<pad name="GND" x="0" y="0" drill="3.3" diameter="5" rot="R180"/>
+<pad name="GND-BREAKER@1" x="-4.826" y="-4.222" drill="2.159" diameter="3"/>
+<pad name="GND-BREAKER@3" x="4.699" y="-3.968" drill="2.159" diameter="3"/>
+<pad name="GND-BREAKE@2" x="-4.699" y="0.477" drill="2.159" diameter="3"/>
+<pad name="GND-BREAKER@4" x="4.699" y="0.477" drill="2.159" diameter="3"/>
 </package>
 </packages>
 <symbols>
@@ -14289,7 +14350,7 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <description>&lt;b&gt;Pin Header Connectors&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="1X02">
+<package name="1X02" urn="urn:adsk.eagle:footprint:22309/1" library_version="3">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
 <wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="21"/>
@@ -14313,7 +14374,7 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
 <rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
 </package>
-<package name="1X02/90">
+<package name="1X02/90" urn="urn:adsk.eagle:footprint:22310/1" library_version="3">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <wire x1="-2.54" y1="-1.905" x2="0" y2="-1.905" width="0.1524" layer="21"/>
 <wire x1="0" y1="-1.905" x2="0" y2="0.635" width="0.1524" layer="21"/>
@@ -14334,8 +14395,16 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <rectangle x1="0.889" y1="-2.921" x2="1.651" y2="-1.905" layer="21"/>
 </package>
 </packages>
+<packages3d>
+<package3d name="1X02" urn="urn:adsk.eagle:package:22435/2" type="model" library_version="3">
+<description>PIN HEADER</description>
+</package3d>
+<package3d name="1X02/90" urn="urn:adsk.eagle:package:22437/2" type="model" library_version="3">
+<description>PIN HEADER</description>
+</package3d>
+</packages3d>
 <symbols>
-<symbol name="PINHD2">
+<symbol name="PINHD2" urn="urn:adsk.eagle:symbol:22308/1" library_version="3">
 <wire x1="-6.35" y1="-2.54" x2="1.27" y2="-2.54" width="0.4064" layer="94"/>
 <wire x1="1.27" y1="-2.54" x2="1.27" y2="5.08" width="0.4064" layer="94"/>
 <wire x1="1.27" y1="5.08" x2="-6.35" y2="5.08" width="0.4064" layer="94"/>
@@ -14347,7 +14416,7 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="PINHD-1X2" prefix="JP" uservalue="yes">
+<deviceset name="PINHD-1X2" urn="urn:adsk.eagle:component:22516/3" prefix="JP" uservalue="yes" library_version="3">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="PINHD2" x="0" y="0"/>
@@ -14358,6 +14427,9 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22435/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -14367,6 +14439,9 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22437/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -14581,7 +14656,7 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <part name="MODE" library="FaBo-Switch" deviceset="SLIDE" device="-EG1218"/>
 <part name="3V1" library="FaBo-Supply" deviceset="3V3" device=""/>
 <part name="3V2" library="FaBo-Supply" deviceset="3V3" device=""/>
-<part name="N-RESET" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device=""/>
+<part name="N-RESET" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
 <part name="3V3" library="FaBo-Supply" deviceset="3V3" device=""/>
 <part name="R10" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="1K"/>
 <part name="R11" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="1K"/>
@@ -14608,9 +14683,9 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <part name="R21" library="FaBo-Resistors" deviceset="RESISTOR" device="-0402" value="10K"/>
 <part name="R22" library="FaBo-Resistors" deviceset="RESISTOR" device="-0402" value="10K"/>
 <part name="M1" library="FaBo-Transistor" deviceset="AOD417" device=""/>
-<part name="P2" library="FaBo-Supply" deviceset="DC-JACK" device="2DC-G232-B66"/>
 <part name="SUPPLY1" library="FaBo-etc" deviceset="5V" device=""/>
-<part name="A4" library="FaBo-Capacitor" deviceset="CAPACITOR-ALUMIN" device="_D10"/>
+<part name="P2" library="FaBo-Supply" deviceset="DC-JACK" device="M04339A0"/>
+<part name="A5" library="FaBo-Capacitor" deviceset="CAPACITOR-ALUMIN" device="_D12_5"/>
 </parts>
 <sheets>
 <sheet>
@@ -14759,9 +14834,9 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <instance part="R21" gate="G$1" x="76.2" y="73.66" rot="R90"/>
 <instance part="R22" gate="G$1" x="81.28" y="71.12" rot="R90"/>
 <instance part="M1" gate="G$1" x="363.22" y="53.34"/>
-<instance part="P2" gate="G$1" x="322.58" y="50.8"/>
 <instance part="SUPPLY1" gate="5V" x="101.6" y="147.32"/>
-<instance part="A4" gate="G$1" x="299.72" y="58.42" rot="R90"/>
+<instance part="P2" gate="G$1" x="322.58" y="50.8"/>
+<instance part="A5" gate="G$1" x="299.72" y="58.42" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -14985,7 +15060,7 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <wire x1="299.72" y1="48.26" x2="299.72" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="287.02" y1="53.34" x2="287.02" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="287.02" y1="48.26" x2="299.72" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="A4" gate="G$1" pin="-"/>
+<pinref part="A5" gate="G$1" pin="-"/>
 </segment>
 <segment>
 <pinref part="GND37" gate="1" pin="GND"/>
@@ -15808,7 +15883,7 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <wire x1="299.72" y1="66.04" x2="299.72" y2="63.6016" width="0.1524" layer="91"/>
 <wire x1="299.72" y1="66.04" x2="287.02" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="287.02" y1="66.04" x2="287.02" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="A4" gate="G$1" pin="+"/>
+<pinref part="A5" gate="G$1" pin="+"/>
 </segment>
 <segment>
 <pinref part="C3" gate="G$1" pin="2"/>
@@ -15969,9 +16044,19 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 </drawing>
 <compatibility>
 <note version="8.2" severity="warning">
-Since Version 8.2, Eagle supports online libraries. The ids
+Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
 with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports URNs for individual library
+assets (packages, symbols, and devices). The URNs of those assets
+will not be understood (or retained) with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports the association of 3D packages
+with devices in libraries, schematics, and board files. Those 3D
+packages will not be understood (or retained) with this version.
 </note>
 </compatibility>
 </eagle>
