@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.2">
+<eagle version="8.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -36343,26 +36344,26 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="GND39" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="SERIAL_SW" library="FaBo-Template" deviceset="FABO_BRICK_SERIAL" device="-B04B-PASK-1"/>
 <part name="U$4" library="FaBo-Terminal" deviceset="ML-1400-S1" device=""/>
-<part name="C3" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0402" value="1uF"/>
-<part name="C4" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0402" value="1uF"/>
-<part name="C5" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0402" value="10uF"/>
-<part name="C6" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0402" value="1uF"/>
-<part name="C7" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0402" value="10uF"/>
-<part name="C9" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0402" value="1uF"/>
-<part name="C8" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0402" value="1nF"/>
-<part name="C10" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0402" value="10uF"/>
-<part name="C11" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0402" value="1uF"/>
-<part name="C12" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0402" value="10uF"/>
-<part name="C13" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0402" value="10pF"/>
-<part name="C15" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0402" value="10pF"/>
-<part name="C14" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0402" value="1000pF"/>
-<part name="C1" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0402" value="1uF"/>
-<part name="C2" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0402" value="1uF"/>
-<part name="R3" library="FaBo-Resistors" deviceset="RESISTOR" device="-0402" value="4.7uF"/>
-<part name="R4" library="FaBo-Resistors" deviceset="RESISTOR" device="-0402" value="4.7uF"/>
-<part name="R2" library="FaBo-Resistors" deviceset="RESISTOR" device="-0402" value="4.7uF"/>
-<part name="R1" library="FaBo-Resistors" deviceset="RESISTOR" device="-0402" value="4.7uF"/>
 <part name="GND23" library="FaBo-Supply" deviceset="GND" device=""/>
+<part name="C7" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="10uF"/>
+<part name="C3" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="1uF"/>
+<part name="C5" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="10uF"/>
+<part name="C10" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="10uF"/>
+<part name="C12" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="10uF"/>
+<part name="C4" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="1uF"/>
+<part name="C6" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="1uF"/>
+<part name="C9" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="1uF"/>
+<part name="C11" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="1uF"/>
+<part name="C8" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="1nF"/>
+<part name="C15" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="10pF"/>
+<part name="C13" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="1000pF"/>
+<part name="C14" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="10pF"/>
+<part name="R1" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="4.7K"/>
+<part name="R2" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="4.7K"/>
+<part name="C1" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="1uF"/>
+<part name="C2" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="1uF"/>
+<part name="R3" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="4.7K"/>
+<part name="R4" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="4.7K"/>
 </parts>
 <sheets>
 <sheet>
@@ -36462,26 +36463,26 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <instance part="GND39" gate="G$1" x="172.72" y="53.34"/>
 <instance part="SERIAL_SW" gate="G$1" x="335.28" y="50.8" rot="R90"/>
 <instance part="U$4" gate="G$1" x="190.5" y="43.18"/>
-<instance part="C3" gate="G$1" x="76.2" y="83.82" rot="R90"/>
-<instance part="C4" gate="G$1" x="83.82" y="66.04" rot="R90"/>
-<instance part="C5" gate="G$1" x="91.44" y="66.04" rot="R90"/>
-<instance part="C6" gate="G$1" x="40.64" y="66.04" rot="R90"/>
+<instance part="GND23" gate="G$1" x="104.14" y="50.8"/>
 <instance part="C7" gate="G$1" x="33.02" y="66.04" rot="R90"/>
-<instance part="C9" gate="G$1" x="15.24" y="30.48" rot="R90"/>
-<instance part="C8" gate="G$1" x="93.98" y="20.32" rot="R90"/>
+<instance part="C3" gate="G$1" x="76.2" y="83.82" rot="R90"/>
+<instance part="C5" gate="G$1" x="91.44" y="66.04" rot="R90"/>
 <instance part="C10" gate="G$1" x="25.4" y="20.32" rot="R90"/>
-<instance part="C11" gate="G$1" x="30.48" y="20.32" rot="R90"/>
 <instance part="C12" gate="G$1" x="35.56" y="20.32" rot="R90"/>
-<instance part="C13" gate="G$1" x="172.72" y="60.96" rot="R90"/>
-<instance part="C15" gate="G$1" x="172.72" y="15.24" rot="R90"/>
-<instance part="C14" gate="G$1" x="144.78" y="38.1" rot="R90"/>
+<instance part="C4" gate="G$1" x="83.82" y="66.04" rot="R90"/>
+<instance part="C6" gate="G$1" x="40.64" y="66.04" rot="R90"/>
+<instance part="C9" gate="G$1" x="15.24" y="30.48" rot="R90"/>
+<instance part="C11" gate="G$1" x="30.48" y="20.32" rot="R90"/>
+<instance part="C8" gate="G$1" x="93.98" y="20.32" rot="R90"/>
+<instance part="C15" gate="G$1" x="172.72" y="60.96" rot="R90"/>
+<instance part="C13" gate="G$1" x="144.78" y="38.1" rot="R90"/>
+<instance part="C14" gate="G$1" x="172.72" y="15.24" rot="R90"/>
+<instance part="R1" gate="G$1" x="121.92" y="81.28" rot="R90"/>
+<instance part="R2" gate="G$1" x="134.62" y="81.28" rot="R90"/>
 <instance part="C1" gate="G$1" x="144.78" y="129.54" rot="R90"/>
 <instance part="C2" gate="G$1" x="195.58" y="129.54" rot="R90"/>
 <instance part="R3" gate="G$1" x="157.48" y="45.72"/>
 <instance part="R4" gate="G$1" x="157.48" y="30.48"/>
-<instance part="R2" gate="G$1" x="134.62" y="81.28" rot="R90"/>
-<instance part="R1" gate="G$1" x="121.92" y="81.28" rot="R90"/>
-<instance part="GND23" gate="G$1" x="104.14" y="50.8"/>
 </instances>
 <busses>
 </busses>
@@ -36861,8 +36862,8 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="83.82" y1="73.66" x2="83.82" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="73.66" x2="91.44" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="73.66" x2="91.44" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="C4" gate="G$1" pin="2"/>
 <pinref part="C5" gate="G$1" pin="2"/>
+<pinref part="C4" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -37046,8 +37047,8 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="40.64" y1="60.96" x2="40.64" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="60.96" x2="33.02" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="60.96" x2="33.02" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="C6" gate="G$1" pin="1"/>
 <pinref part="C7" gate="G$1" pin="1"/>
+<pinref part="C6" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="GND17" gate="G$1" pin="GND"/>
@@ -37055,8 +37056,8 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="83.82" y1="60.96" x2="83.82" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="60.96" x2="91.44" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="60.96" x2="91.44" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="C4" gate="G$1" pin="1"/>
 <pinref part="C5" gate="G$1" pin="1"/>
+<pinref part="C4" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <wire x1="93.98" y1="17.78" x2="93.98" y2="12.7" width="0.1524" layer="91"/>
@@ -37086,12 +37087,12 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <segment>
 <pinref part="GND39" gate="G$1" pin="GND"/>
 <wire x1="172.72" y1="53.34" x2="172.72" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="C13" gate="G$1" pin="1"/>
+<pinref part="C15" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="GND38" gate="G$1" pin="GND"/>
 <wire x1="172.72" y1="10.16" x2="172.72" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="C15" gate="G$1" pin="1"/>
+<pinref part="C14" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="E1" gate="G$1" pin="IC"/>
@@ -37153,8 +37154,8 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="40.64" y1="73.66" x2="40.64" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="71.12" x2="33.02" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="73.66" x2="40.64" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="C6" gate="G$1" pin="2"/>
 <pinref part="C7" gate="G$1" pin="2"/>
+<pinref part="C6" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="E1" gate="G$1" pin="DVDD"/>
@@ -37181,8 +37182,8 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="172.72" y1="71.12" x2="172.72" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="71.12" x2="152.4" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="71.12" x2="152.4" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="C15" gate="G$1" pin="2"/>
 <pinref part="C13" gate="G$1" pin="2"/>
-<pinref part="C14" gate="G$1" pin="2"/>
 <pinref part="R3" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -37201,8 +37202,8 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="152.4" y1="30.48" x2="152.4" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="25.4" x2="172.72" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="25.4" x2="172.72" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="C15" gate="G$1" pin="2"/>
-<pinref part="C14" gate="G$1" pin="1"/>
+<pinref part="C13" gate="G$1" pin="1"/>
+<pinref part="C14" gate="G$1" pin="2"/>
 <pinref part="R4" gate="G$1" pin="1"/>
 </segment>
 </net>
