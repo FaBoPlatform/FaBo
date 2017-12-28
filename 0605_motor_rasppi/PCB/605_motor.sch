@@ -14874,11 +14874,11 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <instance part="GND28" gate="GND" x="86.36" y="76.2"/>
 <instance part="GND29" gate="GND" x="50.8" y="86.36"/>
 <instance part="GND39" gate="GND" x="81.28" y="114.3"/>
-<instance part="R5" gate="G$1" x="129.54" y="134.62"/>
-<instance part="R6" gate="G$1" x="129.54" y="132.08"/>
-<instance part="R7" gate="G$1" x="129.54" y="129.54"/>
+<instance part="R5" gate="G$1" x="127" y="134.62"/>
+<instance part="R6" gate="G$1" x="134.62" y="132.08"/>
+<instance part="R7" gate="G$1" x="121.92" y="129.54"/>
 <instance part="R8" gate="G$1" x="129.54" y="127"/>
-<instance part="R9" gate="G$1" x="129.54" y="121.92"/>
+<instance part="R9" gate="G$1" x="121.92" y="121.92"/>
 <instance part="P+1" gate="VCC" x="360.68" y="83.82"/>
 <instance part="P+2" gate="VCC" x="299.72" y="73.66"/>
 <instance part="P+3" gate="VCC" x="294.64" y="177.8"/>
@@ -15898,21 +15898,21 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <net name="LED0" class="0">
 <segment>
 <pinref part="U$9" gate="G$1" pin="LED0"/>
-<wire x1="116.84" y1="134.62" x2="127" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="134.62" x2="124.46" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="LED1" class="0">
 <segment>
 <pinref part="U$9" gate="G$1" pin="LED1"/>
-<wire x1="116.84" y1="132.08" x2="127" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="132.08" x2="132.08" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="LED2" class="0">
 <segment>
 <pinref part="U$9" gate="G$1" pin="LED2"/>
-<wire x1="116.84" y1="129.54" x2="127" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="129.54" x2="119.38" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="R7" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -15926,14 +15926,14 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <net name="LED4" class="0">
 <segment>
 <pinref part="U$9" gate="G$1" pin="LED4"/>
-<wire x1="116.84" y1="121.92" x2="127" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="121.92" x2="119.38" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="R9" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="PWM0" class="0">
 <segment>
 <pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="134.62" y1="134.62" x2="142.24" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="134.62" x2="142.24" y2="134.62" width="0.1524" layer="91"/>
 <label x="142.24" y="134.62" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -15945,7 +15945,7 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <net name="PWM1" class="0">
 <segment>
 <pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="134.62" y1="132.08" x2="142.24" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="132.08" x2="142.24" y2="132.08" width="0.1524" layer="91"/>
 <label x="142.24" y="132.08" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -15957,7 +15957,7 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <net name="PWM2" class="0">
 <segment>
 <pinref part="R7" gate="G$1" pin="2"/>
-<wire x1="134.62" y1="129.54" x2="142.24" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="127" y1="129.54" x2="142.24" y2="129.54" width="0.1524" layer="91"/>
 <label x="142.24" y="129.54" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -15981,7 +15981,7 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <net name="PWM4" class="0">
 <segment>
 <pinref part="R9" gate="G$1" pin="2"/>
-<wire x1="134.62" y1="121.92" x2="142.24" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="127" y1="121.92" x2="142.24" y2="121.92" width="0.1524" layer="91"/>
 <label x="142.24" y="121.92" size="1.778" layer="95"/>
 </segment>
 <segment>
