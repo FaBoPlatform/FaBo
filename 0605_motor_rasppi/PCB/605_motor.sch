@@ -14073,10 +14073,10 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="3.75" y1="3.5" x2="3.75" y2="-9" width="0.127" layer="21"/>
 <wire x1="3.75" y1="-9" x2="-3.75" y2="-9" width="0.127" layer="21"/>
 <wire x1="-3.75" y1="-9" x2="-3.75" y2="3.5" width="0.127" layer="21"/>
-<pad name="P$1" x="3.2" y="0" drill="1.6" shape="square"/>
-<pad name="P$2" x="-3.2" y="0" drill="1.6" shape="square"/>
-<pad name="GND@2" x="-3.2" y="-6.5" drill="1.6" shape="square"/>
-<pad name="GND@3" x="3.3" y="-6.5" drill="1.6" shape="square"/>
+<pad name="ND2" x="3.2" y="0" drill="1.6" shape="square"/>
+<pad name="ND1" x="-3.2" y="0" drill="1.6" shape="square"/>
+<pad name="GND" x="-3.2" y="-6.5" drill="1.6" shape="square"/>
+<pad name="GNDBREAK" x="3.3" y="-6.5" drill="1.6" shape="square"/>
 <pad name="VCC" x="0" y="-9" drill="2" shape="square"/>
 </package>
 <package name="2DC-G213-B66">
@@ -14212,8 +14212,8 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </device>
 <device name="M04339A0" package="M04339A0">
 <connects>
-<connect gate="G$1" pin="GND" pad="GND@2"/>
-<connect gate="G$1" pin="GNDBREAK" pad="GND@3"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="GNDBREAK" pad="GNDBREAK"/>
 <connect gate="G$1" pin="PWR" pad="VCC"/>
 </connects>
 <technologies>
@@ -14774,7 +14774,7 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="R23" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="220"/>
 <part name="S1" library="FaBo-Supply" deviceset="STPS15L30C" device="" value="STPS15L30CB"/>
-<part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
+<part name="SUPPLY" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
 <part name="JP2" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X3" device="" package3d_urn="urn:adsk.eagle:package:22462/2"/>
 <part name="P+11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="R17" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="10K"/>
@@ -14933,7 +14933,7 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <instance part="P+5" gate="VCC" x="309.88" y="127"/>
 <instance part="R23" gate="G$1" x="129.54" y="119.38"/>
 <instance part="S1" gate="G$1" x="360.68" y="66.04" rot="R90"/>
-<instance part="JP1" gate="G$1" x="317.5" y="66.04" rot="R180"/>
+<instance part="SUPPLY" gate="G$1" x="317.5" y="66.04" rot="R180"/>
 <instance part="JP2" gate="A" x="317.5" y="88.9"/>
 <instance part="P+11" gate="VCC" x="289.56" y="96.52"/>
 <instance part="R17" gate="G$1" x="55.88" y="88.9" rot="R90"/>
@@ -15169,19 +15169,9 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 </segment>
 <segment>
 <pinref part="GND37" gate="1" pin="GND"/>
-<wire x1="345.44" y1="50.8" x2="345.44" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="330.2" y1="50.8" x2="345.44" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="345.44" y1="48.26" x2="345.44" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="345.44" y1="48.26" x2="330.2" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="345.44" y1="48.26" x2="345.44" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="P2" gate="G$1" pin="GNDBREAK"/>
 <pinref part="P2" gate="G$1" pin="GND"/>
-<pinref part="JP1" gate="G$1" pin="2"/>
-<wire x1="345.44" y1="43.18" x2="345.44" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="320.04" y1="66.04" x2="330.2" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="330.2" y1="66.04" x2="330.2" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="330.2" y1="71.12" x2="312.42" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="312.42" y1="71.12" x2="312.42" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="312.42" y1="43.18" x2="345.44" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$9" gate="G$1" pin="VSS"/>
@@ -16098,7 +16088,7 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <pinref part="P2" gate="G$1" pin="PWR"/>
 <wire x1="332.74" y1="53.34" x2="340.36" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="332.74" y1="53.34" x2="332.74" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="JP1" gate="G$1" pin="1"/>
+<pinref part="SUPPLY" gate="G$1" pin="1"/>
 <wire x1="332.74" y1="63.5" x2="320.04" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -16211,6 +16201,19 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <pinref part="U$10" gate="G$1" pin="A0"/>
 <pinref part="R24" gate="G$1" pin="1"/>
 <wire x1="330.2" y1="175.26" x2="337.82" y2="175.26" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$17" class="0">
+<segment>
+<wire x1="330.2" y1="50.8" x2="355.6" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="P2" gate="G$1" pin="GNDBREAK"/>
+<wire x1="355.6" y1="50.8" x2="355.6" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="355.6" y1="30.48" x2="312.42" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="SUPPLY" gate="G$1" pin="2"/>
+<wire x1="320.04" y1="66.04" x2="330.2" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="330.2" y1="66.04" x2="330.2" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="330.2" y1="71.12" x2="312.42" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="312.42" y1="71.12" x2="312.42" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
