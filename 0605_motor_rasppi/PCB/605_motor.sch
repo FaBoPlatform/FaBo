@@ -14768,7 +14768,7 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <part name="R22" library="FaBo-Resistors" deviceset="RESISTOR" device="-0402" value="10K"/>
 <part name="SUPPLY1" library="FaBo-etc" deviceset="5V" device=""/>
 <part name="P2" library="FaBo-Supply" deviceset="DC-JACK" device="M04339A0"/>
-<part name="A5" library="FaBo-Capacitor" deviceset="CAPACITOR-ALUMIN" device="_D12_5"/>
+<part name="A5" library="FaBo-Capacitor" deviceset="CAPACITOR-ALUMIN" device="_D12_5" value="1000uF"/>
 <part name="GPIO28S" library="FaBo-Template" deviceset="FABO_BRICK_3PIN" device="-HEADER"/>
 <part name="GND42" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
