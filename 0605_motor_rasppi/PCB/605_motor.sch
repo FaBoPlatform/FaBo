@@ -13302,8 +13302,8 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </package>
 <package name="D12.5">
 <circle x="0.027940625" y="0.254" radius="6.25" width="0.127" layer="21"/>
-<pad name="+" x="-2.472059375" y="0.254" drill="0.6" shape="square"/>
-<pad name="-" x="2.527940625" y="0.254" drill="0.6" shape="square"/>
+<pad name="+" x="-2.472059375" y="0.254" drill="0.8" diameter="1.4224" shape="square"/>
+<pad name="-" x="2.527940625" y="0.254" drill="0.8" diameter="1.4224" shape="square"/>
 <text x="-3.21818125" y="6.8605375" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.2791375" y="-7.9603625" size="1.27" layer="27">&gt;VALUE</text>
 <text x="1.389375" y="2.501903125" size="2.54" layer="21">-</text>
