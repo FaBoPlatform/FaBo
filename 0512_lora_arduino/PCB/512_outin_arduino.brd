@@ -193,7 +193,7 @@
 <text x="45.1" y="14.4" size="0.8128" layer="21" font="vector" ratio="12" rot="R180" align="center-left">GND</text>
 <text x="21.895" y="7.95" size="2.1844" layer="21" font="vector" ratio="15">#512</text>
 <rectangle x1="39.37" y1="0" x2="44.45" y2="3.937" layer="21"/>
-<rectangle x1="39.37" y1="0" x2="44.45" y2="3.937" layer="22"/>
+<rectangle x1="39.37" y1="0" x2="44.45" y2="3.937" layer="21"/>
 <rectangle x1="25.146" y1="49.657" x2="27.686" y2="53.34" layer="22"/>
 <rectangle x1="25.146" y1="49.657" x2="27.686" y2="53.34" layer="21"/>
 <text x="50.8" y="0.889" size="0.6096" layer="21" font="vector" rot="R180" align="bottom-center">A0</text>
@@ -9523,8 +9523,8 @@ design rules under a new name.</description>
 <wire x1="27" y1="20.5" x2="35" y2="12.5" width="0.1524" layer="1"/>
 <wire x1="37.5" y1="12.5" x2="37.6" y2="12.4" width="0.1524" layer="16"/>
 <wire x1="27" y1="20.5" x2="26.67" y2="20.955" width="0.1524" layer="1"/>
-<wire x1="34.5" y1="27" x2="32" y2="29.5" width="0.1524" layer="1"/>
-<wire x1="34.5" y1="17.5" x2="34.5" y2="27" width="0.1524" layer="1"/>
+<wire x1="34.5" y1="28.1" x2="32" y2="29.5" width="0.1524" layer="1"/>
+<wire x1="34.5" y1="17.5" x2="34.5" y2="28.1" width="0.1524" layer="1"/>
 <wire x1="35" y1="17" x2="34.5" y2="17.5" width="0.1524" layer="1"/>
 <wire x1="35" y1="12.5" x2="35" y2="17" width="0.1524" layer="1"/>
 <via x="45" y="41.5" extent="1-16" drill="0.3048"/>
