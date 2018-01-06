@@ -55,6 +55,8 @@
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -15616,9 +15618,22 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="FaBo-Connetor">
+<library name="FaBo-Antena">
 <packages>
-<package name="HIROSE-UF.L">
+<package name="SMA–J–P–H–RA–TH1">
+<pad name="SIG" x="0" y="0" drill="1.27" shape="square"/>
+<pad name="GND@2" x="2.665" y="2.665" drill="1.6" shape="square"/>
+<pad name="GND@4" x="2.665" y="-2.665" drill="1.6" shape="square"/>
+<pad name="GND@3" x="-2.665" y="-2.665" drill="1.6" shape="square"/>
+<pad name="GND@1" x="-2.665" y="2.665" drill="1.6" shape="square"/>
+<wire x1="-3.5" y1="3.5" x2="-3.5" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="-3.5" x2="3.5" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="3.5" y1="-3.5" x2="3.5" y2="3.5" width="0.127" layer="21"/>
+<wire x1="3.5" y1="3.5" x2="-3.5" y2="3.5" width="0.127" layer="21"/>
+<text x="-3.81" y="4.2291" size="0.8128" layer="21">&gt;NAME</text>
+<text x="-3.81" y="-4.975859375" size="0.8128" layer="27">&gt;VALUE</text>
+</package>
+<package name="HIROSE-UF-L">
 <smd name="GND@1" x="-1.5" y="0" dx="2.2" dy="1" layer="1" rot="R90"/>
 <smd name="GND@2" x="1.5" y="0" dx="2.2" dy="1" layer="1" rot="R90"/>
 <smd name="SIG" x="0" y="-1.5" dx="1" dy="1" layer="1"/>
@@ -15626,25 +15641,40 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="1.3" y1="1.3" x2="1.3" y2="-1.3" width="0.127" layer="21"/>
 <wire x1="1.3" y1="-1.3" x2="-1.3" y2="-1.3" width="0.127" layer="21"/>
 <wire x1="-1.3" y1="-1.3" x2="-1.3" y2="1.3" width="0.127" layer="21"/>
+<text x="-1.32588125" y="1.800859375" size="0.8128" layer="25">&gt;NAME</text>
+<text x="-1.35128125" y="-3.070859375" size="0.8128" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
-<symbol name="HIROSE-U.FL">
-<pin name="GND" x="-7.62" y="2.54" length="middle"/>
-<pin name="SIG" x="-7.62" y="-2.54" length="middle"/>
-<wire x1="-2.54" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<symbol name="ANTENA">
+<pin name="SIG" x="-2.54" y="0" visible="pad" length="middle" direction="pas" rot="R90"/>
+<pin name="GND" x="2.54" y="0" visible="pad" length="middle" direction="pas" rot="R90"/>
+<wire x1="0" y1="12.7" x2="-2.54" y2="10.16" width="0.2032" layer="94"/>
+<wire x1="-2.54" y1="10.16" x2="2.54" y2="10.16" width="0.2032" layer="94"/>
+<wire x1="2.54" y1="10.16" x2="0" y2="12.7" width="0.2032" layer="94"/>
+<wire x1="0" y1="12.7" x2="0" y2="5.08" width="0.2032" layer="94"/>
+<wire x1="0" y1="5.08" x2="-2.54" y2="5.08" width="0.2032" layer="94"/>
+<wire x1="0" y1="5.08" x2="2.54" y2="5.08" width="0.2032" layer="94"/>
+<text x="-2.032" y="13.462" size="1.27" layer="95">&gt;NAME</text>
+<text x="3.556" y="9.906" size="1.27" layer="96" rot="R270">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="HIROSE-U.FL" prefix="UF" uservalue="yes">
+<deviceset name="ANTENA" prefix="ANT" uservalue="yes">
 <gates>
-<gate name="G$1" symbol="HIROSE-U.FL" x="0" y="0"/>
+<gate name="G$1" symbol="ANTENA" x="0" y="-2.54"/>
 </gates>
 <devices>
-<device name="" package="HIROSE-UF.L">
+<device name="_SMA-J-P-H-RA-TH1" package="SMA–J–P–H–RA–TH1">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND@1 GND@2 GND@3 GND@4"/>
+<connect gate="G$1" pin="SIG" pad="SIG"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_HIROSE-UF-L" package="HIROSE-UF-L">
 <connects>
 <connect gate="G$1" pin="GND" pad="GND@1 GND@2"/>
 <connect gate="G$1" pin="SIG" pad="SIG"/>
@@ -15773,8 +15803,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="C8" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603_NARROW" value="0.1uF"/>
 <part name="GND17" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="L1" library="FaBo-Coil" deviceset="COIL" device="-0603"/>
-<part name="UF1" library="FaBo-Connetor" deviceset="HIROSE-U.FL" device=""/>
-<part name="GND18" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="U$3" library="FaBo-LoRa" deviceset="CMWX1ZZABZ" device=""/>
 <part name="C9" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603_NARROW" value="10uF"/>
 <part name="GND20" library="FaBo-Supply" deviceset="GND" device=""/>
@@ -15788,6 +15816,10 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="R10" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603-NARROW" value="10k"/>
 <part name="GND32" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="GND37" library="FaBo-Supply" deviceset="GND" device=""/>
+<part name="ANT1" library="FaBo-Antena" deviceset="ANTENA" device="_HIROSE-UF-L"/>
+<part name="ANT2" library="FaBo-Antena" deviceset="ANTENA" device="_SMA-J-P-H-RA-TH1"/>
+<part name="GND18" library="FaBo-Supply" deviceset="GND" device=""/>
+<part name="GND38" library="FaBo-Supply" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -15808,7 +15840,8 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <text x="15.24" y="45.72" size="2.54" layer="95">Debug</text>
 <text x="12.7" y="83.82" size="2.54" layer="94">TX</text>
 <text x="55.88" y="83.82" size="2.54" layer="94">RX</text>
-<text x="203.2" y="144.78" size="3.81" layer="94">Reset Button</text>
+<text x="203.2" y="144.78" size="2.54" layer="97">Reset Button</text>
+<text x="243.84" y="144.78" size="2.54" layer="97">ANTENNA</text>
 </plain>
 <instances>
 <instance part="U$10" gate="G$1" x="345.44" y="5.08"/>
@@ -15917,8 +15950,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <instance part="C8" gate="G$1" x="144.78" y="40.64" rot="R180"/>
 <instance part="GND17" gate="G$1" x="152.4" y="38.1"/>
 <instance part="L1" gate="G$1" x="132.08" y="45.72" rot="R90"/>
-<instance part="UF1" gate="G$1" x="111.76" y="38.1" rot="R180"/>
-<instance part="GND18" gate="G$1" x="129.54" y="35.56" rot="R90"/>
 <instance part="U$3" gate="G$1" x="152.4" y="106.68"/>
 <instance part="C9" gate="G$1" x="127" y="162.56" rot="R180"/>
 <instance part="GND20" gate="G$1" x="139.7" y="142.24" rot="R180"/>
@@ -15932,6 +15963,10 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <instance part="R10" gate="G$1" x="203.2" y="91.44"/>
 <instance part="GND32" gate="G$1" x="134.62" y="60.96"/>
 <instance part="GND37" gate="G$1" x="129.54" y="60.96"/>
+<instance part="ANT1" gate="G$1" x="251.46" y="124.46"/>
+<instance part="ANT2" gate="G$1" x="266.7" y="124.46"/>
+<instance part="GND18" gate="G$1" x="254" y="111.76"/>
+<instance part="GND38" gate="G$1" x="269.24" y="111.76"/>
 </instances>
 <busses>
 </busses>
@@ -16630,11 +16665,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="147.32" y1="40.64" x2="152.4" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="UF1" gate="G$1" pin="GND"/>
-<wire x1="119.38" y1="35.56" x2="129.54" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="GND18" gate="G$1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="C1" gate="G$1" pin="2"/>
 <pinref part="GND16" gate="G$1" pin="GND"/>
 <wire x1="121.92" y1="147.32" x2="116.84" y2="147.32" width="0.1524" layer="91"/>
@@ -16713,6 +16743,16 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pinref part="U$3" gate="G$1" pin="GND@25"/>
 <wire x1="129.54" y1="63.5" x2="129.54" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="GND37" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="GND18" gate="G$1" pin="GND"/>
+<pinref part="ANT1" gate="G$1" pin="GND"/>
+<wire x1="254" y1="111.76" x2="254" y2="124.46" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="ANT2" gate="G$1" pin="GND"/>
+<pinref part="GND38" gate="G$1" pin="GND"/>
+<wire x1="269.24" y1="124.46" x2="269.24" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="A4/SDA" class="0">
@@ -16856,14 +16896,24 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="137.16" y1="53.34" x2="132.08" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="SIG" class="0">
 <segment>
-<pinref part="UF1" gate="G$1" pin="SIG"/>
 <pinref part="L1" gate="G$1" pin="1"/>
 <wire x1="119.38" y1="40.64" x2="132.08" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="40.64" x2="132.08" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="C8" gate="G$1" pin="2"/>
 <wire x1="132.08" y1="40.64" x2="139.7" y2="40.64" width="0.1524" layer="91"/>
+<label x="119.38" y="40.64" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="ANT1" gate="G$1" pin="SIG"/>
+<wire x1="248.92" y1="124.46" x2="248.92" y2="119.38" width="0.1524" layer="91"/>
+<label x="248.92" y="119.38" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="ANT2" gate="G$1" pin="SIG"/>
+<wire x1="264.16" y1="124.46" x2="264.16" y2="119.38" width="0.1524" layer="91"/>
+<label x="264.16" y="119.38" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="N$5" class="0">

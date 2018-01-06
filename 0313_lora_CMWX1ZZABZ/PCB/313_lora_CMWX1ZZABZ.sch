@@ -2435,7 +2435,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <sheets>
 <sheet>
 <plain>
-<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.0Beta1</text>
+<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.0A</text>
 <text x="5.08" y="60.96" size="3.81" layer="94">Reset Button</text>
 <text x="43.18" y="60.96" size="3.81" layer="94">Debug</text>
 <text x="5.08" y="116.84" size="2.54" layer="94">TX</text>
