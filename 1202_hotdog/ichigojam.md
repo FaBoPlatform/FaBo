@@ -282,7 +282,6 @@ OUT(1)ポートをANA(5)に切り替えて、２秒待つ。
 
 Reflector 接続ポートOUT(1)<br>
 Reflector 接続ポートBTN<br>
-Button　接続ポートIN(4) ※無くてもよい<br>
 
 ### ソースコード
 
@@ -294,8 +293,7 @@ Button　接続ポートIN(4) ※無くてもよい<br>
 50 IF A<X AND B>X PWM(2),100
 60 IF A>X AND B<X PWM(2),180
 70 IF A<X AND B<X PWM(2),140
-80 IF IN(4)=1 OUT(3),0:PWM(2),120:BEEP:END
-90 GOTO 40
+80 GOTO 40
 ~~~~
 説明
 
@@ -313,10 +311,6 @@ Button　接続ポートIN(4) ※無くてもよい<br>
 
 センサーの値によって前輪の向きを変える。
 
->80 IF IN(4)=1 OUT(3),0:PWM(2),140:BEEP:END
-
-ボタンが押されたら前進を停止し、前輪をまっすぐにし、ビープ音を鳴らして終了させる。※動作停止用で省略化
-
->90 GOTO 40
+>80 GOTO 40
 
 ４０行目に飛ぶ。（ループさせる）
