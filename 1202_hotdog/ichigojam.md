@@ -306,11 +306,11 @@ Reflector 接続ポートBTN<br>
 >40 A=ANA(0):B=ANA(5)
 
 変数Aと変数Bに左右のセンサー値を代入する。
-`
->50 IF A<X AND B>X PWM(2),100<br>
+
+>50 IF A<`<X AND B>`>X PWM(2),100<br>
 >60 IF A>X AND B<X PWM(2),180<br>
 >70 IF A<X AND B<X PWM(2),140
-`
+
 センサーの値によって前輪の向きを変える。
 
 >80 GOTO 40
