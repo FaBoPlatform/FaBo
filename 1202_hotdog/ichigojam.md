@@ -2,7 +2,9 @@
 
 # レベル１
 
-配線図|![](./img/ichigojam_lv1.png)
+配線図
+
+![](./img/ichigojam_lv1.png)
 
 モーターを前進・後退させます。
 
