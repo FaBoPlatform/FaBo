@@ -8,3 +8,4 @@ IchigoJam基本コマンド
 30 PRINT A
 40 LOCATE 10,5:PRINT "123"
 50 END
+----
