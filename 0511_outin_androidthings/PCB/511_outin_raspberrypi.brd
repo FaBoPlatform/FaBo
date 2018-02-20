@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.2">
+<eagle version="8.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="1.27" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
@@ -145,7 +146,7 @@
 <text x="18.05" y="40.875" size="1.27" layer="21" font="vector" ratio="12">for Things</text>
 <text x="17.95" y="38.435" size="1.27" layer="21" font="vector" ratio="12">Rev.1.0.0 B</text>
 <text x="27.8638" y="29.4894" size="0.8128" layer="21" font="vector" ratio="12" rot="R180" align="bottom-center">MADE IN JAPAN</text>
-<text x="18.05" y="45.82" size="2.54" layer="21" font="vector" ratio="12">#510</text>
+<text x="18.05" y="45.82" size="2.54" layer="21" font="vector" ratio="12">#511</text>
 <text x="27" y="10.25" size="0.8128" layer="21" font="vector" ratio="12" rot="R90" align="center-left">GND</text>
 <text x="25" y="10.25" size="0.8128" layer="21" font="vector" ratio="12" rot="R90" align="center-left">VCC</text>
 <text x="23" y="10.25" size="0.8128" layer="21" font="vector" ratio="12" rot="R90" align="center-left">I/O</text>
@@ -11164,10 +11165,11 @@ design rules under a new name.</description>
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
-<param name="checkGrid" value="0"/>
 <param name="checkAngle" value="0"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="0"/>
+<param name="checkStop" value="0"/>
+<param name="checkValues" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -12079,7 +12081,7 @@ design rules under a new name.</description>
 </drawing>
 <compatibility>
 <note version="8.2" severity="warning">
-Since Version 8.2, Eagle supports online libraries. The ids
+Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
 with this version.
 </note>
