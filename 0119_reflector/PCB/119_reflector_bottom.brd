@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.2">
+<eagle version="8.7.1">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
@@ -145,9 +146,10 @@
 <board>
 <plain>
 <text x="22.86" y="12.065" size="0.8128" layer="21" font="vector" ratio="12" rot="R90" align="top-center">MADE IN JAPAN</text>
-<text x="3.175" y="12.7" size="2.54" layer="21" font="vector" ratio="12" rot="R90" align="bottom-center">#119</text>
-<text x="5.08" y="8.255" size="1.27" layer="21" font="vector" ratio="12" rot="R90">Refrector</text>
-<text x="6.985" y="8.255" size="1.016" layer="21" font="vector" ratio="12" rot="R90">Rev.1.0.0</text>
+<text x="3.175" y="12.065" size="2.54" layer="21" font="vector" ratio="12" rot="R90" align="bottom-center">#119</text>
+<text x="5.08" y="7.62" size="1.27" layer="21" font="vector" ratio="12" rot="R90">Reflector</text>
+<text x="6.985" y="7.62" size="1.016" layer="21" font="vector" ratio="12" rot="R90">Rev.1.0.0 B</text>
+<text x="8.89" y="25.4" size="1.27" layer="22" font="vector" ratio="12" rot="MR180">BOTTOM</text>
 </plain>
 <libraries>
 <library name="FaBo-Template">
@@ -2828,10 +2830,11 @@ design rules under a new name.</description>
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
-<param name="checkGrid" value="0"/>
 <param name="checkAngle" value="0"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="0"/>
+<param name="checkStop" value="0"/>
+<param name="checkValues" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>

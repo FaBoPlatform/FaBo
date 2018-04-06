@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.2">
+<eagle version="8.7.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -33310,23 +33311,9 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="3.7" y1="2.2" x2="3.9" y2="2.1" width="0.127" layer="21"/>
 <wire x1="3.9" y1="2.1" x2="3.9" y2="2.2" width="0.127" layer="21"/>
 <wire x1="3.9" y1="2.1" x2="3.9" y2="1.7" width="0.127" layer="21"/>
-</package>
-<package name="LBR-127HLD-BOTTOM">
-<pad name="P$2" x="2.05" y="1.27" drill="0.8" shape="long"/>
-<pad name="P$1" x="2.05" y="-1.27" drill="0.8" shape="long"/>
-<pad name="P$4" x="-2.05" y="1.27" drill="0.8" shape="long"/>
-<pad name="P$3" x="-2.05" y="-1.27" drill="0.8" shape="long"/>
-<wire x1="-4" y1="2.25" x2="4" y2="2.25" width="0.127" layer="22"/>
-<wire x1="4" y1="2.25" x2="4" y2="-2.25" width="0.127" layer="22"/>
-<wire x1="4" y1="-2.25" x2="-4" y2="-2.25" width="0.127" layer="22"/>
-<wire x1="-4" y1="-2.25" x2="-4" y2="2.25" width="0.127" layer="22"/>
-<text x="-3.81" y="2.54" size="1.27" layer="25">&gt;NAME</text>
-<wire x1="4.0132" y1="-1.7272" x2="3.5306" y2="-2.1844" width="0.127" layer="22"/>
-<wire x1="3.5306" y1="-2.1844" x2="3.937" y2="-2.1844" width="0.127" layer="22"/>
-<wire x1="3.937" y1="-2.1844" x2="3.937" y2="-1.9558" width="0.127" layer="22"/>
-<wire x1="3.937" y1="-1.9558" x2="3.7338" y2="-2.1336" width="0.127" layer="22"/>
-<wire x1="3.7338" y1="-2.1336" x2="3.8862" y2="-2.1336" width="0.127" layer="22"/>
-<wire x1="3.7338" y1="-2.1336" x2="3.6322" y2="-2.1336" width="0.127" layer="22"/>
+<wire x1="3.5" y1="2.2" x2="3.6" y2="2.1" width="0.127" layer="21"/>
+<wire x1="3.6" y1="2.1" x2="3.7" y2="2" width="0.127" layer="21"/>
+<wire x1="3.3" y1="2.2" x2="3.6" y2="2.1" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -33408,17 +33395,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </gates>
 <devices>
 <device name="" package="LBR-127HLD">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-<connect gate="G$1" pin="3" pad="P$3"/>
-<connect gate="G$1" pin="4" pad="P$4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="BOTTOM" package="LBR-127HLD-BOTTOM">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
@@ -33599,18 +33575,19 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="U$2" library="FaBo-etc" deviceset="LOGO_OSHW" device="-M_BOTTOM"/>
 <part name="VCC1" library="FaBo-Supply" deviceset="VCC" device=""/>
 <part name="GND1" library="FaBo-Supply" deviceset="GND" device=""/>
+<part name="R" library="FaBo-Parts" deviceset="LBR-127HLD" device=""/>
 <part name="R1" library="FaBo-Resistors" deviceset="RESISTOR" device="-AXL-REGULAR" value="200"/>
 <part name="VCC2" library="FaBo-Supply" deviceset="VCC" device=""/>
 <part name="GND2" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="R2" library="FaBo-Resistors" deviceset="RESISTOR" device="-AXL-REGULAR" value="10K"/>
 <part name="VCC3" library="FaBo-Supply" deviceset="VCC" device=""/>
 <part name="GND3" library="FaBo-Supply" deviceset="GND" device=""/>
-<part name="R" library="FaBo-Parts" deviceset="LBR-127HLD" device="BOTTOM"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.0</text>
+<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.0 B</text>
+<text x="106.68" y="144.78" size="1.778" layer="94">LBR-127HLD</text>
 </plain>
 <instances>
 <instance part="J1" gate="G$1" x="109.22" y="101.6"/>
@@ -33619,13 +33596,13 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <instance part="U$2" gate="G$1" x="248.92" y="12.7"/>
 <instance part="VCC1" gate="G$1" x="129.54" y="104.14"/>
 <instance part="GND1" gate="G$1" x="121.92" y="93.98"/>
+<instance part="R" gate="G$1" x="114.3" y="137.16"/>
 <instance part="R1" gate="G$1" x="132.08" y="139.7"/>
 <instance part="VCC2" gate="G$1" x="144.78" y="149.86"/>
 <instance part="GND2" gate="G$1" x="129.54" y="127"/>
 <instance part="R2" gate="G$1" x="88.9" y="121.92"/>
 <instance part="VCC3" gate="G$1" x="81.28" y="127"/>
 <instance part="GND3" gate="G$1" x="91.44" y="152.4"/>
-<instance part="R" gate="G$1" x="114.3" y="137.16"/>
 </instances>
 <busses>
 </busses>
@@ -33658,36 +33635,36 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pinref part="GND1" gate="G$1" pin="GND"/>
 </segment>
 <segment>
+<pinref part="R" gate="G$1" pin="2"/>
 <wire x1="119.38" y1="134.62" x2="129.54" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="134.62" x2="129.54" y2="127" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="G$1" pin="GND"/>
-<pinref part="R" gate="G$1" pin="2"/>
 </segment>
 <segment>
+<pinref part="R" gate="G$1" pin="3"/>
 <wire x1="109.22" y1="139.7" x2="101.6" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="139.7" x2="101.6" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="G$1" pin="GND"/>
 <wire x1="101.6" y1="157.48" x2="91.44" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="157.48" x2="91.44" y2="152.4" width="0.1524" layer="91"/>
-<pinref part="R" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="N$1" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="129.54" y1="139.7" x2="119.38" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="R" gate="G$1" pin="1"/>
+<wire x1="129.54" y1="139.7" x2="119.38" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="I/O" class="0">
 <segment>
+<pinref part="R" gate="G$1" pin="4"/>
 <wire x1="109.22" y1="134.62" x2="101.6" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="134.62" x2="101.6" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="93.98" y1="121.92" x2="101.6" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="121.92" x2="111.76" y2="121.92" width="0.1524" layer="91"/>
 <label x="111.76" y="121.92" size="1.778" layer="95"/>
-<pinref part="R" gate="G$1" pin="4"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="I/O"/>

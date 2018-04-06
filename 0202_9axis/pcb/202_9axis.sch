@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.2">
+<eagle version="8.7.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -34080,136 +34081,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="FaBo-Mems">
-<description>&lt;h3&gt;FaBo MEMS&lt;/h3&gt;
-MEMS&lt;br&gt;
-&lt;br&gt;
-Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;br&gt;
-https://creativecommons.org/licenses/by-sa/4.0/</description>
-<packages>
-<package name="INVENSENSE-MPU9250">
-<smd name="1" x="-1.5" y="1" dx="0.6" dy="0.2" layer="1" roundness="100"/>
-<smd name="2" x="-1.5" y="0.6" dx="0.6" dy="0.2" layer="1" roundness="100"/>
-<smd name="3" x="-1.5" y="0.2" dx="0.6" dy="0.2" layer="1" roundness="100"/>
-<smd name="4" x="-1.5" y="-0.2" dx="0.6" dy="0.2" layer="1" roundness="100"/>
-<smd name="5" x="-1.5" y="-0.6" dx="0.6" dy="0.2" layer="1" roundness="100"/>
-<smd name="6" x="-1.5" y="-1" dx="0.6" dy="0.2" layer="1" roundness="100"/>
-<smd name="25" x="0" y="0" dx="1" dy="1" layer="1" roundness="30"/>
-<smd name="7" x="-1" y="-1.5" dx="0.6" dy="0.2" layer="1" roundness="100" rot="R90"/>
-<smd name="8" x="-0.6" y="-1.5" dx="0.6" dy="0.2" layer="1" roundness="100" rot="R90"/>
-<smd name="9" x="-0.2" y="-1.5" dx="0.6" dy="0.2" layer="1" roundness="100" rot="R90"/>
-<smd name="10" x="0.2" y="-1.5" dx="0.6" dy="0.2" layer="1" roundness="100" rot="R90"/>
-<smd name="11" x="0.6" y="-1.5" dx="0.6" dy="0.2" layer="1" roundness="100" rot="R90"/>
-<smd name="12" x="1" y="-1.5" dx="0.6" dy="0.2" layer="1" roundness="100" rot="R90"/>
-<smd name="13" x="1.5" y="-1" dx="0.6" dy="0.2" layer="1" roundness="100" rot="R180"/>
-<smd name="14" x="1.5" y="-0.6" dx="0.6" dy="0.2" layer="1" roundness="100" rot="R180"/>
-<smd name="15" x="1.5" y="-0.2" dx="0.6" dy="0.2" layer="1" roundness="100" rot="R180"/>
-<smd name="16" x="1.5" y="0.2" dx="0.6" dy="0.2" layer="1" roundness="99" rot="R180"/>
-<smd name="17" x="1.5" y="0.6" dx="0.6" dy="0.2" layer="1" roundness="100" rot="R180"/>
-<smd name="18" x="1.5" y="1" dx="0.6" dy="0.2" layer="1" roundness="100" rot="R180"/>
-<wire x1="-1.55" y1="1.55" x2="1.55" y2="1.55" width="0.1" layer="21"/>
-<wire x1="-1.55" y1="-1.55" x2="1.55" y2="-1.55" width="0.1" layer="21"/>
-<wire x1="-1.55" y1="-1.55" x2="-1.55" y2="1.55" width="0.1" layer="21"/>
-<wire x1="1.55" y1="-1.55" x2="1.55" y2="1.55" width="0.1" layer="21"/>
-<smd name="19" x="1" y="1.5" dx="0.6" dy="0.2" layer="1" roundness="100" rot="R270"/>
-<smd name="20" x="0.6" y="1.5" dx="0.6" dy="0.2" layer="1" roundness="100" rot="R270"/>
-<smd name="21" x="0.2" y="1.5" dx="0.6" dy="0.2" layer="1" roundness="100" rot="R270"/>
-<smd name="22" x="-0.2" y="1.5" dx="0.6" dy="0.2" layer="1" roundness="100" rot="R270"/>
-<smd name="23" x="-0.6" y="1.5" dx="0.6" dy="0.2" layer="1" roundness="100" rot="R270"/>
-<smd name="24" x="-1" y="1.5" dx="0.6" dy="0.2" layer="1" roundness="100" rot="R270"/>
-<circle x="-2" y="2" radius="0.15" width="0.3" layer="21"/>
-<rectangle x1="-1.55" y1="0" x2="0" y2="1.55" layer="21"/>
-<text x="0" y="2.54" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
-<polygon width="0.1" layer="1">
-<vertex x="-0.3" y="0.55"/>
-<vertex x="0.5" y="0.55" curve="-90"/>
-<vertex x="0.65" y="0.4"/>
-<vertex x="0.65" y="-0.45" curve="-90"/>
-<vertex x="0.5" y="-0.6"/>
-<vertex x="-0.5" y="-0.6" curve="-90"/>
-<vertex x="-0.65" y="-0.45"/>
-<vertex x="-0.65" y="0.2"/>
-</polygon>
-</package>
-</packages>
-<symbols>
-<symbol name="INVENSENSE-MPU9250">
-<pin name="RESV@1" x="-17.78" y="5.08" length="middle"/>
-<pin name="NC@2" x="17.78" y="17.78" length="middle" rot="R180"/>
-<pin name="NC@3" x="17.78" y="15.24" length="middle" rot="R180"/>
-<pin name="NC@4" x="17.78" y="12.7" length="middle" rot="R180"/>
-<pin name="NC@5" x="17.78" y="10.16" length="middle" rot="R180"/>
-<pin name="NC@6" x="17.78" y="7.62" length="middle" rot="R180"/>
-<pin name="AUX_CL" x="-17.78" y="-7.62" length="middle"/>
-<pin name="VDDIO" x="-17.78" y="17.78" length="middle"/>
-<pin name="AD0" x="17.78" y="-7.62" length="middle" rot="R180"/>
-<pin name="REGOUT" x="17.78" y="-10.16" length="middle" rot="R180"/>
-<pin name="FSYNC" x="17.78" y="-12.7" length="middle" rot="R180"/>
-<pin name="INT" x="-17.78" y="10.16" length="middle"/>
-<pin name="VDD" x="-17.78" y="15.24" length="middle"/>
-<pin name="NC@14" x="17.78" y="5.08" length="middle" rot="R180"/>
-<pin name="NC@15" x="17.78" y="2.54" length="middle" rot="R180"/>
-<pin name="NC@16" x="17.78" y="0" length="middle" rot="R180"/>
-<pin name="NC@17" x="17.78" y="-2.54" length="middle" rot="R180"/>
-<pin name="GND" x="17.78" y="-17.78" length="middle" rot="R180"/>
-<pin name="RESV@19" x="-17.78" y="2.54" length="middle"/>
-<pin name="RESV@20" x="-17.78" y="0" length="middle"/>
-<pin name="AUX_DA" x="-17.78" y="-10.16" length="middle"/>
-<pin name="NCS" x="-17.78" y="-5.08" length="middle"/>
-<pin name="SCL" x="-17.78" y="-15.24" length="middle"/>
-<pin name="SDA" x="-17.78" y="-17.78" length="middle"/>
-<wire x1="-12.7" y1="22.86" x2="12.7" y2="22.86" width="0.254" layer="94"/>
-<wire x1="12.7" y1="22.86" x2="12.7" y2="-20.32" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-20.32" x2="-12.7" y2="-20.32" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="-20.32" x2="-12.7" y2="22.86" width="0.254" layer="94"/>
-<pin name="PAD" x="17.78" y="-15.24" length="middle" rot="R180"/>
-<text x="-12.7" y="23.622" size="1.778" layer="95" ratio="6" rot="SR0">&gt;NAME</text>
-<text x="0" y="20.32" size="1.778" layer="94" align="bottom-center">MPU-9250</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="IS-MPU9250" prefix="IC" uservalue="yes">
-<description>INVENSENSE MPU9250(9axis)</description>
-<gates>
-<gate name="G$1" symbol="INVENSENSE-MPU9250" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="INVENSENSE-MPU9250">
-<connects>
-<connect gate="G$1" pin="AD0" pad="9"/>
-<connect gate="G$1" pin="AUX_CL" pad="7"/>
-<connect gate="G$1" pin="AUX_DA" pad="21"/>
-<connect gate="G$1" pin="FSYNC" pad="11"/>
-<connect gate="G$1" pin="GND" pad="18"/>
-<connect gate="G$1" pin="INT" pad="12"/>
-<connect gate="G$1" pin="NC@14" pad="14"/>
-<connect gate="G$1" pin="NC@15" pad="15"/>
-<connect gate="G$1" pin="NC@16" pad="16"/>
-<connect gate="G$1" pin="NC@17" pad="17"/>
-<connect gate="G$1" pin="NC@2" pad="2"/>
-<connect gate="G$1" pin="NC@3" pad="3"/>
-<connect gate="G$1" pin="NC@4" pad="4"/>
-<connect gate="G$1" pin="NC@5" pad="5"/>
-<connect gate="G$1" pin="NC@6" pad="6"/>
-<connect gate="G$1" pin="NCS" pad="22"/>
-<connect gate="G$1" pin="PAD" pad="25"/>
-<connect gate="G$1" pin="REGOUT" pad="10"/>
-<connect gate="G$1" pin="RESV@1" pad="1"/>
-<connect gate="G$1" pin="RESV@19" pad="19"/>
-<connect gate="G$1" pin="RESV@20" pad="20"/>
-<connect gate="G$1" pin="SCL" pad="23"/>
-<connect gate="G$1" pin="SDA" pad="24"/>
-<connect gate="G$1" pin="VDD" pad="13"/>
-<connect gate="G$1" pin="VDDIO" pad="8"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="FaBo-LevelTranslator">
 <description>&lt;h3&gt;FaBo LevelTranslator&lt;/h3&gt;
 Level Translators&lt;br&gt;
@@ -34308,6 +34179,128 @@ Level Translators&lt;br&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="FaBo-Mems">
+<description>&lt;h3&gt;FaBo MEMS&lt;/h3&gt;
+MEMS&lt;br&gt;
+&lt;br&gt;
+Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;br&gt;
+https://creativecommons.org/licenses/by-sa/4.0/</description>
+<packages>
+<package name="INVENSENSE-MPU9250">
+<smd name="1" x="-1.5" y="1" dx="0.6" dy="0.2" layer="1" roundness="100"/>
+<smd name="2" x="-1.5" y="0.6" dx="0.6" dy="0.2" layer="1" roundness="100"/>
+<smd name="3" x="-1.5" y="0.2" dx="0.6" dy="0.2" layer="1" roundness="100"/>
+<smd name="4" x="-1.5" y="-0.2" dx="0.6" dy="0.2" layer="1" roundness="100"/>
+<smd name="5" x="-1.5" y="-0.6" dx="0.6" dy="0.2" layer="1" roundness="100"/>
+<smd name="6" x="-1.5" y="-1" dx="0.6" dy="0.2" layer="1" roundness="100"/>
+<smd name="7" x="-1" y="-1.5" dx="0.6" dy="0.2" layer="1" roundness="100" rot="R90"/>
+<smd name="8" x="-0.6" y="-1.5" dx="0.6" dy="0.2" layer="1" roundness="100" rot="R90"/>
+<smd name="9" x="-0.2" y="-1.5" dx="0.6" dy="0.2" layer="1" roundness="100" rot="R90"/>
+<smd name="10" x="0.2" y="-1.5" dx="0.6" dy="0.2" layer="1" roundness="100" rot="R90"/>
+<smd name="11" x="0.6" y="-1.5" dx="0.6" dy="0.2" layer="1" roundness="100" rot="R90"/>
+<smd name="12" x="1" y="-1.5" dx="0.6" dy="0.2" layer="1" roundness="100" rot="R90"/>
+<smd name="13" x="1.5" y="-1" dx="0.6" dy="0.2" layer="1" roundness="100" rot="R180"/>
+<smd name="14" x="1.5" y="-0.6" dx="0.6" dy="0.2" layer="1" roundness="100" rot="R180"/>
+<smd name="15" x="1.5" y="-0.2" dx="0.6" dy="0.2" layer="1" roundness="100" rot="R180"/>
+<smd name="16" x="1.5" y="0.2" dx="0.6" dy="0.2" layer="1" roundness="99" rot="R180"/>
+<smd name="17" x="1.5" y="0.6" dx="0.6" dy="0.2" layer="1" roundness="100" rot="R180"/>
+<smd name="18" x="1.5" y="1" dx="0.6" dy="0.2" layer="1" roundness="100" rot="R180"/>
+<wire x1="-1.55" y1="1.55" x2="1.55" y2="1.55" width="0.1" layer="21"/>
+<wire x1="-1.55" y1="-1.55" x2="1.55" y2="-1.55" width="0.1" layer="21"/>
+<wire x1="-1.55" y1="-1.55" x2="-1.55" y2="1.55" width="0.1" layer="21"/>
+<wire x1="1.55" y1="-1.55" x2="1.55" y2="1.55" width="0.1" layer="21"/>
+<smd name="19" x="1" y="1.5" dx="0.6" dy="0.2" layer="1" roundness="100" rot="R270"/>
+<smd name="20" x="0.6" y="1.5" dx="0.6" dy="0.2" layer="1" roundness="100" rot="R270"/>
+<smd name="21" x="0.2" y="1.5" dx="0.6" dy="0.2" layer="1" roundness="100" rot="R270"/>
+<smd name="22" x="-0.2" y="1.5" dx="0.6" dy="0.2" layer="1" roundness="100" rot="R270"/>
+<smd name="23" x="-0.6" y="1.5" dx="0.6" dy="0.2" layer="1" roundness="100" rot="R270"/>
+<smd name="24" x="-1" y="1.5" dx="0.6" dy="0.2" layer="1" roundness="100" rot="R270"/>
+<circle x="-2" y="2" radius="0.15" width="0.3" layer="21"/>
+<rectangle x1="-1.55" y1="0" x2="0" y2="1.55" layer="21"/>
+<text x="0" y="2.54" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-1.0668" y1="-1.0668" x2="1.1176" y2="1.0668" layer="41"/>
+<rectangle x1="1.1684" y1="1.1684" x2="1.6764" y2="1.651" layer="41"/>
+<rectangle x1="-1.7018" y1="1.2192" x2="-1.1684" y2="1.6764" layer="41"/>
+<rectangle x1="1.1684" y1="-1.7272" x2="1.7272" y2="-1.1684" layer="41"/>
+<rectangle x1="-1.778" y1="-1.7526" x2="-1.1938" y2="-1.1938" layer="41"/>
+</package>
+</packages>
+<symbols>
+<symbol name="INVENSENSE-MPU9250">
+<pin name="RESV@1" x="-17.78" y="5.08" length="middle"/>
+<pin name="NC@2" x="17.78" y="17.78" length="middle" rot="R180"/>
+<pin name="NC@3" x="17.78" y="15.24" length="middle" rot="R180"/>
+<pin name="NC@4" x="17.78" y="12.7" length="middle" rot="R180"/>
+<pin name="NC@5" x="17.78" y="10.16" length="middle" rot="R180"/>
+<pin name="NC@6" x="17.78" y="7.62" length="middle" rot="R180"/>
+<pin name="AUX_CL" x="-17.78" y="-7.62" length="middle"/>
+<pin name="VDDIO" x="-17.78" y="17.78" length="middle"/>
+<pin name="AD0" x="17.78" y="-7.62" length="middle" rot="R180"/>
+<pin name="REGOUT" x="17.78" y="-10.16" length="middle" rot="R180"/>
+<pin name="FSYNC" x="17.78" y="-12.7" length="middle" rot="R180"/>
+<pin name="INT" x="-17.78" y="10.16" length="middle"/>
+<pin name="VDD" x="-17.78" y="15.24" length="middle"/>
+<pin name="NC@14" x="17.78" y="5.08" length="middle" rot="R180"/>
+<pin name="NC@15" x="17.78" y="2.54" length="middle" rot="R180"/>
+<pin name="NC@16" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="NC@17" x="17.78" y="-2.54" length="middle" rot="R180"/>
+<pin name="GND" x="17.78" y="-17.78" length="middle" rot="R180"/>
+<pin name="RESV@19" x="-17.78" y="2.54" length="middle"/>
+<pin name="RESV@20" x="-17.78" y="0" length="middle"/>
+<pin name="AUX_DA" x="-17.78" y="-10.16" length="middle"/>
+<pin name="NCS" x="-17.78" y="-5.08" length="middle"/>
+<pin name="SCL" x="-17.78" y="-15.24" length="middle"/>
+<pin name="SDA" x="-17.78" y="-17.78" length="middle"/>
+<wire x1="-12.7" y1="22.86" x2="12.7" y2="22.86" width="0.254" layer="94"/>
+<wire x1="12.7" y1="22.86" x2="12.7" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-20.32" x2="-12.7" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-20.32" x2="-12.7" y2="22.86" width="0.254" layer="94"/>
+<text x="-12.7" y="23.622" size="1.778" layer="95" ratio="6" rot="SR0">&gt;NAME</text>
+<text x="0" y="20.32" size="1.778" layer="94" align="bottom-center">MPU-9250</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="IS-MPU9250" prefix="IC" uservalue="yes">
+<description>INVENSENSE MPU9250(9axis)</description>
+<gates>
+<gate name="G$1" symbol="INVENSENSE-MPU9250" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="INVENSENSE-MPU9250">
+<connects>
+<connect gate="G$1" pin="AD0" pad="9"/>
+<connect gate="G$1" pin="AUX_CL" pad="7"/>
+<connect gate="G$1" pin="AUX_DA" pad="21"/>
+<connect gate="G$1" pin="FSYNC" pad="11"/>
+<connect gate="G$1" pin="GND" pad="18"/>
+<connect gate="G$1" pin="INT" pad="12"/>
+<connect gate="G$1" pin="NC@14" pad="14"/>
+<connect gate="G$1" pin="NC@15" pad="15"/>
+<connect gate="G$1" pin="NC@16" pad="16"/>
+<connect gate="G$1" pin="NC@17" pad="17"/>
+<connect gate="G$1" pin="NC@2" pad="2"/>
+<connect gate="G$1" pin="NC@3" pad="3"/>
+<connect gate="G$1" pin="NC@4" pad="4"/>
+<connect gate="G$1" pin="NC@5" pad="5"/>
+<connect gate="G$1" pin="NC@6" pad="6"/>
+<connect gate="G$1" pin="NCS" pad="22"/>
+<connect gate="G$1" pin="REGOUT" pad="10"/>
+<connect gate="G$1" pin="RESV@1" pad="1"/>
+<connect gate="G$1" pin="RESV@19" pad="19"/>
+<connect gate="G$1" pin="RESV@20" pad="20"/>
+<connect gate="G$1" pin="SCL" pad="23"/>
+<connect gate="G$1" pin="SDA" pad="24"/>
+<connect gate="G$1" pin="VDD" pad="13"/>
+<connect gate="G$1" pin="VDDIO" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -34349,7 +34342,6 @@ Level Translators&lt;br&gt;
 <part name="GND7" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="GND8" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="GND11" library="FaBo-Supply" deviceset="GND" device=""/>
-<part name="IC1" library="FaBo-Mems" deviceset="IS-MPU9250" device=""/>
 <part name="IC2" library="FaBo-Supply" deviceset="LP2985" device="-33DBV"/>
 <part name="IC3" library="FaBo-LevelTranslator" deviceset="PCA9306" device="GM"/>
 <part name="TP1" library="FaBo-Supply" deviceset="TP" device="-15"/>
@@ -34359,11 +34351,12 @@ Level Translators&lt;br&gt;
 <part name="R2" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="4.7k"/>
 <part name="3V6" library="FaBo-Supply" deviceset="3V3" device=""/>
 <part name="3V7" library="FaBo-Supply" deviceset="3V3" device=""/>
+<part name="IC1" library="FaBo-Mems" deviceset="IS-MPU9250" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.5</text>
+<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.6 A</text>
 </plain>
 <instances>
 <instance part="J1" gate="G$1" x="20.32" y="132.08"/>
@@ -34380,7 +34373,7 @@ Level Translators&lt;br&gt;
 <instance part="3V2" gate="G$1" x="157.48" y="132.08"/>
 <instance part="3V3" gate="G$1" x="147.32" y="132.08"/>
 <instance part="3V4" gate="G$1" x="114.3" y="149.86"/>
-<instance part="SJ1" gate="G$1" x="114.3" y="139.7"/>
+<instance part="SJ1" gate="G$1" x="114.3" y="139.7" rot="R270"/>
 <instance part="R4" gate="G$1" x="114.3" y="121.92" rot="R90"/>
 <instance part="C1" gate="G$1" x="93.98" y="124.46" rot="R90"/>
 <instance part="C2" gate="G$1" x="93.98" y="38.1" rot="R90"/>
@@ -34397,7 +34390,6 @@ Level Translators&lt;br&gt;
 <instance part="GND7" gate="G$1" x="167.64" y="71.12"/>
 <instance part="GND8" gate="G$1" x="218.44" y="71.12"/>
 <instance part="GND11" gate="G$1" x="228.6" y="71.12"/>
-<instance part="IC1" gate="G$1" x="195.58" y="99.06"/>
 <instance part="IC2" gate="G$1" x="73.66" y="132.08"/>
 <instance part="IC3" gate="G$1" x="73.66" y="53.34"/>
 <instance part="TP1" gate="G$1" x="48.26" y="35.56"/>
@@ -34407,6 +34399,7 @@ Level Translators&lt;br&gt;
 <instance part="R2" gate="G$1" x="43.18" y="66.04" rot="R90"/>
 <instance part="3V6" gate="G$1" x="43.18" y="76.2"/>
 <instance part="3V7" gate="G$1" x="33.02" y="76.2"/>
+<instance part="IC1" gate="G$1" x="195.58" y="99.06"/>
 </instances>
 <busses>
 </busses>
@@ -34558,11 +34551,15 @@ Level Translators&lt;br&gt;
 </segment>
 <segment>
 <wire x1="157.48" y1="132.08" x2="157.48" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="114.3" x2="157.48" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="114.3" x2="157.48" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="104.14" x2="157.48" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="114.3" x2="157.48" y2="114.3" width="0.1524" layer="91"/>
 <junction x="157.48" y="114.3"/>
 <pinref part="3V2" gate="G$1" pin="3V3"/>
 <pinref part="C4" gate="G$1" pin="2"/>
+<wire x1="177.8" y1="104.14" x2="157.48" y2="104.14" width="0.1524" layer="91"/>
+<junction x="157.48" y="104.14"/>
+<pinref part="IC1" gate="G$1" pin="RESV@1"/>
 <pinref part="IC1" gate="G$1" pin="VDD"/>
 </segment>
 <segment>
@@ -34582,7 +34579,7 @@ Level Translators&lt;br&gt;
 <segment>
 <pinref part="3V4" gate="G$1" pin="3V3"/>
 <pinref part="SJ1" gate="G$1" pin="1"/>
-<wire x1="114.3" y1="149.86" x2="111.76" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="149.86" x2="114.3" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="3V7" gate="G$1" pin="3V3"/>
@@ -34651,7 +34648,7 @@ Level Translators&lt;br&gt;
 <segment>
 <pinref part="SJ1" gate="G$1" pin="2"/>
 <pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="116.84" y1="139.7" x2="114.3" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="137.16" x2="114.3" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="132.08" x2="114.3" y2="127" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="132.08" x2="114.3" y2="132.08" width="0.1524" layer="91"/>
 <junction x="114.3" y="132.08"/>
@@ -34661,8 +34658,8 @@ Level Translators&lt;br&gt;
 <net name="N$2" class="0">
 <segment>
 <pinref part="TP3" gate="G$1" pin="1"/>
-<pinref part="IC1" gate="G$1" pin="INT"/>
 <wire x1="142.24" y1="109.22" x2="177.8" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="INT"/>
 </segment>
 </net>
 </nets>
