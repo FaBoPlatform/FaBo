@@ -7,6 +7,13 @@ NINTENDO SWITCH＋IchigoJam+FaBoで制御する。
 ・FaBo モーターシールド
 ・FaBo IRレシーバー(＃113)
 
+NINTENDO SWITCHプログラム
+IRひかる　0.5
+IRひかる　0.7
+IRひかる　1.0
+IRひかる　1.2
+の出力４つ（ 数値は のばす時間 )を配置する。
+それぞれIchigaJamプログラムのT値に対応させるための、のばす時間です。
 
 IchigoJamプログラム
 JoyCon（＋）IR LEDの点灯時間でFaBoを連携させるプログラムです。
