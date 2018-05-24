@@ -1,0 +1,12 @@
+NINTENDO SWITCH＋IchigoJam+FaBoで制御する。
+
+準備するもの
+・HotDog本体
+・NINTENDO SWITCH
+・IchigoJam本体（プログラム打ち込み可能環境含む）
+・FaBoモーターシールド
+
+
+IchigoJamプログラム
+JoyCon（＋）IR LEDの点灯時間でFaBoを連携させるプログラムです。
+
