@@ -8,6 +8,7 @@ Nintendo Switch＋IchigoJam+FaBoで制御する。
 ・FaBo IRレシーバー(＃113)
 
 Nintendo Switchプログラム
+![](./img/switch_program.jpg)
 入力：右ボタンが押されたら　→ 出力：IRひかる　のばす時間：0.5
 入力：左ボタンが押されたら　→ 出力：IRひかる　のばす時間：0.7
 入力：上ボタンが押されたら　→ 出力：IRひかる　のばす時間：1.0
