@@ -1,4 +1,4 @@
-### Nintendo Switch＋IchigoJam+FaBoで制御する。
+# Nintendo Switch＋IchigoJam+FaBoで制御する。
 
 ## 準備するもの
 
