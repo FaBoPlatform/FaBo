@@ -1,4 +1,1 @@
-# FaBo
-http://fabo.io/
-
-FaBo Brick PCBs
+# 研修用ページ
