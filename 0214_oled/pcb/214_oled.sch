@@ -33816,7 +33816,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="2.5" y1="-2" x2="2.5" y2="2" width="0.127" layer="21"/>
 <wire x1="2.5" y1="2" x2="-2.5" y2="2" width="0.127" layer="21"/>
 <wire x1="-2.5" y1="2" x2="-2.5" y2="-2" width="0.127" layer="21"/>
-<circle x="-1.7" y="-1.2" radius="0.360553125" width="0.127" layer="22"/>
+<circle x="-1.7" y="-1.2" radius="0.360553125" width="0.127" layer="21"/>
 <text x="-3.81" y="3.81" size="1.27" layer="25">&gt;NAME</text>
 </package>
 </packages>
@@ -33852,156 +33852,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <connect gate="G$1" pin="SDA1" pad="6"/>
 <connect gate="G$1" pin="VCC" pad="8"/>
 </connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="jump-0r-smd" urn="urn:adsk.eagle:library:251">
-<description>Soldering jumper and bridges</description>
-<packages>
-<package name="A0R-JMP" urn="urn:adsk.eagle:footprint:15382/1" library_version="1">
-<description>&lt;b&gt;0R Jumper Variant A&lt;/b&gt;&lt;p&gt;
-chip 0805</description>
-<wire x1="0.635" y1="1.26" x2="0.635" y2="0.44" width="0.1524" layer="51"/>
-<wire x1="-0.635" y1="1.26" x2="-0.635" y2="0.44" width="0.1524" layer="51"/>
-<smd name="1" x="0" y="1.7" dx="1.3" dy="1.5" layer="1" rot="R270"/>
-<smd name="2" x="0" y="0" dx="1.3" dy="1.5" layer="1" rot="R270"/>
-<smd name="3" x="0" y="-1.7" dx="1.3" dy="1.5" layer="1" rot="R270"/>
-<text x="-0.762" y="2.716" size="1.27" layer="25">&gt;NAME</text>
-<text x="-0.762" y="-3.986" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.3235" y1="-0.5814" x2="0.3265" y2="0.8186" layer="51" rot="R270"/>
-<rectangle x1="-0.3235" y1="0.8918" x2="0.3265" y2="2.2918" layer="51" rot="R270"/>
-<rectangle x1="-0.1999" y1="-0.5001" x2="0.1999" y2="0.5001" layer="35"/>
-</package>
-<package name="B0R-JMP" urn="urn:adsk.eagle:footprint:15383/1" library_version="1">
-<description>&lt;b&gt;0R Jumper Variant B&lt;/b&gt;&lt;p&gt;
-chip 0805</description>
-<wire x1="-0.635" y1="-0.44" x2="-0.635" y2="-1.26" width="0.1524" layer="51"/>
-<wire x1="0.635" y1="-1.26" x2="0.635" y2="-0.44" width="0.1524" layer="51"/>
-<smd name="1" x="0" y="1.7" dx="1.3" dy="1.5" layer="1" rot="R270"/>
-<smd name="2" x="0" y="0" dx="1.3" dy="1.5" layer="1" rot="R270"/>
-<smd name="3" x="0" y="-1.7" dx="1.3" dy="1.5" layer="1" rot="R270"/>
-<text x="-0.762" y="2.716" size="1.27" layer="25">&gt;NAME</text>
-<text x="-0.762" y="-3.986" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.3235" y1="-2.2814" x2="0.3265" y2="-0.8814" layer="51" rot="R270"/>
-<rectangle x1="-0.3235" y1="-0.8082" x2="0.3265" y2="0.5918" layer="51" rot="R270"/>
-</package>
-<package name="C0R-JMP" urn="urn:adsk.eagle:footprint:15384/1" library_version="1">
-<description>&lt;b&gt;0R Jumper Variant C&lt;/b&gt;&lt;p&gt;
-Solder type</description>
-<wire x1="0.61" y1="0.66" x2="0.61" y2="0.34" width="0.1524" layer="51"/>
-<wire x1="-0.61" y1="0.66" x2="-0.61" y2="0.34" width="0.1524" layer="51"/>
-<smd name="1" x="0" y="0.938" dx="0.8" dy="1" layer="1" roundness="100"/>
-<smd name="2" x="0" y="0" dx="1" dy="0.8" layer="1" roundness="50"/>
-<smd name="3" x="0" y="-0.938" dx="0.8" dy="1" layer="1" roundness="100"/>
-<text x="-0.762" y="2.716" size="1.27" layer="25">&gt;NAME</text>
-<text x="-0.762" y="-3.986" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.3235" y1="-0.6814" x2="0.3265" y2="0.7186" layer="51" rot="R270"/>
-<rectangle x1="-0.3235" y1="0.2338" x2="0.3265" y2="1.6338" layer="51" rot="R270"/>
-</package>
-</packages>
-<packages3d>
-<package3d name="A0R-JMP" urn="urn:adsk.eagle:package:15385/1" type="box" library_version="1">
-<description>0R Jumper Variant A
-chip 0805</description>
-<packageinstances>
-<packageinstance name="A0R-JMP"/>
-</packageinstances>
-</package3d>
-<package3d name="B0R-JMP" urn="urn:adsk.eagle:package:15387/1" type="box" library_version="1">
-<description>0R Jumper Variant B
-chip 0805</description>
-<packageinstances>
-<packageinstance name="B0R-JMP"/>
-</packageinstances>
-</package3d>
-<package3d name="C0R-JMP" urn="urn:adsk.eagle:package:15386/1" type="box" library_version="1">
-<description>0R Jumper Variant C
-Solder type</description>
-<packageinstances>
-<packageinstance name="C0R-JMP"/>
-</packageinstances>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="0RJM" urn="urn:adsk.eagle:symbol:15380/1" library_version="1">
-<wire x1="0" y1="2.54" x2="0" y2="1.778" width="0.1524" layer="94"/>
-<wire x1="0" y1="0.508" x2="0" y2="-0.508" width="0.1524" layer="94"/>
-<wire x1="0" y1="-2.54" x2="0" y2="-1.778" width="0.1524" layer="94"/>
-<wire x1="-0.254" y1="1.524" x2="0.254" y2="1.524" width="0.508" layer="94" curve="-180" cap="flat"/>
-<wire x1="-0.254" y1="-1.016" x2="0.254" y2="-1.016" width="0.508" layer="94" curve="-180" cap="flat"/>
-<wire x1="0.254" y1="1.016" x2="-0.254" y2="1.016" width="0.508" layer="94" curve="-180" cap="flat"/>
-<wire x1="0.254" y1="-1.524" x2="-0.254" y2="-1.524" width="0.508" layer="94" curve="-180" cap="flat"/>
-<text x="2.54" y="1.27" size="1.778" layer="95">&gt;NAME</text>
-<pin name="2" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-<pin name="1" x="0" y="2.54" visible="off" length="point" direction="pas" rot="R270"/>
-<pin name="3" x="0" y="-2.54" visible="off" length="point" direction="pas" rot="R90"/>
-</symbol>
-<symbol name="JMP" urn="urn:adsk.eagle:symbol:15381/1" library_version="1">
-<wire x1="0.762" y1="-0.254" x2="0.508" y2="-0.254" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="0.254" y1="-0.254" x2="-0.254" y2="-0.254" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="-0.508" y1="-0.254" x2="-0.762" y2="-0.254" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="0.762" y1="-2.286" x2="0.508" y2="-2.286" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="0.254" y1="-2.286" x2="-0.254" y2="-2.286" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="-0.508" y1="-2.286" x2="-0.762" y2="-2.286" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="0.762" y1="-0.254" x2="0.762" y2="-0.508" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="0.762" y1="-0.762" x2="0.762" y2="-1.016" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="0.762" y1="-1.524" x2="0.762" y2="-1.778" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="0.762" y1="-2.032" x2="0.762" y2="-2.286" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="-0.762" y1="-2.286" x2="-0.762" y2="-2.032" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="-0.762" y1="-1.778" x2="-0.762" y2="-1.524" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="-0.762" y1="-1.016" x2="-0.762" y2="-0.762" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="-0.762" y1="-0.508" x2="-0.762" y2="-0.254" width="0.1524" layer="94" style="shortdash"/>
-<rectangle x1="-0.508" y1="-2.032" x2="0.508" y2="-0.508" layer="94" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="0R-JUMP" urn="urn:adsk.eagle:component:15388/1" prefix="JMP" library_version="1">
-<description>&lt;b&gt;SMD 0R 0805 Jumper&lt;/b&gt;&lt;p&gt;</description>
-<gates>
-<gate name="-0R" symbol="0RJM" x="0" y="0" addlevel="always"/>
-<gate name="G$2" symbol="JMP" x="-2.54" y="2.54" addlevel="always"/>
-</gates>
-<devices>
-<device name="A" package="A0R-JMP">
-<connects>
-<connect gate="-0R" pin="1" pad="1"/>
-<connect gate="-0R" pin="2" pad="2"/>
-<connect gate="-0R" pin="3" pad="3"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:15385/1"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="B" package="B0R-JMP">
-<connects>
-<connect gate="-0R" pin="1" pad="1"/>
-<connect gate="-0R" pin="2" pad="2"/>
-<connect gate="-0R" pin="3" pad="3"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:15387/1"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="C" package="C0R-JMP">
-<connects>
-<connect gate="-0R" pin="1" pad="1"/>
-<connect gate="-0R" pin="2" pad="2"/>
-<connect gate="-0R" pin="3" pad="3"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:15386/1"/>
-</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -34065,15 +33915,13 @@ Solder type</description>
 <part name="R6" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="0"/>
 <part name="GND13" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="R7" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="100"/>
-<part name="IC2" library="FaBo-Repeater" deviceset="PCA9515" device=""/>
 <part name="IC1" library="FaBo-Supply" deviceset="AP2112" device="K-3.3TRG1"/>
-<part name="GND14" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="C10" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="1uF"/>
 <part name="GND15" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="TP3" library="FaBo-Supply" deviceset="TP" device="-15"/>
 <part name="TP4" library="FaBo-Supply" deviceset="TP" device="-15"/>
 <part name="TP5" library="FaBo-Supply" deviceset="TP" device="-15"/>
-<part name="JMP1" library="jump-0r-smd" library_urn="urn:adsk.eagle:library:251" deviceset="0R-JUMP" device="A" package3d_urn="urn:adsk.eagle:package:15385/1"/>
+<part name="U$4" library="FaBo-Repeater" deviceset="PCA9515" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -34135,16 +33983,13 @@ Solder type</description>
 <attribute name="NAME" x="232.156" y="106.934" size="1.4224" layer="95" rot="R90"/>
 <attribute name="VALUE" x="235.204" y="112.014" size="1.4224" layer="96" rot="R90" align="top-left"/>
 </instance>
-<instance part="IC2" gate="G$1" x="71.12" y="53.34" rot="MR0"/>
 <instance part="IC1" gate="G$1" x="91.44" y="121.92"/>
-<instance part="GND14" gate="G$1" x="88.9" y="33.02"/>
 <instance part="C10" gate="G$1" x="63.5" y="109.22" rot="R90"/>
 <instance part="GND15" gate="G$1" x="63.5" y="101.6"/>
 <instance part="TP3" gate="G$1" x="40.64" y="109.22"/>
 <instance part="TP4" gate="G$1" x="45.72" y="109.22"/>
 <instance part="TP5" gate="G$1" x="119.38" y="124.46"/>
-<instance part="JMP1" gate="-0R" x="96.52" y="40.64" rot="R90"/>
-<instance part="JMP1" gate="G$2" x="96.52" y="40.64" rot="R90"/>
+<instance part="U$4" gate="G$1" x="71.12" y="53.34" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -34277,18 +34122,12 @@ Solder type</description>
 <segment>
 <pinref part="GND12" gate="G$1" pin="GND"/>
 <wire x1="71.12" y1="40.64" x2="71.12" y2="33.02" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="G$1" pin="GND"/>
+<pinref part="U$4" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="GND13" gate="G$1" pin="GND"/>
 <pinref part="C9" gate="G$1" pin="1"/>
 <wire x1="243.84" y1="55.88" x2="243.84" y2="63.5" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="GND14" gate="G$1" pin="GND"/>
-<wire x1="88.9" y1="33.02" x2="88.9" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="40.64" x2="93.98" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="JMP1" gate="-0R" pin="1"/>
 </segment>
 <segment>
 <pinref part="C10" gate="G$1" pin="1"/>
@@ -34313,7 +34152,7 @@ Solder type</description>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="33.02" y1="68.58" x2="33.02" y2="55.88" width="0.1524" layer="91"/>
 <junction x="33.02" y="55.88"/>
-<pinref part="IC2" gate="G$1" pin="SCL1"/>
+<pinref part="U$4" gate="G$1" pin="SCL1"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -34338,7 +34177,7 @@ Solder type</description>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="40.64" y1="68.58" x2="40.64" y2="58.42" width="0.1524" layer="91"/>
 <junction x="40.64" y="58.42"/>
-<pinref part="IC2" gate="G$1" pin="SDA1"/>
+<pinref part="U$4" gate="G$1" pin="SDA1"/>
 </segment>
 </net>
 <net name="3V3" class="0">
@@ -34379,15 +34218,15 @@ Solder type</description>
 <wire x1="71.12" y1="73.66" x2="104.14" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="73.66" x2="111.76" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="73.66" x2="111.76" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="G$1" pin="VCC"/>
 <wire x1="71.12" y1="68.58" x2="71.12" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="2"/>
 <wire x1="111.76" y1="55.88" x2="111.76" y2="73.66" width="0.1524" layer="91"/>
 <junction x="111.76" y="73.66"/>
-<wire x1="99.06" y1="40.64" x2="104.14" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="40.64" x2="104.14" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="VCC"/>
+<pinref part="U$4" gate="G$1" pin="EN"/>
+<wire x1="86.36" y1="48.26" x2="104.14" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="48.26" x2="104.14" y2="73.66" width="0.1524" layer="91"/>
 <junction x="104.14" y="73.66"/>
-<pinref part="JMP1" gate="-0R" pin="3"/>
 </segment>
 <segment>
 <pinref part="3V8" gate="G$1" pin="3V3"/>
@@ -34483,7 +34322,7 @@ Solder type</description>
 <segment>
 <wire x1="99.06" y1="55.88" x2="86.36" y2="55.88" width="0.1524" layer="91"/>
 <label x="88.9" y="55.88" size="1.778" layer="95"/>
-<pinref part="IC2" gate="G$1" pin="SCL0"/>
+<pinref part="U$4" gate="G$1" pin="SCL0"/>
 </segment>
 </net>
 <net name="SDA_HV" class="0">
@@ -34498,8 +34337,8 @@ Solder type</description>
 </segment>
 <segment>
 <label x="88.9" y="58.42" size="1.778" layer="95"/>
-<pinref part="IC2" gate="G$1" pin="SDA0"/>
 <wire x1="99.06" y1="58.42" x2="86.36" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="SDA0"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -34538,14 +34377,6 @@ Solder type</description>
 <junction x="233.68" y="104.14"/>
 </segment>
 </net>
-<net name="N$8" class="0">
-<segment>
-<pinref part="IC2" gate="G$1" pin="EN"/>
-<wire x1="86.36" y1="48.26" x2="96.52" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="48.26" x2="96.52" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="JMP1" gate="-0R" pin="2"/>
-</segment>
-</net>
 </nets>
 </sheet>
 </sheets>
@@ -34561,21 +34392,4 @@ Solder type</description>
 </errors>
 </schematic>
 </drawing>
-<compatibility>
-<note version="8.2" severity="warning">
-Since Version 8.2, EAGLE supports online libraries. The ids
-of those online libraries will not be understood (or retained)
-with this version.
-</note>
-<note version="8.3" severity="warning">
-Since Version 8.3, EAGLE supports URNs for individual library
-assets (packages, symbols, and devices). The URNs of those assets
-will not be understood (or retained) with this version.
-</note>
-<note version="8.3" severity="warning">
-Since Version 8.3, EAGLE supports the association of 3D packages
-with devices in libraries, schematics, and board files. Those 3D
-packages will not be understood (or retained) with this version.
-</note>
-</compatibility>
 </eagle>
