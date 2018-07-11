@@ -155,6 +155,10 @@ http://hotdog.fabo.io/
 
 ![](./img/type1_10.png)
 
+フロントパーツがケルベロスの場合は形が異なります。
+
+![](./img/type1_10a.png)
+
 ![](./img/build_parts05.png)
 
 <hr>
