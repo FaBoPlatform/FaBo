@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.0.1">
+<eagle version="9.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -33787,10 +33787,9 @@ Source: http://www.semicon.toshiba.co.jp/td/en/Opto/Photocoupler/en_20050928_TLP
 <part name="U$2" library="FaBo-etc" deviceset="LOGO_OSHW" device="-M_BOTTOM"/>
 <part name="IC2" library="FaBo-Supply" deviceset="AP2112-2.5" device=""/>
 <part name="C1" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="1uF"/>
-<part name="C2" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="DNP"/>
+<part name="C2" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="1uF"/>
 <part name="R1" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="1KΩ"/>
-<part name="R2" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="330Ω"/>
-<part name="R3" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="0"/>
+<part name="R2" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="1KΩ"/>
 <part name="R4" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="1KΩ"/>
 <part name="GND1" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="GND2" library="FaBo-Supply" deviceset="GND" device=""/>
@@ -33805,7 +33804,7 @@ Source: http://www.semicon.toshiba.co.jp/td/en/Opto/Photocoupler/en_20050928_TLP
 <sheets>
 <sheet>
 <plain>
-<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">2.0.0 A</text>
+<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.7 B</text>
 <text x="170.18" y="129.54" size="1.778" layer="94">LA3R5-480AH1_PTH</text>
 </plain>
 <instances>
@@ -33819,7 +33818,6 @@ Source: http://www.semicon.toshiba.co.jp/td/en/Opto/Photocoupler/en_20050928_TLP
 <instance part="C2" gate="G$1" x="137.16" y="76.2" rot="R90"/>
 <instance part="R1" gate="G$1" x="93.98" y="119.38"/>
 <instance part="R2" gate="G$1" x="147.32" y="114.3"/>
-<instance part="R3" gate="G$1" x="129.54" y="119.38" rot="R180"/>
 <instance part="R4" gate="G$1" x="154.94" y="81.28" rot="R90"/>
 <instance part="GND1" gate="G$1" x="93.98" y="58.42"/>
 <instance part="GND2" gate="G$1" x="137.16" y="58.42"/>
@@ -33875,11 +33873,11 @@ Source: http://www.semicon.toshiba.co.jp/td/en/Opto/Photocoupler/en_20050928_TLP
 <pinref part="U1" gate="G$1" pin="IN/OUT"/>
 <wire x1="137.16" y1="139.7" x2="170.18" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="86.36" x2="137.16" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="137.16" y1="119.38" x2="137.16" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="119.38" x2="137.16" y2="119.38" width="0.1524" layer="91"/>
-<junction x="137.16" y="119.38"/>
 <junction x="137.16" y="86.36"/>
+<pinref part="IC1" gate="G$1" pin="COL"/>
+<wire x1="119.38" y1="119.38" x2="137.16" y2="119.38" width="0.1524" layer="91"/>
+<junction x="137.16" y="119.38"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -33887,13 +33885,6 @@ Source: http://www.semicon.toshiba.co.jp/td/en/Opto/Photocoupler/en_20050928_TLP
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="119.38" y1="114.3" x2="144.78" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="EMIT"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="124.46" y1="119.38" x2="119.38" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="COL"/>
 </segment>
 </net>
 <net name="N$7" class="0">
