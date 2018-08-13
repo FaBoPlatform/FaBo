@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.0.0">
+<eagle version="9.1.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -34164,11 +34164,11 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <smd name="1" x="-1.27" y="1.2" dx="0.8" dy="0.4" layer="1"/>
 <smd name="4" x="-1.27" y="-0.6" dx="0.8" dy="0.4" layer="1"/>
 <smd name="5" x="-1.27" y="-1.2" dx="0.8" dy="0.4" layer="1"/>
-<smd name="6" x="1.27" y="0" dx="0.8" dy="0.4" layer="1"/>
-<smd name="7" x="1.27" y="0.6" dx="0.8" dy="0.4" layer="1"/>
-<smd name="8" x="1.27" y="1.2" dx="0.8" dy="0.4" layer="1"/>
-<smd name="9" x="1.27" y="-0.6" dx="0.8" dy="0.4" layer="1"/>
-<smd name="10" x="1.27" y="-1.2" dx="0.8" dy="0.4" layer="1"/>
+<smd name="6" x="1.27" y="-1.27" dx="0.8" dy="0.4" layer="1"/>
+<smd name="7" x="1.27" y="-0.6254" dx="0.8" dy="0.4" layer="1"/>
+<smd name="8" x="1.27" y="-0.0062" dx="0.8" dy="0.4" layer="1"/>
+<smd name="9" x="1.27" y="0.6" dx="0.8" dy="0.4" layer="1"/>
+<smd name="10" x="1.27" y="1.2" dx="0.8" dy="0.4" layer="1"/>
 <wire x1="-1.35" y1="2" x2="1.35" y2="2" width="0.127" layer="21"/>
 <wire x1="1.35" y1="2" x2="1.35" y2="-2" width="0.127" layer="21"/>
 <wire x1="1.35" y1="-2" x2="-1.35" y2="-2" width="0.127" layer="21"/>
@@ -34334,7 +34334,7 @@ Level Translators&lt;br&gt;
 <packages>
 </packages>
 <symbols>
-<symbol name="+3V3">
+<symbol name="+3V3" urn="urn:adsk.eagle:symbol:26950/1" library_version="1">
 <wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
 <text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
@@ -34342,7 +34342,7 @@ Level Translators&lt;br&gt;
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="+3V3" prefix="+3V3">
+<deviceset name="+3V3" urn="urn:adsk.eagle:component:26981/1" prefix="+3V3" library_version="1">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="+3V3" x="0" y="0"/>
@@ -34459,6 +34459,8 @@ Level Translators&lt;br&gt;
 <part name="+3V8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="+3V9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="SJ1" library="FaBo-Supply" deviceset="SMD-JUMPER-2" device="-OPEN"/>
+<part name="R7" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="10K"/>
+<part name="GND6" library="FaBo-Supply" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -34508,6 +34510,8 @@ Level Translators&lt;br&gt;
 <instance part="+3V8" gate="G$1" x="152.4" y="172.72"/>
 <instance part="+3V9" gate="G$1" x="48.26" y="78.74"/>
 <instance part="SJ1" gate="G$1" x="152.4" y="149.86" rot="R90"/>
+<instance part="R7" gate="G$1" x="198.12" y="129.54"/>
+<instance part="GND6" gate="G$1" x="205.74" y="129.54" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -34583,6 +34587,11 @@ Level Translators&lt;br&gt;
 <pinref part="GND8" gate="G$1" pin="GND"/>
 <wire x1="152.4" y1="147.32" x2="152.4" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="SJ1" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="R7" gate="G$1" pin="2"/>
+<wire x1="203.2" y1="129.54" x2="205.74" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="GND6" gate="G$1" pin="GND"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -34758,6 +34767,13 @@ Level Translators&lt;br&gt;
 <wire x1="157.48" y1="137.16" x2="157.48" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="C3" gate="G$1" pin="WAKE"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="190.5" y1="129.54" x2="195.58" y2="129.54" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
@@ -34768,6 +34784,11 @@ Level Translators&lt;br&gt;
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
 with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports URNs for individual library
+assets (packages, symbols, and devices). The URNs of those assets
+will not be understood (or retained) with this version.
 </note>
 </compatibility>
 </eagle>

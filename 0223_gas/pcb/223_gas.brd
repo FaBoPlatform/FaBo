@@ -147,7 +147,7 @@
 <plain>
 <text x="3.81" y="8.89" size="1.27" layer="21" rot="R90">GAS(CSS811)</text>
 <text x="1.905" y="8.89" size="1.27" layer="21" rot="R90">#223</text>
-<text x="5.615" y="8.99" size="1.27" layer="21" rot="R90">Rev.1.0.0 A</text>
+<text x="5.615" y="8.99" size="1.27" layer="21" rot="R90">Rev.1.0.0 B</text>
 </plain>
 <libraries>
 <library name="FaBo-Capacitor">
