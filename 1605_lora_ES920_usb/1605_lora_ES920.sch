@@ -748,6 +748,24 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="2.3" y1="-1.4" x2="-2.3" y2="-1.4" width="0.127" layer="51"/>
 <wire x1="-2.3" y1="-1.4" x2="-2.3" y2="1.4" width="0.127" layer="51"/>
 </package>
+<package name="TSHA-T-XB2-19E">
+<smd name="A" x="-3.8" y="2.25" dx="1.55" dy="1.1" layer="1"/>
+<smd name="B" x="3.8" y="2.25" dx="1.55" dy="1.1" layer="1"/>
+<smd name="D" x="3.8" y="-2.25" dx="1.55" dy="1.1" layer="1"/>
+<smd name="C" x="-3.8" y="-2.25" dx="1.55" dy="1.1" layer="1"/>
+<wire x1="-3.1" y1="3.1" x2="3.1" y2="3.1" width="0.127" layer="21"/>
+<wire x1="3.1" y1="3.1" x2="3.1" y2="-3.1" width="0.127" layer="21"/>
+<wire x1="3.1" y1="-3.1" x2="-3.1" y2="-3.1" width="0.127" layer="21"/>
+<wire x1="-3.1" y1="-3.1" x2="-3.1" y2="3.1" width="0.127" layer="21"/>
+<wire x1="2.54" y1="1.905" x2="0" y2="1.905" width="0.127" layer="21"/>
+<wire x1="0" y1="1.905" x2="-2.54" y2="1.905" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-1.905" x2="0" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="0" y1="-1.905" x2="2.54" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="0" y1="1.905" x2="0" y2="0.635" width="0.127" layer="21"/>
+<wire x1="0" y1="-1.905" x2="0" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="0" y1="-0.635" x2="0.635" y2="0.635" width="0.127" layer="21"/>
+<text x="-3.175" y="3.556" size="0.8128" layer="21">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="SWITCH-TACT">
@@ -774,6 +792,84 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </symbols>
 <devicesets>
 <deviceset name="TACT-SWITCH" prefix="S" uservalue="yes">
+<description>&lt;table border=1&gt;
+&lt;tr&gt;
+&lt;td&gt;
+Part No
+&lt;/td&gt;
+&lt;td&gt;
+Maker
+&lt;/td&gt;
+&lt;td&gt;
+Datasheet
+&lt;/td&gt;
+&lt;td&gt;
+Distributor
+&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;
+1273HA-160G-G
+&lt;/td&gt;
+&lt;td&gt;
+SWITRONIC
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="http://www.switronic.com/uploads/images/A10.gif"&gt;Catalog&lt;/a&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="http://akizukidenshi.com/catalog/g/gP-02561/"&gt;Akizuki&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;
+DTS-6-V
+&lt;/td&gt;
+&lt;td&gt;
+Cosland
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="http://www.cosland.com/newproduct/DTS%20SERIES.pdf"&gt;DTS 6 Series&lt;/a&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="http://akizukidenshi.com/catalog/g/gP-03647/"&gt;Akizuki&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;
+KMR2
+&lt;/td&gt;
+&lt;td&gt;
+C&amp;K
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="https://www.ckswitches.com/products/switches/product-details/Tactile/KMR2/"&gt;KMR2 SERIES&lt;/a&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="https://octopart.com/search?q=KMR2&amp;start=0"&gt;Octoparts Result&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;
+TSHA-T-XB2-19E
+&lt;/td&gt;
+&lt;td&gt;
+TOP UP INDUSTORY
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="http://www.top-up.com.tw/front/bin/ptdetail.phtml?Part=TSHA-T"&gt;TSHA-T&lt;/a&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="http://akizukidenshi.com/catalog/g/gP-09361/"&gt;Akizuki&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+
+
+&lt;/table&gt;</description>
 <gates>
 <gate name="G$1" symbol="SWITCH-TACT" x="0" y="0"/>
 </gates>
@@ -806,6 +902,17 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
 <connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-TSHA-T-XB2-19E" package="TSHA-T-XB2-19E">
+<connects>
+<connect gate="G$1" pin="1" pad="A"/>
+<connect gate="G$1" pin="2" pad="B"/>
+<connect gate="G$1" pin="3" pad="C"/>
+<connect gate="G$1" pin="4" pad="D"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1384,6 +1491,128 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </devices>
 </deviceset>
 <deviceset name="USB" prefix="USB" uservalue="yes">
+<description>&lt;table border=1&gt;
+&lt;tr&gt;
+&lt;td&gt;
+Parts No
+&lt;/td&gt;
+&lt;td&gt;
+Maker
+&lt;/td&gt;
+&lt;td&gt;
+Datasheet
+&lt;/td&gt;
+&lt;td&gt;
+Distributor
+&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;
+B05B-PASK-1
+&lt;/td&gt;
+&lt;td&gt;
+JST
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="http://www.jst-mfg.com/product/pdf/eng/ePA-F.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="https://octopart.com/search?q=B05B-PASK-1"&gt;Octoparts Result&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;
+DX4R005JJ2R1800
+&lt;/td&gt;
+&lt;td&gt;
+JAE
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="https://www.jae.com/z-jp/product_jp.cfm?l_code=JA&amp;series_code=DX4&amp;product_number=DX4R005JJ2R1800"&gt;Datasheet&lt;/a&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="https://octopart.com/dx4r005jj2r1800-jae+electronics-22232443"&gt;Octoparts Result&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;
+S04B-PASK-2
+&lt;/td&gt;
+&lt;td&gt;
+JST
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="http://www.jst-mfg.com/product/detail.php?series=189"&gt;Web&lt;/a&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="https://octopart.com/search?q=S04B-PASK-2&amp;start=0"&gt;Octoparts Result&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;
+USB-4AF103BS
+&lt;/td&gt;
+&lt;td&gt;
+Useconn Electronics
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="http://akizukidenshi.com/download/ds/useconn/USB-4AF103BS-Rev_C.PDF"&gt;Datasheet&lt;/a&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="http://akizukidenshi.com/catalog/g/gC-11551/"&gt;Akizuki&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;
+USB-A-4P-MALE(1734028-1)
+&lt;/td&gt;
+&lt;td&gt;
+TE
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="http://www.te.com/jpn-ja/product-1734028-1.html"&gt;Web&lt;/a&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="https://octopart.com/1734028-1-te+connectivity-40535237"&gt;Octopart Result&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;
+USB2-AF-WTP-CS-QRFL
+&lt;/td&gt;
+&lt;td&gt;
+VPI
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="https://www.vpi.us/dpdf/70/usb2-af-wtp-cs-qrfl.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="https://www.vpi.us/usba-waterproof/waterproof-usb-typeb-qrfl-357"&gt;VPI Store&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;
+ZX62R-B-5P
+&lt;/td&gt;
+&lt;td&gt;
+VPI
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="https://www.hirose.com/product/jp/products/ZX/ZX62R-B-5P(30)/"&gt;Web&lt;/a&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="https://octopart.com/zx62d-b-5p8%2830%29-hirose-70111550"&gt;Octopart Result&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;/table&gt;</description>
 <gates>
 <gate name="G$1" symbol="USB" x="0" y="0"/>
 </gates>
@@ -1523,6 +1752,131 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="FaBo-Diode">
+<packages>
+<package name="DO-214AC">
+<smd name="CATHODE" x="-1.7" y="0" dx="1.52" dy="1.68" layer="1"/>
+<smd name="ANODE" x="1.7" y="0" dx="1.52" dy="1.68" layer="1"/>
+<wire x1="-2.25" y1="1.4" x2="2.25" y2="1.4" width="0.127" layer="21"/>
+<wire x1="2.25" y1="1.4" x2="2.25" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="2.25" y1="-1.4" x2="-2.25" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="-2.25" y1="-1.4" x2="-2.25" y2="1.4" width="0.127" layer="21"/>
+<text x="-2.24" y="1.84" size="0.6096" layer="25">&gt;NAME</text>
+<rectangle x1="-2.2352" y1="-1.3716" x2="-0.9652" y2="1.3462" layer="21"/>
+</package>
+<package name="0603">
+<wire x1="-1.48" y1="0.6" x2="1.48" y2="0.6" width="0.0508" layer="39"/>
+<wire x1="1.48" y1="0.6" x2="1.48" y2="-0.6" width="0.0508" layer="39"/>
+<wire x1="1.48" y1="-0.6" x2="-1.48" y2="-0.6" width="0.0508" layer="39"/>
+<wire x1="-1.48" y1="-0.6" x2="-1.48" y2="0.6" width="0.0508" layer="39"/>
+<smd name="ANODE" x="-0.85" y="0" dx="1.1" dy="1" layer="1" roundness="20"/>
+<smd name="CATHODE" x="0.85" y="0" dx="1.1" dy="1" layer="1" roundness="20"/>
+<text x="0" y="0.889" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+<text x="0" y="0" size="0.8128" layer="27" font="vector" ratio="12" align="center">&gt;VALUE</text>
+<wire x1="-1.7272" y1="0" x2="-2.286" y2="0.5588" width="0.127" layer="21"/>
+<wire x1="-2.286" y1="0.5588" x2="-2.286" y2="-0.6096" width="0.127" layer="21"/>
+<wire x1="-2.286" y1="-0.6096" x2="-1.7018" y2="-0.0254" width="0.127" layer="21"/>
+<wire x1="-1.7018" y1="-0.0254" x2="-2.2352" y2="-0.0254" width="0.127" layer="21"/>
+<wire x1="-2.2352" y1="-0.0254" x2="-2.2352" y2="0.3302" width="0.127" layer="21"/>
+<wire x1="-2.2352" y1="0.3302" x2="-2.2098" y2="0.3556" width="0.127" layer="21"/>
+<wire x1="-2.2098" y1="0.3556" x2="-1.8796" y2="0.0254" width="0.127" layer="21"/>
+<wire x1="-1.8796" y1="0.0254" x2="-2.0828" y2="0.0254" width="0.127" layer="21"/>
+<wire x1="-2.0828" y1="0.0254" x2="-2.1336" y2="0.0762" width="0.127" layer="21"/>
+<wire x1="-2.1336" y1="0.0762" x2="-2.1336" y2="0.1524" width="0.127" layer="21"/>
+<wire x1="-2.1336" y1="0.1524" x2="-2.159" y2="0.1778" width="0.127" layer="21"/>
+<wire x1="-2.1336" y1="0.1524" x2="-2.0828" y2="0.1016" width="0.127" layer="21"/>
+<wire x1="-2.0828" y1="0.1016" x2="-2.0828" y2="-0.0254" width="0.127" layer="21"/>
+<wire x1="-2.0828" y1="-0.0254" x2="-2.2098" y2="-0.1524" width="0.127" layer="21"/>
+<wire x1="-2.2098" y1="-0.1524" x2="-2.2098" y2="-0.4064" width="0.127" layer="21"/>
+<wire x1="-2.2098" y1="-0.4064" x2="-2.2352" y2="-0.4318" width="0.127" layer="21"/>
+<wire x1="-2.2352" y1="-0.4318" x2="-2.2098" y2="-0.4318" width="0.127" layer="21"/>
+<wire x1="-2.2098" y1="-0.4318" x2="-1.905" y2="-0.127" width="0.127" layer="21"/>
+<wire x1="-1.905" y1="-0.127" x2="-2.0828" y2="-0.127" width="0.127" layer="21"/>
+<wire x1="-2.0828" y1="-0.127" x2="-2.0828" y2="-0.2032" width="0.127" layer="21"/>
+<wire x1="-2.0828" y1="-0.2032" x2="-2.1336" y2="-0.254" width="0.127" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="DIODE">
+<pin name="ANODE" x="-2.54" y="0" visible="off" length="point"/>
+<pin name="CATHODE" x="5.08" y="0" visible="off" length="point" rot="R180"/>
+<wire x1="-2.54" y1="0" x2="2.032" y2="0" width="0.254" layer="94"/>
+<wire x1="2.032" y1="0" x2="2.286" y2="0" width="0.254" layer="94"/>
+<wire x1="2.286" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="1.27" x2="2.54" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="2.286" y1="0" x2="1.016" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="1.016" y1="-1.016" x2="1.016" y2="1.016" width="0.254" layer="94"/>
+<wire x1="1.016" y1="1.016" x2="1.016" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.016" y1="1.27" x2="2.286" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0.762" x2="1.27" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="1.016" y1="-1.524" x2="1.016" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.016" y1="-1.27" x2="1.016" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="1.016" y1="-1.016" x2="1.524" y2="-0.508" width="0.254" layer="94"/>
+<wire x1="1.524" y1="-0.508" x2="1.778" y2="-0.254" width="0.254" layer="94"/>
+<wire x1="1.778" y1="-0.254" x2="2.032" y2="0" width="0.254" layer="94"/>
+<wire x1="2.032" y1="0" x2="1.778" y2="0.254" width="0.254" layer="94"/>
+<wire x1="1.778" y1="0.254" x2="1.524" y2="0.508" width="0.254" layer="94"/>
+<wire x1="1.524" y1="0.508" x2="1.016" y2="1.016" width="0.254" layer="94"/>
+<wire x1="1.524" y1="0.508" x2="1.524" y2="0" width="0.254" layer="94"/>
+<wire x1="1.524" y1="-0.508" x2="1.524" y2="0" width="0.254" layer="94"/>
+<wire x1="1.524" y1="0" x2="1.778" y2="0.254" width="0.254" layer="94"/>
+<wire x1="1.778" y1="0.254" x2="1.778" y2="-0.254" width="0.254" layer="94"/>
+<wire x1="1.016" y1="-1.27" x2="1.778" y2="-0.508" width="0.254" layer="94"/>
+<wire x1="0.762" y1="2.032" x2="1.778" y2="3.048" width="0.254" layer="94"/>
+<wire x1="1.778" y1="3.048" x2="1.778" y2="2.54" width="0.254" layer="94"/>
+<wire x1="1.778" y1="2.54" x2="2.794" y2="3.556" width="0.254" layer="94"/>
+<wire x1="2.54" y1="3.81" x2="2.794" y2="3.556" width="0.127" layer="94"/>
+<wire x1="2.794" y1="3.556" x2="3.048" y2="3.302" width="0.127" layer="94"/>
+<wire x1="2.54" y1="3.81" x2="2.794" y2="3.81" width="0.127" layer="94"/>
+<wire x1="2.794" y1="3.81" x2="3.048" y2="3.81" width="0.127" layer="94"/>
+<wire x1="3.048" y1="3.81" x2="3.048" y2="3.556" width="0.127" layer="94"/>
+<wire x1="3.048" y1="3.556" x2="3.048" y2="3.302" width="0.127" layer="94"/>
+<wire x1="2.794" y1="3.81" x2="3.048" y2="3.556" width="0.127" layer="94"/>
+<wire x1="2.794" y1="3.81" x2="2.794" y2="3.556" width="0.127" layer="94"/>
+<wire x1="3.048" y1="3.556" x2="2.794" y2="3.556" width="0.127" layer="94"/>
+<wire x1="1.778" y1="1.778" x2="2.794" y2="2.794" width="0.254" layer="94"/>
+<wire x1="2.794" y1="2.794" x2="2.794" y2="2.286" width="0.254" layer="94"/>
+<wire x1="2.794" y1="2.286" x2="3.81" y2="3.302" width="0.254" layer="94"/>
+<wire x1="3.556" y1="3.556" x2="3.81" y2="3.302" width="0.127" layer="94"/>
+<wire x1="3.81" y1="3.302" x2="4.064" y2="3.048" width="0.127" layer="94"/>
+<wire x1="3.556" y1="3.556" x2="3.81" y2="3.556" width="0.127" layer="94"/>
+<wire x1="3.81" y1="3.556" x2="4.064" y2="3.556" width="0.127" layer="94"/>
+<wire x1="4.064" y1="3.556" x2="4.064" y2="3.302" width="0.127" layer="94"/>
+<wire x1="4.064" y1="3.302" x2="4.064" y2="3.048" width="0.127" layer="94"/>
+<wire x1="3.81" y1="3.556" x2="4.064" y2="3.302" width="0.127" layer="94"/>
+<wire x1="3.81" y1="3.556" x2="3.81" y2="3.302" width="0.127" layer="94"/>
+<wire x1="4.064" y1="3.302" x2="3.81" y2="3.302" width="0.127" layer="94"/>
+<text x="-1.27" y="-3.048" size="1.27" layer="95">&gt;NAME</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="DIODE" prefix="D" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="DIODE" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="DO-214AC" package="DO-214AC">
+<connects>
+<connect gate="G$1" pin="ANODE" pad="ANODE"/>
+<connect gate="G$1" pin="CATHODE" pad="CATHODE"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="0603" package="0603">
+<connects>
+<connect gate="G$1" pin="ANODE" pad="ANODE"/>
+<connect gate="G$1" pin="CATHODE" pad="CATHODE"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1560,8 +1914,8 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="GND22" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="5V13" library="FaBo-Supply" deviceset="5V" device=""/>
 <part name="5V14" library="FaBo-Supply" deviceset="5V" device=""/>
-<part name="RX1" library="FaBo-LED" deviceset="LED" device="-0603-NARROW" value="GREEN"/>
-<part name="TX1" library="FaBo-LED" deviceset="LED" device="-0603-NARROW" value="BLUE"/>
+<part name="RX1" library="FaBo-LED" deviceset="LED" device="-0603-NARROW"/>
+<part name="TX1" library="FaBo-LED" deviceset="LED" device="-0603-NARROW"/>
 <part name="R3" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603-NARROW" value="27"/>
 <part name="R4" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603-NARROW" value="27"/>
 <part name="R5" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603-NARROW" value="1k"/>
@@ -1573,7 +1927,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="C15" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603_NARROW" value="0.1uF"/>
 <part name="IC1" library="FaBo-USB" deviceset="FT231X" device="Q" value="FT231XQ"/>
 <part name="F2" library="FaBo-Parts" deviceset="POLYSWITCH" device=""/>
-<part name="PWR1" library="FaBo-LED" deviceset="LED" device="-0603-NARROW" value="RED"/>
+<part name="PWR1" library="FaBo-LED" deviceset="LED" device="-0603-NARROW"/>
 <part name="5V16" library="FaBo-Supply" deviceset="5V" device=""/>
 <part name="R7" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603-NARROW" value="1k"/>
 <part name="GND24" library="FaBo-Supply" deviceset="GND" device=""/>
@@ -1592,6 +1946,8 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="R1" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603-NARROW" value="470"/>
 <part name="R8" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603-NARROW" value="470"/>
 <part name="R11" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603-NARROW" value="10k"/>
+<part name="C2" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603_NARROW" value="10nF"/>
+<part name="D1" library="FaBo-Diode" deviceset="DIODE" device="0603"/>
 </parts>
 <sheets>
 <sheet>
@@ -1606,11 +1962,11 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <instance part="U$8" gate="G$1" x="58.42" y="43.18" rot="R270"/>
 <instance part="GND11" gate="G$1" x="45.72" y="30.48"/>
 <instance part="3V2" gate="G$1" x="45.72" y="50.8"/>
-<instance part="RESET" gate="G$1" x="20.32" y="35.56"/>
-<instance part="GND15" gate="G$1" x="30.48" y="12.7"/>
-<instance part="3V8" gate="G$1" x="12.7" y="48.26"/>
-<instance part="R2" gate="G$1" x="12.7" y="40.64" rot="R90"/>
-<instance part="C3" gate="G$1" x="20.32" y="25.4" rot="R180"/>
+<instance part="RESET" gate="G$1" x="30.48" y="40.64"/>
+<instance part="GND15" gate="G$1" x="40.64" y="17.78"/>
+<instance part="3V8" gate="G$1" x="22.86" y="63.5"/>
+<instance part="R2" gate="G$1" x="22.86" y="53.34" rot="R90"/>
+<instance part="C3" gate="G$1" x="30.48" y="30.48" rot="R180"/>
 <instance part="3V4" gate="G$1" x="73.66" y="58.42"/>
 <instance part="R9" gate="G$1" x="73.66" y="50.8" rot="R90"/>
 <instance part="R10" gate="G$1" x="88.9" y="50.8" rot="R90"/>
@@ -1661,6 +2017,8 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <instance part="R1" gate="G$1" x="213.36" y="76.2"/>
 <instance part="R8" gate="G$1" x="213.36" y="73.66"/>
 <instance part="R11" gate="G$1" x="236.22" y="73.66" rot="R90"/>
+<instance part="C2" gate="G$1" x="12.7" y="48.26" rot="R270"/>
+<instance part="D1" gate="G$1" x="27.94" y="53.34" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -1679,15 +2037,15 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </segment>
 <segment>
 <pinref part="GND15" gate="G$1" pin="GND"/>
-<wire x1="30.48" y1="25.4" x2="30.48" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="30.48" x2="40.64" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="RESET" gate="G$1" pin="3"/>
-<wire x1="25.4" y1="35.56" x2="30.48" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="35.56" x2="30.48" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="40.64" x2="40.64" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="40.64" x2="40.64" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="RESET" gate="G$1" pin="4"/>
-<wire x1="25.4" y1="33.02" x2="30.48" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="33.02" x2="30.48" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="38.1" x2="40.64" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="38.1" x2="40.64" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="22.86" y1="25.4" x2="30.48" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="30.48" x2="40.64" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND1" gate="G$1" pin="GND"/>
@@ -1800,7 +2158,12 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <segment>
 <pinref part="3V8" gate="G$1" pin="3V3"/>
 <pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="12.7" y1="48.26" x2="12.7" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="63.5" x2="22.86" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="D1" gate="G$1" pin="CATHODE"/>
+<wire x1="22.86" y1="60.96" x2="22.86" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="60.96" x2="27.94" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="60.96" x2="27.94" y2="58.42" width="0.1524" layer="91"/>
+<junction x="22.86" y="60.96"/>
 </segment>
 <segment>
 <pinref part="R9" gate="G$1" pin="2"/>
@@ -1858,7 +2221,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </net>
 <net name="N$1" class="0">
 <segment>
-<wire x1="30.48" y1="35.56" x2="25.4" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="40.64" x2="35.56" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SWD_CLK" class="0">
@@ -1900,14 +2263,24 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </segment>
 <segment>
 <pinref part="RESET" gate="G$1" pin="2"/>
-<wire x1="5.08" y1="33.02" x2="12.7" y2="33.02" width="0.1524" layer="91"/>
-<label x="5.08" y="33.02" size="1.778" layer="95"/>
+<wire x1="7.62" y1="38.1" x2="12.7" y2="38.1" width="0.1524" layer="91"/>
+<label x="7.62" y="38.1" size="1.778" layer="95"/>
 <pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="12.7" y1="33.02" x2="15.24" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="38.1" x2="12.7" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="33.02" x2="12.7" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="38.1" x2="22.86" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="38.1" x2="25.4" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="50.8" x2="22.86" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="45.72" x2="22.86" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="38.1" x2="22.86" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="2"/>
-<wire x1="12.7" y1="25.4" x2="15.24" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="30.48" x2="25.4" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="38.1" x2="12.7" y2="43.18" width="0.1524" layer="91"/>
+<junction x="12.7" y="38.1"/>
+<junction x="22.86" y="38.1"/>
+<pinref part="C2" gate="G$1" pin="2"/>
+<pinref part="D1" gate="G$1" pin="ANODE"/>
+<wire x1="22.86" y1="45.72" x2="27.94" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="45.72" x2="27.94" y2="50.8" width="0.1524" layer="91"/>
+<junction x="22.86" y="45.72"/>
 </segment>
 <segment>
 <wire x1="193.04" y1="86.36" x2="203.2" y2="86.36" width="0.1524" layer="91"/>
@@ -2086,6 +2459,18 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="193.04" y1="66.04" x2="236.22" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="R11" gate="G$1" pin="1"/>
 <wire x1="236.22" y1="66.04" x2="236.22" y2="71.12" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="DTR" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="DTR"/>
+<wire x1="134.62" y1="127" x2="144.78" y2="127" width="0.1524" layer="91"/>
+<label x="139.7" y="127" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="12.7" y1="50.8" x2="12.7" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="C2" gate="G$1" pin="1"/>
+<label x="12.7" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
