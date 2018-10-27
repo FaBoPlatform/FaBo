@@ -12120,6 +12120,29 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pad name="DATA" x="0" y="-8.89" drill="1" shape="long" rot="R90"/>
 <text x="0" y="-6.731" size="0.8128" layer="21" font="vector" ratio="12" rot="R90" align="center-left">DATA</text>
 </package>
+<package name="FABO_BRICK_I2S_B05B-PARK-1">
+<pad name="GND" x="-4.27" y="2.54" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="VCC" x="-2.27" y="2.54" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="DATA" x="-0.27" y="2.54" drill="0.8" diameter="1.4224" shape="octagon"/>
+<hole x="5.135" y="4.24" drill="1.1"/>
+<wire x1="5.635" y1="-0.56" x2="5.635" y2="4.74" width="0.1" layer="51"/>
+<wire x1="-6.27" y1="-0.56" x2="-6.27" y2="4.74" width="0.1" layer="51"/>
+<wire x1="5.635" y1="4.74" x2="-6.27" y2="4.74" width="0.1" layer="51"/>
+<wire x1="5.635" y1="-0.56" x2="3" y2="-0.56" width="0.1" layer="51"/>
+<text x="0" y="-1.905" size="1.27" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center">&gt;NAME</text>
+<wire x1="3" y1="-0.56" x2="-3" y2="-0.56" width="0.1" layer="51"/>
+<wire x1="-3" y1="-0.56" x2="-6.27" y2="-0.56" width="0.1" layer="51"/>
+<wire x1="3" y1="-1.06" x2="-3" y2="-1.06" width="0.1" layer="51"/>
+<text x="-4.27" y="1.54" size="0.4064" layer="51" font="vector" ratio="12" rot="R270" align="center-left">GND</text>
+<text x="-2.27" y="1.54" size="0.4064" layer="51" font="vector" ratio="12" rot="R270" align="center-left">VCC</text>
+<text x="-0.27" y="1.54" size="0.4064" layer="51" font="vector" ratio="12" rot="R270" align="center-left">DATA</text>
+<text x="1.73" y="1.54" size="0.4064" layer="51" font="vector" ratio="12" rot="R270" align="center-left">BCLK</text>
+<wire x1="-3" y1="-0.56" x2="-3" y2="-1.06" width="0.1" layer="51"/>
+<wire x1="3" y1="-0.56" x2="3" y2="-1.06" width="0.1" layer="51"/>
+<pad name="WS" x="3.635" y="2.54" drill="0.8" diameter="1.4224" shape="square"/>
+<pad name="BCLK" x="1.635" y="2.54" drill="0.8" diameter="1.4224" shape="octagon"/>
+<text x="3.635" y="1.54" size="0.4064" layer="51" font="vector" ratio="12" rot="R270" align="center-left">WS</text>
+</package>
 </packages>
 <symbols>
 <symbol name="FABO_BRICK_I2S">
@@ -12190,6 +12213,18 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </technologies>
 </device>
 <device name="-BREAKOUT" package="FABO_BRICK_I2S_BREAKOUT">
+<connects>
+<connect gate="G$1" pin="BCLK" pad="BCLK"/>
+<connect gate="G$1" pin="DATA" pad="DATA"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+<connect gate="G$1" pin="WS" pad="WS"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TOP" package="FABO_BRICK_I2S_B05B-PARK-1">
 <connects>
 <connect gate="G$1" pin="BCLK" pad="BCLK"/>
 <connect gate="G$1" pin="DATA" pad="DATA"/>
@@ -12706,8 +12741,8 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="GND9" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="GND10" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="R2" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="70"/>
-<part name="I2S" library="FaBo-Template" deviceset="FABO_BRICK_I2S" device="LONG"/>
 <part name="R4" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="10k"/>
+<part name="I2S" library="FaBo-Template" deviceset="FABO_BRICK_I2S" device="TOP"/>
 </parts>
 <sheets>
 <sheet>
@@ -12743,8 +12778,8 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <instance part="GND9" gate="G$1" x="175.26" y="147.32"/>
 <instance part="GND10" gate="G$1" x="187.96" y="147.32"/>
 <instance part="R2" gate="G$1" x="220.98" y="129.54"/>
-<instance part="I2S" gate="G$1" x="22.86" y="132.08"/>
 <instance part="R4" gate="G$1" x="152.4" y="78.74" rot="R90"/>
+<instance part="I2S" gate="G$1" x="22.86" y="132.08"/>
 </instances>
 <busses>
 </busses>
@@ -12876,8 +12911,8 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <segment>
 <wire x1="35.56" y1="142.24" x2="33.02" y2="142.24" width="0.1524" layer="91"/>
 <label x="43.18" y="142.24" size="1.778" layer="95"/>
-<pinref part="I2S" gate="G$1" pin="WS"/>
 <wire x1="33.02" y1="142.24" x2="43.18" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="I2S" gate="G$1" pin="WS"/>
 <junction x="33.02" y="142.24"/>
 </segment>
 <segment>
@@ -12895,8 +12930,8 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <segment>
 <wire x1="35.56" y1="137.16" x2="33.02" y2="137.16" width="0.1524" layer="91"/>
 <label x="43.18" y="137.16" size="1.778" layer="95"/>
-<pinref part="I2S" gate="G$1" pin="BCLK"/>
 <wire x1="33.02" y1="137.16" x2="43.18" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="I2S" gate="G$1" pin="BCLK"/>
 <junction x="33.02" y="137.16"/>
 </segment>
 <segment>
@@ -12921,8 +12956,8 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <segment>
 <wire x1="43.18" y1="132.08" x2="33.02" y2="132.08" width="0.1524" layer="91"/>
 <label x="43.18" y="132.08" size="1.778" layer="95"/>
-<pinref part="I2S" gate="G$1" pin="DATA"/>
 <wire x1="33.02" y1="132.08" x2="35.56" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="I2S" gate="G$1" pin="DATA"/>
 <junction x="33.02" y="132.08"/>
 </segment>
 <segment>

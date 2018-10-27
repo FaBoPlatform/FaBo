@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.2">
+<eagle version="9.2.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="11" fill="3" visible="no" active="no"/>
+<layer number="15" name="Route15" color="10" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -2902,10 +2905,14 @@ design rules under a new name.</description>
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
-<param name="checkGrid" value="0"/>
 <param name="checkAngle" value="0"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="0"/>
+<param name="checkStop" value="0"/>
+<param name="checkValues" value="0"/>
+<param name="checkNames" value="1"/>
+<param name="checkWireStubs" value="1"/>
+<param name="checkPolygonWidth" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -3006,8 +3013,8 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="J1" library="FaBo-Template" package="FABO_BRICK_I2C" value="" x="13.97" y="19.05"/>
-<element name="U$3" library="FaBo-etc" package="LOGO_FABO_MS" value="" x="25.4" y="14.605" rot="R90"/>
+<element name="J1" library="FaBo-Template" package="FABO_BRICK_I2C" value="" x="13.97" y="19.05" smashed="yes"/>
+<element name="U$3" library="FaBo-etc" package="LOGO_FABO_MS" value="" x="25.4" y="14.605" smashed="yes" rot="R90"/>
 <element name="R3" library="FaBo-Resistors" package="0603" value="200k" x="13.97" y="15.875" smashed="yes">
 <attribute name="NAME" x="13.97" y="14.986" size="0.8128" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" x="13.97" y="15.875" size="0.8128" layer="27" font="vector" ratio="12" align="center"/>
@@ -3020,11 +3027,11 @@ design rules under a new name.</description>
 <attribute name="NAME" x="13.97" y="17.526" size="0.8128" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" x="13.97" y="18.415" size="0.8128" layer="27" font="vector" ratio="12" rot="R180" align="center"/>
 </element>
-<element name="U$2" library="FaBo-etc" package="LOGO_OSHW_M_BOTTOM" value="" x="13.97" y="3.175"/>
+<element name="U$2" library="FaBo-etc" package="LOGO_OSHW_M_BOTTOM" value="" x="13.97" y="3.175" smashed="yes"/>
 <element name="IC2" library="FaBo-Supply" package="SOT-23-5" value="" x="18.415" y="17.145" smashed="yes"/>
 <element name="IC3" library="FaBo-LevelTranslator" package="XQFN8" value="" x="9.525" y="18.415" smashed="yes" rot="R270"/>
-<element name="TP1" library="FaBo-Supply" package="TP-15" value="" x="5.675" y="17.705" rot="MR0"/>
-<element name="TP2" library="FaBo-Supply" package="TP-15" value="" x="5.715" y="20.955" rot="MR0"/>
+<element name="TP1" library="FaBo-Supply" package="TP-15" value="" x="5.675" y="17.705" smashed="yes" rot="MR0"/>
+<element name="TP2" library="FaBo-Supply" package="TP-15" value="" x="5.715" y="20.955" smashed="yes" rot="MR0"/>
 <element name="R1" library="FaBo-Resistors" package="0603" value="4.7k" x="10.025" y="22.595" smashed="yes">
 <attribute name="NAME" x="10.025" y="21.706" size="0.8128" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" x="10.025" y="22.495" size="0.8128" layer="27" font="vector" ratio="12" align="center"/>
@@ -3033,9 +3040,17 @@ design rules under a new name.</description>
 <attribute name="NAME" x="13.97" y="21.706" size="0.8128" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" x="14.07" y="22.495" size="0.8128" layer="27" font="vector" ratio="12" align="center"/>
 </element>
-<element name="MAX30100" library="FaBo-Mems" package="MAXIM-30100" value="MA-MAX30100" x="14.3" y="33"/>
-<element name="C3" library="FaBo-Capacitor" package="0603" value="4.7uF" x="16.3" y="27.6"/>
-<element name="C4" library="FaBo-Capacitor" package="0603" value="10uF" x="12.2" y="27.6"/>
+<element name="MAX30100" library="FaBo-Mems" package="MAXIM-30100" value="MA-MAX30100" x="14.3" y="33" smashed="yes">
+<attribute name="NAME" x="12.776" y="36.048" size="0.6096" layer="25"/>
+</element>
+<element name="C3" library="FaBo-Capacitor" package="0603" value="4.7uF" x="16.3" y="27.6" smashed="yes">
+<attribute name="NAME" x="16.3" y="28.489" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center"/>
+<attribute name="VALUE" x="16.3" y="27.6" size="0.8128" layer="27" font="vector" ratio="12" align="center"/>
+</element>
+<element name="C4" library="FaBo-Capacitor" package="0603" value="10uF" x="12.2" y="27.6" smashed="yes">
+<attribute name="NAME" x="12.2" y="28.489" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center"/>
+<attribute name="VALUE" x="12.2" y="27.6" size="0.8128" layer="27" font="vector" ratio="12" align="center"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -3244,6 +3259,13 @@ design rules under a new name.</description>
 <wire x1="17.0688" y1="27.5844" x2="17.15" y2="27.6" width="0.1524" layer="1"/>
 </signal>
 </signals>
+<mfgpreviewcolors>
+<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
+<mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
+<mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
+<mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
+<mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
+</mfgpreviewcolors>
 <errors>
 <approved hash="5,1,7023502db3e141e6"/>
 <approved hash="5,1,24233a2559e869e7"/>
