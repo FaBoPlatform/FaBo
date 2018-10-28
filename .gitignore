@@ -5,9 +5,6 @@
 *.b#?
 *.l#?
 
-#Mac
-.DS_Store
-
 # Eagle project file
 # It contains a serial number and references to the file structure
 # on your computer.
