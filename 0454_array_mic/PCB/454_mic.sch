@@ -1076,8 +1076,8 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <attribute name="NAME" x="165.354" y="142.494" size="1.4224" layer="95" rot="R90"/>
 <attribute name="VALUE" x="169.926" y="142.494" size="1.4224" layer="96" rot="R90" align="top-left"/>
 </instance>
-<instance part="3V6" gate="G$1" x="152.4" y="160.02" smashed="yes">
-<attribute name="VALUE" x="151.13" y="163.576" size="1.778" layer="96"/>
+<instance part="3V6" gate="G$1" x="149.86" y="160.02" smashed="yes">
+<attribute name="VALUE" x="148.59" y="163.576" size="1.778" layer="96"/>
 </instance>
 <instance part="GND15" gate="G$1" x="180.34" y="104.14" smashed="yes">
 <attribute name="VALUE" x="177.546" y="99.06" size="1.778" layer="96"/>
@@ -1133,7 +1133,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="149.86" y1="152.4" x2="167.64" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="3V6" gate="G$1" pin="3V3"/>
 <wire x1="167.64" y1="152.4" x2="180.34" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="160.02" x2="149.86" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="160.02" x2="149.86" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="MIC_RIGHT" gate="G$1" pin="VDD"/>
 <pinref part="C7" gate="G$1" pin="2"/>
 <wire x1="167.64" y1="149.86" x2="167.64" y2="152.4" width="0.1524" layer="91"/>
