@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.2">
+<eagle version="8.6.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
@@ -142,8 +143,8 @@
 </layers>
 <board>
 <plain>
-<text x="1.905" y="11.43" size="1.27" layer="21" font="vector" ratio="12" rot="R90">Distance</text>
-<text x="3.465" y="11.43" size="1.016" layer="21" font="vector" ratio="12" rot="R90">Rev.1.0.0.Beta</text>
+<text x="1.905" y="10.13" size="1.27" layer="21" font="vector" ratio="12" rot="R90">Distance 4m</text>
+<text x="3.465" y="10.13" size="1.016" layer="21" font="vector" ratio="12" rot="R90">Rev.1.0.0</text>
 <text x="25.4" y="14.605" size="0.8128" layer="21" font="vector" ratio="12" rot="R270" align="bottom-center">MADE IN JAPAN</text>
 <text x="13.72" y="36.055" size="2.54" layer="21" font="vector" ratio="12" align="bottom-center">#224</text>
 </plain>
@@ -2912,10 +2913,11 @@ design rules under a new name.</description>
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
-<param name="checkGrid" value="0"/>
 <param name="checkAngle" value="0"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="0"/>
+<param name="checkStop" value="0"/>
+<param name="checkValues" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -3307,38 +3309,6 @@ design rules under a new name.</description>
 <wire x1="9.2964" y1="27.8892" x2="9.15" y2="28" width="0.1524" layer="1"/>
 </signal>
 </signals>
-<errors>
-<approved hash="5,1,7023502db3e141e6"/>
-<approved hash="5,1,24233a2559e869e7"/>
-<approved hash="5,1,03c275e17f233d05"/>
-<approved hash="5,1,9f65fd175584d08b"/>
-<approved hash="5,1,42356e520ed241eb"/>
-<approved hash="5,1,dfd9f7d21752458f"/>
-<approved hash="5,1,55fbb2974a84d095"/>
-<approved hash="5,1,a047885218524a91"/>
-<approved hash="5,1,3dab11d201d24ef5"/>
-<approved hash="5,1,ea7a6814bf84d094"/>
-<approved hash="5,1,6ac542d21b524993"/>
-<approved hash="5,1,a0f81d914a84d096"/>
-<approved hash="5,1,c2ef448776a4d5b1"/>
-<approved hash="5,1,1340367e107647ba"/>
-<approved hash="5,1,94bcbdb61bae4b96"/>
-<approved hash="5,1,9969fa075ba4d5b7"/>
-<approved hash="5,1,ddc1f8fe177640bb"/>
-<approved hash="5,1,5a3d73361cae4c97"/>
-<approved hash="5,1,57ebaf874ea4d5b5"/>
-<approved hash="5,1,a8438d7e127645b9"/>
-<approved hash="5,1,e26a6518b5a4d5b4"/>
-<approved hash="5,1,4cbbc4e776c5dbe4"/>
-<approved hash="5,1,9ab3b9d21fd241e5"/>
-<approved hash="5,1,1ee839ae1fb645c2"/>
-<approved hash="5,1,173d7a675bc5dbe2"/>
-<approved hash="5,1,5432775218d246e4"/>
-<approved hash="5,1,d069f72e18b642c3"/>
-<approved hash="5,1,d9bf2fe74ec5dbe0"/>
-<approved hash="5,1,21b002d21dd243e6"/>
-<approved hash="5,1,6c3ee578b5c5dbe1"/>
-</errors>
 </board>
 </drawing>
 </eagle>
