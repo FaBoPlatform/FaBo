@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.6.3">
+<eagle version="9.2.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -143,10 +143,10 @@
 </layers>
 <board>
 <plain>
-<text x="1.905" y="10.13" size="1.27" layer="21" font="vector" ratio="12" rot="R90">Distance 4m</text>
-<text x="3.465" y="10.13" size="1.016" layer="21" font="vector" ratio="12" rot="R90">Rev.1.0.0</text>
+<text x="1.905" y="11.43" size="1.27" layer="21" font="vector" ratio="12" rot="R90">Distance</text>
+<text x="3.465" y="11.43" size="1.016" layer="21" font="vector" ratio="12" rot="R90">Rev.1.0.0 A</text>
 <text x="25.4" y="14.605" size="0.8128" layer="21" font="vector" ratio="12" rot="R270" align="bottom-center">MADE IN JAPAN</text>
-<text x="13.72" y="36.055" size="2.54" layer="21" font="vector" ratio="12" align="bottom-center">#224</text>
+<text x="13.62" y="35.055" size="2.54" layer="21" font="vector" ratio="12" align="bottom-center">#224</text>
 </plain>
 <libraries>
 <library name="FaBo-Template">
@@ -2918,6 +2918,9 @@ design rules under a new name.</description>
 <param name="checkRestrict" value="0"/>
 <param name="checkStop" value="0"/>
 <param name="checkValues" value="0"/>
+<param name="checkNames" value="1"/>
+<param name="checkWireStubs" value="1"/>
+<param name="checkPolygonWidth" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -3018,8 +3021,8 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="J1" library="FaBo-Template" package="FABO_BRICK_I2C" value="" x="13.97" y="19.05"/>
-<element name="U$3" library="FaBo-etc" package="LOGO_FABO_MS" value="" x="25.4" y="14.605" rot="R90"/>
+<element name="J1" library="FaBo-Template" package="FABO_BRICK_I2C" value="" x="13.97" y="19.05" smashed="yes"/>
+<element name="U$3" library="FaBo-etc" package="LOGO_FABO_MS" value="" x="25.4" y="14.605" smashed="yes" rot="R90"/>
 <element name="R3" library="FaBo-Resistors" package="0603" value="200k" x="13.97" y="15.875" smashed="yes">
 <attribute name="NAME" x="13.97" y="14.986" size="0.8128" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" x="13.97" y="15.875" size="0.8128" layer="27" font="vector" ratio="12" align="center"/>
@@ -3032,11 +3035,11 @@ design rules under a new name.</description>
 <attribute name="NAME" x="13.97" y="17.526" size="0.8128" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" x="13.97" y="18.415" size="0.8128" layer="27" font="vector" ratio="12" rot="R180" align="center"/>
 </element>
-<element name="U$2" library="FaBo-etc" package="LOGO_OSHW_M_BOTTOM" value="" x="13.97" y="3.175"/>
+<element name="U$2" library="FaBo-etc" package="LOGO_OSHW_M_BOTTOM" value="" x="13.97" y="3.175" smashed="yes"/>
 <element name="IC2" library="FaBo-Supply" package="SOT-23-5" value="" x="18.415" y="17.145" smashed="yes"/>
 <element name="IC3" library="FaBo-LevelTranslator" package="XQFN8" value="" x="9.525" y="18.415" smashed="yes" rot="R270"/>
-<element name="TP1" library="FaBo-Supply" package="TP-15" value="" x="5.675" y="17.705" rot="MR0"/>
-<element name="TP2" library="FaBo-Supply" package="TP-15" value="" x="5.715" y="20.955" rot="MR0"/>
+<element name="TP1" library="FaBo-Supply" package="TP-15" value="" x="5.675" y="17.705" smashed="yes" rot="MR0"/>
+<element name="TP2" library="FaBo-Supply" package="TP-15" value="" x="5.715" y="20.955" smashed="yes" rot="MR0"/>
 <element name="R1" library="FaBo-Resistors" package="0603" value="4.7k" x="10.025" y="22.595" smashed="yes">
 <attribute name="NAME" x="10.025" y="21.706" size="0.8128" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" x="10.025" y="22.495" size="0.8128" layer="27" font="vector" ratio="12" align="center"/>
@@ -3045,11 +3048,25 @@ design rules under a new name.</description>
 <attribute name="NAME" x="13.97" y="21.706" size="0.8128" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" x="14.07" y="22.495" size="0.8128" layer="27" font="vector" ratio="12" align="center"/>
 </element>
-<element name="VL1" library="FaBo-Mems" package="ST-VL53L0X" value="" x="14" y="31"/>
-<element name="C3" library="FaBo-Capacitor" package="0603" value="100nF" x="18.5" y="25"/>
-<element name="C4" library="FaBo-Capacitor" package="0603" value="4.7uF" x="14" y="25"/>
-<element name="R4" library="FaBo-Resistors" package="0603" value="10k" x="10" y="25"/>
-<element name="R5" library="FaBo-Resistors" package="0603" value="10k" x="10" y="28"/>
+<element name="VL1" library="FaBo-Mems" package="ST-VL53L0X" value="" x="14" y="31" smashed="yes">
+<attribute name="NAME" x="12.8" y="33.4" size="0.8" layer="25" font="vector" ratio="12"/>
+</element>
+<element name="C3" library="FaBo-Capacitor" package="0603" value="100nF" x="18.5" y="25" smashed="yes">
+<attribute name="NAME" x="18.5" y="25.889" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center"/>
+<attribute name="VALUE" x="18.5" y="25" size="0.8128" layer="27" font="vector" ratio="12" align="center"/>
+</element>
+<element name="C4" library="FaBo-Capacitor" package="0603" value="4.7uF" x="14" y="25" smashed="yes">
+<attribute name="NAME" x="14" y="25.889" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center"/>
+<attribute name="VALUE" x="14" y="25" size="0.8128" layer="27" font="vector" ratio="12" align="center"/>
+</element>
+<element name="R4" library="FaBo-Resistors" package="0603" value="10k" x="10" y="25" smashed="yes">
+<attribute name="NAME" x="10" y="25.889" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center"/>
+<attribute name="VALUE" x="10" y="25" size="0.8128" layer="27" font="vector" ratio="12" align="center"/>
+</element>
+<element name="R5" library="FaBo-Resistors" package="0603" value="10k" x="10" y="28" smashed="yes">
+<attribute name="NAME" x="10" y="28.889" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center"/>
+<attribute name="VALUE" x="10" y="28" size="0.8128" layer="27" font="vector" ratio="12" align="center"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -3309,6 +3326,13 @@ design rules under a new name.</description>
 <wire x1="9.2964" y1="27.8892" x2="9.15" y2="28" width="0.1524" layer="1"/>
 </signal>
 </signals>
+<mfgpreviewcolors>
+<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
+<mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
+<mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
+<mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
+<mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
+</mfgpreviewcolors>
 </board>
 </drawing>
 </eagle>
