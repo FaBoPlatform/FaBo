@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -18203,9 +18203,14 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pinref part="IC2" gate="G$1" pin="PD2(INT0)"/>
 </segment>
 <segment>
-<wire x1="152.4" y1="193.04" x2="167.64" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="193.04" x2="160.02" y2="193.04" width="0.1524" layer="91"/>
 <label x="152.4" y="193.04" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="U2" gate="G$1" pin="AIN1"/>
+<pinref part="U2" gate="G$1" pin="BIN1"/>
+<wire x1="160.02" y1="193.04" x2="167.64" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="187.96" x2="160.02" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="187.96" x2="160.02" y2="193.04" width="0.1524" layer="91"/>
+<junction x="160.02" y="193.04"/>
 </segment>
 </net>
 <net name="D3" class="0">
@@ -18215,9 +18220,14 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pinref part="IC2" gate="G$1" pin="PD3(INT1)"/>
 </segment>
 <segment>
-<wire x1="152.4" y1="190.5" x2="167.64" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="190.5" x2="157.48" y2="190.5" width="0.1524" layer="91"/>
 <label x="152.4" y="190.5" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="U2" gate="G$1" pin="AIN2"/>
+<pinref part="U2" gate="G$1" pin="BIN2"/>
+<wire x1="157.48" y1="190.5" x2="167.64" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="185.42" x2="157.48" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="185.42" x2="157.48" y2="190.5" width="0.1524" layer="91"/>
+<junction x="157.48" y="190.5"/>
 </segment>
 </net>
 <net name="D4" class="0">
@@ -18386,15 +18396,25 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <net name="MOTOR1" class="0">
 <segment>
 <pinref part="MOTOR" gate="G$1" pin="1"/>
-<wire x1="198.12" y1="193.04" x2="220.98" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="193.04" x2="203.2" y2="193.04" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="AOUT1"/>
+<pinref part="U2" gate="G$1" pin="BOUT1"/>
+<wire x1="203.2" y1="193.04" x2="220.98" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="187.96" x2="203.2" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="187.96" x2="203.2" y2="193.04" width="0.1524" layer="91"/>
+<junction x="203.2" y="193.04"/>
 </segment>
 </net>
 <net name="MOTOR2" class="0">
 <segment>
 <pinref part="MOTOR" gate="G$1" pin="2"/>
-<wire x1="198.12" y1="190.5" x2="220.98" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="190.5" x2="205.74" y2="190.5" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="AOUT2"/>
+<pinref part="U2" gate="G$1" pin="BOUT2"/>
+<wire x1="205.74" y1="190.5" x2="220.98" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="185.42" x2="205.74" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="185.42" x2="205.74" y2="190.5" width="0.1524" layer="91"/>
+<junction x="205.74" y="190.5"/>
 </segment>
 </net>
 <net name="VCC" class="0">
