@@ -17034,7 +17034,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <text x="17.78" y="55.88" size="2.54" layer="97">I2C(4pin Side 2mm pitch) x3</text>
 <text x="162.56" y="134.62" size="2.54" layer="97">PWM0/Servo (3pin Top 2.54mm pitch)</text>
 <text x="162.56" y="53.34" size="2.54" layer="97">Analog(3pin Top 2mm pitch) x4</text>
-<text x="373.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.1</text>
+<text x="373.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.2</text>
 </plain>
 <instances>
 <instance part="U$14" gate="G$1" x="358.14" y="5.08" smashed="yes"/>
@@ -18035,7 +18035,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <text x="109.22" y="27.94" size="1.778" layer="91">D11</text>
 <text x="109.22" y="25.4" size="1.778" layer="91">D12</text>
 <text x="109.22" y="22.86" size="1.778" layer="91">D13</text>
-<text x="373.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.1</text>
+<text x="373.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.2</text>
 </plain>
 <instances>
 <instance part="GND45" gate="G$1" x="180.34" y="20.32"/>
