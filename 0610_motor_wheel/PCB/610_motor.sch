@@ -13950,8 +13950,8 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </segment>
 <segment>
 <pinref part="U$9" gate="G$1" pin="SDA"/>
-<wire x1="88.9" y1="132.08" x2="81.28" y2="134.62" width="0.1524" layer="91"/>
-<label x="81.28" y="134.62" size="1.778" layer="95"/>
+<wire x1="88.9" y1="132.08" x2="81.28" y2="132.08" width="0.1524" layer="91"/>
+<label x="81.28" y="132.08" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="269.24" y1="86.36" x2="243.84" y2="86.36" width="0.1524" layer="91"/>
@@ -13992,8 +13992,8 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </segment>
 <segment>
 <pinref part="U$9" gate="G$1" pin="SCL"/>
-<wire x1="88.9" y1="129.54" x2="81.28" y2="132.08" width="0.1524" layer="91"/>
-<label x="81.28" y="132.08" size="1.778" layer="95"/>
+<wire x1="88.9" y1="129.54" x2="81.28" y2="129.54" width="0.1524" layer="91"/>
+<label x="81.28" y="129.54" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="269.24" y1="88.9" x2="243.84" y2="88.9" width="0.1524" layer="91"/>
@@ -14031,11 +14031,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="182.88" y1="48.26" x2="182.88" y2="38.1" width="0.1524" layer="91"/>
 <label x="182.88" y="38.1" size="1.778" layer="95" rot="R90"/>
 <pinref part="GPIO1" gate="G$1" pin="I/O"/>
-</segment>
-<segment>
-<wire x1="299.72" y1="91.44" x2="309.88" y2="91.44" width="0.1524" layer="91"/>
-<label x="302.26" y="91.44" size="1.778" layer="95"/>
-<pinref part="IC2" gate="G$1" pin="P4"/>
 </segment>
 </net>
 <net name="TX" class="0">
@@ -14357,22 +14352,12 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <label x="210.82" y="38.1" size="1.778" layer="95" rot="R90"/>
 <pinref part="GPIO5" gate="G$1" pin="I/O"/>
 </segment>
-<segment>
-<wire x1="299.72" y1="88.9" x2="309.88" y2="88.9" width="0.1524" layer="91"/>
-<label x="302.26" y="88.9" size="1.778" layer="95"/>
-<pinref part="IC2" gate="G$1" pin="P5"/>
-</segment>
 </net>
 <net name="GPIO6" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="GPIO6"/>
 <wire x1="15.24" y1="187.96" x2="27.94" y2="187.96" width="0.1524" layer="91"/>
 <label x="15.24" y="187.96" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="299.72" y1="86.36" x2="309.88" y2="86.36" width="0.1524" layer="91"/>
-<label x="302.26" y="86.36" size="1.778" layer="95"/>
-<pinref part="IC2" gate="G$1" pin="P6"/>
 </segment>
 </net>
 <net name="GPIO12" class="0">
@@ -14650,55 +14635,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pinref part="U$9" gate="G$1" pin="LED5"/>
 </segment>
 </net>
-<net name="GPIO0" class="0">
-<segment>
-<wire x1="299.72" y1="101.6" x2="309.88" y2="101.6" width="0.1524" layer="91"/>
-<label x="302.26" y="101.6" size="1.778" layer="95"/>
-<pinref part="IC2" gate="G$1" pin="P0"/>
-</segment>
-<segment>
-<label x="205.74" y="210.82" size="1.778" layer="95"/>
-<wire x1="208.28" y1="210.82" x2="203.2" y2="210.82" width="0.1524" layer="91"/>
-<pinref part="R30" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="GPIO1" class="0">
-<segment>
-<wire x1="299.72" y1="99.06" x2="309.88" y2="99.06" width="0.1524" layer="91"/>
-<label x="302.26" y="99.06" size="1.778" layer="95"/>
-<pinref part="IC2" gate="G$1" pin="P1"/>
-</segment>
-<segment>
-<wire x1="254" y1="210.82" x2="266.7" y2="210.82" width="0.1524" layer="91"/>
-<label x="259.08" y="210.82" size="1.778" layer="95"/>
-<pinref part="R31" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="GPIO2" class="0">
-<segment>
-<wire x1="299.72" y1="96.52" x2="309.88" y2="96.52" width="0.1524" layer="91"/>
-<label x="302.26" y="96.52" size="1.778" layer="95"/>
-<pinref part="IC2" gate="G$1" pin="P2"/>
-</segment>
-<segment>
-<wire x1="309.88" y1="210.82" x2="322.58" y2="210.82" width="0.1524" layer="91"/>
-<label x="317.5" y="210.82" size="1.778" layer="95"/>
-<pinref part="R32" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="GPIO3" class="0">
-<segment>
-<wire x1="299.72" y1="93.98" x2="309.88" y2="93.98" width="0.1524" layer="91"/>
-<label x="302.26" y="93.98" size="1.778" layer="95"/>
-<pinref part="IC2" gate="G$1" pin="P3"/>
-</segment>
-<segment>
-<wire x1="365.76" y1="213.36" x2="378.46" y2="213.36" width="0.1524" layer="91"/>
-<label x="373.38" y="213.36" size="1.778" layer="95"/>
-<pinref part="R33" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="GPIO7" class="0">
+<net name="KR_GPIO7" class="0">
 <segment>
 <wire x1="299.72" y1="83.82" x2="309.88" y2="83.82" width="0.1524" layer="91"/>
 <label x="302.26" y="83.82" size="1.778" layer="95"/>
@@ -14857,6 +14794,75 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="347.98" y1="73.66" x2="365.76" y2="73.66" width="0.1524" layer="91"/>
 <label x="365.76" y="73.66" size="1.778" layer="95"/>
 <pinref part="KER3" gate="G$1" pin="VCC"/>
+</segment>
+</net>
+<net name="KR_GPIO0" class="0">
+<segment>
+<wire x1="299.72" y1="101.6" x2="309.88" y2="101.6" width="0.1524" layer="91"/>
+<label x="302.26" y="101.6" size="1.778" layer="95"/>
+<pinref part="IC2" gate="G$1" pin="P0"/>
+</segment>
+<segment>
+<label x="205.74" y="210.82" size="1.778" layer="95"/>
+<wire x1="208.28" y1="210.82" x2="203.2" y2="210.82" width="0.1524" layer="91"/>
+<pinref part="R30" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="KR_GPIO1" class="0">
+<segment>
+<wire x1="299.72" y1="99.06" x2="309.88" y2="99.06" width="0.1524" layer="91"/>
+<label x="302.26" y="99.06" size="1.778" layer="95"/>
+<pinref part="IC2" gate="G$1" pin="P1"/>
+</segment>
+<segment>
+<wire x1="254" y1="210.82" x2="266.7" y2="210.82" width="0.1524" layer="91"/>
+<label x="259.08" y="210.82" size="1.778" layer="95"/>
+<pinref part="R31" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="KR_GPIO2" class="0">
+<segment>
+<wire x1="299.72" y1="96.52" x2="309.88" y2="96.52" width="0.1524" layer="91"/>
+<label x="302.26" y="96.52" size="1.778" layer="95"/>
+<pinref part="IC2" gate="G$1" pin="P2"/>
+</segment>
+<segment>
+<wire x1="309.88" y1="210.82" x2="322.58" y2="210.82" width="0.1524" layer="91"/>
+<label x="317.5" y="210.82" size="1.778" layer="95"/>
+<pinref part="R32" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="KR_GPIO3" class="0">
+<segment>
+<wire x1="299.72" y1="93.98" x2="309.88" y2="93.98" width="0.1524" layer="91"/>
+<label x="302.26" y="93.98" size="1.778" layer="95"/>
+<pinref part="IC2" gate="G$1" pin="P3"/>
+</segment>
+<segment>
+<wire x1="365.76" y1="213.36" x2="378.46" y2="213.36" width="0.1524" layer="91"/>
+<label x="373.38" y="213.36" size="1.778" layer="95"/>
+<pinref part="R33" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="KR_GPIO4" class="0">
+<segment>
+<wire x1="299.72" y1="91.44" x2="309.88" y2="91.44" width="0.1524" layer="91"/>
+<label x="302.26" y="91.44" size="1.778" layer="95"/>
+<pinref part="IC2" gate="G$1" pin="P4"/>
+</segment>
+</net>
+<net name="KR_GPIO5" class="0">
+<segment>
+<wire x1="299.72" y1="88.9" x2="309.88" y2="88.9" width="0.1524" layer="91"/>
+<label x="302.26" y="88.9" size="1.778" layer="95"/>
+<pinref part="IC2" gate="G$1" pin="P5"/>
+</segment>
+</net>
+<net name="KR_GPIO6" class="0">
+<segment>
+<wire x1="299.72" y1="86.36" x2="309.88" y2="86.36" width="0.1524" layer="91"/>
+<label x="302.26" y="86.36" size="1.778" layer="95"/>
+<pinref part="IC2" gate="G$1" pin="P6"/>
 </segment>
 </net>
 </nets>
