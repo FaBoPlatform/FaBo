@@ -1,7 +1,7 @@
 #define analog A0
 
-const int ctrl_pin = 2;
-const int pwm_pin = 3;
+const int ctrl_pin = 3;
+const int pwm_pin = 5;
 const int OFFSET = 20;
 const int FORWARD = HIGH;
 const int BACK = LOW;
@@ -18,7 +18,7 @@ void setup() {
 
 void loop() {
  int pwm_value = pulseIn(A0, HIGH);
- //Serial.println(pwm_value);
+ Serial.println(pwm_value);
  // Speed 0
  if((pwm_value < CENTER + OFFSET) && (pwm_value >  CENTER - OFFSET)){
    if(!tempValue != pwm_value) {
