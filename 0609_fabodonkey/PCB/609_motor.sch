@@ -10348,66 +10348,74 @@ Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;br&gt;
 https://creativecommons.org/licenses/by-sa/4.0/</description>
 <packages>
 <package name="RASPBERRY_PI_A+">
-<wire x1="58.42" y1="50.8" x2="7.62" y2="50.8" width="0.1" layer="21"/>
-<wire x1="7.62" y1="50.8" x2="7.62" y2="55.88" width="0.1" layer="21"/>
-<wire x1="58.42" y1="55.88" x2="7.62" y2="55.88" width="0.1" layer="21"/>
-<wire x1="58.42" y1="55.88" x2="58.42" y2="50.8" width="0.1" layer="21"/>
-<pad name="1" x="8.89" y="52.07" drill="1" diameter="1.778" shape="square"/>
-<pad name="2" x="8.89" y="54.61" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="3" x="11.43" y="52.07" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="4" x="11.43" y="54.61" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="5" x="13.97" y="52.07" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="6" x="13.97" y="54.61" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="7" x="16.51" y="52.07" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="8" x="16.51" y="54.61" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="9" x="19.05" y="52.07" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="10" x="19.05" y="54.61" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="11" x="21.59" y="52.07" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="12" x="21.59" y="54.61" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="13" x="24.13" y="52.07" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="14" x="24.13" y="54.61" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="15" x="26.67" y="52.07" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="16" x="26.67" y="54.61" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="17" x="29.21" y="52.07" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="18" x="29.21" y="54.61" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="19" x="31.75" y="52.07" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="20" x="31.75" y="54.61" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="21" x="34.29" y="52.07" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="22" x="34.29" y="54.61" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="23" x="36.83" y="52.07" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="24" x="36.83" y="54.61" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="25" x="39.37" y="52.07" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="26" x="39.37" y="54.61" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="27" x="41.91" y="52.07" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="28" x="41.91" y="54.61" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="29" x="44.45" y="52.07" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="30" x="44.45" y="54.61" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="31" x="46.99" y="52.07" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="32" x="46.99" y="54.61" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="33" x="49.53" y="52.07" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="34" x="49.53" y="54.61" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="35" x="52.07" y="52.07" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="36" x="52.07" y="54.61" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="37" x="54.61" y="52.07" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="38" x="54.61" y="54.61" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="39" x="57.15" y="52.07" drill="1" diameter="1.778" shape="octagon"/>
-<pad name="40" x="57.15" y="54.61" drill="1" diameter="1.778" shape="octagon"/>
-<wire x1="0.52" y1="53.84" x2="0.52" y2="3.84" width="0" layer="20"/>
-<wire x1="3.52" y1="0.84" x2="61.75196875" y2="0.84" width="0" layer="20"/>
-<wire x1="61.75196875" y1="0.84" x2="65.52" y2="4.60803125" width="0" layer="20" curve="90"/>
-<wire x1="65.52" y1="4.60803125" x2="65.52" y2="53.929996875" width="0" layer="20"/>
-<wire x1="65.52" y1="53.929996875" x2="62.609996875" y2="56.84" width="0" layer="20" curve="90"/>
-<wire x1="62.609996875" y1="56.84" x2="3.52" y2="56.84" width="0" layer="20"/>
-<circle x="4.02" y="53.34" radius="2.15" width="0.1" layer="51"/>
-<circle x="62.02" y="53.34" radius="2.15" width="0.1" layer="51"/>
-<wire x1="3.52" y1="56.84" x2="0.52" y2="53.84" width="0" layer="20" curve="90"/>
-<wire x1="0.52" y1="3.84" x2="3.52" y2="0.84" width="0" layer="20" curve="90"/>
-<circle x="4.02" y="53.34" radius="1.375" width="0.01" layer="20"/>
-<circle x="62.02" y="53.34" radius="1.375" width="0.01" layer="20"/>
-<circle x="4.02" y="4.34" radius="1.375" width="0.01" layer="20"/>
-<circle x="4.02" y="4.34" radius="2.15" width="0.1" layer="51"/>
-<circle x="62.02" y="4.34" radius="1.375" width="0.01" layer="20"/>
-<circle x="62.02" y="4.34" radius="2.15" width="0.1" layer="51"/>
+<wire x1="58.0136" y1="50.165" x2="7.2136" y2="50.165" width="0.1" layer="21"/>
+<wire x1="7.2136" y1="50.165" x2="7.2136" y2="55.245" width="0.1" layer="21"/>
+<wire x1="58.0136" y1="55.245" x2="7.2136" y2="55.245" width="0.1" layer="21"/>
+<wire x1="58.0136" y1="55.245" x2="58.0136" y2="50.165" width="0.1" layer="21"/>
+<pad name="1" x="8.4836" y="51.435" drill="1" diameter="1.778" shape="square"/>
+<pad name="2" x="8.4836" y="53.975" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="3" x="11.0236" y="51.435" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="4" x="11.0236" y="53.975" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="5" x="13.5636" y="51.435" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="6" x="13.5636" y="53.975" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="7" x="16.1036" y="51.435" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="8" x="16.1036" y="53.975" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="9" x="18.6436" y="51.435" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="10" x="18.6436" y="53.975" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="11" x="21.1836" y="51.435" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="12" x="21.1836" y="53.975" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="13" x="23.7236" y="51.435" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="14" x="23.7236" y="53.975" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="15" x="26.2636" y="51.435" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="16" x="26.2636" y="53.975" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="17" x="28.8036" y="51.435" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="18" x="28.8036" y="53.975" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="19" x="31.3436" y="51.435" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="20" x="31.3436" y="53.975" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="21" x="33.8836" y="51.435" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="22" x="33.8836" y="53.975" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="23" x="36.4236" y="51.435" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="24" x="36.4236" y="53.975" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="25" x="38.9636" y="51.435" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="26" x="38.9636" y="53.975" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="27" x="41.5036" y="51.435" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="28" x="41.5036" y="53.975" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="29" x="44.0436" y="51.435" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="30" x="44.0436" y="53.975" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="31" x="46.5836" y="51.435" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="32" x="46.5836" y="53.975" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="33" x="49.1236" y="51.435" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="34" x="49.1236" y="53.975" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="35" x="51.6636" y="51.435" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="36" x="51.6636" y="53.975" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="37" x="54.2036" y="51.435" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="38" x="54.2036" y="53.975" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="39" x="56.7436" y="51.435" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="40" x="56.7436" y="53.975" drill="1" diameter="1.778" shape="octagon"/>
+<wire x1="0.1136" y1="53.205" x2="0.1136" y2="3.205" width="0" layer="20"/>
+<wire x1="3.1136" y1="0.205" x2="42.500071875" y2="0.2000625" width="0" layer="20"/>
+<wire x1="42.500071875" y1="0.2000625" x2="43" y2="0.699928125" width="0" layer="20" curve="90.1544"/>
+<wire x1="43" y1="0.699928125" x2="43" y2="21.21718125" width="0" layer="20"/>
+<wire x1="43" y1="21.21718125" x2="43.78281875" y2="22" width="0" layer="20" curve="-90"/>
+<wire x1="43.78281875" y1="22" x2="46.2" y2="22" width="0" layer="20"/>
+<wire x1="46.2" y1="22" x2="47" y2="21.2" width="0" layer="20" curve="-90"/>
+<wire x1="47" y1="21.2" x2="47" y2="0.5413625" width="0" layer="20"/>
+<wire x1="47" y1="0.5413625" x2="47.3413625" y2="0.20011875" width="0" layer="20" curve="90.019938"/>
+<wire x1="47.3413625" y1="0.20011875" x2="61.34556875" y2="0.205" width="0" layer="20"/>
+<wire x1="61.34556875" y1="0.205" x2="65.1136" y2="3.97303125" width="0" layer="20" curve="90"/>
+<wire x1="65.1136" y1="3.97303125" x2="65.1136" y2="53.294996875" width="0" layer="20"/>
+<wire x1="65.1136" y1="53.294996875" x2="62.203596875" y2="56.205" width="0" layer="20" curve="90"/>
+<wire x1="62.203596875" y1="56.205" x2="3.1136" y2="56.205" width="0" layer="20"/>
+<circle x="3.6136" y="52.705" radius="2.15" width="0.1" layer="51"/>
+<circle x="61.6136" y="52.705" radius="2.15" width="0.1" layer="51"/>
+<wire x1="3.1136" y1="56.205" x2="0.1136" y2="53.205" width="0" layer="20" curve="90"/>
+<wire x1="0.1136" y1="3.205" x2="3.1136" y2="0.205" width="0" layer="20" curve="90"/>
+<circle x="3.6136" y="52.705" radius="1.375" width="0.01" layer="20"/>
+<circle x="61.6136" y="52.705" radius="1.375" width="0.01" layer="20"/>
+<circle x="3.6136" y="3.705" radius="1.375" width="0.01" layer="20"/>
+<circle x="3.6136" y="3.705" radius="2.15" width="0.1" layer="51"/>
+<circle x="61.6136" y="3.705" radius="1.375" width="0.01" layer="20"/>
+<circle x="61.6136" y="3.705" radius="2.15" width="0.1" layer="51"/>
 </package>
 </packages>
 <symbols>
