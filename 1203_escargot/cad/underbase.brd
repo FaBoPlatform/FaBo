@@ -310,6 +310,7 @@
 <hole x="33.09" y="-87.55" drill="3.1"/>
 <hole x="-32.92" y="-87.55" drill="3.1"/>
 <hole x="-32.93" y="-6.91" drill="3.1"/>
+<text x="-57.284" y="-46.701" size="1.778" layer="21" font="vector">Rev 1.0.0</text>
 </plain>
 <libraries>
 </libraries>

@@ -391,6 +391,9 @@
 <rectangle x1="19.227" y1="-38.683" x2="22.507" y2="-35.403" layer="21" rot="R315"/>
 <rectangle x1="-21.998" y1="27.122" x2="-18.718" y2="30.402" layer="21" rot="R315"/>
 <rectangle x1="37.822" y1="-7.715" x2="41.102" y2="-4.435" layer="21" rot="R45"/>
+<hole x="-32.89" y="29.03" drill="3.1"/>
+<rectangle x1="-22.133" y1="-38.683" x2="-18.853" y2="-35.403" layer="21" rot="R315"/>
+<text x="-50.374" y="-15.951" size="1.778" layer="21" font="vector">Rev 1.0.0</text>
 </plain>
 <libraries>
 <library name="FaBo-Logo">
