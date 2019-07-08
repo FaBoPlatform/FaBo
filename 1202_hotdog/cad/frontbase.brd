@@ -273,8 +273,8 @@
 <hole x="-32.422" y="-15.064" drill="3.1"/>
 <hole x="32.411" y="-15.071" drill="3.1"/>
 <hole x="32.411" y="18.702" drill="3.1"/>
-<hole x="-51.972" y="-5.548" drill="6.1"/>
-<hole x="51.971" y="-5.565" drill="6.1"/>
+<hole x="-51.972" y="-5.548" drill="6.3"/>
+<hole x="51.971" y="-5.565" drill="6.3"/>
 <text x="-37.958" y="-6.265" size="1.778" layer="21" font="vector">Rev 1.0.0</text>
 </plain>
 <libraries>

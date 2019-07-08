@@ -96,7 +96,10 @@
 <layer number="114" name="sd0" color="7" fill="1" visible="no" active="no"/>
 <layer number="115" name="sd" color="7" fill="1" visible="no" active="no"/>
 <layer number="116" name="Patch_BOT" color="7" fill="1" visible="no" active="no"/>
+<layer number="117" name="BACKMAAT1" color="7" fill="1" visible="no" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
+<layer number="119" name="KAP_TEKEN" color="7" fill="1" visible="no" active="yes"/>
+<layer number="120" name="KAP_MAAT1" color="7" fill="1" visible="no" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="no"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="no"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="no"/>
@@ -106,9 +109,22 @@
 <layer number="127" name="_tValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="129" name="Mask" color="7" fill="1" visible="no" active="no"/>
+<layer number="130" name="SMDSTROOK" color="7" fill="1" visible="no" active="yes"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="no"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="no"/>
+<layer number="133" name="bottom_silk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="134" name="silk_top" color="7" fill="1" visible="no" active="yes"/>
+<layer number="135" name="silk_bottom" color="7" fill="1" visible="no" active="yes"/>
+<layer number="136" name="silktop" color="7" fill="1" visible="no" active="yes"/>
+<layer number="137" name="silkbottom" color="7" fill="1" visible="no" active="yes"/>
+<layer number="138" name="EEE" color="7" fill="1" visible="no" active="yes"/>
+<layer number="139" name="_tKeepout" color="7" fill="1" visible="no" active="yes"/>
+<layer number="141" name="ASSEMBLY_TOP" color="7" fill="1" visible="no" active="yes"/>
+<layer number="143" name="PLACE_BOUND_TOP" color="7" fill="1" visible="no" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="no"/>
+<layer number="145" name="DrillLegend_01-16" color="7" fill="1" visible="no" active="yes"/>
+<layer number="146" name="DrillLegend_01-20" color="7" fill="1" visible="no" active="yes"/>
+<layer number="147" name="PIN_NUMBER" color="7" fill="1" visible="no" active="yes"/>
 <layer number="150" name="Notes" color="7" fill="1" visible="no" active="no"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="no"/>
 <layer number="152" name="_bDocu" color="7" fill="1" visible="no" active="no"/>
@@ -1795,11 +1811,11 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pad name="40" x="57.15" y="-2.54" drill="1" diameter="1.778" shape="octagon"/>
 <wire x1="2.75" y1="-0.31" x2="62.901378125" y2="-0.31" width="0" layer="20"/>
 <wire x1="62.901378125" y1="-0.31" x2="65.2" y2="-2.608621875" width="0" layer="20" curve="-90"/>
-<wire x1="65.2" y1="-2.608621875" x2="65.2" y2="-34.109021875" width="0" layer="20"/>
-<wire x1="65.2" y1="-34.109021875" x2="63.319021875" y2="-35.99" width="0" layer="20" curve="-90"/>
-<wire x1="63.319021875" y1="-35.99" x2="2.50311875" y2="-35.99" width="0" layer="20"/>
-<wire x1="2.50311875" y1="-35.99" x2="0.52" y2="-34.00688125" width="0" layer="20" curve="-90"/>
-<wire x1="0.52" y1="-34.00688125" x2="0.52" y2="-2.54" width="0" layer="20"/>
+<wire x1="65.2" y1="-2.608621875" x2="65.2" y2="-33.251884375" width="0" layer="20"/>
+<wire x1="65.2" y1="-33.251884375" x2="63.731884375" y2="-34.72" width="0" layer="20" curve="-90"/>
+<wire x1="63.731884375" y1="-34.72" x2="2.50311875" y2="-34.72" width="0" layer="20"/>
+<wire x1="2.50311875" y1="-34.72" x2="0.52" y2="-32.73688125" width="0" layer="20" curve="-90"/>
+<wire x1="0.52" y1="-32.73688125" x2="0.52" y2="-2.54" width="0" layer="20"/>
 <wire x1="0.52" y1="-2.54" x2="2.75" y2="-0.31" width="0" layer="20" curve="-90"/>
 <circle x="4.02" y="-3.81" radius="2.15" width="0.1" layer="51"/>
 <circle x="62.02" y="-3.81" radius="2.15" width="0.1" layer="51"/>
