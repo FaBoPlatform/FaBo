@@ -1,3 +1,3 @@
-# #611 Controller Board for Jetbot
+# #612 Controller Board for JetRacer
 
-Controller Board for Jetbot.
+Controller Board for JetRacer.
