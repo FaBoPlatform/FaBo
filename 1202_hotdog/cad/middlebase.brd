@@ -217,7 +217,7 @@
 <hole x="-38.005" y="35.694" drill="3.1"/>
 <hole x="-38.005" y="-37.12" drill="3.1"/>
 <hole x="37.99" y="-37.105" drill="3.1"/>
-<text x="-61.977" y="-0.981" size="1.778" layer="21" font="vector">Rev 1.0.0</text>
+<text x="-61.977" y="-0.981" size="1.778" layer="21" font="vector">Rev 1.0.1</text>
 </plain>
 <libraries>
 </libraries>
