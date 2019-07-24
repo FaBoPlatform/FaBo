@@ -10446,17 +10446,17 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <text x="-6.1722" y="-8.509" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 <package name="D60">
-<smd name="PLUS" x="2.8" y="0" dx="2.4" dy="1.524" layer="1"/>
-<smd name="MINUS" x="-2.8" y="0" dx="2.4" dy="1.524" layer="1"/>
+<smd name="PLUS" x="2.5" y="0" dx="3.2" dy="1.524" layer="1"/>
+<smd name="MINUS" x="-2.5" y="0" dx="3.2" dy="1.524" layer="1"/>
 <text x="-3.2324" y="3.8072" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.2578" y="-4.8486" size="1.27" layer="27">&gt;VALUE</text>
-<circle x="0" y="0" radius="3" width="0.127" layer="21"/>
-<wire x1="-3.25" y1="-3.25" x2="2" y2="-3.25" width="0.127" layer="21"/>
-<wire x1="2" y1="-3.25" x2="3.25" y2="-2" width="0.127" layer="21"/>
-<wire x1="3.25" y1="-2" x2="3.25" y2="2" width="0.127" layer="21"/>
-<wire x1="3.25" y1="2" x2="2" y2="3.25" width="0.127" layer="21"/>
-<wire x1="2" y1="3.25" x2="-3.25" y2="3.25" width="0.127" layer="21"/>
-<wire x1="-3.25" y1="3.25" x2="-3.25" y2="-3.25" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="3.15" width="0.127" layer="21"/>
+<wire x1="-3.4" y1="-3.4" x2="2" y2="-3.4" width="0.127" layer="21"/>
+<wire x1="2" y1="-3.4" x2="3.4" y2="-2" width="0.127" layer="21"/>
+<wire x1="3.4" y1="-2" x2="3.4" y2="2" width="0.127" layer="21"/>
+<wire x1="3.4" y1="2" x2="2" y2="3.4" width="0.127" layer="21"/>
+<wire x1="2" y1="3.4" x2="-3.4" y2="3.4" width="0.127" layer="21"/>
+<wire x1="-3.4" y1="3.4" x2="-3.4" y2="-3.4" width="0.127" layer="21"/>
 </package>
 <package name="D10">
 <circle x="0" y="0" radius="5" width="0.127" layer="21"/>
