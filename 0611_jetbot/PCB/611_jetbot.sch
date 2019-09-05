@@ -13624,14 +13624,10 @@ Level Translators&lt;br&gt;
 <pinref part="SUPPLY3" gate="5V" pin="5V"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="5V@4"/>
-<wire x1="63.5" y1="223.52" x2="66.04" y2="223.52" width="0.1524" layer="91"/>
 <pinref part="SUPPLY2" gate="5V" pin="5V"/>
-<wire x1="66.04" y1="223.52" x2="66.04" y2="226.06" width="0.1524" layer="91"/>
 <pinref part="U$3" gate="G$1" pin="5V@2"/>
 <wire x1="66.04" y1="226.06" x2="66.04" y2="241.3" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="226.06" x2="66.04" y2="226.06" width="0.1524" layer="91"/>
-<junction x="66.04" y="226.06"/>
 </segment>
 <segment>
 <pinref part="R8" gate="G$2" pin="2"/>
