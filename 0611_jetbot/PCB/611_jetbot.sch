@@ -12003,6 +12003,52 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <circle x="34.08" y="-20.32" radius="1.375" width="0.01" layer="20"/>
 <circle x="34.08" y="-20.32" radius="2.15" width="0.1" layer="51"/>
 </package>
+<package name="JETSON_NANO_NOBOARDER">
+<wire x1="50.8" y1="0" x2="0" y2="0" width="0.1" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="5.08" width="0.1" layer="21"/>
+<wire x1="50.8" y1="5.08" x2="0" y2="5.08" width="0.1" layer="21"/>
+<wire x1="50.8" y1="5.08" x2="50.8" y2="0" width="0.1" layer="21"/>
+<pad name="1" x="1.27" y="1.27" drill="1" diameter="1.778" shape="square"/>
+<pad name="2" x="1.27" y="3.81" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="3" x="3.81" y="1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="4" x="3.81" y="3.81" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="5" x="6.35" y="1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="6" x="6.35" y="3.81" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="7" x="8.89" y="1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="8" x="8.89" y="3.81" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="9" x="11.43" y="1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="10" x="11.43" y="3.81" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="11" x="13.97" y="1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="12" x="13.97" y="3.81" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="13" x="16.51" y="1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="14" x="16.51" y="3.81" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="15" x="19.05" y="1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="16" x="19.05" y="3.81" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="17" x="21.59" y="1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="18" x="21.59" y="3.81" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="19" x="24.13" y="1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="20" x="24.13" y="3.81" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="21" x="26.67" y="1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="22" x="26.67" y="3.81" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="23" x="29.21" y="1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="24" x="29.21" y="3.81" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="25" x="31.75" y="1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="26" x="31.75" y="3.81" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="27" x="34.29" y="1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="28" x="34.29" y="3.81" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="29" x="36.83" y="1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="30" x="36.83" y="3.81" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="31" x="39.37" y="1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="32" x="39.37" y="3.81" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="33" x="41.91" y="1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="34" x="41.91" y="3.81" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="35" x="44.45" y="1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="36" x="44.45" y="3.81" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="37" x="46.99" y="1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="38" x="46.99" y="3.81" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="39" x="49.53" y="1.27" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="40" x="49.53" y="3.81" drill="1" diameter="1.778" shape="octagon"/>
+</package>
 </packages>
 <symbols>
 <symbol name="JETSON_NANO">
@@ -12108,6 +12154,53 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </technologies>
 </device>
 <device name="_WIDE" package="JETSON_NANO_WIDE">
+<connects>
+<connect gate="G$1" pin="3V3@1" pad="1"/>
+<connect gate="G$1" pin="3V3@17" pad="17"/>
+<connect gate="G$1" pin="5V@2" pad="2"/>
+<connect gate="G$1" pin="5V@4" pad="4"/>
+<connect gate="G$1" pin="CE0" pad="24"/>
+<connect gate="G$1" pin="CE1" pad="26"/>
+<connect gate="G$1" pin="GND@14" pad="14"/>
+<connect gate="G$1" pin="GND@20" pad="20"/>
+<connect gate="G$1" pin="GND@25" pad="25"/>
+<connect gate="G$1" pin="GND@30" pad="30"/>
+<connect gate="G$1" pin="GND@34" pad="34"/>
+<connect gate="G$1" pin="GND@39" pad="39"/>
+<connect gate="G$1" pin="GND@6" pad="6"/>
+<connect gate="G$1" pin="GND@9" pad="9"/>
+<connect gate="G$1" pin="GPIO12" pad="32"/>
+<connect gate="G$1" pin="GPIO13" pad="33"/>
+<connect gate="G$1" pin="GPIO16" pad="36"/>
+<connect gate="G$1" pin="GPIO17" pad="11"/>
+<connect gate="G$1" pin="GPIO18" pad="12"/>
+<connect gate="G$1" pin="GPIO19" pad="35"/>
+<connect gate="G$1" pin="GPIO20" pad="38"/>
+<connect gate="G$1" pin="GPIO21" pad="40"/>
+<connect gate="G$1" pin="GPIO22" pad="15"/>
+<connect gate="G$1" pin="GPIO23" pad="16"/>
+<connect gate="G$1" pin="GPIO24" pad="18"/>
+<connect gate="G$1" pin="GPIO25" pad="22"/>
+<connect gate="G$1" pin="GPIO26" pad="37"/>
+<connect gate="G$1" pin="GPIO27" pad="13"/>
+<connect gate="G$1" pin="GPIO4" pad="7"/>
+<connect gate="G$1" pin="GPIO5" pad="29"/>
+<connect gate="G$1" pin="GPIO6" pad="31"/>
+<connect gate="G$1" pin="ID_SC" pad="28"/>
+<connect gate="G$1" pin="ID_SD" pad="27"/>
+<connect gate="G$1" pin="MISO" pad="21"/>
+<connect gate="G$1" pin="MOSI" pad="19"/>
+<connect gate="G$1" pin="RX" pad="10"/>
+<connect gate="G$1" pin="SCL" pad="5"/>
+<connect gate="G$1" pin="SCLK" pad="23"/>
+<connect gate="G$1" pin="SDA" pad="3"/>
+<connect gate="G$1" pin="TX" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_NOBORDER" package="JETSON_NANO_NOBOARDER">
 <connects>
 <connect gate="G$1" pin="3V3@1" pad="1"/>
 <connect gate="G$1" pin="3V3@17" pad="17"/>
