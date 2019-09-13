@@ -12439,134 +12439,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="con-lstb" urn="urn:adsk.eagle:library:162">
-<description>&lt;b&gt;Pin Headers&lt;/b&gt;&lt;p&gt;
-Naming:&lt;p&gt;
-MA = male&lt;p&gt;
-# contacts - # rows&lt;p&gt;
-W = angled&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="MA06-1" urn="urn:adsk.eagle:footprint:8287/1" library_version="1">
-<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
-<wire x1="-6.985" y1="1.27" x2="-5.715" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-5.715" y1="1.27" x2="-5.08" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="-0.635" x2="-5.715" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="0.635" x2="-4.445" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-4.445" y1="1.27" x2="-3.175" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-3.175" y1="1.27" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="-0.635" x2="-3.175" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-3.175" y1="-1.27" x2="-4.445" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-4.445" y1="-1.27" x2="-5.08" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="-7.62" y1="0.635" x2="-7.62" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="-6.985" y1="1.27" x2="-7.62" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-7.62" y1="-0.635" x2="-6.985" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-5.715" y1="-1.27" x2="-6.985" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="0.635" x2="-1.905" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-1.905" y1="-1.27" x2="-2.54" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="2.54" y1="0.635" x2="3.175" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="3.175" y1="1.27" x2="4.445" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="4.445" y1="1.27" x2="5.08" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="5.08" y1="-0.635" x2="4.445" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="4.445" y1="-1.27" x2="3.175" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="3.175" y1="-1.27" x2="2.54" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="0" y1="-0.635" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="5.08" y1="0.635" x2="5.715" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="5.715" y1="1.27" x2="6.985" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="6.985" y1="1.27" x2="7.62" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="7.62" y1="-0.635" x2="6.985" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="6.985" y1="-1.27" x2="5.715" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="5.715" y1="-1.27" x2="5.08" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="7.62" y1="0.635" x2="7.62" y2="-0.635" width="0.1524" layer="21"/>
-<pad name="1" x="-6.35" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="2" x="-3.81" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="3" x="-1.27" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="4" x="1.27" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="5" x="3.81" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="6" x="6.35" y="0" drill="1.016" shape="long" rot="R90"/>
-<text x="-7.62" y="1.651" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-6.985" y="-2.921" size="1.27" layer="21" ratio="10">1</text>
-<text x="5.715" y="1.651" size="1.27" layer="21" ratio="10">6</text>
-<text x="-2.54" y="-2.921" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-4.064" y1="-0.254" x2="-3.556" y2="0.254" layer="51"/>
-<rectangle x1="-6.604" y1="-0.254" x2="-6.096" y2="0.254" layer="51"/>
-<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
-<rectangle x1="3.556" y1="-0.254" x2="4.064" y2="0.254" layer="51"/>
-<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
-<rectangle x1="6.096" y1="-0.254" x2="6.604" y2="0.254" layer="51"/>
-</package>
-</packages>
-<packages3d>
-<package3d name="MA06-1" urn="urn:adsk.eagle:package:8340/1" type="box" library_version="1">
-<description>PIN HEADER</description>
-<packageinstances>
-<packageinstance name="MA06-1"/>
-</packageinstances>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="MA06-1" urn="urn:adsk.eagle:symbol:8286/1" library_version="1">
-<wire x1="3.81" y1="-10.16" x2="-1.27" y2="-10.16" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="-2.54" x2="2.54" y2="-2.54" width="0.6096" layer="94"/>
-<wire x1="1.27" y1="-5.08" x2="2.54" y2="-5.08" width="0.6096" layer="94"/>
-<wire x1="1.27" y1="-7.62" x2="2.54" y2="-7.62" width="0.6096" layer="94"/>
-<wire x1="1.27" y1="2.54" x2="2.54" y2="2.54" width="0.6096" layer="94"/>
-<wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.6096" layer="94"/>
-<wire x1="1.27" y1="5.08" x2="2.54" y2="5.08" width="0.6096" layer="94"/>
-<wire x1="-1.27" y1="7.62" x2="-1.27" y2="-10.16" width="0.4064" layer="94"/>
-<wire x1="3.81" y1="-10.16" x2="3.81" y2="7.62" width="0.4064" layer="94"/>
-<wire x1="-1.27" y1="7.62" x2="3.81" y2="7.62" width="0.4064" layer="94"/>
-<text x="-1.27" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
-<text x="-1.27" y="8.382" size="1.778" layer="95">&gt;NAME</text>
-<pin name="1" x="7.62" y="-7.62" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="2" x="7.62" y="-5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="3" x="7.62" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="4" x="7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="5" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="6" x="7.62" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="MA06-1" urn="urn:adsk.eagle:component:8378/1" prefix="SV" uservalue="yes" library_version="1">
-<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
-<gates>
-<gate name="1" symbol="MA06-1" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="MA06-1">
-<connects>
-<connect gate="1" pin="1" pad="1"/>
-<connect gate="1" pin="2" pad="2"/>
-<connect gate="1" pin="3" pad="3"/>
-<connect gate="1" pin="4" pad="4"/>
-<connect gate="1" pin="5" pad="5"/>
-<connect gate="1" pin="6" pad="6"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:8340/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="FaBo-LED">
 <description>&lt;h3&gt;FaBo LED&lt;/h3&gt;
 LEDs&lt;br&gt;
@@ -12812,11 +12684,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="U$2" library="FaBo-Boards" deviceset="JETSON_NANO" device="_NOBORDER"/>
 <part name="TP2" library="FaBo-Supply" deviceset="TP" device="-15"/>
 <part name="TP1" library="FaBo-Supply" deviceset="TP" device="-15"/>
-<part name="GND10" library="FaBo-etc" deviceset="GND" device=""/>
-<part name="." library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA06-1" device="" package3d_urn="urn:adsk.eagle:package:8340/1"/>
-<part name="R6" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="10k"/>
-<part name="R4" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="10k"/>
-<part name="C4" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="0.1uF"/>
 <part name="LED1" library="FaBo-LED" deviceset="LED" device="-0603"/>
 <part name="LED2" library="FaBo-LED" deviceset="LED" device="-0603"/>
 <part name="R5" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="10k"/>
@@ -12842,7 +12709,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <text x="165.1" y="177.8" size="5.08" layer="97">ICSP</text>
 <text x="218.44" y="190.5" size="1.778" layer="94">RX</text>
 <text x="223.52" y="190.5" size="1.778" layer="94">TX</text>
-<text x="33.02" y="111.76" size="5.08" layer="97">Serial</text>
 </plain>
 <instances>
 <instance part="U$14" gate="G$1" x="358.14" y="5.08" smashed="yes"/>
@@ -13034,25 +12900,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </instance>
 <instance part="TP2" gate="G$1" x="220.98" y="195.58" smashed="yes"/>
 <instance part="TP1" gate="G$1" x="223.52" y="195.58" smashed="yes"/>
-<instance part="GND10" gate="GND" x="33.02" y="60.96" smashed="yes">
-<attribute name="VALUE" x="30.226" y="55.88" size="1.778" layer="96"/>
-</instance>
-<instance part="." gate="1" x="48.26" y="60.96" smashed="yes" rot="R90">
-<attribute name="VALUE" x="60.96" y="59.69" size="1.778" layer="96" rot="R90"/>
-<attribute name="NAME" x="39.878" y="59.69" size="1.778" layer="95" rot="R90"/>
-</instance>
-<instance part="R6" gate="G$1" x="50.8" y="76.2" smashed="yes" rot="R90">
-<attribute name="NAME" x="49.276" y="73.914" size="1.4224" layer="95" rot="R90"/>
-<attribute name="VALUE" x="52.324" y="73.914" size="1.4224" layer="96" rot="R90" align="top-left"/>
-</instance>
-<instance part="R4" gate="G$1" x="53.34" y="81.28" smashed="yes" rot="R90">
-<attribute name="NAME" x="51.816" y="78.994" size="1.4224" layer="95" rot="R90"/>
-<attribute name="VALUE" x="54.864" y="78.994" size="1.4224" layer="96" rot="R90" align="top-left"/>
-</instance>
-<instance part="C4" gate="G$1" x="55.88" y="76.2" smashed="yes" rot="R90">
-<attribute name="NAME" x="53.594" y="73.914" size="1.4224" layer="95" rot="R90"/>
-<attribute name="VALUE" x="58.166" y="73.914" size="1.4224" layer="96" rot="R90" align="top-left"/>
-</instance>
 <instance part="LED1" gate="G$1" x="134.62" y="119.38" smashed="yes">
 <attribute name="NAME" x="133.858" y="121.92" size="1.27" layer="95"/>
 <attribute name="VALUE" x="133.858" y="123.444" size="1.27" layer="96"/>
@@ -13232,13 +13079,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pinref part="GND21" gate="G$1" pin="GND"/>
 <wire x1="223.52" y1="157.48" x2="228.6" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="228.6" y1="157.48" x2="228.6" y2="152.4" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="." gate="1" pin="6"/>
-<wire x1="43.18" y1="68.58" x2="43.18" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="76.2" x2="33.02" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="GND10" gate="GND" pin="GND"/>
-<wire x1="33.02" y1="76.2" x2="33.02" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="LED1" gate="G$1" pin="CATHODE"/>
@@ -13707,11 +13547,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="223.52" y1="218.44" x2="223.52" y2="223.52" width="0.1524" layer="91"/>
 <label x="223.52" y="223.52" size="1.778" layer="95" rot="R90"/>
 </segment>
-<segment>
-<pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="53.34" y1="86.36" x2="53.34" y2="91.44" width="0.1524" layer="91"/>
-<label x="53.34" y="91.44" size="1.778" layer="95" rot="R90"/>
-</segment>
 </net>
 <net name="AVR_RX" class="0">
 <segment>
@@ -13723,11 +13558,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pinref part="R8" gate="G$1" pin="2"/>
 <wire x1="220.98" y1="213.36" x2="220.98" y2="220.98" width="0.1524" layer="91"/>
 <label x="220.98" y="220.98" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="50.8" y1="81.28" x2="50.8" y2="88.9" width="0.1524" layer="91"/>
-<label x="50.8" y="88.9" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="D2" class="0">
@@ -13882,11 +13712,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="195.58" y1="157.48" x2="198.12" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="152.4" x2="195.58" y2="152.4" width="0.1524" layer="91"/>
 </segment>
-<segment>
-<pinref part="C4" gate="G$1" pin="2"/>
-<wire x1="55.88" y1="81.28" x2="55.88" y2="86.36" width="0.1524" layer="91"/>
-<label x="55.88" y="86.36" size="1.778" layer="95" rot="R90"/>
-</segment>
 </net>
 <net name="N$17" class="0">
 <segment>
@@ -13914,27 +13739,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pinref part="TP2" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$14" class="0">
-<segment>
-<pinref part="R6" gate="G$1" pin="1"/>
-<pinref part="." gate="1" pin="3"/>
-<wire x1="50.8" y1="73.66" x2="50.8" y2="68.58" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$16" class="0">
-<segment>
-<pinref part="." gate="1" pin="2"/>
-<pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="53.34" y1="68.58" x2="53.34" y2="78.74" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$18" class="0">
-<segment>
-<pinref part="." gate="1" pin="1"/>
-<wire x1="55.88" y1="68.58" x2="55.88" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="C4" gate="G$1" pin="1"/>
-</segment>
-</net>
 <net name="N$19" class="0">
 <segment>
 <pinref part="LED1" gate="G$1" pin="ANODE"/>
@@ -13954,21 +13758,4 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </sheets>
 </schematic>
 </drawing>
-<compatibility>
-<note version="8.2" severity="warning">
-Since Version 8.2, EAGLE supports online libraries. The ids
-of those online libraries will not be understood (or retained)
-with this version.
-</note>
-<note version="8.3" severity="warning">
-Since Version 8.3, EAGLE supports URNs for individual library
-assets (packages, symbols, and devices). The URNs of those assets
-will not be understood (or retained) with this version.
-</note>
-<note version="8.3" severity="warning">
-Since Version 8.3, EAGLE supports the association of 3D packages
-with devices in libraries, schematics, and board files. Those 3D
-packages will not be understood (or retained) with this version.
-</note>
-</compatibility>
 </eagle>
