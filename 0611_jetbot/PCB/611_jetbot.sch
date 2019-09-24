@@ -12797,7 +12797,6 @@ Level Translators&lt;br&gt;
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="C1" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="0.1uF"/>
 <part name="GND7" library="FaBo-etc" deviceset="GND" device=""/>
-<part name="3V1" library="FaBo-Supply" deviceset="3V3" device=""/>
 <part name="P1" library="FaBo-Supply" deviceset="POLYSWITCH" device="1206" value="MF-NSML600-2"/>
 <part name="GND22" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="GND23" library="FaBo-etc" deviceset="GND" device=""/>
@@ -12854,6 +12853,7 @@ Level Translators&lt;br&gt;
 <part name="C9" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603-BOTTOM" value="10uF"/>
 <part name="C10" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603-BOTTOM" value="10uF"/>
 <part name="IC1" library="FaBo-LevelTranslator" deviceset="PCA9306" device="_SSOP"/>
+<part name="3V6" library="FaBo-Supply" deviceset="3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12906,9 +12906,6 @@ Level Translators&lt;br&gt;
 </instance>
 <instance part="GND7" gate="GND" x="165.1" y="231.14" smashed="yes">
 <attribute name="VALUE" x="162.306" y="226.06" size="1.778" layer="96"/>
-</instance>
-<instance part="3V1" gate="G$1" x="22.86" y="236.22" smashed="yes">
-<attribute name="VALUE" x="21.59" y="239.776" size="1.778" layer="96"/>
 </instance>
 <instance part="P1" gate="G$1" x="307.34" y="218.44" smashed="yes">
 <attribute name="NAME" x="307.34" y="220.98" size="1.778" layer="95" align="bottom-center"/>
@@ -13141,6 +13138,9 @@ Level Translators&lt;br&gt;
 <instance part="IC1" gate="G$1" x="271.78" y="165.1" smashed="yes">
 <attribute name="NAME" x="261.62" y="176.022" size="1.778" layer="95"/>
 </instance>
+<instance part="3V6" gate="G$1" x="7.62" y="210.82" smashed="yes">
+<attribute name="VALUE" x="6.35" y="214.376" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -13162,21 +13162,17 @@ Level Translators&lt;br&gt;
 </segment>
 <segment>
 <pinref part="GND4" gate="GND" pin="GND"/>
-<wire x1="63.5" y1="220.98" x2="66.04" y2="220.98" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="220.98" x2="66.04" y2="210.82" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="210.82" x2="66.04" y2="203.2" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="203.2" x2="66.04" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="190.5" x2="66.04" y2="185.42" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="185.42" x2="66.04" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="210.82" x2="66.04" y2="210.82" width="0.1524" layer="91"/>
-<junction x="66.04" y="210.82"/>
 <wire x1="63.5" y1="203.2" x2="66.04" y2="203.2" width="0.1524" layer="91"/>
 <junction x="66.04" y="203.2"/>
 <wire x1="63.5" y1="190.5" x2="66.04" y2="190.5" width="0.1524" layer="91"/>
 <junction x="66.04" y="190.5"/>
 <wire x1="63.5" y1="185.42" x2="66.04" y2="185.42" width="0.1524" layer="91"/>
 <junction x="66.04" y="185.42"/>
-<pinref part="U$3" gate="G$1" pin="GND@6"/>
 <pinref part="U$3" gate="G$1" pin="GND@14"/>
 <pinref part="U$3" gate="G$1" pin="GND@20"/>
 <pinref part="U$3" gate="G$1" pin="GND@30"/>
@@ -13577,12 +13573,6 @@ Level Translators&lt;br&gt;
 </net>
 <net name="3V3" class="0">
 <segment>
-<pinref part="3V1" gate="G$1" pin="3V3"/>
-<wire x1="27.94" y1="226.06" x2="22.86" y2="226.06" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="226.06" x2="22.86" y2="236.22" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="3V3@1"/>
-</segment>
-<segment>
 <wire x1="88.9" y1="116.84" x2="88.9" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="81.28" x2="88.9" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="81.28" x2="88.9" y2="81.28" width="0.1524" layer="91"/>
@@ -13615,6 +13605,12 @@ Level Translators&lt;br&gt;
 <wire x1="236.22" y1="182.88" x2="236.22" y2="180.34" width="0.1524" layer="91"/>
 <junction x="241.3" y="182.88"/>
 <pinref part="IC1" gate="G$1" pin="VREF1"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="3V3@17"/>
+<pinref part="3V6" gate="G$1" pin="3V3"/>
+<wire x1="27.94" y1="205.74" x2="7.62" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="205.74" x2="7.62" y2="210.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
