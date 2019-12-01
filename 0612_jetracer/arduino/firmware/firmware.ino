@@ -63,7 +63,7 @@ void loop(){
   pwm0 = pulseIn(A0, HIGH,25000);
   pwm1 = pulseIn(A1, HIGH,25000);
 
-  if(duration > 200){
+  if(duration > 1500){
     digitalWrite(2, HIGH);
     digitalWrite(3, HIGH);
     digitalWrite(4, LOW);
