@@ -179,8 +179,8 @@
 <text x="52.75" y="18.25" size="2.54" layer="21" font="vector" ratio="15">#608</text>
 <text x="52.75" y="10.75" size="2.1844" layer="21" font="vector" ratio="15">Donkey
 Board</text>
-<text x="58.031" y="9.158" size="0.8128" layer="22" font="vector" ratio="15" align="bottom-center">REV. 1.0.2</text>
-<text x="18.361" y="2.766" size="0.8128" layer="21" font="vector" ratio="15" align="top-center">MADE IN JAPAN</text>
+<text x="58.031" y="9.158" size="0.8128" layer="22" font="vector" ratio="15" align="bottom-center">REV. 2.0.2</text>
+<text x="18.361" y="2.766" size="0.8128" layer="21" font="vector" ratio="15" align="top-center">Designed in Aizu</text>
 <wire x1="51.308" y1="11.176" x2="46.228" y2="11.176" width="0.1524" layer="21"/>
 <wire x1="46.228" y1="11.176" x2="42.418" y2="11.176" width="0.1524" layer="21"/>
 <wire x1="42.418" y1="11.176" x2="42.418" y2="18.796" width="0.1524" layer="21"/>
