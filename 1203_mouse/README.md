@@ -1,8 +1,12 @@
-# マウス型ロボカー
+# Escargot型ロボカー
 
 ## 組み立てマニュアル
 
-2018年1月版
+2019年12月版
+<hr>
+完成写真
+
+![](./img/d2.jpg)
 
 <hr>
 
@@ -50,7 +54,7 @@
 
 ※２個用意します。
 
-![](https://github.com/FaBoPlatform/FaBo/blob/master/1202_hotdog/img/replace02.png)
+![](./img/type2_mouse05.jpg)
 
 完成図
 
@@ -160,13 +164,13 @@ FaBoの彫刻がある方からバッテリーを差し込みます。
 
 モバイルバッテリーより給電するために配線を行います。
 
-白のUSBケーブルはMotor Shieldのジャックに接続し、黒のUSBケーブルはRaspberryPIのUSBポートにそれぞれ接続します。
+DCプラグケーブルはMotor Shieldのジャックに接続し、microUSBケーブルはRaspberryPIのUSBポートにそれぞれ接続します。
 
 ![](./img/h2.png)
 
 制御するDCモーターを接続します。
 
-ShieldのMotor1、Motor2のコネクタに対して、それぞれ黄色い線が中央になるようにモーターを接続します。
+ShieldのMotor1、Motor2のコネクタに対して、赤の線が内側、黒の線が外側になるようにモーターを接続します。
 
 モーターの線は、Shield側のコネクタ上部の白い部分を押す事で差し込むことができます。
 
@@ -188,3 +192,8 @@ ShieldのMotor1、Motor2のコネクタに対して、それぞれ黄色い線�
 ![](./img/b00a.png)
 
 ![](./img/b00b.png)
+
+
+## Github
+
+https://github.com/FaBoPlatform/FaBo/tree/master/1203_escargot
