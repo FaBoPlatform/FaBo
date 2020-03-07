@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -12866,7 +12866,7 @@ Level Translators&lt;br&gt;
 <text x="114.3" y="190.5" size="1.778" layer="97">Address 0x60</text>
 <text x="259.08" y="-60.96" size="2.54" layer="94" align="bottom-center">1.0.9 A</text>
 <text x="170.18" y="104.14" size="1.778" layer="94">1N4148</text>
-<text x="233.68" y="193.04" size="5.08" layer="97">LEVEL CONVERTER</text>
+<text x="233.68" y="198.12" size="5.08" layer="97">LEVEL CONVERTER</text>
 </plain>
 <instances>
 <instance part="U$14" gate="G$1" x="358.14" y="5.08" smashed="yes"/>
