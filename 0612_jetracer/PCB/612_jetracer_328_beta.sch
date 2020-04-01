@@ -677,6 +677,12 @@ Supply&lt;br&gt;
 Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;br&gt;
 https://creativecommons.org/licenses/by-sa/4.0/</description>
 <packages>
+<package name="TP-10">
+<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" thermals="no" cream="no"/>
+</package>
+<package name="TP-15">
+<smd name="1" x="0" y="0" dx="1.5" dy="1.5" layer="1" roundness="100" thermals="no" cream="no"/>
+</package>
 </packages>
 <symbols>
 <symbol name="3V3">
@@ -689,6 +695,10 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="-1.905" y1="-2.54" x2="1.905" y2="-2.54" width="0.254" layer="94"/>
 <text x="-2.794" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="GND" x="0" y="0" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="TP">
+<pin name="1" x="0" y="5.08" visible="off" length="middle" rot="R270"/>
+<circle x="0" y="0" radius="1.27" width="0" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -711,6 +721,29 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </gates>
 <devices>
 <device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TP" prefix="TP" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="TP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-10" package="TP-10">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-15" package="TP-15">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -1640,19 +1673,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <text x="0" y="-2.73" size="0.8128" layer="22" font="vector" ratio="12" rot="R270" align="center-left">VCC</text>
 <text x="-1.9878" y="-2.73" size="0.8128" layer="22" font="vector" ratio="12" rot="R270" align="center-left">I/O</text>
 </package>
-<package name="FABO_BRICK_3PIN_DEBUG">
-<pad name="GND" x="-2.54" y="0" drill="1" diameter="1.778" shape="octagon" rot="R90"/>
-<pad name="RX" x="0" y="0" drill="1" diameter="1.778" shape="octagon" rot="R90"/>
-<pad name="TX" x="2.54" y="0" drill="1" diameter="1.778" shape="octagon" rot="R90"/>
-<text x="5.08" y="0" size="1.27" layer="25" font="vector" ratio="12" align="center-left">&gt;NAME</text>
-<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
-<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
-<rectangle x1="-2.794" y1="-0.254" x2="-2.286" y2="0.254" layer="51"/>
-<wire x1="-3.81" y1="-1.25" x2="3.81" y2="-1.25" width="0.0762" layer="51"/>
-<wire x1="3.81" y1="1.25" x2="-3.81" y2="1.25" width="0.0762" layer="51"/>
-<wire x1="-3.81" y1="1.25" x2="-3.81" y2="-1.25" width="0.0762" layer="51"/>
-<wire x1="3.81" y1="1.25" x2="3.81" y2="-1.25" width="0.0762" layer="51"/>
-</package>
 </packages>
 <symbols>
 <symbol name="FABO_BRICK_3PIN">
@@ -1662,16 +1682,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="-5.08" y1="7.62" x2="2.54" y2="7.62" width="0.254" layer="94"/>
 <pin name="I/O" x="7.62" y="5.08" visible="pin" length="middle" rot="R180"/>
 <pin name="VCC" x="7.62" y="0" visible="pin" length="middle" rot="R180"/>
-<pin name="GND" x="7.62" y="-5.08" visible="pin" length="middle" rot="R180"/>
-<text x="-5.08" y="8.128" size="1.778" layer="95">&gt;NAME</text>
-</symbol>
-<symbol name="FABO_BRICK_3PIN_DEBUG">
-<wire x1="2.54" y1="7.62" x2="2.54" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-7.62" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="7.62" x2="2.54" y2="7.62" width="0.254" layer="94"/>
-<pin name="RX" x="7.62" y="5.08" visible="pin" length="middle" rot="R180"/>
-<pin name="TX" x="7.62" y="0" visible="pin" length="middle" rot="R180"/>
 <pin name="GND" x="7.62" y="-5.08" visible="pin" length="middle" rot="R180"/>
 <text x="-5.08" y="8.128" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
@@ -1848,23 +1858,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <connect gate="G$1" pin="GND" pad="GND"/>
 <connect gate="G$1" pin="I/O" pad="I/O"/>
 <connect gate="G$1" pin="VCC" pad="VCC"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="FABO_BRICK_3PIN_DEBUG">
-<gates>
-<gate name="G$1" symbol="FABO_BRICK_3PIN_DEBUG" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="FABO_BRICK_3PIN_DEBUG">
-<connects>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="RX" pad="RX"/>
-<connect gate="G$1" pin="TX" pad="TX"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3180,7 +3173,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="ST" library="FaBo-Template" deviceset="FABO_BRICK_3PIN" device="-HEADER"/>
 <part name="TH" library="FaBo-Template" deviceset="FABO_BRICK_3PIN" device="-HEADER"/>
 <part name="3V5" library="FaBo-Supply" deviceset="3V3" device=""/>
-<part name="3V6" library="FaBo-Supply" deviceset="3V3" device=""/>
 <part name="C1" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="0.1uF"/>
 <part name="GND3" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="GND12" library="FaBo-Supply" deviceset="GND" device=""/>
@@ -3204,7 +3196,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="SUPPLY1" library="FaBo-etc" deviceset="5V" device=""/>
 <part name="GND10" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="GND14" library="FaBo-Supply" deviceset="GND" device=""/>
-<part name="DEBUG" library="FaBo-Template" deviceset="FABO_BRICK_3PIN_DEBUG" device=""/>
 <part name="R4" library="component" deviceset="RESISTOR_ARRAY" device="" value="10k"/>
 <part name="GND15" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="AGND" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device="" value="AGND"/>
@@ -3236,6 +3227,11 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="R9" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603-BOTTOM" value="390K"/>
 <part name="R2" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="10K"/>
 <part name="3V2" library="FaBo-Supply" deviceset="3V3" device=""/>
+<part name="R11" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="10K"/>
+<part name="GND16" library="FaBo-Supply" deviceset="GND" device=""/>
+<part name="TP1" library="FaBo-Supply" deviceset="TP" device="-15"/>
+<part name="TP2" library="FaBo-Supply" deviceset="TP" device="-15"/>
+<part name="TP3" library="FaBo-Supply" deviceset="TP" device="-15"/>
 </parts>
 <sheets>
 <sheet>
@@ -3363,9 +3359,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <instance part="3V5" gate="G$1" x="144.78" y="243.84" smashed="yes">
 <attribute name="VALUE" x="143.51" y="247.396" size="1.778" layer="96"/>
 </instance>
-<instance part="3V6" gate="G$1" x="251.46" y="111.76" smashed="yes">
-<attribute name="VALUE" x="250.19" y="115.316" size="1.778" layer="96"/>
-</instance>
 <instance part="C1" gate="G$1" x="256.54" y="193.04" smashed="yes" rot="R90">
 <attribute name="NAME" x="254.254" y="190.754" size="1.4224" layer="95" rot="R90"/>
 <attribute name="VALUE" x="258.826" y="190.754" size="1.4224" layer="96" rot="R90" align="top-left"/>
@@ -3441,9 +3434,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </instance>
 <instance part="GND14" gate="G$1" x="241.3" y="205.74" smashed="yes">
 <attribute name="VALUE" x="238.506" y="200.66" size="1.778" layer="96"/>
-</instance>
-<instance part="DEBUG" gate="G$1" x="223.52" y="187.96" smashed="yes" rot="R90">
-<attribute name="NAME" x="215.392" y="182.88" size="1.778" layer="95" rot="R90"/>
 </instance>
 <instance part="R4" gate="G$1" x="114.3" y="165.1" smashed="yes" rot="R90">
 <attribute name="NAME" x="112.776" y="162.814" size="1.27" layer="95" rot="R90"/>
@@ -3561,6 +3551,16 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <instance part="3V2" gate="G$1" x="12.7" y="238.76" smashed="yes">
 <attribute name="VALUE" x="11.43" y="242.316" size="1.778" layer="96"/>
 </instance>
+<instance part="R11" gate="G$1" x="246.38" y="48.26" smashed="yes" rot="R90">
+<attribute name="NAME" x="244.856" y="45.974" size="1.4224" layer="95" rot="R90"/>
+<attribute name="VALUE" x="247.904" y="45.974" size="1.4224" layer="96" rot="R90" align="top-left"/>
+</instance>
+<instance part="GND16" gate="G$1" x="246.38" y="43.18" smashed="yes">
+<attribute name="VALUE" x="243.586" y="38.1" size="1.778" layer="96"/>
+</instance>
+<instance part="TP1" gate="G$1" x="223.52" y="180.34" smashed="yes"/>
+<instance part="TP2" gate="G$1" x="218.44" y="180.34" smashed="yes"/>
+<instance part="TP3" gate="G$1" x="228.6" y="180.34" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -3742,11 +3742,11 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="193.04" y1="63.5" x2="193.04" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="228.6" y1="195.58" x2="228.6" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="185.42" x2="228.6" y2="218.44" width="0.1524" layer="91"/>
 <wire x1="228.6" y1="218.44" x2="241.3" y2="218.44" width="0.1524" layer="91"/>
 <wire x1="241.3" y1="218.44" x2="241.3" y2="205.74" width="0.1524" layer="91"/>
 <pinref part="GND14" gate="G$1" pin="GND"/>
-<pinref part="DEBUG" gate="G$1" pin="GND"/>
+<pinref part="TP3" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="R4" gate="G$3" pin="1"/>
@@ -3843,6 +3843,11 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pinref part="GND36" gate="G$1" pin="GND"/>
 <wire x1="157.48" y1="38.1" x2="157.48" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="C11" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="R11" gate="G$1" pin="1"/>
+<wire x1="246.38" y1="45.72" x2="246.38" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="GND16" gate="G$1" pin="GND"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -4063,11 +4068,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="144.78" y1="236.22" x2="152.4" y2="236.22" width="0.1524" layer="91"/>
 <pinref part="3V5" gate="G$1" pin="3V3"/>
 <pinref part="U$3" gate="G$1" pin="VDD"/>
-</segment>
-<segment>
-<pinref part="IC3" gate="G$1" pin="VCC"/>
-<wire x1="251.46" y1="106.68" x2="251.46" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="3V6" gate="G$1" pin="3V3"/>
 </segment>
 <segment>
 <pinref part="C3" gate="G$1" pin="2"/>
@@ -4302,6 +4302,11 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="368.3" y1="93.98" x2="363.22" y2="93.98" width="0.1524" layer="91"/>
 <label x="363.22" y="93.98" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="IC3" gate="G$1" pin="VCC"/>
+<wire x1="251.46" y1="106.68" x2="251.46" y2="111.76" width="0.1524" layer="91"/>
+<label x="251.46" y="111.76" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="PCH3" class="0">
 <segment>
@@ -4332,8 +4337,8 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </segment>
 <segment>
 <label x="223.52" y="223.52" size="1.778" layer="95" rot="R90"/>
-<wire x1="223.52" y1="195.58" x2="223.52" y2="223.52" width="0.1524" layer="91"/>
-<pinref part="DEBUG" gate="G$1" pin="TX"/>
+<wire x1="223.52" y1="185.42" x2="223.52" y2="220.98" width="0.1524" layer="91"/>
+<pinref part="TP1" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="AVR_RX" class="0">
@@ -4343,11 +4348,9 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pinref part="IC1" gate="G$1" pin="PD0(RXD)"/>
 </segment>
 <segment>
+<pinref part="TP2" gate="G$1" pin="1"/>
 <label x="218.44" y="223.52" size="1.778" layer="95" rot="R90"/>
-<wire x1="218.44" y1="210.82" x2="218.44" y2="208.28" width="0.1524" layer="91"/>
-<pinref part="DEBUG" gate="G$1" pin="RX"/>
-<wire x1="218.44" y1="208.28" x2="218.44" y2="195.58" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="223.52" x2="218.44" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="220.98" x2="218.44" y2="185.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="D2" class="0">
@@ -4361,6 +4364,9 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="246.38" y1="63.5" x2="246.38" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="246.38" y1="55.88" x2="236.22" y2="55.88" width="0.1524" layer="91"/>
 <label x="236.22" y="55.88" size="1.778" layer="95"/>
+<pinref part="R11" gate="G$1" pin="2"/>
+<wire x1="246.38" y1="53.34" x2="246.38" y2="55.88" width="0.1524" layer="91"/>
+<junction x="246.38" y="55.88"/>
 </segment>
 </net>
 <net name="D3" class="0">
