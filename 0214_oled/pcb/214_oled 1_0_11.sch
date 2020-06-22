@@ -1560,38 +1560,38 @@ Level Translators&lt;br&gt;
 <wire x1="6.0198" y1="-17.3482" x2="-6.0198" y2="-17.3482" width="0.0762" layer="51"/>
 </package>
 <package name="ER-CON30HT-1">
-<smd name="30" x="-7.5" y="-0.23" dx="1.25" dy="0.3" layer="16" rot="R90" cream="no"/>
-<smd name="29" x="-7" y="-0.23" dx="1.25" dy="0.3" layer="16" rot="R90" cream="no"/>
-<smd name="28" x="-6.5" y="-0.23" dx="1.25" dy="0.3" layer="16" rot="R90" cream="no"/>
-<smd name="27" x="-6" y="-0.23" dx="1.25" dy="0.3" layer="16" rot="R90" cream="no"/>
-<smd name="26" x="-5.5" y="-0.23" dx="1.25" dy="0.3" layer="16" rot="R90" cream="no"/>
-<smd name="25" x="-5" y="-0.23" dx="1.25" dy="0.3" layer="16" rot="R90" cream="no"/>
-<smd name="24" x="-4.5" y="-0.23" dx="1.25" dy="0.3" layer="16" rot="R90" cream="no"/>
-<smd name="23" x="-4" y="-0.23" dx="1.25" dy="0.3" layer="16" rot="R90" cream="no"/>
-<smd name="22" x="-3.5" y="-0.23" dx="1.25" dy="0.3" layer="16" rot="R90" cream="no"/>
-<smd name="21" x="-3" y="-0.23" dx="1.25" dy="0.3" layer="16" rot="R90" cream="no"/>
-<smd name="20" x="-2.5" y="-0.23" dx="1.25" dy="0.3" layer="16" rot="R90" cream="no"/>
-<smd name="19" x="-2" y="-0.23" dx="1.25" dy="0.3" layer="16" rot="R90" cream="no"/>
-<smd name="18" x="-1.5" y="-0.23" dx="1.25" dy="0.3" layer="16" rot="R90" cream="no"/>
-<smd name="17" x="-1" y="-0.23" dx="1.25" dy="0.3" layer="16" rot="R90" cream="no"/>
-<smd name="16" x="-0.5" y="-0.23" dx="1.25" dy="0.3" layer="16" rot="R90" cream="no"/>
-<smd name="15" x="0" y="-0.23" dx="1.25" dy="0.3" layer="16" rot="R90" cream="no"/>
-<smd name="14" x="0.5" y="-0.23" dx="1.25" dy="0.3" layer="16" rot="R90" cream="no"/>
-<smd name="13" x="1" y="-0.23" dx="1.25" dy="0.3" layer="16" rot="R90" cream="no"/>
-<smd name="12" x="1.5" y="-0.23" dx="1.25" dy="0.3" layer="16" rot="R90" cream="no"/>
-<smd name="11" x="2" y="-0.23" dx="1.25" dy="0.3" layer="16" rot="R90" cream="no"/>
-<smd name="10" x="2.5" y="-0.23" dx="1.25" dy="0.3" layer="16" rot="R90" cream="no"/>
-<smd name="9" x="3" y="-0.23" dx="1.25" dy="0.3" layer="16" rot="R90" cream="no"/>
-<smd name="8" x="3.5" y="-0.23" dx="1.25" dy="0.3" layer="16" rot="R90" cream="no"/>
-<smd name="7" x="4" y="-0.23" dx="1.25" dy="0.3" layer="16" rot="R90" cream="no"/>
-<smd name="6" x="4.5" y="-0.23" dx="1.25" dy="0.3" layer="16" rot="R90" cream="no"/>
-<smd name="5" x="5" y="-0.23" dx="1.25" dy="0.3" layer="16" rot="R90" cream="no"/>
-<smd name="4" x="5.5" y="-0.23" dx="1.25" dy="0.3" layer="16" rot="R90" cream="no"/>
-<smd name="3" x="6" y="-0.23" dx="1.25" dy="0.3" layer="16" rot="R90" cream="no"/>
-<smd name="2" x="6.5" y="-0.23" dx="1.25" dy="0.3" layer="16" rot="R90" cream="no"/>
-<smd name="1" x="7" y="-0.23" dx="1.25" dy="0.3" layer="16" rot="R90" cream="no"/>
-<smd name="31" x="-9.04" y="-2.555" dx="3" dy="2" layer="16" rot="R90" cream="no"/>
-<smd name="32" x="8.54" y="-2.555" dx="3" dy="2" layer="16" rot="R90" cream="no"/>
+<smd name="30" x="-7.5" y="-0.23" dx="1.5" dy="0.3" layer="16" rot="R90" cream="no"/>
+<smd name="29" x="-7" y="-0.23" dx="1.5" dy="0.3" layer="16" rot="R90" cream="no"/>
+<smd name="28" x="-6.5" y="-0.23" dx="1.5" dy="0.3" layer="16" rot="R90" cream="no"/>
+<smd name="27" x="-6" y="-0.23" dx="1.5" dy="0.3" layer="16" rot="R90" cream="no"/>
+<smd name="26" x="-5.5" y="-0.23" dx="1.5" dy="0.3" layer="16" rot="R90" cream="no"/>
+<smd name="25" x="-5" y="-0.23" dx="1.5" dy="0.3" layer="16" rot="R90" cream="no"/>
+<smd name="24" x="-4.5" y="-0.23" dx="1.5" dy="0.3" layer="16" rot="R90" cream="no"/>
+<smd name="23" x="-4" y="-0.23" dx="1.5" dy="0.3" layer="16" rot="R90" cream="no"/>
+<smd name="22" x="-3.5" y="-0.23" dx="1.5" dy="0.3" layer="16" rot="R90" cream="no"/>
+<smd name="21" x="-3" y="-0.23" dx="1.5" dy="0.3" layer="16" rot="R90" cream="no"/>
+<smd name="20" x="-2.5" y="-0.23" dx="1.5" dy="0.3" layer="16" rot="R90" cream="no"/>
+<smd name="19" x="-2" y="-0.23" dx="1.5" dy="0.3" layer="16" rot="R90" cream="no"/>
+<smd name="18" x="-1.5" y="-0.23" dx="1.5" dy="0.3" layer="16" rot="R90" cream="no"/>
+<smd name="17" x="-1" y="-0.23" dx="1.5" dy="0.3" layer="16" rot="R90" cream="no"/>
+<smd name="16" x="-0.5" y="-0.23" dx="1.5" dy="0.3" layer="16" rot="R90" cream="no"/>
+<smd name="15" x="0" y="-0.23" dx="1.5" dy="0.3" layer="16" rot="R90" cream="no"/>
+<smd name="14" x="0.5" y="-0.23" dx="1.5" dy="0.3" layer="16" rot="R90" cream="no"/>
+<smd name="13" x="1" y="-0.23" dx="1.5" dy="0.3" layer="16" rot="R90" cream="no"/>
+<smd name="12" x="1.5" y="-0.23" dx="1.5" dy="0.3" layer="16" rot="R90" cream="no"/>
+<smd name="11" x="2" y="-0.23" dx="1.5" dy="0.3" layer="16" rot="R90" cream="no"/>
+<smd name="10" x="2.5" y="-0.23" dx="1.5" dy="0.3" layer="16" rot="R90" cream="no"/>
+<smd name="9" x="3" y="-0.23" dx="1.5" dy="0.3" layer="16" rot="R90" cream="no"/>
+<smd name="8" x="3.5" y="-0.23" dx="1.5" dy="0.3" layer="16" rot="R90" cream="no"/>
+<smd name="7" x="4" y="-0.23" dx="1.5" dy="0.3" layer="16" rot="R90" cream="no"/>
+<smd name="6" x="4.5" y="-0.23" dx="1.5" dy="0.3" layer="16" rot="R90" cream="no"/>
+<smd name="5" x="5" y="-0.23" dx="1.5" dy="0.3" layer="16" rot="R90" cream="no"/>
+<smd name="4" x="5.5" y="-0.23" dx="1.5" dy="0.3" layer="16" rot="R90" cream="no"/>
+<smd name="3" x="6" y="-0.23" dx="1.5" dy="0.3" layer="16" rot="R90" cream="no"/>
+<smd name="2" x="6.5" y="-0.23" dx="1.5" dy="0.3" layer="16" rot="R90" cream="no"/>
+<smd name="1" x="7" y="-0.23" dx="1.5" dy="0.3" layer="16" rot="R90" cream="no"/>
+<smd name="31" x="-9.07" y="-2.67" dx="3" dy="2" layer="16" rot="R90" cream="no"/>
+<smd name="32" x="8.74" y="-2.67" dx="3" dy="2" layer="16" rot="R90" cream="no"/>
 </package>
 </packages>
 <symbols>
@@ -1716,36 +1716,36 @@ Level Translators&lt;br&gt;
 </device>
 <device name="ER-CON30HT-1" package="ER-CON30HT-1">
 <connects>
-<connect gate="G$1" pin="BS0" pad="10"/>
-<connect gate="G$1" pin="BS1" pad="11"/>
-<connect gate="G$1" pin="BS2" pad="12"/>
-<connect gate="G$1" pin="C1N" pad="5"/>
-<connect gate="G$1" pin="C1P" pad="4"/>
-<connect gate="G$1" pin="C2N" pad="3"/>
-<connect gate="G$1" pin="C2P" pad="2"/>
-<connect gate="G$1" pin="CS#" pad="13"/>
-<connect gate="G$1" pin="D/C#" pad="15"/>
-<connect gate="G$1" pin="D0" pad="18"/>
-<connect gate="G$1" pin="D1" pad="19"/>
-<connect gate="G$1" pin="D2" pad="20"/>
-<connect gate="G$1" pin="D3" pad="21"/>
-<connect gate="G$1" pin="D4" pad="22"/>
-<connect gate="G$1" pin="D5" pad="23"/>
-<connect gate="G$1" pin="D6" pad="24"/>
-<connect gate="G$1" pin="D7" pad="25"/>
-<connect gate="G$1" pin="E/RD#" pad="17"/>
-<connect gate="G$1" pin="IREF" pad="26"/>
-<connect gate="G$1" pin="NC@1" pad="1"/>
-<connect gate="G$1" pin="NC@30" pad="30"/>
-<connect gate="G$1" pin="NC@7" pad="7"/>
-<connect gate="G$1" pin="R/W#" pad="16"/>
-<connect gate="G$1" pin="RES#" pad="14"/>
-<connect gate="G$1" pin="VBAT" pad="6"/>
-<connect gate="G$1" pin="VCC" pad="28"/>
-<connect gate="G$1" pin="VCOMH" pad="27"/>
-<connect gate="G$1" pin="VDD" pad="9"/>
-<connect gate="G$1" pin="VLSS" pad="29"/>
-<connect gate="G$1" pin="VSS" pad="8"/>
+<connect gate="G$1" pin="BS0" pad="21"/>
+<connect gate="G$1" pin="BS1" pad="20"/>
+<connect gate="G$1" pin="BS2" pad="19"/>
+<connect gate="G$1" pin="C1N" pad="26"/>
+<connect gate="G$1" pin="C1P" pad="27"/>
+<connect gate="G$1" pin="C2N" pad="28"/>
+<connect gate="G$1" pin="C2P" pad="29"/>
+<connect gate="G$1" pin="CS#" pad="18"/>
+<connect gate="G$1" pin="D/C#" pad="16"/>
+<connect gate="G$1" pin="D0" pad="13"/>
+<connect gate="G$1" pin="D1" pad="12"/>
+<connect gate="G$1" pin="D2" pad="11"/>
+<connect gate="G$1" pin="D3" pad="10"/>
+<connect gate="G$1" pin="D4" pad="9"/>
+<connect gate="G$1" pin="D5" pad="8"/>
+<connect gate="G$1" pin="D6" pad="7"/>
+<connect gate="G$1" pin="D7" pad="6"/>
+<connect gate="G$1" pin="E/RD#" pad="14"/>
+<connect gate="G$1" pin="IREF" pad="5"/>
+<connect gate="G$1" pin="NC@1" pad="30"/>
+<connect gate="G$1" pin="NC@30" pad="1"/>
+<connect gate="G$1" pin="NC@7" pad="24"/>
+<connect gate="G$1" pin="R/W#" pad="15"/>
+<connect gate="G$1" pin="RES#" pad="17"/>
+<connect gate="G$1" pin="VBAT" pad="25"/>
+<connect gate="G$1" pin="VCC" pad="3"/>
+<connect gate="G$1" pin="VCOMH" pad="4"/>
+<connect gate="G$1" pin="VDD" pad="22"/>
+<connect gate="G$1" pin="VLSS" pad="2"/>
+<connect gate="G$1" pin="VSS" pad="23"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1829,7 +1829,7 @@ Level Translators&lt;br&gt;
 <sheets>
 <sheet>
 <plain>
-<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.10 A</text>
+<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.11 A</text>
 <text x="213.36" y="124.46" size="1.778" layer="94">1N4148</text>
 <text x="81.28" y="111.76" size="1.778" layer="94">AP2112K-3.3TRG1</text>
 <text x="236.22" y="99.06" size="1.778" layer="94">0x7A</text>
@@ -2393,18 +2393,20 @@ Level Translators&lt;br&gt;
 </net>
 <net name="N$12" class="0">
 <segment>
-<pinref part="D1" gate="G$1" pin="ANODE"/>
-<wire x1="223.52" y1="124.46" x2="223.52" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="233.68" y1="119.38" x2="233.68" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="223.52" y1="119.38" x2="233.68" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="C9" gate="G$1" pin="2"/>
-<wire x1="251.46" y1="71.12" x2="251.46" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="251.46" y1="119.38" x2="233.68" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="71.12" x2="251.46" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="233.68" y1="119.38" x2="233.68" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="R7" gate="G$1" pin="2"/>
+<wire x1="233.68" y1="121.92" x2="233.68" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="114.3" x2="233.68" y2="119.38" width="0.1524" layer="91"/>
 <junction x="233.68" y="119.38"/>
 <junction x="233.68" y="119.38"/>
+<pinref part="D1" gate="G$1" pin="ANODE"/>
+<wire x1="223.52" y1="124.46" x2="223.52" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="119.38" x2="233.68" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="121.92" x2="233.68" y2="121.92" width="0.1524" layer="91"/>
+<junction x="233.68" y="121.92"/>
 </segment>
 </net>
 <net name="N$10" class="0">
