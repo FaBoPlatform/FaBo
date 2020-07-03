@@ -3672,8 +3672,8 @@ Source: http://www.semicon.toshiba.co.jp/td/en/Opto/Photocoupler/en_20050928_TLP
 <part name="TP1" library="FaBo-Supply" deviceset="TP" device="-15"/>
 <part name="TP2" library="FaBo-Supply" deviceset="TP" device="-15"/>
 <part name="3V6" library="FaBo-Supply" deviceset="3V3" device=""/>
-<part name="R20" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="220"/>
-<part name="R21" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="220"/>
+<part name="R20" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="0"/>
+<part name="R21" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="0"/>
 <part name="GND24" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="GND25" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="C3" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603-BOTTOM" value="0.1uF"/>
@@ -3696,7 +3696,7 @@ Source: http://www.semicon.toshiba.co.jp/td/en/Opto/Photocoupler/en_20050928_TLP
 <part name="3V7" library="FaBo-Supply" deviceset="3V3" device=""/>
 <part name="GND49" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="U7" library="FaBo_Photocoupler" deviceset="TLP291A" device=""/>
-<part name="R29" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="5.1K"/>
+<part name="R29" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="10K"/>
 <part name="GND54" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="R30" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="4.7K"/>
 <part name="GND15" library="FaBo-etc" deviceset="GND" device=""/>
@@ -3781,7 +3781,7 @@ Source: http://www.semicon.toshiba.co.jp/td/en/Opto/Photocoupler/en_20050928_TLP
 <sheets>
 <sheet>
 <plain>
-<text x="792.48" y="22.86" size="2.54" layer="94" align="bottom-center">2.0.7</text>
+<text x="792.48" y="22.86" size="2.54" layer="94" align="bottom-center">2.0.8</text>
 <text x="142.24" y="365.76" size="3.81" layer="97">Jetson Nano</text>
 <text x="266.7" y="358.14" size="3.81" layer="97">PWM Controller</text>
 <text x="279.4" y="299.72" size="1.778" layer="97">Address 0x40</text>
