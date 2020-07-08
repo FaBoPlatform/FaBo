@@ -11914,7 +11914,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <sheets>
 <sheet>
 <plain>
-<text x="373.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.9</text>
+<text x="373.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.1</text>
 <text x="17.78" y="246.38" size="5.08" layer="97">Jetson Nano</text>
 <text x="259.08" y="246.38" size="2.54" layer="97">I2C (4pin 2mm pitch) x2</text>
 </plain>
@@ -12001,12 +12001,22 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <label x="15.24" y="223.52" size="1.778" layer="95"/>
 <pinref part="U$2" gate="G$1" pin="SDA"/>
 </segment>
+<segment>
+<wire x1="269.24" y1="241.3" x2="269.24" y2="231.14" width="0.1524" layer="91"/>
+<label x="269.24" y="236.22" size="1.778" layer="95" rot="R90"/>
+<pinref part="I2C" gate="G$1" pin="SDA"/>
+</segment>
 </net>
 <net name="SCL" class="0">
 <segment>
 <wire x1="15.24" y1="220.98" x2="27.94" y2="220.98" width="0.1524" layer="91"/>
 <label x="15.24" y="220.98" size="1.778" layer="95"/>
 <pinref part="U$2" gate="G$1" pin="SCL"/>
+</segment>
+<segment>
+<wire x1="264.16" y1="241.3" x2="264.16" y2="231.14" width="0.1524" layer="91"/>
+<label x="264.16" y="236.22" size="1.778" layer="95" rot="R90"/>
+<pinref part="I2C" gate="G$1" pin="SCL"/>
 </segment>
 </net>
 <net name="GPIO4" class="0">
@@ -12189,20 +12199,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="274.32" y1="236.22" x2="274.32" y2="231.14" width="0.1524" layer="91"/>
 <pinref part="I2C" gate="G$1" pin="VCC"/>
 <pinref part="5V1" gate="G$1" pin="5V"/>
-</segment>
-</net>
-<net name="H_SCL" class="0">
-<segment>
-<wire x1="264.16" y1="241.3" x2="264.16" y2="231.14" width="0.1524" layer="91"/>
-<label x="264.16" y="236.22" size="1.778" layer="95" rot="R90"/>
-<pinref part="I2C" gate="G$1" pin="SCL"/>
-</segment>
-</net>
-<net name="H_SDA" class="0">
-<segment>
-<wire x1="269.24" y1="241.3" x2="269.24" y2="231.14" width="0.1524" layer="91"/>
-<label x="269.24" y="236.22" size="1.778" layer="95" rot="R90"/>
-<pinref part="I2C" gate="G$1" pin="SDA"/>
 </segment>
 </net>
 <net name="NC1" class="0">
