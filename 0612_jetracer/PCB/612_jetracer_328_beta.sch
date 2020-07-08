@@ -2841,8 +2841,8 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <text x="-1.27" y="-3.048" size="1.27" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="SCHOTTYKY_DIODE">
-<pin name="CATHODE" x="-5.08" y="0" visible="off" length="point"/>
-<pin name="ANODE" x="2.54" y="0" visible="off" length="point" rot="R180"/>
+<pin name="ANODE" x="-5.08" y="0" visible="off" length="point"/>
+<pin name="CATHODE" x="2.54" y="0" visible="off" length="point" rot="R180"/>
 <wire x1="-0.254" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
 <wire x1="-0.254" y1="0" x2="-2.2352" y2="-1.5494" width="0.254" layer="94"/>
 <wire x1="-2.2352" y1="-1.5494" x2="-2.2352" y2="1.2446" width="0.254" layer="94"/>
@@ -3719,7 +3719,7 @@ Source: http://www.semicon.toshiba.co.jp/td/en/Opto/Photocoupler/en_20050928_TLP
 <part name="C15" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="2.2uF"/>
 <part name="X_20" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="X_21" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
-<part name="R31" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="1K"/>
+<part name="R31" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="0"/>
 <part name="U9" library="FaBo-etc" deviceset="TLP2361" device=""/>
 <part name="X_1" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="R15" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="4.7K"/>
@@ -3781,7 +3781,7 @@ Source: http://www.semicon.toshiba.co.jp/td/en/Opto/Photocoupler/en_20050928_TLP
 <sheets>
 <sheet>
 <plain>
-<text x="792.48" y="22.86" size="2.54" layer="94" align="bottom-center">2.0.8</text>
+<text x="792.48" y="22.86" size="2.54" layer="94" align="bottom-center">2.0.9</text>
 <text x="142.24" y="365.76" size="3.81" layer="97">Jetson Nano</text>
 <text x="266.7" y="358.14" size="3.81" layer="97">PWM Controller</text>
 <text x="279.4" y="299.72" size="1.778" layer="97">Address 0x40</text>
@@ -4321,9 +4321,9 @@ Source: http://www.semicon.toshiba.co.jp/td/en/Opto/Photocoupler/en_20050928_TLP
 <attribute name="VALUE" x="401.574" y="152.654" size="1.4224" layer="96" rot="MR90" align="top-left"/>
 </instance>
 <instance part="X_25" gate="G$1" x="403.86" y="124.46" smashed="yes"/>
-<instance part="D2" gate="G$1" x="571.5" y="243.84" smashed="yes" rot="R180">
-<attribute name="NAME" x="575.31" y="241.808" size="1.27" layer="95" rot="R180"/>
-<attribute name="VALUE" x="575.31" y="246.888" size="1.27" layer="96" rot="R180"/>
+<instance part="D2" gate="G$1" x="568.96" y="243.84" smashed="yes" rot="R180">
+<attribute name="NAME" x="572.77" y="241.808" size="1.27" layer="95" rot="R180"/>
+<attribute name="VALUE" x="572.77" y="246.888" size="1.27" layer="96" rot="R180"/>
 </instance>
 <instance part="C17" gate="G$1" x="541.02" y="487.68" smashed="yes" rot="R90">
 <attribute name="NAME" x="538.734" y="485.394" size="1.4224" layer="95" rot="R90"/>
@@ -5089,9 +5089,9 @@ Source: http://www.semicon.toshiba.co.jp/td/en/Opto/Photocoupler/en_20050928_TLP
 </segment>
 <segment>
 <wire x1="579.12" y1="243.84" x2="579.12" y2="248.92" width="0.1524" layer="91"/>
-<wire x1="576.58" y1="243.84" x2="579.12" y2="243.84" width="0.1524" layer="91"/>
 <label x="574.04" y="248.92" size="1.778" layer="95"/>
-<pinref part="D2" gate="G$1" pin="CATHODE"/>
+<pinref part="D2" gate="G$1" pin="ANODE"/>
+<wire x1="574.04" y1="243.84" x2="579.12" y2="243.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="434.34" y1="167.64" x2="434.34" y2="177.8" width="0.1524" layer="91"/>
@@ -5675,13 +5675,11 @@ Source: http://www.semicon.toshiba.co.jp/td/en/Opto/Photocoupler/en_20050928_TLP
 <wire x1="500.38" y1="220.98" x2="546.1" y2="220.98" width="0.1524" layer="91"/>
 <wire x1="546.1" y1="220.98" x2="561.34" y2="220.98" width="0.1524" layer="91"/>
 <wire x1="561.34" y1="220.98" x2="561.34" y2="243.84" width="0.1524" layer="91"/>
-<wire x1="561.34" y1="243.84" x2="568.96" y2="243.84" width="0.1524" layer="91"/>
 <pinref part="C20" gate="G$1" pin="2"/>
 <wire x1="546.1" y1="213.36" x2="546.1" y2="220.98" width="0.1524" layer="91"/>
 <junction x="546.1" y="220.98"/>
 <pinref part="IC5" gate="G$1" pin="VIN"/>
 <wire x1="513.08" y1="243.84" x2="525.78" y2="243.84" width="0.1524" layer="91"/>
-<junction x="561.34" y="243.84"/>
 <wire x1="525.78" y1="243.84" x2="556.26" y2="243.84" width="0.1524" layer="91"/>
 <pinref part="C21" gate="G$1" pin="2"/>
 <wire x1="556.26" y1="243.84" x2="561.34" y2="243.84" width="0.1524" layer="91"/>
@@ -5703,8 +5701,10 @@ Source: http://www.semicon.toshiba.co.jp/td/en/Opto/Photocoupler/en_20050928_TLP
 <wire x1="307.34" y1="101.6" x2="469.9" y2="101.6" width="0.1524" layer="91"/>
 <label x="307.34" y="101.6" size="1.778" layer="95"/>
 <wire x1="469.9" y1="220.98" x2="469.9" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="D2" gate="G$1" pin="ANODE"/>
 <label x="563.88" y="236.22" size="1.778" layer="95"/>
+<pinref part="D2" gate="G$1" pin="CATHODE"/>
+<wire x1="566.42" y1="243.84" x2="561.34" y2="243.84" width="0.1524" layer="91"/>
+<junction x="561.34" y="243.84"/>
 </segment>
 </net>
 <net name="N$31" class="0">

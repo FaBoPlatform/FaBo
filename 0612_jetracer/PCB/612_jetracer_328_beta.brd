@@ -3,7 +3,7 @@
 <eagle version="9.6.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -188,7 +188,7 @@
 </layers>
 <board>
 <plain>
-<text x="87.423" y="4.316" size="0.8128" layer="21" font="vector" ratio="15" rot="R180" align="bottom-center">REV 2.0.8</text>
+<text x="87.423" y="4.316" size="0.8128" layer="21" font="vector" ratio="15" rot="R180" align="bottom-center">REV 2.0.9</text>
 <text x="84.273" y="4.666" size="1.778" layer="21" font="vector" ratio="15">#612</text>
 <hole x="74.73" y="16.045" drill="2.6"/>
 <wire x1="80.45" y1="51.31" x2="80.45" y2="20.3" width="0.1524" layer="20"/>
@@ -2825,7 +2825,7 @@ design rules under a new name.</description>
 <element name="C15" library="FaBo-Capacitor" package="0603" value="2.2uF" x="98.75" y="30.55" smashed="yes" rot="MR270">
 <attribute name="VALUE" x="99.65" y="30.55" size="0.8128" layer="28" font="vector" ratio="12" rot="MR270" align="center"/>
 </element>
-<element name="R31" library="FaBo-Resistors" package="0603" value="1K" x="101.55" y="26.5" smashed="yes" rot="R90">
+<element name="R31" library="FaBo-Resistors" package="0603" value="0" x="101.55" y="26.5" smashed="yes" rot="R90">
 <attribute name="VALUE" x="101.65" y="26.6" size="0.8128" layer="27" font="vector" ratio="12" rot="R90" align="center"/>
 </element>
 <element name="U9" library="FaBo-etc" package="TLP2361" value="TLP2361" x="87.1" y="11.4" smashed="yes" rot="R90"/>
@@ -2896,7 +2896,7 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="C" x="98.75" y="33.7" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="VALUE" x="100.7" y="34.1" size="0.8128" layer="28" font="vector" ratio="12" rot="MR270" align="center"/>
 </element>
-<element name="D2" library="FaBo-Diode" package="CUS05F40" value="CUS05F40" x="97.85" y="24.35" smashed="yes" rot="MR0"/>
+<element name="D2" library="FaBo-Diode" package="CUS05F40" value="CUS05F40" x="97.85" y="24.35" smashed="yes" rot="MR180"/>
 <element name="C17" library="FaBo-Capacitor" package="0603-NARROW" value="0.1uF" x="82.35" y="12.4" smashed="yes" rot="MR270">
 <attribute name="VALUE" x="84.35" y="11.9" size="0.8128" layer="28" font="vector" ratio="12" rot="MR270" align="center"/>
 </element>
@@ -3976,15 +3976,11 @@ design rules under a new name.</description>
 </polygon>
 <wire x1="96.745" y1="10.645" x2="96.715" y2="10.675" width="0.1524" layer="1"/>
 <wire x1="96.715" y1="10.675" x2="96.715" y2="13.875" width="0.1524" layer="1"/>
-<wire x1="96.745" y1="13.845" x2="96.745" y2="16.475" width="0.1524" layer="1"/>
-<wire x1="96.745" y1="16.475" x2="96.745" y2="16.385" width="0.1524" layer="1"/>
+<wire x1="96.745" y1="13.845" x2="96.745" y2="16.385" width="0.1524" layer="1"/>
 <wire x1="96.745" y1="16.385" x2="96.765" y2="19.115" width="0.1524" layer="1"/>
 <wire x1="96.765" y1="19.325" x2="96.745" y2="19.44" width="0.1524" layer="1"/>
 <contactref element="R14" pad="2"/>
 <contactref element="R19" pad="2"/>
-<contactref element="D2" pad="C"/>
-<wire x1="96.745" y1="21.98" x2="96.7" y2="22.02" width="0.3048" layer="16"/>
-<wire x1="96.7" y1="22.02" x2="96.7" y2="24.35" width="0.3048" layer="16"/>
 <wire x1="89.45" y1="18.65" x2="90.3" y2="17.8" width="0.1524" layer="16"/>
 <wire x1="91.5298" y1="17.8" x2="91.75" y2="17.5798" width="0.1524" layer="16"/>
 <via x="91.75" y="17.5798" extent="1-16" drill="0.35"/>
@@ -4009,6 +4005,9 @@ design rules under a new name.</description>
 <wire x1="83.860534375" y1="23.56053125" x2="84.198959375" y2="23.89895625" width="0.1524" layer="16"/>
 <wire x1="96.745" y1="21.98" x2="96.74" y2="19.36" width="0.3048" layer="16"/>
 <wire x1="96.74" y1="19.36" x2="96.745" y2="19.44" width="0.3048" layer="16"/>
+<contactref element="D2" pad="A"/>
+<wire x1="96.7" y1="22.025" x2="96.745" y2="21.98" width="0.254" layer="16"/>
+<wire x1="96.7" y1="24.35" x2="96.7" y2="22.025" width="0.3048" layer="16"/>
 </signal>
 <signal name="AVR_TX">
 <contactref element="IC1" pad="31"/>
@@ -4804,18 +4803,11 @@ design rules under a new name.</description>
 <wire x1="83.775" y1="19.625" x2="83.8" y2="19.65" width="0.1524" layer="1"/>
 <wire x1="83.8" y1="19.65" x2="83.1" y2="20.35" width="0.3048" layer="16"/>
 <wire x1="83.1" y1="20.35" x2="83.1" y2="24.2" width="0.3048" layer="16"/>
-<contactref element="D2" pad="A"/>
-<wire x1="99" y1="24.35" x2="98.875" y2="24.475" width="0.1524" layer="16"/>
 <via x="100.7" y="24.55" extent="1-16" drill="0.35"/>
 <wire x1="101.5" y1="24.15" x2="101.5" y2="25.6" width="0.1524" layer="1"/>
 <wire x1="101.5" y1="25.6" x2="101.55" y2="25.65" width="0.1524" layer="1"/>
-<wire x1="98.8" y1="25.55" x2="99.1" y2="25.55" width="0.2032" layer="16"/>
-<wire x1="100.45" y1="24.8" x2="100.7" y2="24.55" width="0.2032" layer="16"/>
-<wire x1="99.1" y1="25.55" x2="99.85" y2="24.8" width="0.2032" layer="16"/>
-<wire x1="99.85" y1="24.8" x2="100.45" y2="24.8" width="0.2032" layer="16"/>
-<wire x1="98.8" y1="25.55" x2="98.875" y2="25.475" width="0.3048" layer="16"/>
-<wire x1="98.875" y1="25.475" x2="98.875" y2="24.475" width="0.3048" layer="16"/>
-<wire x1="98.8" y1="25.55" x2="100.15" y2="25.55" width="0.3048" layer="16"/>
+<wire x1="98.8" y1="25.55" x2="99.85" y2="25.55" width="0.3048" layer="16"/>
+<wire x1="99.85" y1="25.55" x2="100.15" y2="25.55" width="0.3048" layer="16"/>
 <wire x1="100.55" y1="25.95" x2="100.55" y2="28.35" width="0.3048" layer="16"/>
 <wire x1="100.55" y1="28.35" x2="99.65" y2="29.25" width="0.3048" layer="16"/>
 <wire x1="100.15" y1="25.55" x2="100.55" y2="25.95" width="0.3048" layer="16"/>
@@ -4859,6 +4851,12 @@ design rules under a new name.</description>
 <wire x1="83.1" y1="24.25" x2="86.0556" y2="27.2056" width="0.254" layer="16"/>
 <wire x1="86.0556" y1="27.2056" x2="86.0556" y2="28.3556" width="0.254" layer="16"/>
 <wire x1="87.8" y1="27.7" x2="90.55" y2="27.7" width="0.254" layer="16"/>
+<contactref element="D2" pad="C"/>
+<wire x1="98.8" y1="25.55" x2="99" y2="25.35" width="0.3048" layer="16"/>
+<wire x1="99" y1="24.35" x2="98.8" y2="24.55" width="0.3048" layer="16"/>
+<wire x1="98.8" y1="24.55" x2="98.8" y2="25.55" width="0.3048" layer="16"/>
+<wire x1="99.85" y1="25.55" x2="100.7" y2="24.7" width="0.3048" layer="16"/>
+<wire x1="100.7" y1="24.7" x2="100.7" y2="24.55" width="0.3048" layer="16"/>
 </signal>
 <signal name="N$31">
 <contactref element="C14" pad="2"/>
