@@ -176,7 +176,7 @@
 <board>
 <plain>
 <text x="3.81" y="7.62" size="1.27" layer="21" font="vector" ratio="15" rot="R90">LED Blue</text>
-<text x="5.08" y="7.62" size="1.016" layer="21" font="vector" ratio="15" rot="R90">Rev.1.0.4</text>
+<text x="5.08" y="7.62" size="1.016" layer="21" font="vector" ratio="15" rot="R90">Rev.1.0.5</text>
 <text x="22.86" y="12.065" size="0.762" layer="21" font="vector" ratio="15" rot="R270" align="bottom-center">Designed in Aizu</text>
 <text x="12.7" y="13.335" size="2.54" layer="21" font="vector" ratio="15" align="bottom-center">#101</text>
 </plain>
