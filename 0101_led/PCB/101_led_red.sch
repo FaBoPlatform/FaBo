@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -25137,12 +25138,24 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.5</text>
 </plain>
 <instances>
-<instance part="A4LOC" gate="G$1" x="0" y="0"/>
-<instance part="J1" gate="G$1" x="106.68" y="93.98"/>
-<instance part="LED1" gate="G$1" x="144.78" y="101.6" rot="R270"/>
-<instance part="R1" gate="G$1" x="144.78" y="86.36" rot="R90"/>
-<instance part="U$2" gate="G$1" x="248.92" y="12.7"/>
-<instance part="LOGO1" gate="G$1" x="218.44" y="5.08"/>
+<instance part="A4LOC" gate="G$1" x="0" y="0" smashed="yes">
+<attribute name="DRAWING_NAME" x="172.72" y="24.13" size="2.54" layer="94"/>
+<attribute name="LAST_DATE_TIME" x="170.18" y="20.32" size="1.778" layer="94" align="center-left"/>
+<attribute name="SHEET" x="223.52" y="20.32" size="1.778" layer="94" align="center-left"/>
+</instance>
+<instance part="J1" gate="G$1" x="106.68" y="93.98" smashed="yes">
+<attribute name="NAME" x="101.6" y="102.108" size="1.778" layer="95"/>
+</instance>
+<instance part="LED1" gate="G$1" x="144.78" y="101.6" smashed="yes" rot="R270">
+<attribute name="NAME" x="147.32" y="102.362" size="1.27" layer="95" rot="R270"/>
+<attribute name="VALUE" x="148.844" y="102.362" size="1.27" layer="96" rot="R270"/>
+</instance>
+<instance part="R1" gate="G$1" x="144.78" y="86.36" smashed="yes" rot="R90">
+<attribute name="NAME" x="143.256" y="84.074" size="1.4224" layer="95" rot="R90"/>
+<attribute name="VALUE" x="146.304" y="84.074" size="1.4224" layer="96" rot="R90" align="top-left"/>
+</instance>
+<instance part="U$2" gate="G$1" x="248.92" y="12.7" smashed="yes"/>
+<instance part="LOGO1" gate="G$1" x="218.44" y="5.08" smashed="yes"/>
 </instances>
 <busses>
 </busses>
