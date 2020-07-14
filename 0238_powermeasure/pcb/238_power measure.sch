@@ -2834,7 +2834,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="3V6" library="FaBo-Supply" deviceset="3V3" device=""/>
 <part name="3V7" library="FaBo-Supply" deviceset="3V3" device=""/>
 <part name="5V3" library="FaBo-Supply" deviceset="5V" device=""/>
-<part name="R11" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="10k"/>
+<part name="R11" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="0"/>
 <part name="TP1" library="FaBo-Supply" deviceset="TP" device="-15"/>
 <part name="TP2" library="FaBo-Supply" deviceset="TP" device="-15"/>
 <part name="U3" library="FaBo-Sensor" deviceset="TI-INA226" device=""/>
@@ -2854,8 +2854,8 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="C15" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="0.1uF"/>
 <part name="GND8" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="U$23" library="FaBo-Terminal" deviceset="ML-1400-S1" device=""/>
-<part name="R27" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="4.7KΩ"/>
-<part name="R28" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="4.7KΩ"/>
+<part name="R27" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="3.3Ω"/>
+<part name="R28" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="3.3Ω"/>
 <part name="SHUNT" library="FaBo" deviceset="PMR10EZPFV2L00" device=""/>
 <part name="U$24" library="FaBo-Terminal" deviceset="ML-1400-S1" device=""/>
 <part name="U$25" library="FaBo-Terminal" deviceset="ML-1400-S1" device=""/>
@@ -2872,12 +2872,12 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <sheet>
 <plain>
 <text x="373.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.0 A</text>
-<wire x1="304.8" y1="96.52" x2="302.26" y2="96.52" width="0.1524" layer="94"/>
+<wire x1="302.26" y1="96.52" x2="299.72" y2="96.52" width="0.1524" layer="94"/>
 <text x="50.8" y="198.12" size="1.778" layer="94">MUN2111T1G</text>
 <text x="78.74" y="167.64" size="1.778" layer="97">One of the switches 1 to 4, one of 5 to 8 can be turned on.</text>
 <wire x1="220.98" y1="200.66" x2="231.14" y2="200.66" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="231.14" y1="200.66" x2="231.14" y2="187.96" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="231.14" y1="187.96" x2="220.98" y2="187.96" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="231.14" y1="200.66" x2="231.14" y2="193.04" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="231.14" y1="193.04" x2="220.98" y2="193.04" width="0.1524" layer="94" style="shortdash"/>
 <text x="233.68" y="195.58" size="1.778" layer="94">※ハイサイド測定時はジャンパ線などでつなぎます。</text>
 <text x="233.68" y="205.74" size="1.778" layer="94">電源プラスへ</text>
 <text x="223.52" y="190.5" size="1.778" layer="94">被試験体へ</text>
@@ -2886,7 +2886,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="274.32" y1="195.58" x2="274.32" y2="170.18" width="0.1524" layer="94"/>
 <wire x1="274.32" y1="170.18" x2="254" y2="170.18" width="0.1524" layer="94"/>
 <wire x1="254" y1="170.18" x2="254" y2="195.58" width="0.1524" layer="94"/>
-<wire x1="220.98" y1="193.04" x2="254" y2="193.04" width="0.1524" layer="94" style="longdash"/>
+<wire x1="220.98" y1="187.96" x2="254" y2="187.96" width="0.1524" layer="94" style="longdash"/>
 <wire x1="254" y1="172.72" x2="220.98" y2="172.72" width="0.1524" layer="94" style="longdash"/>
 <text x="259.08" y="180.34" size="1.778" layer="94">被試験体</text>
 <text x="297.18" y="200.66" size="1.778" layer="94">被試験体へ</text>
@@ -2896,16 +2896,17 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="345.44" y1="187.96" x2="330.2" y2="187.96" width="0.1524" layer="94"/>
 <wire x1="330.2" y1="187.96" x2="330.2" y2="205.74" width="0.1524" layer="94"/>
 <wire x1="297.18" y1="200.66" x2="330.2" y2="200.66" width="0.1524" layer="94" style="longdash"/>
-<wire x1="330.2" y1="190.5" x2="297.18" y2="190.5" width="0.1524" layer="94" style="longdash"/>
+<wire x1="330.2" y1="193.04" x2="297.18" y2="193.04" width="0.1524" layer="94" style="longdash"/>
 <text x="332.74" y="195.58" size="1.778" layer="94">被試験体</text>
-<wire x1="297.18" y1="193.04" x2="307.34" y2="193.04" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="307.34" y1="193.04" x2="307.34" y2="172.72" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="297.18" y1="187.96" x2="307.34" y2="187.96" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="307.34" y1="187.96" x2="307.34" y2="172.72" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="307.34" y1="172.72" x2="297.18" y2="172.72" width="0.1524" layer="94" style="shortdash"/>
 <text x="309.88" y="180.34" size="1.778" layer="94">※ローサイド測定時はジャンパ線などでつなぎます。</text>
 <text x="233.68" y="167.64" size="1.778" layer="94">電源マイナスへ</text>
 <wire x1="289.56" y1="223.52" x2="289.56" y2="132.08" width="0.3048" layer="94" style="longdash"/>
-<text x="66.04" y="157.48" size="1.778" layer="94">※デバイスアドレス設定
-A0,A1それぞれ１つONにする。</text>
+<text x="35.56" y="152.4" size="1.778" layer="94">※デバイスアドレス設定
+A0,A1それぞれ１つONにする。
+それぞれONしないと静電気により値が取得できないことがあるので注意。</text>
 <text x="297.18" y="104.14" size="1.778" layer="94">※通信線電圧設定</text>
 <text x="226.06" y="218.44" size="1.778" layer="94">※ハイサイド測定</text>
 <text x="322.58" y="220.98" size="1.778" layer="94">※ローサイド測定</text>
@@ -2915,6 +2916,9 @@ A0,A1それぞれ１つONにする。</text>
 <wire x1="220.98" y1="167.64" x2="231.14" y2="167.64" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="297.18" y1="205.74" x2="307.34" y2="205.74" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="297.18" y1="167.64" x2="307.34" y2="167.64" width="0.1524" layer="94" style="shortdash"/>
+<text x="134.62" y="223.52" size="1.778" layer="94">※シャント抵抗　それぞれどちらか一方に実装のこと。最大電流に注意。</text>
+<text x="218.44" y="96.52" size="1.778" layer="94">※実装向きに注意。</text>
+<text x="281.94" y="91.44" size="1.778" layer="94">※デフォルト５V</text>
 </plain>
 <instances>
 <instance part="C1" gate="G$1" x="200.66" y="76.2" smashed="yes" rot="R90">
