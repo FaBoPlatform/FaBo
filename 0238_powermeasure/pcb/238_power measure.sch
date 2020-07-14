@@ -1625,50 +1625,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="FaBo">
-<packages>
-<package name="PMR10EZPFV2L00">
-<smd name="P$1" x="1.05" y="0" dx="1.3" dy="1.3" layer="1" rot="R90"/>
-<smd name="P$2" x="-1.05" y="0" dx="1.3" dy="1.3" layer="1" rot="R90"/>
-<text x="-2.54" y="1.27" size="0.635" layer="21">&gt;NAME</text>
-</package>
-</packages>
-<symbols>
-<symbol name="PMR10EZPFV2L00">
-<wire x1="-2.54" y1="0" x2="-2.159" y2="1.016" width="0.2032" layer="94"/>
-<wire x1="-2.159" y1="1.016" x2="-1.524" y2="-1.016" width="0.2032" layer="94"/>
-<wire x1="-1.524" y1="-1.016" x2="-0.889" y2="1.016" width="0.2032" layer="94"/>
-<wire x1="-0.889" y1="1.016" x2="-0.254" y2="-1.016" width="0.2032" layer="94"/>
-<wire x1="-0.254" y1="-1.016" x2="0.381" y2="1.016" width="0.2032" layer="94"/>
-<wire x1="0.381" y1="1.016" x2="1.016" y2="-1.016" width="0.2032" layer="94"/>
-<wire x1="1.016" y1="-1.016" x2="1.651" y2="1.016" width="0.2032" layer="94"/>
-<wire x1="1.651" y1="1.016" x2="2.286" y2="-1.016" width="0.2032" layer="94"/>
-<wire x1="2.286" y1="-1.016" x2="2.54" y2="0" width="0.2032" layer="94"/>
-<text x="-3.81" y="1.4986" size="1.778" layer="95">&gt;NAME</text>
-<text x="-3.81" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="PMR10EZPFV2L00">
-<gates>
-<gate name="G$1" symbol="PMR10EZPFV2L00" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="PMR10EZPFV2L00">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="transistor" urn="urn:adsk.eagle:library:402">
 <description>&lt;b&gt;Transistors&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
@@ -2856,7 +2812,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="U$23" library="FaBo-Terminal" deviceset="ML-1400-S1" device=""/>
 <part name="R27" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="3.3Ω"/>
 <part name="R28" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="3.3Ω"/>
-<part name="SHUNT" library="FaBo" deviceset="PMR10EZPFV2L00" device=""/>
 <part name="U$24" library="FaBo-Terminal" deviceset="ML-1400-S1" device=""/>
 <part name="U$25" library="FaBo-Terminal" deviceset="ML-1400-S1" device=""/>
 <part name="GND10" library="FaBo-Supply" deviceset="GND" device=""/>
@@ -2871,7 +2826,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <sheets>
 <sheet>
 <plain>
-<text x="373.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.0 A</text>
+<text x="373.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.1</text>
 <wire x1="302.26" y1="96.52" x2="299.72" y2="96.52" width="0.1524" layer="94"/>
 <text x="50.8" y="198.12" size="1.778" layer="94">MUN2111T1G</text>
 <text x="78.74" y="167.64" size="1.778" layer="97">One of the switches 1 to 4, one of 5 to 8 can be turned on.</text>
@@ -2916,8 +2871,6 @@ A0,A1それぞれ１つONにする。
 <wire x1="220.98" y1="167.64" x2="231.14" y2="167.64" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="297.18" y1="205.74" x2="307.34" y2="205.74" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="297.18" y1="167.64" x2="307.34" y2="167.64" width="0.1524" layer="94" style="shortdash"/>
-<text x="134.62" y="223.52" size="1.778" layer="94">※シャント抵抗　それぞれどちらか一方に実装のこと。最大電流に注意。</text>
-<text x="218.44" y="96.52" size="1.778" layer="94">※実装向きに注意。</text>
 <text x="281.94" y="91.44" size="1.778" layer="94">※デフォルト５V</text>
 </plain>
 <instances>
@@ -3059,10 +3012,6 @@ A0,A1それぞれ１つONにする。
 <instance part="R28" gate="G$1" x="147.32" y="208.28" smashed="yes">
 <attribute name="NAME" x="145.034" y="209.804" size="1.4224" layer="95"/>
 <attribute name="VALUE" x="145.034" y="206.756" size="1.4224" layer="96" align="top-left"/>
-</instance>
-<instance part="SHUNT" gate="G$1" x="175.26" y="203.2" smashed="yes" rot="R90">
-<attribute name="NAME" x="173.7614" y="199.39" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="178.562" y="199.39" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="U$24" gate="G$1" x="215.9" y="190.5" smashed="yes"/>
 <instance part="U$25" gate="G$1" x="215.9" y="170.18" smashed="yes"/>
@@ -3488,12 +3437,8 @@ A0,A1それぞれ１つONにする。
 <segment>
 <wire x1="190.5" y1="187.96" x2="190.5" y2="215.9" width="0.1524" layer="91"/>
 <pinref part="R27" gate="G$1" pin="2"/>
-<wire x1="190.5" y1="215.9" x2="175.26" y2="215.9" width="0.1524" layer="91"/>
-<pinref part="SHUNT" gate="G$1" pin="2"/>
-<wire x1="175.26" y1="215.9" x2="162.56" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="215.9" x2="162.56" y2="215.9" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="215.9" x2="152.4" y2="215.9" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="208.28" x2="175.26" y2="215.9" width="0.1524" layer="91"/>
-<junction x="175.26" y="215.9"/>
 <pinref part="SHUNT1" gate="G$1" pin="2"/>
 <wire x1="162.56" y1="208.28" x2="162.56" y2="215.9" width="0.1524" layer="91"/>
 <junction x="162.56" y="215.9"/>
@@ -3523,14 +3468,10 @@ A0,A1それぞれ１つONにする。
 <wire x1="152.4" y1="208.28" x2="157.48" y2="208.28" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="208.28" x2="157.48" y2="193.04" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="193.04" x2="162.56" y2="193.04" width="0.1524" layer="91"/>
-<pinref part="SHUNT" gate="G$1" pin="1"/>
-<wire x1="162.56" y1="193.04" x2="175.26" y2="193.04" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="193.04" x2="175.26" y2="198.12" width="0.1524" layer="91"/>
-<junction x="175.26" y="193.04"/>
 <pinref part="SHUNT1" gate="G$1" pin="1"/>
 <wire x1="162.56" y1="200.66" x2="162.56" y2="193.04" width="0.1524" layer="91"/>
 <junction x="162.56" y="193.04"/>
-<wire x1="175.26" y1="193.04" x2="208.28" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="193.04" x2="208.28" y2="193.04" width="0.1524" layer="91"/>
 <pinref part="U$24" gate="G$1" pin="PIN1"/>
 <label x="180.34" y="193.04" size="1.778" layer="95"/>
 </segment>
