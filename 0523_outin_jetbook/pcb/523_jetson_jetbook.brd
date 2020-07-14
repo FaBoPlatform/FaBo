@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="9.6.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -176,7 +176,7 @@
 </layers>
 <board>
 <plain>
-<text x="13.343" y="1.676" size="0.8128" layer="21" font="vector" ratio="15" rot="R180" align="bottom-center">REV 1.0.1</text>
+<text x="13.343" y="1.676" size="0.8128" layer="21" font="vector" ratio="15" rot="R180" align="bottom-center">REV 1.0.2</text>
 <text x="10.298" y="2.436" size="1.9304" layer="21" font="vector" ratio="15">#523</text>
 <wire x1="7.52" y1="18.45" x2="23.8" y2="18.45" width="0.1524" layer="20"/>
 <wire x1="23.8" y1="18.45" x2="23.8" y2="19.72" width="0.1524" layer="20"/>
@@ -2744,25 +2744,25 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="21.77" y="40.21" size="0.8128" layer="28" font="vector" ratio="12" rot="R90" align="center"/>
 </element>
 <element name="IC3" library="FaBo-ADC" package="MICROCHIP-MCP3008" value="" x="14.14" y="12.79" smashed="yes" rot="R90"/>
-<element name="R4" library="FaBo-Resistors" package="0603-BOTTOM" value="2.2K" x="66.78" y="40.42" smashed="yes">
+<element name="R4" library="FaBo-Resistors" package="0603-BOTTOM" value="4.7K" x="66.78" y="40.42" smashed="yes">
 <attribute name="VALUE" x="66.68" y="39.62" size="0.8128" layer="28" font="vector" ratio="12" align="center"/>
 </element>
-<element name="R10" library="FaBo-Resistors" package="0603-BOTTOM" value="2.2K" x="66.79" y="29.86" smashed="yes">
+<element name="R10" library="FaBo-Resistors" package="0603-BOTTOM" value="4.7K" x="66.79" y="29.86" smashed="yes">
 <attribute name="VALUE" x="66.19" y="28.76" size="0.8128" layer="28" font="vector" ratio="12" align="center"/>
 </element>
-<element name="R11" library="FaBo-Resistors" package="0603-BOTTOM" value="3.3K" x="66.87" y="38.08" smashed="yes">
+<element name="R11" library="FaBo-Resistors" package="0603-BOTTOM" value="9.1K" x="66.87" y="38.08" smashed="yes">
 <attribute name="VALUE" x="65.97" y="37.18" size="0.8128" layer="28" font="vector" ratio="12" align="center"/>
 </element>
-<element name="R12" library="FaBo-Resistors" package="0603-BOTTOM" value="3.3K" x="66.69" y="31.76" smashed="yes">
+<element name="R12" library="FaBo-Resistors" package="0603-BOTTOM" value="9.1K" x="66.69" y="31.76" smashed="yes">
 <attribute name="VALUE" x="66.99" y="31.76" size="0.8128" layer="28" font="vector" ratio="12" align="center"/>
 </element>
 <element name="SJ4" library="FaBo-etc" package="SMD-JUMPER-3" value="" x="13.79" y="5.64" smashed="yes" rot="MR0">
 <attribute name="NAME" x="13.79" y="6.91" size="0.8128" layer="26" font="vector" ratio="12" rot="MR0" align="bottom-center"/>
 </element>
-<element name="R14" library="FaBo-Resistors" package="0603-BOTTOM" value="2.2K" x="66.87" y="20.67" smashed="yes">
+<element name="R14" library="FaBo-Resistors" package="0603-BOTTOM" value="4.7K" x="66.87" y="20.67" smashed="yes">
 <attribute name="VALUE" x="65.77" y="20.57" size="0.8128" layer="28" font="vector" ratio="12" align="center"/>
 </element>
-<element name="R17" library="FaBo-Resistors" package="0603-BOTTOM" value="3.3K" x="66.77" y="22.87" smashed="yes">
+<element name="R17" library="FaBo-Resistors" package="0603-BOTTOM" value="9.1K" x="66.77" y="22.87" smashed="yes">
 <attribute name="VALUE" x="66.97" y="22.07" size="0.8128" layer="28" font="vector" ratio="12" align="center"/>
 </element>
 <element name="U$2" library="FaBo-Boards" package="JETSON_NANO_NOBOARDER_BOTTOM" value="JETSON_NANO_NORBORDER_BOTTOM" x="58.39" y="4.23" smashed="yes"/>

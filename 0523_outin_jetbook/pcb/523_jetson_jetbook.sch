@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="9.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -5243,11 +5243,11 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="GND48" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="R16" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603-BOTTOM" value="20K"/>
 <part name="IC3" library="FaBo-ADC" deviceset="MICROCHIP-MCP3008" device=""/>
-<part name="R4" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603-BOTTOM" value="2.2K"/>
-<part name="R10" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603-BOTTOM" value="2.2K"/>
+<part name="R4" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603-BOTTOM" value="4.7K"/>
+<part name="R10" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603-BOTTOM" value="4.7K"/>
 <part name="GND21" library="FaBo-Supply" deviceset="GND" device=""/>
-<part name="R11" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603-BOTTOM" value="3.3K"/>
-<part name="R12" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603-BOTTOM" value="3.3K"/>
+<part name="R11" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603-BOTTOM" value="9.1K"/>
+<part name="R12" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603-BOTTOM" value="9.1K"/>
 <part name="GND36" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="GND37" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="SUPPLY18" library="FaBo-etc" deviceset="5V" device=""/>
@@ -5255,8 +5255,8 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="SJ4" library="FaBo-etc" deviceset="SMD-JUMPER-3-23SHORT" device=""/>
 <part name="SUPPLY17" library="FaBo-etc" deviceset="5V" device=""/>
 <part name="GND44" library="FaBo-etc" deviceset="GND" device=""/>
-<part name="R14" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603-BOTTOM" value="2.2K"/>
-<part name="R17" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603-BOTTOM" value="3.3K"/>
+<part name="R14" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603-BOTTOM" value="4.7K"/>
+<part name="R17" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603-BOTTOM" value="9.1K"/>
 <part name="GND49" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="U$2" library="FaBo-Boards" deviceset="JETSON_NANO" device="_NORBORDER_BOTTOM"/>
 <part name="CH0" library="FaBo-Template" deviceset="FABO_BRICK_3PIN" device="-B03B-PASK-1"/>
@@ -5279,7 +5279,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <sheets>
 <sheet>
 <plain>
-<text x="373.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.9</text>
+<text x="373.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.2</text>
 <text x="17.78" y="246.38" size="5.08" layer="97">Jetson Nano</text>
 <text x="269.24" y="119.38" size="5.08" layer="97">PWM Controller</text>
 <text x="271.78" y="76.2" size="1.778" layer="97">Address 0x60</text>
