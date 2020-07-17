@@ -3,7 +3,7 @@
 <eagle version="9.6.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -3517,17 +3517,6 @@ design rules under a new name.</description>
 <mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
-<errors>
-<approved hash="4,1,d593e0d9c7a11998"/>
-<approved hash="4,1,9ce7bbdecba685ec"/>
-<approved hash="4,1,2376c9496446250e"/>
-<approved hash="4,1,7758061ea2a33a6e"/>
-<approved hash="4,1,a065186ec4aca058"/>
-<approved hash="4,1,0d19756608acdc24"/>
-<approved hash="4,1,1330a6d0a1e5fd8e"/>
-<approved hash="4,1,dd4ff9ed875c7f01"/>
-<approved hash="4,1,703394e54b5c037d"/>
-</errors>
 </board>
 </drawing>
 </eagle>
