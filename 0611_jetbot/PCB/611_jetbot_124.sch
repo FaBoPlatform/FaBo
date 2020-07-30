@@ -17352,7 +17352,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="IC1" library="FaBo-LevelTranslator" deviceset="PCA9306" device="_SSOP"/>
 <part name="3V6" library="FaBo-Supply" deviceset="3V3" device=""/>
 <part name="GND2" library="FaBo-etc" deviceset="GND" device=""/>
-<part name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R3216W" package3d_urn="urn:adsk.eagle:package:23548/2" value="220(1/4W)"/>
+<part name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R3216W" package3d_urn="urn:adsk.eagle:package:23548/2" value="470(1/4W)"/>
 </parts>
 <sheets>
 <sheet>

@@ -3669,7 +3669,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="23.5" y="17.3" size="0.8128" layer="28" font="vector" ratio="12" rot="R270" align="center"/>
 </element>
 <element name="IC1" library="FaBo-LevelTranslator" package="8PIN-SSOP" value="" x="31.5" y="12.5" smashed="yes" rot="R270"/>
-<element name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R3216W" package3d_urn="urn:adsk.eagle:package:23548/2" value="220(1/4W)" x="27.5" y="4.5" smashed="yes" rot="MR90">
+<element name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R3216W" package3d_urn="urn:adsk.eagle:package:23548/2" value="470(1/4W)" x="27.5" y="4.5" smashed="yes" rot="MR90">
 <attribute name="POPULARITY" value="1" x="27.5" y="4.5" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="27.5" y="4.5" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="VALUE" x="24.96" y="2.595" size="1.27" layer="28" rot="MR90"/>
