@@ -3,7 +3,7 @@
 <eagle version="9.6.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -3096,7 +3096,6 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="4.445" y="14.97" size="0.02" layer="28" rot="MR90"/>
 </element>
 <element name="R5" library="FaBo-Resistors" package="0603" value="1.2K" x="17.78" y="10.795" smashed="yes" rot="MR180">
-<attribute name="NAME" x="17.78" y="9.906" size="0.8128" layer="26" font="vector" ratio="12" rot="MR180" align="bottom-center"/>
 <attribute name="VALUE" x="17.78" y="10.795" size="0.8128" layer="28" font="vector" ratio="12" rot="MR180" align="center"/>
 </element>
 <element name="SJ2" library="jumper" library_urn="urn:adsk.eagle:library:252" package="SJW" package3d_urn="urn:adsk.eagle:package:15507/1" value="" x="17.78" y="13.97" smashed="yes" rot="MR0">
