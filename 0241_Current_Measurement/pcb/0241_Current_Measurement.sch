@@ -2039,7 +2039,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="6.7" y1="-12.1" x2="-6.9" y2="-12.1" width="0.127" layer="21"/>
 <wire x1="-6.9" y1="-12.1" x2="-6.9" y2="-7.9" width="0.127" layer="21"/>
 <wire x1="9" y1="-12.75" x2="9" y2="8.25" width="0.127" layer="51"/>
-<wire x1="7.5" y1="8.25" x2="9" y2="8.25" width="0.127" layer="21"/>
+<wire x1="7.5" y1="8.25" x2="9" y2="8.25" width="0.127" layer="51"/>
 <wire x1="7.5" y1="-12.75" x2="9" y2="-12.75" width="0.127" layer="21"/>
 <polygon width="0.127" layer="51">
 <vertex x="-4.7" y="-21"/>
