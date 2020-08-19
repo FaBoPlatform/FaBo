@@ -1405,58 +1405,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="FaBo-Connetor">
-<packages>
-<package name="2606-1102/020-000">
-<pad name="P$2" x="-5.5" y="-6.25" drill="2.1"/>
-<pad name="P$3" x="2" y="6.25" drill="2.1"/>
-<wire x1="7.5" y1="8.25" x2="7.5" y2="-12.75" width="0.127" layer="51"/>
-<wire x1="7.5" y1="-12.75" x2="0" y2="-12.75" width="0.127" layer="51"/>
-<wire x1="0" y1="-12.75" x2="-7.5" y2="-12.75" width="0.127" layer="51"/>
-<wire x1="-7.5" y1="-12.75" x2="-7.5" y2="8.25" width="0.127" layer="51"/>
-<wire x1="-7.5" y1="8.25" x2="0" y2="8.25" width="0.127" layer="51"/>
-<wire x1="0" y1="8.25" x2="7.5" y2="8.25" width="0.127" layer="51"/>
-<wire x1="0" y1="8.25" x2="0" y2="-12.75" width="0.127" layer="51"/>
-<wire x1="-6.6" y1="-3.8" x2="-6.6" y2="7.8" width="0.127" layer="21"/>
-<wire x1="-6.6" y1="7.8" x2="0.7" y2="7.8" width="0.127" layer="21"/>
-<wire x1="5.4" y1="7.8" x2="6.7" y2="7.8" width="0.127" layer="21"/>
-<wire x1="6.7" y1="7.8" x2="6.7" y2="-12.1" width="0.127" layer="21"/>
-<wire x1="6.7" y1="-12.1" x2="-6.9" y2="-12.1" width="0.127" layer="21"/>
-<wire x1="-6.9" y1="-12.1" x2="-6.9" y2="-7.9" width="0.127" layer="21"/>
-<wire x1="-9.5" y1="-12.75" x2="-9.5" y2="8.25" width="0.127" layer="51"/>
-<wire x1="-7.5" y1="8.25" x2="-9.5" y2="8.25" width="0.127" layer="51"/>
-<wire x1="-9.5" y1="-12.75" x2="-7.5" y2="-12.75" width="0.127" layer="51"/>
-</package>
-</packages>
-<symbols>
-<symbol name="2606-1102">
-<pin name="L" x="-10.16" y="5.08" length="middle"/>
-<pin name="R" x="-10.16" y="-5.08" length="middle"/>
-<wire x1="-5.08" y1="10.16" x2="5.08" y2="10.16" width="0.254" layer="94"/>
-<wire x1="5.08" y1="10.16" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-10.16" x2="-5.08" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-10.16" x2="-5.08" y2="10.16" width="0.254" layer="94"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="2606-1102_2">
-<gates>
-<gate name="G$1" symbol="2606-1102" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="2606-1102/020-000">
-<connects>
-<connect gate="G$1" pin="L" pad="P$3"/>
-<connect gate="G$1" pin="R" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="pinhead" urn="urn:adsk.eagle:library:325">
 <description>&lt;b&gt;Pin Header Connectors&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
@@ -2569,6 +2517,70 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="FaBo-Terminal">
+<packages>
+<package name="2606-1102/020-000">
+<pad name="P$2" x="3.5" y="-6.25" locked="yes" drill="2.4" diameter="5.08"/>
+<pad name="P$3" x="-3.5" y="6.25" locked="yes" drill="2.4" diameter="5.08"/>
+<wire x1="7.5" y1="8.25" x2="7.5" y2="-12.75" width="0.127" layer="51"/>
+<wire x1="7.5" y1="-12.75" x2="0" y2="-12.75" width="0.127" layer="51"/>
+<wire x1="0" y1="-12.75" x2="-7.5" y2="-12.75" width="0.127" layer="51"/>
+<wire x1="-7.5" y1="-12.75" x2="-7.5" y2="8.25" width="0.127" layer="51"/>
+<wire x1="-7.5" y1="8.25" x2="0" y2="8.25" width="0.127" layer="51"/>
+<wire x1="0" y1="8.25" x2="7.5" y2="8.25" width="0.127" layer="51"/>
+<wire x1="0" y1="8.25" x2="0" y2="-12.75" width="0.127" layer="51"/>
+<wire x1="-6.6" y1="-3.8" x2="-6.6" y2="7.8" width="0.127" layer="21"/>
+<wire x1="-6.6" y1="7.8" x2="0.7" y2="7.8" width="0.127" layer="21"/>
+<wire x1="5.4" y1="7.8" x2="6.7" y2="7.8" width="0.127" layer="21"/>
+<wire x1="6.7" y1="7.8" x2="6.7" y2="-12.1" width="0.127" layer="21"/>
+<wire x1="6.7" y1="-12.1" x2="-6.9" y2="-12.1" width="0.127" layer="21"/>
+<wire x1="-6.9" y1="-12.1" x2="-6.9" y2="-7.9" width="0.127" layer="21"/>
+<wire x1="9" y1="-12.75" x2="9" y2="8.25" width="0.127" layer="51"/>
+<wire x1="7.5" y1="8.25" x2="9" y2="8.25" width="0.127" layer="51"/>
+<wire x1="7.5" y1="-12.75" x2="9" y2="-12.75" width="0.127" layer="21"/>
+<polygon width="0.127" layer="51">
+<vertex x="-4.7" y="-21"/>
+<vertex x="-4.7" y="-19"/>
+<vertex x="0" y="-14"/>
+<vertex x="4.6" y="-19"/>
+<vertex x="4.6" y="-21"/>
+</polygon>
+<wire x1="-7.5" y1="-12.8" x2="-7.5" y2="-15" width="0.127" layer="51" style="shortdash"/>
+<wire x1="-7.5" y1="-15" x2="-6.9" y2="-16.05" width="0.127" layer="51" style="shortdash"/>
+<wire x1="-6.9" y1="-16.05" x2="6.8" y2="-16.05" width="0.127" layer="51" style="shortdash"/>
+<wire x1="6.8" y1="-16.05" x2="7.1" y2="-15" width="0.127" layer="51" style="shortdash"/>
+<wire x1="7.1" y1="-15" x2="7.1" y2="-12.8" width="0.127" layer="51" style="shortdash"/>
+</package>
+</packages>
+<symbols>
+<symbol name="2606-1102">
+<pin name="L" x="-10.16" y="-5.08" length="middle"/>
+<pin name="R" x="-10.16" y="5.08" length="middle"/>
+<wire x1="-5.08" y1="10.16" x2="5.08" y2="10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="10.16" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-10.16" x2="-5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-10.16" x2="-5.08" y2="10.16" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="2606-1102/020-000">
+<gates>
+<gate name="G$1" symbol="2606-1102" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="2606-1102/020-000">
+<connects>
+<connect gate="G$1" pin="L" pad="P$3"/>
+<connect gate="G$1" pin="R" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2635,11 +2647,11 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="SJ7" library="FaBo-PIN" deviceset="FABO-SMD-JUMPER-SELECT" device=""/>
 <part name="SJ8" library="FaBo-PIN" deviceset="FABO-SMD-JUMPER-SELECT" device=""/>
 <part name="SJ9" library="FaBo-PIN" deviceset="FABO-SMD-JUMPER-SELECT" device=""/>
-<part name="U$1" library="FaBo-Connetor" deviceset="2606-1102_2" device=""/>
 <part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
 <part name="J1" library="FaBo-Template" deviceset="FABO_BRICK_I2C" device="-S04B-PASK-2"/>
 <part name="SJ10" library="FaBo-PIN" deviceset="FABO-SMD-JUMPER-SELECT" device=""/>
 <part name="SJ11" library="FaBo-PIN" deviceset="FABO-SMD-JUMPER-SELECT" device=""/>
+<part name="U$5" library="FaBo-Terminal" deviceset="2606-1102/020-000" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2805,9 +2817,9 @@ A0,A1それぞれ１つONにする。</text>
 <instance part="3V8" gate="G$1" x="320.04" y="109.22" smashed="yes">
 <attribute name="VALUE" x="318.77" y="112.776" size="1.778" layer="96"/>
 </instance>
-<instance part="SHUNT1" gate="G$1" x="162.56" y="203.2" smashed="yes" rot="R90">
-<attribute name="NAME" x="161.036" y="200.914" size="1.4224" layer="95" rot="R90"/>
-<attribute name="VALUE" x="164.084" y="200.914" size="1.4224" layer="96" rot="R90" align="top-left"/>
+<instance part="SHUNT1" gate="G$1" x="182.88" y="203.2" smashed="yes" rot="R90">
+<attribute name="NAME" x="181.356" y="200.914" size="1.4224" layer="95" rot="R90"/>
+<attribute name="VALUE" x="184.404" y="200.914" size="1.4224" layer="96" rot="R90" align="top-left"/>
 </instance>
 <instance part="D2" gate="G$1" x="139.7" y="96.52" smashed="yes" rot="R270">
 <attribute name="NAME" x="136.652" y="97.79" size="1.27" layer="95" rot="R270"/>
@@ -2844,7 +2856,6 @@ A0,A1それぞれ１つONにする。</text>
 <attribute name="NAME" x="63.119" y="167.64" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="57.785" y="167.64" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="U$1" gate="G$1" x="231.14" y="203.2" smashed="yes"/>
 <instance part="JP1" gate="G$1" x="210.82" y="182.88" smashed="yes">
 <attribute name="NAME" x="204.47" y="188.595" size="1.778" layer="95"/>
 <attribute name="VALUE" x="204.47" y="177.8" size="1.778" layer="96"/>
@@ -2860,6 +2871,7 @@ A0,A1それぞれ１つONにする。</text>
 <attribute name="NAME" x="144.78" y="103.759" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="144.78" y="98.425" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="U$5" gate="G$1" x="231.14" y="203.2" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -3212,11 +3224,11 @@ A0,A1それぞれ１つONにする。</text>
 <wire x1="144.78" y1="208.28" x2="139.7" y2="208.28" width="0.1524" layer="91"/>
 <pinref part="R28" gate="G$1" pin="1"/>
 <pinref part="C16" gate="G$1" pin="1"/>
-<wire x1="139.7" y1="208.28" x2="132.08" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="208.28" x2="137.16" y2="208.28" width="0.1524" layer="91"/>
 <junction x="139.7" y="208.28"/>
-<wire x1="132.08" y1="208.28" x2="132.08" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="208.28" x2="137.16" y2="210.82" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="VIN+"/>
-<wire x1="132.08" y1="210.82" x2="129.54" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="210.82" x2="129.54" y2="210.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$27" class="0">
@@ -3255,28 +3267,29 @@ A0,A1それぞれ１つONにする。</text>
 </net>
 <net name="N$25" class="0">
 <segment>
-<wire x1="134.62" y1="210.82" x2="134.62" y2="215.9" width="0.1524" layer="91"/>
 <pinref part="R27" gate="G$1" pin="1"/>
-<wire x1="134.62" y1="215.9" x2="139.7" y2="215.9" width="0.1524" layer="91"/>
 <pinref part="C16" gate="G$1" pin="2"/>
 <wire x1="139.7" y1="215.9" x2="144.78" y2="215.9" width="0.1524" layer="91"/>
-<junction x="139.7" y="215.9"/>
 <pinref part="U3" gate="G$1" pin="VIN-"/>
-<wire x1="129.54" y1="208.28" x2="134.62" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="208.28" x2="134.62" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="208.28" x2="134.62" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="215.9" x2="139.7" y2="215.9" width="0.1524" layer="91"/>
+<junction x="139.7" y="215.9"/>
 </segment>
 </net>
 <net name="VIN-" class="0">
 <segment>
 <pinref part="R27" gate="G$1" pin="2"/>
-<wire x1="162.56" y1="215.9" x2="152.4" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="215.9" x2="152.4" y2="215.9" width="0.1524" layer="91"/>
 <pinref part="SHUNT1" gate="G$1" pin="2"/>
-<wire x1="162.56" y1="208.28" x2="162.56" y2="215.9" width="0.1524" layer="91"/>
-<junction x="162.56" y="215.9"/>
+<wire x1="182.88" y1="208.28" x2="182.88" y2="215.9" width="0.1524" layer="91"/>
+<junction x="182.88" y="215.9"/>
 <label x="185.42" y="215.9" size="1.778" layer="95"/>
-<wire x1="162.56" y1="215.9" x2="210.82" y2="215.9" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="215.9" x2="210.82" y2="208.28" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="L"/>
-<wire x1="210.82" y1="208.28" x2="220.98" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="215.9" x2="210.82" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="215.9" x2="210.82" y2="205.74" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="L"/>
+<wire x1="220.98" y1="198.12" x2="220.98" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="205.74" x2="210.82" y2="205.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$32" class="0">
@@ -3298,20 +3311,22 @@ A0,A1それぞれ１つONにする。</text>
 <pinref part="R28" gate="G$1" pin="2"/>
 <wire x1="152.4" y1="208.28" x2="157.48" y2="208.28" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="208.28" x2="157.48" y2="193.04" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="193.04" x2="162.56" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="193.04" x2="182.88" y2="193.04" width="0.1524" layer="91"/>
 <pinref part="SHUNT1" gate="G$1" pin="1"/>
-<wire x1="162.56" y1="200.66" x2="162.56" y2="193.04" width="0.1524" layer="91"/>
-<junction x="162.56" y="193.04"/>
+<wire x1="182.88" y1="200.66" x2="182.88" y2="193.04" width="0.1524" layer="91"/>
+<junction x="182.88" y="193.04"/>
 <label x="185.42" y="193.04" size="1.778" layer="95"/>
-<wire x1="162.56" y1="193.04" x2="185.42" y2="193.04" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="R"/>
+<wire x1="182.88" y1="193.04" x2="185.42" y2="193.04" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="193.04" x2="210.82" y2="193.04" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="198.12" x2="210.82" y2="198.12" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="198.12" x2="210.82" y2="193.04" width="0.1524" layer="91"/>
 <pinref part="SJ10" gate="G$1" pin="2"/>
 <wire x1="180.34" y1="187.96" x2="185.42" y2="187.96" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="187.96" x2="185.42" y2="193.04" width="0.1524" layer="91"/>
 <junction x="185.42" y="193.04"/>
+<pinref part="U$5" gate="G$1" pin="R"/>
+<wire x1="220.98" y1="208.28" x2="213.36" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="208.28" x2="213.36" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="198.12" x2="210.82" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
