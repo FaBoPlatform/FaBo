@@ -3,7 +3,7 @@
 <eagle version="9.5.1">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.01" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -146,10 +146,10 @@
 <hole x="4" y="12.05" drill="2.7"/>
 <hole x="-4" y="12.05" drill="2.7"/>
 <hole x="-4" y="16.06" drill="2.7"/>
-<hole x="4" y="-69.33" drill="2.7"/>
-<hole x="4" y="-73.33" drill="2.7"/>
-<hole x="-4" y="-73.33" drill="2.7"/>
-<hole x="-4" y="-69.33" drill="2.7"/>
+<hole x="4" y="-70.3" drill="2.7"/>
+<hole x="4" y="-74.3" drill="2.7"/>
+<hole x="-4" y="-74.3" drill="2.7"/>
+<hole x="-4" y="-70.3" drill="2.7"/>
 <hole x="-29" y="-2.5" drill="2.7"/>
 <hole x="-28.8" y="-51.5" drill="2.7"/>
 <hole x="29" y="-2.5" drill="2.7"/>
@@ -167,8 +167,7 @@
 <wire x1="-14" y1="-58.83658125" x2="-15.61593125" y2="-56.873803125" width="0.0762" layer="20" curve="78.928478"/>
 <wire x1="-15.61593125" y1="-56.873803125" x2="-28.46016875" y2="-54.360496875" width="0.0762" layer="20"/>
 <wire x1="-28.46016875" y1="-54.360496875" x2="-32.5" y2="-49.37355625" width="0.0762" layer="20" curve="-78.928502"/>
-<wire x1="-32.5" y1="-49.37355625" x2="-32.5" y2="-34.89" width="0.0762" layer="20"/>
-<wire x1="-32.5" y1="-34.89" x2="-32.5" y2="-30" width="0.0762" layer="20"/>
+<wire x1="-32.5" y1="-49.37355625" x2="-32.5" y2="-30" width="0.0762" layer="20"/>
 <wire x1="-32.5" y1="-30" x2="-28.5" y2="-30" width="0.0762" layer="20"/>
 <wire x1="-28.5" y1="-30" x2="-27.5" y2="-31" width="0.0762" layer="20" curve="-90"/>
 <wire x1="-27.5" y1="-31" x2="-27.5" y2="-34" width="0.0762" layer="20"/>
@@ -202,8 +201,15 @@
 <wire x1="14" y1="-70.31" x2="12" y2="-72.31" width="0.0762" layer="20" curve="-90"/>
 <wire x1="12" y1="-72.31" x2="8.5" y2="-72.31" width="0.0762" layer="20"/>
 <wire x1="8.5" y1="-72.31" x2="6.5" y2="-74.31" width="0.0762" layer="20" curve="90"/>
-<text x="0" y="-39.661" size="1.778" layer="21" font="vector" rot="SR180" align="bottom-center">Rev 1.0.3</text>
-<text x="-0.53" y="-28.581" size="1.778" layer="22" font="vector" rot="SMR180" align="bottom-center">Rev 1.0.3</text>
+<text x="0" y="-39.661" size="1.778" layer="21" font="vector" rot="SR180" align="bottom-center">Rev 1.0.4</text>
+<wire x1="-4" y1="-29" x2="-17" y2="-29" width="0.1524" layer="20"/>
+<wire x1="-17" y1="-29" x2="-18" y2="-28" width="0.1524" layer="20" curve="-90"/>
+<wire x1="-18" y1="-28" x2="-18" y2="-0.8" width="0.1524" layer="20"/>
+<wire x1="-18" y1="-0.8" x2="-17" y2="0.2" width="0.1524" layer="20" curve="-90"/>
+<wire x1="-17" y1="0.2" x2="-4" y2="0.2" width="0.1524" layer="20"/>
+<wire x1="-4" y1="0.2" x2="-3" y2="-0.8" width="0.1524" layer="20" curve="-90"/>
+<wire x1="-3" y1="-0.8" x2="-3" y2="-28" width="0.1524" layer="20"/>
+<wire x1="-3" y1="-28" x2="-4" y2="-29" width="0.1524" layer="20" curve="-90"/>
 </plain>
 <libraries>
 <library name="FaBo-Logo">
@@ -2089,9 +2095,9 @@ design rules under a new name.</description>
 <signals>
 </signals>
 <mfgpreviewcolors>
-<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
+<mfgpreviewcolor name="soldermaskcolor" color="0xC8000000"/>
 <mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
-<mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
+<mfgpreviewcolor name="backgroundcolor" color="0xFFFFFFFF"/>
 <mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
