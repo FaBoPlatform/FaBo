@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="11" fill="3" visible="no" active="no"/>
@@ -35303,7 +35303,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="R1" library="FaBo-Resistors" deviceset="RESISTOR" device="-AXL-REGULAR" value="200"/>
 <part name="VCC2" library="FaBo-Supply" deviceset="VCC" device=""/>
 <part name="GND2" library="FaBo-Supply" deviceset="GND" device=""/>
-<part name="R2" library="FaBo-Resistors" deviceset="RESISTOR" device="-AXL-REGULAR" value="10K"/>
+<part name="R2" library="FaBo-Resistors" deviceset="RESISTOR" device="-AXL-REGULAR" value="1K"/>
 <part name="VCC3" library="FaBo-Supply" deviceset="VCC" device=""/>
 <part name="GND3" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="R" library="FaBo-Parts" deviceset="LBR-127HLD" device="BOTTOM"/>
