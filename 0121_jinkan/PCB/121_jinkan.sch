@@ -35632,7 +35632,9 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="GND5" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="U$5" library="FaBo-Transistor" deviceset="TRANSISTOR" device="-NPN"/>
 <part name="GND6" library="FaBo-Supply" deviceset="GND" device=""/>
-<part name="R3" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="4.7K"/>
+<part name="R3" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="4.7K">
+<attribute name="SPICEPREFIX" value="R"/>
+</part>
 <part name="VCC3" library="FaBo-Supply" deviceset="VCC" device=""/>
 <part name="LOGO1" library="component" deviceset="LOGO_FABO" device="-M"/>
 <part name="R4" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="9.1K"/>

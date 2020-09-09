@@ -3,7 +3,7 @@
 <eagle version="9.6.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -3082,6 +3082,7 @@ design rules under a new name.</description>
 </element>
 <element name="U$5" library="FaBo-Transistor" package="SOT-23" value="TRANSISTOR-NPN" x="10.6" y="18.7" smashed="yes" rot="MR180"/>
 <element name="R3" library="FaBo-Resistors" package="0603" value="4.7K" x="9.7" y="15.9" smashed="yes" rot="MR180">
+<attribute name="SPICEPREFIX" value="R" x="9.7" y="15.9" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="VALUE" x="9.9" y="16" size="0.8128" layer="28" font="vector" ratio="12" rot="MR180" align="center"/>
 </element>
 <element name="U$6" library="FaBo-etc" package="MARK_POINT_3MM" value="" x="3.6" y="8.6" smashed="yes" rot="MR0"/>

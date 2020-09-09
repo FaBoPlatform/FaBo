@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -35201,7 +35201,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="J1" library="FaBo-Template" deviceset="FABO_BRICK_3PIN" device=""/>
 <part name="U$1" library="FaBo-etc" deviceset="A4L-LOC" device=""/>
 <part name="R1" library="FaBo-Resistors" deviceset="RESISTOR" device="-AXL-REGULAR" value="1k"/>
-<part name="R2" library="FaBo-Resistors" deviceset="RESISTOR" device="-AXL-REGULAR" value="10k"/>
+<part name="R2" library="FaBo-Resistors" deviceset="RESISTOR" device="-AXL-REGULAR" value="1k"/>
 <part name="Q1" library="FaBo-Parts" deviceset="L-51ROPT1D1" device=""/>
 <part name="Q2" library="FaBo-Parts" deviceset="NPN" device="-2SC1815"/>
 <part name="U$6" library="FaBo-etc" deviceset="LOGO_OSHW" device="-M_BOTTOM"/>
