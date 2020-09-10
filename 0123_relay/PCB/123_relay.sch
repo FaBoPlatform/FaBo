@@ -26893,6 +26893,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="69.85" y1="64.77" x2="95.25" y2="64.77" width="0.1524" layer="94"/>
 <wire x1="41.91" y1="64.77" x2="38.1" y2="69.85" width="0.1524" layer="94"/>
 <wire x1="38.1" y1="69.85" x2="39.37" y2="66.04" width="0.1524" layer="94"/>
+<text x="203.2" y="170.18" size="1.778" layer="94">TBL004-508</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="0" y="0" smashed="yes">
