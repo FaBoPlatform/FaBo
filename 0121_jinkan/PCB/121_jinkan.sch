@@ -12410,6 +12410,16 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <rectangle x1="-0.273490625" y1="1.95700625" x2="0.306259375" y2="1.96754375" layer="22" rot="R180"/>
 <rectangle x1="-0.26295" y1="1.967546875" x2="0.29571875" y2="1.978084375" layer="22" rot="R180"/>
 </package>
+<package name="SMD-JUMPER-L">
+<wire x1="1.47" y1="-1.2" x2="-1.47" y2="-1.2" width="0.1" layer="21"/>
+<wire x1="1.47" y1="-1.2" x2="1.47" y2="1.2" width="0.1" layer="21"/>
+<wire x1="-1.47" y1="-1.2" x2="-1.47" y2="1.2" width="0.1" layer="21"/>
+<wire x1="-1.47" y1="1.2" x2="1.47" y2="1.2" width="0.1" layer="21"/>
+<smd name="1" x="-0.75" y="0" dx="1" dy="2" layer="1" cream="no"/>
+<smd name="2" x="0.75" y="0" dx="1" dy="2" layer="1" cream="no"/>
+<text x="-0.2" y="1.37" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-0.2" y1="-1.2" x2="0.2" y2="1.2" layer="41"/>
+</package>
 </packages>
 <symbols>
 <symbol name="A4L-LOC">
@@ -20816,6 +20826,16 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <rectangle x1="-0.4699" y1="3.72618125" x2="0.5359375" y2="3.73125625" layer="94"/>
 <rectangle x1="-0.459740625" y1="3.731259375" x2="0.525778125" y2="3.736340625" layer="94"/>
 </symbol>
+<symbol name="SMD-JUMPER-2">
+<wire x1="-0.635" y1="0.381" x2="0.635" y2="0.381" width="1.27" layer="94" curve="-180" cap="flat"/>
+<text x="2.54" y="0.381" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-1.905" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="2" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<wire x1="0.635" y1="-0.381" x2="-0.635" y2="-0.381" width="1.27" layer="94" curve="-180" cap="flat"/>
+<wire x1="0" y1="2.54" x2="0" y2="0.762" width="0.381" layer="94"/>
+<wire x1="0" y1="-0.762" x2="0" y2="-2.54" width="0.381" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="A4L-LOC">
@@ -20877,6 +20897,22 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </technologies>
 </device>
 <device name="-T_M_BOTTOM" package="LOGO_OSHW_T_MS_BOTTOM">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SMD-JUMPER-L" prefix="SJ" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="SMD-JUMPER-2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SMD-JUMER_L" package="SMD-JUMPER-L">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -35478,133 +35514,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="jumper" urn="urn:adsk.eagle:library:252">
-<description>&lt;b&gt;Jumpers&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="SJ" urn="urn:adsk.eagle:footprint:15432/1" library_version="2">
-<description>&lt;b&gt;Solder jumper&lt;/b&gt;</description>
-<wire x1="1.397" y1="-1.016" x2="-1.397" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="1.397" y1="1.016" x2="1.651" y2="0.762" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-1.651" y1="0.762" x2="-1.397" y2="1.016" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-1.651" y1="-0.762" x2="-1.397" y2="-1.016" width="0.1524" layer="21" curve="90"/>
-<wire x1="1.397" y1="-1.016" x2="1.651" y2="-0.762" width="0.1524" layer="21" curve="90"/>
-<wire x1="1.651" y1="-0.762" x2="1.651" y2="0.762" width="0.1524" layer="21"/>
-<wire x1="-1.651" y1="-0.762" x2="-1.651" y2="0.762" width="0.1524" layer="21"/>
-<wire x1="-1.397" y1="1.016" x2="1.397" y2="1.016" width="0.1524" layer="21"/>
-<wire x1="1.016" y1="0" x2="1.524" y2="0" width="0.1524" layer="51"/>
-<wire x1="-1.016" y1="0" x2="-1.524" y2="0" width="0.1524" layer="51"/>
-<wire x1="-0.254" y1="-0.127" x2="-0.254" y2="0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
-<wire x1="0.254" y1="0.127" x2="0.254" y2="-0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
-<smd name="1" x="-0.762" y="0" dx="1.1684" dy="1.6002" layer="1"/>
-<smd name="2" x="0.762" y="0" dx="1.1684" dy="1.6002" layer="1"/>
-<text x="-1.651" y="1.143" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="0.4001" y="0" size="0.02" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.0762" y1="-0.9144" x2="0.0762" y2="0.9144" layer="29"/>
-</package>
-<package name="SJW" urn="urn:adsk.eagle:footprint:15433/1" library_version="2">
-<description>&lt;b&gt;Solder jumper&lt;/b&gt;</description>
-<wire x1="1.905" y1="-1.524" x2="-1.905" y2="-1.524" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="1.524" x2="2.159" y2="1.27" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-2.159" y1="1.27" x2="-1.905" y2="1.524" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-2.159" y1="-1.27" x2="-1.905" y2="-1.524" width="0.1524" layer="21" curve="90"/>
-<wire x1="1.905" y1="-1.524" x2="2.159" y2="-1.27" width="0.1524" layer="21" curve="90"/>
-<wire x1="2.159" y1="-1.27" x2="2.159" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-2.159" y1="-1.27" x2="-2.159" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-1.905" y1="1.524" x2="1.905" y2="1.524" width="0.1524" layer="21"/>
-<wire x1="0.762" y1="0.762" x2="0.762" y2="-0.762" width="0.1524" layer="51"/>
-<wire x1="-0.762" y1="0.762" x2="-0.762" y2="-0.762" width="0.1524" layer="51"/>
-<wire x1="1.524" y1="0" x2="2.032" y2="0" width="0.1524" layer="51"/>
-<wire x1="-1.524" y1="0" x2="-2.032" y2="0" width="0.1524" layer="51"/>
-<wire x1="0.762" y1="0.762" x2="0.762" y2="-0.762" width="0.1524" layer="51" curve="-180"/>
-<wire x1="-0.762" y1="0.762" x2="-0.762" y2="-0.762" width="0.1524" layer="51" curve="180"/>
-<smd name="1" x="-1.27" y="0" dx="1.27" dy="2.54" layer="1"/>
-<smd name="2" x="1.27" y="0" dx="1.27" dy="2.54" layer="1"/>
-<text x="-2.159" y="1.778" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="1" y="0" size="0.02" layer="27">&gt;VALUE</text>
-<rectangle x1="0.762" y1="-0.762" x2="1.016" y2="0.762" layer="51"/>
-<rectangle x1="1.016" y1="-0.635" x2="1.27" y2="0.635" layer="51"/>
-<rectangle x1="1.27" y1="-0.508" x2="1.397" y2="0.508" layer="51"/>
-<rectangle x1="1.397" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
-<rectangle x1="-1.016" y1="-0.762" x2="-0.762" y2="0.762" layer="51"/>
-<rectangle x1="-1.27" y1="-0.635" x2="-1.016" y2="0.635" layer="51"/>
-<rectangle x1="-1.397" y1="-0.508" x2="-1.27" y2="0.508" layer="51"/>
-<rectangle x1="-1.524" y1="-0.254" x2="-1.397" y2="0.254" layer="51"/>
-<rectangle x1="0.9652" y1="-0.7112" x2="1.0922" y2="-0.5842" layer="51"/>
-<rectangle x1="1.3462" y1="-0.3556" x2="1.4732" y2="-0.2286" layer="51"/>
-<rectangle x1="1.3462" y1="0.2032" x2="1.4732" y2="0.3302" layer="51"/>
-<rectangle x1="0.9652" y1="0.5842" x2="1.0922" y2="0.7112" layer="51"/>
-<rectangle x1="-1.0922" y1="-0.7112" x2="-0.9652" y2="-0.5842" layer="51"/>
-<rectangle x1="-1.4478" y1="-0.3302" x2="-1.3208" y2="-0.2032" layer="51"/>
-<rectangle x1="-1.4732" y1="0.2032" x2="-1.3462" y2="0.3302" layer="51"/>
-<rectangle x1="-1.1176" y1="0.5842" x2="-0.9906" y2="0.7112" layer="51"/>
-</package>
-</packages>
-<packages3d>
-<package3d name="SJ" urn="urn:adsk.eagle:package:15471/1" type="box" library_version="2">
-<description>Solder jumper</description>
-<packageinstances>
-<packageinstance name="SJ"/>
-</packageinstances>
-</package3d>
-<package3d name="SJW" urn="urn:adsk.eagle:package:15507/1" type="box" library_version="2">
-<description>Solder jumper</description>
-<packageinstances>
-<packageinstance name="SJW"/>
-</packageinstances>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="SJ" urn="urn:adsk.eagle:symbol:15431/1" library_version="2">
-<wire x1="0.381" y1="0.635" x2="0.381" y2="-0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
-<wire x1="-0.381" y1="-0.635" x2="-0.381" y2="0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
-<wire x1="2.54" y1="0" x2="1.651" y2="0" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-1.651" y2="0" width="0.1524" layer="94"/>
-<text x="-2.54" y="2.54" size="1.778" layer="95">&gt;NAME</text>
-<text x="-2.54" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="2" x="5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="1" x="-5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="SJ" urn="urn:adsk.eagle:component:15508/2" prefix="SJ" uservalue="yes" library_version="2">
-<description>SMD solder &lt;b&gt;JUMPER&lt;/b&gt;</description>
-<gates>
-<gate name="1" symbol="SJ" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SJ">
-<connects>
-<connect gate="1" pin="1" pad="1"/>
-<connect gate="1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:15471/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="33" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="W" package="SJW">
-<connects>
-<connect gate="1" pin="1" pad="1"/>
-<connect gate="1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:15507/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="3" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -35638,15 +35547,15 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="VCC3" library="FaBo-Supply" deviceset="VCC" device=""/>
 <part name="LOGO1" library="component" deviceset="LOGO_FABO" device="-M"/>
 <part name="R4" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="9.1K"/>
-<part name="SJ1" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="SJ" device="W" package3d_urn="urn:adsk.eagle:package:15507/1"/>
 <part name="GND7" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="R5" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="1.2K"/>
-<part name="SJ2" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="SJ" device="W" package3d_urn="urn:adsk.eagle:package:15507/1"/>
+<part name="SJ2" library="FaBo-etc" deviceset="SMD-JUMPER-L" device="SMD-JUMER_L"/>
+<part name="SJ1" library="FaBo-etc" deviceset="SMD-JUMPER-L" device="SMD-JUMER_L"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.3</text>
+<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.4</text>
 <wire x1="195.58" y1="95.25" x2="196.85" y2="93.98" width="0.1524" layer="94"/>
 <wire x1="196.85" y1="93.98" x2="195.58" y2="92.71" width="0.1524" layer="94"/>
 <wire x1="196.215" y1="95.25" x2="197.485" y2="93.98" width="0.1524" layer="94"/>
@@ -35764,10 +35673,6 @@ OUTPUT 3.3V出力は、SJ1ショート,SJ2　SJ2ショート
 <attribute name="NAME" x="146.304" y="70.739" size="1.4224" layer="95" rot="MR90"/>
 <attribute name="VALUE" x="143.256" y="70.739" size="1.4224" layer="96" rot="MR90" align="top-left"/>
 </instance>
-<instance part="SJ1" gate="1" x="144.78" y="86.36" smashed="yes" rot="R90">
-<attribute name="NAME" x="142.24" y="83.82" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="148.59" y="83.82" size="1.778" layer="96" rot="R90"/>
-</instance>
 <instance part="GND7" gate="G$1" x="144.78" y="52.705" smashed="yes">
 <attribute name="VALUE" x="141.986" y="47.625" size="1.778" layer="96"/>
 </instance>
@@ -35775,9 +35680,13 @@ OUTPUT 3.3V出力は、SJ1ショート,SJ2　SJ2ショート
 <attribute name="NAME" x="146.304" y="118.999" size="1.4224" layer="95" rot="MR90"/>
 <attribute name="VALUE" x="143.256" y="118.999" size="1.4224" layer="96" rot="MR90" align="top-left"/>
 </instance>
-<instance part="SJ2" gate="1" x="144.78" y="109.22" smashed="yes" rot="R90">
-<attribute name="NAME" x="142.24" y="106.68" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="148.59" y="106.68" size="1.778" layer="96" rot="R90"/>
+<instance part="SJ2" gate="G$1" x="144.78" y="109.22" smashed="yes">
+<attribute name="NAME" x="147.32" y="109.601" size="1.778" layer="95"/>
+<attribute name="VALUE" x="147.32" y="107.315" size="1.778" layer="96"/>
+</instance>
+<instance part="SJ1" gate="G$1" x="144.78" y="86.36" smashed="yes">
+<attribute name="NAME" x="147.32" y="86.741" size="1.778" layer="95"/>
+<attribute name="VALUE" x="147.32" y="84.455" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -35836,11 +35745,11 @@ OUTPUT 3.3V出力は、SJ1ショート,SJ2　SJ2ショート
 <wire x1="127.635" y1="111.125" x2="127.635" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="127.635" y1="99.06" x2="127.635" y2="94.615" width="0.1524" layer="91"/>
 <junction x="127.635" y="99.06"/>
-<pinref part="SJ1" gate="1" pin="2"/>
 <wire x1="144.78" y1="91.44" x2="144.78" y2="99.06" width="0.1524" layer="91"/>
 <junction x="144.78" y="99.06"/>
-<pinref part="SJ2" gate="1" pin="1"/>
 <wire x1="144.78" y1="99.06" x2="144.78" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="SJ2" gate="G$1" pin="2"/>
+<pinref part="SJ1" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -35895,15 +35804,15 @@ OUTPUT 3.3V出力は、SJ1ショート,SJ2　SJ2ショート
 <net name="N$3" class="0">
 <segment>
 <pinref part="R4" gate="G$1" pin="2"/>
-<pinref part="SJ1" gate="1" pin="1"/>
 <wire x1="144.78" y1="78.105" x2="144.78" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="SJ1" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="SJ2" gate="1" pin="2"/>
 <pinref part="R5" gate="G$1" pin="1"/>
 <wire x1="144.78" y1="114.3" x2="144.78" y2="118.745" width="0.1524" layer="91"/>
+<pinref part="SJ2" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>
@@ -35915,21 +35824,6 @@ OUTPUT 3.3V出力は、SJ1ショート,SJ2　SJ2ショート
 <note version="6.3" minversion="6.2.2" severity="warning">
 Since Version 6.2.2 text objects can contain more than one line,
 which will not be processed correctly with this version.
-</note>
-<note version="8.2" severity="warning">
-Since Version 8.2, EAGLE supports online libraries. The ids
-of those online libraries will not be understood (or retained)
-with this version.
-</note>
-<note version="8.3" severity="warning">
-Since Version 8.3, EAGLE supports URNs for individual library
-assets (packages, symbols, and devices). The URNs of those assets
-will not be understood (or retained) with this version.
-</note>
-<note version="8.3" severity="warning">
-Since Version 8.3, EAGLE supports the association of 3D packages
-with devices in libraries, schematics, and board files. Those 3D
-packages will not be understood (or retained) with this version.
 </note>
 </compatibility>
 </eagle>
