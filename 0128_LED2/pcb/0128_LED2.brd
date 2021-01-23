@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -163,12 +163,13 @@
 <board>
 <plain>
 <text x="22.86" y="12.065" size="0.762" layer="21" font="vector" ratio="15" rot="R270" align="bottom-center">Designed in Aizu</text>
-<text x="3.81" y="8.636" size="1.1684" layer="21" font="vector" ratio="15" rot="R90">LED2</text>
-<text x="5.08" y="8.636" size="0.9144" layer="21" font="vector" ratio="15" rot="R90">Rev.1.0.1</text>
+<text x="2.21" y="8.536" size="1.1684" layer="21" font="vector" ratio="15" rot="R90">LED2</text>
+<text x="3.38" y="8.436" size="0.9144" layer="21" font="vector" ratio="15" rot="R90">Rev.1.0.2</text>
 <text x="12.7" y="13.335" size="2.54" layer="21" font="vector" ratio="15" align="bottom-center">#128</text>
 <wire x1="11.1" y1="28.7" x2="11.7" y2="28.7" width="0.1524" layer="21"/>
 <wire x1="11.4" y1="29" x2="11.4" y2="28.4" width="0.1524" layer="21"/>
 <circle x="10.1" y="20.5" radius="0.14141875" width="0.1524" layer="21"/>
+<rectangle x1="3.8" y1="8.2" x2="7.7" y2="16.7" layer="21"/>
 </plain>
 <libraries>
 <library name="FaBo-Template">
@@ -2970,9 +2971,9 @@ design rules under a new name.</description>
 </autorouter>
 <elements>
 <element name="J1" library="FaBo-Template" package="FABO_BRICK_3PIN" value="" x="12.7" y="16.51" smashed="yes"/>
-<element name="R1" library="FaBo-Resistors" package="AXL-REGULAR" value="6.8k" x="8.27" y="26" smashed="yes" rot="R90">
-<attribute name="NAME" x="8.27" y="23.75" size="0.8128" layer="25" font="vector" ratio="15" rot="R90" align="center-left"/>
-<attribute name="VALUE" x="9.27" y="23.75" size="0.8128" layer="27" font="vector" ratio="12" rot="R90" align="top-left"/>
+<element name="R1" library="FaBo-Resistors" package="AXL-REGULAR" value="6.8k" x="8.07" y="26" smashed="yes" rot="R90">
+<attribute name="NAME" x="8.07" y="23.75" size="0.8128" layer="25" font="vector" ratio="15" rot="R90" align="center-left"/>
+<attribute name="VALUE" x="9.07" y="23.75" size="0.8128" layer="27" font="vector" ratio="12" rot="R90" align="top-left"/>
 </element>
 <element name="Q2" library="FaBo-Parts" package="TO-92" value="" x="12.7" y="18.92" smashed="yes"/>
 <element name="U$6" library="FaBo-etc" package="LOGO_OSHW_M_BOTTOM" value="" x="12.7" y="3.175" smashed="yes"/>
@@ -3006,8 +3007,11 @@ design rules under a new name.</description>
 <signal name="N$6">
 <contactref element="R1" pad="2"/>
 <contactref element="Q2" pad="3"/>
-<wire x1="8.27" y1="29.81" x2="8.27" y2="25.89" width="0.4064" layer="1"/>
-<wire x1="8.27" y1="25.89" x2="15.24" y2="18.92" width="0.4064" layer="1"/>
+<wire x1="8.07" y1="29.81" x2="8.07" y2="26.09" width="0.4064" layer="1"/>
+<wire x1="8.07" y1="26.09" x2="12.36" y2="21.8" width="0.4064" layer="1"/>
+<wire x1="15.24" y1="20.16" x2="15.24" y2="18.92" width="0.4064" layer="1"/>
+<wire x1="12.36" y1="21.8" x2="13.6" y2="21.8" width="0.4064" layer="1"/>
+<wire x1="13.6" y1="21.8" x2="15.24" y2="20.16" width="0.4064" layer="1"/>
 </signal>
 <signal name="VCC">
 <contactref element="J1" pad="VCC"/>
@@ -3021,8 +3025,8 @@ design rules under a new name.</description>
 <signal name="N$1">
 <contactref element="J1" pad="I/O"/>
 <contactref element="R1" pad="1"/>
-<wire x1="8.27" y1="22.19" x2="8.27" y2="10.685" width="0.4064" layer="1"/>
-<wire x1="8.27" y1="10.685" x2="10.7" y2="8.255" width="0.4064" layer="1"/>
+<wire x1="8.07" y1="22.19" x2="8.07" y2="10.885" width="0.4064" layer="1"/>
+<wire x1="8.07" y1="10.885" x2="10.7" y2="8.255" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$2">
 <contactref element="Q2" pad="2"/>

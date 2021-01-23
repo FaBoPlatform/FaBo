@@ -14984,7 +14984,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <sheets>
 <sheet>
 <plain>
-<text x="373.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.9</text>
+<text x="373.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.11</text>
 <text x="17.78" y="246.38" size="5.08" layer="97">Jetson Nano</text>
 <text x="269.24" y="119.38" size="5.08" layer="97">PWM Controller</text>
 <text x="271.78" y="76.2" size="1.778" layer="97">Address 0x60</text>
@@ -15017,6 +15017,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <text x="271.78" y="144.78" size="1.778" layer="94">PWM</text>
 <text x="7.62" y="7.62" size="1.778" layer="97">※FaBo Brickとの間には、電圧は５Vの通信となります。</text>
 <text x="137.16" y="226.06" size="1.778" layer="94">※TXB0108に変更</text>
+<wire x1="180.34" y1="177.8" x2="182.88" y2="177.8" width="0.1524" layer="94"/>
 </plain>
 <instances>
 <instance part="U$14" gate="G$1" x="358.14" y="5.08" smashed="yes"/>

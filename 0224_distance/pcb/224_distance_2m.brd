@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.6.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -165,11 +165,11 @@
 <board>
 <plain>
 <text x="3.81" y="8.89" size="1.27" layer="21" font="vector" ratio="15" rot="R90">Distance 2m</text>
-<text x="5.08" y="8.89" size="1.016" layer="21" font="vector" ratio="15" rot="R90">Rev.1.0.2</text>
+<text x="5.08" y="8.89" size="1.016" layer="21" font="vector" ratio="15" rot="R90">Rev.1.0.3</text>
 <text x="25.4" y="14.605" size="0.762" layer="21" font="vector" ratio="15" rot="R270" align="bottom-center">Designed in Aizu</text>
 <text x="13.72" y="34.909" size="2.54" layer="21" font="vector" ratio="15" align="bottom-center">#224</text>
-<text x="15.681" y="15.762" size="1.27" layer="22" font="vector" ratio="15" rot="MR0" align="center-left">VCC</text>
-<text x="21.363" y="15.735" size="1.27" layer="22" font="vector" ratio="15" rot="MR0" align="center-right">33V</text>
+<text x="23.301" y="15.762" size="1.27" layer="22" font="vector" ratio="15" rot="MR0" align="center-left">5V</text>
+<text x="12.473" y="15.735" size="1.27" layer="22" font="vector" ratio="15" rot="MR0" align="center-right">3V3</text>
 <circle x="12" y="33" radius="0.14141875" width="0.1524" layer="21"/>
 <text x="24.181" y="29.389" size="1" layer="21" font="vector" ratio="15" align="top-center">X</text>
 <text x="21.581" y="29.389" size="1" layer="21" font="vector" ratio="15" align="top-center">G</text>

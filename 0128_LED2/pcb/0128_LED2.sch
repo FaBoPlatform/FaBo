@@ -35331,7 +35331,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <sheets>
 <sheet>
 <plain>
-<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.1</text>
+<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.2</text>
 <text x="162.56" y="88.9" size="1.778" layer="94">2SC1815</text>
 </plain>
 <instances>

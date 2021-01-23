@@ -176,7 +176,7 @@
 </layers>
 <board>
 <plain>
-<text x="8.263" y="1.676" size="0.8128" layer="21" font="vector" ratio="15" rot="R180" align="bottom-center">REV 1.0.9</text>
+<text x="8.263" y="1.676" size="0.8128" layer="21" font="vector" ratio="15" rot="R180" align="bottom-center">REV 1.0.11</text>
 <text x="5.218" y="2.436" size="1.9304" layer="21" font="vector" ratio="15">#519</text>
 <wire x1="1.94" y1="31.85" x2="1.94" y2="15.57" width="0.1524" layer="20"/>
 <wire x1="1.94" y1="15.57" x2="3.21" y2="15.57" width="0.1524" layer="20"/>
@@ -190,7 +190,7 @@
 <circle x="16.72" y="3.81" radius="1.375" width="0.01" layer="20"/>
 <circle x="74.72" y="3.81" radius="1.375" width="0.01" layer="20"/>
 <circle x="74.72" y="40.64" radius="1.375" width="0.01" layer="20"/>
-<text x="63.818" y="19.036" size="1.9304" layer="22" font="vector" ratio="15" rot="MR0">F-519-1-9-A-N-J-0-P</text>
+<text x="63.818" y="19.036" size="1.9304" layer="22" font="vector" ratio="15" rot="MR0">F-519-1-11-A-N-J-0-P</text>
 <rectangle x1="31.2" y1="26.7" x2="51.2" y2="31.7" layer="22"/>
 <polygon width="0.1524" layer="22">
 <vertex x="73.6" y="33.3"/>
@@ -205,6 +205,7 @@
 <wire x1="12.6" y1="24.1" x2="14.5" y2="24.1" width="0.03" layer="42"/>
 <wire x1="12.6" y1="25.6" x2="14.5" y2="25.6" width="0.03" layer="42"/>
 <text x="2" y="38.8" size="0.8" layer="21" font="vector" ratio="19">Designed in Aizu</text>
+<wire x1="12.6" y1="19.1" x2="14.5" y2="19.1" width="0.03" layer="42"/>
 </plain>
 <libraries>
 <library name="FaBo-etc">
@@ -4703,12 +4704,13 @@ design rules under a new name.</description>
 <signal name="N$9">
 <contactref element="GPIO4" pad="I/O"/>
 <contactref element="IC2" pad="20"/>
-<wire x1="32.4" y1="29.3" x2="34.3" y2="31.2" width="0.1524" layer="1"/>
-<wire x1="30.1" y1="26.625" x2="32.4" y2="26.625" width="0.1524" layer="1"/>
-<wire x1="32.4" y1="26.625" x2="32.4" y2="29.3" width="0.1524" layer="1"/>
+<wire x1="32.8" y1="29.7" x2="34.3" y2="31.2" width="0.1524" layer="1"/>
 <wire x1="38.15" y1="31.85" x2="38.15" y2="32.4" width="0.1524" layer="1"/>
 <wire x1="34.3" y1="31.2" x2="37.5" y2="31.2" width="0.1524" layer="1"/>
 <wire x1="37.5" y1="31.2" x2="38.15" y2="31.85" width="0.1524" layer="1"/>
+<wire x1="32.8" y1="29.7" x2="32.8" y2="27.5" width="0.1524" layer="1"/>
+<wire x1="32.8" y1="27.5" x2="31.925" y2="26.625" width="0.1524" layer="1"/>
+<wire x1="31.925" y1="26.625" x2="30.1" y2="26.625" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$15">
 <contactref element="IC2" pad="18"/>
@@ -5022,7 +5024,7 @@ design rules under a new name.</description>
 </signal>
 </signals>
 <mfgpreviewcolors>
-<mfgpreviewcolor name="soldermaskcolor" color="0xC800AA00"/>
+<mfgpreviewcolor name="soldermaskcolor" color="0xC8000000"/>
 <mfgpreviewcolor name="silkscreencolor" color="0xFFFFFFFF"/>
 <mfgpreviewcolor name="backgroundcolor" color="0xFFFFFFFF"/>
 <mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
