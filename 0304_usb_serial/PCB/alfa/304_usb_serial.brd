@@ -3,7 +3,7 @@
 <eagle version="9.6.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -193,7 +193,7 @@
 <text x="22.465" y="13.955" size="1.27" layer="21" font="vector" ratio="12" align="bottom-center">5V</text>
 <text x="21.965" y="20.435" size="1.27" layer="21" font="vector" ratio="12" rot="R180" align="bottom-center">3V3</text>
 <text x="2.51" y="9.325" size="1.27" layer="21" font="vector" ratio="12" rot="R90">USB Serial</text>
-<text x="3.78" y="9.425" size="1.016" layer="21" font="vector" ratio="12" rot="R90">Rev.1.0.6</text>
+<text x="3.78" y="9.425" size="1.016" layer="21" font="vector" ratio="12" rot="R90">Rev.1.0.7</text>
 <text x="13.95" y="16.8" size="0.8128" layer="22" font="vector" ratio="16" rot="MR180" align="bottom-center">MADE IN Aizu</text>
 <text x="21.265" y="21.255" size="0.75" layer="21" font="vector" ratio="12" align="bottom-center">CBUS3</text>
 <text x="6.765" y="35.155" size="0.75" layer="21" font="vector" ratio="12" align="bottom-center">CTS</text>
@@ -4026,9 +4026,8 @@ design rules under a new name.</description>
 <contactref element="R2" pad="1"/>
 <wire x1="7.77" y1="30.05" x2="7.57" y2="29.85" width="0.1524" layer="1"/>
 <wire x1="7.57" y1="29.85" x2="7.57" y2="25.23" width="0.1524" layer="1"/>
-<wire x1="7.57" y1="25.23" x2="10.9" y2="21.9" width="0.1524" layer="1"/>
-<wire x1="10.9" y1="21.9" x2="11.75" y2="21.9" width="0.1524" layer="1"/>
-<wire x1="11.75" y1="21.9" x2="11.85" y2="22" width="0.1524" layer="1"/>
+<wire x1="7.57" y1="25.23" x2="10.8" y2="22" width="0.1524" layer="1"/>
+<wire x1="10.8" y1="22" x2="11.85" y2="22" width="0.1524" layer="1"/>
 </signal>
 <signal name="USBDM">
 <contactref element="IC1" pad="9"/>
