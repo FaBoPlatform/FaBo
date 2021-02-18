@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -3109,28 +3109,28 @@ design rules under a new name.</description>
 <element name="R4" library="FaBo-Resistors" package="0603" value="NC" x="21.579840625" y="33.96741875" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="21.579840625" y="32.73241875" size="0.8128" layer="28" font="vector" ratio="12" rot="MR0" align="center"/>
 </element>
-<element name="R6" library="FaBo-Resistors" package="0603" value="220" x="16.51" y="33.02" smashed="yes" rot="MR270">
+<element name="R6" library="FaBo-Resistors" package="0603" value="25" x="16.51" y="33.02" smashed="yes" rot="MR270">
 <attribute name="VALUE" x="18.415" y="33.02" size="0.8128" layer="28" font="vector" ratio="12" rot="MR270" align="center"/>
 </element>
-<element name="R8" library="FaBo-Resistors" package="0603" value="220" x="19.05" y="33.02" smashed="yes" rot="MR270">
+<element name="R8" library="FaBo-Resistors" package="0603" value="25" x="19.05" y="33.02" smashed="yes" rot="MR270">
 <attribute name="VALUE" x="20.955" y="33.655" size="0.8128" layer="28" font="vector" ratio="12" rot="MR270" align="center"/>
 </element>
-<element name="R9" library="FaBo-Resistors" package="0603" value="220" x="16.51" y="22.86" smashed="yes" rot="MR90">
+<element name="R9" library="FaBo-Resistors" package="0603" value="25" x="16.51" y="22.86" smashed="yes" rot="MR90">
 <attribute name="VALUE" x="15.875" y="22.225" size="0.8128" layer="28" font="vector" ratio="12" rot="MR90" align="center"/>
 </element>
-<element name="R10" library="FaBo-Resistors" package="0603" value="220" x="11.43" y="22.86" smashed="yes" rot="MR90">
+<element name="R10" library="FaBo-Resistors" package="0603" value="25" x="11.43" y="22.86" smashed="yes" rot="MR90">
 <attribute name="VALUE" x="10.795" y="22.225" size="0.8128" layer="28" font="vector" ratio="12" rot="MR90" align="center"/>
 </element>
-<element name="R11" library="FaBo-Resistors" package="0603" value="220" x="8.89" y="22.86" smashed="yes" rot="MR90">
+<element name="R11" library="FaBo-Resistors" package="0603" value="25" x="8.89" y="22.86" smashed="yes" rot="MR90">
 <attribute name="VALUE" x="8.255" y="22.86" size="0.8128" layer="28" font="vector" ratio="12" rot="MR90" align="center"/>
 </element>
-<element name="R12" library="FaBo-Resistors" package="0603" value="220" x="11.43" y="33.02" smashed="yes" rot="MR270">
+<element name="R12" library="FaBo-Resistors" package="0603" value="25" x="11.43" y="33.02" smashed="yes" rot="MR270">
 <attribute name="VALUE" x="12.7" y="33.655" size="0.8128" layer="28" font="vector" ratio="12" rot="MR270" align="center"/>
 </element>
-<element name="R13" library="FaBo-Resistors" package="0603" value="220" x="8.89" y="33.02" smashed="yes" rot="MR270">
+<element name="R13" library="FaBo-Resistors" package="0603" value="25" x="8.89" y="33.02" smashed="yes" rot="MR270">
 <attribute name="VALUE" x="9.525" y="32.385" size="0.8128" layer="27" font="vector" ratio="12" rot="R90" align="center"/>
 </element>
-<element name="R14" library="FaBo-Resistors" package="0603" value="220" x="19.05" y="22.86" smashed="yes" rot="MR90">
+<element name="R14" library="FaBo-Resistors" package="0603" value="25" x="19.05" y="22.86" smashed="yes" rot="MR90">
 <attribute name="VALUE" x="17.78" y="24.13" size="0.8128" layer="28" font="vector" ratio="12" rot="MR90" align="center"/>
 </element>
 <element name="LOGO1" library="component" package="LOGO_FABO_M" value="" x="25.4" y="14.605" smashed="yes" rot="R90"/>
