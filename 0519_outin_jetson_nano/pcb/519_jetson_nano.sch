@@ -14958,11 +14958,11 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="GND48" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="R16" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603-BOTTOM" value="20K"/>
 <part name="IC3" library="FaBo-ADC" deviceset="MICROCHIP-MCP3008" device=""/>
-<part name="R4" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603-BOTTOM" value="4.7K"/>
-<part name="R10" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603-BOTTOM" value="4.7K"/>
+<part name="R4" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603-BOTTOM" value="3.3K"/>
+<part name="R10" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603-BOTTOM" value="3.3K"/>
 <part name="GND21" library="FaBo-Supply" deviceset="GND" device=""/>
-<part name="R11" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603-BOTTOM" value="9.1K"/>
-<part name="R12" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603-BOTTOM" value="9.1K"/>
+<part name="R11" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603-BOTTOM" value="5.1K"/>
+<part name="R12" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603-BOTTOM" value="5.1K"/>
 <part name="GND36" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="GND37" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="SUPPLY18" library="FaBo-etc" deviceset="5V" device=""/>
@@ -14973,10 +14973,10 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="GND46" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="A2" library="FaBo-Template" deviceset="FABO_BRICK_3PIN" device="-S03B-PASK-2"/>
 <part name="A3" library="FaBo-Template" deviceset="FABO_BRICK_3PIN" device="-S03B-PASK-2"/>
-<part name="R14" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603-BOTTOM" value="4.7K"/>
-<part name="R15" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603-BOTTOM" value="4.7K"/>
-<part name="R17" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603-BOTTOM" value="9.1K"/>
-<part name="R18" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603-BOTTOM" value="9.1K"/>
+<part name="R14" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603-BOTTOM" value="3.3K"/>
+<part name="R15" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603-BOTTOM" value="3.3K"/>
+<part name="R17" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603-BOTTOM" value="5.1K"/>
+<part name="R18" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603-BOTTOM" value="5.1K"/>
 <part name="GND47" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="GND49" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="SJ4" library="FaBo-etc" deviceset="SMD-JUMPER-3-23SHORT" device=""/>
