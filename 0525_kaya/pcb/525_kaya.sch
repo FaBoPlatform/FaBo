@@ -10376,12 +10376,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <text x="-2.794" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="GND" x="0" y="0" visible="off" length="short" direction="sup" rot="R270"/>
 </symbol>
-<symbol name="5V">
-<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.2032" layer="94"/>
-<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.2032" layer="94"/>
-<text x="-1.27" y="3.556" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="5V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="3V3" prefix="3V3">
@@ -10400,18 +10394,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <deviceset name="GND" prefix="GND">
 <gates>
 <gate name="G$1" symbol="GND" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="5V" prefix="5V">
-<gates>
-<gate name="G$1" symbol="5V" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -11907,9 +11889,9 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="3V1" library="FaBo-Supply" deviceset="3V3" device=""/>
 <part name="3V8" library="FaBo-Supply" deviceset="3V3" device=""/>
 <part name="I2C" library="FaBo-Template" deviceset="FABO_BRICK_I2C" device="-B04B-PASK-1"/>
-<part name="5V1" library="FaBo-Supply" deviceset="5V" device=""/>
 <part name="GND2" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="U$2" library="FaBo-Boards" deviceset="JETSON_NANO" device="_NOBORDER"/>
+<part name="3V2" library="FaBo-Supply" deviceset="3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11941,14 +11923,14 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <instance part="I2C" gate="G$1" x="271.78" y="223.52" smashed="yes" rot="R90">
 <attribute name="NAME" x="261.112" y="215.9" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="5V1" gate="G$1" x="274.32" y="236.22" smashed="yes">
-<attribute name="VALUE" x="273.05" y="239.776" size="1.778" layer="96"/>
-</instance>
 <instance part="GND2" gate="G$1" x="287.02" y="220.98" smashed="yes">
 <attribute name="VALUE" x="284.226" y="215.9" size="1.778" layer="96"/>
 </instance>
 <instance part="U$2" gate="G$1" x="45.72" y="203.2" smashed="yes">
 <attribute name="NAME" x="33.02" y="231.648" size="1.778" layer="95"/>
+</instance>
+<instance part="3V2" gate="G$1" x="274.32" y="236.22" smashed="yes">
+<attribute name="VALUE" x="273.05" y="239.776" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -12187,6 +12169,11 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="22.86" y1="226.06" x2="22.86" y2="236.22" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="3V3@1"/>
 </segment>
+<segment>
+<wire x1="274.32" y1="236.22" x2="274.32" y2="231.14" width="0.1524" layer="91"/>
+<pinref part="I2C" gate="G$1" pin="VCC"/>
+<pinref part="3V2" gate="G$1" pin="3V3"/>
+</segment>
 </net>
 <net name="5V" class="0">
 <segment>
@@ -12194,11 +12181,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="66.04" y1="226.06" x2="66.04" y2="236.22" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="226.06" x2="66.04" y2="226.06" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="5V@2"/>
-</segment>
-<segment>
-<wire x1="274.32" y1="236.22" x2="274.32" y2="231.14" width="0.1524" layer="91"/>
-<pinref part="I2C" gate="G$1" pin="VCC"/>
-<pinref part="5V1" gate="G$1" pin="5V"/>
 </segment>
 </net>
 <net name="NC1" class="0">
