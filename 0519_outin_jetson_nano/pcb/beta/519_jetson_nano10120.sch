@@ -16603,7 +16603,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="110.49" y="91.44" size="1.778" layer="94">SPI1</text>
 <text x="72.39" y="8.89" size="1.778" layer="97">※UARTは、信号レベルは5Vになります。</text>
 <text x="355.6" y="185.42" size="1.778" layer="97">※アドレス設定</text>
-<text x="299.72" y="121.92" size="1.778" layer="97">※外部電流使用時（サーボモータートータル電流３Aまで）</text>
+<text x="299.72" y="121.92" size="1.778" layer="97">※外部電流使用時（サーボモータートータル電流3Aまで）</text>
 <text x="123.19" y="250.19" size="2.54" layer="97">SPI</text>
 <wire x1="175.26" y1="74.93" x2="176.53" y2="73.66" width="0.1524" layer="94"/>
 <wire x1="176.53" y1="73.66" x2="175.26" y2="72.39" width="0.1524" layer="94"/>
