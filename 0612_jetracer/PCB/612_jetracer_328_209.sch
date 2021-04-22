@@ -3841,6 +3841,7 @@ Source: http://www.semicon.toshiba.co.jp/td/en/Opto/Photocoupler/en_20050928_TLP
 <text x="774.7" y="35.56" size="1.778" layer="97">ATTENTION.
 ※　TT-02　USE　ONLY</text>
 <text x="535.94" y="279.4" size="1.778" layer="94">ＡＴＭＥＧＡ３２８Ｐ－ＡＵ</text>
+<text x="731.52" y="53.34" size="6.4516" layer="94">注：抵抗変更版</text>
 </plain>
 <instances>
 <instance part="SUPPLY2" gate="5V" x="177.8" y="375.92" smashed="yes">
