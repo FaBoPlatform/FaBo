@@ -1,2 +1,2 @@
-# #221 Pulse Oximeter I2C Brick
+# #226 GridEye I2C Brick
 
