@@ -1,0 +1,25 @@
+#FaBo 2021/4/27 TestCode on Jupyter NoteBook
+#For Firmware v2
+
+#プロポ信号取得
+import smbus
+import time
+from IPython.display import clear_output
+import struct
+
+i2c = smbus.SMBus(1)
+#i2cデバイスアドレス0x08
+addr = 0x08
+
+while True:
+    #１０回数出力
+    for i in range(10):
+        #data = i2c.read_byte_data(addr, 0x0)
+        data1 = i2c.read_i2c_block_data(addr, 0x01, 8)
+        print("スロットル",data1[0] << 24 | data1[1] << 16 | data1[2] << 8| data1[3],end=",")
+        print("ステアリング",data1[4] << 24 | data1[5] << 16 | data1[6] << 8| data1[7])
+        time.sleep(0.3)
+        
+    #画面クリア１０表示でクリア
+    clear_output()
+    
