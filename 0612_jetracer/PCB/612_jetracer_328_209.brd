@@ -2698,7 +2698,7 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="C2" library="FaBo-Capacitor" package="0603" value="0.1uF" x="64.095" y="5.03" smashed="yes" rot="MR180">
+<element name="C2" library="FaBo-Capacitor" package="0603" value="10uF" x="64.095" y="5.03" smashed="yes" rot="MR180">
 <attribute name="VALUE" x="64.095" y="5.08" size="0.8128" layer="28" font="vector" ratio="12" rot="MR180" align="center"/>
 </element>
 <element name="2" library="FaBo-Template" package="FABO_BRICK_3PIN_HEADER" value="" x="96.745" y="13.845" smashed="yes" rot="R180">
@@ -2735,7 +2735,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="20.77" y="8.14" size="0.8128" layer="25" font="vector" ratio="12" rot="R90" align="bottom-center"/>
 </element>
 <element name="IC4" library="FaBo-Motor" package="PCA9685_BOTTOM" value="PCA9685_BOTTOM" x="71.14" y="7.68" smashed="yes" rot="R180"/>
-<element name="R6" library="FaBo-Resistors" package="0603" value="75K" x="91.15" y="8.8" smashed="yes">
+<element name="R6" library="FaBo-Resistors" package="0603" value="NC" x="91.15" y="8.8" smashed="yes">
 <attribute name="VALUE" x="91.3" y="8.75" size="0.8128" layer="27" font="vector" ratio="12" align="center"/>
 </element>
 <element name="D1" library="FaBo-Diode" package="1N4148W" value="1N4148" x="83.13" y="29.32" smashed="yes" rot="MR90">
@@ -2864,11 +2864,11 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="79.05" y="5.5" size="0.8128" layer="28" font="vector" ratio="12" rot="R90" align="center"/>
 </element>
 <element name="U10" library="FaBo-etc" package="TLP2361" value="TLP2361" x="87.15" y="11.45" smashed="yes" rot="MR90"/>
-<element name="R17" library="FaBo-Resistors" package="0603" value="510" x="81.15" y="10.4" smashed="yes" rot="MR0">
+<element name="R17" library="FaBo-Resistors" package="0603" value="1K" x="81.15" y="10.4" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="81.1" y="10.35" size="0.8128" layer="28" font="vector" ratio="12" rot="MR0" align="center"/>
 </element>
 <element name="U11" library="FaBo-etc" package="TLP2361" value="TLP2361" x="87.05" y="15.7" smashed="yes" rot="MR90"/>
-<element name="R4" library="FaBo-Resistors" package="0603" value="510" x="81.15" y="14.45" smashed="yes" rot="MR0">
+<element name="R4" library="FaBo-Resistors" package="0603" value="1K" x="81.15" y="14.45" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="81.15" y="14.35" size="0.8128" layer="28" font="vector" ratio="12" rot="MR0" align="center"/>
 </element>
 <element name="Q1" library="FaBo-Mosfet" package="SUPERSOT-3" value="MOSFET-N_FDN335N" x="90.55" y="21.4" smashed="yes" rot="MR180">
