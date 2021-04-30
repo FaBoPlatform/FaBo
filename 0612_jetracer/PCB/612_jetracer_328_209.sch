@@ -3610,7 +3610,7 @@ Source: http://www.semicon.toshiba.co.jp/td/en/Opto/Photocoupler/en_20050928_TLP
 <part name="GND4" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="GND28" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="GND29" library="FaBo-etc" deviceset="GND" device=""/>
-<part name="C2" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="10uF"/>
+<part name="C2" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="0.1uF"/>
 <part name="GND7" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="GND22" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="GND23" library="FaBo-etc" deviceset="GND" device=""/>
@@ -3641,7 +3641,7 @@ Source: http://www.semicon.toshiba.co.jp/td/en/Opto/Photocoupler/en_20050928_TLP
 <part name="GND10" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="GND14" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="IC4" library="FaBo-Motor" deviceset="PCA9685" device="_BOTTOM"/>
-<part name="R6" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="NC"/>
+<part name="R6" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="75K"/>
 <part name="GND17" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="GND18" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="GND27" library="FaBo-Supply" deviceset="GND" device=""/>
@@ -3736,11 +3736,11 @@ Source: http://www.semicon.toshiba.co.jp/td/en/Opto/Photocoupler/en_20050928_TLP
 <part name="C16" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603-BOTTOM" value="0.1uF"/>
 <part name="GND16" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="U10" library="FaBo-etc" deviceset="TLP2361" device=""/>
-<part name="R17" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="1K"/>
+<part name="R17" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="510"/>
 <part name="X_3" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="GND19" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="U11" library="FaBo-etc" deviceset="TLP2361" device=""/>
-<part name="R4" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="1K"/>
+<part name="R4" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="510"/>
 <part name="X_10" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="GND20" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="Q1" library="FaBo-Mosfet" deviceset="MOSFET-N" device="_FDN335N"/>
@@ -3841,7 +3841,6 @@ Source: http://www.semicon.toshiba.co.jp/td/en/Opto/Photocoupler/en_20050928_TLP
 <text x="774.7" y="35.56" size="1.778" layer="97">ATTENTION.
 ※　TT-02　USE　ONLY</text>
 <text x="535.94" y="279.4" size="1.778" layer="94">ＡＴＭＥＧＡ３２８Ｐ－ＡＵ</text>
-<text x="731.52" y="53.34" size="6.4516" layer="94">注：抵抗変更版</text>
 </plain>
 <instances>
 <instance part="SUPPLY2" gate="5V" x="177.8" y="375.92" smashed="yes">
