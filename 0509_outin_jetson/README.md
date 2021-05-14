@@ -1,3 +1,1 @@
-# #508 OUT/IN Shield for imp
-
-現在開発中
+# #509 OUT/IN Shield for Jetson
