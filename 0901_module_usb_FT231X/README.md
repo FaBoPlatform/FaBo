@@ -1,3 +1,1 @@
-# 901
-
-USB Module.
+# #901 USB Serial Module
