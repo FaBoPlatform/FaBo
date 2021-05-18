@@ -1,4 +1,4 @@
-# #2003 Breakout 3pin 2mm
+# #2003 Converter
 
 ![](./img/2003_converter_cc2tc.jpg)
 
