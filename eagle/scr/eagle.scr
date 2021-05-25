@@ -1,0 +1,161 @@
+# Configuration Script
+# for EAGLE 9
+
+ASSIGN F1 'MOVE';
+ASSIGN F2 'INFO';
+ASSIGN F3 'COPY';
+ASSIGN F5 'WINDOW FIT';
+
+## Library use-on
+USE -*;
+USE component;
+
+
+BRD:
+
+#SET COLOR_GRID 8;
+
+ASSIGN F4 'RATSNEST; RUN ripup-polygon *;';
+ASSIGN F6 'GRID mil 6;';
+ASSIGN F7 'GRID mil 5;';
+ASSIGN F8 'GRID mil 25;';
+ASSIGN F9 'GRID mm 0.25;';
+ASSIGN F10 'GRID inch 0.05;';
+ASSIGN F11 'GRID mm 1;';
+ASSIGN Ctrl+R 'RATSNEST;';
+
+SET WIDTH_MENU 0 6mil 8mil 10mil 12mil 16mil 24mil 32mil 36mil;
+
+GRID ON;
+GRID LINES;
+GRID MIL;
+GRID 25;
+GRID ALT MIL;
+GRID ALT 5;
+
+DRC LOAD PCBway.dru
+
+Change Diameter    auto;
+Change Width       6mil;
+Change Drill       12mil;
+Change Shape       Round;
+Change Isolate     6mil;
+Change Spacing     6mil;
+Change Rank        3;
+Change Font        vector;
+Change Size        32mil;
+Change Ratio       15;
+
+
+## Dimension color
+SET COLOR_LAYER 20 15;
+
+## tValues/bValues color
+SET COLOR_LAYER 27 14;
+SET COLOR_LAYER 28 6;
+
+## tDocu/bDocu color
+SET COLOR_LAYER 51 14;
+SET COLOR_LAYER 52 6;
+
+## Document color
+SET COLOR_LAYER 48 14;
+
+## panelized tNames color
+SET COLOR_LAYER 125 13;
+SET COLOR_LAYER 126 5;
+
+## Layer settings
+Set Used_Layers 1  16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 \
+                31 32 33 34 35 36 39 40 41 42 43 44 45 46 \
+                47 48 49 51 52 125 126 127 128;
+
+DISPLAY = 'Preset_Top' None 1 17 18 19 20 21 23 25 39 41 51;
+DISPLAY = 'Preset_Bottom' None 16 17 18 19 20 22 24 26 40 42 52;
+DISPLAY = 'Preset_Standard' None 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 39 40 41 42 51 52;
+
+DISPLAY NONE;
+DISPLAY 1  16 17 18 19 20;
+DISPLAY 21 22 23 24 25 26;
+DISPLAY 39 40 41 42 43 46;
+DISPLAY 51 52;
+DISPLAY 125 126;
+
+
+SCH:
+GRID ON;
+GRID LINES;
+GRID INCH;
+GRID 0.1;
+
+Change Width 0.006in;
+Change SIZE 0.05;
+Change XREF ON;
+
+
+LBR:
+
+
+DEV:
+GRID ON;
+GRID LINES;
+GRID INCH;
+
+
+SYM:
+GRID ON;
+GRID LINES;
+GRID INCH;
+
+Change Width 0.010in;
+Change SIZE  0.05;
+Change Font  PROPORTIONAL;
+Change Ratio 8;
+Change Align bottom-left;
+
+
+
+PAC:
+ASSIGN F6 'GRID mil 6;';
+ASSIGN F7 'GRID mil 5;';
+ASSIGN F8 'GRID mil 25;';
+ASSIGN F9 'GRID mm 0.25;';
+ASSIGN F10 'GRID inch 0.05;';
+ASSIGN F11 'GRID mm 1;';
+
+GRID ON;
+GRID LINES;
+GRID MM;
+GRID 0.25;
+
+SET WIDTH_MENU 0 0.1mm 0.2mm 0.3mm 0.4mm 0.5mm 0.6mm 0.8mm 1mm
+
+
+Change Width 0.1mm;
+Change Size  32mil;
+Change Font  vector;
+Change Ratio 15;
+Change Align bottom-center;
+Change SMD   1 0.5;
+Change ROUNDNESS 30;
+
+
+## Layer settings
+Set Used_Layers 1  16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 \
+                31 32 33 34 35 36 39 40 41 42 43 44 45 46 \
+                47 48 49 51 52 125 126 127 128;
+
+## Dimension color
+SET COLOR_LAYER 20 15;
+
+## tValues/bValues color
+SET COLOR_LAYER 27 14;
+SET COLOR_LAYER 28 6;
+
+## tDocu/bDocu color
+SET COLOR_LAYER 51 14;
+SET COLOR_LAYER 52 6;
+
+## Document color
+SET COLOR_LAYER 48 14;
+
