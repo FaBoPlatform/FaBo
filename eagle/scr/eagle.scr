@@ -7,8 +7,8 @@ ASSIGN F3 'COPY';
 ASSIGN F5 'WINDOW FIT';
 
 ## Library use-on
-USE -*;
-USE component;
+#USE -*;
+#USE Library;
 
 
 BRD:
