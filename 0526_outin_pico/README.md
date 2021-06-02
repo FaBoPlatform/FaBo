@@ -1,3 +1,1 @@
-# 526 Pico
-
-Pico
+# #526 OUT/IN Shield for Raspberry Pi Pico
