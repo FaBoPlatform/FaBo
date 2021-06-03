@@ -2117,12 +2117,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.1524" layer="94"/>
 <text x="0" y="3.048" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
 </symbol>
-<symbol name="AVDD">
-<pin name="AVDD" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
-<wire x1="0" y1="2.54" x2="0.762" y2="1.27" width="0.1524" layer="94"/>
-<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.1524" layer="94"/>
-<text x="0" y="3.048" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
-</symbol>
 <symbol name="GND">
 <pin name="GND" x="0" y="0" visible="off" length="short" direction="sup" rot="R270"/>
 <wire x1="-1.905" y1="-2.54" x2="1.905" y2="-2.54" width="0.1524" layer="94"/>
@@ -2167,18 +2161,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <deviceset name="5V" prefix="5V">
 <gates>
 <gate name="G$1" symbol="5V" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="AVDD" prefix="AVDD">
-<gates>
-<gate name="G$1" symbol="AVDD" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -35901,13 +35883,9 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="LOGO2" library="FaBo-Logo" deviceset="LOGO_FABO" device="-M"/>
 <part name="U1" library="FaBo-Boards" deviceset="RASPBERRY_PI_PICO" device=""/>
 <part name="5V1" library="FaBo-Symbol" deviceset="5V" device=""/>
-<part name="AVDD1" library="FaBo-Symbol" deviceset="AVDD" device=""/>
 <part name="GND8" library="FaBo-Symbol" deviceset="GND" device=""/>
 <part name="GND9" library="FaBo-Symbol" deviceset="GND" device=""/>
 <part name="GND14" library="FaBo-Symbol" deviceset="GND" device=""/>
-<part name="AVDD2" library="FaBo-Symbol" deviceset="AVDD" device=""/>
-<part name="AVDD3" library="FaBo-Symbol" deviceset="AVDD" device=""/>
-<part name="AVDD4" library="FaBo-Symbol" deviceset="AVDD" device=""/>
 <part name="GND1" library="FaBo-Symbol" deviceset="GND" device=""/>
 <part name="GND2" library="FaBo-Symbol" deviceset="GND" device=""/>
 <part name="GND4" library="FaBo-Symbol" deviceset="GND" device=""/>
@@ -35940,11 +35918,14 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="JP1" library="FaBo-PIN" deviceset="SMD-JUMPER-2" device="_SHORT"/>
 <part name="3V1" library="FaBo-Symbol" deviceset="3V3" device=""/>
 <part name="3V2" library="FaBo-Symbol" deviceset="3V3" device=""/>
+<part name="3V3" library="FaBo-Symbol" deviceset="3V3" device=""/>
+<part name="3V4" library="FaBo-Symbol" deviceset="3V3" device=""/>
+<part name="3V5" library="FaBo-Symbol" deviceset="3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">Beta1</text>
+<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">Beta2</text>
 <text x="144.78" y="129.54" size="2.54" layer="97">DIGITAL (3pin Top 2mm pitch)</text>
 <text x="144.78" y="167.64" size="2.54" layer="97">ANALOG (3pin Side 2mm pitch)</text>
 <text x="144.78" y="91.44" size="2.54" layer="97">DIGITAL PWM/Servo(3pin Top 2.54mm pitch)</text>
@@ -36008,9 +35989,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <instance part="5V1" gate="G$1" x="76.2" y="160.02" smashed="yes">
 <attribute name="VALUE" x="76.2" y="163.068" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="AVDD1" gate="G$1" x="91.44" y="160.02" smashed="yes">
-<attribute name="VALUE" x="91.44" y="163.068" size="1.778" layer="96" align="bottom-center"/>
-</instance>
 <instance part="GND8" gate="G$1" x="50.8" y="91.44" smashed="yes">
 <attribute name="VALUE" x="50.8" y="88.392" size="1.778" layer="96" align="top-center"/>
 </instance>
@@ -36019,15 +35997,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </instance>
 <instance part="GND14" gate="G$1" x="76.2" y="91.44" smashed="yes">
 <attribute name="VALUE" x="76.2" y="88.392" size="1.778" layer="96" align="top-center"/>
-</instance>
-<instance part="AVDD2" gate="G$1" x="154.94" y="157.48" smashed="yes">
-<attribute name="VALUE" x="154.94" y="160.528" size="1.778" layer="96" align="bottom-center"/>
-</instance>
-<instance part="AVDD3" gate="G$1" x="182.88" y="157.48" smashed="yes">
-<attribute name="VALUE" x="182.88" y="160.528" size="1.778" layer="96" align="bottom-center"/>
-</instance>
-<instance part="AVDD4" gate="G$1" x="210.82" y="157.48" smashed="yes">
-<attribute name="VALUE" x="210.82" y="160.528" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 <instance part="GND1" gate="G$1" x="167.64" y="144.78" smashed="yes">
 <attribute name="VALUE" x="167.64" y="141.732" size="1.778" layer="96" align="top-center"/>
@@ -36129,6 +36098,15 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </instance>
 <instance part="3V2" gate="G$1" x="109.22" y="160.02" smashed="yes">
 <attribute name="VALUE" x="109.22" y="163.068" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="3V3" gate="G$1" x="154.94" y="157.48" smashed="yes">
+<attribute name="VALUE" x="154.94" y="160.528" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="3V4" gate="G$1" x="182.88" y="157.48" smashed="yes">
+<attribute name="VALUE" x="182.88" y="160.528" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="3V5" gate="G$1" x="210.82" y="157.48" smashed="yes">
+<attribute name="VALUE" x="210.82" y="160.528" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 </instances>
 <busses>
@@ -36541,29 +36519,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <label x="177.8" y="76.2" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
-<net name="AVDD" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="ADC_VREF"/>
-<pinref part="AVDD1" gate="G$1" pin="AVDD"/>
-<wire x1="71.12" y1="142.24" x2="91.44" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="142.24" x2="91.44" y2="160.02" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="A2" gate="G$1" pin="VCC"/>
-<pinref part="AVDD4" gate="G$1" pin="AVDD"/>
-<wire x1="210.82" y1="152.4" x2="210.82" y2="157.48" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="A1" gate="G$1" pin="VCC"/>
-<pinref part="AVDD3" gate="G$1" pin="AVDD"/>
-<wire x1="182.88" y1="152.4" x2="182.88" y2="157.48" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="AVDD2" gate="G$1" pin="AVDD"/>
-<pinref part="A0" gate="G$1" pin="VCC"/>
-<wire x1="154.94" y1="157.48" x2="154.94" y2="152.4" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="PWM17" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="GP17"/>
@@ -36599,6 +36554,21 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pinref part="JP1" gate="G$1" pin="1"/>
 <pinref part="3V2" gate="G$1" pin="3V3"/>
 <wire x1="109.22" y1="154.94" x2="109.22" y2="160.02" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="A2" gate="G$1" pin="VCC"/>
+<pinref part="3V5" gate="G$1" pin="3V3"/>
+<wire x1="210.82" y1="152.4" x2="210.82" y2="157.48" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="A1" gate="G$1" pin="VCC"/>
+<pinref part="3V4" gate="G$1" pin="3V3"/>
+<wire x1="182.88" y1="152.4" x2="182.88" y2="157.48" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="A0" gate="G$1" pin="VCC"/>
+<pinref part="3V3" gate="G$1" pin="3V3"/>
+<wire x1="154.94" y1="152.4" x2="154.94" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
