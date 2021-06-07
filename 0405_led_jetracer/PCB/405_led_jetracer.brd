@@ -23,7 +23,7 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="14" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="6" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -37,7 +37,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="14" fill="1" visible="no" active="yes"/>
@@ -176,7 +176,7 @@
 </layers>
 <board>
 <plain>
-<text x="29.845" y="0.635" size="0.8128" layer="21" font="vector" ratio="15">Rev.1.0.0</text>
+<text x="29.845" y="0.635" size="0.8128" layer="21" font="vector" ratio="15">Rev.1.0.1</text>
 <wire x1="3" y1="0" x2="37" y2="0" width="0" layer="20"/>
 <wire x1="37" y1="0" x2="40" y2="3" width="0" layer="20" curve="90"/>
 <wire x1="26" y1="10" x2="37" y2="10" width="0" layer="20"/>
