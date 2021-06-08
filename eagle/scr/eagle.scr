@@ -7,10 +7,9 @@ ASSIGN F3 'COPY';
 ASSIGN F5 'WINDOW FIT';
 
 ## Library use-on
-#USE -*;
-#USE Library;
 
 
+#######################################################
 BRD:
 
 #SET COLOR_GRID 8;
@@ -82,7 +81,9 @@ DISPLAY 51 52;
 DISPLAY 125 126;
 
 
+#######################################################
 SCH:
+
 GRID ON;
 GRID LINES;
 GRID INCH;
@@ -92,7 +93,14 @@ Change Width 0.006in;
 Change SIZE 0.05;
 Change XREF ON;
 
+## Layer settings
+Set Used_Layers 90 91 92 93 94 95 96 97 98 99;
 
+DISPLAY NONE;
+DISPLAY 90 91 92 94 95 96 97;
+
+
+#######################################################
 LBR:
 
 
@@ -112,8 +120,13 @@ Change SIZE  0.05;
 Change Font  PROPORTIONAL;
 Change Ratio 8;
 Change Align bottom-left;
+Change Length short;
 
+## Layer settings
+Set Used_Layers 90 91 92 93 94 95 96 97 98 99;
 
+DISPLAY NONE;
+DISPLAY 90 91 92 93 94 95 96 97;
 
 PAC:
 ASSIGN F6 'GRID mil 6;';
@@ -130,7 +143,6 @@ GRID 0.25;
 
 SET WIDTH_MENU 0 0.1mm 0.2mm 0.3mm 0.4mm 0.5mm 0.6mm 0.8mm 1mm
 
-
 Change Width 0.1mm;
 Change Size  32mil;
 Change Font  vector;
@@ -138,7 +150,6 @@ Change Ratio 15;
 Change Align bottom-center;
 Change SMD   1 0.5;
 Change ROUNDNESS 30;
-
 
 ## Layer settings
 Set Used_Layers 1  16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 \
@@ -158,4 +169,3 @@ SET COLOR_LAYER 52 6;
 
 ## Document color
 SET COLOR_LAYER 48 14;
-
