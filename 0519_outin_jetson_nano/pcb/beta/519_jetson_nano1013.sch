@@ -29696,13 +29696,6 @@ by exp-lbrs.ulp</description>
 <symbol name="JUMPERS_JUMP-A" urn="urn:adsk.eagle:symbol:21899411/1" library_version="1">
 <wire x1="2.54" y1="-1.27" x2="0" y2="-1.27" width="0.4064" layer="94" curve="134.757707"/>
 </symbol>
-<symbol name="DPORTS_NC_SYM1" urn="urn:adsk.eagle:symbol:21899403/1" library_version="1">
-<wire x1="-0.9525" y1="0.9525" x2="0" y2="0" width="0.1524" layer="95"/>
-<wire x1="0" y1="0" x2="0.9525" y2="-0.9525" width="0.1524" layer="95"/>
-<wire x1="-0.9525" y1="-0.9525" x2="0" y2="0" width="0.1524" layer="95"/>
-<wire x1="0" y1="0" x2="0.9525" y2="0.9525" width="0.1524" layer="95"/>
-<wire x1="2.54" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="JUMPERS_JP2-" urn="urn:adsk.eagle:component:21899478/1" prefix="JP" library_version="1">
@@ -29721,19 +29714,6 @@ by exp-lbrs.ulp</description>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:15662241/2"/>
 </package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="DPORTS_NC1" urn="urn:adsk.eagle:component:21899491/1" prefix="PORT" library_version="1">
-<description>&lt;b&gt;N/C Symbol&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="DPORTS_NC_SYM1" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -31558,7 +31538,6 @@ Details see: &lt;a href="https://katalog.we-online.com/en/em/DC_RIGHT_ANGLED_6_4
 <part name="SPI1" library="FaBo-Connetor" deviceset="FABO-SPI-7PIN" device=""/>
 <part name="I2S0" library="FaBo-Connetor" deviceset="FABO-I2S-7PIN" device=""/>
 <part name="I2S1" library="FaBo-Connetor" deviceset="FABO-I2S-7PIN" device=""/>
-<part name="PORT2" library="52101-101-REV-A_v16" library_urn="urn:adsk.eagle:library:21899384" deviceset="DPORTS_NC1" device=""/>
 <part name="U$11" library="FaBo-Crystal" deviceset="KC2016Z" device=""/>
 <part name="3V15" library="FaBo-Supply" deviceset="3V3" device=""/>
 <part name="GND64" library="FaBo-etc" deviceset="GND" device=""/>
@@ -32317,7 +32296,6 @@ Details see: &lt;a href="https://katalog.we-online.com/en/em/DC_RIGHT_ANGLED_6_4
 <instance part="I2S1" gate="G$1" x="242.57" y="109.22" smashed="yes">
 <attribute name="NAME" x="237.49" y="127.508" size="1.778" layer="95"/>
 </instance>
-<instance part="PORT2" gate="G$1" x="166.37" y="231.14" smashed="yes" rot="R180"/>
 <instance part="U$11" gate="G$1" x="218.44" y="71.12" smashed="yes"/>
 <instance part="3V15" gate="G$1" x="187.96" y="88.9" smashed="yes">
 <attribute name="VALUE" x="186.69" y="92.456" size="1.778" layer="96"/>
@@ -33105,6 +33083,11 @@ Details see: &lt;a href="https://katalog.we-online.com/en/em/DC_RIGHT_ANGLED_6_4
 <wire x1="115.57" y1="104.14" x2="128.27" y2="104.14" width="0.1524" layer="91"/>
 <label x="115.57" y="104.14" size="1.778" layer="95"/>
 <pinref part="U$2" gate="G$1" pin="GPIO22"/>
+</segment>
+<segment>
+<wire x1="144.78" y1="231.14" x2="166.37" y2="231.14" width="0.1524" layer="91"/>
+<pinref part="SPI1" gate="G$1" pin="4:NC"/>
+<label x="147.32" y="231.14" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPI0_MOSI" class="0">
@@ -34193,12 +34176,6 @@ Details see: &lt;a href="https://katalog.we-online.com/en/em/DC_RIGHT_ANGLED_6_4
 <pinref part="LED1" gate="G$1" pin="CATHODE"/>
 </segment>
 </net>
-<net name="N$49" class="0">
-<segment>
-<pinref part="SPI1" gate="G$1" pin="4:NC"/>
-<wire x1="144.78" y1="231.14" x2="163.83" y2="231.14" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$50" class="0">
 <segment>
 <pinref part="U$11" gate="G$1" pin="1:INH"/>
@@ -34301,7 +34278,7 @@ Details see: &lt;a href="https://katalog.we-online.com/en/em/DC_RIGHT_ANGLED_6_4
 <junction x="93.98" y="55.88"/>
 </segment>
 </net>
-<net name="SPI_SCLK" class="0">
+<net name="SPI1_SCLK" class="0">
 <segment>
 <pinref part="SPI1" gate="G$1" pin="5:SCLK"/>
 <wire x1="144.78" y1="226.06" x2="171.45" y2="226.06" width="0.1524" layer="91"/>
