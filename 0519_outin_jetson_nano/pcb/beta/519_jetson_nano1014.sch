@@ -895,38 +895,59 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <circle x="-0.95" y="-0.3" radius="0.2" width="0.35" layer="21"/>
 <text x="0" y="2.54" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
 </package>
+<package name="4UCON-DC">
+<pad name="VCC" x="5.5" y="0" drill="1.5" shape="square" rot="R90"/>
+<wire x1="-5.5" y1="2.5" x2="5.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="5.5" y1="2.5" x2="5.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="5.5" y1="-2.5" x2="-5.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-5.5" y1="-2.5" x2="-5.5" y2="2.5" width="0.127" layer="21"/>
+<pad name="GND1" x="0.5" y="0" drill="1.5" shape="square" rot="R90"/>
+<pad name="GND2" x="2.6" y="-2.8" drill="1.5" shape="square" rot="R90"/>
+</package>
+<package name="M04339A0">
+<hole x="0" y="0" drill="1.6"/>
+<wire x1="-3.75" y1="3.5" x2="3.75" y2="3.5" width="0.127" layer="21"/>
+<wire x1="3.75" y1="3.5" x2="3.75" y2="-9" width="0.127" layer="21"/>
+<wire x1="3.75" y1="-9" x2="-3.75" y2="-9" width="0.127" layer="21"/>
+<wire x1="-3.75" y1="-9" x2="-3.75" y2="3.5" width="0.127" layer="21"/>
+<pad name="ND2" x="3.2" y="0" drill="1.6" shape="square"/>
+<pad name="ND1" x="-3.2" y="0" drill="1.6" shape="square"/>
+<pad name="GND" x="-3.2" y="-6.5" drill="1.6" shape="square"/>
+<pad name="GNDBREAK" x="3.3" y="-6.5" drill="1.6" shape="square"/>
+<pad name="VCC" x="0" y="-9" drill="2" shape="square"/>
+</package>
+<package name="2DC-G213-B66">
+<hole x="0" y="3.25" drill="1.6"/>
+<pad name="VCC" x="0" y="-6" drill="1.1" diameter="3"/>
+<wire x1="-4.75" y1="6" x2="-4.75" y2="-7.2" width="0.127" layer="21"/>
+<wire x1="-4.75" y1="-7.2" x2="4.75" y2="-7.2" width="0.127" layer="21"/>
+<wire x1="4.75" y1="-7.2" x2="4.75" y2="6" width="0.127" layer="21"/>
+<wire x1="4.75" y1="6" x2="-4.75" y2="6" width="0.127" layer="21"/>
+<pad name="GND" x="0" y="0" drill="3.3" diameter="5" rot="R180"/>
+<pad name="GND-BREAKER@1" x="-4.826" y="-4.222" drill="2.159" diameter="3"/>
+<pad name="GND-BREAKER@3" x="4.699" y="-3.968" drill="2.159" diameter="3"/>
+<pad name="GND-BREAKE@2" x="-4.699" y="0.477" drill="2.159" diameter="3"/>
+<pad name="GND-BREAKER@4" x="4.699" y="0.477" drill="2.159" diameter="3"/>
+</package>
 <package name="1206">
-<smd name="P$1" x="-1.5" y="0" dx="1" dy="1.6" layer="1"/>
-<smd name="P$2" x="1.5" y="0" dx="1" dy="1.6" layer="1"/>
-<wire x1="-2" y1="0.8" x2="2" y2="0.8" width="0.127" layer="21"/>
-<wire x1="2" y1="0.8" x2="2" y2="-0.8" width="0.127" layer="21"/>
-<wire x1="2" y1="-0.8" x2="-2" y2="-0.8" width="0.127" layer="21"/>
-<wire x1="-2" y1="-0.8" x2="-2" y2="0.8" width="0.127" layer="21"/>
-<text x="-2.01421875" y="1.05918125" size="0.8128" layer="25">&gt;NAME</text>
-<text x="-2.032" y="-1.778" size="0.8128" layer="27">&gt;VALUE</text>
+<smd name="1" x="-1.5" y="0" dx="1" dy="1.6" layer="1" roundness="30"/>
+<smd name="2" x="1.5" y="0" dx="1" dy="1.6" layer="1" roundness="30"/>
+<wire x1="-2.05" y1="0.85" x2="2.05" y2="0.85" width="0.1" layer="39"/>
+<wire x1="2.05" y1="0.85" x2="2.05" y2="-0.85" width="0.1" layer="39"/>
+<wire x1="2.05" y1="-0.85" x2="-2.05" y2="-0.85" width="0.1" layer="39"/>
+<wire x1="-2.05" y1="-0.85" x2="-2.05" y2="0.85" width="0.1" layer="39"/>
+<text x="0" y="1.25" size="0.8128" layer="25" font="vector" ratio="15" align="bottom-center">&gt;NAME</text>
+<text x="0" y="0" size="0.8128" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 </package>
 <package name="1210">
-<smd name="P$1" x="-1.5" y="0" dx="1" dy="2.5" layer="1"/>
-<smd name="P$2" x="1.5" y="0" dx="1" dy="2.5" layer="1"/>
-<wire x1="-2" y1="1.308" x2="2" y2="1.308" width="0.127" layer="21"/>
-<wire x1="2" y1="1.308" x2="2" y2="-1.308" width="0.127" layer="21"/>
-<wire x1="2" y1="-1.308" x2="-2" y2="-1.308" width="0.127" layer="21"/>
-<wire x1="-2" y1="-1.308" x2="-2" y2="1.308" width="0.127" layer="21"/>
-<text x="-2.01421875" y="1.56718125" size="0.8128" layer="25">&gt;NAME</text>
-<text x="-2.032" y="-2.286" size="0.8128" layer="27">&gt;VALUE</text>
-</package>
-<package name="STPS15L30C">
-<smd name="K" x="0" y="1.87" dx="6.7" dy="6.7" layer="1" rot="R270"/>
-<smd name="A2" x="2.286" y="-6.13" dx="3" dy="1.6" layer="1" rot="R270"/>
-<smd name="A1" x="-2.286" y="-6.13" dx="3" dy="1.6" layer="1" rot="R270"/>
-<wire x1="3.7" y1="-3.4" x2="-3.7" y2="-3.4" width="0.127" layer="21"/>
-<wire x1="-3.7" y1="-3.4" x2="-3.7" y2="4.6" width="0.127" layer="21"/>
-<wire x1="-3.7" y1="4.6" x2="-3" y2="5.6" width="0.127" layer="21"/>
-<wire x1="-3" y1="5.6" x2="3" y2="5.6" width="0.127" layer="21"/>
-<wire x1="3" y1="5.6" x2="3.7" y2="4.6" width="0.127" layer="21"/>
-<wire x1="3.7" y1="4.6" x2="3.7" y2="-3.4" width="0.127" layer="21"/>
-<text x="-3" y="6.4" size="1.27" layer="25">&gt;NAME</text>
-<text x="4.2" y="0.8" size="1.27" layer="27">&gt;VALUE</text>
+<smd name="1" x="-1.6" y="0" dx="1.2" dy="2.3" layer="1" roundness="30"/>
+<smd name="2" x="1.6" y="0" dx="1.2" dy="2.3" layer="1" roundness="30"/>
+<wire x1="-2.25" y1="1.2" x2="2.25" y2="1.2" width="0.1" layer="39"/>
+<wire x1="2.25" y1="1.2" x2="2.25" y2="-1.2" width="0.1" layer="39"/>
+<wire x1="2.25" y1="-1.2" x2="-2.25" y2="-1.2" width="0.1" layer="39"/>
+<wire x1="-2.25" y1="-1.2" x2="-2.25" y2="1.2" width="0.1" layer="39"/>
+<text x="0" y="1.5" size="0.8128" layer="25" font="vector" ratio="15" align="bottom-center">&gt;NAME</text>
+<text x="0" y="0" size="0.8128" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -960,6 +981,20 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <text x="-10.16" y="8.128" size="1.778" layer="95">&gt;NAME</text>
 <text x="0" y="5.08" size="1.778" layer="94" align="bottom-center">LP2985-50</text>
 </symbol>
+<symbol name="DC-JACK">
+<wire x1="-5.08" y1="-2.54" x2="-2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="5.08" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
+<text x="-5.08" y="5.08" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-5.08" y="-5.08" size="1.778" layer="95">&gt;NAME</text>
+<rectangle x1="-5.08" y1="1.778" x2="5.08" y2="3.302" layer="94"/>
+<pin name="GNDBREAK" x="7.62" y="0" visible="off" length="short" rot="R180"/>
+<pin name="GND" x="7.62" y="-2.54" visible="off" length="short" rot="R180"/>
+<pin name="PWR" x="7.62" y="2.54" visible="off" length="short" rot="R180"/>
+</symbol>
 <symbol name="POLYSWITCH">
 <pin name="1" x="-5.08" y="0" visible="off" length="point"/>
 <pin name="2" x="5.08" y="0" visible="off" length="point" rot="R180"/>
@@ -975,18 +1010,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
 <text x="0" y="2.54" size="1.778" layer="95" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-5.08" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
-</symbol>
-<symbol name="STPS15L30C">
-<pin name="A1" x="-10.16" y="2.54" length="middle"/>
-<pin name="A2" x="-10.16" y="-2.54" length="middle"/>
-<pin name="K" x="12.7" y="0" length="middle" rot="R180"/>
-<wire x1="7.62" y1="0" x2="0" y2="0" width="0.2032" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="2.54" width="0.2032" layer="94"/>
-<wire x1="0" y1="2.54" x2="-5.08" y2="2.54" width="0.2032" layer="94"/>
-<wire x1="-5.08" y1="-2.54" x2="0" y2="-2.54" width="0.2032" layer="94"/>
-<wire x1="0" y1="-2.54" x2="0" y2="0" width="0.2032" layer="94"/>
-<text x="2.54" y="2.54" size="1.27" layer="95">&gt;NAME</text>
-<text x="2.54" y="-2.54" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1046,24 +1069,36 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="POLYSWITCH">
+<deviceset name="DC-JACK" prefix="P" uservalue="yes">
 <gates>
-<gate name="G$1" symbol="POLYSWITCH" x="0" y="0"/>
+<gate name="G$1" symbol="DC-JACK" x="0" y="0"/>
 </gates>
 <devices>
-<device name="1206" package="1206">
+<device name="4UCON-DC" package="4UCON-DC">
 <connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="GND" pad="GND1"/>
+<connect gate="G$1" pin="GNDBREAK" pad="GND2"/>
+<connect gate="G$1" pin="PWR" pad="VCC"/>
 </connects>
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
-<device name="1210" package="1210">
+<device name="M04339A0" package="M04339A0">
 <connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="GNDBREAK" pad="GNDBREAK"/>
+<connect gate="G$1" pin="PWR" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="2DC-G232-B66" package="2DC-G213-B66">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="GNDBREAK" pad="GND-BREAKE@2 GND-BREAKER@1 GND-BREAKER@3 GND-BREAKER@4"/>
+<connect gate="G$1" pin="PWR" pad="VCC"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1071,16 +1106,24 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="STPS15L30C" prefix="S">
+<deviceset name="POLYSWITCH" prefix="F" uservalue="yes">
 <gates>
-<gate name="G$1" symbol="STPS15L30C" x="0" y="0"/>
+<gate name="G$1" symbol="POLYSWITCH" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="STPS15L30C">
+<device name="1206" package="1206">
 <connects>
-<connect gate="G$1" pin="A1" pad="A1"/>
-<connect gate="G$1" pin="A2" pad="A2"/>
-<connect gate="G$1" pin="K" pad="K"/>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1210" package="1210">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -26297,9 +26340,20 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </polygon>
 <circle x="2.7" y="-2.1" radius="0.22360625" width="0.127" layer="21"/>
 </package>
+<package name="DO-214AB">
+<description>JEDEC DO-214 Variation AB</description>
+<smd name="CATHODE" x="-3.6" y="0" dx="2.6" dy="3.2" layer="1" roundness="30"/>
+<smd name="ANODE" x="3.6" y="0" dx="2.6" dy="3.2" layer="1" roundness="30"/>
+<wire x1="-3.575" y1="3.125" x2="3.575" y2="3.125" width="0.127" layer="21"/>
+<wire x1="3.575" y1="3.125" x2="3.575" y2="-3.125" width="0.127" layer="21"/>
+<wire x1="3.575" y1="-3.125" x2="-3.575" y2="-3.125" width="0.127" layer="21"/>
+<wire x1="-3.575" y1="-3.125" x2="-3.575" y2="3.125" width="0.127" layer="21"/>
+<text x="0.1" y="3.55" size="0.8128" layer="25" font="vector" ratio="15" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-3.6352" y1="-3.125" x2="-1.8" y2="3.125" layer="21"/>
+</package>
 </packages>
 <symbols>
-<symbol name="DIODE">
+<symbol name="DIODE@1">
 <pin name="ANODE" x="-2.54" y="0" visible="off" length="point"/>
 <pin name="CATHODE" x="5.08" y="0" visible="off" length="point" rot="R180"/>
 <wire x1="-2.54" y1="0" x2="2.032" y2="0" width="0.254" layer="94"/>
@@ -26341,11 +26395,39 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="-0.2" y1="-0.634315625" x2="-0.6" y2="-1.6" width="0.254" layer="94" curve="-45"/>
 <text x="-3.81" y="-3.048" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="DIODE">
+<pin name="ANODE" x="-2.54" y="0" visible="off" length="point"/>
+<pin name="CATHODE" x="5.08" y="0" visible="off" length="point" rot="R180"/>
+<wire x1="-2.54" y1="0" x2="2.032" y2="0" width="0.254" layer="94"/>
+<wire x1="2.032" y1="0" x2="2.286" y2="0" width="0.254" layer="94"/>
+<wire x1="2.286" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="1.27" x2="2.54" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="2.286" y1="0" x2="1.016" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="1.016" y1="-1.016" x2="1.016" y2="1.016" width="0.254" layer="94"/>
+<wire x1="1.016" y1="1.016" x2="1.016" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.016" y1="1.27" x2="2.286" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0.762" x2="1.27" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="1.016" y1="-1.524" x2="1.016" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.016" y1="-1.27" x2="1.016" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="1.016" y1="-1.016" x2="1.524" y2="-0.508" width="0.254" layer="94"/>
+<wire x1="1.524" y1="-0.508" x2="1.778" y2="-0.254" width="0.254" layer="94"/>
+<wire x1="1.778" y1="-0.254" x2="2.032" y2="0" width="0.254" layer="94"/>
+<wire x1="2.032" y1="0" x2="1.778" y2="0.254" width="0.254" layer="94"/>
+<wire x1="1.778" y1="0.254" x2="1.524" y2="0.508" width="0.254" layer="94"/>
+<wire x1="1.524" y1="0.508" x2="1.016" y2="1.016" width="0.254" layer="94"/>
+<wire x1="1.524" y1="0.508" x2="1.524" y2="0" width="0.254" layer="94"/>
+<wire x1="1.524" y1="-0.508" x2="1.524" y2="0" width="0.254" layer="94"/>
+<wire x1="1.524" y1="0" x2="1.778" y2="0.254" width="0.254" layer="94"/>
+<wire x1="1.778" y1="0.254" x2="1.778" y2="-0.254" width="0.254" layer="94"/>
+<wire x1="1.016" y1="-1.27" x2="1.778" y2="-0.508" width="0.254" layer="94"/>
+<text x="-1.27" y="2.032" size="1.27" layer="95">&gt;NAME</text>
+<text x="-1.27" y="-2.54" size="1.27" layer="96" align="top-left">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="1N4148">
 <gates>
-<gate name="G$1" symbol="DIODE" x="-2.54" y="0"/>
+<gate name="G$1" symbol="DIODE@1" x="-2.54" y="0"/>
 </gates>
 <devices>
 <device name="" package="1N4148W">
@@ -26368,6 +26450,22 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <connects>
 <connect gate="G$1" pin="ANODE" pad="A"/>
 <connect gate="G$1" pin="CATHODE" pad="K"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="S3D">
+<gates>
+<gate name="G$1" symbol="DIODE" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="DO-214AB">
+<connects>
+<connect gate="G$1" pin="ANODE" pad="ANODE"/>
+<connect gate="G$1" pin="CATHODE" pad="CATHODE"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -31128,233 +31226,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
-<library name="Wurth_Connectors_WR-DC" urn="urn:adsk.eagle:library:14886029">
-<description>&lt;BR&gt;Wurth Elektronik - Connectors - DC Power Jacks - WR-DC &lt;br&gt;&lt;Hr&gt;
-
-&lt;BR&gt;
-&lt;TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0&gt;
-&lt;TR&gt;   
-&lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;BR&gt;&lt;br&gt;
-      &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&lt;BR&gt;
-       &lt;BR&gt;
-       &lt;BR&gt;
-       &lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-&lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;br&gt;
-      -----&lt;BR&gt;
-      -----&lt;BR&gt;
-      -----&lt;BR&gt;
-      -----&lt;BR&gt;
-      -----&lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt; &lt;FONT FACE=ARIAL SIZE=3&gt;&lt;br&gt;
-      ---------------------------&lt;BR&gt;
-&lt;B&gt;&lt;I&gt;&lt;span style='font-size:26pt;
-  color:#FF6600;'&gt;WE &lt;/span&gt;&lt;/i&gt;&lt;/b&gt;
-&lt;BR&gt;
-      ---------------------------&lt;BR&gt;&lt;b&gt;Würth Elektronik&lt;/b&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;br&gt;
-      ---------O---&lt;BR&gt;
-      ----O--------&lt;BR&gt;
-      ---------O---&lt;BR&gt;
-      ----O--------&lt;BR&gt;
-      ---------O---&lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-   
-&lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;BR&gt;
-      &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&lt;BR&gt;
-       &lt;BR&gt;
-       &lt;BR&gt;
-       &lt;BR&gt;
-       &lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
-    &lt;/TD&gt;
-  &lt;/TR&gt;
-
-  &lt;TR&gt;
-    &lt;TD COLSPAN=7&gt;&amp;nbsp;
-    &lt;/TD&gt;
-  &lt;/TR&gt;
-  
-&lt;/TABLE&gt;
-&lt;B&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;More than you expect&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;&lt;/B&gt;
-
-&lt;HR&gt;&lt;BR&gt;
-&lt;b&gt;Würth Elektronik eiSos GmbH &amp; Co. KG&lt;/b&gt;&lt;br&gt;
-EMC &amp; Inductive Solutions&lt;br&gt;
-
-Max-Eyth-Str.1&lt;br&gt;
-D-74638 Waldenburg&lt;br&gt;
-&lt;br&gt;
-Tel: +49 (0)7942-945-0&lt;br&gt;
-Fax:+49 (0)7942-945-5000&lt;br&gt;
-&lt;br&gt;
-&lt;a href="http://www.we-online.com/web/en/electronic_components/produkte_pb/bauteilebibliotheken/eagle_4.php"&gt;www.we-online.com/eagle&lt;/a&gt;&lt;br&gt;
-&lt;a href="mailto:libraries@we-online.com"&gt;libraries@we-online.com&lt;/a&gt; &lt;BR&gt;&lt;BR&gt;
-&lt;br&gt;&lt;HR&gt;&lt;BR&gt;
-Neither Autodesk nor Würth Elektronik eiSos does warrant that this library is error-free or &lt;br&gt;
-that it meets your specific requirements.&lt;br&gt;&lt;BR&gt;
-Please contact us for more information.&lt;br&gt;
-&lt;HR&gt;
-&lt;br&gt;Eagle Version 9, Library Revision 2019a, 2019-11-01&lt;br&gt;
-&lt;HR&gt;
-Copyright: Würth Elektronik</description>
-<packages>
-<package name="694108301002" urn="urn:adsk.eagle:footprint:14886033/1" library_version="2">
-<description>&lt;b&gt;WR-DC DC Power Jack Right Angled (6.4)</description>
-<wire x1="6.8" y1="4.6" x2="-7.9" y2="4.6" width="0.2" layer="21"/>
-<wire x1="6.8" y1="-4.6" x2="4.9" y2="-4.6" width="0.2" layer="21"/>
-<wire x1="6.8" y1="4.6" x2="6.8" y2="1.6" width="0.2" layer="21"/>
-<wire x1="-7.9" y1="4.6" x2="-7.9" y2="-4.6" width="0.2" layer="21"/>
-<wire x1="0.7" y1="-4.6" x2="-7.9" y2="-4.6" width="0.2" layer="21"/>
-<wire x1="6.8" y1="-1.6" x2="6.8" y2="-4.6" width="0.2" layer="21"/>
-<wire x1="5.4" y1="1.5" x2="5.4" y2="-1.5" width="0.1" layer="46"/>
-<wire x1="6.2" y1="-1.5" x2="6.2" y2="1.5" width="0.1" layer="46"/>
-<wire x1="-0.4" y1="1.5" x2="-0.4" y2="-1.5" width="0.1" layer="46"/>
-<wire x1="0.4" y1="-1.5" x2="0.4" y2="1.5" width="0.1" layer="46"/>
-<wire x1="1.3" y1="-5.2" x2="4.3" y2="-5.2" width="0.1" layer="46"/>
-<wire x1="4.3" y1="-4.4" x2="1.3" y2="-4.4" width="0.1" layer="46"/>
-<wire x1="1.3" y1="-4.4" x2="1.3" y2="-5.2" width="0.1" layer="46"/>
-<wire x1="4.3" y1="-4.4" x2="4.3" y2="-5.2" width="0.1" layer="46"/>
-<wire x1="-0.4" y1="-1.5" x2="0.4" y2="-1.5" width="0.1" layer="46"/>
-<wire x1="0.4" y1="-1.5" x2="0.4" y2="-1.6" width="0.01" layer="46"/>
-<wire x1="-0.4" y1="1.5" x2="0.4" y2="1.5" width="0.1" layer="46"/>
-<wire x1="5.4" y1="1.5" x2="6.2" y2="1.5" width="0.1" layer="46"/>
-<wire x1="5.4" y1="-1.5" x2="6.2" y2="-1.5" width="0.1" layer="46"/>
-<wire x1="-7.8" y1="4.5" x2="6.7" y2="4.5" width="0.1" layer="51"/>
-<wire x1="6.7" y1="4.5" x2="6.7" y2="-4.5" width="0.1" layer="51"/>
-<wire x1="6.7" y1="-4.5" x2="-7.8" y2="-4.5" width="0.1" layer="51"/>
-<wire x1="-7.8" y1="-4.5" x2="-7.8" y2="4.5" width="0.1" layer="51"/>
-<pad name="2" x="0" y="0" drill="0.8" diameter="1.8" shape="long" rot="R270"/>
-<pad name="1" x="5.8" y="0" drill="0.8" diameter="1.8" shape="long" rot="R90"/>
-<pad name="3" x="2.8" y="-4.8" drill="0.8" diameter="1.8" shape="long" rot="R180"/>
-<text x="0" y="5.5" size="1.27" layer="25" ratio="13" rot="SR0" align="bottom-center">&gt;NAME</text>
-<text x="-3.5" y="-8" size="1.27" layer="27" rot="SR0">&gt;VALUE</text>
-<text x="2.3" y="-3.5" size="1.27" layer="48">3</text>
-<text x="3.6" y="-0.7" size="1.27" layer="48">1</text>
-<text x="-2.1" y="-0.6" size="1.27" layer="48">2</text>
-<polygon width="0.1" layer="39">
-<vertex x="7.1" y="-6"/>
-<vertex x="-8" y="-6"/>
-<vertex x="-8" y="4.8"/>
-<vertex x="7.1" y="4.8"/>
-</polygon>
-</package>
-</packages>
-<packages3d>
-<package3d name="694108301002" urn="urn:adsk.eagle:package:14886052/2" type="model" library_version="2">
-<description>&lt;b&gt;WR-DC DC Power Jack Right Angled (6.4)</description>
-<packageinstances>
-<packageinstance name="694108301002"/>
-</packageinstances>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="WR-DC" urn="urn:adsk.eagle:symbol:14886048/1" library_version="2">
-<pin name="1" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
-<pin name="2" x="5.08" y="-5.08" visible="pad" length="short" direction="pas" rot="R180"/>
-<pin name="3" x="5.08" y="-2.54" visible="pad" length="short" direction="pas" rot="R180"/>
-<wire x1="-3.175" y1="-1.27" x2="-3.175" y2="1.27" width="0.1524" layer="94" curve="-180"/>
-<wire x1="-3.175" y1="1.27" x2="1.27" y2="1.27" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="1.27" x2="1.27" y2="-1.27" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="-1.27" x2="-3.175" y2="-1.27" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="-1.27" x2="1.27" y2="-1.905" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="-1.905" x2="2.54" y2="-1.905" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-1.905" x2="2.54" y2="1.905" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="1.905" x2="1.27" y2="1.905" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="1.905" x2="1.27" y2="1.27" width="0.1524" layer="94"/>
-<wire x1="0" y1="-5.08" x2="-3.175" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="-3.175" y1="-5.08" x2="-3.81" y2="-3.81" width="0.1524" layer="94"/>
-<wire x1="-3.81" y1="-3.81" x2="-4.445" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="0" y1="-2.54" x2="0" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-5.08" x2="0" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="0" y1="-2.54" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
-<text x="0" y="2.54" size="1.778" layer="95" align="bottom-center">&gt;NAME</text>
-<text x="-5.08" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
-<polygon width="0.1524" layer="94">
-<vertex x="0" y="-5.08"/>
-<vertex x="-0.508" y="-3.81"/>
-<vertex x="0.508" y="-3.81"/>
-</polygon>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="694108301002" urn="urn:adsk.eagle:component:14886070/2" prefix="J" uservalue="yes" library_version="2">
-<description>&lt;b&gt; WR-DC DC Power Jack Right Angled (6.4)
-&lt;br&gt;
-&lt;br&gt;
-KIND PROPERTIES 
-&lt;br&gt;&lt;br&gt;
-&lt;/b&gt;Quality Class 5 000 Mating cycles 
-&lt;br&gt;Type Right Angled 
-&lt;br&gt;
-&lt;br&gt;
-&lt;b&gt;MATERIAL PROPERTIES 
-&lt;br&gt;&lt;br&gt;
-&lt;/b&gt;Insulator Material PA66 
-&lt;br&gt;Insulator Flammability Rating UL94 V-0 
-&lt;br&gt;Color Black 
-&lt;br&gt;Contact Material Copper Alloy 
-&lt;br&gt;Contact Type Stamped 
-&lt;br&gt;Center Pin Plating Gold 
-&lt;br&gt;Center Pin Terminal Plating Tin 
-&lt;br&gt;Tip Spring Material Tin 
-&lt;br&gt;Shunt Terminal Plating Tin 
-&lt;br&gt;&lt;br&gt;
-&lt;b&gt;GENERAL INFORMATION 
-&lt;br&gt;&lt;br&gt;
-&lt;/b&gt;Operating Temperature -40 up to +85 °C 
-&lt;br&gt;Compliance RoHS 
-&lt;br&gt;
-&lt;br&gt;
-&lt;b&gt;ELECTRICAL PROPERTIES 
-&lt;br&gt;&lt;br&gt;
-&lt;/b&gt;IR 1 5 A 
-&lt;br&gt;Working Voltage 30 V (AC) 
-&lt;br&gt;Withstanding Voltage 500 V (AC) 
-&lt;br&gt;Contact Resistance 50 mΩ 
-&lt;br&gt;RISO 100 MΩ 
-&lt;br&gt;
-&lt;br&gt;
-&lt;b&gt;PACKAGING PROPERTIES 
-&lt;br&gt;&lt;br&gt;
-&lt;/b&gt;Packaging Bag 
-&lt;br&gt;
-&lt;br&gt;
-&lt;br&gt;&lt;a href="https://katalog.we-online.com/media/images/v2/o59009v209%20Family_WR-DC_DC_Power_Jack_Right_Angled_THT_69410x301002.jpg" title="Enlarge picture"&gt;
-&lt;img src="https://katalog.we-online.com/media/images/v2/o59009v209%20Family_WR-DC_DC_Power_Jack_Right_Angled_THT_69410x301002.jpg" width="320"&gt;&lt;/a&gt;&lt;p&gt;
-Details see: &lt;a href="https://katalog.we-online.com/en/em/DC_RIGHT_ANGLED_6_4_69410X301002"&gt;https://katalog.we-online.com/en/em/DC_RIGHT_ANGLED_6_4_69410X301002&lt;/a&gt;&lt;p&gt;
-
-&lt;/b&gt;Updated by Ella Wu  2019-11-01&lt;br&gt;
-&lt;/b&gt;2019(C) Wurth Elektronik</description>
-<gates>
-<gate name="G$1" symbol="WR-DC" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="694108301002">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:14886052/2"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="DATASHEET-URL" value="https://katalog.we-online.com/em/datasheet/694108301002.pdf" constant="no"/>
-<attribute name="IR" value="5A" constant="no"/>
-<attribute name="MOUNT" value="THT" constant="no"/>
-<attribute name="PART-NUMBER" value=" 694108301002 " constant="no"/>
-<attribute name="TYPE" value="Right Angled" constant="no"/>
-<attribute name="WORKING-VOLTAGE" value="30V(AC)" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -31480,8 +31351,6 @@ Details see: &lt;a href="https://katalog.we-online.com/en/em/DC_RIGHT_ANGLED_6_4
 <part name="GND57" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="SJ5" library="FaBo-etc" deviceset="SMD-JUMPER-3-23SHORT" device=""/>
 <part name="3V13" library="FaBo-Supply" deviceset="3V3" device=""/>
-<part name="P1" library="FaBo-Supply" deviceset="POLYSWITCH" device="1206" value="MF-NSML600-2"/>
-<part name="S1" library="FaBo-Supply" deviceset="STPS15L30C" device="" value="STPS15L30CB"/>
 <part name="D2" library="Diodes" library_urn="urn:adsk.eagle:library:11396254" deviceset="1N4148WS" device="" package3d_urn="urn:adsk.eagle:package:10898396/3"/>
 <part name="SUPPLY7" library="FaBo-etc" deviceset="5V" device=""/>
 <part name="GND58" library="FaBo-etc" deviceset="GND" device=""/>
@@ -31549,7 +31418,9 @@ Details see: &lt;a href="https://katalog.we-online.com/en/em/DC_RIGHT_ANGLED_6_4
 <part name="GND66" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="C14" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0402" value="20pF"/>
 <part name="GND51" library="FaBo-etc" deviceset="GND" device=""/>
-<part name="U$12" library="FaBo-Diode" deviceset="PMEG10030ELP" device=""/>
+<part name="U$12" library="FaBo-Diode" deviceset="PMEG10030ELP" device="">
+<attribute name="SPICEPREFIX" value="B"/>
+</part>
 <part name="U$7" library="FaBo-LevelTranslator" deviceset="TXB0102" device=""/>
 <part name="3V10" library="FaBo-Supply" deviceset="3V3" device=""/>
 <part name="GND67" library="FaBo-etc" deviceset="GND" device=""/>
@@ -31569,10 +31440,12 @@ Details see: &lt;a href="https://katalog.we-online.com/en/em/DC_RIGHT_ANGLED_6_4
 <part name="JP4" library="52101-101-REV-A_v16" library_urn="urn:adsk.eagle:library:21899384" deviceset="JUMPERS_JP2-" device="2MM" package3d_urn="urn:adsk.eagle:package:15662241/2"/>
 <part name="JP5" library="SparkFun-Jumpers" library_urn="urn:adsk.eagle:library:528" deviceset="JUMPER-SMT_3_1-NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39288/1"/>
 <part name="3V19" library="FaBo-Supply" deviceset="3V3" device=""/>
-<part name="J1" library="Wurth_Connectors_WR-DC" library_urn="urn:adsk.eagle:library:14886029" deviceset="694108301002" device="" package3d_urn="urn:adsk.eagle:package:14886052/2"/>
-<part name="LED2" library="FaBo-LED" deviceset="LED" device="-0603"/>
 <part name="C20" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="10uF"/>
 <part name="GND71" library="FaBo-etc" deviceset="GND" device=""/>
+<part name="U$10" library="FaBo-Diode" deviceset="S3D" device=""/>
+<part name="P2" library="FaBo-Supply" deviceset="DC-JACK" device="M04339A0"/>
+<part name="F1" library="FaBo-Supply" deviceset="POLYSWITCH" device="1206" value="1206L150/12SLYR"/>
+<part name="U$13" library="FaBo-etc" deviceset="A3L-LOC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -31608,7 +31481,7 @@ Details see: &lt;a href="https://katalog.we-online.com/en/em/DC_RIGHT_ANGLED_6_4
 <text x="66.04" y="72.39" size="2.54" layer="97">UART</text>
 <text x="198.12" y="130.81" size="2.54" layer="97">I2S</text>
 <text x="214.63" y="82.55" size="1.778" layer="97">※I2S信号は、3.3Vとなります。</text>
-<text x="284.48" y="134.62" size="1.524" layer="97">INLET USE 5V ONLY</text>
+<text x="284.48" y="134.62" size="1.524" layer="97">INLET USE 6V ONLY</text>
 <text x="27.94" y="160.02" size="2.54" layer="97">Analog 5.0V</text>
 <text x="110.49" y="91.44" size="1.778" layer="94">SPI1</text>
 <text x="72.39" y="8.89" size="1.778" layer="97">※UARTは、信号レベルは5Vになります。</text>
@@ -31685,6 +31558,8 @@ Details see: &lt;a href="https://katalog.we-online.com/en/em/DC_RIGHT_ANGLED_6_4
 <wire x1="262.89" y1="92.71" x2="264.16" y2="93.98" width="0.1524" layer="94"/>
 <wire x1="264.16" y1="93.98" x2="262.89" y2="95.25" width="0.1524" layer="94"/>
 <wire x1="265.43" y1="93.98" x2="266.7" y2="93.98" width="0.1524" layer="94"/>
+<text x="330.2" y="124.46" size="1.778" layer="94">3A</text>
+<text x="279.4" y="132.08" size="1.778" layer="94">EIAJ2</text>
 </plain>
 <instances>
 <instance part="SUPPLY2" gate="5V" x="166.37" y="132.08" smashed="yes">
@@ -32087,14 +31962,6 @@ Details see: &lt;a href="https://katalog.we-online.com/en/em/DC_RIGHT_ANGLED_6_4
 <instance part="3V13" gate="G$1" x="254" y="73.66" smashed="yes">
 <attribute name="VALUE" x="252.73" y="77.216" size="1.778" layer="96"/>
 </instance>
-<instance part="P1" gate="G$1" x="311.15" y="129.54" smashed="yes">
-<attribute name="NAME" x="311.15" y="132.08" size="1.778" layer="95" align="bottom-center"/>
-<attribute name="VALUE" x="311.15" y="124.46" size="1.778" layer="96" align="bottom-center"/>
-</instance>
-<instance part="S1" gate="G$1" x="332.74" y="129.54" smashed="yes">
-<attribute name="NAME" x="335.28" y="132.08" size="1.27" layer="95"/>
-<attribute name="VALUE" x="320.04" y="134.62" size="1.27" layer="96"/>
-</instance>
 <instance part="D2" gate="G$1" x="55.88" y="154.94" smashed="yes" rot="R180">
 <attribute name="NAME" x="58.1914" y="152.2984" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="60.9854" y="159.4358" size="1.778" layer="96" rot="R180"/>
@@ -32393,20 +32260,23 @@ Details see: &lt;a href="https://katalog.we-online.com/en/em/DC_RIGHT_ANGLED_6_4
 <instance part="3V19" gate="G$1" x="19.05" y="144.78" smashed="yes">
 <attribute name="VALUE" x="17.78" y="148.336" size="1.778" layer="96"/>
 </instance>
-<instance part="J1" gate="G$1" x="287.02" y="129.54" smashed="yes">
-<attribute name="NAME" x="287.02" y="132.08" size="1.778" layer="95" align="bottom-center"/>
-<attribute name="VALUE" x="281.94" y="121.92" size="1.778" layer="96"/>
-</instance>
-<instance part="LED2" gate="G$1" x="332.74" y="138.43" smashed="yes" rot="R90">
-<attribute name="NAME" x="330.2" y="137.668" size="1.27" layer="95" rot="R180"/>
-<attribute name="VALUE" x="328.676" y="137.668" size="1.27" layer="96" rot="R90"/>
-</instance>
 <instance part="C20" gate="G$1" x="281.94" y="106.68" smashed="yes" rot="R180">
 <attribute name="NAME" x="284.226" y="104.394" size="1.4224" layer="95" rot="R180"/>
 <attribute name="VALUE" x="284.226" y="108.966" size="1.4224" layer="96" rot="R180" align="top-left"/>
 </instance>
 <instance part="GND71" gate="GND" x="276.86" y="101.6" smashed="yes">
 <attribute name="VALUE" x="274.066" y="96.52" size="1.778" layer="96"/>
+</instance>
+<instance part="U$10" gate="G$1" x="330.2" y="129.54" smashed="yes">
+<attribute name="VALUE" x="328.93" y="132.08" size="1.27" layer="96" align="top-left"/>
+</instance>
+<instance part="P2" gate="G$1" x="284.48" y="127" smashed="yes">
+<attribute name="VALUE" x="279.4" y="132.08" size="1.778" layer="96"/>
+<attribute name="NAME" x="279.4" y="121.92" size="1.778" layer="95"/>
+</instance>
+<instance part="F1" gate="G$1" x="307.34" y="129.54" smashed="yes">
+<attribute name="NAME" x="307.34" y="132.08" size="1.778" layer="95" align="bottom-center"/>
+<attribute name="VALUE" x="309.88" y="124.46" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 </instances>
 <busses>
@@ -32800,8 +32670,8 @@ Details see: &lt;a href="https://katalog.we-online.com/en/em/DC_RIGHT_ANGLED_6_4
 <wire x1="292.1" y1="127" x2="297.18" y2="127" width="0.762" layer="91"/>
 <wire x1="297.18" y1="127" x2="297.18" y2="124.46" width="0.762" layer="91"/>
 <junction x="297.18" y="124.46"/>
-<pinref part="J1" gate="G$1" pin="2"/>
-<pinref part="J1" gate="G$1" pin="3"/>
+<pinref part="P2" gate="G$1" pin="GNDBREAK"/>
+<pinref part="P2" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <wire x1="337.9216" y1="116.84" x2="335.28" y2="116.84" width="0.762" layer="91"/>
@@ -34073,34 +33943,8 @@ Details see: &lt;a href="https://katalog.we-online.com/en/em/DC_RIGHT_ANGLED_6_4
 <pinref part="U$12" gate="G$1" pin="CATHODE"/>
 <wire x1="363.22" y1="129.54" x2="353.06" y2="129.54" width="0.1524" layer="91"/>
 <junction x="353.06" y="129.54"/>
-<pinref part="S1" gate="G$1" pin="K"/>
-<wire x1="353.06" y1="129.54" x2="345.44" y2="129.54" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$42" class="0">
-<segment>
-<pinref part="P1" gate="G$1" pin="1"/>
-<wire x1="306.07" y1="129.54" x2="292.1" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$39" class="0">
-<segment>
-<pinref part="S1" gate="G$1" pin="A2"/>
-<wire x1="322.58" y1="127" x2="320.04" y2="127" width="0.1524" layer="91"/>
-<wire x1="320.04" y1="127" x2="320.04" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="S1" gate="G$1" pin="A1"/>
-<wire x1="320.04" y1="129.54" x2="320.04" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="320.04" y1="132.08" x2="322.58" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="P1" gate="G$1" pin="2"/>
-<wire x1="316.23" y1="129.54" x2="317.5" y2="129.54" width="0.1524" layer="91"/>
-<junction x="320.04" y="129.54"/>
-<wire x1="317.5" y1="129.54" x2="320.04" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="332.74" y1="134.62" x2="317.5" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="317.5" y1="134.62" x2="317.5" y2="129.54" width="0.1524" layer="91"/>
-<junction x="317.5" y="129.54"/>
-<pinref part="LED2" gate="G$1" pin="ANODE"/>
-<wire x1="332.74" y1="135.89" x2="332.74" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="U$10" gate="G$1" pin="CATHODE"/>
+<wire x1="335.28" y1="129.54" x2="353.06" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$46" class="0">
@@ -34328,11 +34172,43 @@ Details see: &lt;a href="https://katalog.we-online.com/en/em/DC_RIGHT_ANGLED_6_4
 </net>
 <net name="N$37" class="0">
 <segment>
-<pinref part="LED2" gate="G$1" pin="CATHODE"/>
 <pinref part="LED1" gate="G$1" pin="ANODE"/>
-<wire x1="332.74" y1="143.51" x2="332.74" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="316.23" y1="129.54" x2="317.5" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="332.74" y1="134.62" x2="317.5" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="317.5" y1="134.62" x2="317.5" y2="129.54" width="0.1524" layer="91"/>
+<junction x="317.5" y="129.54"/>
+<wire x1="332.74" y1="144.78" x2="332.74" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="U$10" gate="G$1" pin="ANODE"/>
+<wire x1="327.66" y1="129.54" x2="317.5" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="F1" gate="G$1" pin="2"/>
+<wire x1="312.42" y1="129.54" x2="317.5" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="N$49" class="0">
+<segment>
+<pinref part="F1" gate="G$1" pin="1"/>
+<pinref part="P2" gate="G$1" pin="PWR"/>
+<wire x1="302.26" y1="129.54" x2="292.1" y2="129.54" width="0.1524" layer="91"/>
+</segment>
+</net>
+</nets>
+</sheet>
+<sheet>
+<plain>
+<text x="40.64" y="236.22" size="1.778" layer="94">Rev13 5Vから3.3V LDOに変更 DCプラグ2.5mm</text>
+<text x="40.64" y="228.6" size="1.778" layer="94">Rev14 2021/6/25 バリアショットキーダイオードの変更　入力電圧を5.9V　DCプラグ変更 EIAJ2</text>
+<text x="40.64" y="243.84" size="1.778" layer="94">Rev12　基板拡大、アダプタを追加、SPI、I2Sポート追加 5V LDOを追加　レベル変換UART追加</text>
+</plain>
+<instances>
+<instance part="U$13" gate="G$1" x="0" y="0" smashed="yes">
+<attribute name="DRAWING_NAME" x="299.72" y="24.13" size="2.54" layer="94"/>
+<attribute name="LAST_DATE_TIME" x="297.18" y="20.32" size="1.778" layer="94" align="center-left"/>
+<attribute name="SHEET" x="350.52" y="20.32" size="1.778" layer="94" align="center-left"/>
+</instance>
+</instances>
+<busses>
+</busses>
+<nets>
 </nets>
 </sheet>
 </sheets>
