@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.0">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -36578,7 +36578,7 @@ Level Translators&lt;br&gt;
 <sheets>
 <sheet>
 <plain>
-<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.8</text>
+<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.9</text>
 <text x="132.08" y="162.56" size="1.778" layer="94">VOUT</text>
 <text x="40.64" y="93.98" size="1.778" layer="94">0.35A</text>
 <text x="5.08" y="127" size="1.778" layer="94">ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
