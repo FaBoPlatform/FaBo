@@ -194,6 +194,7 @@
 <wire x1="11.35" y1="27.25" x2="11.35" y2="26.9" width="0.1524" layer="41"/>
 <wire x1="16.55" y1="27.35" x2="16.55" y2="26.85" width="0.1524" layer="41"/>
 <wire x1="16.55" y1="26.85" x2="16.5" y2="26.8" width="0.1524" layer="41"/>
+<wire x1="15.2" y1="23.15" x2="15.2" y2="22.35" width="0.1524" layer="41"/>
 </plain>
 <libraries>
 <library name="FaBo-Capacitor">
@@ -3924,9 +3925,9 @@ design rules under a new name.</description>
 <wire x1="14.4" y1="23.7" x2="14.3" y2="23.6" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$20">
-<wire x1="15.1" y1="23.35" x2="15.1" y2="23.6" width="0.1524" layer="1"/>
-<wire x1="15.1" y1="23.45" x2="15.15" y2="23.5" width="0.1524" layer="1"/>
-<wire x1="15.1" y1="23.45" x2="15.1" y2="23.35" width="0" layer="19" extent="1-1"/>
+<wire x1="15.15" y1="23.35" x2="15.15" y2="23.6" width="0.1524" layer="1"/>
+<wire x1="15.15" y1="23.45" x2="15.2" y2="23.5" width="0.1524" layer="1"/>
+<wire x1="15.15" y1="23.45" x2="15.15" y2="23.35" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$13">
 <wire x1="12.5" y1="25.5" x2="13.05" y2="26.05" width="0.1524" layer="1"/>
