@@ -787,110 +787,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="FaBo-Mems">
-<description>&lt;h3&gt;FaBo MEMS&lt;/h3&gt;
-MEMS&lt;br&gt;
-&lt;br&gt;
-Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;br&gt;
-https://creativecommons.org/licenses/by-sa/4.0/</description>
-<packages>
-<package name="MAXIM-MAX98357">
-<smd name="14" x="-1.54" y="0.25" dx="1" dy="0.27" layer="1"/>
-<smd name="15" x="-1.54" y="-0.25" dx="1" dy="0.27" layer="1"/>
-<smd name="7" x="1.54" y="0.25" dx="1" dy="0.27" layer="1"/>
-<smd name="6" x="1.54" y="-0.25" dx="1" dy="0.27" layer="1"/>
-<smd name="2" x="-0.25" y="-1.54" dx="1" dy="0.27" layer="1" rot="R90"/>
-<smd name="3" x="0.25" y="-1.54" dx="1" dy="0.27" layer="1" rot="R90"/>
-<smd name="11" x="-0.25" y="1.54" dx="1" dy="0.27" layer="1" rot="R90"/>
-<smd name="10" x="0.25" y="1.54" dx="1" dy="0.27" layer="1" rot="R90"/>
-<wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.127" layer="21"/>
-<wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.127" layer="21"/>
-<wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.127" layer="21"/>
-<wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
-<rectangle x1="-1.55" y1="-1.52" x2="-0.05" y2="-0.02" layer="21"/>
-<rectangle x1="-0.54" y1="0.1" x2="-0.09" y2="0.55" layer="31"/>
-<rectangle x1="0.09" y1="-0.54" x2="0.54" y2="-0.09" layer="31"/>
-<rectangle x1="0.09" y1="0.1" x2="0.54" y2="0.55" layer="31"/>
-<polygon width="0.0762" layer="31">
-<vertex x="-0.517015625" y="-0.10279375"/>
-<vertex x="-0.12" y="-0.11"/>
-<vertex x="-0.12" y="-0.49"/>
-<vertex x="-0.238571875" y="-0.4986375"/>
-<vertex x="-0.52" y="-0.24"/>
-</polygon>
-<smd name="1" x="-0.7" y="-1.54" dx="1" dy="0.27" layer="1" rot="R90"/>
-<smd name="4" x="0.7" y="-1.54" dx="1" dy="0.27" layer="1" rot="R90"/>
-<smd name="5" x="1.54" y="-0.7" dx="1" dy="0.27" layer="1"/>
-<smd name="8" x="1.54" y="0.7" dx="1" dy="0.27" layer="1"/>
-<smd name="9" x="0.7" y="1.54" dx="1" dy="0.27" layer="1" rot="R90"/>
-<smd name="12" x="-0.7" y="1.54" dx="1" dy="0.27" layer="1" rot="R90"/>
-<smd name="13" x="-1.54" y="0.7" dx="1" dy="0.27" layer="1"/>
-<smd name="16" x="-1.54" y="-0.7" dx="1" dy="0.27" layer="1"/>
-<text x="-1.5" y="2.2" size="0.6096" layer="21">&gt;NAME</text>
-<smd name="EP" x="0.0052" y="0.02028125" dx="1.143" dy="1.143" layer="1"/>
-</package>
-</packages>
-<symbols>
-<symbol name="MAXIM-MAX98357">
-<pin name="LRCLK" x="-15.24" y="12.7" length="middle"/>
-<pin name="BCLK" x="-15.24" y="10.16" length="middle"/>
-<pin name="DIN" x="-15.24" y="7.62" length="middle"/>
-<pin name="VDD@8" x="2.54" y="27.94" length="middle" rot="R270"/>
-<pin name="VDD@7" x="0" y="27.94" length="middle" rot="R270"/>
-<pin name="NC@5" x="22.86" y="7.62" length="middle" rot="R180"/>
-<pin name="NC@6" x="22.86" y="5.08" length="middle" rot="R180"/>
-<pin name="NC@12" x="22.86" y="2.54" length="middle" rot="R180"/>
-<pin name="NC@13" x="22.86" y="0" length="middle" rot="R180"/>
-<pin name="GND@3" x="5.08" y="-17.78" length="middle" rot="R90"/>
-<pin name="GND@11" x="7.62" y="-17.78" length="middle" rot="R90"/>
-<pin name="GAIN" x="5.08" y="27.94" length="middle" rot="R270"/>
-<pin name="SD_MODE" x="-15.24" y="0" length="middle"/>
-<pin name="OUTP" x="22.86" y="15.24" length="middle" rot="R180"/>
-<pin name="OUTN" x="22.86" y="12.7" length="middle" rot="R180"/>
-<wire x1="-10.16" y1="22.86" x2="17.78" y2="22.86" width="0.254" layer="94"/>
-<wire x1="17.78" y1="22.86" x2="17.78" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="17.78" y1="-12.7" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-12.7" x2="-10.16" y2="22.86" width="0.254" layer="94"/>
-<text x="-9.906" y="23.622" size="1.27" layer="95">&gt;NAME</text>
-<text x="-7.874" y="-10.414" size="1.27" layer="94">MAX98357</text>
-<pin name="GND@15" x="10.16" y="-17.78" length="middle" rot="R90"/>
-<pin name="EP" x="22.86" y="-2.54" length="middle" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="MA-MAX98357" prefix="MAX">
-<gates>
-<gate name="G$1" symbol="MAXIM-MAX98357" x="-2.54" y="-5.08"/>
-</gates>
-<devices>
-<device name="" package="MAXIM-MAX98357">
-<connects>
-<connect gate="G$1" pin="BCLK" pad="16"/>
-<connect gate="G$1" pin="DIN" pad="1"/>
-<connect gate="G$1" pin="EP" pad="EP"/>
-<connect gate="G$1" pin="GAIN" pad="2"/>
-<connect gate="G$1" pin="GND@11" pad="11"/>
-<connect gate="G$1" pin="GND@15" pad="15"/>
-<connect gate="G$1" pin="GND@3" pad="3"/>
-<connect gate="G$1" pin="LRCLK" pad="14"/>
-<connect gate="G$1" pin="NC@12" pad="12"/>
-<connect gate="G$1" pin="NC@13" pad="13"/>
-<connect gate="G$1" pin="NC@5" pad="5"/>
-<connect gate="G$1" pin="NC@6" pad="6"/>
-<connect gate="G$1" pin="OUTN" pad="10"/>
-<connect gate="G$1" pin="OUTP" pad="9"/>
-<connect gate="G$1" pin="SD_MODE" pad="4"/>
-<connect gate="G$1" pin="VDD@7" pad="7"/>
-<connect gate="G$1" pin="VDD@8" pad="8"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="FaBo-Terminal">
 <packages>
 <package name="ML-1400-S1">
@@ -26359,6 +26255,97 @@ by exp-lbrs.ulp</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="FaBo-AudioIC">
+<description>&lt;h3&gt;FaBo Libraries&lt;/h3&gt;
+
+&lt;p&gt;Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/"&gt;https://creativecommons.org/licenses/by-sa/4.0/&lt;/a&gt;&lt;/p&gt;</description>
+<packages>
+<package name="TQFN(16L3*3*0.75)">
+<smd name="1" x="-0.75" y="-1.5" dx="0.8" dy="0.28" layer="1" roundness="20" rot="R270"/>
+<smd name="2" x="-0.25" y="-1.5" dx="0.8" dy="0.28" layer="1" roundness="20" rot="R270"/>
+<smd name="3" x="0.25" y="-1.5" dx="0.8" dy="0.28" layer="1" roundness="20" rot="R270"/>
+<smd name="4" x="0.75" y="-1.5" dx="0.8" dy="0.28" layer="1" roundness="20" rot="R270"/>
+<smd name="5" x="1.5" y="-0.75" dx="0.8" dy="0.28" layer="1" roundness="20"/>
+<smd name="6" x="1.5" y="-0.25" dx="0.8" dy="0.28" layer="1" roundness="20"/>
+<smd name="7" x="1.5" y="0.25" dx="0.8" dy="0.28" layer="1" roundness="20"/>
+<smd name="8" x="1.5" y="0.75" dx="0.8" dy="0.28" layer="1" roundness="20"/>
+<smd name="9" x="0.75" y="1.5" dx="0.8" dy="0.28" layer="1" roundness="20" rot="R270"/>
+<smd name="10" x="0.25" y="1.5" dx="0.8" dy="0.28" layer="1" roundness="20" rot="R270"/>
+<smd name="11" x="-0.25" y="1.5" dx="0.8" dy="0.28" layer="1" roundness="20" rot="R270"/>
+<smd name="12" x="-0.75" y="1.5" dx="0.8" dy="0.28" layer="1" roundness="20" rot="R270"/>
+<smd name="13" x="-1.5" y="0.75" dx="0.8" dy="0.28" layer="1" roundness="20"/>
+<smd name="14" x="-1.5" y="0.25" dx="0.8" dy="0.28" layer="1" roundness="20"/>
+<smd name="15" x="-1.5" y="-0.25" dx="0.8" dy="0.28" layer="1" roundness="20"/>
+<smd name="16" x="-1.5" y="-0.75" dx="0.8" dy="0.28" layer="1" roundness="20"/>
+<wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.1524" layer="21"/>
+<wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.1524" layer="21"/>
+<wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.1524" layer="21"/>
+<wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.1524" layer="21"/>
+<smd name="17" x="0" y="0" dx="1.1" dy="1.1" layer="1" roundness="20"/>
+<circle x="-1.9" y="-1.7" radius="0.1" width="0.1524" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="MAX98357A,B">
+<pin name="1:DIN" x="-17.78" y="10.16" length="middle"/>
+<pin name="2:GAIN" x="2.54" y="33.02" length="middle" rot="R270"/>
+<pin name="3:GND" x="2.54" y="-20.32" length="middle" rot="R90"/>
+<pin name="4:SD_MODE" x="-17.78" y="0" length="middle"/>
+<pin name="5:NC" x="22.86" y="7.62" length="middle" direction="nc" rot="R180"/>
+<pin name="6:NC" x="22.86" y="5.08" length="middle" direction="nc" rot="R180"/>
+<pin name="7:VDD" x="-2.54" y="33.02" length="middle" rot="R270"/>
+<pin name="8:VDD" x="0" y="33.02" length="middle" rot="R270"/>
+<pin name="9:OUTP" x="22.86" y="22.86" length="middle" rot="R180"/>
+<pin name="10:OUTN" x="22.86" y="20.32" length="middle" rot="R180"/>
+<pin name="11:GND" x="5.08" y="-20.32" length="middle" rot="R90"/>
+<pin name="12:NC" x="22.86" y="2.54" length="middle" direction="nc" rot="R180"/>
+<pin name="13:NC" x="22.86" y="0" length="middle" direction="nc" rot="R180"/>
+<pin name="14:LRCLK" x="-17.78" y="15.24" length="middle"/>
+<pin name="15:GND" x="7.62" y="-20.32" length="middle" rot="R90"/>
+<pin name="16:BLCK" x="-17.78" y="12.7" length="middle"/>
+<wire x1="-12.7" y1="-15.24" x2="-12.7" y2="27.94" width="0.1524" layer="94"/>
+<wire x1="-12.7" y1="27.94" x2="17.78" y2="27.94" width="0.1524" layer="94"/>
+<wire x1="17.78" y1="27.94" x2="17.78" y2="-15.24" width="0.1524" layer="94"/>
+<wire x1="17.78" y1="-15.24" x2="-12.7" y2="-15.24" width="0.1524" layer="94"/>
+<pin name="EP" x="22.86" y="-2.54" length="middle" rot="R180"/>
+<text x="-2.54" y="5.08" size="1.778" layer="94">MAX98357</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MAX98357A,B">
+<gates>
+<gate name="G$1" symbol="MAX98357A,B" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TQFN(16L3*3*0.75)">
+<connects>
+<connect gate="G$1" pin="10:OUTN" pad="10"/>
+<connect gate="G$1" pin="11:GND" pad="11"/>
+<connect gate="G$1" pin="12:NC" pad="12"/>
+<connect gate="G$1" pin="13:NC" pad="13"/>
+<connect gate="G$1" pin="14:LRCLK" pad="14"/>
+<connect gate="G$1" pin="15:GND" pad="15"/>
+<connect gate="G$1" pin="16:BLCK" pad="16"/>
+<connect gate="G$1" pin="1:DIN" pad="1"/>
+<connect gate="G$1" pin="2:GAIN" pad="2"/>
+<connect gate="G$1" pin="3:GND" pad="3"/>
+<connect gate="G$1" pin="4:SD_MODE" pad="4"/>
+<connect gate="G$1" pin="5:NC" pad="5"/>
+<connect gate="G$1" pin="6:NC" pad="6"/>
+<connect gate="G$1" pin="7:VDD" pad="7"/>
+<connect gate="G$1" pin="8:VDD" pad="8"/>
+<connect gate="G$1" pin="9:OUTP" pad="9"/>
+<connect gate="G$1" pin="EP" pad="17"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -26384,7 +26371,6 @@ by exp-lbrs.ulp</description>
 <part name="GND4" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="GND6" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="I2S" library="FaBo-Template" deviceset="FABO_BRICK_I2S" device=""/>
-<part name="MAX1" library="FaBo-Mems" deviceset="MA-MAX98357" device=""/>
 <part name="GND8" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="U$4" library="FaBo-Terminal" deviceset="ML-1400-S1" device=""/>
 <part name="U$3" library="component" deviceset="LOGO_OSHW" device="-M_BOTTOM"/>
@@ -26420,6 +26406,7 @@ by exp-lbrs.ulp</description>
 <part name="C9" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="DNP"/>
 <part name="GND14" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="GND15" library="FaBo-Supply" deviceset="GND" device=""/>
+<part name="U$2" library="FaBo-AudioIC" deviceset="MAX98357A,B" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -26431,8 +26418,8 @@ by exp-lbrs.ulp</description>
 <text x="218.44" y="66.04" size="1.778" layer="94">AVRF060X100LT242</text>
 <text x="248.92" y="119.38" size="1.778" layer="94">+</text>
 <text x="248.92" y="104.14" size="1.778" layer="94">-</text>
-<text x="137.16" y="149.86" size="1.778" layer="94">-6dB</text>
-<text x="147.32" y="149.86" size="1.778" layer="94">-12dB</text>
+<text x="137.16" y="149.86" size="1.778" layer="94">6dB</text>
+<text x="147.32" y="149.86" size="1.778" layer="94">12dB</text>
 <text x="149.86" y="142.24" size="1.778" layer="94">Open 9dB</text>
 <text x="66.04" y="147.32" size="1.778" layer="94">LEFT</text>
 <text x="88.9" y="147.32" size="1.778" layer="94">RIGHT</text>
@@ -26489,9 +26476,6 @@ by exp-lbrs.ulp</description>
 </instance>
 <instance part="I2S" gate="G$1" x="25.4" y="137.16" smashed="yes">
 <attribute name="NAME" x="20.32" y="150.368" size="1.778" layer="95"/>
-</instance>
-<instance part="MAX1" gate="G$1" x="139.7" y="96.52" smashed="yes">
-<attribute name="NAME" x="129.794" y="120.142" size="1.27" layer="95"/>
 </instance>
 <instance part="GND8" gate="G$1" x="175.26" y="48.26" smashed="yes">
 <attribute name="VALUE" x="172.466" y="43.18" size="1.778" layer="96"/>
@@ -26605,6 +26589,7 @@ by exp-lbrs.ulp</description>
 <instance part="GND15" gate="G$1" x="215.9" y="137.16" smashed="yes">
 <attribute name="VALUE" x="213.106" y="132.08" size="1.778" layer="96"/>
 </instance>
+<instance part="U$2" gate="G$1" x="142.24" y="93.98" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -26626,10 +26611,8 @@ by exp-lbrs.ulp</description>
 </segment>
 <segment>
 <wire x1="139.7" y1="132.08" x2="142.24" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="MAX1" gate="G$1" pin="VDD@8"/>
-<wire x1="142.24" y1="132.08" x2="142.24" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="MAX1" gate="G$1" pin="VDD@7"/>
-<wire x1="139.7" y1="124.46" x2="139.7" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="132.08" x2="142.24" y2="127" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="127" x2="139.7" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="3V2" gate="G$1" pin="3V3"/>
 <wire x1="139.7" y1="132.08" x2="124.46" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="132.08" x2="111.76" y2="132.08" width="0.1524" layer="91"/>
@@ -26641,6 +26624,8 @@ by exp-lbrs.ulp</description>
 <junction x="111.76" y="132.08"/>
 <junction x="124.46" y="132.08"/>
 <junction x="139.7" y="132.08"/>
+<pinref part="U$2" gate="G$1" pin="7:VDD"/>
+<pinref part="U$2" gate="G$1" pin="8:VDD"/>
 </segment>
 <segment>
 <pinref part="GAIN" gate="G$1" pin="1"/>
@@ -26693,39 +26678,23 @@ by exp-lbrs.ulp</description>
 <pinref part="GND6" gate="G$1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="MAX1" gate="G$1" pin="GND@3"/>
-<wire x1="144.78" y1="78.74" x2="144.78" y2="76.2" width="0.762" layer="91"/>
-<pinref part="MAX1" gate="G$1" pin="GND@15"/>
-<wire x1="144.78" y1="76.2" x2="147.32" y2="76.2" width="0.762" layer="91"/>
-<wire x1="147.32" y1="76.2" x2="149.86" y2="76.2" width="0.762" layer="91"/>
-<wire x1="149.86" y1="76.2" x2="149.86" y2="78.74" width="0.762" layer="91"/>
-<pinref part="MAX1" gate="G$1" pin="GND@11"/>
-<wire x1="147.32" y1="78.74" x2="147.32" y2="76.2" width="0.762" layer="91"/>
 <pinref part="GND2" gate="G$1" pin="GND"/>
-<wire x1="147.32" y1="48.26" x2="147.32" y2="76.2" width="0.762" layer="91"/>
-<junction x="147.32" y="76.2"/>
+<wire x1="147.32" y1="48.26" x2="147.32" y2="71.12" width="0.762" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="11:GND"/>
+<pinref part="U$2" gate="G$1" pin="3:GND"/>
+<wire x1="147.32" y1="71.12" x2="147.32" y2="73.66" width="0.762" layer="91"/>
+<wire x1="144.78" y1="73.66" x2="144.78" y2="71.12" width="0.762" layer="91"/>
+<wire x1="144.78" y1="71.12" x2="147.32" y2="71.12" width="0.762" layer="91"/>
+<junction x="147.32" y="71.12"/>
+<pinref part="U$2" gate="G$1" pin="15:GND"/>
+<wire x1="149.86" y1="73.66" x2="149.86" y2="71.12" width="0.762" layer="91"/>
+<wire x1="149.86" y1="71.12" x2="147.32" y2="71.12" width="0.762" layer="91"/>
 </segment>
 <segment>
-<pinref part="MAX1" gate="G$1" pin="NC@5"/>
-<wire x1="162.56" y1="104.14" x2="175.26" y2="104.14" width="0.762" layer="91"/>
-<wire x1="175.26" y1="104.14" x2="175.26" y2="101.6" width="0.762" layer="91"/>
-<pinref part="MAX1" gate="G$1" pin="NC@6"/>
-<wire x1="175.26" y1="101.6" x2="175.26" y2="99.06" width="0.762" layer="91"/>
-<wire x1="175.26" y1="99.06" x2="175.26" y2="96.52" width="0.762" layer="91"/>
-<wire x1="175.26" y1="96.52" x2="175.26" y2="93.98" width="0.762" layer="91"/>
-<wire x1="175.26" y1="93.98" x2="175.26" y2="48.26" width="0.762" layer="91"/>
-<wire x1="162.56" y1="101.6" x2="175.26" y2="101.6" width="0.762" layer="91"/>
-<pinref part="MAX1" gate="G$1" pin="NC@12"/>
-<wire x1="162.56" y1="99.06" x2="175.26" y2="99.06" width="0.762" layer="91"/>
-<pinref part="MAX1" gate="G$1" pin="NC@13"/>
-<wire x1="162.56" y1="96.52" x2="175.26" y2="96.52" width="0.762" layer="91"/>
-<pinref part="MAX1" gate="G$1" pin="EP"/>
-<wire x1="162.56" y1="93.98" x2="175.26" y2="93.98" width="0.762" layer="91"/>
+<wire x1="175.26" y1="91.44" x2="175.26" y2="48.26" width="0.762" layer="91"/>
 <pinref part="GND8" gate="G$1" pin="GND"/>
-<junction x="175.26" y="101.6"/>
-<junction x="175.26" y="99.06"/>
-<junction x="175.26" y="96.52"/>
-<junction x="175.26" y="93.98"/>
+<pinref part="U$2" gate="G$1" pin="EP"/>
+<wire x1="165.1" y1="91.44" x2="175.26" y2="91.44" width="0.762" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND7" gate="G$1" pin="GND"/>
@@ -26799,9 +26768,9 @@ by exp-lbrs.ulp</description>
 <pinref part="I2S" gate="G$1" pin="WS"/>
 </segment>
 <segment>
-<pinref part="MAX1" gate="G$1" pin="LRCLK"/>
 <wire x1="124.46" y1="109.22" x2="109.22" y2="109.22" width="0.1524" layer="91"/>
 <label x="109.22" y="109.22" size="1.778" layer="95"/>
+<pinref part="U$2" gate="G$1" pin="14:LRCLK"/>
 </segment>
 </net>
 <net name="BCLK" class="0">
@@ -26811,9 +26780,9 @@ by exp-lbrs.ulp</description>
 <pinref part="I2S" gate="G$1" pin="BCLK"/>
 </segment>
 <segment>
-<pinref part="MAX1" gate="G$1" pin="BCLK"/>
 <wire x1="124.46" y1="106.68" x2="109.22" y2="106.68" width="0.1524" layer="91"/>
 <label x="109.22" y="106.68" size="1.778" layer="95"/>
+<pinref part="U$2" gate="G$1" pin="16:BLCK"/>
 </segment>
 </net>
 <net name="DATA" class="0">
@@ -26823,42 +26792,35 @@ by exp-lbrs.ulp</description>
 <pinref part="I2S" gate="G$1" pin="DATA"/>
 </segment>
 <segment>
-<pinref part="MAX1" gate="G$1" pin="DIN"/>
 <wire x1="124.46" y1="104.14" x2="109.22" y2="104.14" width="0.1524" layer="91"/>
 <label x="109.22" y="104.14" size="1.778" layer="95"/>
+<pinref part="U$2" gate="G$1" pin="1:DIN"/>
 </segment>
 </net>
 <net name="N$1" class="0">
 <segment>
 <pinref part="L2" gate="G$1" pin="3"/>
 <wire x1="182.88" y1="106.68" x2="172.72" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="106.68" x2="172.72" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="MAX1" gate="G$1" pin="OUTN"/>
-<wire x1="172.72" y1="109.22" x2="162.56" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="106.68" x2="172.72" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="114.3" x2="165.1" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="10:OUTN"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="MAX1" gate="G$1" pin="OUTP"/>
-<wire x1="162.56" y1="111.76" x2="172.72" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="111.76" x2="172.72" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="116.84" x2="172.72" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="116.84" x2="172.72" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="L1" gate="G$1" pin="3"/>
 <wire x1="172.72" y1="119.38" x2="182.88" y2="119.38" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="MAX1" gate="G$1" pin="GAIN"/>
-<wire x1="144.78" y1="124.46" x2="144.78" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="GAIN" gate="G$1" pin="2"/>
+<pinref part="U$2" gate="G$1" pin="9:OUTP"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="MAX1" gate="G$1" pin="SD_MODE"/>
 <pinref part="M/S" gate="G$1" pin="2"/>
-<wire x1="124.46" y1="96.52" x2="91.44" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="96.52" x2="91.44" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="93.98" x2="91.44" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="93.98" x2="91.44" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="4:SD_MODE"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -26955,6 +26917,13 @@ by exp-lbrs.ulp</description>
 <pinref part="C7" gate="G$1" pin="1"/>
 <pinref part="R5" gate="G$1" pin="1"/>
 <wire x1="238.76" y1="91.44" x2="238.76" y2="86.36" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="2:GAIN"/>
+<pinref part="GAIN" gate="G$1" pin="2"/>
+<wire x1="144.78" y1="127" x2="144.78" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
