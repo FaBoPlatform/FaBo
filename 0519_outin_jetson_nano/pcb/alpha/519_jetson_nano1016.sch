@@ -416,21 +416,16 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <text x="0" y="0.889" size="0.8128" layer="26" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
 <text x="0" y="0" size="0.8128" layer="28" font="vector" ratio="12" align="center">&gt;VALUE</text>
 </package>
-<package name="E7(PANA)">
-<circle x="0" y="0" radius="4" width="0.5" layer="21"/>
-<pad name="MINUS" x="1.75" y="0" drill="1.2" diameter="2.54" rot="R90"/>
-<pad name="PLUS" x="-1.75" y="0" drill="1.2" diameter="2.54" rot="R90"/>
-<polygon width="0.127" layer="21">
-<vertex x="4" y="0" curve="-90"/>
-<vertex x="0" y="-4"/>
-<vertex x="0" y="4"/>
+<package name="F13">
+<pad name="ANODE" x="-2.5" y="0" drill="0.9" diameter="1.9304"/>
+<pad name="CATHODE" x="2.5" y="0" drill="0.9" diameter="1.9304"/>
+<circle x="0" y="0" radius="5" width="0.1524" layer="21"/>
+<polygon width="0.1524" layer="21">
+<vertex x="0" y="0"/>
+<vertex x="0" y="5"/>
+<vertex x="0.2" y="5" curve="-180"/>
+<vertex x="0" y="-5"/>
 </polygon>
-<polygon width="0.127" layer="21">
-<vertex x="4" y="0" curve="90"/>
-<vertex x="0" y="4" curve="90"/>
-</polygon>
-<text x="-2.54" y="5.08" size="1.27" layer="21" font="vector" ratio="9">&gt;NAME</text>
-<text x="-2.54" y="-6.35" size="1.27" layer="21" font="vector" ratio="9">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -446,15 +441,15 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="-2.54" y1="0" x2="0.762" y2="0" width="0.1524" layer="94"/>
 <wire x1="5.08" y1="0" x2="1.778" y2="0" width="0.1524" layer="94"/>
 </symbol>
-<symbol name="CAPACITOR-OSCON">
+<symbol name="CAPACITOR-TANTULM">
 <pin name="-" x="-4.9784" y="0" visible="off" length="point" direction="pas"/>
 <pin name="+" x="5.1816" y="0" visible="off" length="point" direction="pas" rot="R180"/>
 <text x="2.1336" y="3.048" size="1.4224" layer="95" rot="R180">&gt;NAME</text>
 <text x="2.6416" y="-1.778" size="1.4224" layer="96" rot="R180">&gt;VALUE</text>
 <wire x1="0.3556" y1="1.524" x2="0.3556" y2="0" width="0.254" layer="94"/>
 <wire x1="0.3556" y1="0" x2="0.3556" y2="-1.524" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="0" x2="-0.4064" y2="0" width="0.254" layer="94"/>
-<wire x1="5.08" y1="0" x2="0.3556" y2="0" width="0.254" layer="94"/>
+<wire x1="-4.9784" y1="0" x2="-0.4064" y2="0" width="0.254" layer="94"/>
+<wire x1="5.1816" y1="0" x2="0.3556" y2="0" width="0.254" layer="94"/>
 <text x="1.8796" y="1.778" size="1.4224" layer="94" rot="R180">+</text>
 <wire x1="-1.1684" y1="1.524" x2="-1.1684" y2="-1.524" width="0.254" layer="94" curve="-116.565051"/>
 </symbol>
@@ -549,15 +544,19 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="OSCON">
+<deviceset name="CAPACITOR-OS-CON" prefix="A" uservalue="yes">
+<description>Panasonic
+16SEPF1000M
+16V 1000uF ESR 12
+Size F13</description>
 <gates>
-<gate name="G$1" symbol="CAPACITOR-OSCON" x="0" y="0"/>
+<gate name="G$1" symbol="CAPACITOR-TANTULM" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="E7(PANA)">
+<device name="" package="F13">
 <connects>
-<connect gate="G$1" pin="+" pad="PLUS"/>
-<connect gate="G$1" pin="-" pad="MINUS"/>
+<connect gate="G$1" pin="+" pad="ANODE"/>
+<connect gate="G$1" pin="-" pad="CATHODE"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -30657,13 +30656,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R23" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="20K"/>
 <part name="R24" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="1M"/>
 <part name="C7" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="0.1uF"/>
-<part name="C10" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="0.1uF"/>
 <part name="C11" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="1uF"/>
 <part name="C16" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="0.01uF"/>
 <part name="C17" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="4.7uF"/>
 <part name="R4" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="4.7K"/>
 <part name="R10" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="9.1K"/>
-<part name="R18" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="NC"/>
+<part name="R18" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="0"/>
 <part name="R19" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="390K"/>
 <part name="R20" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="4.7K"/>
 <part name="R25" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="100"/>
@@ -30681,7 +30679,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="A1" library="FaBo-Template" deviceset="FABO_BRICK_3PIN" device="-B03B-PASK-1"/>
 <part name="A2" library="FaBo-Template" deviceset="FABO_BRICK_3PIN" device="-B03B-PASK-1"/>
 <part name="A3" library="FaBo-Template" deviceset="FABO_BRICK_3PIN" device="-B03B-PASK-1"/>
-<part name="C100" library="FaBo-Capacitor" deviceset="OSCON" device=""/>
 <part name="C12" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="0.1uF"/>
 <part name="SPI1" library="FaBo-Connetor" deviceset="FABO-SPI-7PIN" device=""/>
 <part name="I2S0" library="FaBo-Connetor" deviceset="FABO-I2S-7PIN" device=""/>
@@ -30748,6 +30745,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R28" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="0"/>
 <part name="JP6" library="SparkFun-Jumpers" library_urn="urn:adsk.eagle:library:528" deviceset="JUMPER-SMT_2_NC_PASTE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39282/1"/>
 <part name="C19" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0402" value="0.1uF/0402"/>
+<part name="C100" library="FaBo-Capacitor" deviceset="CAPACITOR-OS-CON" device="" value="16SEPF1000M,1000uF/16V/Size_F13"/>
+<part name="C10" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0402" value="0.1uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -30835,7 +30834,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="156.21" y="132.08" size="1.778" layer="94">SPI_SCK</text>
 <text x="212.09" y="52.07" size="1.27" layer="97">POWER OUTLET ONLY</text>
 <text x="246.38" y="19.05" size="1.27" layer="97">※電源の入力はしないでください。(出力のみ)</text>
-<text x="641.35" y="186.69" size="1.524" layer="97">1000uF</text>
+<text x="635" y="184.15" size="1.524" layer="97">1000uF</text>
 <wire x1="322.58" y1="87.63" x2="323.85" y2="87.63" width="0.1524" layer="94"/>
 <wire x1="361.95" y1="87.63" x2="363.22" y2="87.63" width="0.1524" layer="94"/>
 <wire x1="326.39" y1="73.66" x2="325.12" y2="72.39" width="0.1524" layer="94"/>
@@ -31322,10 +31321,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="NAME" x="92.964" y="230.886" size="1.4224" layer="95"/>
 <attribute name="VALUE" x="92.964" y="226.314" size="1.4224" layer="96" align="top-left"/>
 </instance>
-<instance part="C10" gate="G$1" x="137.16" y="203.2" smashed="yes">
-<attribute name="NAME" x="134.874" y="205.486" size="1.4224" layer="95"/>
-<attribute name="VALUE" x="134.874" y="200.914" size="1.4224" layer="96" align="top-left"/>
-</instance>
 <instance part="C11" gate="G$1" x="104.14" y="375.92" smashed="yes" rot="R90">
 <attribute name="NAME" x="101.854" y="373.634" size="1.4224" layer="95" rot="R90"/>
 <attribute name="VALUE" x="106.426" y="373.634" size="1.4224" layer="96" rot="R90" align="top-left"/>
@@ -31411,10 +31406,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </instance>
 <instance part="A3" gate="G$1" x="41.91" y="17.78" smashed="yes" rot="R90">
 <attribute name="NAME" x="33.782" y="12.7" size="1.778" layer="95" rot="R90"/>
-</instance>
-<instance part="C100" gate="G$1" x="638.81" y="186.69" smashed="yes">
-<attribute name="NAME" x="640.9436" y="189.738" size="1.4224" layer="95" rot="R180"/>
-<attribute name="VALUE" x="641.4516" y="184.912" size="1.4224" layer="96" rot="R180"/>
 </instance>
 <instance part="C12" gate="G$1" x="641.35" y="179.07" smashed="yes" rot="R180">
 <attribute name="NAME" x="643.636" y="176.784" size="1.4224" layer="95" rot="R180"/>
@@ -31646,6 +31637,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="C19" gate="G$1" x="241.3" y="39.37" smashed="yes" rot="R90">
 <attribute name="NAME" x="239.014" y="37.084" size="1.4224" layer="95" rot="R90"/>
 <attribute name="VALUE" x="243.586" y="37.084" size="1.4224" layer="96" rot="R90" align="top-left"/>
+</instance>
+<instance part="C100" gate="G$1" x="638.81" y="186.69" smashed="yes">
+<attribute name="NAME" x="640.9436" y="189.738" size="1.4224" layer="95" rot="R180"/>
+<attribute name="VALUE" x="643.9916" y="192.532" size="1.4224" layer="96" rot="R180"/>
+</instance>
+<instance part="C10" gate="G$1" x="139.7" y="203.2" smashed="yes" rot="R180">
+<attribute name="NAME" x="141.986" y="200.914" size="1.4224" layer="95" rot="R180"/>
+<attribute name="VALUE" x="141.986" y="205.486" size="1.4224" layer="96" rot="R180" align="top-left"/>
 </instance>
 </instances>
 <busses>
@@ -31933,7 +31932,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="GND45" gate="GND" pin="GND"/>
 <wire x1="142.24" y1="203.2" x2="152.4" y2="203.2" width="0.762" layer="91"/>
-<pinref part="C10" gate="G$1" pin="2"/>
+<pinref part="C10" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="GND48" gate="GND" pin="GND"/>
@@ -31981,11 +31980,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="633.8316" y1="186.69" x2="631.19" y2="186.69" width="0.762" layer="91"/>
 <pinref part="GND57" gate="G$1" pin="GND"/>
 <wire x1="631.19" y1="186.69" x2="631.19" y2="179.07" width="0.762" layer="91"/>
-<pinref part="C100" gate="G$1" pin="-"/>
 <pinref part="C12" gate="G$1" pin="2"/>
 <wire x1="631.19" y1="179.07" x2="631.19" y2="171.45" width="0.762" layer="91"/>
 <wire x1="636.27" y1="179.07" x2="631.19" y2="179.07" width="0.762" layer="91"/>
 <junction x="631.19" y="179.07"/>
+<pinref part="C100" gate="G$1" pin="-"/>
 </segment>
 <segment>
 <wire x1="312.42" y1="97.79" x2="327.66" y2="97.79" width="0.762" layer="91"/>
@@ -32307,11 +32306,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="483.87" y1="391.16" x2="506.73" y2="391.16" width="0.1524" layer="91"/>
 <label x="483.87" y="391.16" size="1.778" layer="95"/>
 <pinref part="U$2" gate="G$1" pin="GPIO22"/>
-</segment>
-<segment>
-<wire x1="200.66" y1="220.98" x2="222.25" y2="220.98" width="0.1524" layer="91"/>
-<pinref part="SPI1" gate="G$1" pin="4:NC"/>
-<label x="203.2" y="220.98" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="523.24" y1="185.42" x2="554.99" y2="185.42" width="0.1524" layer="91"/>
@@ -32745,7 +32739,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="137.16" y1="213.36" x2="132.08" y2="213.36" width="0.1524" layer="91"/>
 <junction x="132.08" y="213.36"/>
 <pinref part="U2" gate="G$1" pin="VCCB"/>
-<pinref part="C10" gate="G$1" pin="1"/>
+<pinref part="C10" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <wire x1="162.56" y1="152.4" x2="162.56" y2="147.32" width="0.1524" layer="91"/>
@@ -32786,7 +32780,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="648.97" y1="179.07" x2="648.97" y2="168.91" width="0.1524" layer="91"/>
 <wire x1="643.9916" y1="186.69" x2="648.97" y2="186.69" width="0.1524" layer="91"/>
 <junction x="648.97" y="186.69"/>
-<pinref part="C100" gate="G$1" pin="+"/>
 <pinref part="C12" gate="G$1" pin="1"/>
 <wire x1="643.89" y1="179.07" x2="648.97" y2="179.07" width="0.1524" layer="91"/>
 <junction x="648.97" y="179.07"/>
@@ -32806,6 +32799,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <junction x="648.97" y="90.17"/>
 <wire x1="648.97" y1="90.17" x2="648.97" y2="110.49" width="0.1524" layer="91"/>
 <junction x="648.97" y="110.49"/>
+<pinref part="C100" gate="G$1" pin="+"/>
 </segment>
 <segment>
 <wire x1="139.7" y1="166.37" x2="139.7" y2="163.83" width="0.1524" layer="91"/>
