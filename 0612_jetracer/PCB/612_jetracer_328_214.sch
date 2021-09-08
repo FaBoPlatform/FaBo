@@ -3822,8 +3822,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="3V16" library="FaBo-Supply" deviceset="3V3" device=""/>
 <part name="R17" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="47"/>
 <part name="R20" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="47"/>
-<part name="R4" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="10K"/>
-<part name="R6" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="10K"/>
+<part name="R4" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="1K"/>
+<part name="R6" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="1K"/>
 <part name="D3" library="Diode" library_urn="urn:adsk.eagle:library:16378169" deviceset="DIODE_" device="_SOD123G" package3d_urn="urn:adsk.eagle:package:9427058/2" technology="1N4148W-7-F" value="1N4148W"/>
 <part name="R27" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="4.7K"/>
 <part name="U$14" library="FaBo-LogicIC" deviceset="SN74LVC1G17" device=""/>
@@ -3844,8 +3844,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND6" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="GND8" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="GND9" library="FaBo-etc" deviceset="GND" device=""/>
-<part name="R15" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="10K"/>
-<part name="R21" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="10K"/>
+<part name="R15" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="1K"/>
+<part name="R21" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="1K"/>
 <part name="D2" library="Diode" library_urn="urn:adsk.eagle:library:16378169" deviceset="DIODE_" device="_SOD123G" package3d_urn="urn:adsk.eagle:package:9427058/2" technology="1N4148W-7-F" value="1N4148W"/>
 <part name="R24" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="4.7K"/>
 <part name="U$20" library="FaBo-LogicIC" deviceset="SN74LVC1G17" device=""/>
@@ -3856,8 +3856,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND19" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="GND20" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="GND26" library="FaBo-etc" deviceset="GND" device=""/>
-<part name="R26" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="10K"/>
-<part name="R30" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="10K"/>
+<part name="R26" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="1K"/>
+<part name="R30" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="1K"/>
 <part name="D4" library="Diode" library_urn="urn:adsk.eagle:library:16378169" deviceset="DIODE_" device="_SOD123G" package3d_urn="urn:adsk.eagle:package:9427058/2" technology="1N4148W-7-F" value="1N4148W"/>
 <part name="R31" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="4.7K"/>
 <part name="U$23" library="FaBo-LogicIC" deviceset="SN74LVC1G17" device=""/>
@@ -3918,7 +3918,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="171.45" y="419.1" size="3.81" layer="97">Jetson Nano</text>
 <text x="544.83" y="431.8" size="3.81" layer="97">PWM Controller</text>
 <text x="557.53" y="373.38" size="1.778" layer="97">Address 0x40</text>
-<text x="492.76" y="147.32" size="3.81" layer="97">MULTIPLEXERS</text>
+<text x="472.44" y="181.61" size="3.81" layer="97">MULTIPLEXERS</text>
 <text x="896.62" y="97.79" size="1.778" layer="91" rot="MR0">D11</text>
 <text x="896.62" y="95.25" size="1.778" layer="91" rot="MR0">D12</text>
 <text x="896.62" y="92.71" size="1.778" layer="91" rot="MR0">D13</text>
@@ -3946,6 +3946,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="789.94" y="242.57" size="6.4516" layer="97">SELECTOR</text>
 <text x="707.39" y="689.61" size="1.778" layer="94">SN74LVC1G17</text>
 <text x="1085.85" y="684.53" size="1.778" layer="94">SN74LVC1G17</text>
+<text x="830.58" y="472.44" size="6.4516" layer="94">2021/9/7 Rev 2.0.14 ボディ装着のため、基板レイアウト変更</text>
 </plain>
 <instances>
 <instance part="SUPPLY2" gate="5V" x="207.01" y="429.26" smashed="yes">
