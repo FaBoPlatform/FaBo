@@ -33579,7 +33579,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="134.62" y1="106.68" x2="134.62" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="JP5" gate="G$1" pin="1"/>
 <wire x1="134.62" y1="106.68" x2="137.16" y2="106.68" width="0.1524" layer="91"/>
-<label x="129.54" y="116.84" size="1.778" layer="95"/>
+<label x="129.54" y="118.11" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="AGND" class="0">
