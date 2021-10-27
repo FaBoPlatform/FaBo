@@ -3789,6 +3789,323 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
+<library name="FaBo-Switch">
+<description>&lt;h3&gt;FaBo Libraries&lt;/h3&gt;
+
+&lt;p&gt;Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/"&gt;https://creativecommons.org/licenses/by-sa/4.0/&lt;/a&gt;&lt;/p&gt;</description>
+<packages>
+<package name="1273HA-160G-G">
+<wire x1="-5.9" y1="5.9" x2="5.9" y2="5.9" width="0.1" layer="51"/>
+<wire x1="-5.9" y1="-5.9" x2="5.9" y2="-5.9" width="0.1" layer="51"/>
+<wire x1="-5.9" y1="-5.9" x2="-5.9" y2="5.9" width="0.1" layer="51"/>
+<wire x1="5.9" y1="-5.9" x2="5.9" y2="5.9" width="0.1" layer="51"/>
+<pad name="1" x="-6.25" y="2.5" drill="1.1" shape="long"/>
+<pad name="3" x="-6.25" y="-2.5" drill="1.1" shape="long"/>
+<pad name="2" x="6.25" y="2.5" drill="1.1" shape="long"/>
+<pad name="4" x="6.25" y="-2.5" drill="1.1" shape="long"/>
+<wire x1="-1.9" y1="1.9" x2="-1.9" y2="-1.9" width="0.1" layer="21"/>
+<wire x1="1.9" y1="1.9" x2="1.9" y2="-1.9" width="0.1" layer="21"/>
+<wire x1="-1.9" y1="1.9" x2="1.9" y2="1.9" width="0.1" layer="21"/>
+<wire x1="-1.9" y1="-1.9" x2="1.9" y2="-1.9" width="0.1" layer="21"/>
+<text x="0" y="6.35" size="0.8128" layer="25" font="vector" ratio="15" align="bottom-center">&gt;NAME</text>
+</package>
+<package name="DTS_6_V">
+<wire x1="-3.1" y1="-3.1" x2="3.1" y2="-3.1" width="0.1" layer="51"/>
+<circle x="0" y="0" radius="1.75" width="0.1" layer="21"/>
+<pad name="1" x="-3.25" y="2.25" drill="1" diameter="1.9304" shape="octagon"/>
+<pad name="3" x="-3.25" y="-2.25" drill="1" diameter="1.9304" shape="octagon"/>
+<pad name="2" x="3.25" y="2.25" drill="1" diameter="1.9304" shape="octagon"/>
+<pad name="4" x="3.25" y="-2.25" drill="1" diameter="1.9304" shape="octagon"/>
+<text x="0" y="4" size="0.8128" layer="25" font="vector" ratio="15" align="bottom-center">&gt;NAME</text>
+<wire x1="3.1" y1="3.1" x2="-3.1" y2="3.1" width="0.1" layer="51"/>
+<wire x1="3.1" y1="2.54" x2="-3.1" y2="2.54" width="0.1" layer="21"/>
+<wire x1="-3.1" y1="-2.54" x2="3.1" y2="-2.54" width="0.1" layer="21"/>
+</package>
+<package name="KMR2">
+<smd name="1" x="-2.05" y="0.8" dx="0.9" dy="1" layer="1" roundness="30"/>
+<smd name="4" x="-2.05" y="-0.8" dx="0.9" dy="1" layer="1" roundness="30"/>
+<smd name="3" x="2.05" y="-0.8" dx="0.9" dy="1" layer="1" roundness="30"/>
+<smd name="2" x="2.05" y="0.8" dx="0.9" dy="1" layer="1" roundness="30"/>
+<text x="0" y="2" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+<wire x1="-1.27" y1="0.8" x2="0" y2="0.8" width="0.1" layer="21"/>
+<wire x1="0" y1="0.8" x2="1.27" y2="0.8" width="0.1" layer="21"/>
+<wire x1="-1.27" y1="-0.8" x2="0" y2="-0.8" width="0.1" layer="21"/>
+<wire x1="0" y1="-0.8" x2="1.27" y2="-0.8" width="0.1" layer="21"/>
+<wire x1="0" y1="0.8" x2="0" y2="-0.8" width="0.1" layer="21"/>
+<wire x1="-2.3" y1="1.4" x2="2.3" y2="1.4" width="0.1" layer="51"/>
+<wire x1="2.3" y1="1.4" x2="2.3" y2="-1.4" width="0.1" layer="51"/>
+<wire x1="2.3" y1="-1.4" x2="-2.3" y2="-1.4" width="0.1" layer="51"/>
+<wire x1="-2.3" y1="-1.4" x2="-2.3" y2="1.4" width="0.1" layer="51"/>
+</package>
+<package name="TSHA-T-XB2-19E">
+<smd name="A" x="-3.8" y="2.25" dx="1.55" dy="1.1" layer="1" roundness="30"/>
+<smd name="B" x="3.8" y="2.25" dx="1.55" dy="1.1" layer="1" roundness="30"/>
+<smd name="D" x="3.8" y="-2.25" dx="1.55" dy="1.1" layer="1" roundness="30"/>
+<smd name="C" x="-3.8" y="-2.25" dx="1.55" dy="1.1" layer="1" roundness="30"/>
+<wire x1="-3.1" y1="3.1" x2="3.1" y2="3.1" width="0.127" layer="21"/>
+<wire x1="3.1" y1="3.1" x2="3.1" y2="-3.1" width="0.127" layer="21"/>
+<wire x1="3.1" y1="-3.1" x2="-3.1" y2="-3.1" width="0.127" layer="21"/>
+<wire x1="-3.1" y1="-3.1" x2="-3.1" y2="3.1" width="0.127" layer="21"/>
+<wire x1="2.54" y1="1.905" x2="0" y2="1.905" width="0.127" layer="21"/>
+<wire x1="0" y1="1.905" x2="-2.54" y2="1.905" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-1.905" x2="0" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="0" y1="-1.905" x2="2.54" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="0" y1="1.905" x2="0" y2="0.635" width="0.127" layer="21"/>
+<wire x1="0" y1="-1.905" x2="0" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="0" y1="-0.635" x2="0.635" y2="0.635" width="0.127" layer="21"/>
+<text x="0" y="3.75" size="0.8128" layer="25" font="vector" ratio="15" align="bottom-center">&gt;NAME</text>
+</package>
+<package name="TL3300CF160Q">
+<wire x1="5" y1="-1.3" x2="5" y2="-0.7" width="0.2032" layer="51"/>
+<wire x1="5" y1="-0.7" x2="4.5" y2="-0.2" width="0.2032" layer="51"/>
+<wire x1="5" y1="0.2" x2="5" y2="1" width="0.2032" layer="51"/>
+<wire x1="-6" y1="4" x2="-6" y2="5" width="0.1" layer="21"/>
+<wire x1="-5" y1="6" x2="5" y2="6" width="0.1" layer="21"/>
+<wire x1="6" y1="5" x2="6" y2="4" width="0.1" layer="21"/>
+<wire x1="6" y1="1" x2="6" y2="-1" width="0.1" layer="21"/>
+<wire x1="6" y1="-4" x2="6" y2="-5" width="0.1" layer="21"/>
+<wire x1="5" y1="-6" x2="-5" y2="-6" width="0.1" layer="21"/>
+<wire x1="-6" y1="-5" x2="-6" y2="-4" width="0.1" layer="21"/>
+<wire x1="-6" y1="-1" x2="-6" y2="1" width="0.1" layer="21"/>
+<circle x="0" y="0" radius="3.5" width="0.1" layer="21"/>
+<circle x="-4.5" y="4.5" radius="0.3" width="0.7" layer="21"/>
+<circle x="4.5" y="4.5" radius="0.3" width="0.7" layer="21"/>
+<circle x="4.5" y="-4.5" radius="0.3" width="0.7" layer="21"/>
+<circle x="-4.5" y="-4.5" radius="0.3" width="0.7" layer="21"/>
+<smd name="1" x="-6.975" y="2.5" dx="1.6" dy="1.55" layer="1" roundness="30"/>
+<smd name="3" x="-6.975" y="-2.5" dx="1.6" dy="1.55" layer="1" roundness="30"/>
+<smd name="4" x="6.975" y="-2.5" dx="1.6" dy="1.55" layer="1" roundness="30"/>
+<smd name="2" x="6.975" y="2.5" dx="1.6" dy="1.55" layer="1" roundness="30"/>
+<wire x1="-6" y1="-5" x2="-5" y2="-6" width="0.1" layer="21"/>
+<wire x1="6" y1="-5" x2="5" y2="-6" width="0.1" layer="21"/>
+<wire x1="6" y1="5" x2="5" y2="6" width="0.1" layer="21"/>
+<wire x1="-5" y1="6" x2="-6" y2="5" width="0.1" layer="21"/>
+<text x="0" y="6.25" size="0.8128" layer="25" font="vector" ratio="15" align="bottom-center">&gt;NAME</text>
+</package>
+<package name="PTS840">
+<description>タクタイルスイッチ SPST-NO 側部作動式 面実装、ライトアングル</description>
+<smd name="1" x="-1.8" y="0.725" dx="1.4" dy="1.05" layer="1" roundness="30"/>
+<smd name="3" x="-1.8" y="-0.725" dx="1.4" dy="1.05" layer="1" roundness="30"/>
+<smd name="4" x="1.8" y="-0.725" dx="1.4" dy="1.05" layer="1" roundness="30"/>
+<smd name="2" x="1.8" y="0.725" dx="1.4" dy="1.05" layer="1" roundness="30"/>
+<hole x="0" y="0.9" drill="0.7"/>
+<hole x="0" y="-0.9" drill="0.7"/>
+<wire x1="-1.75" y1="1.45" x2="1.75" y2="1.45" width="0.1" layer="27"/>
+<wire x1="-1.75" y1="-1.45" x2="-1.75" y2="1.45" width="0.1" layer="27"/>
+<wire x1="1.75" y1="-1.45" x2="1.75" y2="1.45" width="0.1" layer="27"/>
+<wire x1="-0.85" y1="-2.1" x2="0.85" y2="-2.1" width="0.1" layer="21"/>
+<wire x1="-0.85" y1="-1.45" x2="-0.85" y2="-2.1" width="0.1" layer="21"/>
+<wire x1="0.85" y1="-1.45" x2="0.85" y2="-2.1" width="0.1" layer="21"/>
+<wire x1="-1.75" y1="-1.45" x2="-0.85" y2="-1.45" width="0.1" layer="27"/>
+<wire x1="0.85" y1="-1.45" x2="1.75" y2="-1.45" width="0.1" layer="27"/>
+<smd name="5" x="0" y="1.7" dx="1.1" dy="0.5" layer="1" roundness="30"/>
+<text x="0" y="2.25" size="0.8128" layer="25" font="vector" ratio="15" align="bottom-center">&gt;NAME</text>
+</package>
+<package name="LS6J2M-T">
+<description>表面実装タイプ　押しボタンスイッチ
+
+&lt;p&gt;&lt;a href="https://akizukidenshi.com/catalog/g/gP-02532/"&gt;https://akizukidenshi.com/catalog/g/gP-02532/&lt;/a&gt;&lt;/p&gt;</description>
+<smd name="1" x="-2.35" y="2.3" dx="1.55" dy="0.9" layer="1" roundness="30"/>
+<smd name="2" x="-2.35" y="-2.3" dx="1.55" dy="0.9" layer="1" roundness="30"/>
+<smd name="3" x="2.35" y="2.3" dx="1.55" dy="0.9" layer="1" roundness="30"/>
+<smd name="4" x="2.35" y="-2.3" dx="1.55" dy="0.9" layer="1" roundness="30"/>
+<wire x1="-2.6" y1="2.6" x2="2.6" y2="2.6" width="0.1" layer="51"/>
+<wire x1="-2.6" y1="-2.6" x2="2.6" y2="-2.6" width="0.1" layer="51"/>
+<wire x1="-2.6" y1="-2.6" x2="-2.6" y2="2.6" width="0.1" layer="51"/>
+<wire x1="2.6" y1="-2.6" x2="2.6" y2="2.6" width="0.1" layer="51"/>
+<circle x="0" y="0" radius="1.15" width="0.1" layer="21"/>
+<text x="0" y="3.25" size="0.8128" layer="25" font="vector" ratio="15" align="bottom-center">&gt;NAME</text>
+</package>
+</packages>
+<symbols>
+<symbol name="SWITCH-TACT">
+<wire x1="1.905" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="1.905" y1="4.445" x2="1.905" y2="3.175" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="4.445" x2="-1.905" y2="3.175" width="0.254" layer="94"/>
+<wire x1="1.905" y1="4.445" x2="0" y2="4.445" width="0.254" layer="94"/>
+<wire x1="0" y1="4.445" x2="-1.905" y2="4.445" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.905" width="0.1524" layer="94"/>
+<wire x1="0" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="94"/>
+<wire x1="0" y1="4.445" x2="0" y2="3.175" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="1.905" y2="1.27" width="0.254" layer="94"/>
+<circle x="-2.54" y="0" radius="0.127" width="0.4064" layer="94"/>
+<circle x="2.54" y="0" radius="0.127" width="0.4064" layer="94"/>
+<text x="0" y="5.334" size="1.27" layer="95" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-3.81" size="1.27" layer="96" align="top-center">&gt;VALUE</text>
+<pin name="1" x="-5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="2"/>
+<pin name="3" x="5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="4" x="5.08" y="-2.54" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="2" x="-5.08" y="-2.54" visible="pad" length="short" direction="pas" swaplevel="2"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="TACT-SWITCH" prefix="SW" uservalue="yes">
+<description>&lt;table border=1&gt;
+&lt;tr&gt;
+&lt;td&gt;
+Part No
+&lt;/td&gt;
+&lt;td&gt;
+Maker
+&lt;/td&gt;
+&lt;td&gt;
+Datasheet
+&lt;/td&gt;
+&lt;td&gt;
+Distributor
+&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;
+1273HA-160G-G
+&lt;/td&gt;
+&lt;td&gt;
+SWITRONIC
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="http://www.switronic.com/uploads/images/A10.gif"&gt;Catalog&lt;/a&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="http://akizukidenshi.com/catalog/g/gP-02561/"&gt;Akizuki&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;
+DTS-6-V
+&lt;/td&gt;
+&lt;td&gt;
+Cosland
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="http://www.cosland.com/newproduct/DTS%20SERIES.pdf"&gt;DTS 6 Series&lt;/a&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="http://akizukidenshi.com/catalog/g/gP-03647/"&gt;Akizuki&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;
+KMR2
+&lt;/td&gt;
+&lt;td&gt;
+C&amp;K
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="https://www.ckswitches.com/products/switches/product-details/Tactile/KMR2/"&gt;KMR2 SERIES&lt;/a&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="https://octopart.com/search?q=KMR2&amp;start=0"&gt;Octoparts Result&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;
+TSHA-T-XB2-19E
+&lt;/td&gt;
+&lt;td&gt;
+TOP UP INDUSTORY
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="http://www.top-up.com.tw/front/bin/ptdetail.phtml?Part=TSHA-T"&gt;TSHA-T&lt;/a&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;a href="http://akizukidenshi.com/catalog/g/gP-09361/"&gt;Akizuki&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+
+
+&lt;/table&gt;</description>
+<gates>
+<gate name="G$1" symbol="SWITCH-TACT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-12MM" package="1273HA-160G-G">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-6MM" package="DTS_6_V">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-SMD_KMR2" package="KMR2">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-TSHA-T-XB2-19E" package="TSHA-T-XB2-19E">
+<connects>
+<connect gate="G$1" pin="1" pad="A"/>
+<connect gate="G$1" pin="2" pad="B"/>
+<connect gate="G$1" pin="3" pad="C"/>
+<connect gate="G$1" pin="4" pad="D"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-TL3300CF160Q" package="TL3300CF160Q">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-PTS840" package="PTS840">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-LS6J2M-T" package="LS6J2M-T">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3975,6 +4292,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND76" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="GND77" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="D5" library="Diode" library_urn="urn:adsk.eagle:library:16378169" deviceset="DIODE_" device="_SOD123G" package3d_urn="urn:adsk.eagle:package:9427058/2" technology="1N4148W-7-F" value="1N4148W"/>
+<part name="GND56" library="FaBo-Supply" deviceset="GND" device=""/>
+<part name="R41" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="DNP"/>
+<part name="3V6" library="FaBo-Supply" deviceset="3V3" device=""/>
+<part name="SW1" library="FaBo-Switch" deviceset="TACT-SWITCH" device="-SMD_KMR2"/>
 </parts>
 <sheets>
 <sheet>
@@ -4627,6 +4948,20 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="NAME" x="209.55" y="740.41" size="1.778" layer="95" align="center"/>
 <attribute name="VALUE" x="209.55" y="730.25" size="1.778" layer="95" align="center"/>
 </instance>
+<instance part="GND56" gate="G$1" x="858.52" y="137.16" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="861.314" y="132.08" size="1.778" layer="96" rot="MR0"/>
+</instance>
+<instance part="R41" gate="G$1" x="892.81" y="149.86" smashed="yes" rot="MR90">
+<attribute name="NAME" x="894.334" y="147.574" size="1.4224" layer="95" rot="MR90"/>
+<attribute name="VALUE" x="891.286" y="147.574" size="1.4224" layer="96" rot="MR90" align="top-left"/>
+</instance>
+<instance part="3V6" gate="G$1" x="892.81" y="176.53" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="894.08" y="182.626" size="1.778" layer="96" rot="MR0"/>
+</instance>
+<instance part="SW1" gate="G$1" x="877.57" y="142.24" smashed="yes">
+<attribute name="NAME" x="877.57" y="147.574" size="1.27" layer="95" align="bottom-center"/>
+<attribute name="VALUE" x="877.57" y="138.43" size="1.27" layer="96" align="top-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -5030,6 +5365,17 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="GND74" gate="GND" pin="GND"/>
 <wire x1="276.86" y1="715.01" x2="276.86" y2="712.47" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<wire x1="872.49" y1="139.7" x2="868.68" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="868.68" y1="139.7" x2="868.68" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="868.68" y1="142.24" x2="872.49" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="868.68" y1="139.7" x2="858.52" y2="139.7" width="0.762" layer="91"/>
+<junction x="868.68" y="139.7"/>
+<pinref part="GND56" gate="G$1" pin="GND"/>
+<wire x1="858.52" y1="139.7" x2="858.52" y2="137.16" width="0.762" layer="91"/>
+<pinref part="SW1" gate="G$1" pin="1"/>
+<pinref part="SW1" gate="G$1" pin="2"/>
+</segment>
 </net>
 <net name="SDA" class="0">
 <segment>
@@ -5379,13 +5725,26 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="619.76" y1="181.61" x2="619.76" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="619.76" y1="170.18" x2="622.3" y2="170.18" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="3V6" gate="G$1" pin="3V3"/>
+<pinref part="R41" gate="G$1" pin="2"/>
+<wire x1="892.81" y1="176.53" x2="892.81" y2="154.94" width="0.1524" layer="91"/>
+</segment>
 </net>
-<net name="N$7" class="0">
+<net name="OE_PIN" class="0">
 <segment>
 <pinref part="IC4" gate="G$1" pin="OE"/>
 <wire x1="580.39" y1="406.4" x2="562.61" y2="406.4" width="0.1524" layer="91"/>
 <wire x1="562.61" y1="406.4" x2="562.61" y2="403.86" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="562.61" y1="406.4" x2="562.61" y2="417.83" width="0.1524" layer="91"/>
+<junction x="562.61" y="406.4"/>
+<label x="552.45" y="417.83" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="914.4" y1="133.35" x2="872.49" y2="133.35" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="ADC7"/>
+<label x="872.49" y="133.35" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="5V" class="0">
@@ -5465,6 +5824,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="204.47" y1="735.33" x2="194.31" y2="735.33" width="0.1524" layer="91"/>
 <wire x1="194.31" y1="735.33" x2="194.31" y2="721.36" width="0.1524" layer="91"/>
 <junction x="194.31" y="721.36"/>
+<label x="102.87" y="698.5" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <wire x1="483.87" y1="601.98" x2="496.57" y2="601.98" width="0.1524" layer="91"/>
@@ -6149,6 +6509,23 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="1083.31" y1="707.39" x2="1083.31" y2="726.44" width="0.1524" layer="91"/>
 <pinref part="U$23" gate="G$1" pin="VCC"/>
 <label x="1078.23" y="727.71" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="ADC6"/>
+<wire x1="914.4" y1="135.89" x2="892.81" y2="135.89" width="0.1524" layer="91"/>
+<wire x1="892.81" y1="135.89" x2="886.46" y2="135.89" width="0.1524" layer="91"/>
+<wire x1="886.46" y1="135.89" x2="886.46" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="886.46" y1="139.7" x2="886.46" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="886.46" y1="142.24" x2="882.65" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="882.65" y1="139.7" x2="886.46" y2="139.7" width="0.1524" layer="91"/>
+<junction x="886.46" y="139.7"/>
+<pinref part="R41" gate="G$1" pin="1"/>
+<wire x1="892.81" y1="147.32" x2="892.81" y2="135.89" width="0.1524" layer="91"/>
+<junction x="892.81" y="135.89"/>
+<pinref part="SW1" gate="G$1" pin="3"/>
+<pinref part="SW1" gate="G$1" pin="4"/>
 </segment>
 </net>
 </nets>
