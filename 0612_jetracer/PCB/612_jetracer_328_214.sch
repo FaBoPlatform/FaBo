@@ -4332,13 +4332,25 @@ TOP UP INDUSTORY
 <text x="789.94" y="242.57" size="6.4516" layer="97">SELECTOR</text>
 <text x="707.39" y="689.61" size="1.778" layer="94">SN74LVC1G17</text>
 <text x="1085.85" y="684.53" size="1.778" layer="94">SN74LVC1G17</text>
-<text x="826.77" y="485.14" size="6.4516" layer="94">2021/9/8 Rev 2.0.14 ボディ装着のため、基板レイアウト変更,RC電源のみで走行可能</text>
+<text x="788.67" y="469.9" size="3.175" layer="94">2021/10/28 Rev 2.0.14 ボディ装着のため、基板レイアウト変更,RC電源のみで走行可能、プロポマルチ対応,RC GND共通化</text>
 <text x="241.3" y="758.19" size="2.54" layer="97">Analog 3V3</text>
 <text x="38.1" y="599.44" size="3.81" layer="94">受信機から入力</text>
 <text x="430.53" y="600.71" size="3.81" layer="94">受信機から入力</text>
 <text x="808.99" y="595.63" size="3.81" layer="94">受信機から入力</text>
 <text x="693.42" y="115.57" size="3.81" layer="94">ESC</text>
 <text x="693.42" y="134.62" size="3.81" layer="94">サーボ</text>
+<wire x1="96.52" y1="642.62" x2="96.52" y2="623.57" width="0.1524" layer="94"/>
+<wire x1="96.52" y1="642.62" x2="95.25" y2="638.81" width="0.1524" layer="94"/>
+<wire x1="96.52" y1="642.62" x2="97.79" y2="638.81" width="0.1524" layer="94"/>
+<text x="77.47" y="629.92" size="3.81" layer="94">RC +B</text>
+<wire x1="490.22" y1="642.62" x2="490.22" y2="623.57" width="0.1524" layer="94"/>
+<wire x1="490.22" y1="642.62" x2="488.95" y2="638.81" width="0.1524" layer="94"/>
+<wire x1="490.22" y1="642.62" x2="491.49" y2="638.81" width="0.1524" layer="94"/>
+<text x="471.17" y="629.92" size="3.81" layer="94">RC +B</text>
+<wire x1="868.68" y1="637.54" x2="868.68" y2="618.49" width="0.1524" layer="94"/>
+<wire x1="868.68" y1="637.54" x2="867.41" y2="633.73" width="0.1524" layer="94"/>
+<wire x1="868.68" y1="637.54" x2="869.95" y2="633.73" width="0.1524" layer="94"/>
+<text x="849.63" y="624.84" size="3.81" layer="94">RC +B</text>
 </plain>
 <instances>
 <instance part="SUPPLY2" gate="5V" x="207.01" y="429.26" smashed="yes">
