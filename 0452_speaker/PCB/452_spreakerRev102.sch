@@ -27003,7 +27003,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pinref part="L1" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="MS" class="0">
 <segment>
 <pinref part="M/S" gate="G$1" pin="2"/>
 <wire x1="93.98" y1="91.44" x2="60.96" y2="91.44" width="0.1524" layer="91"/>
@@ -27011,7 +27011,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pinref part="U$2" gate="G$1" pin="4:SD_MODE"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="STEREO" class="0">
 <segment>
 <pinref part="M/S" gate="G$1" pin="1"/>
 <wire x1="58.42" y1="132.08" x2="58.42" y2="127" width="0.1524" layer="91"/>
@@ -27020,7 +27020,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="50.8" y1="127" x2="50.8" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$8" class="0">
+<net name="MONO" class="0">
 <segment>
 <pinref part="M/S" gate="G$1" pin="3"/>
 <wire x1="63.5" y1="132.08" x2="63.5" y2="127" width="0.1524" layer="91"/>
@@ -27029,7 +27029,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="71.12" y1="127" x2="71.12" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$10" class="0">
+<net name="LEFT" class="0">
 <segment>
 <pinref part="L/R" gate="G$1" pin="1"/>
 <wire x1="48.26" y1="139.7" x2="48.26" y2="137.16" width="0.1524" layer="91"/>
@@ -27038,7 +27038,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="43.18" y1="137.16" x2="43.18" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$11" class="0">
+<net name="RIGHT" class="0">
 <segment>
 <pinref part="L/R" gate="G$1" pin="3"/>
 <wire x1="53.34" y1="139.7" x2="53.34" y2="137.16" width="0.1524" layer="91"/>
@@ -27073,7 +27073,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <junction x="231.14" y="116.84"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="GAIN" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="2:GAIN"/>
 <wire x1="114.3" y1="124.46" x2="114.3" y2="142.24" width="0.1524" layer="91"/>
@@ -27124,7 +27124,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <junction x="152.4" y="104.14"/>
 </segment>
 </net>
-<net name="N$16" class="0">
+<net name="15DB" class="0">
 <segment>
 <pinref part="U$3" gate="G$1" pin="4"/>
 <pinref part="R5" gate="G$1" pin="1"/>
@@ -27132,7 +27132,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="144.78" y1="149.86" x2="144.78" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$17" class="0">
+<net name="3DB" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="114.3" y1="154.94" x2="114.3" y2="149.86" width="0.1524" layer="91"/>
