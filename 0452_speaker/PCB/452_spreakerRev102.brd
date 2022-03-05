@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.0">
+<eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -177,7 +177,7 @@
 </layers>
 <board>
 <plain>
-<text x="10.3" y="22.6" size="2.1844" layer="21" font="vector" ratio="15" rot="R180">#425</text>
+<text x="10.3" y="22.6" size="2.1844" layer="21" font="vector" ratio="15" rot="R180">#452</text>
 <text x="10.4" y="19.9" size="1.27" layer="21" font="vector" ratio="12" rot="R180">Speaker</text>
 <wire x1="0" y1="2.5" x2="0" y2="43.5" width="0.1524" layer="20"/>
 <wire x1="2.5" y1="46" x2="43.5" y2="46" width="0.1524" layer="20"/>
