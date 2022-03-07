@@ -231,6 +231,8 @@
 <wire x1="21.65" y1="13.59" x2="21.65" y2="12.03" width="0.0762" layer="42"/>
 <wire x1="19.65" y1="13.58" x2="19.65" y2="12.02" width="0.0762" layer="42"/>
 <wire x1="20.15" y1="13.58" x2="20.15" y2="12.02" width="0.0762" layer="42"/>
+<dimension x1="37" y1="0" x2="37" y2="54.2" x3="42.3" y3="27.1" textsize="1.778" layer="51" dtype="vertical"/>
+<dimension x1="0" y1="51.2" x2="40" y2="49.2" x3="20" y3="63.1" textsize="1.778" layer="51" dtype="horizontal"/>
 </plain>
 <libraries>
 <library name="FaBo-Logo">
