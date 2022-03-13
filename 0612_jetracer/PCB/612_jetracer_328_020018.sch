@@ -3183,7 +3183,7 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <part name="R10" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="1K"/>
 <part name="U3" library="FaBo_Photocoupler" deviceset="TLP291A" device=""/>
 <part name="R24" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="4.7K"/>
-<part name="R25" library="FaBo-Resistors" deviceset="RESISTOR" device="-0402" value="4.7K/0402"/>
+<part name="R25" library="FaBo-Resistors" deviceset="RESISTOR" device="-0402" value="220/0402"/>
 <part name="3V7" library="FaBo-Supply" deviceset="3V3" device=""/>
 <part name="GND49" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="U7" library="FaBo_Photocoupler" deviceset="TLP291A" device=""/>
@@ -3202,7 +3202,7 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <part name="IC5" library="FaBo-Supply" deviceset="LP2985" device="-33DBV"/>
 <part name="X_9" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="C14" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="0.01uF"/>
-<part name="C15" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="2.2uF"/>
+<part name="C15" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="4.7uF"/>
 <part name="X_20" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="X_21" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="R31" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="0"/>
@@ -3284,7 +3284,7 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <part name="GND27" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="T1" library="FaBo-Transistor" deviceset="TRANSISTOR" device="-NPN"/>
 <part name="R27" library="FaBo-Resistors" deviceset="RESISTOR" device="-0402" value="DNP/0402"/>
-<part name="R28" library="FaBo-Resistors" deviceset="RESISTOR" device="-0402" value="1K/0402"/>
+<part name="R28" library="FaBo-Resistors" deviceset="RESISTOR" device="-0402" value="10K/0402"/>
 <part name="R32" library="FaBo-Resistors" deviceset="RESISTOR" device="-0402" value="10K/0402"/>
 <part name="X_13" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="RC_POWER" library="FaBo-LED" deviceset="LED" device="-0603" value="ORANGE"/>
@@ -3293,7 +3293,7 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <part name="C6" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="10uF"/>
 <part name="GND30" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="T2" library="FaBo-Transistor" deviceset="TRANSISTOR" device="-NPN"/>
-<part name="R30" library="FaBo-Resistors" deviceset="RESISTOR" device="-0402" value="330/0402"/>
+<part name="R30" library="FaBo-Resistors" deviceset="RESISTOR" device="-0402" value="220/0402"/>
 <part name="R34" library="FaBo-Resistors" deviceset="RESISTOR" device="-0402" value="DNP/0402"/>
 <part name="SUPPLY6" library="FaBo-etc" deviceset="5V" device=""/>
 <part name="R35" library="FaBo-Resistors" deviceset="RESISTOR" device="-0402" value="1K/0402"/>
