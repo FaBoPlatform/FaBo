@@ -15481,7 +15481,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="U7" library="FaBo_Photocoupler" deviceset="TLP291A" device=""/>
 <part name="R29" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="10K"/>
 <part name="GND54" library="FaBo-etc" deviceset="GND" device=""/>
-<part name="R30" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="4.7K"/>
+<part name="R30" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="180"/>
 <part name="GND15" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="R1" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="10K"/>
 <part name="R3" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="10K"/>
