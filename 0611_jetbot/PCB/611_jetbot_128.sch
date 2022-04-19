@@ -731,7 +731,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <rectangle x1="0.25" y1="0.2" x2="1.85" y2="1.8" layer="31"/>
 <rectangle x1="-1.8" y1="-1.8" x2="-0.2" y2="-0.2" layer="31"/>
 <rectangle x1="0.25" y1="-1.8" x2="1.85" y2="-0.2" layer="31"/>
-<circle x="-3.3" y="3.25" radius="0.21213125" width="0.127" layer="22"/>
 </package>
 </packages>
 <symbols>
