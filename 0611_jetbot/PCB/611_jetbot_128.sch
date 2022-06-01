@@ -20506,7 +20506,6 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 <part name="3V4" library="FaBo-Supply" deviceset="3V3" device=""/>
 <part name="R3" library="component" deviceset="RESISTOR_ARRAY" device="" value="220"/>
 <part name="SUPPLY1" library="FaBo-etc" deviceset="5V" device=""/>
-<part name="SUPPLY3" library="FaBo-etc" deviceset="5V" device=""/>
 <part name="A1" library="FaBo-Capacitor" deviceset="CAPACITOR-ALUMIN" device="_D60" value="47uF"/>
 <part name="A2" library="FaBo-Capacitor" deviceset="CAPACITOR-ALUMIN" device="_D60" value="47uF"/>
 <part name="3V5" library="FaBo-Supply" deviceset="3V3" device=""/>
@@ -20545,11 +20544,12 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 <part name="R1" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="220"/>
 <part name="R2" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="220"/>
 <part name="IC2" library="FaBo-Motor" deviceset="PCA9685BS" device="PCA9685BS"/>
+<part name="SUPPLY3" library="FaBo-etc" deviceset="5V" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="373.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.2.7</text>
+<text x="373.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.2.8</text>
 <text x="17.78" y="220.98" size="5.08" layer="97">Jetson Nano</text>
 <text x="88.9" y="220.98" size="5.08" layer="97">PWM Controller</text>
 <text x="233.68" y="116.84" size="5.08" layer="97">MOTOR DRIVER</text>
@@ -20703,9 +20703,6 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 <instance part="SUPPLY1" gate="5V" x="162.56" y="233.68" smashed="yes">
 <attribute name="VALUE" x="161.29" y="237.236" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY3" gate="5V" x="144.78" y="157.48" smashed="yes" rot="R90">
-<attribute name="VALUE" x="141.224" y="156.21" size="1.778" layer="96" rot="R90"/>
-</instance>
 <instance part="A1" gate="G$1" x="261.62" y="210.82" smashed="yes" rot="R90">
 <attribute name="NAME" x="258.572" y="212.9536" size="1.4224" layer="95" rot="R270"/>
 <attribute name="VALUE" x="263.398" y="213.4616" size="1.4224" layer="96" rot="R270"/>
@@ -20842,6 +20839,9 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 </instance>
 <instance part="IC2" gate="G$1" x="165.1" y="175.26" smashed="yes">
 <attribute name="NAME" x="155.194" y="203.454" size="1.27" layer="95"/>
+</instance>
+<instance part="SUPPLY3" gate="5V" x="142.24" y="157.48" smashed="yes" rot="R90">
+<attribute name="VALUE" x="138.684" y="156.21" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -21424,6 +21424,11 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 <pinref part="R14" gate="G$1" pin="2"/>
 <wire x1="347.98" y1="154.94" x2="347.98" y2="162.56" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="SUPPLY3" gate="5V" pin="5V"/>
+<pinref part="IC2" gate="G$1" pin="A5"/>
+<wire x1="142.24" y1="157.48" x2="149.86" y2="157.48" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$17" class="0">
 <segment>
@@ -21810,13 +21815,6 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 <wire x1="185.42" y1="157.48" x2="180.34" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="2"/>
 <pinref part="IC2" gate="G$1" pin="LED13"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<wire x1="149.86" y1="157.48" x2="144.78" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="SUPPLY3" gate="5V" pin="5V"/>
-<pinref part="IC2" gate="G$1" pin="A5"/>
 </segment>
 </net>
 </nets>
