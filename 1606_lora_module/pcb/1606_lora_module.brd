@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -192,7 +192,7 @@
 <wire x1="25.38" y1="0" x2="25.38" y2="27.61" width="0" layer="20"/>
 <wire x1="25.38" y1="27.61" x2="0" y2="27.61" width="0" layer="20"/>
 <wire x1="0" y1="27.61" x2="0" y2="0" width="0" layer="20"/>
-<text x="12.7" y="0.635" size="1.016" layer="21" font="vector" ratio="15" align="bottom-center">Rev.1.0.1</text>
+<text x="12.7" y="0.635" size="1.016" layer="21" font="vector" ratio="15" align="bottom-center">Rev.1.0.2</text>
 <text x="12.7" y="19.05" size="0.762" layer="22" font="vector" ratio="15" rot="MR0" align="top-center">Designed in Aizu</text>
 <text x="12.7" y="1.905" size="1.27" layer="21" font="vector" ratio="15" align="bottom-center">LoRa Module</text>
 </plain>
