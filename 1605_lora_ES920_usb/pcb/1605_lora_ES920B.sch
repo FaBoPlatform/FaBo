@@ -1239,8 +1239,8 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="-4.9" y1="0" x2="4.9" y2="0" width="0.1" layer="51"/>
 <wire x1="-3.75" y1="-0.7" x2="-4.05" y2="-1.3" width="0.05" layer="51"/>
 <wire x1="3.75" y1="-0.7" x2="4.05" y2="-1.3" width="0.05" layer="51"/>
-<wire x1="-5.2" y1="4.3" x2="-4.15" y2="4.3" width="0.2" layer="21"/>
-<wire x1="4.15" y1="4.3" x2="5.2" y2="4.3" width="0.2" layer="21"/>
+<wire x1="-5" y1="4.3" x2="-4.15" y2="4.3" width="0.1" layer="21"/>
+<wire x1="4.15" y1="4.3" x2="5" y2="4.3" width="0.1" layer="21"/>
 <text x="0" y="5.08" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
 </package>
 <package name="USB-4AF103BS">
@@ -1271,68 +1271,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="7" y1="-1.9" x2="-7" y2="-1.9" width="0.127" layer="51"/>
 <wire x1="-7" y1="-1.9" x2="-7" y2="1.9" width="0.127" layer="51"/>
 <text x="-7.62" y="0" size="0.8128" layer="25" font="vector" ratio="12" rot="R90" align="bottom-center">&gt;NAME</text>
-</package>
-<package name="B05B-PASK-1">
-<pad name="5" x="-4" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
-<pad name="4" x="-2" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
-<pad name="2" x="2" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
-<hole x="5.5" y="1.7" drill="1.1"/>
-<wire x1="6" y1="-3.1" x2="6" y2="2.2" width="0.1" layer="51"/>
-<wire x1="-6" y1="-3.1" x2="-6" y2="2.2" width="0.1" layer="51"/>
-<wire x1="6" y1="2.2" x2="-6" y2="2.2" width="0.1" layer="51"/>
-<wire x1="6" y1="-3.1" x2="3" y2="-3.1" width="0.1" layer="51"/>
-<text x="0" y="-4.445" size="1.27" layer="25" font="vector" ratio="12" rot="R180" align="bottom-center">&gt;NAME</text>
-<wire x1="3" y1="-3.1" x2="-3" y2="-3.1" width="0.1" layer="51"/>
-<wire x1="-3" y1="-3.1" x2="-6" y2="-3.1" width="0.1" layer="51"/>
-<wire x1="3" y1="-3.6" x2="-3" y2="-3.6" width="0.1" layer="51"/>
-<pad name="1" x="4" y="0" drill="0.8" diameter="1.4224" shape="square"/>
-<wire x1="-3" y1="-3.1" x2="-3" y2="-3.6" width="0.1" layer="51"/>
-<wire x1="3" y1="-3.1" x2="3" y2="-3.6" width="0.1" layer="51"/>
-<pad name="3" x="0" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
-</package>
-<package name="S04B-PASK-2">
-<pad name="4" x="-3" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
-<pad name="3" x="-1" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
-<pad name="2" x="1" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
-<hole x="4.5" y="2.1" drill="1.1"/>
-<wire x1="5" y1="-3.5" x2="5" y2="8.2" width="0.127" layer="51"/>
-<wire x1="-5" y1="-3.5" x2="-5" y2="8.2" width="0.127" layer="51"/>
-<wire x1="5" y1="8.2" x2="2" y2="8.2" width="0.127" layer="51"/>
-<wire x1="2" y1="8.2" x2="-2" y2="8.2" width="0.127" layer="51"/>
-<wire x1="-2" y1="8.2" x2="-5" y2="8.2" width="0.127" layer="51"/>
-<text x="0" y="-4.445" size="1.27" layer="25" font="vector" ratio="15" rot="R180" align="bottom-center">&gt;NAME</text>
-<hole x="-4.5" y="2.1" drill="1.1"/>
-<wire x1="2" y1="6.7" x2="-2" y2="6.7" width="0.127" layer="51"/>
-<wire x1="-2" y1="8.2" x2="-2" y2="6.7" width="0.127" layer="51"/>
-<wire x1="2" y1="8.2" x2="2" y2="6.7" width="0.127" layer="51"/>
-<pad name="1" x="3" y="0" drill="0.8" diameter="1.4224" shape="square"/>
-<wire x1="-4.3" y1="-3.5" x2="-4.3" y2="0.5" width="0.127" layer="51"/>
-<wire x1="4.3" y1="-3.5" x2="4.3" y2="0.5" width="0.127" layer="51"/>
-<wire x1="-4.3" y1="0.5" x2="4.3" y2="0.5" width="0.127" layer="51"/>
-<wire x1="-5" y1="-3.5" x2="-4.3" y2="-3.5" width="0.127" layer="51"/>
-<wire x1="4.3" y1="-3.5" x2="5" y2="-3.5" width="0.127" layer="51"/>
-</package>
-<package name="USB-A-4P-MALE">
-<wire x1="-6" y1="0.25" x2="6" y2="0.25" width="0.127" layer="51" style="shortdash"/>
-<pad name="1" x="-3.5" y="-5.15" drill="0.93" diameter="1.6764" shape="octagon"/>
-<pad name="2" x="-1" y="-5.15" drill="0.93" shape="octagon"/>
-<pad name="3" x="1" y="-5.15" drill="0.93" shape="octagon"/>
-<pad name="4" x="3.5" y="-5.15" drill="0.93" diameter="1.6764" shape="octagon"/>
-<wire x1="-5.85" y1="-1.5" x2="-5.85" y2="-4" width="1.2" layer="46"/>
-<wire x1="5.85" y1="-1.5" x2="5.85" y2="-4" width="1.2" layer="46"/>
-<hole x="-2.25" y="-2.75" drill="1.3"/>
-<hole x="2.25" y="-2.75" drill="1.3"/>
-<smd name="P$1" x="-5.85" y="-2.75" dx="2" dy="4.5" layer="1" roundness="100" cream="no"/>
-<wire x1="-6" y1="-3.65" x2="6" y2="-3.65" width="0.127" layer="51"/>
-<wire x1="-6" y1="15.15" x2="6" y2="15.15" width="0.127" layer="51"/>
-<wire x1="-6" y1="-3.65" x2="-6" y2="0.25" width="0.127" layer="51"/>
-<wire x1="-6" y1="0.25" x2="-6" y2="15.15" width="0.127" layer="51"/>
-<wire x1="6" y1="-3.65" x2="6" y2="0.25" width="0.127" layer="51"/>
-<smd name="P$2" x="5.85" y="-2.75" dx="2" dy="4.5" layer="1" roundness="100" cream="no"/>
-<circle x="-3.5" y="-3.35" radius="0.2" width="0.7" layer="21"/>
-<smd name="P$3" x="-5.85" y="-2.75" dx="2" dy="4.5" layer="16" roundness="100" cream="no"/>
-<smd name="P$4" x="5.85" y="-2.75" dx="2" dy="4.5" layer="16" roundness="100" cream="no"/>
-<wire x1="6" y1="0.25" x2="6" y2="15.15" width="0.127" layer="51"/>
 </package>
 </packages>
 <symbols>
@@ -1371,8 +1309,8 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="5.08" y1="-5.08" x2="5.08" y2="7.62" width="0.254" layer="94"/>
 <wire x1="5.08" y1="7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
 <text x="0" y="8.382" size="1.778" layer="94" align="bottom-center">USB</text>
-<pin name="D+" x="7.62" y="0" length="short" rot="R180"/>
-<pin name="D-" x="7.62" y="2.54" length="short" rot="R180"/>
+<pin name="D+" x="7.62" y="2.54" length="short" rot="R180"/>
+<pin name="D-" x="7.62" y="0" length="short" rot="R180"/>
 <pin name="VBUS" x="7.62" y="5.08" length="short" rot="R180"/>
 <pin name="GND" x="7.62" y="-2.54" length="short" rot="R180"/>
 <wire x1="-5.08" y1="-5.08" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
@@ -1415,128 +1353,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </devices>
 </deviceset>
 <deviceset name="USB" prefix="USB" uservalue="yes">
-<description>&lt;table border=1&gt;
-&lt;tr&gt;
-&lt;td&gt;
-Parts No
-&lt;/td&gt;
-&lt;td&gt;
-Maker
-&lt;/td&gt;
-&lt;td&gt;
-Datasheet
-&lt;/td&gt;
-&lt;td&gt;
-Distributor
-&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;
-B05B-PASK-1
-&lt;/td&gt;
-&lt;td&gt;
-JST
-&lt;/td&gt;
-&lt;td&gt;
-&lt;a href="http://www.jst-mfg.com/product/pdf/eng/ePA-F.pdf"&gt;Datasheet&lt;/a&gt;
-&lt;/td&gt;
-&lt;td&gt;
-&lt;a href="https://octopart.com/search?q=B05B-PASK-1"&gt;Octoparts Result&lt;/a&gt;
-&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;
-DX4R005JJ2R1800
-&lt;/td&gt;
-&lt;td&gt;
-JAE
-&lt;/td&gt;
-&lt;td&gt;
-&lt;a href="https://www.jae.com/z-jp/product_jp.cfm?l_code=JA&amp;series_code=DX4&amp;product_number=DX4R005JJ2R1800"&gt;Datasheet&lt;/a&gt;
-&lt;/td&gt;
-&lt;td&gt;
-&lt;a href="https://octopart.com/dx4r005jj2r1800-jae+electronics-22232443"&gt;Octoparts Result&lt;/a&gt;
-&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;
-S04B-PASK-2
-&lt;/td&gt;
-&lt;td&gt;
-JST
-&lt;/td&gt;
-&lt;td&gt;
-&lt;a href="http://www.jst-mfg.com/product/detail.php?series=189"&gt;Web&lt;/a&gt;
-&lt;/td&gt;
-&lt;td&gt;
-&lt;a href="https://octopart.com/search?q=S04B-PASK-2&amp;start=0"&gt;Octoparts Result&lt;/a&gt;
-&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;
-USB-4AF103BS
-&lt;/td&gt;
-&lt;td&gt;
-Useconn Electronics
-&lt;/td&gt;
-&lt;td&gt;
-&lt;a href="http://akizukidenshi.com/download/ds/useconn/USB-4AF103BS-Rev_C.PDF"&gt;Datasheet&lt;/a&gt;
-&lt;/td&gt;
-&lt;td&gt;
-&lt;a href="http://akizukidenshi.com/catalog/g/gC-11551/"&gt;Akizuki&lt;/a&gt;
-&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;
-USB-A-4P-MALE(1734028-1)
-&lt;/td&gt;
-&lt;td&gt;
-TE
-&lt;/td&gt;
-&lt;td&gt;
-&lt;a href="http://www.te.com/jpn-ja/product-1734028-1.html"&gt;Web&lt;/a&gt;
-&lt;/td&gt;
-&lt;td&gt;
-&lt;a href="https://octopart.com/1734028-1-te+connectivity-40535237"&gt;Octopart Result&lt;/a&gt;
-&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;
-USB2-AF-WTP-CS-QRFL
-&lt;/td&gt;
-&lt;td&gt;
-VPI
-&lt;/td&gt;
-&lt;td&gt;
-&lt;a href="https://www.vpi.us/dpdf/70/usb2-af-wtp-cs-qrfl.pdf"&gt;Datasheet&lt;/a&gt;
-&lt;/td&gt;
-&lt;td&gt;
-&lt;a href="https://www.vpi.us/usba-waterproof/waterproof-usb-typeb-qrfl-357"&gt;VPI Store&lt;/a&gt;
-&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;
-ZX62R-B-5P
-&lt;/td&gt;
-&lt;td&gt;
-VPI
-&lt;/td&gt;
-&lt;td&gt;
-&lt;a href="https://www.hirose.com/product/jp/products/ZX/ZX62R-B-5P(30)/"&gt;Web&lt;/a&gt;
-&lt;/td&gt;
-&lt;td&gt;
-&lt;a href="https://octopart.com/zx62d-b-5p8%2830%29-hirose-70111550"&gt;Octopart Result&lt;/a&gt;
-&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;/table&gt;</description>
 <gates>
 <gate name="G$1" symbol="USB" x="0" y="0"/>
 </gates>
@@ -1579,39 +1395,6 @@ VPI
 <connect gate="G$1" pin="D+" pad="3"/>
 <connect gate="G$1" pin="D-" pad="2"/>
 <connect gate="G$1" pin="GND" pad="4 5"/>
-<connect gate="G$1" pin="VBUS" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-PASK" package="B05B-PASK-1">
-<connects>
-<connect gate="G$1" pin="D+" pad="3"/>
-<connect gate="G$1" pin="D-" pad="2"/>
-<connect gate="G$1" pin="GND" pad="4 5"/>
-<connect gate="G$1" pin="VBUS" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-S04B-PASK" package="S04B-PASK-2">
-<connects>
-<connect gate="G$1" pin="D+" pad="3"/>
-<connect gate="G$1" pin="D-" pad="2"/>
-<connect gate="G$1" pin="GND" pad="4"/>
-<connect gate="G$1" pin="VBUS" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-A-PLUG" package="USB-A-4P-MALE">
-<connects>
-<connect gate="G$1" pin="D+" pad="3"/>
-<connect gate="G$1" pin="D-" pad="2"/>
-<connect gate="G$1" pin="GND" pad="4"/>
 <connect gate="G$1" pin="VBUS" pad="1"/>
 </connects>
 <technologies>
@@ -22521,7 +22304,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="5V16" library="FaBo-Supply" deviceset="5V" device=""/>
 <part name="R7" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603-NARROW" value="1k"/>
 <part name="GND24" library="FaBo-Supply" deviceset="GND" device=""/>
-<part name="USB1" library="FaBo-USB" deviceset="USB" device="-B_PTH"/>
 <part name="GND3" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="GND9" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="3V5" library="FaBo-Supply" deviceset="3V3" device=""/>
@@ -22538,6 +22320,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="D1" library="FaBo-Diode" deviceset="DIODE" device="0603"/>
 <part name="U$2" library="FaBo-Logo" deviceset="LOGO_OSHW" device="-M_BOTTOM"/>
 <part name="U2" library="FaBo-LoRa" deviceset="ES920LR_MODULE" device=""/>
+<part name="USB1" library="FaBo-USB" deviceset="USB" device="-MICRO_B_SMT_HIROSE"/>
 </parts>
 <sheets>
 <sheet>
@@ -22651,7 +22434,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <instance part="GND24" gate="G$1" x="175.26" y="116.84" smashed="yes">
 <attribute name="VALUE" x="172.466" y="111.76" size="1.778" layer="96"/>
 </instance>
-<instance part="USB1" gate="G$1" x="20.32" y="127" smashed="yes"/>
 <instance part="GND3" gate="G$1" x="134.62" y="96.52" smashed="yes">
 <attribute name="VALUE" x="131.826" y="91.44" size="1.778" layer="96"/>
 </instance>
@@ -22703,20 +22485,12 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </instance>
 <instance part="U$2" gate="G$1" x="248.92" y="12.7" smashed="yes"/>
 <instance part="U2" gate="G$1" x="170.18" y="73.66" smashed="yes"/>
+<instance part="USB1" gate="G$1" x="15.24" y="127" smashed="yes"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="GND" class="0">
-<segment>
-<pinref part="GND15" gate="G$1" pin="GND"/>
-<wire x1="40.64" y1="38.1" x2="40.64" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="RESET" gate="G$1" pin="3"/>
-<wire x1="35.56" y1="40.64" x2="40.64" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="40.64" x2="40.64" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="RESET" gate="G$1" pin="4"/>
-<wire x1="35.56" y1="38.1" x2="40.64" y2="38.1" width="0.1524" layer="91"/>
-</segment>
 <segment>
 <pinref part="GND1" gate="G$1" pin="GND"/>
 <wire x1="99.06" y1="121.92" x2="93.98" y2="121.92" width="0.1524" layer="91"/>
@@ -22738,7 +22512,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </segment>
 <segment>
 <pinref part="GND7" gate="G$1" pin="GND"/>
-<wire x1="27.94" y1="124.46" x2="33.02" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="124.46" x2="33.02" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="124.46" x2="33.02" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="USB1" gate="G$1" pin="GND"/>
 </segment>
@@ -22863,6 +22637,13 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <net name="N$1" class="0">
 <segment>
 <wire x1="40.64" y1="40.64" x2="35.56" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="GND15" gate="G$1" pin="GND"/>
+<wire x1="40.64" y1="38.1" x2="40.64" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="RESET" gate="G$1" pin="3"/>
+<wire x1="35.56" y1="40.64" x2="40.64" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="40.64" x2="40.64" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="RESET" gate="G$1" pin="4"/>
+<wire x1="35.56" y1="38.1" x2="40.64" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SWD_CLK" class="0">
@@ -22934,10 +22715,10 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </net>
 <net name="N$7" class="0">
 <segment>
-<wire x1="53.34" y1="129.54" x2="27.94" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="121.92" x2="53.34" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="139.7" x2="53.34" y2="129.54" width="0.1524" layer="91"/>
-<junction x="53.34" y="129.54"/>
+<wire x1="53.34" y1="127" x2="22.86" y2="127" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="121.92" x2="53.34" y2="127" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="139.7" x2="53.34" y2="127" width="0.1524" layer="91"/>
+<junction x="53.34" y="127"/>
 <pinref part="R4" gate="G$1" pin="1"/>
 <pinref part="C5" gate="G$1" pin="2"/>
 <pinref part="USB1" gate="G$1" pin="D-"/>
@@ -22945,10 +22726,10 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </net>
 <net name="N$8" class="0">
 <segment>
-<wire x1="43.18" y1="139.7" x2="43.18" y2="127" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="127" x2="27.94" y2="127" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="121.92" x2="43.18" y2="127" width="0.1524" layer="91"/>
-<junction x="43.18" y="127"/>
+<wire x1="43.18" y1="139.7" x2="43.18" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="129.54" x2="22.86" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="121.92" x2="43.18" y2="129.54" width="0.1524" layer="91"/>
+<junction x="43.18" y="129.54"/>
 <pinref part="R3" gate="G$1" pin="1"/>
 <pinref part="C4" gate="G$1" pin="2"/>
 <pinref part="USB1" gate="G$1" pin="D+"/>
@@ -22994,7 +22775,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </net>
 <net name="VBUS1" class="0">
 <segment>
-<wire x1="27.94" y1="132.08" x2="33.02" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="132.08" x2="33.02" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="132.08" x2="33.02" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="F2" gate="G$1" pin="1"/>
 <pinref part="USB1" gate="G$1" pin="VBUS"/>
