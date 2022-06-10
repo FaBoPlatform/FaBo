@@ -36037,11 +36037,11 @@ Solder type</description>
 <part name="R1" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="470"/>
 <part name="LED1" library="FaBo-LED" deviceset="LED" device="-0603"/>
 <part name="GND4" library="FaBo-Symbol" deviceset="GND" device=""/>
-<part name="TP1" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TPSQ" device="TP20R" package3d_urn="urn:adsk.eagle:package:27973/1"/>
-<part name="TP2" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TPSQ" device="TP20R" package3d_urn="urn:adsk.eagle:package:27973/1"/>
-<part name="TP3" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TPSQ" device="TP20R" package3d_urn="urn:adsk.eagle:package:27973/1"/>
+<part name="SWDCLK" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TPSQ" device="TP20R" package3d_urn="urn:adsk.eagle:package:27973/1"/>
+<part name="SWDIO" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TPSQ" device="TP20R" package3d_urn="urn:adsk.eagle:package:27973/1"/>
+<part name="GND" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TPSQ" device="TP20R" package3d_urn="urn:adsk.eagle:package:27973/1"/>
 <part name="GND5" library="FaBo-Symbol" deviceset="GND" device=""/>
-<part name="TP4" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TPSQ" device="TP20R" package3d_urn="urn:adsk.eagle:package:27973/1"/>
+<part name="RESET" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TPSQ" device="TP20R" package3d_urn="urn:adsk.eagle:package:27973/1"/>
 <part name="GP7" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TPSQ" device="TP20R" package3d_urn="urn:adsk.eagle:package:27973/1"/>
 <part name="TP10" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TPSQ" device="TP20R" package3d_urn="urn:adsk.eagle:package:27973/1"/>
 <part name="3V3" library="FaBo-Symbol" deviceset="3V3" device=""/>
@@ -36122,22 +36122,22 @@ Solder type</description>
 <instance part="GND4" gate="G$1" x="223.52" y="152.4" smashed="yes">
 <attribute name="VALUE" x="223.52" y="149.352" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="TP1" gate="G$1" x="142.24" y="116.84" smashed="yes" rot="R180">
+<instance part="SWDCLK" gate="G$1" x="142.24" y="116.84" smashed="yes" rot="R180">
 <attribute name="NAME" x="144.78" y="121.285" size="1.778" layer="95" rot="R180"/>
 <attribute name="TP_SIGNAL_NAME" x="139.7" y="118.11" size="1.778" layer="97" rot="R180"/>
 </instance>
-<instance part="TP2" gate="G$1" x="165.1" y="116.84" smashed="yes" rot="R180">
+<instance part="SWDIO" gate="G$1" x="165.1" y="116.84" smashed="yes" rot="R180">
 <attribute name="NAME" x="167.64" y="121.285" size="1.778" layer="95" rot="R180"/>
 <attribute name="TP_SIGNAL_NAME" x="162.56" y="118.11" size="1.778" layer="97" rot="R180"/>
 </instance>
-<instance part="TP3" gate="G$1" x="172.72" y="116.84" smashed="yes" rot="R180">
+<instance part="GND" gate="G$1" x="172.72" y="116.84" smashed="yes" rot="R180">
 <attribute name="NAME" x="175.26" y="121.285" size="1.778" layer="95" rot="R180"/>
 <attribute name="TP_SIGNAL_NAME" x="170.18" y="118.11" size="1.778" layer="97" rot="R180"/>
 </instance>
 <instance part="GND5" gate="G$1" x="172.72" y="109.22" smashed="yes">
 <attribute name="VALUE" x="172.72" y="106.172" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="TP4" gate="G$1" x="236.22" y="129.54" smashed="yes" rot="R180">
+<instance part="RESET" gate="G$1" x="236.22" y="129.54" smashed="yes" rot="R180">
 <attribute name="NAME" x="238.76" y="133.985" size="1.778" layer="95" rot="R180"/>
 <attribute name="TP_SIGNAL_NAME" x="233.68" y="130.81" size="1.778" layer="97" rot="R180"/>
 </instance>
@@ -36230,7 +36230,7 @@ Solder type</description>
 <pinref part="S2" gate="G$1" pin="2"/>
 <wire x1="251.46" y1="129.54" x2="251.46" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="251.46" y1="119.38" x2="236.22" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="TP4" gate="G$1" pin="TP"/>
+<pinref part="RESET" gate="G$1" pin="TP"/>
 <wire x1="236.22" y1="119.38" x2="236.22" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -36414,7 +36414,7 @@ Solder type</description>
 <wire x1="223.52" y1="177.8" x2="213.36" y2="177.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="TP3" gate="G$1" pin="TP"/>
+<pinref part="GND" gate="G$1" pin="TP"/>
 <pinref part="GND5" gate="G$1" pin="GND"/>
 <wire x1="172.72" y1="114.3" x2="172.72" y2="109.22" width="0.1524" layer="91"/>
 </segment>
@@ -36553,7 +36553,7 @@ Solder type</description>
 <pinref part="U1" gate="G$1" pin="SWCLK"/>
 <wire x1="152.4" y1="121.92" x2="152.4" y2="111.76" width="0.1524" layer="91"/>
 <label x="152.4" y="109.22" size="1.778" layer="95" rot="R90"/>
-<pinref part="TP1" gate="G$1" pin="TP"/>
+<pinref part="SWDCLK" gate="G$1" pin="TP"/>
 <wire x1="152.4" y1="111.76" x2="152.4" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="114.3" x2="142.24" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="111.76" x2="152.4" y2="111.76" width="0.1524" layer="91"/>
@@ -36565,7 +36565,7 @@ Solder type</description>
 <pinref part="U1" gate="G$1" pin="SWDIO"/>
 <wire x1="157.48" y1="121.92" x2="157.48" y2="111.76" width="0.1524" layer="91"/>
 <label x="160.02" y="109.22" size="1.778" layer="95" rot="R90"/>
-<pinref part="TP2" gate="G$1" pin="TP"/>
+<pinref part="SWDIO" gate="G$1" pin="TP"/>
 <wire x1="157.48" y1="111.76" x2="157.48" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="114.3" x2="165.1" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="111.76" x2="157.48" y2="111.76" width="0.1524" layer="91"/>
