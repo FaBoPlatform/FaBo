@@ -3876,7 +3876,7 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <part name="GND27" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="T1" library="FaBo-Transistor" deviceset="TRANSISTOR" device="-NPN"/>
 <part name="R27" library="FaBo-Resistors" deviceset="RESISTOR" device="-0402" value="DNP/0402"/>
-<part name="R28" library="FaBo-Resistors" deviceset="RESISTOR" device="-0402" value="10K/0402"/>
+<part name="R28" library="FaBo-Resistors" deviceset="RESISTOR" device="-0402" value="4.7K/0402"/>
 <part name="R32" library="FaBo-Resistors" deviceset="RESISTOR" device="-0402" value="10K/0402"/>
 <part name="X_13" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="RC_POWER" library="FaBo-LED" deviceset="LED" device="-0603" value="ORANGE"/>
@@ -5809,14 +5809,14 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 </net>
 <net name="PCH_1" class="0">
 <segment>
-<wire x1="323.85" y1="41.91" x2="792.48" y2="41.91" width="0.1524" layer="91"/>
-<wire x1="792.48" y1="41.91" x2="793.75" y2="278.13" width="0.1524" layer="91"/>
-<wire x1="793.75" y1="278.13" x2="595.63" y2="278.13" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="41.91" x2="792.48" y2="41.91" width="0.1524" layer="91"/>
+<wire x1="792.48" y1="41.91" x2="792.48" y2="278.13" width="0.1524" layer="91"/>
+<wire x1="792.48" y1="278.13" x2="595.63" y2="278.13" width="0.1524" layer="91"/>
 <label x="330.2" y="73.66" size="1.778" layer="95"/>
 <label x="675.64" y="278.13" size="1.778" layer="95"/>
 <pinref part="R35" gate="G$1" pin="2"/>
-<wire x1="323.85" y1="41.91" x2="325.12" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="325.12" y1="104.14" x2="327.66" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="41.91" x2="304.8" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="104.14" x2="327.66" y2="104.14" width="0.1524" layer="91"/>
 <label x="762" y="73.66" size="1.778" layer="95"/>
 <label x="778.51" y="278.13" size="1.778" layer="95"/>
 <wire x1="595.63" y1="278.13" x2="595.63" y2="313.69" width="0.1524" layer="91"/>
