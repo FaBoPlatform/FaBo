@@ -827,12 +827,12 @@ Contact 2
 Non shorting
 0.3A 6V DC
 100Cycles</description>
-<smd name="5" x="0" y="2.9" dx="1.2" dy="1.5" layer="1" roundness="12"/>
-<smd name="6" x="-2.5" y="2.9" dx="1.2" dy="1.5" layer="1" roundness="12"/>
-<smd name="4" x="2.5" y="2.9" dx="1.2" dy="1.5" layer="1" roundness="12"/>
-<smd name="1" x="-2.5" y="-2.9" dx="1.2" dy="1.5" layer="1" roundness="12"/>
-<smd name="2" x="0" y="-2.9" dx="1.2" dy="1.5" layer="1" roundness="12"/>
-<smd name="3" x="2.5" y="-2.9" dx="1.2" dy="1.5" layer="1" roundness="12"/>
+<smd name="5" x="0" y="2.2" dx="1.2" dy="1.5" layer="1" roundness="12"/>
+<smd name="6" x="-2.5" y="2.2" dx="1.2" dy="1.5" layer="1" roundness="12"/>
+<smd name="4" x="2.5" y="2.2" dx="1.2" dy="1.5" layer="1" roundness="12"/>
+<smd name="1" x="-2.5" y="-2.2" dx="1.2" dy="1.5" layer="1" roundness="12"/>
+<smd name="2" x="0" y="-2.2" dx="1.2" dy="1.5" layer="1" roundness="12"/>
+<smd name="3" x="2.5" y="-2.2" dx="1.2" dy="1.5" layer="1" roundness="12"/>
 <wire x1="-4.25" y1="-1.75" x2="-4.25" y2="1.75" width="0.127" layer="51"/>
 <wire x1="4.25" y1="1.75" x2="4.25" y2="-1.75" width="0.127" layer="51"/>
 <wire x1="-4.25" y1="1.75" x2="4.25" y2="1.75" width="0.127" layer="51"/>
@@ -28132,13 +28132,16 @@ SLAVE</text>
 <part name="CON2_RJ11_GPIO" library="FaBo-Connetor" deviceset="MODULAR-JACK-6P-RJ11_GPIO" device=""/>
 <part name="GND10" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="TP9" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP20R" package3d_urn="urn:adsk.eagle:package:27973/1"/>
-<part name="U$5" library="FaBo-Switch" deviceset="SSSS213202" device=""/>
 <part name="TP2" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/2"/>
+<part name="U$5" library="FaBo-Switch" deviceset="SSSS213202" device=""/>
+<part name="3V3_TESTPAD" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP20R" package3d_urn="urn:adsk.eagle:package:27973/1"/>
+<part name="GND7" library="FaBo-Supply" deviceset="GND" device=""/>
+<part name="TP11" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP20R" package3d_urn="urn:adsk.eagle:package:27973/1"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">2.0.0</text>
+<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">2.0.1</text>
 <text x="25.4" y="63.5" size="3.81" layer="94">Reset Button</text>
 <text x="78.74" y="58.42" size="3.81" layer="94">Debug</text>
 <text x="195.58" y="157.48" size="1.778" layer="94">SSSS213202</text>
@@ -28299,10 +28302,21 @@ SLAVE</text>
 <attribute name="NAME" x="237.49" y="67.31" size="1.778" layer="95"/>
 <attribute name="TP_SIGNAL_NAME" x="240.03" y="64.77" size="1.778" layer="97"/>
 </instance>
-<instance part="U$5" gate="G$1" x="203.2" y="152.4" smashed="yes"/>
 <instance part="TP2" gate="G$1" x="121.92" y="71.12" smashed="yes">
 <attribute name="NAME" x="120.65" y="72.39" size="1.778" layer="95"/>
 <attribute name="TP_SIGNAL_NAME" x="123.19" y="69.85" size="1.778" layer="97"/>
+</instance>
+<instance part="U$5" gate="G$1" x="203.2" y="152.4" smashed="yes"/>
+<instance part="3V3_TESTPAD" gate="G$1" x="127" y="93.98" smashed="yes">
+<attribute name="NAME" x="125.73" y="95.25" size="1.778" layer="95"/>
+<attribute name="TP_SIGNAL_NAME" x="128.27" y="92.71" size="1.778" layer="97"/>
+</instance>
+<instance part="GND7" gate="G$1" x="119.38" y="81.28" smashed="yes">
+<attribute name="VALUE" x="116.586" y="76.2" size="1.778" layer="96"/>
+</instance>
+<instance part="TP11" gate="G$1" x="119.38" y="93.98" smashed="yes">
+<attribute name="NAME" x="118.11" y="95.25" size="1.778" layer="95"/>
+<attribute name="TP_SIGNAL_NAME" x="120.65" y="92.71" size="1.778" layer="97"/>
 </instance>
 </instances>
 <busses>
@@ -28399,29 +28413,34 @@ SLAVE</text>
 <wire x1="45.72" y1="35.56" x2="50.8" y2="35.56" width="0.1524" layer="91"/>
 <junction x="50.8" y="35.56"/>
 </segment>
+<segment>
+<pinref part="TP11" gate="G$1" pin="TP"/>
+<pinref part="GND7" gate="G$1" pin="GND"/>
+<wire x1="119.38" y1="91.44" x2="119.38" y2="81.28" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="RX" class="0">
-<segment>
-<wire x1="160.02" y1="68.58" x2="149.86" y2="68.58" width="0.1524" layer="91"/>
-<label x="149.86" y="68.58" size="1.778" layer="95"/>
-<pinref part="U1" gate="G$1" pin="PTA2/TX"/>
-</segment>
 <segment>
 <wire x1="48.26" y1="99.06" x2="48.26" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="CON1_RJ11_SERIAL" gate="G$1" pin="5:RX"/>
 <label x="48.26" y="83.82" size="1.778" layer="95" rot="R90"/>
 </segment>
+<segment>
+<wire x1="149.86" y1="66.04" x2="160.02" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="PTA1/RX"/>
+<label x="149.86" y="66.04" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="TX" class="0">
-<segment>
-<wire x1="160.02" y1="66.04" x2="149.86" y2="66.04" width="0.1524" layer="91"/>
-<label x="149.86" y="66.04" size="1.778" layer="95"/>
-<pinref part="U1" gate="G$1" pin="PTA1/RX"/>
-</segment>
 <segment>
 <wire x1="53.34" y1="83.82" x2="53.34" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="CON1_RJ11_SERIAL" gate="G$1" pin="6:TX"/>
 <label x="53.34" y="83.82" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<wire x1="160.02" y1="68.58" x2="149.86" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="PTA2/TX"/>
+<label x="149.86" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="3V3" class="0">
@@ -28437,6 +28456,9 @@ SLAVE</text>
 <pinref part="U1" gate="G$1" pin="VCC"/>
 <junction x="137.16" y="83.82"/>
 <junction x="137.16" y="55.88"/>
+<pinref part="3V3_TESTPAD" gate="G$1" pin="TP"/>
+<wire x1="137.16" y1="83.82" x2="127" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="127" y1="83.82" x2="127" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="86.36" y1="43.18" x2="81.28" y2="43.18" width="0.1524" layer="91"/>
@@ -28468,9 +28490,9 @@ SLAVE</text>
 <wire x1="203.2" y1="127" x2="228.6" y2="127" width="0.1524" layer="91"/>
 <wire x1="228.6" y1="127" x2="228.6" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="3V3" gate="G$1" pin="3V3"/>
-<pinref part="U$5" gate="G$1" pin="2"/>
 <wire x1="203.2" y1="147.32" x2="203.2" y2="127" width="0.1524" layer="91"/>
 <label x="203.2" y="142.24" size="1.778" layer="95" rot="R270"/>
+<pinref part="U$5" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="SWD_CLK" class="0">
@@ -28584,47 +28606,52 @@ SLAVE</text>
 <wire x1="190.5" y1="124.46" x2="187.96" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$11" class="0">
+<net name="SCL" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PTB0/SCL"/>
 <pinref part="TP3" gate="G$1" pin="TP"/>
 <wire x1="160.02" y1="63.5" x2="127" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="127" y1="63.5" x2="127" y2="68.58" width="0.1524" layer="91"/>
+<label x="149.86" y="63.5" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$12" class="0">
+<net name="SDA" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PTB1/SDA"/>
 <wire x1="160.02" y1="60.96" x2="121.92" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="TP2" gate="G$1" pin="TP"/>
 <wire x1="121.92" y1="68.58" x2="121.92" y2="60.96" width="0.1524" layer="91"/>
+<label x="149.86" y="60.96" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$13" class="0">
+<net name="DACO" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PTE30/DACO"/>
 <wire x1="160.02" y1="58.42" x2="116.84" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="TP1" gate="G$1" pin="TP"/>
 <wire x1="116.84" y1="58.42" x2="116.84" y2="68.58" width="0.1524" layer="91"/>
+<label x="149.86" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$14" class="0">
+<net name="MISO" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PTE19/MISO"/>
 <pinref part="TP4" gate="G$1" pin="TP"/>
 <wire x1="205.74" y1="76.2" x2="228.6" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="228.6" y1="76.2" x2="228.6" y2="99.06" width="0.1524" layer="91"/>
+<label x="210.82" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$15" class="0">
+<net name="MOSI" class="0">
 <segment>
 <pinref part="TP5" gate="G$1" pin="TP"/>
 <wire x1="233.68" y1="99.06" x2="233.68" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="PTE18/MOSI"/>
 <wire x1="233.68" y1="73.66" x2="205.74" y2="73.66" width="0.1524" layer="91"/>
+<label x="218.44" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$10" class="0">
+<net name="PTA19" class="0">
 <segment>
 <pinref part="TP6" gate="G$1" pin="TP"/>
 <wire x1="228.6" y1="50.8" x2="228.6" y2="43.18" width="0.1524" layer="91"/>
@@ -28632,9 +28659,10 @@ SLAVE</text>
 <wire x1="215.9" y1="43.18" x2="215.9" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="PTA19"/>
 <wire x1="215.9" y1="58.42" x2="205.74" y2="58.42" width="0.1524" layer="91"/>
+<label x="208.28" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$16" class="0">
+<net name="PTA18" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PTA18"/>
 <wire x1="205.74" y1="55.88" x2="213.36" y2="55.88" width="0.1524" layer="91"/>
@@ -28642,6 +28670,7 @@ SLAVE</text>
 <wire x1="213.36" y1="38.1" x2="236.22" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="TP7" gate="G$1" pin="TP"/>
 <wire x1="236.22" y1="38.1" x2="236.22" y2="50.8" width="0.1524" layer="91"/>
+<label x="208.28" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$17" class="0">
@@ -28666,11 +28695,11 @@ SLAVE</text>
 <pinref part="IC1" gate="G$1" pin="VOUT"/>
 <wire x1="200.66" y1="129.54" x2="200.66" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="187.96" y1="129.54" x2="195.58" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="U$5" gate="G$1" pin="1"/>
 <wire x1="195.58" y1="129.54" x2="200.66" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="147.32" x2="195.58" y2="129.54" width="0.1524" layer="91"/>
 <junction x="195.58" y="129.54"/>
 <label x="195.58" y="142.24" size="1.778" layer="95" rot="R270"/>
+<pinref part="U$5" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -28689,9 +28718,9 @@ SLAVE</text>
 <label x="38.1" y="83.82" size="1.778" layer="95" rot="R90"/>
 <wire x1="215.9" y1="162.56" x2="215.9" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="144.78" x2="210.82" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="U$5" gate="G$1" pin="3"/>
 <wire x1="210.82" y1="144.78" x2="210.82" y2="147.32" width="0.1524" layer="91"/>
 <label x="210.82" y="144.78" size="1.778" layer="95"/>
+<pinref part="U$5" gate="G$1" pin="3"/>
 </segment>
 </net>
 </nets>
