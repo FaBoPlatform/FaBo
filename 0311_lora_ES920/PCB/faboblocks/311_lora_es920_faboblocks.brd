@@ -8531,6 +8531,7 @@
 <wire x1="68" y1="23.5" x2="68.4" y2="23.1" width="0.1524" layer="20" curve="-90"/>
 <wire x1="68.4" y1="9" x2="68" y2="8.5" width="0.1524" layer="20" curve="-90"/>
 <wire x1="61.9" y1="0.5" x2="61.4" y2="0" width="0.1524" layer="20" curve="-90"/>
+<text x="38.46" y="20.01" size="1.27" layer="22" font="vector" ratio="15" rot="MR0">ES920LR</text>
 </plain>
 <libraries>
 <library name="FaBo-Capacitor">
