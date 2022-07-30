@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -178,7 +178,7 @@
 <plain>
 <text x="13.87" y="7.43" size="1.5" layer="21" font="vector" ratio="15" align="center">ultrasound</text>
 <text x="13.93" y="3.475" size="2.54" layer="21" font="vector" ratio="15" align="bottom-center">#129</text>
-<text x="17.21" y="2.41" size="1.016" layer="21" font="vector" ratio="15" rot="R180">Rev.2.0.0</text>
+<text x="17.21" y="2.41" size="1.016" layer="21" font="vector" ratio="15" rot="R180">Rev.2.0.1</text>
 <text x="14.07" y="11.005" size="0.762" layer="21" font="vector" ratio="15" align="top-center">Designed in Aizu</text>
 <wire x1="7.1" y1="32" x2="61.5" y2="32" width="0.1524" layer="20"/>
 <text x="41.884040625" y="2.093559375" size="1.5" layer="22" font="vector" ratio="15" rot="MR0">S/N</text>
@@ -4522,8 +4522,8 @@
 <wire x1="68" y1="23.5" x2="68.4" y2="23.1" width="0.1524" layer="20" curve="-90"/>
 <wire x1="68.4" y1="9" x2="68" y2="8.5" width="0.1524" layer="20" curve="-90"/>
 <wire x1="61.9" y1="0.5" x2="61.4" y2="0" width="0.1524" layer="20" curve="-90"/>
-<text x="25.1" y="-10.3" size="1.778" layer="51" font="vector" ratio="12">#129_ultrasound Rev2.0.0
-2022/07/19</text>
+<text x="25.1" y="-10.3" size="1.778" layer="51" font="vector" ratio="12">#129_ultrasound Rev2.0.1
+2022/07/30</text>
 <text x="39" y="16.7" size="1.27" layer="21" font="vector" ratio="14" rot="R90">VCC</text>
 <text x="36.5" y="16.6" size="1.27" layer="21" font="vector" ratio="14" rot="R90">TRIG</text>
 <text x="33.9" y="16.6" size="1.27" layer="21" font="vector" ratio="14" rot="R90">ECHO</text>
@@ -11269,6 +11269,26 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </package>
 </packages>
 </library>
+<library name="FaBo-Transistor">
+<description>&lt;h3&gt;FaBo Libraries&lt;/h3&gt;
+
+&lt;p&gt;Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/"&gt;https://creativecommons.org/licenses/by-sa/4.0/&lt;/a&gt;&lt;/p&gt;</description>
+<packages>
+<package name="SC-59" urn="urn:adsk.eagle:footprint:29647/1" locally_modified="yes">
+<description>SC-59</description>
+<wire x1="1.4224" y1="0.8604" x2="1.4224" y2="-0.8604" width="0.127" layer="51"/>
+<wire x1="1.4224" y1="-0.8604" x2="-1.4224" y2="-0.8604" width="0.127" layer="51"/>
+<wire x1="-1.4224" y1="-0.8604" x2="-1.4224" y2="0.8604" width="0.127" layer="51"/>
+<wire x1="-1.4224" y1="0.8604" x2="1.4224" y2="0.8604" width="0.127" layer="51"/>
+<smd name="C" x="0" y="1.2" dx="1" dy="1.4" layer="1" roundness="12"/>
+<smd name="E" x="0.95" y="-1.2" dx="1" dy="1.4" layer="1" roundness="12"/>
+<smd name="B" x="-0.95" y="-1.2" dx="1" dy="1.4" layer="1" roundness="12"/>
+<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -11482,16 +11502,12 @@ design rules under a new name.</description>
 <attribute name="NAME" x="39.1" y="8.662" size="0.8128" layer="51" font="vector" ratio="12" align="bottom-center"/>
 <attribute name="VALUE" x="39" y="7.4" size="0.8128" layer="27" font="vector" ratio="12" align="center"/>
 </element>
-<element name="R4" library="FaBo-Resistors" package="0603-NARROW" value="330" x="36.2" y="7.9" smashed="yes" rot="R180">
-<attribute name="NAME" x="36.2" y="7.738" size="0.8128" layer="51" font="vector" ratio="12" rot="R180" align="bottom-center"/>
-<attribute name="VALUE" x="36.2" y="8.3" size="0.8128" layer="27" font="vector" ratio="12" rot="R180" align="center"/>
-</element>
-<element name="R5" library="FaBo-Resistors" package="0603-NARROW" value="DNP" x="36.18" y="6.46" smashed="yes">
-<attribute name="NAME" x="36.28" y="5.622" size="0.8128" layer="51" font="vector" ratio="12" align="bottom-center"/>
-<attribute name="VALUE" x="36.88" y="5.16" size="0.8128" layer="27" font="vector" ratio="12" align="center"/>
-</element>
 <element name="PFET" library="FaBo-Mosfet" package="DMP2165_SOT323" value="DMP2165UW" x="37.6" y="10.8" smashed="yes">
 <attribute name="NAME" x="36.9" y="10.95" size="0.3" layer="51" font="vector" ratio="13"/>
+</element>
+<element name="T1" library="FaBo-Transistor" package="SC-59" value="RN1401" x="36" y="7.4" smashed="yes">
+<attribute name="NAME" x="34.095" y="9.305" size="1.27" layer="25"/>
+<attribute name="VALUE" x="34.095" y="4.225" size="1.27" layer="27"/>
 </element>
 </elements>
 <signals>
@@ -11554,12 +11570,7 @@ design rules under a new name.</description>
 <via x="8.89" y="17.78" extent="1-16" drill="0.35"/>
 <via x="42.92" y="11.18" extent="1-16" drill="0.35"/>
 <via x="40.38" y="16.26" extent="1-16" drill="0.35"/>
-<contactref element="R5" pad="1"/>
 <wire x1="30.39" y1="14.2" x2="30.39" y2="14.3" width="0.1524" layer="16"/>
-<wire x1="35.33" y1="6.46" x2="35.4" y2="6.39" width="0.1524" layer="1"/>
-<wire x1="35.4" y1="6.39" x2="35.4" y2="5.1" width="0.1524" layer="1"/>
-<wire x1="35.4" y1="5.1" x2="36.94" y2="3.56" width="0.1524" layer="1"/>
-<wire x1="36.94" y1="3.56" x2="37.84" y2="3.56" width="0.1524" layer="1"/>
 <wire x1="39.6" y1="1.8" x2="37.84" y2="3.56" width="0.1524" layer="16"/>
 <wire x1="37.84" y1="3.56" x2="40.38" y2="3.56" width="0.1524" layer="16"/>
 <wire x1="30.48" y1="2.54" x2="36.82" y2="2.54" width="0.1524" layer="16"/>
@@ -11631,6 +11642,14 @@ design rules under a new name.</description>
 <via x="39.68" y="12.36" extent="1-16" drill="0.35"/>
 <wire x1="39.68" y1="12.36" x2="39.68" y2="15.56" width="0.1524" layer="1"/>
 <wire x1="39.68" y1="15.56" x2="40.38" y2="16.26" width="0.1524" layer="1"/>
+<contactref element="T1" pad="E"/>
+<wire x1="36.95" y1="6.2" x2="37.84" y2="5.31" width="0.1524" layer="1"/>
+<wire x1="37.84" y1="5.31" x2="37.84" y2="3.56" width="0.1524" layer="1"/>
+<via x="38.58" y="6.06" extent="1-16" drill="0.35"/>
+<via x="41.38" y="6.06" extent="1-16" drill="0.35"/>
+<wire x1="36.95" y1="6.2" x2="38.44" y2="6.2" width="0.1524" layer="1"/>
+<wire x1="38.44" y1="6.2" x2="38.58" y2="6.06" width="0.1524" layer="1"/>
+<wire x1="38.58" y1="6.06" x2="41.38" y2="6.06" width="0.1524" layer="1"/>
 </signal>
 <signal name="5V">
 <contactref element="RJ11" pad="3"/>
@@ -11680,16 +11699,13 @@ design rules under a new name.</description>
 <wire x1="37.6" y1="13.89" x2="38.01" y2="14.3" width="0.1524" layer="1"/>
 </signal>
 <signal name="POWERONOFF">
-<contactref element="R4" pad="1"/>
 <contactref element="R3" pad="1"/>
-<contactref element="R5" pad="2"/>
-<wire x1="37.05" y1="7.9" x2="37.1" y2="7.9" width="0.1524" layer="1"/>
-<wire x1="37.1" y1="7.9" x2="38.25" y2="7.9" width="0.1524" layer="1"/>
-<wire x1="37.03" y1="6.46" x2="37.03" y2="7.83" width="0.1524" layer="1"/>
-<wire x1="37.03" y1="7.83" x2="37.1" y2="7.9" width="0.1524" layer="1"/>
 <contactref element="PFET" pad="G"/>
-<wire x1="37.05" y1="7.9" x2="36.95" y2="8" width="0.1524" layer="1"/>
-<wire x1="36.95" y1="8" x2="36.95" y2="9.85" width="0.1524" layer="1"/>
+<contactref element="T1" pad="C"/>
+<wire x1="36.95" y1="9.85" x2="36.95" y2="9.55" width="0.1524" layer="1"/>
+<wire x1="36.95" y1="9.55" x2="36" y2="8.6" width="0.1524" layer="1"/>
+<wire x1="36" y1="8.6" x2="37.55" y2="8.6" width="0.1524" layer="1"/>
+<wire x1="37.55" y1="8.6" x2="38.25" y2="7.9" width="0.1524" layer="1"/>
 </signal>
 <signal name="ONOFF">
 <contactref element="RJ11" pad="4"/>
@@ -11698,14 +11714,13 @@ design rules under a new name.</description>
 <wire x1="47.05" y1="3.25" x2="49.45" y2="3.25" width="0.1524" layer="16"/>
 <wire x1="50.39" y1="4.19" x2="50.39" y2="9.34" width="0.1524" layer="16"/>
 <wire x1="49.45" y1="3.25" x2="50.39" y2="4.19" width="0.1524" layer="16"/>
-<via x="34.1" y="6.9" extent="1-16" drill="0.35"/>
-<wire x1="34.1" y1="6.9" x2="36.3" y2="4.7" width="0.1524" layer="16"/>
 <wire x1="42.3" y1="4.7" x2="43" y2="4" width="0.1524" layer="16"/>
-<wire x1="36.3" y1="4.7" x2="42.3" y2="4.7" width="0.1524" layer="16"/>
-<contactref element="R4" pad="2"/>
-<wire x1="34.4" y1="7.9" x2="34.1" y2="7.6" width="0.1524" layer="1"/>
-<wire x1="34.1" y1="7.6" x2="34.1" y2="6.9" width="0.1524" layer="1"/>
-<wire x1="35.35" y1="7.9" x2="34.4" y2="7.9" width="0.1524" layer="1"/>
+<wire x1="42.3" y1="4.7" x2="36.3" y2="4.7" width="0.1524" layer="16"/>
+<contactref element="T1" pad="B"/>
+<via x="36.3" y="4.7" extent="1-16" drill="0.35"/>
+<wire x1="36.3" y1="4.7" x2="35.4" y2="4.7" width="0.1524" layer="1"/>
+<wire x1="35.05" y1="5.05" x2="35.05" y2="6.2" width="0.1524" layer="1"/>
+<wire x1="35.4" y1="4.7" x2="35.05" y2="5.05" width="0.1524" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
@@ -11721,6 +11736,11 @@ design rules under a new name.</description>
 <note version="6.3" minversion="6.2.2" severity="warning">
 Since Version 6.2.2 text objects can contain more than one line,
 which will not be processed correctly with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports URNs for individual library
+assets (packages, symbols, and devices). The URNs of those assets
+will not be understood (or retained) with this version.
 </note>
 <note version="8.5" severity="warning">
 Since Version 8.5, EAGLE supports locking for holes, vias, wires and polygons. 

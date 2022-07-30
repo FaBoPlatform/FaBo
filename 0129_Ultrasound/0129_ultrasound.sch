@@ -25770,6 +25770,93 @@ P-CHANNEL ENHANCEMENT MODE MOSFET</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="FaBo-Transistor">
+<description>&lt;h3&gt;FaBo Libraries&lt;/h3&gt;
+
+&lt;p&gt;Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/"&gt;https://creativecommons.org/licenses/by-sa/4.0/&lt;/a&gt;&lt;/p&gt;</description>
+<packages>
+<package name="SC-59" urn="urn:adsk.eagle:footprint:29647/1" locally_modified="yes">
+<description>SC-59</description>
+<wire x1="1.4224" y1="0.8604" x2="1.4224" y2="-0.8604" width="0.127" layer="51"/>
+<wire x1="1.4224" y1="-0.8604" x2="-1.4224" y2="-0.8604" width="0.127" layer="51"/>
+<wire x1="-1.4224" y1="-0.8604" x2="-1.4224" y2="0.8604" width="0.127" layer="51"/>
+<wire x1="-1.4224" y1="0.8604" x2="1.4224" y2="0.8604" width="0.127" layer="51"/>
+<smd name="C" x="0" y="1.2" dx="1" dy="1.4" layer="1" roundness="12"/>
+<smd name="E" x="0.95" y="-1.2" dx="1" dy="1.4" layer="1" roundness="12"/>
+<smd name="B" x="-0.95" y="-1.2" dx="1" dy="1.4" layer="1" roundness="12"/>
+<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="DNPN">
+<wire x1="2.54" y1="2.54" x2="0.508" y2="1.524" width="0.1524" layer="94"/>
+<wire x1="1.778" y1="-1.524" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="1.27" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.778" y2="-1.524" width="0.1524" layer="94"/>
+<wire x1="1.54" y1="-2.04" x2="0.308" y2="-1.424" width="0.1524" layer="94"/>
+<wire x1="1.524" y1="-2.413" x2="2.286" y2="-2.413" width="0.254" layer="94"/>
+<wire x1="2.286" y1="-2.413" x2="1.778" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="1.778" y1="-1.778" x2="1.524" y2="-2.286" width="0.254" layer="94"/>
+<wire x1="1.524" y1="-2.286" x2="1.905" y2="-2.286" width="0.254" layer="94"/>
+<wire x1="1.905" y1="-2.286" x2="1.778" y2="-2.032" width="0.254" layer="94"/>
+<text x="5.08" y="0" size="1.27" layer="95">&gt;NAME</text>
+<text x="5.08" y="-2.54" size="1.27" layer="96">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="-2.54" x2="0.508" y2="2.54" layer="94"/>
+<pin name="B" x="-22.86" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="E" x="2.54" y="-20.32" visible="off" length="short" direction="pas" swaplevel="3" rot="R90"/>
+<pin name="C" x="2.54" y="17.78" visible="off" length="short" direction="pas" swaplevel="2" rot="R270"/>
+<wire x1="0" y1="0" x2="-7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="0" x2="-12.065" y2="0" width="0.254" layer="94"/>
+<wire x1="-12.065" y1="0" x2="-12.7" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-1.27" x2="-13.335" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-13.335" y1="1.27" x2="-13.97" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-13.97" y1="-1.27" x2="-14.605" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-14.605" y1="1.27" x2="-15.24" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-1.27" x2="-15.875" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-15.875" y1="1.27" x2="-16.51" y2="0" width="0.254" layer="94"/>
+<wire x1="-16.51" y1="0" x2="-20.32" y2="0" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-4.445" x2="-6.35" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-6.35" y1="-5.08" x2="-8.89" y2="-5.715" width="0.254" layer="94"/>
+<wire x1="-8.89" y1="-5.715" x2="-6.35" y2="-6.35" width="0.254" layer="94"/>
+<wire x1="-6.35" y1="-6.35" x2="-8.89" y2="-6.985" width="0.254" layer="94"/>
+<wire x1="-8.89" y1="-6.985" x2="-6.35" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-6.35" y1="-7.62" x2="-8.89" y2="-8.255" width="0.254" layer="94"/>
+<wire x1="-8.89" y1="-8.255" x2="-7.62" y2="-8.89" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-8.89" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-4.445" x2="-7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-12.7" x2="2.54" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="2.54" y1="15.24" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<circle x="-7.62" y="0" radius="0.3175" width="0.254" layer="94"/>
+<circle x="2.54" y="-12.7" radius="0.3175" width="0.254" layer="94"/>
+<circle x="-2.2225" y="-0.3175" radius="15.81774375" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-12.7" x2="2.54" y2="-17.78" width="0.254" layer="94"/>
+<text x="-15.24" y="2.54" size="1.27" layer="94">4.7K</text>
+<text x="-5.08" y="-7.62" size="1.27" layer="94">4.7K</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="RN1401">
+<gates>
+<gate name="G$1" symbol="DNPN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SC-59">
+<connects>
+<connect gate="G$1" pin="B" pad="B"/>
+<connect gate="G$1" pin="C" pad="C"/>
+<connect gate="G$1" pin="E" pad="E"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -25791,15 +25878,14 @@ P-CHANNEL ENHANCEMENT MODE MOSFET</description>
 <part name="GND4" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="RJ11" library="FaBo-Connetor" deviceset="MODULAR-JACK-6P-RJ11_GPIO3" device=""/>
 <part name="R3" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603-NARROW" value="100k"/>
-<part name="R4" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603-NARROW" value="330"/>
-<part name="R5" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603-NARROW" value="DNP"/>
-<part name="GND3" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="PFET" library="FaBo-Mosfet" deviceset="DMP2165UW" device=""/>
+<part name="T1" library="FaBo-Transistor" deviceset="RN1401" device=""/>
+<part name="GND3" library="FaBo-Supply" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">2.0.0</text>
+<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">2.0.1</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="0" y="0" smashed="yes">
@@ -25809,43 +25895,39 @@ P-CHANNEL ENHANCEMENT MODE MOSFET</description>
 </instance>
 <instance part="U$3" gate="G$1" x="248.92" y="12.7" smashed="yes"/>
 <instance part="LOGO1" gate="G$1" x="218.44" y="5.08" smashed="yes"/>
-<instance part="U$5" gate="G$1" x="193.04" y="139.7" smashed="yes"/>
-<instance part="R1" gate="G$1" x="195.58" y="104.14" smashed="yes" rot="R90">
-<attribute name="NAME" x="194.056" y="101.854" size="1.4224" layer="95" rot="R90"/>
-<attribute name="VALUE" x="197.104" y="101.854" size="1.4224" layer="96" rot="R90" align="top-left"/>
+<instance part="U$5" gate="G$1" x="231.14" y="139.7" smashed="yes"/>
+<instance part="R1" gate="G$1" x="233.68" y="104.14" smashed="yes" rot="R90">
+<attribute name="NAME" x="232.156" y="101.854" size="1.4224" layer="95" rot="R90"/>
+<attribute name="VALUE" x="235.204" y="101.854" size="1.4224" layer="96" rot="R90" align="top-left"/>
 </instance>
-<instance part="R2" gate="G$1" x="195.58" y="60.96" smashed="yes" rot="R90">
-<attribute name="NAME" x="194.056" y="58.674" size="1.4224" layer="95" rot="R90"/>
-<attribute name="VALUE" x="197.104" y="58.674" size="1.4224" layer="96" rot="R90" align="top-left"/>
+<instance part="R2" gate="G$1" x="233.68" y="60.96" smashed="yes" rot="R90">
+<attribute name="NAME" x="232.156" y="58.674" size="1.4224" layer="95" rot="R90"/>
+<attribute name="VALUE" x="235.204" y="58.674" size="1.4224" layer="96" rot="R90" align="top-left"/>
 </instance>
-<instance part="GND1" gate="G$1" x="195.58" y="48.26" smashed="yes">
-<attribute name="VALUE" x="192.786" y="43.18" size="1.778" layer="96"/>
+<instance part="GND1" gate="G$1" x="233.68" y="48.26" smashed="yes">
+<attribute name="VALUE" x="230.886" y="43.18" size="1.778" layer="96"/>
 </instance>
-<instance part="GND2" gate="G$1" x="203.2" y="119.38" smashed="yes">
-<attribute name="VALUE" x="200.406" y="114.3" size="1.778" layer="96"/>
+<instance part="GND2" gate="G$1" x="241.3" y="119.38" smashed="yes">
+<attribute name="VALUE" x="238.506" y="114.3" size="1.778" layer="96"/>
 </instance>
-<instance part="GND4" gate="G$1" x="53.34" y="50.8" smashed="yes">
-<attribute name="VALUE" x="50.546" y="45.72" size="1.778" layer="96"/>
+<instance part="GND4" gate="G$1" x="20.32" y="50.8" smashed="yes">
+<attribute name="VALUE" x="17.526" y="45.72" size="1.778" layer="96"/>
 </instance>
-<instance part="RJ11" gate="G$1" x="66.04" y="104.14" smashed="yes">
-<attribute name="NAME" x="68.58" y="119.888" size="1.778" layer="95"/>
+<instance part="RJ11" gate="G$1" x="33.02" y="104.14" smashed="yes">
+<attribute name="NAME" x="35.56" y="119.888" size="1.778" layer="95"/>
 </instance>
-<instance part="R3" gate="G$1" x="132.08" y="121.92" smashed="yes" rot="R90">
-<attribute name="NAME" x="130.556" y="119.634" size="1.4224" layer="95" rot="R90"/>
-<attribute name="VALUE" x="133.604" y="119.634" size="1.4224" layer="96" rot="R90" align="top-left"/>
+<instance part="R3" gate="G$1" x="170.18" y="154.94" smashed="yes" rot="R90">
+<attribute name="NAME" x="168.656" y="152.654" size="1.4224" layer="95" rot="R90"/>
+<attribute name="VALUE" x="171.704" y="152.654" size="1.4224" layer="96" rot="R90" align="top-left"/>
 </instance>
-<instance part="R4" gate="G$1" x="119.38" y="109.22" smashed="yes" rot="R180">
-<attribute name="NAME" x="121.666" y="107.696" size="1.4224" layer="95" rot="R180"/>
-<attribute name="VALUE" x="121.666" y="110.744" size="1.4224" layer="96" rot="R180" align="top-left"/>
+<instance part="PFET" gate="G$1" x="198.12" y="137.16" smashed="yes" rot="MR180"/>
+<instance part="T1" gate="G$1" x="167.64" y="119.38" smashed="yes">
+<attribute name="NAME" x="172.72" y="119.38" size="1.27" layer="95"/>
+<attribute name="VALUE" x="172.72" y="116.84" size="1.27" layer="96"/>
 </instance>
-<instance part="R5" gate="G$1" x="132.08" y="91.44" smashed="yes" rot="R90">
-<attribute name="NAME" x="130.556" y="89.154" size="1.4224" layer="95" rot="R90"/>
-<attribute name="VALUE" x="133.604" y="89.154" size="1.4224" layer="96" rot="R90" align="top-left"/>
+<instance part="GND3" gate="G$1" x="170.18" y="91.44" smashed="yes">
+<attribute name="VALUE" x="167.386" y="86.36" size="1.778" layer="96"/>
 </instance>
-<instance part="GND3" gate="G$1" x="132.08" y="81.28" smashed="yes">
-<attribute name="VALUE" x="129.286" y="76.2" size="1.778" layer="96"/>
-</instance>
-<instance part="PFET" gate="G$1" x="160.02" y="104.14" smashed="yes" rot="MR180"/>
 </instances>
 <busses>
 </busses>
@@ -25854,104 +25936,102 @@ P-CHANNEL ENHANCEMENT MODE MOSFET</description>
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="GND1" gate="G$1" pin="GND"/>
-<wire x1="195.58" y1="58.42" x2="195.58" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="58.42" x2="233.68" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$5" gate="G$1" pin="4:GND"/>
-<wire x1="198.12" y1="129.54" x2="198.12" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="198.12" y1="124.46" x2="203.2" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="129.54" x2="236.22" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="124.46" x2="241.3" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="G$1" pin="GND"/>
-<wire x1="203.2" y1="124.46" x2="203.2" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="124.46" x2="241.3" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND4" gate="G$1" pin="GND"/>
-<wire x1="53.34" y1="86.36" x2="53.34" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="86.36" x2="20.32" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="RJ11" gate="G$1" pin="1:GND"/>
 </segment>
 <segment>
-<pinref part="R5" gate="G$1" pin="1"/>
+<pinref part="T1" gate="G$1" pin="E"/>
 <pinref part="GND3" gate="G$1" pin="GND"/>
-<wire x1="132.08" y1="88.9" x2="132.08" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="99.06" x2="170.18" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="5V" class="0">
 <segment>
-<wire x1="63.5" y1="86.36" x2="63.5" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="86.36" x2="30.48" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="RJ11" gate="G$1" pin="3:VCC"/>
-<wire x1="63.5" y1="60.96" x2="106.68" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="60.96" x2="106.68" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="134.62" x2="132.08" y2="134.62" width="0.1524" layer="91"/>
-<label x="137.16" y="134.62" size="1.778" layer="95"/>
-<label x="83.82" y="60.96" size="1.778" layer="95"/>
+<wire x1="30.48" y1="60.96" x2="73.66" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="60.96" x2="73.66" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="167.64" x2="170.18" y2="167.64" width="0.1524" layer="91"/>
+<label x="175.26" y="167.64" size="1.778" layer="95"/>
+<label x="50.8" y="60.96" size="1.778" layer="95"/>
 <pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="132.08" y1="127" x2="132.08" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="134.62" x2="132.08" y2="134.62" width="0.1524" layer="91"/>
-<junction x="132.08" y="134.62"/>
+<wire x1="170.18" y1="160.02" x2="170.18" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="167.64" x2="170.18" y2="167.64" width="0.1524" layer="91"/>
+<junction x="170.18" y="167.64"/>
 <pinref part="PFET" gate="G$1" pin="S"/>
-<wire x1="162.56" y1="121.92" x2="162.56" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="154.94" x2="200.66" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TRIG" class="0">
 <segment>
 <pinref part="U$5" gate="G$1" pin="2:TRIG"/>
-<wire x1="190.5" y1="129.54" x2="190.5" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="190.5" y1="68.58" x2="73.66" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="68.58" x2="73.66" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="129.54" x2="228.6" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="68.58" x2="40.64" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="68.58" x2="40.64" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="RJ11" gate="G$1" pin="5:PIN-A"/>
-<label x="83.82" y="68.58" size="1.778" layer="95"/>
+<label x="50.8" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ECHO" class="0">
 <segment>
-<wire x1="78.74" y1="86.36" x2="78.74" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="76.2" x2="195.58" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="86.36" x2="45.72" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="76.2" x2="233.68" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="195.58" y1="76.2" x2="195.58" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="76.2" x2="233.68" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="195.58" y1="76.2" x2="195.58" y2="66.04" width="0.1524" layer="91"/>
-<junction x="195.58" y="76.2"/>
+<wire x1="233.68" y1="76.2" x2="233.68" y2="66.04" width="0.1524" layer="91"/>
+<junction x="233.68" y="76.2"/>
 <pinref part="RJ11" gate="G$1" pin="6:PIN-B"/>
-<label x="83.82" y="76.2" size="1.778" layer="95"/>
+<label x="50.8" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
 <pinref part="U$5" gate="G$1" pin="3:ECHO"/>
 <pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="195.58" y1="129.54" x2="195.58" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="129.54" x2="233.68" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
 <pinref part="U$5" gate="G$1" pin="1:VCC"/>
-<wire x1="187.96" y1="129.54" x2="187.96" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="81.28" x2="162.56" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="129.54" x2="226.06" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="81.28" x2="200.66" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="PFET" gate="G$1" pin="D"/>
-<wire x1="162.56" y1="86.36" x2="162.56" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="119.38" x2="200.66" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="POWERONOFF" class="0">
 <segment>
-<wire x1="132.08" y1="109.22" x2="132.08" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="121.92" y1="109.22" x2="132.08" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="142.24" x2="170.18" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="1"/>
-<pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="132.08" y1="96.52" x2="132.08" y2="109.22" width="0.1524" layer="91"/>
-<junction x="132.08" y="109.22"/>
 <pinref part="PFET" gate="G$1" pin="G"/>
-<wire x1="142.24" y1="109.22" x2="132.08" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="142.24" x2="170.18" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="T1" gate="G$1" pin="C"/>
+<wire x1="170.18" y1="137.16" x2="170.18" y2="142.24" width="0.1524" layer="91"/>
+<junction x="170.18" y="142.24"/>
 </segment>
 </net>
 <net name="ONOFF" class="0">
 <segment>
 <pinref part="RJ11" gate="G$1" pin="4:PIN-C"/>
-<wire x1="68.58" y1="86.36" x2="68.58" y2="81.28" width="0.1524" layer="91"/>
-<label x="83.82" y="81.28" size="1.778" layer="95"/>
-<wire x1="68.58" y1="81.28" x2="96.52" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="81.28" x2="96.52" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="96.52" y1="109.22" x2="114.3" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="86.36" x2="35.56" y2="81.28" width="0.1524" layer="91"/>
+<label x="50.8" y="81.28" size="1.778" layer="95"/>
+<wire x1="35.56" y1="81.28" x2="137.16" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="T1" gate="G$1" pin="B"/>
+<wire x1="144.78" y1="119.38" x2="137.16" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="119.38" x2="137.16" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -25959,4 +26039,11 @@ P-CHANNEL ENHANCEMENT MODE MOSFET</description>
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports URNs for individual library
+assets (packages, symbols, and devices). The URNs of those assets
+will not be understood (or retained) with this version.
+</note>
+</compatibility>
 </eagle>
