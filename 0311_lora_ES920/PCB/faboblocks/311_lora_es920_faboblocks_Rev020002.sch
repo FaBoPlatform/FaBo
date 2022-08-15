@@ -28041,6 +28041,82 @@ SLAVE</text>
 </deviceset>
 </devicesets>
 </library>
+<library name="FaBo-Transistor">
+<description>&lt;h3&gt;FaBo Libraries&lt;/h3&gt;
+
+&lt;p&gt;Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/"&gt;https://creativecommons.org/licenses/by-sa/4.0/&lt;/a&gt;&lt;/p&gt;</description>
+<packages>
+<package name="SOT23-3">
+<wire x1="-0.8" y1="0.65" x2="-1.475" y2="0.65" width="0.1" layer="21"/>
+<wire x1="-1.475" y1="0.65" x2="-1.475" y2="-0.1" width="0.1" layer="21"/>
+<wire x1="0.8" y1="0.65" x2="1.475" y2="0.65" width="0.1" layer="21"/>
+<wire x1="1.475" y1="0.65" x2="1.475" y2="-0.1" width="0.1" layer="21"/>
+<smd name="1" x="-0.95" y="-1" dx="0.8" dy="1" layer="1" roundness="30"/>
+<smd name="2" x="0.95" y="-1" dx="0.8" dy="1" layer="1" roundness="30"/>
+<smd name="3" x="0" y="1" dx="0.8" dy="1" layer="1" roundness="30"/>
+<text x="0" y="2" size="0.8128" layer="25" font="vector" ratio="15" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.75" size="0.8128" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
+</package>
+<package name="TO-92">
+<wire x1="-2" y1="-1.59" x2="2" y2="-1.59" width="0.1" layer="21"/>
+<pad name="C" x="0" y="0" drill="1" diameter="1.9304" shape="octagon"/>
+<wire x1="-2" y1="-1.59" x2="2" y2="-1.59" width="0.1" layer="21" curve="-259.045263"/>
+<pad name="E" x="-2.54" y="0" drill="1" diameter="1.9304" shape="octagon"/>
+<pad name="B" x="2.54" y="0" drill="1" diameter="1.9304" shape="octagon"/>
+<text x="0" y="-2" size="0.8128" layer="25" font="vector" ratio="15" align="top-center">&gt;NAME</text>
+</package>
+</packages>
+<symbols>
+<symbol name="NPN">
+<wire x1="2.54" y1="2.54" x2="0.508" y2="1.524" width="0.1524" layer="94"/>
+<wire x1="1.778" y1="-1.524" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="1.27" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.778" y2="-1.524" width="0.1524" layer="94"/>
+<wire x1="1.54" y1="-2.04" x2="0.308" y2="-1.424" width="0.1524" layer="94"/>
+<wire x1="1.524" y1="-2.413" x2="2.286" y2="-2.413" width="0.254" layer="94"/>
+<wire x1="2.286" y1="-2.413" x2="1.778" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="1.778" y1="-1.778" x2="1.524" y2="-2.286" width="0.254" layer="94"/>
+<wire x1="1.524" y1="-2.286" x2="1.905" y2="-2.286" width="0.254" layer="94"/>
+<wire x1="1.905" y1="-2.286" x2="1.778" y2="-2.032" width="0.254" layer="94"/>
+<text x="5.08" y="0" size="1.27" layer="95">&gt;NAME</text>
+<text x="5.08" y="-2.54" size="1.27" layer="96">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="-2.54" x2="0.508" y2="2.54" layer="94"/>
+<pin name="B" x="-2.54" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="E" x="2.54" y="-5.08" visible="off" length="short" direction="pas" swaplevel="3" rot="R90"/>
+<pin name="C" x="2.54" y="5.08" visible="off" length="short" direction="pas" swaplevel="2" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="NPN" prefix="IC" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="NPN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-SMD" package="SOT23-3">
+<connects>
+<connect gate="G$1" pin="B" pad="1"/>
+<connect gate="G$1" pin="C" pad="3"/>
+<connect gate="G$1" pin="E" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-2SC1815" package="TO-92">
+<connects>
+<connect gate="G$1" pin="B" pad="B"/>
+<connect gate="G$1" pin="C" pad="C"/>
+<connect gate="G$1" pin="E" pad="E"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -28103,7 +28179,10 @@ SLAVE</text>
 <part name="TP11" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP20R" package3d_urn="urn:adsk.eagle:package:27973/1"/>
 <part name="R1" library="FaBo-Resistors" deviceset="RESISTOR" device="-0402" value="10k"/>
 <part name="R3" library="FaBo-Resistors" deviceset="RESISTOR" device="-0402" value="10k"/>
-<part name="R5" library="FaBo-Resistors" deviceset="RESISTOR" device="-0402" value="10K/0402"/>
+<part name="IC2" library="FaBo-Transistor" deviceset="NPN" device="-SMD"/>
+<part name="GND12" library="FaBo-Supply" deviceset="GND" device=""/>
+<part name="R4" library="FaBo-Resistors" deviceset="RESISTOR" device="-0402" value="10k"/>
+<part name="3V5" library="FaBo-Supply" deviceset="3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -28294,9 +28373,19 @@ SLAVE</text>
 <attribute name="NAME" x="143.256" y="71.374" size="1.4224" layer="95" rot="R90"/>
 <attribute name="VALUE" x="146.304" y="71.374" size="1.4224" layer="96" rot="R90" align="top-left"/>
 </instance>
-<instance part="R5" gate="G$1" x="76.2" y="121.92" smashed="yes" rot="R90">
-<attribute name="NAME" x="74.676" y="119.634" size="1.4224" layer="95" rot="R90"/>
-<attribute name="VALUE" x="77.724" y="119.634" size="1.4224" layer="96" rot="R90" align="top-left"/>
+<instance part="IC2" gate="G$1" x="83.82" y="106.68" smashed="yes">
+<attribute name="NAME" x="88.9" y="106.68" size="1.27" layer="95"/>
+<attribute name="VALUE" x="88.9" y="104.14" size="1.27" layer="96"/>
+</instance>
+<instance part="GND12" gate="G$1" x="86.36" y="96.52" smashed="yes">
+<attribute name="VALUE" x="83.566" y="91.44" size="1.778" layer="96"/>
+</instance>
+<instance part="R4" gate="G$1" x="91.44" y="124.46" smashed="yes" rot="R90">
+<attribute name="NAME" x="89.916" y="122.174" size="1.4224" layer="95" rot="R90"/>
+<attribute name="VALUE" x="92.964" y="122.174" size="1.4224" layer="96" rot="R90" align="top-left"/>
+</instance>
+<instance part="3V5" gate="G$1" x="91.44" y="132.08" smashed="yes">
+<attribute name="VALUE" x="90.17" y="135.636" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -28398,6 +28487,11 @@ SLAVE</text>
 <pinref part="GND7" gate="G$1" pin="GND"/>
 <wire x1="119.38" y1="91.44" x2="119.38" y2="81.28" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="IC2" gate="G$1" pin="E"/>
+<pinref part="GND12" gate="G$1" pin="GND"/>
+<wire x1="86.36" y1="101.6" x2="86.36" y2="96.52" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="RX" class="0">
 <segment>
@@ -28490,6 +28584,11 @@ SLAVE</text>
 <label x="203.2" y="142.24" size="1.778" layer="95" rot="R270"/>
 <pinref part="U$5" gate="G$1" pin="2"/>
 </segment>
+<segment>
+<pinref part="3V5" gate="G$1" pin="3V3"/>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="91.44" y1="132.08" x2="91.44" y2="129.54" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="SWD_CLK" class="0">
 <segment>
@@ -28517,13 +28616,13 @@ SLAVE</text>
 </net>
 <net name="RESETB" class="0">
 <segment>
-<label x="215.9" y="81.28" size="1.778" layer="95"/>
 <pinref part="U1" gate="G$1" pin="RESETB"/>
 <wire x1="205.74" y1="81.28" x2="208.28" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="TP8" gate="G$1" pin="TP"/>
 <wire x1="208.28" y1="81.28" x2="215.9" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="208.28" y1="91.44" x2="208.28" y2="81.28" width="0.1524" layer="91"/>
 <junction x="208.28" y="81.28"/>
+<label x="215.9" y="81.28" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <wire x1="104.14" y1="33.02" x2="105.41" y2="33.02" width="0.1524" layer="91"/>
@@ -28543,9 +28642,14 @@ SLAVE</text>
 <wire x1="35.56" y1="38.1" x2="35.56" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="76.2" y1="119.38" x2="76.2" y2="106.68" width="0.1524" layer="91"/>
-<label x="78.74" y="106.68" size="1.778" layer="95" rot="R90"/>
-<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="86.36" y1="111.76" x2="86.36" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="IC2" gate="G$1" pin="C"/>
+<wire x1="86.36" y1="116.84" x2="91.44" y2="116.84" width="0.1524" layer="91"/>
+<label x="93.98" y="116.84" size="1.778" layer="95" xref="yes"/>
+<pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="91.44" y1="116.84" x2="93.98" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="121.92" x2="91.44" y2="116.84" width="0.1524" layer="91"/>
+<junction x="91.44" y="116.84"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -28722,9 +28826,10 @@ SLAVE</text>
 <net name="RESET" class="0">
 <segment>
 <pinref part="CON2_RJ11_GPIO" gate="G$1" pin="5:PIN-A"/>
-<wire x1="76.2" y1="127" x2="76.2" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="106.68" x2="76.2" y2="134.62" width="0.1524" layer="91"/>
 <label x="78.74" y="127" size="1.778" layer="95" rot="R90"/>
-<pinref part="R5" gate="G$1" pin="2"/>
+<pinref part="IC2" gate="G$1" pin="B"/>
+<wire x1="81.28" y1="106.68" x2="76.2" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
