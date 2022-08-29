@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -16044,8 +16044,8 @@
 <text x="82.356" y="35.5668" size="1.5" layer="21" font="vector" ratio="15">T_DINT</text>
 <text x="82.356" y="38.1068" size="1.5" layer="21" font="vector" ratio="15">T_DO</text>
 <text x="82.356" y="40.6468" size="1.5" layer="21" font="vector" ratio="15">T_IRQ</text>
-<text x="61.976" y="10.2468" size="1.5" layer="22" font="vector" ratio="15" rot="MR0">1</text>
-<text x="63.176" y="7.8468" size="1.5" layer="22" font="vector" ratio="15" rot="MR0">2</text>
+<text x="61.176" y="10.2468" size="1.5" layer="21" font="vector" ratio="15">1</text>
+<text x="61.776" y="7.8468" size="1.5" layer="21" font="vector" ratio="15">2</text>
 </plain>
 <libraries>
 <library name="component">
