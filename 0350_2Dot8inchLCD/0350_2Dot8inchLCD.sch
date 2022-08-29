@@ -26038,7 +26038,7 @@ IO3.3V(TTL)
 <sheets>
 <sheet>
 <plain>
-<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">2.0.0</text>
+<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">2.0.1</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="0" y="0" smashed="yes">
@@ -26109,12 +26109,13 @@ IO3.3V(TTL)
 <pinref part="SPI-LCD" gate="G$1" pin="2:SCK"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="MOSI" class="0">
 <segment>
 <pinref part="U$5" gate="G$1" pin="6:SDI(MOSI)"/>
-<wire x1="162.56" y1="81.28" x2="63.5" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="81.28" x2="63.5" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="SPI-LCD" gate="G$1" pin="4:MISO"/>
+<wire x1="162.56" y1="81.28" x2="73.66" y2="81.28" width="0.1524" layer="91"/>
+<label x="88.9" y="81.28" size="1.778" layer="95"/>
+<pinref part="SPI-LCD" gate="G$1" pin="6:MOSI"/>
+<wire x1="73.66" y1="99.06" x2="73.66" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -26280,12 +26281,13 @@ IO3.3V(TTL)
 <pinref part="R1" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$12" class="0">
+<net name="MISO" class="0">
 <segment>
 <pinref part="U$5" gate="G$1" pin="9:SDO(MISO)"/>
-<wire x1="162.56" y1="73.66" x2="73.66" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="73.66" x2="73.66" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="SPI-LCD" gate="G$1" pin="6:MOSI"/>
+<wire x1="162.56" y1="73.66" x2="63.5" y2="73.66" width="0.1524" layer="91"/>
+<label x="88.9" y="73.66" size="1.778" layer="95"/>
+<pinref part="SPI-LCD" gate="G$1" pin="4:MISO"/>
+<wire x1="63.5" y1="73.66" x2="63.5" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$13" class="0">
