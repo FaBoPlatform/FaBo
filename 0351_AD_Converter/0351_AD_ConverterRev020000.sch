@@ -26425,9 +26425,9 @@ Non shorting
 <sheets>
 <sheet>
 <plain>
-<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">2.0.0</text>
+<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">2.0.1</text>
 <text x="162.56" y="111.76" size="1.778" layer="94">LP2985-33</text>
-<text x="508" y="20.32" size="2.54" layer="94" align="bottom-center">2.0.0</text>
+<text x="508" y="20.32" size="2.54" layer="94" align="bottom-center">2.0.1</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="0" y="0" smashed="yes">
@@ -26800,7 +26800,7 @@ Non shorting
 <label x="457.2" y="76.2" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
-<net name="0" class="0">
+<net name="AGND" class="0">
 <segment>
 <pinref part="CON1" gate="G$1" pin="1:GND"/>
 <pinref part="X_1" gate="G$1" pin="0"/>
