@@ -18562,6 +18562,8 @@
 <rectangle x1="29.758640625" y1="34.06648125" x2="30.530796875" y2="34.0868" layer="22" rot="R180"/>
 <rectangle x1="25.186640625" y1="34.06648125" x2="25.958796875" y2="34.0868" layer="22" rot="R180"/>
 <rectangle x1="19.090640625" y1="34.06648125" x2="23.682959375" y2="34.0868" layer="22" rot="R180"/>
+<text x="64.302078125" y="13.101196875" size="1.5" layer="21" font="vector" ratio="15">LCD</text>
+<text x="47.0910375" y="13.1418375" size="1.5" layer="21" font="vector" ratio="15">TOUCH</text>
 </plain>
 <libraries>
 <library name="component">
