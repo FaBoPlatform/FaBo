@@ -3831,7 +3831,7 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <part name="GND54" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="GND15" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="R1" library="FaBo-Resistors" deviceset="RESISTOR" device="-0402" value="10K/0402"/>
-<part name="R3" library="FaBo-Resistors" deviceset="RESISTOR" device="-0402" value="10K/0402"/>
+<part name="R3" library="FaBo-Resistors" deviceset="RESISTOR" device="-0402" value="0/0402"/>
 <part name="X_4" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="X_5" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="X_6" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
