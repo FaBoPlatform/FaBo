@@ -4148,6 +4148,11 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <text x="515.62" y="69.85" size="1.778" layer="94">T2N7002AK</text>
 <text x="585.47" y="153.67" size="1.778" layer="94">T2N7002AK</text>
 <text x="588.01" y="54.61" size="1.778" layer="94">T2N7002AK</text>
+<text x="358.14" y="99.06" size="1.778" layer="94">2SC2712</text>
+<text x="551.18" y="358.14" size="1.778" layer="94">2SC2712</text>
+<text x="251.46" y="734.06" size="1.778" layer="94">1N4148WS</text>
+<text x="642.62" y="736.6" size="1.778" layer="94">1N4148WS</text>
+<text x="1021.08" y="731.52" size="1.778" layer="94">1N4148WS</text>
 </plain>
 <instances>
 <instance part="SUPPLY2" gate="5V" x="134.62" y="153.67" smashed="yes">

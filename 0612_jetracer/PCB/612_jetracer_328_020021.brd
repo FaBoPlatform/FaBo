@@ -226,7 +226,8 @@
 <text x="72.5" y="20.5" size="1.27" layer="22" font="vector" ratio="10" rot="MR0">Rev 2.0.21</text>
 <text x="55.2" y="-8.3" size="1.27" layer="48" font="vector" ratio="14">#612 JetRacer Rev 2.0.21 B
 2022/06/06
-2022/09/16 R1 10K-&gt;0</text>
+2022/09/16 R1 10K-&gt;0
+2022/09/29 2SC3325-&gt;2SC2712</text>
 <wire x1="10.5" y1="16.8" x2="14.4" y2="13" width="0.1524" layer="20"/>
 <wire x1="14.4" y1="13" x2="14.4" y2="6.1" width="0.1524" layer="20"/>
 <wire x1="79.9" y1="0" x2="67.6" y2="0" width="0.1524" layer="20"/>
@@ -3825,12 +3826,17 @@
 <text x="22.1" y="41.5" size="0.8128" layer="48" font="vector" ratio="15">MC74HC157A</text>
 <text x="78.7" y="21.8" size="1.27" layer="22" font="vector" ratio="18" rot="MR180">ID2</text>
 <text x="20.9" y="71.4" size="1.5" layer="22" font="vector" ratio="18" rot="MR180">S/N</text>
-<text x="15.4" y="26" size="0.4064" layer="48" font="vector" ratio="15">2C3325-Y</text>
-<text x="13.7" y="37.1" size="0.4064" layer="48" font="vector" ratio="15">2C3325-Y</text>
 <text x="42.6" y="48.1" size="0.3048" layer="48" font="vector" ratio="15">2N7002K</text>
 <text x="35.8" y="48.7" size="0.3048" layer="48" font="vector" ratio="15">2N7002K</text>
 <text x="26.1" y="49.8" size="0.3048" layer="48" font="vector" ratio="15">2N7002K</text>
 <text x="22.4" y="47.8" size="0.3048" layer="48" font="vector" ratio="15">2N7002K</text>
+<text x="25.4" y="54.6" size="0.8" layer="52" font="vector" rot="MR0">LP2985-33</text>
+<text x="13.4" y="51.5" size="0.8" layer="52" font="vector" rot="MR0">LP2985-50</text>
+<text x="13.1" y="36.5" size="0.4" layer="51" font="vector" ratio="15">2SC2712</text>
+<text x="15.3" y="25.7" size="0.4" layer="51" font="vector" ratio="15">2SC2712</text>
+<text x="1.4" y="44.9" size="0.4" layer="51" font="vector" ratio="15" rot="R90">1N4148WS</text>
+<text x="7.8" y="45.9" size="0.4" layer="51" font="vector" ratio="15" rot="R90">1N4148WS</text>
+<text x="15.9" y="45.6" size="0.4" layer="51" font="vector" ratio="15" rot="R90">1N4148WS</text>
 </plain>
 <libraries>
 <library name="FaBo-Capacitor">
