@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
@@ -4057,18 +4057,18 @@ Inverter logic Open Collector
 <part name="GND9" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="C18" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0402" value="0.1uF/0402"/>
 <part name="GND11" library="FaBo-etc" deviceset="GND" device=""/>
-<part name="R49" library="FaBo-Resistors" deviceset="RESISTOR" device="-0402" value="350/0402"/>
+<part name="R49" library="FaBo-Resistors" deviceset="RESISTOR" device="-0402" value="390/0402"/>
 <part name="3V14" library="FaBo-Supply" deviceset="3V3" device=""/>
-<part name="R50" library="FaBo-Resistors" deviceset="RESISTOR" device="-0402" value="350/0402"/>
+<part name="R50" library="FaBo-Resistors" deviceset="RESISTOR" device="-0402" value="390/0402"/>
 <part name="3V15" library="FaBo-Supply" deviceset="3V3" device=""/>
 <part name="SUPPLY5" library="FaBo-etc" deviceset="5V" device=""/>
 <part name="X_26" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
-<part name="R51" library="FaBo-Resistors" deviceset="RESISTOR" device="-0402" value="350/0402"/>
+<part name="R51" library="FaBo-Resistors" deviceset="RESISTOR" device="-0402" value="390/0402"/>
 <part name="C20" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="0.1uF">
 <attribute name="SPICEPREFIX" value="C"/>
 </part>
 <part name="X_27" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
-<part name="R52" library="FaBo-Resistors" deviceset="RESISTOR" device="-0402" value="350/0402"/>
+<part name="R52" library="FaBo-Resistors" deviceset="RESISTOR" device="-0402" value="390/0402"/>
 <part name="T6" library="FaBo-Transistor" deviceset="SN74LVC2G04" device=""/>
 <part name="X_28" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="C22" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="0.1uF">
@@ -4085,6 +4085,7 @@ Inverter logic Open Collector
 <part name="TP9" library="FaBo-Supply" deviceset="TP" device="-15"/>
 <part name="BYPASS" library="FaBo-Resistors" deviceset="RESISTOR" device="-0805" value="DNP/0806"/>
 <part name="TP10" library="FaBo-Supply" deviceset="TP" device="-15"/>
+<part name="U$18" library="FaBo-etc" deviceset="A0L-FRAME" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4222,6 +4223,9 @@ Inverter logic Open Collector
 <wire x1="417.83" y1="171.45" x2="426.72" y2="171.45" width="0.1524" layer="94"/>
 <wire x1="426.72" y1="171.45" x2="425.45" y2="172.72" width="0.1524" layer="94"/>
 <text x="568.96" y="242.57" size="1.27" layer="94">LDOバイパス</text>
+<text x="855.98" y="520.7" size="2.54" layer="94">Rev 2.0.22_B 2022/11/09 R49,R50,R51,R52 350から390へ変更</text>
+<text x="833.12" y="530.86" size="2.54" layer="94">Rev2.0.22</text>
+<text x="855.98" y="525.78" size="2.54" layer="94">Rev 2.0.22　2022/10/22 first edition</text>
 </plain>
 <instances>
 <instance part="SUPPLY2" gate="5V" x="134.62" y="153.67" smashed="yes">
@@ -4979,6 +4983,10 @@ Inverter logic Open Collector
 <attribute name="VALUE" x="571.754" y="237.236" size="1.4224" layer="96" align="top-left"/>
 </instance>
 <instance part="TP10" gate="G$1" x="533.4" y="270.51" smashed="yes" rot="R180"/>
+<instance part="U$18" gate="G$1" x="812.8" y="0" smashed="yes">
+<attribute name="LAST_DATE_TIME" x="1529.08" y="22.86" size="1.778" layer="94" align="center-left"/>
+<attribute name="SHEET" x="1582.42" y="22.86" size="1.778" layer="94" align="center-left"/>
+</instance>
 </instances>
 <busses>
 </busses>
