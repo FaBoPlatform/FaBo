@@ -191,70 +191,6 @@
 <libraries>
 <library name="FaBo-Connetor">
 <packages>
-<package name="SPI-BM04B-PASS-1">
-<smd name="CI" x="1" y="-0.1" dx="2.7" dy="1" layer="1" rot="R90"/>
-<smd name="5V" x="-1" y="-0.1" dx="2.7" dy="1" layer="1" rot="R90"/>
-<smd name="GND" x="-3" y="-0.1" dx="2.7" dy="1" layer="1" rot="R90"/>
-<smd name="DI" x="3" y="-0.1" dx="2.7" dy="1" layer="1" rot="R90"/>
-<smd name="P$5" x="-5.4" y="4.5" dx="3.8" dy="1.8" layer="1" rot="R90"/>
-<smd name="P$6" x="5.4" y="4.4" dx="3.8" dy="1.8" layer="1" rot="R90"/>
-<wire x1="-6" y1="8.7" x2="-4" y2="8.7" width="0.127" layer="21"/>
-<wire x1="-4" y1="8.7" x2="-4" y2="7.9" width="0.127" layer="21"/>
-<wire x1="-4" y1="7.9" x2="4" y2="7.9" width="0.127" layer="21"/>
-<wire x1="4" y1="7.9" x2="4" y2="8.7" width="0.127" layer="21"/>
-<wire x1="4" y1="8.7" x2="6" y2="8.7" width="0.127" layer="21"/>
-<wire x1="-6" y1="8.7" x2="-6" y2="0.2" width="0.127" layer="21"/>
-<wire x1="-6" y1="0.2" x2="-5" y2="0.2" width="0.127" layer="21"/>
-<wire x1="-5" y1="0.2" x2="-5" y2="0.4" width="0.127" layer="21"/>
-<wire x1="-5" y1="0.4" x2="5" y2="0.4" width="0.127" layer="21"/>
-<wire x1="5" y1="0.4" x2="5" y2="0.2" width="0.127" layer="21"/>
-<wire x1="5" y1="0.2" x2="6" y2="0.2" width="0.127" layer="21"/>
-<wire x1="6" y1="0.2" x2="6" y2="8.7" width="0.127" layer="21"/>
-<hole x="5.2" y="1.15" drill="0.8"/>
-<rectangle x1="-5.7" y1="0.2" x2="-4.7" y2="2" layer="46" rot="R90"/>
-</package>
-<package name="SPI-B04B-PASK-1">
-<pad name="GND" x="-3" y="1.27" drill="0.8" diameter="1.4224" shape="octagon"/>
-<pad name="VCC" x="-1" y="1.27" drill="0.8" diameter="1.4224" shape="octagon"/>
-<pad name="CI" x="1" y="1.27" drill="0.8" diameter="1.4224" shape="octagon"/>
-<hole x="4.5" y="2.97" drill="1.1"/>
-<wire x1="5" y1="-1.83" x2="5" y2="3.47" width="0.127" layer="51"/>
-<wire x1="-5" y1="-1.83" x2="-5" y2="3.47" width="0.127" layer="51"/>
-<wire x1="5" y1="3.47" x2="-5" y2="3.47" width="0.127" layer="51"/>
-<wire x1="5" y1="-1.83" x2="3" y2="-1.83" width="0.127" layer="51"/>
-<text x="0" y="4.27" size="1.27" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
-<wire x1="3" y1="-1.83" x2="-3" y2="-1.83" width="0.127" layer="51"/>
-<wire x1="-3" y1="-1.83" x2="-5" y2="-1.83" width="0.127" layer="51"/>
-<wire x1="3" y1="-2.33" x2="-3" y2="-2.33" width="0.127" layer="51"/>
-<text x="-3" y="-2.73" size="0.8128" layer="21" font="vector" ratio="12" rot="R270" align="center-left">GND</text>
-<text x="-1" y="-2.73" size="0.8128" layer="21" font="vector" ratio="12" rot="R270" align="center-left">VCC</text>
-<text x="1" y="-2.73" size="0.8128" layer="21" font="vector" ratio="12" rot="R270" align="center-left">CI</text>
-<pad name="DI" x="3" y="1.27" drill="0.8" diameter="1.4224" shape="square"/>
-<text x="3" y="-2.73" size="0.8128" layer="21" font="vector" ratio="12" rot="R270" align="center-left">DI</text>
-<wire x1="-3" y1="-1.83" x2="-3" y2="-2.33" width="0.127" layer="51"/>
-<wire x1="3" y1="-1.83" x2="3" y2="-2.33" width="0.127" layer="51"/>
-</package>
-<package name="SPI-B04-PASK-1-BOTTOM">
-<pad name="GND" x="3" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
-<pad name="CI" x="-1" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
-<pad name="VCC" x="1" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
-<hole x="-4.5" y="1.7" drill="1.1"/>
-<wire x1="5" y1="-3.1" x2="5" y2="2.2" width="0.127" layer="51"/>
-<wire x1="-5" y1="-3.1" x2="-5" y2="2.2" width="0.127" layer="51"/>
-<wire x1="5" y1="2.2" x2="-5" y2="2.2" width="0.127" layer="51"/>
-<wire x1="5" y1="-3.1" x2="3" y2="-3.1" width="0.127" layer="51"/>
-<text x="0" y="3" size="1.27" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
-<wire x1="3" y1="-3.1" x2="-3" y2="-3.1" width="0.127" layer="51"/>
-<wire x1="-3" y1="-3.1" x2="-5" y2="-3.1" width="0.127" layer="51"/>
-<wire x1="3" y1="-3.6" x2="-3" y2="-3.6" width="0.127" layer="51"/>
-<text x="-3" y="-4" size="0.8128" layer="21" font="vector" ratio="12" rot="R270" align="center-left">DI</text>
-<text x="-1" y="-4" size="0.8128" layer="21" font="vector" ratio="12" rot="R270" align="center-left">CI</text>
-<text x="1" y="-4" size="0.8128" layer="21" font="vector" ratio="12" rot="R270" align="center-left">VCC</text>
-<pad name="DI" x="-3" y="0" drill="0.8" diameter="1.4224" shape="square"/>
-<text x="3" y="-4" size="0.8128" layer="21" font="vector" ratio="12" rot="R270" align="center-left">GND</text>
-<wire x1="-3" y1="-3.1" x2="-3" y2="-3.6" width="0.127" layer="51"/>
-<wire x1="3" y1="-3.1" x2="3" y2="-3.6" width="0.127" layer="51"/>
-</package>
 <package name="BM05B-PASS-1">
 <description>JST SMT type Top Entry Type
 BM05B-PASS-1-TFT</description>
@@ -293,19 +229,28 @@ BM05B-PASS-1-TFT</description>
 <wire x1="-6.75" y1="-1.25" x2="-5.75" y2="-1.25" width="1.1" layer="29"/>
 <wire x1="-5.75" y1="-1.25" x2="-6.75" y2="-1.25" width="1.1" layer="30"/>
 </package>
+<package name="SPI-B07B-PASK-1">
+<pad name="3" x="-2" y="1.27" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="4" x="0" y="1.27" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="5" x="2" y="1.27" drill="0.8" diameter="1.4224" shape="octagon"/>
+<hole x="7.5" y="2.97" drill="1.1"/>
+<wire x1="8" y1="-1.83" x2="8" y2="3.47" width="0.127" layer="51"/>
+<wire x1="-8" y1="-1.83" x2="-8" y2="3.47" width="0.127" layer="51"/>
+<wire x1="8" y1="3.47" x2="-8" y2="3.47" width="0.127" layer="51"/>
+<wire x1="8" y1="-1.83" x2="3" y2="-1.83" width="0.127" layer="51"/>
+<text x="0" y="4.27" size="1.27" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+<wire x1="3" y1="-1.83" x2="-3" y2="-1.83" width="0.127" layer="51"/>
+<wire x1="-3" y1="-1.83" x2="-8" y2="-1.83" width="0.127" layer="51"/>
+<wire x1="3" y1="-2.33" x2="-3" y2="-2.33" width="0.127" layer="51"/>
+<wire x1="-3" y1="-1.83" x2="-3" y2="-2.33" width="0.127" layer="51"/>
+<wire x1="3" y1="-1.83" x2="3" y2="-2.33" width="0.127" layer="51"/>
+<pad name="2" x="-4" y="1.27" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="7" x="6" y="1.27" drill="0.8" diameter="1.4224" shape="square"/>
+<pad name="6" x="4" y="1.27" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="1" x="-6" y="1.27" drill="0.8" diameter="1.4224" shape="octagon"/>
+</package>
 </packages>
 <symbols>
-<symbol name="FABO-SPI-LED">
-<wire x1="5.08" y1="10.16" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-10.16" x2="-5.08" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-10.16" x2="-5.08" y2="10.16" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="10.16" x2="5.08" y2="10.16" width="0.254" layer="94"/>
-<pin name="DI" x="10.16" y="7.62" visible="pin" length="middle" rot="R180"/>
-<pin name="CI" x="10.16" y="2.54" visible="pin" length="middle" rot="R180"/>
-<pin name="VCC" x="10.16" y="-2.54" visible="pin" length="middle" rot="R180"/>
-<pin name="GND" x="10.16" y="-7.62" visible="pin" length="middle" rot="R180"/>
-<text x="-5.08" y="10.668" size="1.778" layer="95">&gt;NAME</text>
-</symbol>
 <symbol name="PIN_1X5">
 <wire x1="-2.54" y1="7.62" x2="2.54" y2="7.62" width="0.254" layer="94"/>
 <wire x1="2.54" y1="-7.62" x2="-2.54" y2="-7.62" width="0.254" layer="94"/>
@@ -319,48 +264,22 @@ BM05B-PASS-1-TFT</description>
 <pin name="5" x="5.08" y="-5.08" visible="pin" length="short" rot="R180"/>
 <text x="-2.286" y="-7.874" size="1.27" layer="96" align="top-left">&gt;VALUE</text>
 </symbol>
+<symbol name="FABO-7PIN_SPI">
+<wire x1="5.08" y1="17.78" x2="5.08" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-17.78" x2="-5.08" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-17.78" x2="-5.08" y2="17.78" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="17.78" x2="5.08" y2="17.78" width="0.254" layer="94"/>
+<pin name="2:5V" x="10.16" y="10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="3:CS" x="10.16" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="4:NC" x="10.16" y="0" visible="pin" length="middle" rot="R180"/>
+<pin name="1:GND" x="10.16" y="15.24" visible="pin" length="middle" rot="R180"/>
+<text x="-5.08" y="18.288" size="1.778" layer="95">&gt;NAME</text>
+<pin name="5:SCLK" x="10.16" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="6:MOSI" x="10.16" y="-10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="7:MISO" x="10.16" y="-15.24" visible="pin" length="middle" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
-<deviceset name="FABO-SPI-LED">
-<gates>
-<gate name="G$1" symbol="FABO-SPI-LED" x="0" y="0"/>
-</gates>
-<devices>
-<device name="-BM04B" package="SPI-BM04B-PASS-1">
-<connects>
-<connect gate="G$1" pin="CI" pad="CI"/>
-<connect gate="G$1" pin="DI" pad="DI"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="VCC" pad="5V"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-B04B" package="SPI-B04B-PASK-1">
-<connects>
-<connect gate="G$1" pin="CI" pad="CI"/>
-<connect gate="G$1" pin="DI" pad="DI"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="VCC" pad="VCC"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-B04B-BOTTOM" package="SPI-B04-PASK-1-BOTTOM">
-<connects>
-<connect gate="G$1" pin="CI" pad="CI"/>
-<connect gate="G$1" pin="DI" pad="DI"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="VCC" pad="VCC"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="FABO-SERIAL5PIN">
 <gates>
 <gate name="G$1" symbol="PIN_1X5" x="-2.54" y="0"/>
@@ -373,6 +292,27 @@ BM05B-PASS-1-TFT</description>
 <connect gate="G$1" pin="3" pad="3"/>
 <connect gate="G$1" pin="4" pad="4"/>
 <connect gate="G$1" pin="5" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FABO-SPI-7PIN">
+<gates>
+<gate name="G$1" symbol="FABO-7PIN_SPI" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SPI-B07B-PASK-1">
+<connects>
+<connect gate="G$1" pin="1:GND" pad="1"/>
+<connect gate="G$1" pin="2:5V" pad="2"/>
+<connect gate="G$1" pin="3:CS" pad="3"/>
+<connect gate="G$1" pin="4:NC" pad="4"/>
+<connect gate="G$1" pin="5:SCLK" pad="5"/>
+<connect gate="G$1" pin="6:MOSI" pad="6"/>
+<connect gate="G$1" pin="7:MISO" pad="7"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -35864,7 +35804,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </class>
 </classes>
 <parts>
-<part name="SPI" library="FaBo-Connetor" deviceset="FABO-SPI-LED" device="-B04B-BOTTOM"/>
 <part name="U$1" library="FaBo-Symbol" deviceset="A3L-CCBYSA4" device=""/>
 <part name="LOGO1" library="FaBo-Logo" deviceset="LOGO_OSHW" device="-M_BOTTOM"/>
 <part name="LOGO2" library="FaBo-Logo" deviceset="LOGO_FABO" device="-M_BOTTOM"/>
@@ -35920,8 +35859,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="LED4" library="Opto" deviceset="0043_KPT-2012SGC" device="" value="Green"/>
 <part name="+3V14" library="PowerTags" deviceset="+3V3" device=""/>
 <part name="GND22" library="supply1" deviceset="GND" device=""/>
-<part name="GND1" library="PowerTags" deviceset="GND" device=""/>
-<part name="P+1" library="supply1" deviceset="+5V" device=""/>
 <part name="CN1" library="FaBo-PIN" deviceset="PIN-HEADER-SMT(1.27MM)2X5" device=""/>
 <part name="R5" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="0"/>
 <part name="R3" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="0"/>
@@ -36013,12 +35950,15 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="CN2" library="FaBo-PIN" deviceset="PIN_1X3" device=""/>
 <part name="GND35" library="supply1" deviceset="GND" device=""/>
 <part name="P+10" library="supply1" deviceset="+5V" device=""/>
+<part name="SPI1" library="FaBo-Connetor" deviceset="FABO-SPI-7PIN" device=""/>
+<part name="P+11" library="supply1" deviceset="+5V" device=""/>
+<part name="GND37" library="PowerTags" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="373.38" y="20.32" size="2.54" layer="94" align="bottom-center">1.0.1</text>
-<text x="449.58" y="83.82" size="1.778" layer="94">SPI_INPUT</text>
+<text x="495.3" y="109.22" size="1.778" layer="94">SPI_INPUT</text>
 <text x="12.7" y="500.38" size="7.62" layer="94">FRONT LIGHT</text>
 <text x="111.76" y="492.76" size="2.54" layer="94">LEFT</text>
 <text x="248.92" y="495.3" size="2.54" layer="94">RIGHT</text>
@@ -36029,9 +35969,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <text x="561.34" y="96.52" size="2.54" layer="94">OPTION</text>
 </plain>
 <instances>
-<instance part="SPI" gate="G$1" x="454.66" y="66.04" smashed="yes">
-<attribute name="NAME" x="449.58" y="76.708" size="1.778" layer="95"/>
-</instance>
 <instance part="U$1" gate="G$1" x="0" y="0" smashed="yes">
 <attribute name="DRAWING_NAME" x="299.72" y="24.13" size="2.54" layer="94"/>
 <attribute name="LAST_DATE_TIME" x="297.18" y="20.32" size="1.778" layer="94" align="center-left"/>
@@ -36217,12 +36154,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </instance>
 <instance part="GND22" gate="1" x="116.84" y="203.2" smashed="yes">
 <attribute name="VALUE" x="114.3" y="200.66" size="1.778" layer="96"/>
-</instance>
-<instance part="GND1" gate="1" x="472.44" y="43.18" smashed="yes">
-<attribute name="VALUE" x="469.9" y="40.64" size="1.778" layer="96"/>
-</instance>
-<instance part="P+1" gate="1" x="472.44" y="83.82" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="470.535" y="86.36" size="1.778" layer="96" rot="MR180"/>
 </instance>
 <instance part="CN1" gate="G$1" x="160.02" y="160.02" smashed="yes" rot="MR0">
 <attribute name="NAME" x="164.846" y="168.148" size="1.27" layer="95" rot="MR0"/>
@@ -36538,6 +36469,15 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <instance part="P+10" gate="1" x="579.12" y="93.98" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="577.215" y="96.52" size="1.778" layer="96" rot="MR180"/>
 </instance>
+<instance part="SPI1" gate="G$1" x="500.38" y="86.36" smashed="yes">
+<attribute name="NAME" x="495.3" y="104.648" size="1.778" layer="95"/>
+</instance>
+<instance part="P+11" gate="1" x="518.16" y="109.22" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="516.255" y="111.76" size="1.778" layer="96" rot="MR180"/>
+</instance>
+<instance part="GND37" gate="1" x="541.02" y="63.5" smashed="yes">
+<attribute name="VALUE" x="538.48" y="60.96" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -36547,12 +36487,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="-132.08" y1="78.74" x2="-132.08" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="P+4" gate="1" pin="+5V"/>
 <pinref part="POWER" gate="A" pin="5"/>
-</segment>
-<segment>
-<pinref part="SPI" gate="G$1" pin="VCC"/>
-<wire x1="464.82" y1="63.5" x2="472.44" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="P+1" gate="1" pin="+5V"/>
-<wire x1="472.44" y1="63.5" x2="472.44" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="P+2" gate="1" pin="+5V"/>
@@ -36605,6 +36539,12 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="574.04" y1="78.74" x2="579.12" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="P+10" gate="1" pin="+5V"/>
 <wire x1="579.12" y1="78.74" x2="579.12" y2="91.44" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="P+11" gate="1" pin="+5V"/>
+<wire x1="518.16" y1="106.68" x2="518.16" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="SPI1" gate="G$1" pin="2:5V"/>
+<wire x1="518.16" y1="96.52" x2="510.54" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="2">
@@ -36719,12 +36659,6 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pinref part="GND22" gate="1" pin="GND"/>
 <wire x1="116.84" y1="205.74" x2="116.84" y2="215.9" width="0.762" layer="91"/>
 <pinref part="R15" gate="G$1" pin="1"/>
-</segment>
-<segment>
-<pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="472.44" y1="45.72" x2="472.44" y2="58.42" width="0.762" layer="91"/>
-<pinref part="SPI" gate="G$1" pin="GND"/>
-<wire x1="472.44" y1="58.42" x2="464.82" y2="58.42" width="0.762" layer="91"/>
 </segment>
 <segment>
 <pinref part="SW1" gate="G$1" pin="A"/>
@@ -36859,6 +36793,12 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pinref part="CN2" gate="G$1" pin="3"/>
 <wire x1="581.66" y1="76.2" x2="574.04" y2="76.2" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="SPI1" gate="G$1" pin="1:GND"/>
+<pinref part="GND37" gate="1" pin="GND"/>
+<wire x1="510.54" y1="101.6" x2="541.02" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="541.02" y1="101.6" x2="541.02" y2="66.04" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="RESET" class="0">
 <segment>
@@ -36917,9 +36857,9 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pinref part="TR3" gate="G$1" pin="G"/>
 </segment>
 <segment>
-<wire x1="464.82" y1="68.58" x2="482.6" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="SPI" gate="G$1" pin="CI"/>
-<label x="490.22" y="68.58" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="510.54" y1="81.28" x2="528.32" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="SPI1" gate="G$1" pin="5:SCLK"/>
+<label x="538.48" y="81.28" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -37260,9 +37200,9 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="-132.08" y1="127" x2="-132.08" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="464.82" y1="73.66" x2="482.6" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="SPI" gate="G$1" pin="DI"/>
-<label x="482.6" y="73.66" size="1.778" layer="95" xref="yes"/>
+<wire x1="510.54" y1="76.2" x2="528.32" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="SPI1" gate="G$1" pin="6:MOSI"/>
+<label x="528.32" y="76.2" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="MISO" class="0">
