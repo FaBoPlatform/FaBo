@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.05" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
@@ -3511,14 +3511,14 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <part name="R50" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="249K"/>
 <part name="X_30" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="C20" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="1uF"/>
-<part name="BYPASS2" library="FaBo-Resistors" deviceset="RESISTOR" device="-0805" value="DNP/0806"/>
+<part name="BYPASS2" library="FaBo-Resistors" deviceset="RESISTOR" device="-0805" value="0"/>
 <part name="TP7" library="FaBo-Supply" deviceset="TP" device="-15"/>
 <part name="X_31" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
-<part name="BYPASS1" library="FaBo-Resistors" deviceset="RESISTOR" device="-0805" value="DNP/0806"/>
-<part name="BYPASS3" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="100">
+<part name="BYPASS1" library="FaBo-Resistors" deviceset="RESISTOR" device="-0805" value="0"/>
+<part name="BYPASS3" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="DNP">
 <attribute name="SPICEPREFIX" value="R"/>
 </part>
-<part name="BYASS4" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="100"/>
+<part name="BYASS4" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="DNP"/>
 </parts>
 <sheets>
 <sheet>
@@ -3667,6 +3667,18 @@ mouser:&lt;a href="http://www.mouser.jp/ProductDetail/ALPS/SSSS810701/?qs=sGAEpi
 <wire x1="355.6" y1="824.23" x2="355.6" y2="825.5" width="0.1524" layer="94"/>
 <wire x1="294.64" y1="754.38" x2="369.57" y2="834.39" width="0.1524" layer="94"/>
 <wire x1="294.64" y1="754.38" x2="294.64" y2="756.92" width="0.1524" layer="94"/>
+<wire x1="650.24" y1="269.24" x2="650.24" y2="266.7" width="0.1524" layer="94"/>
+<wire x1="650.24" y1="266.7" x2="670.56" y2="281.94" width="0.1524" layer="94"/>
+<wire x1="670.56" y1="281.94" x2="693.42" y2="281.94" width="0.1524" layer="94"/>
+<text x="670.56" y="281.94" size="1.778" layer="94">注意　実装しないこと</text>
+<wire x1="586.74" y1="266.7" x2="607.06" y2="281.94" width="0.1524" layer="94"/>
+<wire x1="607.06" y1="281.94" x2="629.92" y2="281.94" width="0.1524" layer="94"/>
+<text x="607.06" y="281.94" size="1.778" layer="94">注意　実装しないこと</text>
+<wire x1="586.74" y1="266.7" x2="586.74" y2="269.24" width="0.1524" layer="94"/>
+<wire x1="543.56" y1="269.24" x2="614.68" y2="269.24" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="614.68" y1="269.24" x2="614.68" y2="241.3" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="614.68" y1="241.3" x2="543.56" y2="241.3" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="543.56" y1="241.3" x2="543.56" y2="269.24" width="0.1524" layer="94" style="shortdash"/>
 </plain>
 <instances>
 <instance part="SUPPLY2" gate="5V" x="134.62" y="153.67" smashed="yes">
