@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -218,8 +218,9 @@
 <text x="43.6" y="10.1" size="1.27" layer="21" font="vector" ratio="18">ICSP</text>
 <rectangle x1="6.8" y1="62.7" x2="29.6" y2="69.7" layer="22"/>
 <text x="23" y="60.2" size="1.27" layer="22" font="vector" ratio="10" rot="MR0">Rev 2.0.23</text>
-<text x="55.7" y="-3.4" size="1.27" layer="48" font="vector" ratio="14">#612 JetRacer Rev 2.0.23
-2022/11/14</text>
+<text x="55.3" y="-6.1" size="1.27" layer="48" font="vector" ratio="14">#612 JetRacer Rev 2.0.23
+2022/11/14
+2022/12/14</text>
 <wire x1="10.5" y1="16.8" x2="14.4" y2="13" width="0.1524" layer="20"/>
 <wire x1="14.4" y1="13" x2="14.4" y2="6.1" width="0.1524" layer="20"/>
 <wire x1="79.9" y1="0" x2="67.6" y2="0" width="0.1524" layer="20"/>
@@ -9557,11 +9558,11 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="37.475" y="58.32" size="0.8128" layer="28" font="vector" ratio="12" rot="MR270" align="center"/>
 </element>
 <element name="U9" library="FaBo-etc" package="TLP2361" value="TLP2361" x="2.475" y="40.67" smashed="yes" rot="R180"/>
-<element name="R15" library="FaBo-Resistors" package="0603" value="4.7K" x="5.375" y="43.07" smashed="yes" rot="R90">
+<element name="R15" library="FaBo-Resistors" package="0603" value="1.8K" x="5.375" y="43.07" smashed="yes" rot="R90">
 <attribute name="VALUE" x="7.075" y="43.42" size="0.8128" layer="27" font="vector" ratio="12" rot="R90" align="center"/>
 </element>
 <element name="U8" library="FaBo-etc" package="TLP2361" value="TLP2361" x="8.175" y="40.67" smashed="yes" rot="R180"/>
-<element name="R16" library="FaBo-Resistors" package="0603" value="4.7K" x="12.275" y="42.87" smashed="yes">
+<element name="R16" library="FaBo-Resistors" package="0603" value="1.8K" x="12.275" y="42.87" smashed="yes">
 <attribute name="VALUE" x="11.425" y="42.72" size="0.8128" layer="27" font="vector" ratio="12" rot="R90" align="center"/>
 </element>
 <element name="C4" library="FaBo-Capacitor" package="0402" value="0.1uF" x="5.275" y="38.12" smashed="yes" rot="R270">
