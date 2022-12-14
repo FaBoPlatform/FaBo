@@ -5,7 +5,8 @@
 //SPI-LED点灯を6個から7個へ変更(#405 JetRacer Rev2.0.2)
 
 #define FIRMWARE_NUMBER    33     //Firmware Version 3.3
-#define BOARDVER           24    //Rev23は23Rev24はRev24         
+#define BOARDPREFIX         2     //基板版数接頭辞
+#define BOARDVER           23    //Rev23は23Rev24はRev24         
 #define SWITCHINGTREDSHOLD 1500   //信号切り替え1500u秒
 #define NUMBERMEASURE 10          //判定計測回数
 
@@ -122,7 +123,10 @@ void setup(){
   Wire.onReceive(receiveEvent);
 
   //バージョン情報付与
-  transfer4.before= (BOARDVER << 8) | FIRMWARE_NUMBER;
+  transfer4.a = BOARDPREFIX;
+  transfer4.b = 0x00;
+  transfer4.c = BOARDVER;
+  transfer4.d = FIRMWARE_NUMBER;
 }
 
 //LEDのSPI信号関数
