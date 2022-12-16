@@ -1,17 +1,18 @@
 //FaBo JetRacer v3.3
-//2022/12/14
+//2022/12/16
 //I2Cでファームウェアのバージョン情報取得可能
-//Rev2.0.17はチャッタリング対策追加
+//全ての版数対象にチャッタリング対策追加
 //SPI-LED点灯を6個から7個へ変更(#405 JetRacer Rev2.0.2)
 
 #define FIRMWARE_NUMBER    33     //Firmware Version 3.3
-#define BOARDPREFIX         2     //基板版数接頭辞
-#define BOARDVER           23    //Rev23は23Rev24はRev24         
+#define BOARDMAJOR         2      //基板版数パッチメジャー
+#define BOARDMINOR         0      //基板版数パッチマイナー
+#define BOARDPATCH         23     //基板版数パッチRev23は23         
 #define SWITCHINGTREDSHOLD 1500   //信号切り替え1500u秒
-#define NUMBERMEASURE 10          //判定計測回数
+#define NUMBERMEASURE      10     //判定計測回数
 
 //ピンセッティング
-#if BOARDVER < 17
+#if BOARDPATCH < 17
   #define ST_SIGNAL_INPUT_PIN       A0
   #define TH_SIGNAL_INPUT_PIN       A1
   #define FSW_SIGNAL_INPUT_PIN      A3
@@ -19,7 +20,7 @@
   #define RC_LED_PIN                3
   #define JETSON_LED_PIN            4
 
-#elif BOARDVER == 17 || BOARDVER == 23
+#elif BOARDPATCH == 17 || BOARDPATCH == 23
   #define ST_SIGNAL_INPUT_PIN       A0
   #define TH_SIGNAL_INPUT_PIN       A1
   #define FSW_SIGNAL_INPUT_PIN      A3
@@ -28,7 +29,7 @@
   #define JETSON_LED_PIN            4
   #define MODE_SWITCH_INPUT_PIN     5   //JetRacer mode or Donkey mode.
   
-#elif BOARDVER == 20 || BOARDVER == 21 || BOARDVER == 22 || BOARDVER == 24 
+#elif BOARDPATCH == 20 || BOARDPATCH == 21 || BOARDPATCH == 22 || BOARDPATCH == 24 
   #define ST_SIGNAL_INPUT_PIN       2   //INT0
   #define TH_SIGNAL_INPUT_PIN       3   //INT1
   #define FSW_SIGNAL_INPUT_PIN      A3  
@@ -42,7 +43,7 @@
 #include "SPI.h"
 #include <Wire.h>
 
-//AVR328PのI2Cデバイスアドレス
+//AVR328PのI2Cレジスタアドレス
 uint8_t registerIndex = 0;
 
 //数値をバイト列への型
@@ -84,7 +85,7 @@ void requestEvent() {
     Wire.write(transfer2.b);
     Wire.write(transfer2.c);
     Wire.write(transfer2.d);
-    #if BOARDVER >= 17
+    #if BOARDPATCH >= 17
     //切り替え信号
     Wire.write(transfer3.a);
     Wire.write(transfer3.b);
@@ -111,9 +112,9 @@ void setup(){
   pinMode(FSW_SIGNAL_INPUT_PIN, INPUT);
 
   //DonkeyModePin PULLUP
-  #if BOARDVER >= 17
+  #if BOARDPATCH >= 17
     pinMode(MODE_SWITCH_INPUT_PIN, INPUT_PULLUP);
-  #elif BOARDVER <= 16
+  #elif BOARDPATCH < 17
     //None
   #endif
   
@@ -123,13 +124,13 @@ void setup(){
   Wire.onReceive(receiveEvent);
 
   //バージョン情報付与
-  transfer4.a = BOARDPREFIX;
-  transfer4.b = 0x00;
-  transfer4.c = BOARDVER;
+  transfer4.a = BOARDMAJOR;
+  transfer4.b = BOARDMINOR;
+  transfer4.c = BOARDPATCH;
   transfer4.d = FIRMWARE_NUMBER;
 }
 
-//LEDのSPI信号関数
+//LED-SPI信号関数
 void startBit() {
   byte start = 0x00;
   SPI.transfer(start);
@@ -155,12 +156,9 @@ void setRGB(short r, short g, short b) {
 
 
 void loop(){
-  
-  #if BOARDVER >= 17
   //チャッタリング防止対策カウンタ
   static uint16_t counta;
   static uint16_t countb;
-  #endif
 
   //信号計測
   uint32_t duration = pulseInLong(FSW_SIGNAL_INPUT_PIN, HIGH,25000);
@@ -172,20 +170,20 @@ void loop(){
   transfer3.before=duration;
   
   //スライドスイッチの状態を取得
-  #if BOARDVER >= 17
+  #if BOARDPATCH >= 17
     int val = digitalRead(MODE_SWITCH_INPUT_PIN);
   #endif
 
- // //チャッリング防止付き
- #if BOARDVER >= 17
+ //ドンキーモードありのボード
+ #if BOARDPATCH >= 17
     //スライドスイッチの状態により、スイッチのRCモードにはしない。
     if (val == LOW){
-      //Donkey Car mode.
+      //Donkey Car mode.（AIモード固定にする）
       digitalWrite(SELECT_OUTPUT_PIN, HIGH);
       digitalWrite(RC_LED_PIN, HIGH);
       digitalWrite(JETSON_LED_PIN, LOW);
       startBit();
-      //橙発光　7個点灯
+      //黄色発光　7個点灯
       setRGB(0,   255,   128);
       setRGB(0,   255,   128);
       setRGB(0,   255,   128);
@@ -245,36 +243,50 @@ void loop(){
         }
     }
 
- //チャッリング防止付き
- #elif BOARDVER < 17
+ //ドンキーモードなしボード
+ #elif BOARDPATCH < 17
   if(duration > SWITCHINGTREDSHOLD){
-    digitalWrite(SELECT_OUTPUT_PIN, HIGH);
-    digitalWrite(RC_LED_PIN, HIGH);
-    digitalWrite(JETSON_LED_PIN, LOW);
-    startBit();
-    //レインボー発光
-    setRGB(80,   0,   10);
-    setRGB(80,   0,   40);
-    setRGB(80,   0,   90);
-    setRGB(80,   0,   130);
-    setRGB(80,   0,   170);
-    setRGB(80,   0,   210);
-    endBit();
+     //チャッタリング防止
+        counta++;
+        countb = 0;
+        if (counta > NUMBERMEASURE){
+            //AIモード
+            digitalWrite(SELECT_OUTPUT_PIN, HIGH);
+            digitalWrite(RC_LED_PIN, HIGH);
+            digitalWrite(JETSON_LED_PIN, LOW);
+            startBit();
+            //レインボー発光 ６個点灯
+            setRGB(80,   0,   10);
+            setRGB(80,   0,   40);
+            setRGB(80,   0,   90);
+            setRGB(80,   0,   130);
+            setRGB(80,   0,   170);
+            setRGB(80,   0,   210);
+            endBit();
+            counta = 0;//カウンタリセット
+          }
   } 
   else{
-    digitalWrite(SELECT_OUTPUT_PIN, LOW);
-    digitalWrite(RC_LED_PIN, LOW);
-    digitalWrite(JETSON_LED_PIN, HIGH);
-    startBit();
-    //緑色発光
-    setRGB(0,   255,   0);
-    setRGB(0,   255,   0);
-    setRGB(0,   255,   0);
-    setRGB(0,   255,   0);
-    setRGB(0,   255,   0);
-    setRGB(0,   255,   0);
-    endBit();
-    
+     //チャッタリング防止
+          countb++;
+          counta = 0;
+          if  (countb > NUMBERMEASURE){
+            //RCカーモード
+            digitalWrite(SELECT_OUTPUT_PIN, LOW);
+            digitalWrite(RC_LED_PIN, LOW);
+            digitalWrite(JETSON_LED_PIN, HIGH);
+            startBit();
+            //緑色発光　６個点灯
+            setRGB(0,   255,   0);
+            setRGB(0,   255,   0);
+            setRGB(0,   255,   0);
+            setRGB(0,   255,   0);
+            setRGB(0,   255,   0);
+            setRGB(0,   255,   0);
+            endBit();
+            //カウンタリセット
+            countb = 0;
+          }  
   } 
  #endif
 }
