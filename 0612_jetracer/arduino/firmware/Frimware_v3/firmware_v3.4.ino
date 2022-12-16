@@ -1,13 +1,11 @@
-//FaBo JetRacer v3.3
+//FaBo JetRacer v3.4 ALPHE 注意:製品版ではない。
 //2022/12/16
-//I2Cでファームウェアのバージョン情報取得可能
-//全ての版数対象にチャッタリング対策追加
-//SPI-LED点灯を6個から7個へ変更(#405 JetRacer Rev2.0.2)
+//緊急停止モード追加
 
-#define FIRMWARE_NUMBER    33     //Firmware Version 3.3
+#define FIRMWARE_NUMBER    34     //Firmware Version 3.3
 #define BOARDMAJOR         2      //基板版数パッチメジャー
 #define BOARDMINOR         0      //基板版数パッチマイナー
-#define BOARDPATCH         23     //基板版数パッチRev23は23         
+#define BOARDPATCH         21     //基板版数パッチRev23は23         
 #define SWITCHINGTREDSHOLD 1500   //信号切り替え1500u秒
 #define NUMBERMEASURE      10     //判定計測回数
 
@@ -161,9 +159,9 @@ void loop(){
   static uint16_t countb;
 
   //信号計測
-  uint32_t duration = pulseInLong(FSW_SIGNAL_INPUT_PIN, HIGH,25000);
-  uint32_t pwm1 = pulseInLong(TH_SIGNAL_INPUT_PIN, HIGH,25000);
-  uint32_t pwm0 = pulseInLong(ST_SIGNAL_INPUT_PIN, HIGH,25000);
+  uint32_t duration = pulseInLong(FSW_SIGNAL_INPUT_PIN, HIGH,25000);  //RCモード信号、AIモード信号切り替え
+  uint32_t pwm1 = pulseInLong(TH_SIGNAL_INPUT_PIN, HIGH,25000);       //スロットル信号
+  uint32_t pwm0 = pulseInLong(ST_SIGNAL_INPUT_PIN, HIGH,25000);       //ステアリング信号
   
   transfer1.before=pwm0;
   transfer2.before=pwm1;
@@ -196,6 +194,27 @@ void loop(){
     }else{
       //JetRacer Mode
       if(duration > SWITCHINGTREDSHOLD){
+        while(pwm1 > 1800){
+           //緊急ブレーキを検知した場合はRCカーモードへ突入。
+            digitalWrite(SELECT_OUTPUT_PIN, LOW);
+            digitalWrite(RC_LED_PIN, LOW);
+            digitalWrite(JETSON_LED_PIN, HIGH);
+            startBit();
+            //緑色発光　7個点灯
+            setRGB(0,   255,   0);
+            setRGB(0,   255,   0);
+            setRGB(0,   255,   0);
+            setRGB(0,   255,   0);
+            setRGB(0,   255,   0);
+            setRGB(0,   255,   0);
+            setRGB(0,   255,   0);
+            endBit();
+            //３chボタンで通常復帰する。
+            duration = pulseInLong(FSW_SIGNAL_INPUT_PIN, HIGH,25000);
+            if (duration < SWITCHINGTREDSHOLD){
+              break;
+              }
+          }
         //チャッタリング防止
         counta++;
         countb = 0;
