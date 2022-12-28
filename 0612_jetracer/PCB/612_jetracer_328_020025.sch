@@ -3167,13 +3167,13 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="X_21" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="U9" library="FaBo-etc" deviceset="TLP2361" device=""/>
 <part name="X_1" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
-<part name="R15" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="470"/>
+<part name="R15" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="330"/>
 <part name="GND2" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="GND5" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="3V13" library="FaBo-Supply" deviceset="3V3" device=""/>
 <part name="U8" library="FaBo-etc" deviceset="TLP2361" device=""/>
 <part name="X_2" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
-<part name="R16" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="470"/>
+<part name="R16" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="330"/>
 <part name="GND6" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="C4" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0402" value="0.1uF"/>
 <part name="GND9" library="FaBo-Supply" deviceset="GND" device=""/>
@@ -3228,17 +3228,17 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="U1" library="FaBo-etc" deviceset="TLP2361" device=""/>
 <part name="Q3" library="FaBo-Mosfet" deviceset="MOSFET-N" device="_FDN335N"/>
 <part name="X_13" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
-<part name="R6" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="470"/>
+<part name="R6" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="330"/>
 <part name="R8" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="10"/>
 <part name="R24" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="100K"/>
 <part name="X_15" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="3V1" library="FaBo-Supply" deviceset="3V3" device=""/>
 <part name="GND16" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="Q4" library="FaBo-Mosfet" deviceset="MOSFET-N" device="_FDN335N"/>
-<part name="R26" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="470"/>
-<part name="R27" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="470"/>
+<part name="R26" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="330"/>
+<part name="R27" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="330"/>
 <part name="Q5" library="FaBo-Mosfet" deviceset="MOSFET-N" device="_FDN335N"/>
-<part name="R29" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="470"/>
+<part name="R29" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="330"/>
 <part name="R32" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="100K"/>
 <part name="R33" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="100K"/>
 <part name="X_16" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
@@ -3288,6 +3288,8 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="BEC62TP" library="FaBo-Supply" deviceset="TP" device="-15"/>
 <part name="BEC62TP1" library="FaBo-Supply" deviceset="TP" device="-15"/>
 <part name="X_26" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
+<part name="ANA6" library="FaBo-Supply" deviceset="TP" device="-15"/>
+<part name="ANA2" library="FaBo-Supply" deviceset="TP" device="-15" value="AD2"/>
 </parts>
 <sheets>
 <sheet>
@@ -3918,6 +3920,8 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <instance part="BEC62TP" gate="G$1" x="584.2" y="248.92" smashed="yes" rot="R180"/>
 <instance part="BEC62TP1" gate="G$1" x="584.2" y="228.6" smashed="yes" rot="R180"/>
 <instance part="X_26" gate="G$1" x="584.2" y="203.2" smashed="yes"/>
+<instance part="ANA6" gate="G$1" x="510.54" y="347.98" smashed="yes" rot="R180"/>
+<instance part="ANA2" gate="G$1" x="515.62" y="347.98" smashed="yes" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -5652,6 +5656,22 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <pinref part="R43" gate="G$1" pin="1"/>
 <wire x1="267.97" y1="151.13" x2="267.97" y2="154.94" width="0.1524" layer="91"/>
 <junction x="267.97" y="154.94"/>
+</segment>
+</net>
+<net name="AD6" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="ADC6"/>
+<wire x1="525.78" y1="327.66" x2="510.54" y2="327.66" width="0.1524" layer="91"/>
+<pinref part="ANA6" gate="G$1" pin="1"/>
+<wire x1="510.54" y1="327.66" x2="510.54" y2="342.9" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="AD2" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="PC2(ADC2)"/>
+<wire x1="525.78" y1="337.82" x2="515.62" y2="337.82" width="0.1524" layer="91"/>
+<pinref part="ANA2" gate="G$1" pin="1"/>
+<wire x1="515.62" y1="337.82" x2="515.62" y2="342.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
