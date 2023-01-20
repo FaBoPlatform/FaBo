@@ -14643,7 +14643,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <sheets>
 <sheet>
 <plain>
-<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">2.0.0</text>
+<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">3.0.0</text>
 <wire x1="162.56" y1="172.72" x2="180.34" y2="172.72" width="0.1524" layer="94"/>
 <text x="201.93" y="123.19" size="1.778" layer="94">1N4148</text>
 <text x="173.99" y="128.27" size="3.81" layer="97">OLED</text>
