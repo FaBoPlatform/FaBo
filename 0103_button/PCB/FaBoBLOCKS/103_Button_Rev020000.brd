@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -2734,6 +2734,11 @@
 <wire x1="42.2" y1="45" x2="42.2" y2="-12.5" width="0" layer="48" style="shortdash" locked="yes"/>
 <wire x1="22.2" y1="45" x2="22.2" y2="-12.5" width="0" layer="48" style="shortdash" locked="yes"/>
 <wire x1="7.1" y1="32" x2="37.5" y2="32" width="0.1524" layer="20"/>
+<text x="13.592959375" y="14.340415625" size="1.016" layer="22" font="vector" ratio="15" rot="MR180">SIGNAL</text>
+<text x="17.658159375" y="11.851984375" size="1.016" layer="22" font="vector" ratio="15" rot="MR180">5</text>
+<wire x1="18.796" y1="12.954" x2="19.558" y2="11.938" width="0.1524" layer="22"/>
+<wire x1="19.558" y1="11.938" x2="19.558" y2="12.7" width="0.1524" layer="22"/>
+<wire x1="19.558" y1="12.7" x2="19.304" y2="12.446" width="0.1524" layer="22"/>
 </plain>
 <libraries>
 <library name="component">
