@@ -24401,7 +24401,6 @@ design rules under a new name.</description>
 <element name="SPI-LCD1" library="FaBo-Connetor" package="7002-6PXC-X" value="MODULAR-JACK-6P-RJ11_SPI" x="25.7510375" y="5.9" smashed="yes" rot="MR0"/>
 <element name="U$6" library="FaBo-Boards" package="SPI_LCD_MSP2807" value="MSP2807(LCD_SPI_WITH_SDCARD" x="90.7288" y="24.97328125" smashed="yes"/>
 <element name="R2" library="FaBo-Resistors" package="0805" value="1K" x="33.4438" y="20.036259375" smashed="yes">
-<attribute name="NAME" x="33.4438" y="21.036259375" size="0.8128" layer="25" font="vector" ratio="15" align="bottom-center"/>
 <attribute name="VALUE" x="34.4438" y="19.036259375" size="0.8128" layer="27" font="vector" ratio="15" align="center"/>
 </element>
 </elements>
