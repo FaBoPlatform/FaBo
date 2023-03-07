@@ -3,53 +3,53 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="14" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
-<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
-<layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
-<layer number="34" name="bFinish" color="6" fill="6" visible="yes" active="yes"/>
-<layer number="35" name="tGlue" color="7" fill="4" visible="yes" active="yes"/>
-<layer number="36" name="bGlue" color="7" fill="5" visible="yes" active="yes"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
-<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="48" name="Document" color="14" fill="1" visible="yes" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="51" name="tDocu" color="14" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="125" name="_tNames" color="13" fill="1" visible="yes" active="yes"/>
-<layer number="126" name="_bNames" color="5" fill="1" visible="yes" active="yes"/>
-<layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="6" fill="1" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="14" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="14" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="6" fill="1" visible="no" active="yes"/>
+<layer number="125" name="_tNames" color="13" fill="1" visible="no" active="yes"/>
+<layer number="126" name="_bNames" color="5" fill="1" visible="no" active="yes"/>
+<layer number="127" name="_tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="128" name="_bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -9273,30 +9273,30 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="7.845" y="19.315" size="0.8128" layer="28" font="vector" ratio="12" rot="MR180" align="center"/>
 </element>
 <element name="C1" library="FaBo-Capacitor" package="0603" value="0.1uF" x="29.74" y="11.015" smashed="yes" rot="R270">
-<attribute name="VALUE" x="30.34" y="11.665" size="0.8128" layer="27" font="vector" ratio="12" rot="R270" align="center"/>
+<attribute name="VALUE" x="30.39" y="10.965" size="0.8128" layer="27" font="vector" ratio="12" rot="R270" align="center"/>
 </element>
 <element name="X2" library="component" package="CSTNE_V_C" value="16MHz" x="18.01" y="8.29" smashed="yes" rot="R90">
-<attribute name="VALUE" x="16.69" y="7.99" size="0.8128" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
+<attribute name="VALUE" x="17.09" y="7.94" size="0.8128" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
 </element>
 <element name="IC1" library="component" package="TQFP-32" value="" x="24.29" y="10.585" smashed="yes"/>
 <element name="ICSP1" library="component" package="TC2030" value="" x="47.2" y="8.635" smashed="yes" rot="R180"/>
 <element name="IC2" library="FaBo-Boards" package="JETSON_NANO_NOBOARDER" value="JETSON_NANO_NOBORDER" x="31.86" y="11.765" smashed="yes"/>
 <element name="RC" library="FaBo-LED" package="0603" value="RED" x="61.68" y="6.165" smashed="yes">
-<attribute name="VALUE" x="61.6395" y="5.034" size="0.8128" layer="27" font="vector" ratio="12" align="bottom-center"/>
+<attribute name="VALUE" x="61.8395" y="6.434" size="0.8128" layer="27" font="vector" ratio="12" align="bottom-center"/>
 </element>
 <element name="JETSON" library="FaBo-LED" package="0603" value="GREEN" x="54.59" y="6.235" smashed="yes">
-<attribute name="VALUE" x="55.29" y="4.9135" size="0.8128" layer="27" font="vector" ratio="12" align="bottom-center"/>
+<attribute name="VALUE" x="54.49" y="6.8135" size="0.8128" layer="27" font="vector" ratio="12" align="bottom-center"/>
 </element>
 <element name="IC4" library="FaBo-Motor" package="PCA9685_BOTTOM" value="PCA9685_BOTTOM" x="10.795" y="26.51" smashed="yes" rot="R270"/>
 <element name="R2" library="FaBo-Resistors" package="0603" value="10K" x="22.475" y="20.32" smashed="yes" rot="R180">
-<attribute name="VALUE" x="22.575" y="20.77" size="0.8128" layer="27" font="vector" ratio="12" rot="R180" align="center"/>
+<attribute name="VALUE" x="22.575" y="20.72" size="0.8128" layer="27" font="vector" ratio="12" rot="R180" align="center"/>
 </element>
 <element name="TP3" library="FaBo-Supply" package="TP-15" value="" x="63.2125" y="20.0175" smashed="yes"/>
 <element name="R12" library="FaBo-Resistors" package="0603" value="470" x="22.07" y="18.225" smashed="yes">
-<attribute name="VALUE" x="21.97" y="18.825" size="0.8128" layer="27" font="vector" ratio="12" align="center"/>
+<attribute name="VALUE" x="22.12" y="18.725" size="0.8128" layer="27" font="vector" ratio="12" align="center"/>
 </element>
 <element name="R13" library="FaBo-Resistors" package="0603" value="470" x="22.07" y="16.725" smashed="yes">
-<attribute name="VALUE" x="21.4795" y="16.725" size="0.8128" layer="27" font="vector" ratio="12" align="center"/>
+<attribute name="VALUE" x="22.0295" y="16.225" size="0.8128" layer="27" font="vector" ratio="12" align="center"/>
 </element>
 <element name="TP1" library="FaBo-Supply" package="TP-15" value="" x="20.27" y="19.375" smashed="yes" rot="R90"/>
 <element name="TP2" library="FaBo-Supply" package="TP-15" value="" x="19.8295" y="17.325" smashed="yes"/>
@@ -9317,16 +9317,16 @@ design rules under a new name.</description>
 </element>
 <element name="IC3" library="FaBo-Multiplexers" package="TSSOP-16" value="MULTIPLEXERSMC74HC157A" x="19.375" y="37.27" smashed="yes" rot="R180"/>
 <element name="R5" library="FaBo-Resistors" package="0603" value="470" x="64.82" y="6.225" smashed="yes" rot="R180">
-<attribute name="VALUE" x="64.87" y="5.525" size="0.8128" layer="27" font="vector" ratio="12" rot="R180" align="center"/>
+<attribute name="VALUE" x="64.92" y="6.825" size="0.8128" layer="27" font="vector" ratio="12" rot="R180" align="center"/>
 </element>
 <element name="R10" library="FaBo-Resistors" package="0603" value="1K" x="58.37" y="6.125" smashed="yes" rot="R180">
-<attribute name="VALUE" x="58.47" y="6.125" size="0.8128" layer="27" font="vector" ratio="12" rot="R180" align="center"/>
+<attribute name="VALUE" x="58.42" y="6.975" size="0.8128" layer="27" font="vector" ratio="12" rot="R180" align="center"/>
 </element>
 <element name="U7" library="FaBo_Photocoupler" package="11-3C1" value="TLP291A" x="12.375" y="25.12" smashed="yes" rot="R90">
 <attribute name="VALUE" x="11.8" y="23.615" size="0.3" layer="27" rot="R90"/>
 </element>
 <element name="R30" library="FaBo-Resistors" package="0603" value="180" x="13.075" y="18.57" smashed="yes" rot="R270">
-<attribute name="VALUE" x="12.325" y="18.47" size="0.8128" layer="27" font="vector" ratio="12" rot="R270" align="center"/>
+<attribute name="VALUE" x="12.475" y="18.72" size="0.8128" layer="27" font="vector" ratio="12" rot="R270" align="center"/>
 </element>
 <element name="R1" library="FaBo-Resistors" package="0603" value="0" x="16.175" y="24.42" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="16.525" y="23.82" size="0.8128" layer="28" font="vector" ratio="12" rot="MR0" align="center"/>
@@ -9343,11 +9343,11 @@ design rules under a new name.</description>
 </element>
 <element name="U9" library="FaBo-etc" package="TLP2361" value="TLP2361" x="2.475" y="40.67" smashed="yes" rot="R180"/>
 <element name="R15" library="FaBo-Resistors" package="0603" value="330" x="5.375" y="43.07" smashed="yes" rot="R90">
-<attribute name="VALUE" x="7.075" y="43.42" size="0.8128" layer="27" font="vector" ratio="12" rot="R90" align="center"/>
+<attribute name="VALUE" x="5.875" y="43.22" size="0.8128" layer="27" font="vector" ratio="12" rot="R90" align="center"/>
 </element>
 <element name="U8" library="FaBo-etc" package="TLP2361" value="TLP2361" x="8.175" y="40.67" smashed="yes" rot="R180"/>
 <element name="R16" library="FaBo-Resistors" package="0603" value="330" x="12.275" y="42.87" smashed="yes">
-<attribute name="VALUE" x="11.425" y="42.72" size="0.8128" layer="27" font="vector" ratio="12" rot="R90" align="center"/>
+<attribute name="VALUE" x="12.325" y="42.52" size="0.8128" layer="27" font="vector" ratio="12" rot="R180" align="center"/>
 </element>
 <element name="C4" library="FaBo-Capacitor" package="0402" value="0.1uF" x="5.275" y="38.12" smashed="yes" rot="R270">
 <attribute name="VALUE" x="6.175" y="39.02" size="0.8128" layer="28" font="vector" ratio="12" rot="MR270" align="center"/>
@@ -9361,23 +9361,23 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="18.185" y="28.48" size="0.3" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="R11" library="FaBo-Resistors" package="0603" value="5.1K" x="19.475" y="27.02" smashed="yes" rot="R270">
-<attribute name="VALUE" x="20.475" y="26.52" size="0.8128" layer="27" font="vector" ratio="12" rot="R270" align="center"/>
+<attribute name="VALUE" x="19.725" y="27.27" size="0.8128" layer="27" font="vector" ratio="12" rot="R270" align="center"/>
 </element>
 <element name="R14" library="FaBo-Resistors" package="0603" value="10K" x="14.825" y="29.27" smashed="yes" rot="R270">
-<attribute name="VALUE" x="14.574996875" y="28.970003125" size="0.8128" layer="27" font="vector" ratio="12" rot="R90" align="center"/>
+<attribute name="VALUE" x="15.474996875" y="29.370003125" size="0.8128" layer="27" font="vector" ratio="12" rot="R90" align="center"/>
 </element>
 <element name="R18" library="FaBo-Resistors" package="0603" value="5.1K" x="23.375" y="26.92" smashed="yes" rot="R270">
-<attribute name="VALUE" x="23.375" y="27.07" size="0.8128" layer="27" font="vector" ratio="12" rot="R90" align="center"/>
+<attribute name="VALUE" x="23.925" y="27.07" size="0.8128" layer="27" font="vector" ratio="12" rot="R90" align="center"/>
 </element>
 <element name="R19" library="FaBo-Resistors" package="0603" value="10K" x="21.375" y="27.37" smashed="yes" rot="R270">
-<attribute name="VALUE" x="20.325" y="25.87" size="0.8128" layer="27" font="vector" ratio="12" rot="R270" align="center"/>
+<attribute name="VALUE" x="21.725" y="27.47" size="0.8128" layer="27" font="vector" ratio="12" rot="R270" align="center"/>
 </element>
 <element name="C18" library="FaBo-Capacitor" package="0603" value="0.1uF" x="16.675" y="38.42" smashed="yes" rot="MR0">
 <attribute name="SPICEPREFIX" value="C" x="16.675" y="38.42" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="VALUE" x="17.725" y="36.72" size="0.8128" layer="28" font="vector" ratio="12" rot="MR0" align="center"/>
 </element>
 <element name="C20" library="FaBo-Capacitor" package="0603" value="0.1uF" x="22.825" y="40.92" smashed="yes" rot="R270">
-<attribute name="VALUE" x="22.825" y="40.52" size="0.8128" layer="27" font="vector" ratio="12" rot="R270" align="center"/>
+<attribute name="VALUE" x="23.175" y="40.92" size="0.8128" layer="27" font="vector" ratio="12" rot="R270" align="center"/>
 </element>
 <element name="C21" library="FaBo-Capacitor" package="0603" value="1uF" x="34.875" y="60.47" smashed="yes" rot="MR90">
 <attribute name="VALUE" x="34.475" y="59.92" size="0.8128" layer="28" font="vector" ratio="12" rot="MR90" align="center"/>
@@ -9397,25 +9397,25 @@ design rules under a new name.</description>
 </element>
 <element name="D2" library="FaBo-Diode" package="CUS05F40" value="CUS05F40" x="34.875" y="63.52" smashed="yes" rot="MR270"/>
 <element name="C17" library="FaBo-Capacitor" package="0603" value="0.1uF" x="10.925" y="38.62" smashed="yes" rot="R270">
-<attribute name="VALUE" x="8.925" y="38.12" size="0.8128" layer="27" font="vector" ratio="12" rot="R270" align="center"/>
+<attribute name="VALUE" x="10.125" y="38.77" size="0.8128" layer="27" font="vector" ratio="12" rot="R270" align="center"/>
 </element>
 <element name="U$1" library="FaBo-PIN" package="PNHEADER_2.54_SMT_17PIN_RC_TT01_02" value="RC_17PIN_OUTIN" x="22.9" y="47.1" smashed="yes"/>
 <element name="U$2" library="FaBo-Logo" package="LOGO_FABO_L" value="" x="41.6" y="18" smashed="yes"/>
 <element name="C6" library="FaBo-Capacitor" package="0603" value="10uF" x="17.3" y="11.9" smashed="yes" rot="R90">
-<attribute name="VALUE" x="18.4" y="12.2" size="0.8128" layer="27" font="vector" ratio="15" rot="R90" align="center"/>
+<attribute name="VALUE" x="16.4" y="11.95" size="0.8128" layer="27" font="vector" ratio="15" rot="R90" align="center"/>
 </element>
 <element name="C7" library="FaBo-Capacitor" package="0402" value="0.1uF" x="11.8" y="30.3" smashed="yes" rot="R270">
-<attribute name="VALUE" x="10.9" y="29.9" size="0.8128" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
+<attribute name="VALUE" x="11.2" y="30.6" size="0.8128" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
 </element>
 <element name="R28" library="FaBo-Resistors" package="0402" value="4.7K/0402" x="12.9" y="30.3" smashed="yes" rot="R90">
-<attribute name="VALUE" x="13.7" y="30.5" size="0.8128" layer="27" font="vector" ratio="15" rot="R90" align="center"/>
+<attribute name="VALUE" x="13.45" y="30.65" size="0.8128" layer="27" font="vector" ratio="15" rot="R90" align="center"/>
 </element>
 <element name="RCPWR" library="FaBo-LED" package="0603" value="ORANGE" x="13.75" y="38.65" smashed="yes" rot="R90">
 <attribute name="NAME" x="14.415" y="34.35" size="1.2" layer="25" font="vector" ratio="15" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="11.845" y="38.65" size="0.8128" layer="27" font="vector" ratio="12" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="13.295" y="38.5" size="0.8128" layer="27" font="vector" ratio="12" rot="R90" align="bottom-center"/>
 </element>
 <element name="R9" library="FaBo-Resistors" package="0402" value="1K/0402" x="14.6" y="41.3" smashed="yes" rot="R90">
-<attribute name="VALUE" x="15.05" y="41.35" size="0.8128" layer="27" font="vector" ratio="15" rot="R90" align="center"/>
+<attribute name="VALUE" x="15.05" y="41.35" size="0.8128" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
 </element>
 <element name="U$12" library="FaBo-etc" package="LOGO_SILK_GND" value="" x="9" y="60.4" smashed="yes" rot="R90"/>
 <element name="U$5" library="FaBo-etc" package="LOGO_SILK_GND" value="" x="16.7" y="60.4" smashed="yes" rot="R90"/>
@@ -9425,17 +9425,17 @@ design rules under a new name.</description>
 <element name="U1" library="FaBo-etc" package="TLP2361" value="TLP2361" x="7.65" y="24.35" smashed="yes" rot="R180"/>
 <element name="Q3" library="FaBo-Mosfet" package="SUPERSOT-3" value="MOSFET-N_FDN335N" x="8.7" y="30.2" smashed="yes" rot="R180"/>
 <element name="R6" library="FaBo-Resistors" package="0603" value="330" x="10.35" y="28" smashed="yes" rot="R90">
-<attribute name="VALUE" x="11.25" y="28.1" size="0.8128" layer="27" font="vector" ratio="15" rot="R90" align="center"/>
+<attribute name="VALUE" x="9.6" y="27.9" size="0.8128" layer="27" font="vector" ratio="15" rot="R90" align="center"/>
 </element>
 <element name="R8" library="FaBo-Resistors" package="0603" value="10" x="10.45" y="34.5" smashed="yes" rot="R90">
-<attribute name="VALUE" x="11.25" y="34.55" size="0.8128" layer="27" font="vector" ratio="15" rot="R90" align="center"/>
+<attribute name="VALUE" x="11.1" y="34.5" size="0.8128" layer="27" font="vector" ratio="15" rot="R90" align="center"/>
 </element>
 <element name="R24" library="FaBo-Resistors" package="0603" value="100K" x="9.05" y="32.45" smashed="yes" rot="R180">
-<attribute name="VALUE" x="9" y="33.05" size="0.8128" layer="27" font="vector" ratio="15" rot="R180" align="center"/>
+<attribute name="VALUE" x="9" y="33" size="0.8128" layer="27" font="vector" ratio="15" rot="R180" align="center"/>
 </element>
 <element name="Q4" library="FaBo-Mosfet" package="SUPERSOT-3" value="MOSFET-N_FDN335N" x="5.6" y="52.75" smashed="yes" rot="MR0"/>
 <element name="R26" library="FaBo-Resistors" package="0603" value="330" x="6.5" y="29.7" smashed="yes" rot="R90">
-<attribute name="VALUE" x="7.75" y="29.85" size="0.8128" layer="27" font="vector" ratio="15" rot="R90" align="center"/>
+<attribute name="VALUE" x="7.45" y="29.7" size="0.8128" layer="27" font="vector" ratio="15" rot="R90" align="center"/>
 </element>
 <element name="R27" library="FaBo-Resistors" package="0603" value="330" x="2" y="46.6" smashed="yes" rot="MR180">
 <attribute name="VALUE" x="1.9" y="47.8" size="0.8128" layer="28" font="vector" ratio="15" rot="MR180" align="center"/>
@@ -9457,7 +9457,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="7.6" y="50.35" size="0.8128" layer="28" font="vector" ratio="15" rot="MR0" align="center"/>
 </element>
 <element name="C5" library="FaBo-Capacitor" package="0402" value="0.1uF" x="9.95" y="19.65" smashed="yes" rot="R90">
-<attribute name="VALUE" x="10.35" y="19.55" size="0.8128" layer="27" font="vector" ratio="15" rot="R90" align="center"/>
+<attribute name="VALUE" x="10.5" y="20" size="0.8128" layer="27" font="vector" ratio="15" rot="R90" align="center"/>
 </element>
 <element name="U$11" library="FaBo-Crystal" package="KC2016Z" value="KC2016Z" x="20.65" y="26.2" smashed="yes" rot="MR0"/>
 <element name="C8" library="FaBo-Capacitor" package="0402" value="10uF/0402" x="22.6" y="26.5" smashed="yes" rot="MR90">
@@ -9479,19 +9479,19 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="59.6242625" y="9.325734375" size="0.8128" layer="28" font="vector" ratio="15" rot="MR225" align="center"/>
 </element>
 <element name="R40" library="FaBo-Resistors" package="0603" value="1K" x="65.9" y="9.55" smashed="yes" rot="R180">
-<attribute name="VALUE" x="65.95" y="10.05" size="0.8128" layer="27" font="vector" ratio="15" rot="R180" align="center"/>
+<attribute name="VALUE" x="66" y="10.5" size="0.8128" layer="27" font="vector" ratio="15" rot="R180" align="center"/>
 </element>
 <element name="DONKEY" library="FaBo-LED" package="0603" value="YELLOW" x="63.2" y="9.5" smashed="yes">
-<attribute name="VALUE" x="63.2" y="9.955" size="0.8128" layer="27" font="vector" ratio="12" align="bottom-center"/>
+<attribute name="VALUE" x="63" y="8.405" size="0.8128" layer="27" font="vector" ratio="12" align="bottom-center"/>
 </element>
 <element name="U$9" library="FaBo-Transistor" package="SC-59" value="RN1401" x="16.15" y="18.7" smashed="yes" rot="R45">
-<attribute name="VALUE" x="15.248025" y="16.707896875" size="0.6" layer="27" rot="R45"/>
+<attribute name="VALUE" x="15.348025" y="17.557896875" size="0.6" layer="27" rot="R45"/>
 </element>
 <element name="R25" library="FaBo-Resistors" package="0402" value="1K/0402" x="18.7" y="20" smashed="yes" rot="R225">
-<attribute name="VALUE" x="18.1343125" y="20.5656875" size="0.8128" layer="27" font="vector" ratio="15" rot="R225" align="center"/>
+<attribute name="VALUE" x="19.1843125" y="19.6656875" size="0.8128" layer="27" font="vector" ratio="15" rot="R225" align="center"/>
 </element>
 <element name="R31" library="FaBo-Resistors" package="0402" value="DNP" x="14.6" y="21.25" smashed="yes">
-<attribute name="VALUE" x="14.5" y="20.55" size="0.8128" layer="27" font="vector" ratio="15" align="center"/>
+<attribute name="VALUE" x="14.65" y="22" size="0.8128" layer="27" font="vector" ratio="15" align="center"/>
 </element>
 <element name="U$10" library="FaBo-Mosfet" package="US6" value="SSM6N7002KFU" x="5.2" y="27.75" smashed="yes" rot="MR0"/>
 <element name="R41" library="FaBo-Resistors" package="0402" value="330/0402" x="6.35" y="35" smashed="yes" rot="MR0">
@@ -9537,7 +9537,7 @@ design rules under a new name.</description>
 <element name="SPI-LED" library="FaBo-Connetor" package="SPI-SM04B-PASS-1-FL" value="" x="23.7" y="16.3" smashed="yes" rot="MR180"/>
 <element name="I2C" library="FaBo-Connetor" package="I2C-SM04B-PASS-1-FL" value="FABO-I2C" x="73.8" y="9.4" smashed="yes" rot="MR180"/>
 <element name="C10" library="FaBo-Capacitor" package="0402" value="0.01uF" x="25.15" y="16" smashed="yes" rot="R180">
-<attribute name="VALUE" x="25" y="16.4" size="0.8128" layer="27" font="vector" ratio="15" rot="R180" align="center"/>
+<attribute name="VALUE" x="26.1" y="16.65" size="0.8128" layer="27" font="vector" ratio="15" rot="R180" align="center"/>
 </element>
 </elements>
 <signals>
