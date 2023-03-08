@@ -2,7 +2,7 @@
 //2023/03/07
 //Dモード用黄色LEDを追加
 
-#define FIRMWARE_NUMBER    33     //Firmware Version 3.3
+#define FIRMWARE_NUMBER    35     //Firmware Version 3.5
 #define BOARDMAJOR         2      //基板版数パッチメジャー
 #define BOARDMINOR         0      //基板版数パッチマイナー
 #define BOARDPATCH         28     //基板版数パッチRev2.0.28は28         
