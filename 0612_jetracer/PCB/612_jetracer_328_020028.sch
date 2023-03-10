@@ -3322,7 +3322,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="GND54" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="R30" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="180"/>
 <part name="GND15" library="FaBo-etc" deviceset="GND" device=""/>
-<part name="R1" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="0"/>
+<part name="R1" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="DNP"/>
 <part name="R3" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="0"/>
 <part name="X_4" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="X_5" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
@@ -3388,7 +3388,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="GND17" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="U$1" library="FaBo-PIN" deviceset="RC_17PIN_OUTIN" device=""/>
 <part name="X_18" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
-<part name="C6" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="10uF"/>
+<part name="C6" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="DNP"/>
 <part name="C7" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0402" value="0.1uF"/>
 <part name="R28" library="FaBo-Resistors" deviceset="RESISTOR" device="-0402" value="4.7K/0402"/>
 <part name="RCPWR" library="FaBo-LED" deviceset="LED" device="-0603" value="ORANGE"/>
@@ -3398,7 +3398,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="Q3" library="FaBo-Mosfet" deviceset="MOSFET-N" device="_FDN335N"/>
 <part name="X_13" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="R6" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="330"/>
-<part name="R8" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="10"/>
+<part name="R8" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="470"/>
 <part name="R24" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="100K"/>
 <part name="X_15" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="3V1" library="FaBo-Supply" deviceset="3V3" device=""/>
@@ -3412,8 +3412,8 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="R33" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="100K"/>
 <part name="X_16" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="X_17" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
-<part name="R34" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="10"/>
-<part name="R35" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="10"/>
+<part name="R34" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="470"/>
+<part name="R35" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="470"/>
 <part name="C5" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0402" value="0.1uF"/>
 <part name="GND26" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="U$11" library="FaBo-Crystal" deviceset="KC2016Z" device=""/>
@@ -3469,7 +3469,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="JP2" library="FaBo-PIN" deviceset="FABO-SMD-JUMPER-SELECT-NARROW" device=""/>
 <part name="SPI-LED" library="FaBo-Connetor" deviceset="FABO-SPI-LED" device=""/>
 <part name="I2C" library="FaBo-Connetor" deviceset="FABO-I2C" device=""/>
-<part name="C10" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0402" value="0.01uF"/>
+<part name="C10" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0402" value="DNP"/>
 <part name="GND20" library="FaBo-Supply" deviceset="GND" device=""/>
 </parts>
 <sheets>
@@ -3540,17 +3540,9 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="400.05" y1="355.6" x2="411.48" y2="355.6" width="0.1524" layer="94"/>
 <wire x1="411.48" y1="355.6" x2="408.94" y2="358.14" width="0.1524" layer="94"/>
 <text x="111.76" y="429.26" size="1.778" layer="94">option</text>
-<wire x1="76.2" y1="466.09" x2="160.02" y2="466.09" width="0.1524" layer="94" style="longdash"/>
-<wire x1="160.02" y1="466.09" x2="160.02" y2="381" width="0.1524" layer="94" style="longdash"/>
-<wire x1="160.02" y1="381" x2="76.2" y2="381" width="0.1524" layer="94" style="longdash"/>
-<wire x1="76.2" y1="381" x2="76.2" y2="466.09" width="0.1524" layer="94" style="longdash"/>
-<text x="77.47" y="467.36" size="1.778" layer="94">CRISTAL OSCILLATOR(OPTION)</text>
+<text x="77.47" y="467.36" size="1.778" layer="94">CRISTAL OSCILLATOR</text>
 <text x="66.04" y="208.28" size="3.81" layer="97">I2C</text>
 <text x="591.82" y="157.48" size="3.81" layer="97" rot="MR0">OUTLET</text>
-<text x="107.95" y="480.06" size="1.778" layer="94">水晶発振を取り付けた場合は、取り付けなし</text>
-<wire x1="106.68" y1="480.06" x2="157.48" y2="480.06" width="0.1524" layer="94"/>
-<wire x1="157.48" y1="480.06" x2="175.26" y2="462.28" width="0.1524" layer="94"/>
-<wire x1="175.26" y1="462.28" x2="175.26" y2="464.82" width="0.1524" layer="94"/>
 </plain>
 <instances>
 <instance part="SUPPLY2" gate="5V" x="731.52" y="411.48" smashed="yes">

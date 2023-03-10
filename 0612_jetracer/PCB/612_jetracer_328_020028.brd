@@ -211,7 +211,8 @@
 <rectangle x1="6.8" y1="62.7" x2="29.6" y2="69.7" layer="22"/>
 <text x="24.7" y="60" size="1.5" layer="22" font="vector" ratio="15" rot="MR0">Rev 2.0.28</text>
 <text x="55.3" y="-6.1" size="1.27" layer="48" font="vector" ratio="14">#612 JetRacer Rev 2.0.28
-2023/02/27,2023/03/07</text>
+2023/02/27,2023/03/07
+2023/03/10</text>
 <wire x1="9.7" y1="17.6" x2="14.85" y2="12.7" width="0.1524" layer="20"/>
 <wire x1="14.85" y1="12.7" x2="14.85" y2="6.15" width="0.1524" layer="20"/>
 <wire x1="78.85" y1="0" x2="67.6" y2="0" width="0.1524" layer="20"/>
@@ -9328,7 +9329,7 @@ design rules under a new name.</description>
 <element name="R30" library="FaBo-Resistors" package="0603" value="180" x="13.075" y="18.57" smashed="yes" rot="R270">
 <attribute name="VALUE" x="12.475" y="18.72" size="0.8128" layer="27" font="vector" ratio="12" rot="R270" align="center"/>
 </element>
-<element name="R1" library="FaBo-Resistors" package="0603" value="0" x="16.175" y="24.42" smashed="yes" rot="MR0">
+<element name="R1" library="FaBo-Resistors" package="0603" value="DNP" x="16.175" y="24.42" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="16.075" y="23.72" size="0.8128" layer="28" font="vector" ratio="12" rot="MR0" align="center"/>
 </element>
 <element name="R3" library="FaBo-Resistors" package="0603" value="0" x="17.225" y="26.62" smashed="yes" rot="MR0">
@@ -9401,7 +9402,7 @@ design rules under a new name.</description>
 </element>
 <element name="U$1" library="FaBo-PIN" package="PNHEADER_2.54_SMT_17PIN_RC_TT01_02" value="RC_17PIN_OUTIN" x="22.9" y="47.1" smashed="yes"/>
 <element name="U$2" library="FaBo-Logo" package="LOGO_FABO_L" value="" x="41.6" y="18" smashed="yes"/>
-<element name="C6" library="FaBo-Capacitor" package="0603" value="10uF" x="17.3" y="11.9" smashed="yes" rot="R90">
+<element name="C6" library="FaBo-Capacitor" package="0603" value="DNP" x="17.3" y="11.9" smashed="yes" rot="R90">
 <attribute name="VALUE" x="16.6" y="12" size="0.8128" layer="27" font="vector" ratio="15" rot="R90" align="center"/>
 </element>
 <element name="C7" library="FaBo-Capacitor" package="0402" value="0.1uF" x="11.8" y="30.3" smashed="yes" rot="R270">
@@ -9427,7 +9428,7 @@ design rules under a new name.</description>
 <element name="R6" library="FaBo-Resistors" package="0603" value="330" x="10.35" y="28" smashed="yes" rot="R90">
 <attribute name="VALUE" x="9.75" y="28" size="0.8128" layer="27" font="vector" ratio="15" rot="R90" align="center"/>
 </element>
-<element name="R8" library="FaBo-Resistors" package="0603" value="10" x="10.45" y="34.5" smashed="yes" rot="R90">
+<element name="R8" library="FaBo-Resistors" package="0603" value="470" x="10.45" y="34.5" smashed="yes" rot="R90">
 <attribute name="VALUE" x="11" y="34.5" size="0.8128" layer="27" font="vector" ratio="15" rot="R90" align="center"/>
 </element>
 <element name="R24" library="FaBo-Resistors" package="0603" value="100K" x="9.05" y="32.45" smashed="yes" rot="R180">
@@ -9450,10 +9451,10 @@ design rules under a new name.</description>
 <element name="R33" library="FaBo-Resistors" package="0603" value="100K" x="5.8" y="50.35" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="5.75" y="49.7" size="0.8128" layer="28" font="vector" ratio="15" rot="MR0" align="center"/>
 </element>
-<element name="R34" library="FaBo-Resistors" package="0603" value="10" x="15.85" y="51.4" smashed="yes" rot="MR0">
+<element name="R34" library="FaBo-Resistors" package="0603" value="470" x="15.85" y="51.4" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="15.9" y="50.65" size="0.8128" layer="28" font="vector" ratio="15" rot="MR0" align="center"/>
 </element>
-<element name="R35" library="FaBo-Resistors" package="0603" value="10" x="8.55" y="50.85" smashed="yes" rot="MR0">
+<element name="R35" library="FaBo-Resistors" package="0603" value="470" x="8.55" y="50.85" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="8.4" y="51.7" size="0.8128" layer="28" font="vector" ratio="15" rot="MR0" align="center"/>
 </element>
 <element name="C5" library="FaBo-Capacitor" package="0402" value="0.1uF" x="9.95" y="19.65" smashed="yes" rot="R90">
@@ -9536,7 +9537,7 @@ design rules under a new name.</description>
 </element>
 <element name="SPI-LED" library="FaBo-Connetor" package="SPI-SM04B-PASS-1-FL" value="" x="23.7" y="16.3" smashed="yes" rot="MR180"/>
 <element name="I2C" library="FaBo-Connetor" package="I2C-SM04B-PASS-1-FL" value="FABO-I2C" x="73.8" y="9.4" smashed="yes" rot="MR180"/>
-<element name="C10" library="FaBo-Capacitor" package="0402" value="0.01uF" x="25.15" y="16" smashed="yes" rot="R180">
+<element name="C10" library="FaBo-Capacitor" package="0402" value="DNP" x="25.15" y="16" smashed="yes" rot="R180">
 <attribute name="VALUE" x="26.1" y="16.65" size="0.8128" layer="27" font="vector" ratio="15" rot="R180" align="center"/>
 </element>
 </elements>
