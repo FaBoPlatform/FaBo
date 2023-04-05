@@ -917,7 +917,7 @@ by exp-lbrs.ulp</description>
 <sheets>
 <sheet>
 <plain>
-<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">2.0.1</text>
+<text x="246.38" y="20.32" size="2.54" layer="94" align="bottom-center">2.0.0</text>
 <text x="154.94" y="116.84" size="1.778" layer="94">LEFT ICS43432</text>
 <text x="223.52" y="119.38" size="1.778" layer="94">RIGHT ICS43432</text>
 <text x="139.7" y="157.48" size="2.54" layer="94">LEFT channel</text>
