@@ -1682,6 +1682,7 @@ Non shorting
 <text x="1149.35" y="20.32" size="2.54" layer="94" align="bottom-center">2.0.2</text>
 <text x="1412.24" y="706.12" size="7.62" layer="94">I2S INPUT</text>
 <text x="1275.08" y="703.58" size="7.62" layer="94">I2S OUTPUT</text>
+<text x="58.42" y="692.15" size="5.08" layer="94">2022/04/05 Rev2.0.2 SPIのコネクタ削除、I2SをI2S OUT,INを追加。</text>
 </plain>
 <instances>
 <instance part="SUPPLY2" gate="5V" x="601.98" y="425.45" smashed="yes">
