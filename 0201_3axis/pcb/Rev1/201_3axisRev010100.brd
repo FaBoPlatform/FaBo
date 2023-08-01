@@ -3006,7 +3006,7 @@ design rules under a new name.</description>
 <wire x1="4.275" y1="18.975" x2="4" y2="19.25" width="0.1524" layer="1"/>
 <wire x1="4" y1="19.25" x2="3.34" y2="19.25" width="0.1524" layer="1"/>
 <wire x1="3.34" y1="19.25" x2="3.325" y2="19.235" width="0.1524" layer="1"/>
-<wire x1="4.275" y1="18.14" x2="4.925" y2="18.14" width="0" layer="19" extent="1-1"/>
+<wire x1="4.925" y1="18.14" x2="4.275" y2="18.14" width="0.1524" layer="1"/>
 </signal>
 <signal name="ADDRESS">
 <contactref element="IC1" pad="12"/>
