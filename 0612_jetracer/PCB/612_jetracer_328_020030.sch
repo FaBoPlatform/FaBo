@@ -1129,6 +1129,24 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="-0.2" y1="0" x2="-0.2" y2="-0.45" width="0.127" layer="21"/>
 <wire x1="-0.2" y1="0" x2="0.4" y2="0" width="0.127" layer="21"/>
 </package>
+<package name="APA102_2020">
+<smd name="VCC" x="-0.8" y="0.8" dx="0.7" dy="0.35" layer="1" roundness="30"/>
+<smd name="SDO" x="-0.8" y="-0.8" dx="0.7" dy="0.35" layer="1" roundness="30"/>
+<smd name="SDI" x="0.8" y="-0.8" dx="0.7" dy="0.35" layer="1" roundness="30"/>
+<smd name="GND" x="0.8" y="0.8" dx="0.7" dy="0.35" layer="1" roundness="30"/>
+<smd name="CKO" x="-0.8" y="0" dx="0.7" dy="0.35" layer="1" roundness="30"/>
+<smd name="CKI" x="0.8" y="0" dx="0.7" dy="0.35" layer="1" roundness="30"/>
+<wire x1="-1" y1="1" x2="1" y2="1" width="0.1" layer="51"/>
+<wire x1="1" y1="1" x2="1" y2="-1" width="0.1" layer="51"/>
+<wire x1="1" y1="-1" x2="-1" y2="-1" width="0.1" layer="51"/>
+<wire x1="-1" y1="-1" x2="-1" y2="1" width="0.1" layer="51"/>
+<text x="0" y="1.25" size="0.8128" layer="25" font="vector" ratio="15" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-1.05" y1="-1.05" x2="-0.125" y2="-0.375" layer="21"/>
+<wire x1="-0.6" y1="0" x2="0.6" y2="0" width="0.1" layer="51"/>
+<wire x1="-0.6" y1="-0.6" x2="0.6" y2="-0.6" width="0.1" layer="51"/>
+<wire x1="0.6" y1="0" x2="0.6" y2="-0.6" width="0.1" layer="51"/>
+<wire x1="-0.6" y1="0" x2="-0.6" y2="-0.6" width="0.1" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LED">
@@ -1155,6 +1173,21 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </polygon>
 <text x="-0.762" y="2.54" size="1.27" layer="95">&gt;NAME</text>
 <text x="-0.762" y="4.064" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="APA102">
+<pin name="SDI" x="-10.16" y="0" visible="pin" length="short"/>
+<pin name="CKI" x="-10.16" y="-2.54" visible="pin" length="short"/>
+<pin name="GND" x="10.16" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="SDO" x="10.16" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="CKO" x="10.16" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="VCC" x="-10.16" y="2.54" visible="pin" length="short"/>
+<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<text x="-7.366" y="7.874" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="5.08" size="1.778" layer="94" align="bottom-center">APA102</text>
+<text x="-7.366" y="-8.128" size="1.27" layer="96" align="top-left">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1221,6 +1254,26 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <connects>
 <connect gate="G$1" pin="ANODE" pad="ANODE"/>
 <connect gate="G$1" pin="CATHODE" pad="CATHODE"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="APA102" prefix="LED" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="APA102" x="0" y="0"/>
+</gates>
+<devices>
+<device name="_IPIXEL" package="APA102_2020">
+<connects>
+<connect gate="G$1" pin="CKI" pad="CKI"/>
+<connect gate="G$1" pin="CKO" pad="CKO"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="SDI" pad="SDI"/>
+<connect gate="G$1" pin="SDO" pad="SDO"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -4458,6 +4511,54 @@ TOP UP INDUSTORY
 </deviceset>
 </devicesets>
 </library>
+<library name="FaBo-Symbol">
+<description>&lt;h3&gt;FaBo etc&lt;/h3&gt;
+etc/etc...&lt;br&gt;
+&lt;br&gt;
+Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;br&gt;
+https://creativecommons.org/licenses/by-sa/4.0/</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="5V">
+<pin name="5V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<wire x1="0" y1="2.54" x2="0.762" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.1524" layer="94"/>
+<text x="0" y="3.048" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
+</symbol>
+<symbol name="GND">
+<pin name="GND" x="0" y="0" visible="off" length="short" direction="sup" rot="R270"/>
+<wire x1="-1.905" y1="-2.54" x2="1.905" y2="-2.54" width="0.1524" layer="94"/>
+<text x="0" y="-3.048" size="1.778" layer="96" align="top-center">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="5V" prefix="5V">
+<gates>
+<gate name="G$1" symbol="5V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GND" prefix="GND">
+<gates>
+<gate name="G$1" symbol="GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -4657,6 +4758,9 @@ TOP UP INDUSTORY
 <part name="GND39" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="GND43" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="GND46" library="FaBo-etc" deviceset="GND" device=""/>
+<part name="LED1" library="FaBo-LED" deviceset="APA102" device="_IPIXEL"/>
+<part name="5V2" library="FaBo-Symbol" deviceset="5V" device=""/>
+<part name="GND47" library="FaBo-Symbol" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5309,6 +5413,16 @@ TOP UP INDUSTORY
 <instance part="GND46" gate="GND" x="234.95" y="261.62" smashed="yes">
 <attribute name="VALUE" x="232.156" y="256.54" size="1.778" layer="96"/>
 </instance>
+<instance part="LED1" gate="G$1" x="756.92" y="233.68" smashed="yes">
+<attribute name="NAME" x="749.554" y="241.554" size="1.27" layer="95"/>
+<attribute name="VALUE" x="749.554" y="225.552" size="1.27" layer="96" align="top-left"/>
+</instance>
+<instance part="5V2" gate="G$1" x="741.68" y="241.3" smashed="yes">
+<attribute name="VALUE" x="741.68" y="244.348" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="GND47" gate="G$1" x="772.16" y="223.52" smashed="yes">
+<attribute name="VALUE" x="772.16" y="220.472" size="1.778" layer="96" align="top-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -5645,6 +5759,12 @@ TOP UP INDUSTORY
 <wire x1="234.95" y1="323.85" x2="234.95" y2="318.77" width="0.1524" layer="91"/>
 <wire x1="224.79" y1="323.85" x2="234.95" y2="323.85" width="0.1524" layer="91"/>
 <junction x="234.95" y="323.85"/>
+</segment>
+<segment>
+<pinref part="LED1" gate="G$1" pin="GND"/>
+<pinref part="GND47" gate="G$1" pin="GND"/>
+<wire x1="767.08" y1="228.6" x2="772.16" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="772.16" y1="228.6" x2="772.16" y2="223.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -6062,6 +6182,12 @@ TOP UP INDUSTORY
 <pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="314.96" y1="223.52" x2="314.96" y2="220.98" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="LED1" gate="G$1" pin="VCC"/>
+<pinref part="5V2" gate="G$1" pin="5V"/>
+<wire x1="746.76" y1="236.22" x2="741.68" y2="236.22" width="0.1524" layer="91"/>
+<wire x1="741.68" y1="236.22" x2="741.68" y2="241.3" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="RCH1" class="0">
 <segment>
@@ -6237,9 +6363,15 @@ TOP UP INDUSTORY
 <label x="690.88" y="289.56" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="749.3" y1="276.86" x2="749.3" y2="287.02" width="0.1524" layer="91"/>
+<wire x1="749.3" y1="276.86" x2="749.3" y2="281.94" width="0.1524" layer="91"/>
 <label x="749.3" y="287.02" size="1.778" layer="95" rot="R90"/>
 <pinref part="SPI-LED" gate="G$1" pin="DI"/>
+<pinref part="LED1" gate="G$1" pin="SDI"/>
+<wire x1="749.3" y1="281.94" x2="749.3" y2="287.02" width="0.1524" layer="91"/>
+<wire x1="746.76" y1="233.68" x2="734.06" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="734.06" y1="233.68" x2="734.06" y2="281.94" width="0.1524" layer="91"/>
+<wire x1="734.06" y1="281.94" x2="749.3" y2="281.94" width="0.1524" layer="91"/>
+<junction x="749.3" y="281.94"/>
 </segment>
 </net>
 <net name="AVR_MISO" class="0">
@@ -6266,9 +6398,15 @@ TOP UP INDUSTORY
 <label x="645.16" y="289.56" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="754.38" y1="276.86" x2="754.38" y2="287.02" width="0.1524" layer="91"/>
+<wire x1="754.38" y1="276.86" x2="754.38" y2="279.4" width="0.1524" layer="91"/>
 <label x="754.38" y="287.02" size="1.778" layer="95" rot="R90"/>
 <pinref part="SPI-LED" gate="G$1" pin="CI"/>
+<wire x1="754.38" y1="279.4" x2="754.38" y2="287.02" width="0.1524" layer="91"/>
+<wire x1="754.38" y1="279.4" x2="739.14" y2="279.4" width="0.1524" layer="91"/>
+<junction x="754.38" y="279.4"/>
+<wire x1="739.14" y1="279.4" x2="739.14" y2="231.14" width="0.1524" layer="91"/>
+<pinref part="LED1" gate="G$1" pin="CKI"/>
+<wire x1="739.14" y1="231.14" x2="746.76" y2="231.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="AVR_RESET" class="0">
@@ -7071,9 +7209,6 @@ TOP UP INDUSTORY
 </nets>
 </sheet>
 </sheets>
-<errors>
-<approved hash="201,1,327.66,195.58,GND,GND\, 0,,,,"/>
-</errors>
 </schematic>
 </drawing>
 <compatibility>
