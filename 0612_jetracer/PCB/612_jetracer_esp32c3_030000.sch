@@ -3695,7 +3695,7 @@ High:B0-B3
 <text x="66.04" y="208.28" size="3.81" layer="97">I2C</text>
 <text x="229.87" y="346.71" size="1.778" layer="94">1N4148</text>
 <text x="201.93" y="351.79" size="3.81" layer="97">OLED</text>
-<text x="44.45" y="524.51" size="6.4516" layer="94">Rev2.1.0</text>
+<text x="44.45" y="524.51" size="6.4516" layer="94">Rev3.0.0 B</text>
 <text x="642.62" y="318.77" size="3.81" layer="97">SPI_LED</text>
 <text x="568.96" y="328.93" size="3.81" layer="97">XIAO-ESP32C3</text>
 </plain>
