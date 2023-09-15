@@ -6,7 +6,7 @@
 #define FIRMWARE_NUMBER    37     //Firmware Version 3.7
 #define BOARDMAJOR         2      //基板版数パッチメジャー
 #define BOARDMINOR         0      //基板版数パッチマイナー
-#define BOARDPATCH         21     //基板版数パッチRev2.0.29は29
+#define BOARDPATCH         29     //基板版数パッチRev2.0.29は29
 
 //判定基準または方法
 #define SWITCHINGTREDSHOLD 1500   //信号切り替え閾値1500u秒
