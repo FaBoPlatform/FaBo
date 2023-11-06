@@ -1,10 +1,16 @@
-//FaBo JetRacer_XIAO_ESP32C3 Version 0.0.0
-//Board Rev3.0.0
-//2023/09/05
-//ESP32C3動作確認用
+//FaBo JetRacer_XIAO_ESP32S3 Version 0.0.1
+//Board Rev3.0.1
+//2023/11/06
+//ESP32S3動作確認用
 
 #include "Wire.h"
 #include "SPI.h"
+
+//レビションやファームウェアバージョンによって以下を変更すること。
+#define FIRMWARE_NUMBER    0     //Firmware Version ID 0
+#define BOARDMAJOR         3      //基板版数パッチメジャー
+#define BOARDMINOR         0      //基板版数パッチマイナー
+#define BOARDPATCH         1     //基板版数パッチRev2.0.29は29
 
 //ピン設定
 #define ST_SIGNAL_INPUT_PIN       D0
@@ -54,7 +60,13 @@ void onRequest(){
     Wire.write(transfer3.b);
     Wire.write(transfer3.c);
     Wire.write(transfer3.d);
-  }
+  }  //バージョン情報　アドレス0x00
+  else if(registerIndex == 0x00){
+    Wire.write(transfer4.a);
+    Wire.write(transfer4.b);
+    Wire.write(transfer4.c);
+    Wire.write(transfer4.d);
+    }
 }
 
 void onReceive(int len){
@@ -97,6 +109,11 @@ void setup() {
   SPI.begin();
   pinMode(SELECT_OUTPUT_PIN, OUTPUT);
 
+  //バージョン情報付与
+  transfer4.a = BOARDMAJOR;
+  transfer4.b = BOARDMINOR;
+  transfer4.c = BOARDPATCH;
+  transfer4.d = FIRMWARE_NUMBER;
 
 #if CONFIG_IDF_TARGET_ESP32
   char message[64];
@@ -114,7 +131,20 @@ void loop() {
   transfer2.before=pwm1;
   transfer3.before=duration;
 
-  if (duration <1500){
+  if (duration > 1500){
+    digitalWrite(SELECT_OUTPUT_PIN, LOW);
+     startBit();
+    //緑色発光　7個点灯
+    setRGB(0,   255,   0);
+    setRGB(0,   255,   0);
+    setRGB(0,   255,   0);
+    setRGB(0,   255,   0);
+    setRGB(0,   255,   0);
+    setRGB(0,   255,   0);
+    setRGB(0,   255,   0);
+    endBit();
+    
+  }else if ((duration <= 1500) && (duration >= 1)){
     digitalWrite(SELECT_OUTPUT_PIN, HIGH);
     startBit();
     //レインボー発光 7個点灯
@@ -128,15 +158,16 @@ void loop() {
     endBit();
   }else{
     digitalWrite(SELECT_OUTPUT_PIN, LOW);
-     startBit();
-    //緑色発光　7個点灯
-    setRGB(0,   255,   0);
-    setRGB(0,   255,   0);
-    setRGB(0,   255,   0);
-    setRGB(0,   255,   0);
-    setRGB(0,   255,   0);
-    setRGB(0,   255,   0);
-    setRGB(0,   255,   0);
+    startBit();
+    //信号計測なし
+    //青色発光　7個点灯
+    setRGB(255,   0,   0);
+    setRGB(255,   0,   0);
+    setRGB(255,   0,   0);
+    setRGB(255,   0,   0);
+    setRGB(255,   0,   0);
+    setRGB(255,   0,   0);
+    setRGB(255,   0,   0);
     endBit();
   }
             
