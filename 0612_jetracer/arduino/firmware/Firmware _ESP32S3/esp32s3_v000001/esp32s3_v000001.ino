@@ -1,7 +1,8 @@
-//FaBo JetRacer_XIAO_ESP32S3 Version 0.0.1
+//FaBo JetRacer_XIAO_ESP32S3 Version 0.0.3
 //Board Rev3.0.1
-//2023/11/06
+//2023/11/21
 //ESP32S3動作確認用
+//#define DEBUG
 
 #include "Wire.h"
 #include "SPI.h"
@@ -101,8 +102,12 @@ void setRGB(short r, short g, short b) {
 
 
 void setup() {
-  Serial.begin(115200);
-  Serial.setDebugOutput(true);
+  
+  #ifdef DEBUG
+    Serial.begin(115200);
+    Serial.setDebugOutput(true);
+  #endif
+
   Wire.onReceive(onReceive);
   Wire.onRequest(onRequest);
   Wire.begin((uint8_t)I2C_DEV_ADDR);
@@ -124,14 +129,36 @@ void setup() {
 
 void loop() {
   uint32_t duration = pulseInLong(FSW_SIGNAL_INPUT_PIN, HIGH,25000);
-  uint32_t pwm1 = pulseInLong(TH_SIGNAL_INPUT_PIN, HIGH,25000);
   uint32_t pwm0 = pulseInLong(ST_SIGNAL_INPUT_PIN, HIGH,25000);
+  uint32_t pwm1 = pulseInLong(TH_SIGNAL_INPUT_PIN, HIGH,25000);
 
   transfer1.before=pwm0;
   transfer2.before=pwm1;
   transfer3.before=duration;
 
+  #ifdef DEBUG
+    char buf[16];
+    sprintf(buf, "Streeing %d", pwm0);
+    Serial.println(buf);
+    sprintf(buf, "Throttle %d", pwm1);
+    Serial.println(buf);
+    sprintf(buf, "Duration %d", duration);
+    Serial.println(buf);
+  #endif
+  
   if (duration > 1500){
+    digitalWrite(SELECT_OUTPUT_PIN, HIGH);
+    startBit();
+    //レインボー発光 7個点灯
+    setRGB(80,   0,   45);  //レインボー1個目
+    setRGB(80,   0,   60) ; //レンボー色２番目〜７個目
+    setRGB(80,   0,   90);
+    setRGB(80,   0,   130);
+    setRGB(80,   0,   170);
+    setRGB(80,   0,   210);
+    setRGB(80,   0,   255);
+    endBit();    
+  }else if ((duration <= 1500) && (duration >= 100)){
     digitalWrite(SELECT_OUTPUT_PIN, LOW);
      startBit();
     //緑色発光　7個点灯
@@ -143,19 +170,7 @@ void loop() {
     setRGB(0,   255,   0);
     setRGB(0,   255,   0);
     endBit();
-    
-  }else if ((duration <= 1500) && (duration >= 1)){
-    digitalWrite(SELECT_OUTPUT_PIN, HIGH);
-    startBit();
-    //レインボー発光 7個点灯
-    setRGB(80,   0,   45);  //レインボー1個目
-    setRGB(80,   0,   60) ; //レンボー色２番目〜７個目
-    setRGB(80,   0,   90);
-    setRGB(80,   0,   130);
-    setRGB(80,   0,   170);
-    setRGB(80,   0,   210);
-    setRGB(80,   0,   255);
-    endBit();
+
   }else{
     digitalWrite(SELECT_OUTPUT_PIN, LOW);
     startBit();
