@@ -1,8 +1,9 @@
 //FaBo JetRacer_XIAO_ESP32S3 Version 0.0.3
 //Board Rev3.0.1
-//2023/11/21
-//ESP32S3動作確認用
-//#define DEBUG
+//2023/12/21
+//nRF52832動作確認用
+#define DEBUG
+#include "Adafruit_TinyUSB.h"
 
 #include "Wire.h"
 #include "SPI.h"
@@ -14,13 +15,14 @@
 #define BOARDPATCH         1     //基板版数パッチRev2.0.29は29
 
 //ピン設定
-#define ST_SIGNAL_INPUT_PIN       D0
-#define TH_SIGNAL_INPUT_PIN       D1
+#define ST_SIGNAL_INPUT_PIN       D6
+#define TH_SIGNAL_INPUT_PIN       D7
 #define FSW_SIGNAL_INPUT_PIN      D2
 #define SELECT_OUTPUT_PIN         D3
 
 //I2Cスレーブデバイスアドレス設定
 #define I2C_DEV_ADDR 0x08
+
 
 //I2Cデバイスレジスタ
 uint8_t registerIndex = 0;
@@ -105,8 +107,11 @@ void setup() {
   
   #ifdef DEBUG
     Serial.begin(115200);
-    Serial.setDebugOutput(true);
   #endif
+
+  pinMode(ST_SIGNAL_INPUT_PIN, INPUT);
+  pinMode(TH_SIGNAL_INPUT_PIN, INPUT);
+  pinMode(FSW_SIGNAL_INPUT_PIN, INPUT);
 
   Wire.onReceive(onReceive);
   Wire.onRequest(onRequest);
@@ -128,9 +133,9 @@ void setup() {
 }
 
 void loop() {
-  uint32_t duration = pulseInLong(FSW_SIGNAL_INPUT_PIN, HIGH,25000);
-  uint32_t pwm0 = pulseInLong(ST_SIGNAL_INPUT_PIN, HIGH,25000);
-  uint32_t pwm1 = pulseInLong(TH_SIGNAL_INPUT_PIN, HIGH,25000);
+  uint32_t duration = pulseIn(FSW_SIGNAL_INPUT_PIN, HIGH,25000);
+  uint32_t pwm0 = pulseIn(ST_SIGNAL_INPUT_PIN, HIGH,25000);
+  uint32_t pwm1 = pulseIn(TH_SIGNAL_INPUT_PIN, HIGH,25000);
 
   transfer1.before=pwm0;
   transfer2.before=pwm1;

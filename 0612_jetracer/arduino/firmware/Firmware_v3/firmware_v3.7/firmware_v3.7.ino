@@ -76,7 +76,7 @@ Transfer transfer3;
 Transfer transfer4;
 
 //i2cのレジスタ受信イベント
-void receiveEvent() {
+void receiveEvent(int a) {
   while(Wire.available() > 0){
     registerIndex = Wire.read();
   }
@@ -178,9 +178,9 @@ void loop(){
   static uint16_t countb;
 
   //信号計測
-  uint32_t duration = pulseInLong(FSW_SIGNAL_INPUT_PIN, HIGH,25000);
-  uint32_t pwm1 = pulseInLong(TH_SIGNAL_INPUT_PIN, HIGH,25000);
-  uint32_t pwm0 = pulseInLong(ST_SIGNAL_INPUT_PIN, HIGH,25000);
+  uint32_t duration = pulseIn(FSW_SIGNAL_INPUT_PIN, HIGH,25000);
+  uint32_t pwm1 = pulseIn(TH_SIGNAL_INPUT_PIN, HIGH,25000);
+  uint32_t pwm0 = pulseIn(ST_SIGNAL_INPUT_PIN, HIGH,25000);
   
   transfer1.before=pwm0;
   transfer2.before=pwm1;
