@@ -3801,6 +3801,7 @@ High:B0-B3
 <text x="720.09" y="340.36" size="3.81" layer="97">special version
 Top Connector</text>
 <text x="713.74" y="287.02" size="3.81" layer="97">Buttom Connector</text>
+<text x="548.64" y="233.68" size="1.778" layer="94">LP2985-33</text>
 </plain>
 <instances>
 <instance part="SUPPLY2" gate="5V" x="701.04" y="414.02" smashed="yes">
@@ -5176,7 +5177,7 @@ Top Connector</text>
 </net>
 <net name="BEC_60" class="0">
 <segment>
-<label x="547.37" y="223.52" size="1.778" layer="95"/>
+<label x="580.39" y="236.22" size="1.778" layer="95"/>
 <pinref part="C8" gate="G$1" pin="2"/>
 <wire x1="576.58" y1="236.22" x2="576.58" y2="243.84" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="VIN"/>
