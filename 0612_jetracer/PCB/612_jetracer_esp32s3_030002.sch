@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
@@ -3750,6 +3750,8 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="U7" library="FaBo-Display" deviceset="ER-OLED0.96-1" device="ER-CON30HT-1"/>
 <part name="C9" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0402" value="10uF"/>
 <part name="C3" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0402" value="20pF"/>
+<part name="R9" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="0"/>
+<part name="R10" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="0"/>
 </parts>
 <sheets>
 <sheet>
@@ -4257,6 +4259,14 @@ Top Connector</text>
 <instance part="C3" gate="G$1" x="156.21" y="411.48" smashed="yes" rot="R90">
 <attribute name="NAME" x="153.924" y="409.194" size="1.27" layer="95" rot="R90"/>
 <attribute name="VALUE" x="158.496" y="409.194" size="1.27" layer="96" rot="R90" align="top-left"/>
+</instance>
+<instance part="R9" gate="G$1" x="637.54" y="306.07" smashed="yes" rot="MR0">
+<attribute name="NAME" x="634.746" y="307.594" size="1.4224" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="639.826" y="304.546" size="1.4224" layer="96" rot="MR0" align="top-left"/>
+</instance>
+<instance part="R10" gate="G$1" x="637.54" y="303.53" smashed="yes" rot="MR0">
+<attribute name="NAME" x="634.746" y="303.784" size="1.4224" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="639.826" y="302.006" size="1.4224" layer="96" rot="MR0" align="top-left"/>
 </instance>
 </instances>
 <busses>
@@ -5516,20 +5526,20 @@ Top Connector</text>
 <segment>
 <wire x1="612.14" y1="309.88" x2="628.65" y2="309.88" width="0.1524" layer="91"/>
 <wire x1="628.65" y1="309.88" x2="628.65" y2="306.07" width="0.1524" layer="91"/>
-<pinref part="LED1" gate="G$1" pin="SDI"/>
-<wire x1="628.65" y1="306.07" x2="642.62" y2="306.07" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="PA6_A10_D10_MOSI"/>
-<label x="632.46" y="306.07" size="1.778" layer="95"/>
+<label x="627.38" y="311.15" size="1.778" layer="95"/>
+<pinref part="R9" gate="G$1" pin="2"/>
+<wire x1="632.46" y1="306.07" x2="628.65" y2="306.07" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CLK1" class="0">
 <segment>
-<pinref part="LED1" gate="G$1" pin="CKI"/>
-<wire x1="642.62" y1="303.53" x2="623.57" y2="303.53" width="0.1524" layer="91"/>
 <wire x1="623.57" y1="303.53" x2="623.57" y2="302.26" width="0.1524" layer="91"/>
 <wire x1="623.57" y1="302.26" x2="612.14" y2="302.26" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="PA7_A8_D8_SCK"/>
-<label x="632.46" y="303.53" size="1.778" layer="95"/>
+<label x="623.57" y="300.99" size="1.778" layer="95"/>
+<pinref part="R10" gate="G$1" pin="2"/>
+<wire x1="632.46" y1="303.53" x2="623.57" y2="303.53" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MOSI2" class="0">
@@ -5661,6 +5671,20 @@ Top Connector</text>
 <wire x1="548.64" y1="213.36" x2="525.78" y2="213.36" width="0.1524" layer="91"/>
 <junction x="525.78" y="213.36"/>
 <label x="530.86" y="246.38" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MS" class="0">
+<segment>
+<pinref part="R9" gate="G$1" pin="1"/>
+<pinref part="LED1" gate="G$1" pin="SDI"/>
+<wire x1="640.08" y1="306.07" x2="642.62" y2="306.07" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="CK" class="0">
+<segment>
+<pinref part="R10" gate="G$1" pin="1"/>
+<pinref part="LED1" gate="G$1" pin="CKI"/>
+<wire x1="640.08" y1="303.53" x2="642.62" y2="303.53" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
