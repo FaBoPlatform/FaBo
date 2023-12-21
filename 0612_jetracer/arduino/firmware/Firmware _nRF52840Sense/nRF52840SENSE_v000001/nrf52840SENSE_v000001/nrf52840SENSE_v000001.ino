@@ -12,12 +12,6 @@
 #include "Wire.h"
 #include "SPI.h"
 
-//レビションやファームウェアバージョンによって以下を変更すること。
-#define FIRMWARE_NUMBER    0     //Firmware Version ID 0
-#define BOARDMAJOR         3      //基板版数パッチメジャー
-#define BOARDMINOR         0      //基板版数パッチマイナー
-#define BOARDPATCH         1     //基板版数パッチRev2.0.29は29
-
 //ピン設定
 #define ST_SIGNAL_INPUT_PIN       D0
 #define TH_SIGNAL_INPUT_PIN       D1
@@ -46,12 +40,9 @@ typedef union
 Transfer transfer1;
 Transfer transfer2;
 Transfer transfer3;
-Transfer transfer4;
 
 //i2cマスターから要求があった時
 void onRequest(){
-  if(registerIndex == 0x01)
-  {
     //ステアリング信号
     Wire.write(transfer1.a);
     Wire.write(transfer1.b);
@@ -67,13 +58,6 @@ void onRequest(){
     Wire.write(transfer3.b);
     Wire.write(transfer3.c);
     Wire.write(transfer3.d);
-  }  //バージョン情報　アドレス0x00
-  else if(registerIndex == 0x00){
-    Wire.write(transfer4.a);
-    Wire.write(transfer4.b);
-    Wire.write(transfer4.c);
-    Wire.write(transfer4.d);
-    }
 }
 
 //i2cマスターから受信した時
@@ -204,28 +188,13 @@ void setup() {
   //SPI通信開始
   SPI.begin();
   
-  //バージョン情報付与
-  transfer4.a = BOARDMAJOR;
-  transfer4.b = BOARDMINOR;
-  transfer4.c = BOARDPATCH;
-  transfer4.d = FIRMWARE_NUMBER;
-
    //タイマーセット
   timer_setup();
   //PWM信号入力ピンセット
   gpiote_setup();
-  
-
-#if CONFIG_IDF_TARGET_ESP32
-  char message[64];
-  snprintf(message, 64, "%u Packets.", i++);
-  Wire.slaveWrite((uint8_t *)message, strlen(message));
-#endif
 }
 
 void loop() {
-
- 
 
   //受信機から信号を取得
   uint32_t duration = NRF_TIMER2->CC[1];
