@@ -1,6 +1,6 @@
 //FaBo JetRacer Controller Board on XIAO nRF52840 Version 0.0.1
 //Board Rev3.0.1
-//2023/12/20
+//2023/12/21
 //nRF52840SENSE動作確認用
 #define DEBUG
 #include <Arduino.h>
@@ -11,6 +11,10 @@
 #include "Adafruit_TinyUSB.h"
 #include "Wire.h"
 #include "SPI.h"
+#include "LSM6DS3.h"
+
+//Create a instance of class LSM6DS3
+LSM6DS3 myIMU(I2C_MODE, 0x6A);    //I2C device address 0x6A
 
 //ピン設定
 #define ST_SIGNAL_INPUT_PIN       D0
@@ -40,6 +44,13 @@ typedef union
 Transfer transfer1;
 Transfer transfer2;
 Transfer transfer3;
+Transfer transfer4;
+Transfer transfer5;
+Transfer transfer6;
+Transfer transfer7;
+Transfer transfer8;
+Transfer transfer9;
+Transfer transfer10;
 
 //i2cマスターから要求があった時
 void onRequest(){
@@ -58,6 +69,37 @@ void onRequest(){
     Wire.write(transfer3.b);
     Wire.write(transfer3.c);
     Wire.write(transfer3.d);
+    //加速度
+    Wire.write(transfer4.a);
+    Wire.write(transfer4.b);
+    Wire.write(transfer4.c);
+    Wire.write(transfer4.d);
+    Wire.write(transfer5.a);
+    Wire.write(transfer5.b);
+    Wire.write(transfer5.c);
+    Wire.write(transfer5.d);
+    Wire.write(transfer6.a);
+    Wire.write(transfer6.b);
+    Wire.write(transfer6.c);
+    Wire.write(transfer6.d);
+    //ジャイロ
+    Wire.write(transfer7.a);
+    Wire.write(transfer7.b);
+    Wire.write(transfer7.c);
+    Wire.write(transfer7.d);
+    Wire.write(transfer8.a);
+    Wire.write(transfer8.b);
+    Wire.write(transfer8.c);
+    Wire.write(transfer8.d);
+    Wire.write(transfer9.a);
+    Wire.write(transfer9.b);
+    Wire.write(transfer9.c);
+    Wire.write(transfer9.d);
+    //温度
+    Wire.write(transfer10.a);
+    Wire.write(transfer10.b);
+    Wire.write(transfer10.c);
+    Wire.write(transfer10.d);
 }
 
 //i2cマスターから受信した時
@@ -184,6 +226,9 @@ void setup() {
   Wire.onReceive(onReceive);
   Wire.onRequest(onRequest);
   Wire.begin((uint8_t)I2C_DEV_ADDR);
+
+  //IMU開始
+  while(myIMU.begin() != 0);
   
   //SPI通信開始
   SPI.begin();
@@ -205,15 +250,49 @@ void loop() {
   transfer1.before=pwm0;
   transfer2.before=pwm1;
   transfer3.before=duration;
+  
+  //加速度、ジャイロ、温度取得
+  float ax = myIMU.readFloatAccelX();
+  float ay = myIMU.readFloatAccelY();
+  float az = myIMU.readFloatAccelZ();
+  float gx = myIMU.readFloatGyroX();
+  float gy = myIMU.readFloatGyroY();
+  float gz = myIMU.readFloatGyroZ();
+  float temp = myIMU.readTempC();
+
+  //小数からバイト列に変換
+  transfer4.before= ax;
+  transfer5.before= ay;
+  transfer6.before= az;
+  transfer7.before= gx;
+  transfer8.before= gy;
+  transfer9.before= gz;
+  transfer10.before= temp;
 
   #ifdef DEBUG
-    char buf[16];
+    char buf[32];
     sprintf(buf, "Streeing %d", pwm0);
     Serial.println(buf);
     sprintf(buf, "Throttle %d", pwm1);
     Serial.println(buf);
     sprintf(buf, "Duration %d", duration);
     Serial.println(buf);
+    sprintf(buf, "readFloatAccelX %f", ax);
+    Serial.println(buf);
+    sprintf(buf, "readFloatAccelY %f", ay);
+    Serial.println(buf);
+    sprintf(buf, "readFloatAccelZ %f", az);
+    Serial.println(buf);
+    sprintf(buf, "readFloatGyroX %f", gx);
+    Serial.println(buf);
+    sprintf(buf, "readFloatGyroX %f", gy);
+    Serial.println(buf);
+    sprintf(buf, "readFloatGyroX %f", gz);
+    Serial.println(buf);
+    sprintf(buf, "readTempC %f", temp);
+    Serial.println(buf);
+    sprintf(buf, "ーーーーーーーーーー");
+    Serial.println(buf); 
   #endif
   
   if (duration > 1500){
