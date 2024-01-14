@@ -1,7 +1,9 @@
-//FaBo JetRacer_XIAO_ESP32S3 Version 0.0.3
+//FaBo JetRacer_XIAO_ESP32S3 Version 1.0.0
 //Board Rev3.0.1
-//2023/11/21
-//ESP32S3動作確認用
+//2024/01/14
+//ESP32S3
+//Xiao内部LEDの動作を追加。
+
 //#define DEBUG
 
 #include "Wire.h"
@@ -113,7 +115,8 @@ void setup() {
   Wire.begin((uint8_t)I2C_DEV_ADDR);
   SPI.begin();
   pinMode(SELECT_OUTPUT_PIN, OUTPUT);
-
+  pinMode(LED_BUILTIN, OUTPUT);
+  
   //バージョン情報付与
   transfer4.a = BOARDMAJOR;
   transfer4.b = BOARDMINOR;
@@ -148,6 +151,7 @@ void loop() {
   
   if (duration > 1500){
     digitalWrite(SELECT_OUTPUT_PIN, HIGH);
+    digitalWrite(LED_BUILTIN, LOW); 
     startBit();
     //レインボー発光 7個点灯
     setRGB(80,   0,   45);  //レインボー1個目
@@ -160,6 +164,7 @@ void loop() {
     endBit();    
   }else if ((duration <= 1500) && (duration >= 100)){
     digitalWrite(SELECT_OUTPUT_PIN, LOW);
+    digitalWrite(LED_BUILTIN, !digitalRead(LED_BUILTIN));
      startBit();
     //緑色発光　7個点灯
     setRGB(0,   255,   0);
@@ -170,9 +175,11 @@ void loop() {
     setRGB(0,   255,   0);
     setRGB(0,   255,   0);
     endBit();
+    delay(1);
 
   }else{
     digitalWrite(SELECT_OUTPUT_PIN, LOW);
+    digitalWrite(LED_BUILTIN, !digitalRead(LED_BUILTIN));
     startBit();
     //信号計測なし
     //青色発光　7個点灯
@@ -184,6 +191,7 @@ void loop() {
     setRGB(255,   0,   0);
     setRGB(255,   0,   0);
     endBit();
+    delay(20);
   }
             
 
