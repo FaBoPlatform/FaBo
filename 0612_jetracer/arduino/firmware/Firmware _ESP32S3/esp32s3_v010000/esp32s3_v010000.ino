@@ -1,8 +1,8 @@
 //FaBo JetRacer_XIAO_ESP32S3 Version 1.0.0
 //Board Rev3.0.1
-//2024/01/17
+//2024/01/17,18
 //ESP32S3
-//Xiao内部LEDの動作を追加。
+//Xiao内部LEDの点滅動作を追加。
 
 //#define DEBUG
 
