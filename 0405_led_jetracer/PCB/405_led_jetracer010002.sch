@@ -33752,7 +33752,7 @@ SPI延長ポート増設</text>
 <segment>
 <wire x1="203.2" y1="93.98" x2="212.09" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="SPI_OUTPUT" gate="G$1" pin="DI"/>
-<label x="213.36" y="93.98" size="1.778" layer="95" xref="yes"/>
+<label x="218.44" y="93.98" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="CO" class="0">
@@ -33764,7 +33764,7 @@ SPI延長ポート増設</text>
 <segment>
 <wire x1="203.2" y1="88.9" x2="212.09" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="SPI_OUTPUT" gate="G$1" pin="CI"/>
-<label x="213.36" y="88.9" size="1.778" layer="95" xref="yes"/>
+<label x="218.44" y="88.9" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
