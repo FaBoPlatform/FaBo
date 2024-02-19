@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -12387,6 +12387,16 @@ design rules under a new name.</description>
 <wire x1="51" y1="5" x2="51.1" y2="4.9" width="0.1524" layer="16"/>
 <wire x1="51.1" y1="4.12" x2="51.9" y2="3.32" width="0.1524" layer="16"/>
 <wire x1="51.1" y1="4.9" x2="51.1" y2="4.12" width="0.1524" layer="16"/>
+<polygon width="0.1524" layer="1" thermals="no">
+<vertex x="6.3" y="24.8"/>
+<vertex x="6.3" y="26.5"/>
+<vertex x="6.7" y="26.9"/>
+<vertex x="8.8" y="26.9"/>
+<vertex x="9.4" y="26.3"/>
+<vertex x="9.4" y="24.4"/>
+<vertex x="8.9" y="23.9"/>
+<vertex x="7.2" y="23.9"/>
+</polygon>
 </signal>
 <signal name="RCH1">
 <contactref element="R20" pad="1"/>
@@ -13640,18 +13650,6 @@ design rules under a new name.</description>
 <wire x1="65.4" y1="13.1" x2="65.4" y2="13.6" width="0.1524" layer="1"/>
 <wire x1="66.4" y1="14" x2="66.8" y2="13.6" width="0.1524" layer="1"/>
 <wire x1="68.3" y1="13.4" x2="68.3" y2="14.3" width="0.1524" layer="1"/>
-</signal>
-<signal name="N$11">
-<polygon width="0.1524" layer="1" thermals="no">
-<vertex x="6.3" y="24.8"/>
-<vertex x="6.3" y="26.5"/>
-<vertex x="6.7" y="26.9"/>
-<vertex x="8.8" y="26.9"/>
-<vertex x="9.4" y="26.3"/>
-<vertex x="9.4" y="24.4"/>
-<vertex x="8.9" y="23.9"/>
-<vertex x="7.2" y="23.9"/>
-</polygon>
 </signal>
 <signal name="N$10">
 <contactref element="U4" pad="3"/>
