@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -198,7 +198,7 @@
 <rectangle x1="18.9" y1="41.8" x2="41.7" y2="47.4" layer="22"/>
 <text x="28.9" y="50" size="2" layer="22" font="vector" ratio="15" rot="MR0">Rev 3.0.3</text>
 <text x="36.15" y="-8.2" size="2.54" layer="48" font="vector" ratio="16">#612 JetRacer Rev 3.0.3
-2024/02/01 18:00</text>
+2024/02/19 9:30</text>
 <wire x1="45.2" y1="24.1" x2="45.2" y2="67.1" width="0.1524" layer="20"/>
 <wire x1="0" y1="67" x2="0" y2="31.6" width="0.1524" layer="20"/>
 <text x="39.25" y="6.75" size="1.27" layer="22" font="vector" ratio="15" rot="MR180">F-612-3-0-3-A-N-J-1-PCB</text>
