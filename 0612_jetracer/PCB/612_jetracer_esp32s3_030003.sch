@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
@@ -4756,7 +4756,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="GND66" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="R43" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="DNF"/>
 <part name="R44" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="DNF"/>
-<part name="GPIO13" library="FaBo-Connetor" deviceset="FABO-GPIO-2G" device=""/>
+<part name="GP13" library="FaBo-Connetor" deviceset="FABO-GPIO-2G" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5465,7 +5465,7 @@ High:B0-B3
 <attribute name="NAME" x="771.906" y="369.316" size="1.4224" layer="95" rot="MR270"/>
 <attribute name="VALUE" x="774.954" y="369.316" size="1.4224" layer="96" rot="MR270" align="top-left"/>
 </instance>
-<instance part="GPIO13" gate="G$1" x="756.92" y="355.6" smashed="yes" rot="R180">
+<instance part="GP13" gate="G$1" x="756.92" y="355.6" smashed="yes" rot="R180">
 <attribute name="NAME" x="756.666" y="347.726" size="1.27" layer="95" rot="R180"/>
 </instance>
 </instances>
@@ -5903,7 +5903,7 @@ High:B0-B3
 <pinref part="GND65" gate="GND" pin="GND"/>
 <wire x1="768.35" y1="344.17" x2="768.35" y2="350.52" width="0.762" layer="91"/>
 <wire x1="768.35" y1="350.52" x2="762" y2="350.52" width="0.762" layer="91"/>
-<pinref part="GPIO13" gate="G$1" pin="1:GND"/>
+<pinref part="GP13" gate="G$1" pin="1:GND"/>
 </segment>
 <segment>
 <pinref part="GND66" gate="GND" pin="GND"/>
@@ -6160,7 +6160,7 @@ High:B0-B3
 <wire x1="773.43" y1="358.14" x2="786.13" y2="358.14" width="0.1524" layer="91"/>
 <wire x1="773.43" y1="361.95" x2="773.43" y2="358.14" width="0.1524" layer="91"/>
 <junction x="773.43" y="358.14"/>
-<pinref part="GPIO13" gate="G$1" pin="4:IO"/>
+<pinref part="GP13" gate="G$1" pin="4:IO"/>
 </segment>
 </net>
 <net name="GPIO16" class="0">
@@ -6351,7 +6351,7 @@ High:B0-B3
 <label x="773.43" y="374.65" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
-<pinref part="GPIO13" gate="G$1" pin="3:3V3"/>
+<pinref part="GP13" gate="G$1" pin="3:3V3"/>
 <wire x1="789.94" y1="373.38" x2="789.94" y2="355.6" width="0.1524" layer="91"/>
 <wire x1="789.94" y1="355.6" x2="762" y2="355.6" width="0.1524" layer="91"/>
 <label x="789.94" y="374.65" size="1.778" layer="95" rot="R90" xref="yes"/>
@@ -7074,7 +7074,7 @@ High:B0-B3
 <wire x1="762" y1="353.06" x2="789.94" y2="353.06" width="0.1524" layer="91"/>
 <wire x1="789.94" y1="340.36" x2="789.94" y2="353.06" width="0.1524" layer="91"/>
 <label x="773.43" y="353.06" size="1.778" layer="95"/>
-<pinref part="GPIO13" gate="G$1" pin="2:5V"/>
+<pinref part="GP13" gate="G$1" pin="2:5V"/>
 </segment>
 <segment>
 <pinref part="SUPPLY3" gate="5V" pin="5V"/>
