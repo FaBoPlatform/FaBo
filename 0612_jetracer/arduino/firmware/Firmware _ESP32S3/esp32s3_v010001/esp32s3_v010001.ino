@@ -10,7 +10,7 @@
 #include "SPI.h"
 
 //レビションやファームウェアバージョンによって以下を変更すること。
-#define FIRMWARE_NUMBER    0     //Firmware Version ID 0
+#define FIRMWARE_NUMBER    1     //Firmware Version ID 0
 #define BOARDMAJOR         3      //基板版数パッチメジャー
 #define BOARDMINOR         0      //基板版数パッチマイナー
 #define BOARDPATCH         3     //基板版数パッチRev2.0.29は29
