@@ -1,6 +1,6 @@
 //FaBo JetRacer_XIAO_ESP32S3 Version 1.1.0 アルファ版
 //Board Rev3.0.0,Rev3.0.1,Rev3.0.2,Rev3.0.3
-//2024/02/27
+//2024/03/01
 //ESP32S3
 //Jetson I2CでカラーLEDをコントロール機能を追加。
 
@@ -9,7 +9,7 @@
 #include "Wire.h"
 #include "SPI.h"
 
-//レビションやファームウェアバージョンによって以下を変更すること。
+//ボード情報　レビションやファームウェアバージョンによって以下を変更すること。
 #define FIRMWARE_NUMBER    2     //Firmware Version ID 0
 #define BOARDMAJOR         3      //基板版数パッチメジャー
 #define BOARDMINOR         0      //基板版数パッチマイナー
@@ -27,7 +27,7 @@
 //I2Cデバイスレジスタ
 uint8_t registerIndex = 0;
 
-//LED切り替えモード
+//LED切り替えモード 0 : 通常モード　1:カラーLEDのI2C制御モード
 int sw_led = 0;
 
 //色の選択  
@@ -124,6 +124,30 @@ void onReceive(int len){
         red = 228;
         sw_led = 1;
         break ;
+      case 0x20:  // 20 : Purple
+        blue = 90;
+        green = 0;
+        red = 64;
+        sw_led = 1;
+        break ;
+      case 0x21:  // 21 : Yellow green
+        blue = 59;
+        green = 204;
+        red = 170;
+        sw_led = 1;
+        break ;
+      case 0x22:  // 22 : Pink
+        blue = 159;
+        green = 110;
+        red = 235;
+        sw_led = 1;
+        break ;
+      case 0x30:  // 30 : BlakOut
+        blue = 0;
+        green = 0;
+        red = 0;
+        sw_led = 1;
+        break ;
    }
   }
 }
@@ -181,10 +205,11 @@ void setup() {
 }
 
 void loop() {
+  //信号計測
   uint32_t duration = pulseInLong(FSW_SIGNAL_INPUT_PIN, HIGH,25000);
   uint32_t pwm0 = pulseInLong(ST_SIGNAL_INPUT_PIN, HIGH,25000);
   uint32_t pwm1 = pulseInLong(TH_SIGNAL_INPUT_PIN, HIGH,25000);
-
+  //整数からバイト列へ変換
   transfer1.before=pwm0;
   transfer2.before=pwm1;
   transfer3.before=duration;
@@ -199,14 +224,16 @@ void loop() {
     Serial.println(buf);
   #endif
 
+  //信号切り替え
   if (duration > 1500){
     digitalWrite(SELECT_OUTPUT_PIN, HIGH);
+    //XIAO Lチカ　点灯
     digitalWrite(LED_BUILTIN, LOW); 
     startBit();
-    //レインボー発光 7個点灯
+    //レインボー発光 7個点灯　AIモード
     setRGB(80,   0,   45);  //レインボー1個目
     if (sw_led == 0){
-      setRGB(80,   0,   60) ; //レンボー色２番目〜７個目
+      setRGB(80,   0,   60) ; //レンボー色２番目〜１６個目
       setRGB(80,   0,   90);
       setRGB(80,   0,   130);
       setRGB(80,   0,   170);
@@ -216,7 +243,17 @@ void loop() {
       setRGB(80,   0,   255);
       setRGB(80,   0,   255);
       setRGB(80,   0,   255);
+      setRGB(80,   0,   255);
+      setRGB(80,   0,   255);
+      setRGB(80,   0,   255);
+      setRGB(80,   0,   255);
+      setRGB(80,   0,   255);
     }else{
+      setRGB(blue,   green,   red); //LED制御モード ２番目〜１６個目
+      setRGB(blue,   green,   red);
+      setRGB(blue,   green,   red);
+      setRGB(blue,   green,   red);
+      setRGB(blue,   green,   red);
       setRGB(blue,   green,   red);
       setRGB(blue,   green,   red);
       setRGB(blue,   green,   red);
@@ -231,11 +268,17 @@ void loop() {
     endBit();    
   }else if ((duration <= 1500) && (duration >= 100)){
     digitalWrite(SELECT_OUTPUT_PIN, LOW);
+    //XIAO Lチカ　高速点滅
     digitalWrite(LED_BUILTIN, !digitalRead(LED_BUILTIN));
      startBit();
-    //緑色発光　7個点灯
+    //緑色発光　7個点灯　RCモード
     setRGB(0,   255,   0);
     if (sw_led == 0){
+      setRGB(0,   255,   0);  //緑色２番目〜１６個目
+      setRGB(0,   255,   0);
+      setRGB(0,   255,   0);
+      setRGB(0,   255,   0);
+      setRGB(0,   255,   0);
       setRGB(0,   255,   0);
       setRGB(0,   255,   0);
       setRGB(0,   255,   0);
@@ -248,6 +291,12 @@ void loop() {
       setRGB(0,   255,   0);
     
     }else{
+      setRGB(blue,   green,   red); //LED制御モード ２番目〜１６個目
+      setRGB(blue,   green,   red);
+      setRGB(blue,   green,   red);
+      setRGB(blue,   green,   red);
+      setRGB(blue,   green,   red);
+      setRGB(blue,   green,   red);
       setRGB(blue,   green,   red);
       setRGB(blue,   green,   red);
       setRGB(blue,   green,   red);
@@ -259,9 +308,9 @@ void loop() {
       setRGB(blue,   green,   red);
     }
     endBit();
-    delayMicroseconds(300);
 
   }else{
+    //XIAO Lチカ　ゆっくり点滅
     digitalWrite(SELECT_OUTPUT_PIN, LOW);
     digitalWrite(LED_BUILTIN, !digitalRead(LED_BUILTIN));
     startBit();
@@ -269,6 +318,11 @@ void loop() {
     //青色発光　7個点灯
     setRGB(255,   0,   0);
     if (sw_led == 0){
+      setRGB(255,   0,   0);  //青色２番目〜１６個目
+      setRGB(255,   0,   0);
+      setRGB(255,   0,   0);
+      setRGB(255,   0,   0);
+      setRGB(255,   0,   0);
       setRGB(255,   0,   0);
       setRGB(255,   0,   0);
       setRGB(255,   0,   0);
@@ -281,9 +335,15 @@ void loop() {
       setRGB(255,   0,   0);
     }
     else{
+      setRGB(blue,   green,   red); //LED制御モード ２番目〜１６個目
       setRGB(blue,   green,   red);
       setRGB(blue,   green,   red);
       setRGB(blue,   green,   red);
+      setRGB(blue,   green,   red);
+      setRGB(blue,   green,   red);
+      setRGB(blue,   green,   red);
+      setRGB(blue,   green,   red);
+      setRGB(blue,   green,   red);  
       setRGB(blue,   green,   red);
       setRGB(blue,   green,   red);
       setRGB(blue,   green,   red);
@@ -292,6 +352,6 @@ void loop() {
       setRGB(blue,   green,   red);   
     }
     endBit();
-    delay(1000);
+    delay(1000); 
   }
 }
