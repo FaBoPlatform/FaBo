@@ -2,7 +2,7 @@
 //Board Rev3.0.0,Rev3.0.1,Rev3.0.2,Rev3.0.3
 //2024/03/01
 //ESP32S3
-//Jetson I2CでカラーLEDをコントロール機能を追加。
+//Jetson I2CでカラーLEDをコントロールする機能を追加。１６個LEDを変更。計測スピードアップのため遅延関数削除
 
 //#define DEBUG
 
