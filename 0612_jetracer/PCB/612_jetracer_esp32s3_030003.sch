@@ -4717,22 +4717,22 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="GND55" library="FaBo-Symbol" deviceset="GND" device=""/>
 <part name="5V1" library="FaBo-Symbol" deviceset="5V" device=""/>
 <part name="5V3" library="FaBo-Symbol" deviceset="5V" device=""/>
-<part name="C10" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0402"/>
-<part name="C14" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0402"/>
+<part name="C10" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0402" value="0.1uF"/>
+<part name="C14" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0402" value="0.1uF"/>
 <part name="GND51" library="FaBo-Symbol" deviceset="GND" device=""/>
 <part name="GND56" library="FaBo-Symbol" deviceset="GND" device=""/>
 <part name="U4" library="FaBo-Supply" deviceset="LM1117GS-3.3" device=""/>
 <part name="GND57" library="FaBo-etc" deviceset="GND" device=""/>
-<part name="C15" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0402" value="10uF"/>
-<part name="C20" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0402" value="10uF"/>
+<part name="C15" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0402" value="DNP"/>
+<part name="C20" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0402" value="DNP"/>
 <part name="GND58" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="GND59" library="FaBo-etc" deviceset="GND" device=""/>
-<part name="R9" library="FaBo-Resistors" deviceset="RESISTOR" device="-0805" value="NC/0805"/>
+<part name="R9" library="FaBo-Resistors" deviceset="RESISTOR" device="-0805" value="0/0805"/>
 <part name="IC1" library="FaBo-Supply" deviceset="LP2985-33DBVR" device=""/>
 <part name="IC2" library="FaBo-Motor" deviceset="PCA9685PW,BS" device=""/>
 <part name="R10" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="0"/>
 <part name="R14" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="0"/>
-<part name="R17" library="FaBo-Resistors" deviceset="RESISTOR" device="-0805" value="0/0805"/>
+<part name="R17" library="FaBo-Resistors" deviceset="RESISTOR" device="-0805" value="NC/0805"/>
 <part name="EXT1" library="FaBo-Connetor" deviceset="FABO-I2S-7PIN" device=""/>
 <part name="GND60" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="FaBo-etc" deviceset="5V" device=""/>
@@ -4862,6 +4862,17 @@ High:B0-B3
 <text x="35.56" y="524.51" size="3.81" layer="94">主な変更点</text>
 <text x="732.79" y="502.92" size="1.778" layer="94">Diode Add</text>
 <text x="756.92" y="435.61" size="1.778" layer="94">SPI</text>
+<wire x1="655.32" y1="414.02" x2="683.26" y2="375.92" width="0.1524" layer="94"/>
+<wire x1="683.26" y1="414.02" x2="655.32" y2="375.92" width="0.1524" layer="94"/>
+<wire x1="640.08" y1="414.02" x2="650.24" y2="406.4" width="0.1524" layer="94"/>
+<wire x1="650.24" y1="414.02" x2="640.08" y2="406.4" width="0.1524" layer="94"/>
+<wire x1="640.08" y1="396.24" x2="650.24" y2="386.08" width="0.1524" layer="94"/>
+<wire x1="650.24" y1="396.24" x2="640.08" y2="386.08" width="0.1524" layer="94"/>
+<wire x1="695.96" y1="393.7" x2="703.58" y2="386.08" width="0.1524" layer="94"/>
+<wire x1="703.58" y1="393.7" x2="695.96" y2="386.08" width="0.1524" layer="94"/>
+<wire x1="632.46" y1="342.9" x2="642.62" y2="327.66" width="0.1524" layer="94"/>
+<wire x1="642.62" y1="342.9" x2="632.46" y2="327.66" width="0.1524" layer="94"/>
+<text x="78.74" y="532.13" size="3.81" layer="94">2024/03/04 未実装部分追記</text>
 </plain>
 <instances>
 <instance part="SUPPLY2" gate="5V" x="716.28" y="501.65" smashed="yes">
