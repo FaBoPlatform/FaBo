@@ -1,10 +1,12 @@
-//FaBo JetRacer_XIAO_ESP32S3 Version 1.1.1 アルファ版
+//FaBo JetRacer_XIAO_ESP32S3 Version 1.1.2 アルファ版
 //Board Rev3.0.0,Rev3.0.1,Rev3.0.2,Rev3.0.3
-//2024/03/18
+//2024/03/28
 //ESP32S3
-//RC通信瞬断対策としてチャッタリング防止対策しました。また、I2C信号受信時に送信関数が先に呼び出しのため、registerIndexの初期値を0x01としました。遅延関数でLチカを廃止しました。
+//RC通信瞬断対策としてチャッタリング防止対策しました。回数判定から時間検出判定としました。
 
 //#define DEBUG
+//#define DEBUG_RCV
+//#define DEBUG_MILLIS
 
 #include "Wire.h"
 #include "SPI.h"
@@ -15,11 +17,8 @@
   Wire.slaveWrite((uint8_t *)message, strlen(message));
 #endif
 
-//チャッタリング判定計測回数閾値
-#define NUMBERMEASURE      10
-
 //ボード情報　レビションやファームウェアバージョンによって以下を変更すること。
-#define FIRMWARE_NUMBER    3     //Firmware Version ID 3
+#define FIRMWARE_NUMBER    4     //Firmware Version ID 4
 #define BOARDMAJOR         3      //基板版数パッチメジャー
 #define BOARDMINOR         0      //基板版数パッチマイナー
 #define BOARDPATCH         3     //基板版数パッチRev3.0.3は3
@@ -44,6 +43,10 @@ int blue = 0;
 int green = 0;
 int red = 0;
 
+//チャッタリング対策に関する変数
+unsigned long lastDebounceTime = 0;
+unsigned long debounceDelay = 800;
+bool noSignalStatus = false;
 
 //数値をバイト列への型
 typedef union
@@ -188,7 +191,7 @@ void setRGB(short r, short g, short b) {
 
 void setup() {
   
-  #ifdef DEBUG
+  #if defined(DEBUG) || defined(DEBUG_RCV) || defined(DEBUG_MILLIS)
     Serial.begin(115200);
     Serial.setDebugOutput(true);
   #endif
@@ -239,13 +242,10 @@ void loop() {
     Serial.println(buf);
   #endif
 
+
   //信号切り替え
   if (duration > 1500){
     //AIモードはレンボー色に発光
-    //チャッタリング対策カウンタリセット
-    counta = 0;
-    //XIAO LEDカウンタリセット
-    countled = 0;
     //マルチプレクサ　AIモード切り替え
     digitalWrite(SELECT_OUTPUT_PIN, HIGH);
     //XIAO Lチカ　点灯
@@ -287,12 +287,9 @@ void loop() {
       setRGB(blue,   green,   red);
     }
     endBit();
+    noSignalStatus = false;
   }else if ((duration <= 1500) && (duration >= 100)){
     //RCモードは緑色に発光。
-    //チャッタリング対策カウンタリセット
-    counta = 0;
-    //XIAO LEDカウンタリセット
-    countled = 0;
     //マルチプレクサ　RCモード
     digitalWrite(SELECT_OUTPUT_PIN, LOW);
     //XIAO Lチカ　高速点滅
@@ -335,63 +332,75 @@ void loop() {
       setRGB(blue,   green,   red);
     }
     endBit();
+    noSignalStatus = false;
 
   }else{
-    //無信号モード　LEDは青色に発光。
-    //チャッタリング防止カウンタ
-    counta++;
-    // 信号が瞬断されることがあるため、チャタリング処理を実施する。
-    if  (counta > NUMBERMEASURE){
-      //マルチプレクサ　RCモード
+    
+    //一番最後の検出時刻記録
+    if (noSignalStatus == false){
+      lastDebounceTime = millis();
+      noSignalStatus = true;
+    }
+    
+    #ifdef DEBUG_MILLIS
+      char buf[127];
+      sprintf(buf, " lastDebounceTime%d", lastDebounceTime);
+      Serial.println(buf);
+      sprintf(buf, "noSignalStatus %s",  ((noSignalStatus == false)? "false": "true"));
+      Serial.println(buf);
+    #endif
+
+    if ((millis() - lastDebounceTime) > debounceDelay) {
+      static uint8_t ledCount = 0;
+      //無信号モード　LEDは青色に発光。
+      //マルチプレクサ　無信号時もRCモード
       digitalWrite(SELECT_OUTPUT_PIN, LOW);
-      //XIAO LEDカウンタ
-      countled++;
-      if (countled >= (20 / NUMBERMEASURE)){
-        //XIAO Lチカ　点滅
+      //XAIOのLED反転
         digitalWrite(LED_BUILTIN, !digitalRead(LED_BUILTIN));
-        countled = 0;
-      }
-      startBit();
-      //信号計測なし
-      //青色発光　１６個点灯
-      setRGB(255,   0,   0);
-      if (sw_led == 0){
-        setRGB(255,   0,   0);  //青色２番目〜１６個目
+        startBit();
+        //信号計測なし
+        //青色発光　１６個点灯
         setRGB(255,   0,   0);
-        setRGB(255,   0,   0);
-        setRGB(255,   0,   0);
-        setRGB(255,   0,   0);
-        setRGB(255,   0,   0);
-        setRGB(255,   0,   0);
-        setRGB(255,   0,   0);
-        setRGB(255,   0,   0);
-        setRGB(255,   0,   0);
-        setRGB(255,   0,   0);
-        setRGB(255,   0,   0);
-        setRGB(255,   0,   0);
-        setRGB(255,   0,   0);
-        setRGB(255,   0,   0);
-      }
-      else{
-        setRGB(blue,   green,   red); //LED制御モード ２番目〜１６個目
-        setRGB(blue,   green,   red);
-        setRGB(blue,   green,   red);
-        setRGB(blue,   green,   red);
-        setRGB(blue,   green,   red);
-        setRGB(blue,   green,   red);
-        setRGB(blue,   green,   red);
-        setRGB(blue,   green,   red);
-        setRGB(blue,   green,   red);  
-        setRGB(blue,   green,   red);
-        setRGB(blue,   green,   red);
-        setRGB(blue,   green,   red);
-        setRGB(blue,   green,   red);
-        setRGB(blue,   green,   red);
-        setRGB(blue,   green,   red);   
-      }
-      endBit();
-      //カウンタリセット
-      counta = 0;
+        if (sw_led == 0){
+          setRGB(255,   0,   0);  //青色２番目〜１６個目
+          setRGB(255,   0,   0);
+          setRGB(255,   0,   0);
+          setRGB(255,   0,   0);
+          setRGB(255,   0,   0);
+          setRGB(255,   0,   0);
+          setRGB(255,   0,   0);
+          setRGB(255,   0,   0);
+          setRGB(255,   0,   0);
+          setRGB(255,   0,   0);
+          setRGB(255,   0,   0);
+          setRGB(255,   0,   0);
+          setRGB(255,   0,   0);
+          setRGB(255,   0,   0);
+          setRGB(255,   0,   0);
+        }
+        else{
+          setRGB(blue,   green,   red); //LED制御モード ２番目〜１６個目
+          setRGB(blue,   green,   red);
+          setRGB(blue,   green,   red);
+          setRGB(blue,   green,   red);
+          setRGB(blue,   green,   red);
+          setRGB(blue,   green,   red);
+          setRGB(blue,   green,   red);
+          setRGB(blue,   green,   red);
+          setRGB(blue,   green,   red);  
+          setRGB(blue,   green,   red);
+          setRGB(blue,   green,   red);
+          setRGB(blue,   green,   red);
+          setRGB(blue,   green,   red);
+          setRGB(blue,   green,   red);
+          setRGB(blue,   green,   red);   
+        }
+        endBit();
+      noSignalStatus = false;
+      //無信号モードは１秒間モードを変化させない。
+      delay(1000);
+    }else{
+      //何もせず。
     }
   }
 }
