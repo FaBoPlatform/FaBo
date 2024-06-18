@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -4232,12 +4232,8 @@ Users Hole</text>
 <text x="46.0444" y="72.9458" size="1.27" layer="125" font="vector" ratio="16" rot="R90">Jetson Nano Border</text>
 <wire x1="0" y1="66.9" x2="5.5" y2="72" width="0.1524" layer="20" curve="-90"/>
 <wire x1="44.7" y1="68.4" x2="43.3" y2="70.3" width="0.1524" layer="20" curve="84.495536"/>
-<text x="46.7458" y="41.0556" size="0.6096" layer="125" font="vector" ratio="16">Not Used</text>
 <text x="28.3458" y="37.5556" size="0.6096" layer="125" font="vector" ratio="16">Not Used</text>
-<wire x1="46.62" y1="40.87" x2="50.89" y2="40.87" width="0.1524" layer="125"/>
-<wire x1="46.59" y1="40.81" x2="43.61" y2="39.85" width="0.1524" layer="125"/>
 <wire x1="28.22" y1="37.27" x2="32.49" y2="37.27" width="0.1524" layer="125"/>
-<wire x1="28.29" y1="37.31" x2="25.41" y2="39.95" width="0.1524" layer="125"/>
 <wire x1="28.19" y1="37.31" x2="25.51" y2="34.95" width="0.1524" layer="125"/>
 <text x="21.51" y="24.04" size="1.27" layer="22" font="vector" ratio="18" rot="MR0">5V</text>
 <wire x1="1.6" y1="28.6974" x2="1.6" y2="12" width="0.1524" layer="20"/>
