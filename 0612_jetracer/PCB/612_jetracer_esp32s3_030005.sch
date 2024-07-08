@@ -8352,6 +8352,12 @@ High:B0-B3
 <pinref part="GND95" gate="G$1" pin="GND"/>
 <wire x1="394.97" y1="232.41" x2="394.97" y2="228.6" width="0.762" layer="91"/>
 </segment>
+<segment>
+<pinref part="GND19" gate="G$1" pin="GND"/>
+<pinref part="U$1" gate="G$1" pin="15:E"/>
+<wire x1="538.48" y1="162.56" x2="538.48" y2="208.28" width="0.762" layer="91"/>
+<wire x1="538.48" y1="208.28" x2="520.7" y2="208.28" width="0.762" layer="91"/>
+</segment>
 </net>
 <net name="SDA" class="0">
 <segment>
@@ -10012,14 +10018,6 @@ High:B0-B3
 <wire x1="588.01" y1="101.6" x2="581.66" y2="101.6" width="0.1524" layer="91"/>
 <junction x="581.66" y="101.6"/>
 <pinref part="U$1" gate="G$1" pin="1:S"/>
-</segment>
-</net>
-<net name="N$73" class="0">
-<segment>
-<wire x1="538.48" y1="162.56" x2="538.48" y2="208.28" width="0.762" layer="91"/>
-<pinref part="GND19" gate="G$1" pin="GND"/>
-<wire x1="520.7" y1="208.28" x2="538.48" y2="208.28" width="0.762" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="15:E"/>
 </segment>
 </net>
 <net name="N$11" class="0">
