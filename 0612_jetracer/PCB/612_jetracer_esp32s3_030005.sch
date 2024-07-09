@@ -5246,6 +5246,18 @@ range of storage temprature -55 ~ 150</description>
 <part name="R4" library="FaBo-Resistors" deviceset="RESISTOR" device="-0402" value="220">
 <attribute name="SPICEPREFIX" value="R"/>
 </part>
+<part name="R76" library="FaBo-Resistors" deviceset="RESISTOR" device="-0402" value="10K">
+<attribute name="SPICEPREFIX" value="R"/>
+</part>
+<part name="R77" library="FaBo-Resistors" deviceset="RESISTOR" device="-0402" value="10K">
+<attribute name="SPICEPREFIX" value="R"/>
+</part>
+<part name="R78" library="FaBo-Resistors" deviceset="RESISTOR" device="-0402" value="10K">
+<attribute name="SPICEPREFIX" value="R"/>
+</part>
+<part name="R79" library="FaBo-Resistors" deviceset="RESISTOR" device="-0402" value="10K">
+<attribute name="SPICEPREFIX" value="R"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -5289,9 +5301,9 @@ High:B0-B3
 <text x="722.63" y="492.76" size="1.778" layer="94">Residual measures</text>
 <text x="43.18" y="516.89" size="3.81" layer="94">XIAO ESP32S3からESP32DevKitC-1への変更</text>
 <wire x1="35.56" y1="523.24" x2="177.8" y2="523.24" width="0.1524" layer="94"/>
-<wire x1="177.8" y1="523.24" x2="177.8" y2="473.71" width="0.1524" layer="94"/>
-<wire x1="177.8" y1="473.71" x2="35.56" y2="473.71" width="0.1524" layer="94"/>
-<wire x1="35.56" y1="473.71" x2="35.56" y2="523.24" width="0.1524" layer="94"/>
+<wire x1="177.8" y1="523.24" x2="177.8" y2="471.17" width="0.1524" layer="94"/>
+<wire x1="177.8" y1="471.17" x2="35.56" y2="471.17" width="0.1524" layer="94"/>
+<wire x1="35.56" y1="471.17" x2="35.56" y2="523.24" width="0.1524" layer="94"/>
 <wire x1="520.7" y1="525.78" x2="614.68" y2="525.78" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="614.68" y1="525.78" x2="614.68" y2="462.28" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="614.68" y1="462.28" x2="520.7" y2="462.28" width="0.1524" layer="94" style="shortdash"/>
@@ -5306,7 +5318,7 @@ High:B0-B3
 <text x="760.73" y="486.41" size="1.778" layer="94">Users Expansion Additon</text>
 <text x="35.56" y="524.51" size="3.81" layer="94">主な変更点</text>
 <text x="756.92" y="435.61" size="1.778" layer="94">SPI</text>
-<text x="78.74" y="532.13" size="3.81" layer="94">2024/07/06</text>
+<text x="78.74" y="532.13" size="3.81" layer="94">2024/07/09</text>
 <text x="137.16" y="55.88" size="5.08" layer="94" font="vector">ESC SIDE</text>
 <text x="398.78" y="58.42" size="5.08" layer="94" font="vector">MOTOR SIDE</text>
 <text x="398.78" y="53.34" size="3.81" layer="97">brushless motor</text>
@@ -7728,6 +7740,22 @@ High:B0-B3
 <attribute name="NAME" x="279.146" y="466.344" size="1.4224" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="279.146" y="463.296" size="1.4224" layer="96" rot="MR0" align="top-left"/>
 </instance>
+<instance part="R76" gate="G$1" x="576.58" y="320.04" smashed="yes" rot="R270">
+<attribute name="NAME" x="578.104" y="322.326" size="1.4224" layer="95" rot="R270"/>
+<attribute name="VALUE" x="575.056" y="322.326" size="1.4224" layer="96" rot="R270" align="top-left"/>
+</instance>
+<instance part="R77" gate="G$1" x="586.74" y="320.04" smashed="yes" rot="R270">
+<attribute name="NAME" x="588.264" y="322.326" size="1.4224" layer="95" rot="R270"/>
+<attribute name="VALUE" x="585.216" y="322.326" size="1.4224" layer="96" rot="R270" align="top-left"/>
+</instance>
+<instance part="R78" gate="G$1" x="546.1" y="381" smashed="yes" rot="R270">
+<attribute name="NAME" x="547.624" y="383.286" size="1.4224" layer="95" rot="R270"/>
+<attribute name="VALUE" x="544.576" y="383.286" size="1.4224" layer="96" rot="R270" align="top-left"/>
+</instance>
+<instance part="R79" gate="G$1" x="541.02" y="381" smashed="yes" rot="R270">
+<attribute name="NAME" x="542.544" y="383.286" size="1.4224" layer="95" rot="R270"/>
+<attribute name="VALUE" x="539.496" y="383.286" size="1.4224" layer="96" rot="R270" align="top-left"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -9642,26 +9670,34 @@ High:B0-B3
 <pinref part="EXT1" gate="G$1" pin="2:5V"/>
 </segment>
 </net>
-<net name="MOSI1" class="0">
+<net name="ESP32_MOSI1" class="0">
 <segment>
 <pinref part="R10" gate="G$1" pin="1"/>
-<label x="622.3" y="309.88" size="1.778" layer="95"/>
-<wire x1="635" y1="309.88" x2="552.45" y2="309.88" width="0.1524" layer="91"/>
+<label x="612.14" y="312.42" size="1.778" layer="95"/>
+<wire x1="635" y1="309.88" x2="576.58" y2="309.88" width="0.1524" layer="91"/>
+<wire x1="576.58" y1="309.88" x2="552.45" y2="309.88" width="0.1524" layer="91"/>
 <wire x1="552.45" y1="309.88" x2="552.45" y2="365.76" width="0.1524" layer="91"/>
 <pinref part="U$14" gate="G$1" pin="17:GPIO11"/>
 <wire x1="552.45" y1="365.76" x2="568.96" y2="365.76" width="0.1524" layer="91"/>
 <label x="549.91" y="367.03" size="1.778" layer="95"/>
+<pinref part="R76" gate="G$1" pin="2"/>
+<wire x1="576.58" y1="314.96" x2="576.58" y2="309.88" width="0.1524" layer="91"/>
+<junction x="576.58" y="309.88"/>
 </segment>
 </net>
-<net name="SCK1" class="0">
+<net name="ESP32_SCK1" class="0">
 <segment>
 <pinref part="R14" gate="G$1" pin="1"/>
-<label x="615.95" y="302.26" size="1.778" layer="95"/>
-<wire x1="635" y1="302.26" x2="546.1" y2="302.26" width="0.1524" layer="91"/>
+<label x="610.87" y="304.8" size="1.778" layer="95"/>
+<wire x1="635" y1="302.26" x2="586.74" y2="302.26" width="0.1524" layer="91"/>
+<wire x1="586.74" y1="302.26" x2="546.1" y2="302.26" width="0.1524" layer="91"/>
 <wire x1="546.1" y1="302.26" x2="546.1" y2="360.68" width="0.1524" layer="91"/>
 <pinref part="U$14" gate="G$1" pin="18:GPIO12"/>
 <wire x1="546.1" y1="360.68" x2="568.96" y2="360.68" width="0.1524" layer="91"/>
 <label x="543.56" y="360.68" size="1.778" layer="95"/>
+<pinref part="R77" gate="G$1" pin="2"/>
+<wire x1="586.74" y1="314.96" x2="586.74" y2="302.26" width="0.1524" layer="91"/>
+<junction x="586.74" y="302.26"/>
 </segment>
 </net>
 <net name="G21" class="0">
@@ -9866,13 +9902,17 @@ High:B0-B3
 <net name="N$48" class="0">
 <segment>
 <pinref part="U$14" gate="G$1" pin="19:GPIO13"/>
-<wire x1="568.96" y1="355.6" x2="557.53" y2="355.6" width="0.1524" layer="91"/>
+<wire x1="568.96" y1="355.6" x2="541.02" y2="355.6" width="0.1524" layer="91"/>
+<wire x1="541.02" y1="355.6" x2="541.02" y2="375.92" width="0.1524" layer="91"/>
+<pinref part="R79" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$49" class="0">
 <segment>
 <pinref part="U$14" gate="G$1" pin="16:GPIO10"/>
-<wire x1="568.96" y1="370.84" x2="558.8" y2="370.84" width="0.1524" layer="91"/>
+<wire x1="568.96" y1="370.84" x2="546.1" y2="370.84" width="0.1524" layer="91"/>
+<pinref part="R78" gate="G$1" pin="2"/>
+<wire x1="546.1" y1="370.84" x2="546.1" y2="375.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$51" class="0">
@@ -9995,10 +10035,30 @@ High:B0-B3
 <wire x1="640.08" y1="431.8" x2="647.7" y2="431.8" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="15" class="0">
+<net name="VSPI" class="0">
 <segment>
 <pinref part="U$14" gate="G$1" pin="15:GPIO45/VSPI"/>
 <wire x1="652.78" y1="375.92" x2="640.08" y2="375.92" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="589.28" y1="327.66" x2="586.74" y2="327.66" width="0.1524" layer="91"/>
+<pinref part="R76" gate="G$1" pin="1"/>
+<wire x1="586.74" y1="327.66" x2="576.58" y2="327.66" width="0.1524" layer="91"/>
+<wire x1="576.58" y1="322.58" x2="576.58" y2="327.66" width="0.1524" layer="91"/>
+<pinref part="R77" gate="G$1" pin="1"/>
+<wire x1="586.74" y1="322.58" x2="586.74" y2="327.66" width="0.1524" layer="91"/>
+<junction x="586.74" y="327.66"/>
+<label x="589.28" y="327.66" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<wire x1="551.18" y1="386.08" x2="546.1" y2="386.08" width="0.1524" layer="91"/>
+<pinref part="R79" gate="G$1" pin="1"/>
+<wire x1="546.1" y1="386.08" x2="541.02" y2="386.08" width="0.1524" layer="91"/>
+<wire x1="541.02" y1="383.54" x2="541.02" y2="386.08" width="0.1524" layer="91"/>
+<pinref part="R78" gate="G$1" pin="1"/>
+<wire x1="546.1" y1="383.54" x2="546.1" y2="386.08" width="0.1524" layer="91"/>
+<junction x="546.1" y="386.08"/>
+<label x="551.18" y="386.08" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SEL" class="0">
