@@ -5304,11 +5304,11 @@ High:B0-B3
 <wire x1="177.8" y1="523.24" x2="177.8" y2="471.17" width="0.1524" layer="94"/>
 <wire x1="177.8" y1="471.17" x2="35.56" y2="471.17" width="0.1524" layer="94"/>
 <wire x1="35.56" y1="471.17" x2="35.56" y2="523.24" width="0.1524" layer="94"/>
-<wire x1="520.7" y1="525.78" x2="614.68" y2="525.78" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="614.68" y1="525.78" x2="614.68" y2="462.28" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="614.68" y1="462.28" x2="520.7" y2="462.28" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="520.7" y1="525.78" x2="551.18" y2="525.78" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="551.18" y1="525.78" x2="551.18" y2="462.28" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="551.18" y1="462.28" x2="520.7" y2="462.28" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="520.7" y1="462.28" x2="520.7" y2="525.78" width="0.1524" layer="94" style="shortdash"/>
-<text x="524.51" y="528.32" size="1.778" layer="94">Users Expansion Additon</text>
+<text x="524.51" y="528.32" size="1.778" layer="94">Exchange 8pin</text>
 <text x="525.78" y="520.7" size="1.778" layer="94">JST PA 8Pin Top</text>
 <text x="788.67" y="284.48" size="1.778" layer="94">JST PA 4Pin Side</text>
 <text x="767.08" y="283.21" size="1.778" layer="94">JST PA 4Pin Side</text>
@@ -6828,6 +6828,47 @@ High:B0-B3
 <wire x1="350.52" y1="210.82" x2="345.44" y2="205.74" width="0.1524" layer="94"/>
 <text x="43.18" y="481.33" size="3.81" layer="94">ブラシレス信号線にバッファICに追加</text>
 <text x="43.18" y="473.71" size="3.81" layer="94">PCA9685信号線にバッファICに追加</text>
+<wire x1="561.34" y1="383.54" x2="558.8" y2="378.46" width="0.1524" layer="94"/>
+<wire x1="558.8" y1="383.54" x2="561.34" y2="378.46" width="0.1524" layer="94"/>
+<wire x1="646.43" y1="383.54" x2="648.97" y2="378.46" width="0.1524" layer="94"/>
+<wire x1="648.97" y1="383.54" x2="646.43" y2="378.46" width="0.1524" layer="94"/>
+<wire x1="561.34" y1="388.62" x2="558.8" y2="383.54" width="0.1524" layer="94"/>
+<wire x1="558.8" y1="388.62" x2="561.34" y2="383.54" width="0.1524" layer="94"/>
+<wire x1="561.34" y1="439.42" x2="563.88" y2="434.34" width="0.1524" layer="94"/>
+<wire x1="563.88" y1="439.42" x2="561.34" y2="434.34" width="0.1524" layer="94"/>
+<wire x1="238.76" y1="76.2" x2="238.76" y2="187.96" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="238.76" y1="187.96" x2="322.58" y2="187.96" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="322.58" y1="187.96" x2="322.58" y2="149.86" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="322.58" y1="149.86" x2="373.38" y2="149.86" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="373.38" y1="149.86" x2="373.38" y2="76.2" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="373.38" y1="76.2" x2="238.76" y2="76.2" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="340.36" y1="172.72" x2="340.36" y2="254" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="340.36" y1="254" x2="431.8" y2="254" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="431.8" y1="254" x2="431.8" y2="187.96" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="431.8" y1="187.96" x2="360.68" y2="187.96" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="360.68" y1="187.96" x2="360.68" y2="172.72" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="360.68" y1="172.72" x2="340.36" y2="172.72" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="444.5" y1="271.78" x2="444.5" y2="347.98" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="444.5" y1="347.98" x2="543.56" y2="347.98" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="543.56" y1="347.98" x2="543.56" y2="271.78" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="543.56" y1="271.78" x2="444.5" y2="271.78" width="0.1524" layer="94" style="shortdash"/>
+<text x="265.43" y="190.5" size="1.778" layer="94">Addition OpenColector</text>
+<text x="351.79" y="251.46" size="1.778" layer="94">Addition OpenColector</text>
+<wire x1="706.12" y1="251.46" x2="741.68" y2="251.46" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="741.68" y1="251.46" x2="741.68" y2="152.4" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="741.68" y1="152.4" x2="706.12" y2="152.4" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="706.12" y1="152.4" x2="706.12" y2="251.46" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="759.46" y1="276.86" x2="795.02" y2="276.86" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="795.02" y1="276.86" x2="795.02" y2="223.52" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="795.02" y1="223.52" x2="759.46" y2="223.52" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="756.92" y1="223.52" x2="759.46" y2="223.52" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="759.46" y1="223.52" x2="759.46" y2="276.86" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="464.82" y1="373.38" x2="464.82" y2="388.62" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="464.82" y1="388.62" x2="474.98" y2="388.62" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="474.98" y1="388.62" x2="474.98" y2="373.38" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="474.98" y1="373.38" x2="464.82" y2="373.38" width="0.1524" layer="94" style="shortdash"/>
+<text x="429.26" y="381" size="1.778" layer="94">Addtion Noise countermeasures</text>
+<text x="447.04" y="345.44" size="1.778" layer="94">Addtion Channel</text>
 </plain>
 <instances>
 <instance part="SUPPLY2" gate="5V" x="716.28" y="501.65" smashed="yes">
@@ -8285,9 +8326,9 @@ High:B0-B3
 </segment>
 <segment>
 <pinref part="GND77" gate="GND" pin="GND"/>
-<wire x1="261.62" y1="110.49" x2="261.62" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="110.49" x2="261.62" y2="114.3" width="0.762" layer="91"/>
 <pinref part="U$3" gate="G$1" pin="4:GND"/>
-<wire x1="261.62" y1="114.3" x2="265.43" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="114.3" x2="265.43" y2="114.3" width="0.762" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND78" gate="GND" pin="GND"/>
