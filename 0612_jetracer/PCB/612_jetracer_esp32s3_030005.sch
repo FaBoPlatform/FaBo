@@ -5059,7 +5059,6 @@ range of storage temprature -55 ~ 150</description>
 <part name="GND34" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="GND37" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="GND38" library="FaBo-Supply" deviceset="GND" device=""/>
-<part name="R7" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="1K"/>
 <part name="R6" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="4.7K"/>
 <part name="C5" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="0.1uF">
 <attribute name="SPICEPREFIX" value="C"/>
@@ -5256,6 +5255,9 @@ range of storage temprature -55 ~ 150</description>
 <attribute name="SPICEPREFIX" value="R"/>
 </part>
 <part name="R79" library="FaBo-Resistors" deviceset="RESISTOR" device="-0402" value="10K">
+<attribute name="SPICEPREFIX" value="R"/>
+</part>
+<part name="R7" library="FaBo-Resistors" deviceset="RESISTOR" device="-0402" value="1K">
 <attribute name="SPICEPREFIX" value="R"/>
 </part>
 </parts>
@@ -7239,10 +7241,6 @@ High:B0-B3
 <instance part="GND38" gate="G$1" x="464.82" y="441.96" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="467.614" y="436.88" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="R7" gate="G$1" x="660.4" y="208.28" smashed="yes" rot="MR90">
-<attribute name="NAME" x="661.924" y="205.994" size="1.4224" layer="95" rot="MR90"/>
-<attribute name="VALUE" x="658.876" y="205.994" size="1.4224" layer="96" rot="MR90" align="top-left"/>
-</instance>
 <instance part="R6" gate="G$1" x="510.54" y="370.84" smashed="yes" rot="MR270">
 <attribute name="NAME" x="509.016" y="373.126" size="1.4224" layer="95" rot="MR270"/>
 <attribute name="VALUE" x="512.064" y="373.126" size="1.4224" layer="96" rot="MR270" align="top-left"/>
@@ -7797,6 +7795,10 @@ High:B0-B3
 <attribute name="NAME" x="542.544" y="383.286" size="1.4224" layer="95" rot="R270"/>
 <attribute name="VALUE" x="539.496" y="383.286" size="1.4224" layer="96" rot="R270" align="top-left"/>
 </instance>
+<instance part="R7" gate="G$1" x="660.4" y="210.82" smashed="yes" rot="MR270">
+<attribute name="NAME" x="658.876" y="213.106" size="1.4224" layer="95" rot="MR270"/>
+<attribute name="VALUE" x="661.924" y="213.106" size="1.4224" layer="96" rot="MR270" align="top-left"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -8081,7 +8083,7 @@ High:B0-B3
 <segment>
 <wire x1="660.4" y1="205.74" x2="660.4" y2="200.66" width="0.762" layer="91"/>
 <pinref part="GND21" gate="G$1" pin="GND"/>
-<pinref part="R7" gate="G$1" pin="1"/>
+<pinref part="R7" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="Q3" gate="G$1" pin="S"/>
@@ -9228,7 +9230,7 @@ High:B0-B3
 <segment>
 <pinref part="RCPWR" gate="G$1" pin="CATHODE"/>
 <wire x1="660.4" y1="213.36" x2="660.4" y2="218.44" width="0.1524" layer="91"/>
-<pinref part="R7" gate="G$1" pin="2"/>
+<pinref part="R7" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$23" class="0">
