@@ -16377,6 +16377,91 @@ by exp-lbrs.ulp</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="FaBo-PIN">
+<description>&lt;h3&gt;FaBo Libraries&lt;/h3&gt;
+
+&lt;p&gt;Released under the Creative Commons Attribution-ShareAlike 4.0 License&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/"&gt;https://creativecommons.org/licenses/by-sa/4.0/&lt;/a&gt;&lt;/p&gt;</description>
+<packages>
+<package name="PIN_1X2_LONG">
+<pad name="1" x="-1.27" y="0" drill="1" shape="long" rot="R90"/>
+<pad name="2" x="1.27" y="0" drill="1" shape="long" rot="R90"/>
+<text x="0" y="2.54" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+</package>
+<package name="PIN_1X2">
+<pad name="1" x="-1.27" y="0" drill="1" diameter="1.778" shape="square"/>
+<pad name="2" x="1.27" y="0" drill="1" diameter="1.778" shape="octagon"/>
+<text x="0" y="1.27" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+</package>
+<package name="PIN_1X2_WIDE">
+<pad name="1" x="-1.27" y="0" drill="1.397" shape="long" rot="R90"/>
+<pad name="2" x="1.27" y="0" drill="1.397" shape="long" rot="R90"/>
+<text x="0" y="2.54" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+</package>
+<package name="PIN_1X2_WIDE_WIDTH">
+<pad name="1" x="-1.905" y="0" drill="1.397" shape="long" rot="R90"/>
+<pad name="2" x="1.905" y="0" drill="1.397" shape="long" rot="R90"/>
+<text x="0" y="2.54" size="0.8128" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
+</package>
+</packages>
+<symbols>
+<symbol name="PIN_1X2">
+<pin name="1" x="5.08" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="2" x="5.08" y="-2.54" visible="pin" length="short" rot="R180"/>
+<wire x1="-2.54" y1="2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<text x="-2.286" y="2.794" size="1.27" layer="95">&gt;NAME</text>
+<wire x1="2.54" y1="-5.08" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<text x="-2.286" y="-5.334" size="1.27" layer="96" align="top-left">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="PIN_1X2" prefix="CN" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="PIN_1X2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-LONG" package="PIN_1X2_LONG">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="" package="PIN_1X2">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-WIDE" package="PIN_1X2_WIDE">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="WIDE-WIDTH" package="PIN_1X2_WIDE_WIDTH">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -16480,11 +16565,13 @@ by exp-lbrs.ulp</description>
 <part name="R3" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603-BOTTOM" value="DNP"/>
 <part name="3V2" library="component" deviceset="3V3" device=""/>
 <part name="U2" library="FaBo-Display" deviceset="ER-OLED0.96-1" device="ER-CON30HT-1_REV2"/>
+<part name="FAN" library="FaBo-PIN" deviceset="PIN_1X2" device=""/>
+<part name="GND31" library="FaBo-etc" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="795.02" y="22.86" size="2.54" layer="94" align="bottom-center">3.0.0</text>
+<text x="795.02" y="22.86" size="2.54" layer="94" align="bottom-center">3.1.1</text>
 <text x="269.24" y="307.34" size="1.778" layer="94">1N4148</text>
 <text x="340.36" y="403.86" size="2.54" layer="94">RC Carへ接続</text>
 <text x="152.4" y="287.02" size="2.54" layer="94">I2Cポート</text>
@@ -16507,7 +16594,8 @@ HC-SR04</text>
 <text x="683.26" y="139.7" size="2.54" layer="94">8</text>
 <text x="612.14" y="513.08" size="2.54" layer="94">HC-SR04 VCC</text>
 <text x="287.02" y="383.54" size="1.778" layer="95">U1</text>
-<text x="792.48" y="35.56" size="2.54" layer="94" align="bottom-center">DKTG-01G</text>
+<text x="782.32" y="35.56" size="7.62" layer="94" align="bottom-center">DKFA-05</text>
+<text x="668.02" y="513.08" size="2.54" layer="94">5V DC FAN</text>
 </plain>
 <instances>
 <instance part="5V1" gate="G$1" x="444.5" y="335.28" smashed="yes">
@@ -16801,6 +16889,13 @@ HC-SR04</text>
 </instance>
 <instance part="U2" gate="G$1" x="248.92" y="279.4" smashed="yes">
 <attribute name="NAME" x="238.76" y="305.308" size="1.778" layer="95"/>
+</instance>
+<instance part="FAN" gate="G$1" x="670.56" y="502.92" smashed="yes" rot="MR0">
+<attribute name="NAME" x="672.846" y="505.714" size="1.27" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="672.846" y="497.586" size="1.27" layer="96" rot="MR0" align="top-left"/>
+</instance>
+<instance part="GND31" gate="GND" x="660.4" y="492.76" smashed="yes">
+<attribute name="VALUE" x="657.606" y="487.68" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -17097,6 +17192,12 @@ HC-SR04</text>
 <pinref part="IC1" gate="G$1" pin="OE"/>
 <wire x1="264.16" y1="457.2" x2="271.78" y2="457.2" width="0.762" layer="91"/>
 </segment>
+<segment>
+<pinref part="GND31" gate="GND" pin="GND"/>
+<wire x1="660.4" y1="492.76" x2="660.4" y2="500.38" width="0.762" layer="91"/>
+<pinref part="FAN" gate="G$1" pin="2"/>
+<wire x1="660.4" y1="500.38" x2="665.48" y2="500.38" width="0.762" layer="91"/>
+</segment>
 </net>
 <net name="5V" class="0">
 <segment>
@@ -17112,10 +17213,14 @@ HC-SR04</text>
 </segment>
 <segment>
 <pinref part="5V2" gate="G$1" pin="5V"/>
-<wire x1="645.16" y1="505.46" x2="645.16" y2="485.14" width="0.1524" layer="91"/>
+<wire x1="645.16" y1="505.46" x2="645.16" y2="502.92" width="0.1524" layer="91"/>
+<wire x1="645.16" y1="502.92" x2="645.16" y2="485.14" width="0.1524" layer="91"/>
 <wire x1="645.16" y1="485.14" x2="628.65" y2="485.14" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="G$1" pin="1"/>
 <wire x1="628.65" y1="485.14" x2="628.65" y2="490.22" width="0.1524" layer="91"/>
+<pinref part="FAN" gate="G$1" pin="1"/>
+<wire x1="665.48" y1="502.92" x2="645.16" y2="502.92" width="0.1524" layer="91"/>
+<junction x="645.16" y="502.92"/>
 </segment>
 </net>
 <net name="SCL" class="0">
