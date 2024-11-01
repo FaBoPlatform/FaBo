@@ -5535,67 +5535,67 @@ design rules under a new name.</description>
 <element name="IC1" library="FaBo-Motor" package="PCA9685" value="" x="51.34" y="19.302" smashed="yes" rot="MR270">
 <attribute name="NAME" x="51.259" y="12.553" size="1.27" layer="26" font="vector" ratio="15" rot="MR0" align="bottom-center"/>
 </element>
-<element name="R7" library="FaBo-Resistors" package="0603" value="220 1%" x="15.182" y="45.584" smashed="yes" rot="MR270">
+<element name="R7" library="FaBo-Resistors" package="0603" value="220" x="15.182" y="45.584" smashed="yes" rot="MR270">
 <attribute name="NAME" x="15.536" y="43.005" size="0.8128" layer="26" font="vector" ratio="12" rot="MR270" align="bottom-center"/>
 <attribute name="VALUE" x="15.306" y="47.068" size="0.8128" layer="28" font="vector" ratio="12" rot="MR270" align="center"/>
 </element>
-<element name="R8" library="FaBo-Resistors" package="0603" value="470 1%" x="13.658" y="45.584" smashed="yes" rot="MR90">
+<element name="R8" library="FaBo-Resistors" package="0603" value="470" x="13.658" y="45.584" smashed="yes" rot="MR90">
 <attribute name="NAME" x="13.277" y="42.905" size="0.8128" layer="26" font="vector" ratio="12" rot="MR90" align="bottom-center"/>
 <attribute name="VALUE" x="13.634" y="47.195" size="0.8128" layer="28" font="vector" ratio="12" rot="MR90" align="center"/>
 </element>
-<element name="R9" library="FaBo-Resistors" package="0603" value="220 1%" x="20.982" y="45.584" smashed="yes" rot="MR270">
+<element name="R9" library="FaBo-Resistors" package="0603" value="220" x="20.982" y="45.584" smashed="yes" rot="MR270">
 <attribute name="NAME" x="21.363" y="42.432" size="0.8128" layer="26" font="vector" ratio="12" rot="MR270" align="bottom-center"/>
 <attribute name="VALUE" x="21.082" y="46.568" size="0.8128" layer="28" font="vector" ratio="12" rot="MR270" align="center"/>
 </element>
-<element name="R10" library="FaBo-Resistors" package="0603" value="470 1%" x="19.458" y="45.584" smashed="yes" rot="MR90">
+<element name="R10" library="FaBo-Resistors" package="0603" value="470" x="19.458" y="45.584" smashed="yes" rot="MR90">
 <attribute name="NAME" x="19.077" y="42.751" size="0.8128" layer="26" font="vector" ratio="12" rot="MR90" align="bottom-center"/>
 <attribute name="VALUE" x="19.358" y="46.568" size="0.8128" layer="28" font="vector" ratio="12" rot="MR90" align="center"/>
 </element>
-<element name="R12" library="FaBo-Resistors" package="0603" value="470 1%" x="24.834" y="45.584" smashed="yes" rot="MR90">
+<element name="R12" library="FaBo-Resistors" package="0603" value="470" x="24.834" y="45.584" smashed="yes" rot="MR90">
 <attribute name="NAME" x="24.553" y="42.751" size="0.8128" layer="26" font="vector" ratio="12" rot="MR90" align="bottom-center"/>
 <attribute name="VALUE" x="24.71" y="46.795" size="0.8128" layer="28" font="vector" ratio="12" rot="MR90" align="center"/>
 </element>
-<element name="R11" library="FaBo-Resistors" package="0603" value="220 1%" x="26.358" y="45.584" smashed="yes" rot="MR270">
+<element name="R11" library="FaBo-Resistors" package="0603" value="220" x="26.358" y="45.584" smashed="yes" rot="MR270">
 <attribute name="NAME" x="26.639" y="42.751" size="0.8128" layer="26" font="vector" ratio="12" rot="MR270" align="bottom-center"/>
 <attribute name="VALUE" x="26.555" y="46.695" size="0.8128" layer="28" font="vector" ratio="12" rot="MR270" align="center"/>
 </element>
-<element name="R13" library="FaBo-Resistors" package="0603" value="220 1%" x="33.724" y="45.636" smashed="yes" rot="MR270">
+<element name="R13" library="FaBo-Resistors" package="0603" value="220" x="33.724" y="45.636" smashed="yes" rot="MR270">
 <attribute name="NAME" x="34.105" y="42.603" size="0.8128" layer="26" font="vector" ratio="12" rot="MR270" align="bottom-center"/>
 <attribute name="VALUE" x="33.824" y="47.32" size="0.8128" layer="28" font="vector" ratio="12" rot="MR270" align="center"/>
 </element>
-<element name="R14" library="FaBo-Resistors" package="0603" value="470 1%" x="32.2" y="45.636" smashed="yes" rot="MR90">
+<element name="R14" library="FaBo-Resistors" package="0603" value="470" x="32.2" y="45.636" smashed="yes" rot="MR90">
 <attribute name="NAME" x="31.792" y="42.703" size="0.8128" layer="26" font="vector" ratio="12" rot="MR90" align="bottom-center"/>
 <attribute name="VALUE" x="32.2" y="47.347" size="0.8128" layer="28" font="vector" ratio="12" rot="MR90" align="center"/>
 </element>
-<element name="R15" library="FaBo-Resistors" package="0603" value="220 1%" x="38.804" y="45.584" smashed="yes" rot="MR270">
+<element name="R15" library="FaBo-Resistors" package="0603" value="220" x="38.804" y="45.584" smashed="yes" rot="MR270">
 <attribute name="NAME" x="39.185" y="42.651" size="0.8128" layer="26" font="vector" ratio="12" rot="MR270" align="bottom-center"/>
 <attribute name="VALUE" x="39.004" y="47.295" size="0.8128" layer="28" font="vector" ratio="12" rot="MR270" align="center"/>
 </element>
-<element name="R16" library="FaBo-Resistors" package="0603" value="470 1%" x="37.026" y="45.584" smashed="yes" rot="MR90">
+<element name="R16" library="FaBo-Resistors" package="0603" value="470" x="37.026" y="45.584" smashed="yes" rot="MR90">
 <attribute name="NAME" x="36.645" y="42.651" size="0.8128" layer="26" font="vector" ratio="12" rot="MR90" align="bottom-center"/>
 <attribute name="VALUE" x="37.026" y="47.395" size="0.8128" layer="28" font="vector" ratio="12" rot="MR90" align="center"/>
 </element>
-<element name="R17" library="FaBo-Resistors" package="0603" value="220 1%" x="38.524" y="10.734" smashed="yes" rot="MR0">
+<element name="R17" library="FaBo-Resistors" package="0603" value="220" x="38.524" y="10.734" smashed="yes" rot="MR0">
 <attribute name="NAME" x="35.53" y="10.353" size="0.8128" layer="26" font="vector" ratio="12" rot="MR0" align="bottom-center"/>
 <attribute name="VALUE" x="39.413" y="10.734" size="0.8128" layer="28" font="vector" ratio="12" rot="MR0" align="center"/>
 </element>
-<element name="R18" library="FaBo-Resistors" package="0603" value="470 1%" x="38.524" y="9.202" smashed="yes" rot="MR180">
+<element name="R18" library="FaBo-Resistors" package="0603" value="470" x="38.524" y="9.202" smashed="yes" rot="MR180">
 <attribute name="NAME" x="35.53" y="9.583" size="0.8128" layer="26" font="vector" ratio="12" rot="MR180" align="bottom-center"/>
 <attribute name="VALUE" x="39.321" y="9.21" size="0.8128" layer="28" font="vector" ratio="12" rot="MR180" align="center"/>
 </element>
-<element name="R19" library="FaBo-Resistors" package="0603" value="220 1%" x="38.524" y="6.154" smashed="yes" rot="MR0">
+<element name="R19" library="FaBo-Resistors" package="0603" value="220" x="38.524" y="6.154" smashed="yes" rot="MR0">
 <attribute name="NAME" x="35.43" y="5.773" size="0.8128" layer="26" font="vector" ratio="12" rot="MR0" align="bottom-center"/>
 <attribute name="VALUE" x="39.413" y="6.154" size="0.8128" layer="28" font="vector" ratio="12" rot="MR0" align="center"/>
 </element>
-<element name="R20" library="FaBo-Resistors" package="0603" value="470 1%" x="38.524" y="4.63" smashed="yes" rot="MR180">
+<element name="R20" library="FaBo-Resistors" package="0603" value="470" x="38.524" y="4.63" smashed="yes" rot="MR180">
 <attribute name="NAME" x="35.43" y="5.011" size="0.8128" layer="26" font="vector" ratio="12" rot="MR180" align="bottom-center"/>
 <attribute name="VALUE" x="39.413" y="4.63" size="0.8128" layer="28" font="vector" ratio="12" rot="MR180" align="center"/>
 </element>
-<element name="R21" library="FaBo-Resistors" package="0603" value="220 1%" x="39.228" y="16.49" smashed="yes" rot="MR270">
+<element name="R21" library="FaBo-Resistors" package="0603" value="220" x="39.228" y="16.49" smashed="yes" rot="MR270">
 <attribute name="NAME" x="39.609" y="13.557" size="0.8128" layer="26" font="vector" ratio="12" rot="MR270" align="bottom-center"/>
 <attribute name="VALUE" x="38.928" y="17.301" size="0.8128" layer="28" font="vector" ratio="12" rot="MR270" align="center"/>
 </element>
-<element name="R22" library="FaBo-Resistors" package="0603" value="470 1%" x="40.752" y="16.49" smashed="yes" rot="MR90">
+<element name="R22" library="FaBo-Resistors" package="0603" value="470" x="40.752" y="16.49" smashed="yes" rot="MR90">
 <attribute name="NAME" x="40.371" y="13.584" size="0.8128" layer="26" font="vector" ratio="12" rot="MR90" align="bottom-center"/>
 <attribute name="VALUE" x="40.452" y="17.301" size="0.8128" layer="28" font="vector" ratio="12" rot="MR90" align="center"/>
 </element>
