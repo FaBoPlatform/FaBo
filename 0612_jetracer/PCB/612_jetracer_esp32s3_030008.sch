@@ -926,69 +926,108 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <wire x1="4.5" y1="-2.05" x2="4.5" y2="-1.85" width="0.127" layer="51"/>
 <text x="-5.08" y="2.54" size="1.27" layer="25" font="vector" ratio="18">&gt;NAME</text>
 </package>
-<package name="SPI-BM04B-PASS-1">
-<smd name="CI" x="1" y="-0.1" dx="2.7" dy="1" layer="1" rot="R90"/>
-<smd name="5V" x="-1" y="-0.1" dx="2.7" dy="1" layer="1" rot="R90"/>
-<smd name="GND" x="-3" y="-0.1" dx="2.7" dy="1" layer="1" rot="R90"/>
-<smd name="DI" x="3" y="-0.1" dx="2.7" dy="1" layer="1" rot="R90"/>
-<smd name="P$5" x="-5.4" y="4.5" dx="3.8" dy="1.8" layer="1" rot="R90"/>
-<smd name="P$6" x="5.4" y="4.4" dx="3.8" dy="1.8" layer="1" rot="R90"/>
-<wire x1="-6" y1="8.7" x2="-4" y2="8.7" width="0.127" layer="21"/>
-<wire x1="-4" y1="8.7" x2="-4" y2="7.9" width="0.127" layer="21"/>
-<wire x1="-4" y1="7.9" x2="4" y2="7.9" width="0.127" layer="21"/>
-<wire x1="4" y1="7.9" x2="4" y2="8.7" width="0.127" layer="21"/>
-<wire x1="4" y1="8.7" x2="6" y2="8.7" width="0.127" layer="21"/>
-<wire x1="-6" y1="8.7" x2="-6" y2="0.2" width="0.127" layer="21"/>
-<wire x1="-6" y1="0.2" x2="-5" y2="0.2" width="0.127" layer="21"/>
-<wire x1="-5" y1="0.2" x2="-5" y2="0.4" width="0.127" layer="21"/>
-<wire x1="-5" y1="0.4" x2="5" y2="0.4" width="0.127" layer="21"/>
-<wire x1="5" y1="0.4" x2="5" y2="0.2" width="0.127" layer="21"/>
-<wire x1="5" y1="0.2" x2="6" y2="0.2" width="0.127" layer="21"/>
-<wire x1="6" y1="0.2" x2="6" y2="8.7" width="0.127" layer="21"/>
+<package name="SPI-B04B-PASK-1">
+<pad name="GND" x="-3" y="0.02" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="VCC" x="-1" y="0.02" drill="0.8" diameter="1.4224" shape="octagon"/>
+<pad name="CI" x="1" y="0.02" drill="0.8" diameter="1.4224" shape="octagon"/>
+<hole x="4.5" y="1.72" drill="1.1"/>
+<wire x1="5" y1="-3.08" x2="5" y2="2.22" width="0.1" layer="51"/>
+<wire x1="-5" y1="-3.08" x2="-5" y2="2.22" width="0.1" layer="51"/>
+<wire x1="5" y1="2.22" x2="-5" y2="2.22" width="0.1" layer="51"/>
+<wire x1="5" y1="-3.08" x2="3" y2="-3.08" width="0.1" layer="51"/>
+<text x="0" y="2.5" size="0.8128" layer="25" font="vector" ratio="15" align="bottom-center">&gt;NAME</text>
+<wire x1="3" y1="-3.08" x2="-3" y2="-3.08" width="0.1" layer="51"/>
+<wire x1="-3" y1="-3.08" x2="-5" y2="-3.08" width="0.1" layer="51"/>
+<wire x1="3" y1="-3.58" x2="-3" y2="-3.58" width="0.1" layer="51"/>
+<pad name="DI" x="3" y="0.02" drill="0.8" diameter="1.4224" shape="square"/>
+<wire x1="-3" y1="-3.08" x2="-3" y2="-3.58" width="0.1" layer="51"/>
+<wire x1="3" y1="-3.08" x2="3" y2="-3.58" width="0.1" layer="51"/>
+<text x="3" y="-1" size="0.6096" layer="51" font="vector" ratio="15" rot="R270" align="center-left">DI</text>
+<text x="1" y="-1" size="0.6096" layer="51" font="vector" ratio="15" rot="R270" align="center-left">CI</text>
+<text x="-1" y="-1" size="0.6096" layer="51" font="vector" ratio="15" rot="R270" align="center-left">VCC</text>
+<text x="-3" y="-1" size="0.6096" layer="51" font="vector" ratio="15" rot="R270" align="center-left">GND</text>
+</package>
+<package name="SPI-SM04B-PASS-1">
+<smd name="CI" x="1" y="-0.1" dx="2.7" dy="1" layer="1" roundness="30" rot="R90"/>
+<smd name="5V" x="-1" y="-0.1" dx="2.7" dy="1" layer="1" roundness="30" rot="R90"/>
+<smd name="GND" x="-3" y="-0.1" dx="2.7" dy="1" layer="1" roundness="30" rot="R90"/>
+<smd name="DI" x="3" y="-0.1" dx="2.7" dy="1" layer="1" roundness="30" rot="R90"/>
+<smd name="P$5" x="-5.4" y="4.5" dx="3.8" dy="1.8" layer="1" roundness="20" rot="R90"/>
+<smd name="P$6" x="5.4" y="4.4" dx="3.8" dy="1.8" layer="1" roundness="20" rot="R90"/>
+<wire x1="-6" y1="8.7" x2="-4" y2="8.7" width="0.1" layer="21"/>
+<wire x1="-4" y1="8.7" x2="-4" y2="7.9" width="0.1" layer="21"/>
+<wire x1="-4" y1="7.9" x2="4" y2="7.9" width="0.1" layer="21"/>
+<wire x1="4" y1="7.9" x2="4" y2="8.7" width="0.1" layer="21"/>
+<wire x1="4" y1="8.7" x2="6" y2="8.7" width="0.1" layer="21"/>
+<wire x1="-6" y1="8.7" x2="-6" y2="0.2" width="0.1" layer="21"/>
+<wire x1="-6" y1="0.2" x2="-5" y2="0.2" width="0.1" layer="21"/>
+<wire x1="-5" y1="0.2" x2="-5" y2="0.4" width="0.1" layer="21"/>
+<wire x1="-5" y1="0.4" x2="5" y2="0.4" width="0.1" layer="21"/>
+<wire x1="5" y1="0.4" x2="5" y2="0.2" width="0.1" layer="21"/>
+<wire x1="5" y1="0.2" x2="6" y2="0.2" width="0.1" layer="21"/>
+<wire x1="6" y1="0.2" x2="6" y2="8.7" width="0.1" layer="21"/>
 <hole x="5.2" y="1.15" drill="0.8"/>
 <rectangle x1="-5.7" y1="0.2" x2="-4.7" y2="2" layer="46" rot="R90"/>
-</package>
-<package name="SPI-B04B-PASK-1">
-<pad name="GND" x="-3" y="1.27" drill="0.8" diameter="1.4224" shape="octagon"/>
-<pad name="VCC" x="-1" y="1.27" drill="0.8" diameter="1.4224" shape="octagon"/>
-<pad name="CI" x="1" y="1.27" drill="0.8" diameter="1.4224" shape="octagon"/>
-<hole x="4.5" y="2.97" drill="1.1"/>
-<wire x1="5" y1="-1.83" x2="5" y2="3.47" width="0.127" layer="51"/>
-<wire x1="-5" y1="-1.83" x2="-5" y2="3.47" width="0.127" layer="51"/>
-<wire x1="5" y1="3.47" x2="-5" y2="3.47" width="0.127" layer="51"/>
-<wire x1="5" y1="-1.83" x2="3" y2="-1.83" width="0.127" layer="51"/>
-<text x="0" y="4.27" size="1.27" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
-<wire x1="3" y1="-1.83" x2="-3" y2="-1.83" width="0.127" layer="51"/>
-<wire x1="-3" y1="-1.83" x2="-5" y2="-1.83" width="0.127" layer="51"/>
-<wire x1="3" y1="-2.33" x2="-3" y2="-2.33" width="0.127" layer="51"/>
-<text x="-3" y="-2.73" size="0.8128" layer="21" font="vector" ratio="12" rot="R270" align="center-left">GND</text>
-<text x="-1" y="-2.73" size="0.8128" layer="21" font="vector" ratio="12" rot="R270" align="center-left">VCC</text>
-<text x="1" y="-2.73" size="0.8128" layer="21" font="vector" ratio="12" rot="R270" align="center-left">CI</text>
-<pad name="DI" x="3" y="1.27" drill="0.8" diameter="1.4224" shape="square"/>
-<text x="3" y="-2.73" size="0.8128" layer="21" font="vector" ratio="12" rot="R270" align="center-left">DI</text>
-<wire x1="-3" y1="-1.83" x2="-3" y2="-2.33" width="0.127" layer="51"/>
-<wire x1="3" y1="-1.83" x2="3" y2="-2.33" width="0.127" layer="51"/>
+<text x="0" y="8.75" size="0.8128" layer="25" font="vector" ratio="15" align="bottom-center">&gt;NAME</text>
+<text x="3" y="1.75" size="0.8128" layer="51" font="vector" ratio="15" rot="R90" align="center-left">DI</text>
+<text x="1" y="1.75" size="0.8128" layer="51" font="vector" ratio="15" rot="R90" align="center-left">CI</text>
+<text x="-1" y="1.75" size="0.8128" layer="51" font="vector" ratio="15" rot="R90" align="center-left">5V</text>
+<text x="-3" y="1.75" size="0.8128" layer="51" font="vector" ratio="15" rot="R90" align="center-left">GND</text>
 </package>
 <package name="SPI-B04-PASK-1-BOTTOM">
 <pad name="GND" x="3" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
 <pad name="CI" x="-1" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
 <pad name="VCC" x="1" y="0" drill="0.8" diameter="1.4224" shape="octagon"/>
 <hole x="-4.5" y="1.7" drill="1.1"/>
-<wire x1="5" y1="-3.1" x2="5" y2="2.2" width="0.127" layer="51"/>
-<wire x1="-5" y1="-3.1" x2="-5" y2="2.2" width="0.127" layer="51"/>
-<wire x1="5" y1="2.2" x2="-5" y2="2.2" width="0.127" layer="51"/>
-<wire x1="5" y1="-3.1" x2="3" y2="-3.1" width="0.127" layer="51"/>
-<text x="0" y="3" size="1.27" layer="25" font="vector" ratio="12" align="bottom-center">&gt;NAME</text>
-<wire x1="3" y1="-3.1" x2="-3" y2="-3.1" width="0.127" layer="51"/>
-<wire x1="-3" y1="-3.1" x2="-5" y2="-3.1" width="0.127" layer="51"/>
-<wire x1="3" y1="-3.6" x2="-3" y2="-3.6" width="0.127" layer="51"/>
-<text x="-3" y="-4" size="0.8128" layer="21" font="vector" ratio="12" rot="R270" align="center-left">DI</text>
-<text x="-1" y="-4" size="0.8128" layer="21" font="vector" ratio="12" rot="R270" align="center-left">CI</text>
-<text x="1" y="-4" size="0.8128" layer="21" font="vector" ratio="12" rot="R270" align="center-left">VCC</text>
+<wire x1="5" y1="-3.1" x2="5" y2="2.2" width="0.1" layer="51"/>
+<wire x1="-5" y1="-3.1" x2="-5" y2="2.2" width="0.1" layer="51"/>
+<wire x1="5" y1="2.2" x2="-5" y2="2.2" width="0.1" layer="51"/>
+<wire x1="5" y1="-3.1" x2="3" y2="-3.1" width="0.1" layer="51"/>
+<text x="0" y="2.5" size="0.8128" layer="25" font="vector" ratio="15" align="bottom-center">&gt;NAME</text>
+<wire x1="3" y1="-3.1" x2="-3" y2="-3.1" width="0.1" layer="51"/>
+<wire x1="-3" y1="-3.1" x2="-5" y2="-3.1" width="0.1" layer="51"/>
+<wire x1="3" y1="-3.6" x2="-3" y2="-3.6" width="0.1" layer="51"/>
+<text x="-3" y="-1" size="0.6096" layer="51" font="vector" ratio="15" rot="R270" align="center-left">DI</text>
+<text x="-1" y="-1" size="0.6096" layer="51" font="vector" ratio="15" rot="R270" align="center-left">CI</text>
+<text x="1" y="-1" size="0.6096" layer="51" font="vector" ratio="15" rot="R270" align="center-left">VCC</text>
 <pad name="DI" x="-3" y="0" drill="0.8" diameter="1.4224" shape="square"/>
-<text x="3" y="-4" size="0.8128" layer="21" font="vector" ratio="12" rot="R270" align="center-left">GND</text>
-<wire x1="-3" y1="-3.1" x2="-3" y2="-3.6" width="0.127" layer="51"/>
-<wire x1="3" y1="-3.1" x2="3" y2="-3.6" width="0.127" layer="51"/>
+<text x="3" y="-1" size="0.6096" layer="51" font="vector" ratio="15" rot="R270" align="center-left">GND</text>
+<wire x1="-3" y1="-3.1" x2="-3" y2="-3.6" width="0.1" layer="51"/>
+<wire x1="3" y1="-3.1" x2="3" y2="-3.6" width="0.1" layer="51"/>
+</package>
+<package name="SPI-SM04B-PASS-1-FL">
+<smd name="CI" x="1" y="-0.1" dx="2.7" dy="1" layer="1" roundness="30" rot="R90"/>
+<smd name="5V" x="-1" y="-0.1" dx="2.7" dy="1" layer="1" roundness="30" rot="R90"/>
+<smd name="GND" x="-3" y="-0.1" dx="2.7" dy="1" layer="1" roundness="30" rot="R90"/>
+<smd name="DI" x="3" y="-0.1" dx="2.7" dy="1" layer="1" roundness="30" rot="R90"/>
+<smd name="P$5" x="-5.4" y="4.5" dx="3.8" dy="1.8" layer="1" roundness="20" rot="R90"/>
+<smd name="P$6" x="5.4" y="4.4" dx="3.8" dy="1.8" layer="1" roundness="20" rot="R90"/>
+<wire x1="-6" y1="8.7" x2="-4" y2="8.7" width="0.1" layer="21"/>
+<wire x1="-4" y1="8.7" x2="-4" y2="7.9" width="0.1" layer="21"/>
+<wire x1="-4" y1="7.9" x2="4" y2="7.9" width="0.1" layer="21"/>
+<wire x1="4" y1="7.9" x2="4" y2="8.7" width="0.1" layer="21"/>
+<wire x1="4" y1="8.7" x2="6" y2="8.7" width="0.1" layer="21"/>
+<wire x1="-6" y1="8.7" x2="-6" y2="0.2" width="0.1" layer="21"/>
+<wire x1="-6" y1="0.2" x2="-5" y2="0.2" width="0.1" layer="21"/>
+<wire x1="-5" y1="0.2" x2="-5" y2="0.4" width="0.1" layer="21"/>
+<wire x1="-5" y1="0.4" x2="5" y2="0.4" width="0.1" layer="21"/>
+<wire x1="5" y1="0.4" x2="5" y2="0.2" width="0.1" layer="21"/>
+<wire x1="5" y1="0.2" x2="6" y2="0.2" width="0.1" layer="21"/>
+<wire x1="6" y1="0.2" x2="6" y2="8.7" width="0.1" layer="21"/>
+<hole x="5.2" y="1.15" drill="0.8"/>
+<text x="0" y="8.75" size="0.8128" layer="25" font="vector" ratio="15" align="bottom-center">&gt;NAME</text>
+<text x="3" y="1.75" size="0.8128" layer="51" font="vector" ratio="15" rot="R90" align="center-left">DI</text>
+<text x="1" y="1.75" size="0.8128" layer="51" font="vector" ratio="15" rot="R90" align="center-left">CI</text>
+<text x="-1" y="1.75" size="0.8128" layer="51" font="vector" ratio="15" rot="R90" align="center-left">5V</text>
+<text x="-3" y="1.75" size="0.8128" layer="51" font="vector" ratio="15" rot="R90" align="center-left">GND</text>
+<hole x="-4.7" y="1.15" drill="0.8"/>
+<hole x="-5.7" y="1.15" drill="0.8"/>
+<hole x="-4.8" y="1.15" drill="0.8"/>
+<hole x="-4.9" y="1.15" drill="0.8"/>
+<hole x="-5.1" y="1.15" drill="0.8"/>
+<hole x="-5.3" y="1.15" drill="0.8"/>
+<hole x="-5.5" y="1.15" drill="0.8"/>
+<hole x="-5.6" y="1.15" drill="0.8"/>
 </package>
 </packages>
 <symbols>
@@ -1033,12 +1072,12 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="FABO-SPI-LED">
+<deviceset name="FABO-SPI-LED" prefix="CN" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="FABO-SPI-LED" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-BM04B" package="SPI-BM04B-PASS-1">
+<device name="-BM04B" package="SPI-SM04B-PASS-1">
 <connects>
 <connect gate="G$1" pin="CI" pad="CI"/>
 <connect gate="G$1" pin="DI" pad="DI"/>
@@ -1066,6 +1105,17 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <connect gate="G$1" pin="DI" pad="DI"/>
 <connect gate="G$1" pin="GND" pad="GND"/>
 <connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="" package="SPI-SM04B-PASS-1-FL">
+<connects>
+<connect gate="G$1" pin="CI" pad="CI"/>
+<connect gate="G$1" pin="DI" pad="DI"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="VCC" pad="5V"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -4143,7 +4193,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="D2" library="FaBo-Diode" deviceset="CUS05F40" device=""/>
 <part name="SUPPLY3" library="FaBo-etc" deviceset="5V" device=""/>
 <part name="GND17" library="FaBo-etc" deviceset="GND" device=""/>
-<part name="LED" library="FaBo-LED" deviceset="LED" device="-0603" value="ORANGE"/>
+<part name="RC" library="FaBo-LED" deviceset="LED" device="-0603" value="ORANGE"/>
 <part name="T3" library="FaBo-Mosfet" deviceset="MOSFET-N" device="_FDN335N"/>
 <part name="R23" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="470"/>
 <part name="R24" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="100K"/>
@@ -4748,7 +4798,7 @@ High:B0-B3
 <instance part="GND17" gate="GND" x="116.84" y="261.62" smashed="yes">
 <attribute name="VALUE" x="114.046" y="256.54" size="1.778" layer="96"/>
 </instance>
-<instance part="LED" gate="G$1" x="660.4" y="223.52" smashed="yes" rot="R270">
+<instance part="RC" gate="G$1" x="660.4" y="223.52" smashed="yes" rot="R270">
 <attribute name="NAME" x="661.67" y="229.362" size="1.27" layer="95" rot="R270"/>
 <attribute name="VALUE" x="664.464" y="224.282" size="1.27" layer="96" rot="R270"/>
 </instance>
@@ -6221,7 +6271,7 @@ High:B0-B3
 </net>
 <net name="N$24" class="0">
 <segment>
-<pinref part="LED" gate="G$1" pin="CATHODE"/>
+<pinref part="RC" gate="G$1" pin="CATHODE"/>
 <wire x1="660.4" y1="213.36" x2="660.4" y2="218.44" width="0.1524" layer="91"/>
 <pinref part="R27" gate="G$1" pin="2"/>
 </segment>
@@ -6812,7 +6862,7 @@ High:B0-B3
 <junction x="688.34" y="165.1"/>
 <wire x1="660.4" y1="236.22" x2="688.34" y2="236.22" width="0.1524" layer="91"/>
 <junction x="660.4" y="236.22"/>
-<pinref part="LED" gate="G$1" pin="ANODE"/>
+<pinref part="RC" gate="G$1" pin="ANODE"/>
 <wire x1="688.34" y1="236.22" x2="712.47" y2="236.22" width="0.1524" layer="91"/>
 <wire x1="660.4" y1="226.06" x2="660.4" y2="236.22" width="0.1524" layer="91"/>
 <wire x1="660.4" y1="236.22" x2="659.13" y2="236.22" width="0.1524" layer="91"/>
