@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
@@ -3937,7 +3937,7 @@ level shift</description>
 <sheets>
 <sheet>
 <plain>
-<text x="792.48" y="22.86" size="2.54" layer="94" align="bottom-center">3.0.3</text>
+<text x="792.48" y="22.86" size="2.54" layer="94" align="bottom-center">3.0.9</text>
 <text x="685.8" y="525.78" size="3.81" layer="97">Jetson Nano
 Jetson Nano Orin</text>
 <text x="217.17" y="496.57" size="3.81" layer="97">PWM Controller</text>
@@ -3983,9 +3983,9 @@ High:B0-B3
 <wire x1="525.78" y1="180.34" x2="530.86" y2="175.26" width="0.1524" layer="94"/>
 <text x="787.4" y="287.02" size="3.81" layer="97">Bottom Connector</text>
 <text x="722.63" y="492.76" size="1.778" layer="94">Residual measures</text>
-<wire x1="35.56" y1="523.24" x2="115.57" y2="523.24" width="0.1524" layer="94"/>
-<wire x1="115.57" y1="523.24" x2="115.57" y2="473.71" width="0.1524" layer="94"/>
-<wire x1="115.57" y1="473.71" x2="35.56" y2="473.71" width="0.1524" layer="94"/>
+<wire x1="35.56" y1="523.24" x2="125.73" y2="523.24" width="0.1524" layer="94"/>
+<wire x1="125.73" y1="523.24" x2="125.73" y2="473.71" width="0.1524" layer="94"/>
+<wire x1="125.73" y1="473.71" x2="35.56" y2="473.71" width="0.1524" layer="94"/>
 <wire x1="35.56" y1="473.71" x2="35.56" y2="523.24" width="0.1524" layer="94"/>
 <text x="788.67" y="284.48" size="1.778" layer="94">JST PA 4Pin Side</text>
 <text x="767.08" y="283.21" size="1.778" layer="94">JST PA 4Pin Side</text>
@@ -3995,6 +3995,7 @@ High:B0-B3
 <text x="78.74" y="532.13" size="3.81" layer="94">2024/11/19</text>
 <text x="40.64" y="509.27" size="3.81" layer="94">Rev3.0.3 回路からの修正
 電源衝突防止回路追加</text>
+<text x="40.64" y="501.65" size="3.81" layer="94">Jetson Nano,Jetson Orin Nano互換</text>
 </plain>
 <instances>
 <instance part="SUPPLY2" gate="5V" x="716.28" y="501.65" smashed="yes">
