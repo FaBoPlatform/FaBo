@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
@@ -4188,8 +4188,8 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="GND15" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="R1" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="DNP"/>
 <part name="U$4" library="FaBo-etc" deviceset="A0L-FRAME" device=""/>
-<part name="R20" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="680"/>
-<part name="R19" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="680"/>
+<part name="R20" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="1K"/>
+<part name="R19" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="1K"/>
 <part name="D2" library="FaBo-Diode" deviceset="CUS05F40" device=""/>
 <part name="SUPPLY3" library="FaBo-etc" deviceset="5V" device=""/>
 <part name="GND17" library="FaBo-etc" deviceset="GND" device=""/>
@@ -4343,7 +4343,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <sheets>
 <sheet>
 <plain>
-<text x="792.48" y="22.86" size="2.54" layer="94" align="bottom-center">3.0.8</text>
+<text x="792.48" y="22.86" size="2.54" layer="94" align="bottom-center">3.0.8 B</text>
 <text x="217.17" y="496.57" size="3.81" layer="97">PWM Controller</text>
 <text x="184.15" y="439.42" size="1.778" layer="97">Address 0x40</text>
 <text x="477.52" y="215.9" size="3.81" layer="97">MULTIPLEXERS</text>
@@ -4352,7 +4352,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <text x="737.87" y="177.8" size="1.778" layer="97">*Signal to the Servo</text>
 <text x="675.64" y="191.77" size="1.778" layer="97">steering</text>
 <text x="675.64" y="171.45" size="1.778" layer="97">throttle</text>
-<text x="711.2" y="245.11" size="1.778" layer="97" rot="MR0">Expansion channel</text>
+<text x="713.74" y="245.11" size="1.778" layer="97" rot="MR0">Expansion channel</text>
 <text x="742.95" y="162.56" size="3.81" layer="97" rot="MR0">ESC</text>
 <text x="755.65" y="279.4" size="3.81" layer="97">SPI_LED_OUTLET</text>
 <text x="772.16" y="142.24" size="3.81" layer="97" rot="MR0">RC_Car Connect Receiver and ESC,Servo</text>
@@ -4582,7 +4582,7 @@ High:B0-B3
 <wire x1="214.63" y1="426.72" x2="212.09" y2="427.99" width="0.1524" layer="94" style="dashdot"/>
 <wire x1="212.09" y1="427.99" x2="212.09" y2="425.45" width="0.1524" layer="94" style="dashdot"/>
 <wire x1="212.09" y1="425.45" x2="214.63" y2="426.72" width="0.1524" layer="94" style="dashdot"/>
-<text x="63.5" y="530.86" size="3.81" layer="94">2024/11/05</text>
+<text x="63.5" y="530.86" size="3.81" layer="94">2024/11/05,2024/11/20</text>
 <wire x1="515.62" y1="203.2" x2="518.16" y2="204.47" width="0.1524" layer="94" style="dashdot"/>
 <wire x1="518.16" y1="204.47" x2="518.16" y2="201.93" width="0.1524" layer="94" style="dashdot"/>
 <wire x1="518.16" y1="201.93" x2="515.62" y2="203.2" width="0.1524" layer="94" style="dashdot"/>
@@ -4617,7 +4617,7 @@ High:B0-B3
 <wire x1="462.28" y1="163.83" x2="462.28" y2="233.68" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="462.28" y1="233.68" x2="490.22" y2="233.68" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="490.22" y1="233.68" x2="490.22" y2="163.83" width="0.1524" layer="94" style="shortdash"/>
-<text x="25.4" y="476.25" size="3.81" layer="94">Jetson Orin Nano 専用</text>
+<text x="25.4" y="476.25" size="3.81" layer="94">Jetson Nano 互換（B)</text>
 <text x="149.86" y="542.29" size="3.81" layer="94">Addtion(PCA9685 OUTPUT Enable and Disable)</text>
 <text x="491.49" y="229.87" size="3.81" layer="94">PinSwap</text>
 <text x="590.55" y="69.85" size="5.08" layer="94">※注釈の領域はRev3.0.3との差分です。</text>
@@ -4696,6 +4696,24 @@ High:B0-B3
 <wire x1="764.54" y1="279.4" x2="764.54" y2="309.88" width="0.1524" layer="94" style="shortdash"/>
 <text x="78.74" y="250.19" size="3.81" layer="94">Exchange</text>
 <text x="781.05" y="313.69" size="3.81" layer="94">Exchange</text>
+<wire x1="688.34" y1="248.92" x2="688.34" y2="264.16" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="688.34" y1="264.16" x2="721.36" y2="264.16" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="721.36" y1="264.16" x2="721.36" y2="248.92" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="721.36" y1="248.92" x2="688.34" y2="248.92" width="0.1524" layer="94" style="shortdash"/>
+<text x="693.42" y="264.16" size="1.778" layer="94">切断しており接続修正</text>
+<text x="25.4" y="469.9" size="3.81" layer="94">BEC電源が切断されていたので修正（B)</text>
+<text x="271.78" y="298.45" size="1.9304" layer="94" rot="R90">I2C Device Address Select</text>
+<text x="632.46" y="129.54" size="3.81" layer="94">For ESD</text>
+<wire x1="464.82" y1="474.98" x2="464.82" y2="485.14" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="464.82" y1="485.14" x2="477.52" y2="485.14" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="477.52" y1="485.14" x2="477.52" y2="474.98" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="477.52" y1="474.98" x2="464.82" y2="474.98" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="464.82" y1="388.62" x2="464.82" y2="396.24" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="464.82" y1="396.24" x2="477.52" y2="396.24" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="477.52" y1="396.24" x2="477.52" y2="388.62" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="477.52" y1="388.62" x2="464.82" y2="388.62" width="0.1524" layer="94" style="shortdash"/>
+<text x="467.36" y="487.68" size="1.778" layer="94">680-&gt;1K</text>
+<text x="467.36" y="398.78" size="1.778" layer="94">680-&gt;1K</text>
 </plain>
 <instances>
 <instance part="SUPPLY2" gate="5V" x="716.28" y="449.58" smashed="yes">
@@ -6126,17 +6144,55 @@ High:B0-B3
 <segment>
 <wire x1="467.36" y1="391.16" x2="462.28" y2="391.16" width="0.1524" layer="91"/>
 <pinref part="R20" gate="G$1" pin="2"/>
-<label x="457.2" y="391.16" size="1.778" layer="95"/>
+<label x="459.74" y="391.16" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <wire x1="464.82" y1="480.06" x2="459.74" y2="480.06" width="0.1524" layer="91"/>
 <pinref part="R19" gate="G$1" pin="2"/>
-<label x="454.66" y="480.06" size="1.778" layer="95"/>
+<label x="457.2" y="480.06" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <wire x1="490.22" y1="386.08" x2="462.28" y2="386.08" width="0.1524" layer="91"/>
 <pinref part="U4" gate="G$1" pin="A"/>
-<label x="457.2" y="386.08" size="1.778" layer="95"/>
+<label x="459.74" y="386.08" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<wire x1="703.58" y1="254" x2="690.88" y2="254" width="0.1524" layer="91"/>
+<label x="695.96" y="256.54" size="1.778" layer="95"/>
+<wire x1="688.34" y1="220.98" x2="712.47" y2="220.98" width="0.1524" layer="91"/>
+<wire x1="688.34" y1="205.74" x2="712.47" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="688.34" y1="220.98" x2="688.34" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="712.47" y1="185.42" x2="688.34" y2="185.42" width="0.1524" layer="91"/>
+<label x="678.18" y="185.42" size="1.778" layer="95"/>
+<wire x1="688.34" y1="185.42" x2="678.18" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="688.34" y1="205.74" x2="688.34" y2="185.42" width="0.1524" layer="91"/>
+<junction x="688.34" y="205.74"/>
+<junction x="688.34" y="185.42"/>
+<wire x1="712.47" y1="165.1" x2="688.34" y2="165.1" width="0.1524" layer="91"/>
+<label x="678.18" y="165.1" size="1.778" layer="95"/>
+<wire x1="688.34" y1="165.1" x2="678.18" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="688.34" y1="185.42" x2="688.34" y2="165.1" width="0.1524" layer="91"/>
+<junction x="688.34" y="165.1"/>
+<wire x1="660.4" y1="236.22" x2="688.34" y2="236.22" width="0.1524" layer="91"/>
+<junction x="660.4" y="236.22"/>
+<pinref part="RC" gate="G$1" pin="ANODE"/>
+<wire x1="688.34" y1="236.22" x2="690.88" y2="236.22" width="0.1524" layer="91"/>
+<wire x1="690.88" y1="236.22" x2="712.47" y2="236.22" width="0.1524" layer="91"/>
+<wire x1="660.4" y1="226.06" x2="660.4" y2="236.22" width="0.1524" layer="91"/>
+<wire x1="660.4" y1="236.22" x2="659.13" y2="236.22" width="0.1524" layer="91"/>
+<label x="679.45" y="237.49" size="1.778" layer="95"/>
+<pinref part="D2" gate="G$1" pin="ANODE"/>
+<wire x1="688.34" y1="220.98" x2="688.34" y2="236.22" width="0.1524" layer="91"/>
+<junction x="688.34" y="220.98"/>
+<junction x="688.34" y="236.22"/>
+<pinref part="CH3" gate="G$1" pin="2"/>
+<pinref part="CH2" gate="G$1" pin="2"/>
+<pinref part="CH1" gate="G$1" pin="2"/>
+<pinref part="ST" gate="G$1" pin="2"/>
+<pinref part="TH" gate="G$1" pin="2"/>
+<wire x1="690.88" y1="236.22" x2="690.88" y2="254" width="0.1524" layer="91"/>
+<junction x="690.88" y="236.22"/>
+<label x="716.28" y="254" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="RC_CH2_TH" class="0">
@@ -6159,7 +6215,7 @@ High:B0-B3
 <segment>
 <wire x1="382.27" y1="353.06" x2="454.66" y2="353.06" width="0.1524" layer="91"/>
 <pinref part="R23" gate="G$1" pin="2"/>
-<label x="694.69" y="242.57" size="1.778" layer="95"/>
+<label x="699.77" y="242.57" size="1.778" layer="95"/>
 <wire x1="684.53" y1="241.3" x2="712.47" y2="241.3" width="0.1524" layer="91"/>
 <wire x1="684.53" y1="241.3" x2="684.53" y2="265.43" width="0.1524" layer="91"/>
 <wire x1="684.53" y1="265.43" x2="382.27" y2="265.43" width="0.1524" layer="91"/>
@@ -6842,40 +6898,6 @@ High:B0-B3
 <wire x1="439.42" y1="332.74" x2="439.42" y2="454.66" width="0.1524" layer="91"/>
 <junction x="439.42" y="454.66"/>
 <label x="441.96" y="337.82" size="1.778" layer="95" rot="R90"/>
-</segment>
-</net>
-<net name="BEC" class="0">
-<segment>
-<wire x1="688.34" y1="220.98" x2="712.47" y2="220.98" width="0.1524" layer="91"/>
-<wire x1="688.34" y1="205.74" x2="712.47" y2="205.74" width="0.1524" layer="91"/>
-<wire x1="688.34" y1="220.98" x2="688.34" y2="205.74" width="0.1524" layer="91"/>
-<wire x1="712.47" y1="185.42" x2="688.34" y2="185.42" width="0.1524" layer="91"/>
-<label x="678.18" y="185.42" size="1.778" layer="95"/>
-<wire x1="688.34" y1="185.42" x2="678.18" y2="185.42" width="0.1524" layer="91"/>
-<wire x1="688.34" y1="205.74" x2="688.34" y2="185.42" width="0.1524" layer="91"/>
-<junction x="688.34" y="205.74"/>
-<junction x="688.34" y="185.42"/>
-<wire x1="712.47" y1="165.1" x2="688.34" y2="165.1" width="0.1524" layer="91"/>
-<label x="678.18" y="165.1" size="1.778" layer="95"/>
-<wire x1="688.34" y1="165.1" x2="678.18" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="688.34" y1="185.42" x2="688.34" y2="165.1" width="0.1524" layer="91"/>
-<junction x="688.34" y="165.1"/>
-<wire x1="660.4" y1="236.22" x2="688.34" y2="236.22" width="0.1524" layer="91"/>
-<junction x="660.4" y="236.22"/>
-<pinref part="RC" gate="G$1" pin="ANODE"/>
-<wire x1="688.34" y1="236.22" x2="712.47" y2="236.22" width="0.1524" layer="91"/>
-<wire x1="660.4" y1="226.06" x2="660.4" y2="236.22" width="0.1524" layer="91"/>
-<wire x1="660.4" y1="236.22" x2="659.13" y2="236.22" width="0.1524" layer="91"/>
-<label x="679.45" y="237.49" size="1.778" layer="95"/>
-<pinref part="D2" gate="G$1" pin="ANODE"/>
-<wire x1="688.34" y1="220.98" x2="688.34" y2="236.22" width="0.1524" layer="91"/>
-<junction x="688.34" y="220.98"/>
-<junction x="688.34" y="236.22"/>
-<pinref part="CH3" gate="G$1" pin="2"/>
-<pinref part="CH2" gate="G$1" pin="2"/>
-<pinref part="CH1" gate="G$1" pin="2"/>
-<pinref part="ST" gate="G$1" pin="2"/>
-<pinref part="TH" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>
