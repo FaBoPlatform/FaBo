@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
@@ -4032,11 +4032,14 @@ High:B0-B3
 <wire x1="712.47" y1="69.85" x2="800.1" y2="69.85" width="0.1524" layer="94"/>
 <wire x1="800.1" y1="69.85" x2="800.1" y2="58.42" width="0.1524" layer="94"/>
 <wire x1="800.1" y1="58.42" x2="800.1" y2="48.26" width="0.1524" layer="94"/>
-<wire x1="800.1" y1="48.26" x2="713.74" y2="48.26" width="0.1524" layer="94"/>
+<wire x1="800.1" y1="48.26" x2="712.47" y2="48.26" width="0.1524" layer="94"/>
 <wire x1="712.47" y1="48.26" x2="656.59" y2="48.26" width="0.1524" layer="94"/>
 <wire x1="656.59" y1="58.42" x2="800.1" y2="58.42" width="0.1524" layer="94"/>
 <wire x1="712.47" y1="69.85" x2="712.47" y2="48.26" width="0.1524" layer="94"/>
-<wire x1="712.47" y1="48.26" x2="713.74" y2="48.26" width="0.1524" layer="94"/>
+<wire x1="421.64" y1="165.1" x2="421.64" y2="236.22" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="421.64" y1="236.22" x2="490.22" y2="236.22" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="490.22" y1="236.22" x2="490.22" y2="165.1" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="490.22" y1="165.1" x2="421.64" y2="165.1" width="0.1524" layer="94" style="shortdash"/>
 </plain>
 <instances>
 <instance part="SUPPLY2" gate="5V" x="716.28" y="501.65" smashed="yes">
@@ -5647,9 +5650,10 @@ High:B0-B3
 <pinref part="R12" gate="G$1" pin="2"/>
 <wire x1="439.42" y1="454.66" x2="431.8" y2="454.66" width="0.1524" layer="91"/>
 <junction x="439.42" y="454.66"/>
-<label x="457.2" y="208.28" size="1.778" layer="95"/>
+<label x="457.2" y="203.2" size="1.778" layer="95"/>
 <pinref part="U$3" gate="G$1" pin="3:B0"/>
 <wire x1="474.98" y1="203.2" x2="439.42" y2="203.2" width="0.1524" layer="91"/>
+<label x="441.96" y="241.3" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="RECV_CH2" class="0">
@@ -5660,9 +5664,10 @@ High:B0-B3
 <pinref part="R35" gate="G$1" pin="1"/>
 <wire x1="447.04" y1="419.1" x2="436.88" y2="419.1" width="0.1524" layer="91"/>
 <junction x="436.88" y="419.1"/>
-<label x="457.2" y="193.04" size="1.778" layer="95"/>
+<label x="457.2" y="187.96" size="1.778" layer="95"/>
 <pinref part="U$3" gate="G$1" pin="6:B1"/>
 <wire x1="474.98" y1="187.96" x2="436.88" y2="187.96" width="0.1524" layer="91"/>
+<label x="434.34" y="241.3" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -5784,9 +5789,10 @@ High:B0-B3
 <wire x1="279.4" y1="464.82" x2="330.2" y2="464.82" width="0.1524" layer="91"/>
 <wire x1="330.2" y1="464.82" x2="330.2" y2="193.04" width="0.1524" layer="91"/>
 <label x="292.1" y="464.82" size="1.778" layer="95"/>
-<label x="457.2" y="187.96" size="1.778" layer="95"/>
+<label x="457.2" y="193.04" size="1.778" layer="95"/>
 <pinref part="U$3" gate="G$1" pin="5:A1"/>
 <wire x1="474.98" y1="193.04" x2="330.2" y2="193.04" width="0.1524" layer="91"/>
+<label x="378.46" y="193.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="AI_CH1_ST" class="0">
@@ -5795,9 +5801,10 @@ High:B0-B3
 <wire x1="342.9" y1="208.28" x2="342.9" y2="467.36" width="0.1524" layer="91"/>
 <wire x1="342.9" y1="467.36" x2="266.7" y2="467.36" width="0.1524" layer="91"/>
 <label x="292.1" y="467.36" size="1.778" layer="95"/>
-<label x="457.2" y="203.2" size="1.778" layer="95"/>
+<label x="457.2" y="208.28" size="1.778" layer="95"/>
 <pinref part="U$3" gate="G$1" pin="2:A0"/>
 <wire x1="474.98" y1="208.28" x2="342.9" y2="208.28" width="0.1524" layer="91"/>
+<label x="378.46" y="208.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -6001,6 +6008,7 @@ High:B0-B3
 <pinref part="I2C" gate="G$1" pin="VCC"/>
 <wire x1="118.11" y1="175.26" x2="118.11" y2="168.91" width="0.1524" layer="91"/>
 <wire x1="118.11" y1="168.91" x2="95.25" y2="168.91" width="0.1524" layer="91"/>
+<label x="116.84" y="165.1" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="5V3" gate="G$1" pin="5V"/>

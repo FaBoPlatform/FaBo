@@ -6452,7 +6452,7 @@ High:B0-B3
 </net>
 <net name="RECV_CH2" class="0">
 <segment>
-<label x="457.2" y="193.04" size="1.778" layer="95"/>
+<label x="457.2" y="187.96" size="1.778" layer="95"/>
 <pinref part="IC5" gate="G$1" pin="6:B1"/>
 <wire x1="474.98" y1="187.96" x2="434.34" y2="187.96" width="0.1524" layer="91"/>
 <pinref part="R26" gate="G$1" pin="2"/>
@@ -6579,7 +6579,7 @@ High:B0-B3
 <wire x1="279.4" y1="464.82" x2="330.2" y2="464.82" width="0.1524" layer="91"/>
 <wire x1="330.2" y1="464.82" x2="330.2" y2="193.04" width="0.1524" layer="91"/>
 <label x="292.1" y="464.82" size="1.778" layer="95"/>
-<label x="457.2" y="187.96" size="1.778" layer="95"/>
+<label x="457.2" y="193.04" size="1.778" layer="95"/>
 <pinref part="IC5" gate="G$1" pin="5:A1"/>
 <wire x1="474.98" y1="193.04" x2="330.2" y2="193.04" width="0.1524" layer="91"/>
 <label x="332.74" y="194.31" size="1.778" layer="95"/>
