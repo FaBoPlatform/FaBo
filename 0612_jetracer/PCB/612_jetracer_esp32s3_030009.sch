@@ -3925,12 +3925,14 @@ level shift</description>
 <part name="D3" library="FaBo-Diode" deviceset="CUHS20S30" device=""/>
 <part name="T5" library="FaBo-Transistor" deviceset="RN1401" device=""/>
 <part name="GND57" library="FaBo-Symbol" deviceset="GND" device=""/>
-<part name="R5" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="1K"/>
+<part name="R5" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="4.7K">
+<attribute name="SPICEPREFIX" value="R"/>
+</part>
 <part name="R9" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="DNP"/>
 <part name="GND8" library="FaBo-Symbol" deviceset="GND" device=""/>
 <part name="R10" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="DNP"/>
 <part name="T1" library="FaBo-Transistor" deviceset="RN1401" device=""/>
-<part name="R14" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="1K"/>
+<part name="R14" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="4.７K"/>
 <part name="R3" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="DNP"/>
 <part name="GND58" library="FaBo-etc" deviceset="GND" device=""/>
 </parts>
@@ -3996,6 +3998,31 @@ High:B0-B3
 <text x="40.64" y="509.27" size="3.81" layer="94">Rev3.0.3 回路からの修正
 電源衝突防止回路追加</text>
 <text x="40.64" y="501.65" size="3.81" layer="94">Jetson Nano,Jetson Orin Nano互換</text>
+<wire x1="132.08" y1="472.44" x2="132.08" y2="543.56" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="132.08" y1="543.56" x2="220.98" y2="543.56" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="220.98" y1="543.56" x2="220.98" y2="520.7" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="220.98" y1="520.7" x2="198.12" y2="520.7" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="198.12" y1="520.7" x2="198.12" y2="444.5" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="198.12" y1="444.5" x2="182.88" y2="444.5" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="182.88" y1="444.5" x2="182.88" y2="472.44" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="182.88" y1="472.44" x2="132.08" y2="472.44" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="462.28" y1="462.28" x2="462.28" y2="474.98" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="462.28" y1="474.98" x2="469.9" y2="474.98" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="469.9" y1="474.98" x2="469.9" y2="485.14" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="469.9" y1="485.14" x2="490.22" y2="485.14" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="490.22" y1="485.14" x2="490.22" y2="462.28" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="490.22" y1="462.28" x2="462.28" y2="462.28" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="469.9" y1="388.62" x2="469.9" y2="424.18" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="469.9" y1="424.18" x2="462.28" y2="424.18" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="462.28" y1="424.18" x2="462.28" y2="431.8" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="462.28" y1="431.8" x2="482.6" y2="431.8" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="482.6" y1="431.8" x2="482.6" y2="388.62" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="482.6" y1="388.62" x2="469.9" y2="388.62" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="485.14" y1="63.5" x2="485.14" y2="147.32" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="485.14" y1="147.32" x2="584.2" y2="147.32" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="584.2" y1="147.32" x2="584.2" y2="58.42" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="584.2" y1="58.42" x2="485.14" y2="58.42" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="485.14" y1="58.42" x2="485.14" y2="63.5" width="0.1524" layer="94" style="shortdash"/>
 </plain>
 <instances>
 <instance part="SUPPLY2" gate="5V" x="716.28" y="501.65" smashed="yes">

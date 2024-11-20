@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
@@ -4714,6 +4714,7 @@ High:B0-B3
 <wire x1="477.52" y1="388.62" x2="464.82" y2="388.62" width="0.1524" layer="94" style="shortdash"/>
 <text x="467.36" y="487.68" size="1.778" layer="94">680-&gt;1K</text>
 <text x="467.36" y="398.78" size="1.778" layer="94">680-&gt;1K</text>
+<text x="119.38" y="455.93" size="1.778" layer="94">CRISTAL OSCILLATOR　ENABLE</text>
 </plain>
 <instances>
 <instance part="SUPPLY2" gate="5V" x="716.28" y="449.58" smashed="yes">
