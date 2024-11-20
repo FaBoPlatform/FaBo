@@ -4715,6 +4715,22 @@ High:B0-B3
 <text x="467.36" y="487.68" size="1.778" layer="94">680-&gt;1K</text>
 <text x="467.36" y="398.78" size="1.778" layer="94">680-&gt;1K</text>
 <text x="119.38" y="455.93" size="1.778" layer="94">CRISTAL OSCILLATOR　ENABLE</text>
+<text x="31.75" y="41.91" size="5.08" layer="94">Model Name</text>
+<text x="82.55" y="41.91" size="5.08" layer="94">JRB-CB3</text>
+<text x="31.75" y="30.48" size="5.08" layer="94">Product Name</text>
+<text x="82.55" y="30.48" size="5.08" layer="94">JetRacer Controller Board</text>
+<wire x1="24.13" y1="27.94" x2="24.13" y2="38.1" width="0.1524" layer="94"/>
+<wire x1="24.13" y1="38.1" x2="24.13" y2="49.53" width="0.1524" layer="94"/>
+<wire x1="24.13" y1="49.53" x2="80.01" y2="49.53" width="0.1524" layer="94"/>
+<wire x1="80.01" y1="49.53" x2="167.64" y2="49.53" width="0.1524" layer="94"/>
+<wire x1="167.64" y1="49.53" x2="167.64" y2="38.1" width="0.1524" layer="94"/>
+<wire x1="167.64" y1="38.1" x2="167.64" y2="27.94" width="0.1524" layer="94"/>
+<wire x1="167.64" y1="27.94" x2="80.01" y2="27.94" width="0.1524" layer="94"/>
+<wire x1="80.01" y1="27.94" x2="24.13" y2="27.94" width="0.1524" layer="94"/>
+<wire x1="24.13" y1="38.1" x2="167.64" y2="38.1" width="0.1524" layer="94"/>
+<wire x1="80.01" y1="49.53" x2="80.01" y2="27.94" width="0.1524" layer="94"/>
+<text x="114.3" y="425.45" size="1.778" layer="94">外部クロック</text>
+<text x="637.54" y="207.01" size="1.778" layer="94">RCパワーランプ</text>
 </plain>
 <instances>
 <instance part="SUPPLY2" gate="5V" x="716.28" y="449.58" smashed="yes">
@@ -5957,6 +5973,7 @@ High:B0-B3
 <wire x1="195.58" y1="516.89" x2="195.58" y2="520.7" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="520.7" x2="205.74" y2="520.7" width="0.1524" layer="91"/>
 <junction x="205.74" y="520.7"/>
+<label x="208.28" y="515.62" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="688.34" y1="435.61" x2="685.8" y2="435.61" width="0.1524" layer="91"/>
@@ -5991,12 +6008,14 @@ High:B0-B3
 <wire x1="97.79" y1="441.96" x2="83.82" y2="441.96" width="0.1524" layer="91"/>
 <junction x="83.82" y="441.96"/>
 <pinref part="C1" gate="G$1" pin="2"/>
+<label x="81.28" y="441.96" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="1:INH"/>
 <wire x1="97.79" y1="436.88" x2="92.71" y2="436.88" width="0.1524" layer="91"/>
 <pinref part="3V4" gate="G$1" pin="3V3"/>
 <wire x1="92.71" y1="461.01" x2="92.71" y2="436.88" width="0.1524" layer="91"/>
+<label x="91.44" y="447.04" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <pinref part="3V17" gate="G$1" pin="3V3"/>
@@ -6388,7 +6407,7 @@ High:B0-B3
 <junction x="457.2" y="419.1"/>
 </segment>
 </net>
-<net name="N$41" class="0">
+<net name="EXCLK" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="3:OUTPUT"/>
 <wire x1="143.51" y1="441.96" x2="157.48" y2="441.96" width="0.1524" layer="91"/>
@@ -6402,6 +6421,7 @@ High:B0-B3
 <junction x="171.45" y="441.96"/>
 <pinref part="C3" gate="G$1" pin="2"/>
 <pinref part="IC1" gate="G$1" pin="EXTCLK"/>
+<label x="160.02" y="441.96" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LED0" class="0">
@@ -6855,6 +6875,7 @@ High:B0-B3
 <wire x1="190.5" y1="464.82" x2="190.5" y2="469.9" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="469.9" x2="195.58" y2="469.9" width="0.1524" layer="91"/>
 <junction x="195.58" y="469.9"/>
+<label x="185.42" y="505.46" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MUX_SELECT" class="0">

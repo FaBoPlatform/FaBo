@@ -3,13 +3,13 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -13030,7 +13030,8 @@ design rules under a new name.</description>
 <wire x1="7.4" y1="39.6" x2="6.64853125" y2="40.35146875" width="0.1524" layer="16"/>
 <wire x1="14" y1="39.399996875" x2="13.9656875" y2="39.365684375" width="0.1524" layer="16"/>
 <wire x1="13.9656875" y1="39.365684375" x2="14.1" y2="39.231371875" width="0.1524" layer="16"/>
-<wire x1="14.1" y1="39.231371875" x2="14.1" y2="34.6" width="0.1524" layer="16"/>
+<wire x1="14.1" y1="39.231371875" x2="14.1" y2="37.3" width="0.1524" layer="16"/>
+<wire x1="14.1" y1="37.3" x2="14.1" y2="34.6" width="0.1524" layer="16"/>
 <wire x1="34.3" y1="9.9" x2="50.22" y2="9.9" width="0.1524" layer="16"/>
 <wire x1="50.22" y1="9.9" x2="51.52" y2="8.6" width="0.1524" layer="16"/>
 <wire x1="14" y1="39.399996875" x2="14" y2="41.1" width="0.1524" layer="16"/>
@@ -13045,6 +13046,18 @@ design rules under a new name.</description>
 <wire x1="12.5" y1="40.9" x2="13" y2="41.4" width="0.1524" layer="16"/>
 <wire x1="13" y1="41.4" x2="13.7" y2="41.4" width="0.1524" layer="16"/>
 <wire x1="13.7" y1="41.4" x2="14" y2="41.1" width="0.1524" layer="16"/>
+<contactref element="C2" pad="2"/>
+<contactref element="IC2" pad="28"/>
+<contactref element="R14" pad="2"/>
+<wire x1="12.834315625" y1="38.2343125" x2="12.834315625" y2="37.112715625" width="0.1524" layer="16"/>
+<wire x1="12.834315625" y1="37.112715625" x2="12.6608" y2="36.9392" width="0.1524" layer="16"/>
+<wire x1="12.6608" y1="36.9392" x2="12.596" y2="36.8744" width="0.1524" layer="16"/>
+<wire x1="12.834315625" y1="38.2343125" x2="13.168628125" y2="37.9" width="0.1524" layer="16"/>
+<wire x1="13.168628125" y1="37.9" x2="13.5" y2="37.9" width="0.1524" layer="16"/>
+<wire x1="13.5" y1="37.9" x2="14.1" y2="37.3" width="0.1524" layer="16"/>
+<wire x1="10.65" y1="38.62" x2="10.65" y2="37.65" width="0.1524" layer="16"/>
+<wire x1="11.3608" y1="36.9392" x2="12.6608" y2="36.9392" width="0.1524" layer="16"/>
+<wire x1="10.65" y1="37.65" x2="11.3608" y2="36.9392" width="0.1524" layer="16"/>
 </signal>
 <signal name="RCH1">
 <contactref element="R20" pad="1"/>
@@ -13947,8 +13960,6 @@ design rules under a new name.</description>
 <contactref element="C10" pad="2"/>
 <contactref element="LED1" pad="VCC"/>
 <contactref element="C1" pad="2"/>
-<wire x1="10.6" y1="39.27" x2="10.6" y2="38.12" width="0.1524" layer="1"/>
-<wire x1="10.6" y1="38.12" x2="10.44" y2="37.96" width="0.1524" layer="1"/>
 <contactref element="SPI-LED" pad="5V"/>
 <wire x1="14.45" y1="37.6" x2="14.05" y2="38" width="0.1524" layer="1"/>
 <wire x1="14.05" y1="38" x2="14.05" y2="38.65" width="0.1524" layer="1"/>
@@ -14026,6 +14037,8 @@ design rules under a new name.</description>
 <vertex x="18" y="38.8"/>
 <vertex x="17.8" y="39"/>
 </polygon>
+<wire x1="10.44" y1="37.96" x2="10.6" y2="38.12" width="0.1524" layer="1"/>
+<wire x1="10.6" y1="38.12" x2="10.6" y2="39.27" width="0.1524" layer="1"/>
 </signal>
 <signal name="XAIO_5V">
 <contactref element="U2" pad="P$28"/>
@@ -14071,16 +14084,6 @@ design rules under a new name.</description>
 <wire x1="29" y1="53.2" x2="29.7" y2="53.2" width="0.1524" layer="16"/>
 <wire x1="30.5" y1="52.4" x2="30.5" y2="52" width="0.1524" layer="16"/>
 <wire x1="29.7" y1="53.2" x2="30.5" y2="52.4" width="0.1524" layer="16"/>
-</signal>
-<signal name="3V3">
-<contactref element="C2" pad="2"/>
-<contactref element="IC2" pad="28"/>
-<wire x1="12.596" y1="36.8744" x2="11.4256" y2="36.8744" width="0.1524" layer="16"/>
-<wire x1="10.65" y1="37.65" x2="10.65" y2="38.62" width="0.1524" layer="16"/>
-<wire x1="11.4256" y1="36.8744" x2="10.65" y2="37.65" width="0.1524" layer="16"/>
-<contactref element="R14" pad="2"/>
-<wire x1="12.596" y1="36.8744" x2="12.834315625" y2="37.112715625" width="0.1524" layer="16"/>
-<wire x1="12.834315625" y1="38.2343125" x2="12.834315625" y2="37.112715625" width="0.1524" layer="16"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
