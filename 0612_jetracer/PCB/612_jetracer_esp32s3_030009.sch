@@ -3994,7 +3994,7 @@ High:B0-B3
 <text x="73.66" y="158.75" size="1.778" layer="94">JST PA 4Pin Side</text>
 <text x="35.56" y="524.51" size="3.81" layer="94">主な変更点</text>
 <text x="732.79" y="502.92" size="1.778" layer="94">Diode Add</text>
-<text x="78.74" y="532.13" size="3.81" layer="94">2024/11/19</text>
+<text x="73.66" y="532.13" size="3.81" layer="94">2024/11/19,2024/1129</text>
 <text x="40.64" y="509.27" size="3.81" layer="94">Rev3.0.3 回路からの修正
 電源衝突防止回路追加</text>
 <text x="40.64" y="501.65" size="3.81" layer="94">Jetson Nano,Jetson Orin Nano互換</text>
@@ -4040,6 +4040,7 @@ High:B0-B3
 <wire x1="421.64" y1="236.22" x2="490.22" y2="236.22" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="490.22" y1="236.22" x2="490.22" y2="165.1" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="490.22" y1="165.1" x2="421.64" y2="165.1" width="0.1524" layer="94" style="shortdash"/>
+<text x="40.64" y="494.03" size="3.81" layer="94">配線シンボル間違いを修正（B)</text>
 </plain>
 <instances>
 <instance part="SUPPLY2" gate="5V" x="716.28" y="501.65" smashed="yes">
@@ -5182,23 +5183,6 @@ High:B0-B3
 </net>
 <net name="3V3_JETSON" class="0">
 <segment>
-<pinref part="IC2" gate="G$1" pin="OE"/>
-<wire x1="209.55" y1="459.74" x2="194.31" y2="459.74" width="0.1524" layer="91"/>
-<wire x1="194.31" y1="459.74" x2="194.31" y2="469.9" width="0.1524" layer="91"/>
-<wire x1="194.31" y1="469.9" x2="194.31" y2="515.62" width="0.1524" layer="91"/>
-<wire x1="194.31" y1="515.62" x2="186.69" y2="515.62" width="0.1524" layer="91"/>
-<pinref part="T1" gate="G$1" pin="C"/>
-<wire x1="186.69" y1="515.62" x2="177.8" y2="515.62" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="515.62" x2="177.8" y2="511.81" width="0.1524" layer="91"/>
-<pinref part="R14" gate="G$1" pin="1"/>
-<wire x1="186.69" y1="519.43" x2="186.69" y2="515.62" width="0.1524" layer="91"/>
-<junction x="186.69" y="515.62"/>
-<pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="187.96" y1="458.47" x2="187.96" y2="469.9" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="469.9" x2="194.31" y2="469.9" width="0.1524" layer="91"/>
-<junction x="194.31" y="469.9"/>
-</segment>
-<segment>
 <wire x1="688.34" y1="487.68" x2="685.8" y2="487.68" width="0.1524" layer="91"/>
 <wire x1="685.8" y1="487.68" x2="685.8" y2="492.76" width="0.1524" layer="91"/>
 <wire x1="685.8" y1="492.76" x2="685.8" y2="519.43" width="0.1524" layer="91"/>
@@ -6099,6 +6083,26 @@ High:B0-B3
 <wire x1="561.34" y1="129.54" x2="519.43" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="519.43" y1="129.54" x2="519.43" y2="119.38" width="0.1524" layer="91"/>
 <junction x="519.43" y="119.38"/>
+</segment>
+</net>
+<net name="OE" class="0">
+<segment>
+<pinref part="T1" gate="G$1" pin="C"/>
+<wire x1="177.8" y1="511.81" x2="177.8" y2="515.62" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="515.62" x2="185.42" y2="515.62" width="0.1524" layer="91"/>
+<pinref part="R14" gate="G$1" pin="1"/>
+<wire x1="185.42" y1="515.62" x2="186.69" y2="515.62" width="0.1524" layer="91"/>
+<wire x1="186.69" y1="515.62" x2="186.69" y2="519.43" width="0.1524" layer="91"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="187.96" y1="458.47" x2="187.96" y2="459.74" width="0.1524" layer="91"/>
+<pinref part="IC2" gate="G$1" pin="OE"/>
+<wire x1="187.96" y1="459.74" x2="193.04" y2="459.74" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="459.74" x2="209.55" y2="459.74" width="0.1524" layer="91"/>
+<wire x1="186.69" y1="515.62" x2="193.04" y2="515.62" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="515.62" x2="193.04" y2="459.74" width="0.1524" layer="91"/>
+<junction x="193.04" y="459.74"/>
+<label x="185.42" y="513.08" size="1.778" layer="95"/>
+<label x="200.66" y="459.74" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
