@@ -1,8 +1,9 @@
-//FaBo JetRacer_XIAO_ESP32S3 Version 1.1.2 アルファ版
-//Board Rev3.0.0,Rev3.0.1,Rev3.0.2,Rev3.0.3
-//2024/03/28
+//FaBo JetRacer_XIAO_ESP32S3 Version 1.1.5 アルファ版
+//Target Board Rev3.0.0,Rev3.0.1,Rev3.0.2,Rev3.0.3,Rev3.0.8
+//2024/12/03
 //ESP32S3
-//RC通信瞬断対策としてチャッタリング防止対策しました。回数判定から時間検出判定としました。
+//pulseInLongがピン設定なしでは使えなくなったのでピン設定を追記。
+//製品リリース JetRacer Race Edition,JetRacer Basic Editionに同梱および単品
 
 //#define DEBUG
 //#define DEBUG_RCV
@@ -18,10 +19,10 @@
 #endif
 
 //ボード情報　レビションやファームウェアバージョンによって以下を変更すること。
-#define FIRMWARE_NUMBER    4     //Firmware Version ID 4
+#define FIRMWARE_NUMBER    5     //Firmware Version ID 5
 #define BOARDMAJOR         3      //基板版数パッチメジャー
 #define BOARDMINOR         0      //基板版数パッチマイナー
-#define BOARDPATCH         3     //基板版数パッチRev3.0.3は3
+#define BOARDPATCH         8     //基板版数パッチRev3.0.3は8
 
 //ピン設定
 #define ST_SIGNAL_INPUT_PIN       D0  //受信機1ch
@@ -201,6 +202,10 @@ void setup() {
   Wire.onRequest(onRequest);
   Wire.begin((uint8_t)I2C_DEV_ADDR);
   SPI.begin();
+  //GPIO入出力設定
+  pinMode(ST_SIGNAL_INPUT_PIN, INPUT);
+  pinMode(TH_SIGNAL_INPUT_PIN, INPUT);
+  pinMode(FSW_SIGNAL_INPUT_PIN, INPUT);
   pinMode(SELECT_OUTPUT_PIN, OUTPUT);
   pinMode(LED_BUILTIN, OUTPUT);
   
