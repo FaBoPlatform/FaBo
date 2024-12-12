@@ -1,4 +1,4 @@
-//FaBo JetRacer_XIAO_ESP32S3 Version 1.1.5 アルファ版
+//FaBo JetRacer_XIAO_ESP32S3 Version 1.1.5 ベータ版
 //Target Board Rev3.0.0,Rev3.0.1,Rev3.0.2,Rev3.0.3,Rev3.0.8
 //2024/12/03
 //ESP32S3
@@ -191,7 +191,13 @@ void setRGB(short r, short g, short b) {
 
 
 void setup() {
-  
+  //GPIO入出力設定
+  pinMode(ST_SIGNAL_INPUT_PIN, INPUT);
+  pinMode(TH_SIGNAL_INPUT_PIN, INPUT);
+  pinMode(FSW_SIGNAL_INPUT_PIN, INPUT);
+  pinMode(SELECT_OUTPUT_PIN, OUTPUT);
+  pinMode(LED_BUILTIN, OUTPUT);
+
   #if defined(DEBUG) || defined(DEBUG_RCV) || defined(DEBUG_MILLIS)
     Serial.begin(115200);
     Serial.setDebugOutput(true);
@@ -202,12 +208,6 @@ void setup() {
   Wire.onRequest(onRequest);
   Wire.begin((uint8_t)I2C_DEV_ADDR);
   SPI.begin();
-  //GPIO入出力設定
-  pinMode(ST_SIGNAL_INPUT_PIN, INPUT);
-  pinMode(TH_SIGNAL_INPUT_PIN, INPUT);
-  pinMode(FSW_SIGNAL_INPUT_PIN, INPUT);
-  pinMode(SELECT_OUTPUT_PIN, OUTPUT);
-  pinMode(LED_BUILTIN, OUTPUT);
   
   //バージョン情報付与
   transfer4.a = BOARDMAJOR;
