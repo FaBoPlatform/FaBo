@@ -4178,8 +4178,8 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="3V5" library="FaBo-Supply" deviceset="3V3" device=""/>
 <part name="SUPPLY1" library="FaBo-etc" deviceset="5V" device=""/>
 <part name="GND10" library="FaBo-etc" deviceset="GND" device=""/>
-<part name="R34" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="51"/>
-<part name="R35" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="51"/>
+<part name="R34" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="100"/>
+<part name="R35" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="100"/>
 <part name="R5" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="DNF"/>
 <part name="R6" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603" value="DNF"/>
 <part name="3V8" library="FaBo-Supply" deviceset="3V3" device=""/>
@@ -4731,6 +4731,8 @@ High:B0-B3
 <wire x1="80.01" y1="49.53" x2="80.01" y2="27.94" width="0.1524" layer="94"/>
 <text x="114.3" y="425.45" size="1.778" layer="94">外部クロック</text>
 <text x="637.54" y="207.01" size="1.778" layer="94">RCパワーランプ</text>
+<text x="647.7" y="184.15" size="1.778" layer="94">変更20241214</text>
+<text x="647.7" y="163.83" size="1.778" layer="94">変更20241214</text>
 </plain>
 <instances>
 <instance part="SUPPLY2" gate="5V" x="716.28" y="449.58" smashed="yes">

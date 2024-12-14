@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -2886,10 +2886,10 @@ design rules under a new name.</description>
 <element name="C2" library="FaBo-Capacitor" package="0603" value="0.1uF" x="17.296" y="40.3744" smashed="yes" rot="R270">
 <attribute name="VALUE" x="17.76108125" y="40.499525" size="0.8128" layer="27" font="vector" ratio="12" rot="R270" align="center"/>
 </element>
-<element name="R34" library="FaBo-Resistors" package="0603" value="51" x="17.525" y="43.42" smashed="yes" rot="R270">
+<element name="R34" library="FaBo-Resistors" package="0603" value="100" x="17.525" y="43.42" smashed="yes" rot="R270">
 <attribute name="VALUE" x="17.94675" y="43.443225" size="0.8128" layer="27" font="vector" ratio="12" rot="R270" align="center"/>
 </element>
-<element name="R35" library="FaBo-Resistors" package="0603" value="51" x="17.575" y="46.17" smashed="yes" rot="R270">
+<element name="R35" library="FaBo-Resistors" package="0603" value="100" x="17.575" y="46.17" smashed="yes" rot="R270">
 <attribute name="VALUE" x="17.875" y="46.27" size="0.8128" layer="27" font="vector" ratio="12" rot="R270" align="center"/>
 </element>
 <element name="R5" library="FaBo-Resistors" package="0603" value="DNF" x="10.175" y="4.92" smashed="yes" rot="MR135">
