@@ -1,9 +1,10 @@
-//FaBo JetRacer_XIAO_ESP32S3 Version 1.1.5 ベータ版
+//FaBo JetRacer_XIAO_ESP32S3 Version 1.1.5
 //Target Board Rev3.0.0,Rev3.0.1,Rev3.0.2,Rev3.0.3,Rev3.0.8
-//2024/12/03
+//2024/12/03,2024/12/25
 //ESP32S3
 //pulseInLongがピン設定なしでは使えなくなったのでピン設定を追記。
 //製品リリース JetRacer Race Edition,JetRacer Basic Editionに同梱および単品
+//Arduino Board Manager 2.0.17使用のこと
 
 //#define DEBUG
 //#define DEBUG_RCV
