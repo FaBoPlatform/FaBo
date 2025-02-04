@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
@@ -4312,7 +4312,7 @@ High:B0-B3
 <wire x1="214.63" y1="426.72" x2="212.09" y2="427.99" width="0.1524" layer="94" style="dashdot"/>
 <wire x1="212.09" y1="427.99" x2="212.09" y2="425.45" width="0.1524" layer="94" style="dashdot"/>
 <wire x1="212.09" y1="425.45" x2="214.63" y2="426.72" width="0.1524" layer="94" style="dashdot"/>
-<text x="71.12" y="530.86" size="3.81" layer="94">2025/01/31</text>
+<text x="71.12" y="530.86" size="3.81" layer="94">2025/02/04</text>
 <wire x1="515.62" y1="203.2" x2="518.16" y2="204.47" width="0.1524" layer="94" style="dashdot"/>
 <wire x1="518.16" y1="204.47" x2="518.16" y2="201.93" width="0.1524" layer="94" style="dashdot"/>
 <wire x1="518.16" y1="201.93" x2="515.62" y2="203.2" width="0.1524" layer="94" style="dashdot"/>
@@ -4343,11 +4343,11 @@ High:B0-B3
 <wire x1="101.6" y1="284.48" x2="102.87" y2="283.21" width="0.1524" layer="94"/>
 <wire x1="102.87" y1="283.21" x2="101.6" y2="281.94" width="0.1524" layer="94"/>
 <wire x1="101.6" y1="281.94" x2="100.33" y2="283.21" width="0.1524" layer="94"/>
-<wire x1="490.22" y1="163.83" x2="462.28" y2="163.83" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="462.28" y1="163.83" x2="462.28" y2="233.68" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="462.28" y1="233.68" x2="490.22" y2="233.68" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="490.22" y1="233.68" x2="490.22" y2="163.83" width="0.1524" layer="94" style="shortdash"/>
-<text x="491.49" y="229.87" size="3.81" layer="94">PinSwap</text>
+<wire x1="243.84" y1="283.21" x2="193.04" y2="283.21" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="193.04" y1="283.21" x2="193.04" y2="363.22" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="193.04" y1="363.22" x2="243.84" y2="363.22" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="243.84" y1="363.22" x2="243.84" y2="283.21" width="0.1524" layer="94" style="shortdash"/>
+<text x="194.31" y="364.49" size="3.81" layer="94">Exchange</text>
 <text x="590.55" y="69.85" size="5.08" layer="94">※注釈の領域はRev3.0.8との差分です。</text>
 <text x="568.96" y="250.19" size="3.81" layer="94">LDO　BECー＞3.3V</text>
 <text x="590.55" y="60.96" size="5.08" layer="94">※接頭辞PCHは受信機信号</text>
