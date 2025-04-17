@@ -4051,6 +4051,12 @@ SAR,2.7V~5.5V</text>
 <part name="GND56" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="CN6" library="FaBo-PIN" deviceset="PIN_1X1" device="-SMALL"/>
 <part name="GND57" library="FaBo-Supply" deviceset="GND" device=""/>
+<part name="C34" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603-BOTTOM" value="47uF">
+<attribute name="SPICEPREFIX" value="C"/>
+</part>
+<part name="GND58" library="FaBo-Supply" deviceset="GND" device="">
+<attribute name="SPICEPREFIX" value="G"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -4068,8 +4074,8 @@ SAR,2.7V~5.5V</text>
 <wire x1="327.66" y1="294.64" x2="330.2" y2="289.56" width="0.1524" layer="94"/>
 <wire x1="330.2" y1="289.56" x2="325.12" y2="289.56" width="0.1524" layer="94"/>
 <wire x1="325.12" y1="289.56" x2="327.66" y2="294.64" width="0.1524" layer="94"/>
-<text x="271.78" y="48.26" size="10.16" layer="94">Testing Jig For AI Car Board
-Rev1.0.0 2025/03/31
+<text x="38.1" y="492.76" size="10.16" layer="94">Testing Jig For AI Car Board
+Rev1.0.1 2025/04/17
 DKFA-JIG-01</text>
 <text x="703.58" y="195.58" size="1.6764" layer="94" font="vector" ratio="14" align="center">12MHz,10pF</text>
 <text x="617.22" y="106.68" size="2.54" layer="94" align="center">電圧計測</text>
@@ -4077,6 +4083,8 @@ DKFA-JIG-01</text>
 <text x="716.28" y="154.94" size="2.54" layer="94" align="center">RESET</text>
 <text x="718.82" y="340.36" size="2.54" layer="94" align="center">BOOT（フラッシュメモリを読み込めない状態にして、
 フラッシュメモリをマストスレージにする）</text>
+<text x="60.96" y="43.18" size="5.08" layer="94">Rev1.0.0 初版
+Rev1.0.1 C34コンデンサ47uF追加、発振器マーキングポイント追加</text>
 </plain>
 <instances>
 <instance part="5V1" gate="G$1" x="335.28" y="271.78" smashed="yes">
@@ -4625,6 +4633,13 @@ DKFA-JIG-01</text>
 <instance part="GND57" gate="G$1" x="459.74" y="120.65" smashed="yes">
 <attribute name="VALUE" x="456.946" y="115.57" size="1.778" layer="96"/>
 </instance>
+<instance part="C34" gate="G$1" x="414.02" y="431.8" smashed="yes" rot="R90">
+<attribute name="NAME" x="411.734" y="429.514" size="1.4224" layer="95" rot="R90"/>
+<attribute name="VALUE" x="416.306" y="429.514" size="1.4224" layer="96" rot="R90" align="top-left"/>
+</instance>
+<instance part="GND58" gate="G$1" x="414.02" y="411.48" smashed="yes">
+<attribute name="VALUE" x="411.226" y="406.4" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -5038,6 +5053,11 @@ DKFA-JIG-01</text>
 <wire x1="459.74" y1="120.65" x2="459.74" y2="149.86" width="0.762" layer="91"/>
 <wire x1="459.74" y1="149.86" x2="450.85" y2="149.86" width="0.762" layer="91"/>
 </segment>
+<segment>
+<pinref part="GND58" gate="G$1" pin="GND"/>
+<pinref part="C34" gate="G$1" pin="1"/>
+<wire x1="414.02" y1="411.48" x2="414.02" y2="429.26" width="0.762" layer="91"/>
+</segment>
 </net>
 <net name="5V" class="0">
 <segment>
@@ -5442,7 +5462,8 @@ DKFA-JIG-01</text>
 <pinref part="U4" gate="G$1" pin="5:VIN"/>
 <wire x1="447.04" y1="421.64" x2="426.72" y2="421.64" width="0.1524" layer="91"/>
 <wire x1="426.72" y1="421.64" x2="424.18" y2="421.64" width="0.1524" layer="91"/>
-<wire x1="424.18" y1="421.64" x2="424.18" y2="457.2" width="0.1524" layer="91"/>
+<wire x1="424.18" y1="421.64" x2="424.18" y2="441.96" width="0.1524" layer="91"/>
+<wire x1="424.18" y1="441.96" x2="424.18" y2="457.2" width="0.1524" layer="91"/>
 <wire x1="424.18" y1="457.2" x2="419.1" y2="457.2" width="0.1524" layer="91"/>
 <pinref part="U4" gate="G$1" pin="8:VINA"/>
 <wire x1="419.1" y1="457.2" x2="403.86" y2="457.2" width="0.1524" layer="91"/>
@@ -5517,6 +5538,10 @@ DKFA-JIG-01</text>
 <junction x="462.28" y="354.33"/>
 <label x="54.61" y="240.03" size="1.778" layer="95"/>
 <label x="68.58" y="280.67" size="1.778" layer="95"/>
+<pinref part="C34" gate="G$1" pin="2"/>
+<wire x1="414.02" y1="436.88" x2="414.02" y2="441.96" width="0.1524" layer="91"/>
+<wire x1="414.02" y1="441.96" x2="424.18" y2="441.96" width="0.1524" layer="91"/>
+<junction x="424.18" y="441.96"/>
 </segment>
 </net>
 <net name="N$10" class="0">
