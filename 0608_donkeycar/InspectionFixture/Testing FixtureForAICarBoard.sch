@@ -3884,17 +3884,17 @@ SAR,2.7V~5.5V</text>
 <attribute name="SPICEPREFIX" value="C"/>
 </part>
 <part name="GND28" library="FaBo-Supply" deviceset="GND" device=""/>
-<part name="R28" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603-BOTTOM" value="100K">
+<part name="R28" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603-BOTTOM" value="33">
 <attribute name="SPICEPREFIX" value="R"/>
 </part>
 <part name="C25" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603-BOTTOM" value="4.7uF">
 <attribute name="SPICEPREFIX" value="C"/>
 </part>
 <part name="GND29" library="FaBo-Supply" deviceset="GND" device=""/>
-<part name="R26" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603-BOTTOM" value="100K">
+<part name="R26" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603-BOTTOM" value="200">
 <attribute name="SPICEPREFIX" value="R"/>
 </part>
-<part name="R27" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603-BOTTOM" value="100K">
+<part name="R27" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603-BOTTOM" value="1">
 <attribute name="SPICEPREFIX" value="R"/>
 </part>
 <part name="C14" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603-BOTTOM" value="4.7uF">
@@ -3956,10 +3956,10 @@ SAR,2.7V~5.5V</text>
 <part name="GND44" library="FaBo-Supply" deviceset="GND" device=""/>
 <part name="BT1" library="FaBo-Switch" deviceset="TS-06104" device=""/>
 <part name="GND45" library="FaBo-Supply" deviceset="GND" device=""/>
-<part name="R29" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603-BOTTOM" value="10K">
+<part name="R29" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603-BOTTOM" value="1K">
 <attribute name="SPICEPREFIX" value="R"/>
 </part>
-<part name="R30" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603-BOTTOM" value="DNP">
+<part name="R30" library="FaBo-Resistors" deviceset="RESISTOR" device="-0603-BOTTOM" value="10K">
 <attribute name="SPICEPREFIX" value="R"/>
 </part>
 <part name="LED1" library="FaBo-LED" deviceset="LED" device="-0603"/>
@@ -4075,7 +4075,7 @@ SAR,2.7V~5.5V</text>
 <wire x1="330.2" y1="289.56" x2="325.12" y2="289.56" width="0.1524" layer="94"/>
 <wire x1="325.12" y1="289.56" x2="327.66" y2="294.64" width="0.1524" layer="94"/>
 <text x="38.1" y="492.76" size="10.16" layer="94">Testing Jig For AI Car Board
-Rev1.0.1 2025/04/17
+Rev1.0.1 2025/05/19
 DKFA-JIG-01</text>
 <text x="703.58" y="195.58" size="1.6764" layer="94" font="vector" ratio="14" align="center">12MHz,10pF</text>
 <text x="617.22" y="106.68" size="2.54" layer="94" align="center">電圧計測</text>
@@ -4084,7 +4084,7 @@ DKFA-JIG-01</text>
 <text x="718.82" y="340.36" size="2.54" layer="94" align="center">BOOT（フラッシュメモリを読み込めない状態にして、
 フラッシュメモリをマストスレージにする）</text>
 <text x="60.96" y="43.18" size="5.08" layer="94">Rev1.0.0 初版
-Rev1.0.1 C34コンデンサ47uF追加、発振器マーキングポイント追加</text>
+Rev1.0.1 C34コンデンサ47uF追加、発振器マーキングポイント追加、アナログ系の電源の定数を変更、レベル変換A側電源断線修正</text>
 </plain>
 <instances>
 <instance part="5V1" gate="G$1" x="335.28" y="271.78" smashed="yes">
@@ -5732,7 +5732,8 @@ Rev1.0.1 C34コンデンサ47uF追加、発振器マーキングポイント追�
 <wire x1="170.18" y1="236.22" x2="175.26" y2="236.22" width="0.1524" layer="91"/>
 <pinref part="R13" gate="G$1" pin="2"/>
 <wire x1="175.26" y1="236.22" x2="180.34" y2="236.22" width="0.1524" layer="91"/>
-<wire x1="508" y1="342.9" x2="175.26" y2="342.9" width="0.1524" layer="91"/>
+<wire x1="508" y1="342.9" x2="500.38" y2="342.9" width="0.1524" layer="91"/>
+<wire x1="500.38" y1="342.9" x2="175.26" y2="342.9" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="342.9" x2="175.26" y2="284.48" width="0.1524" layer="91"/>
 <junction x="175.26" y="236.22"/>
 <label x="180.34" y="342.9" size="1.6764" layer="95" font="vector" ratio="14"/>
@@ -5767,6 +5768,19 @@ Rev1.0.1 C34コンデンサ47uF追加、発振器マーキングポイント追�
 <wire x1="88.9" y1="243.84" x2="175.26" y2="243.84" width="0.1524" layer="91"/>
 <junction x="175.26" y="243.84"/>
 <label x="76.2" y="228.6" size="1.778" layer="95"/>
+<pinref part="U3" gate="G$1" pin="VCCA"/>
+<wire x1="533.4" y1="254" x2="535.94" y2="254" width="0.1524" layer="91"/>
+<wire x1="535.94" y1="254" x2="535.94" y2="269.24" width="0.1524" layer="91"/>
+<wire x1="535.94" y1="269.24" x2="541.02" y2="269.24" width="0.1524" layer="91"/>
+<pinref part="C13" gate="G$1" pin="2"/>
+<wire x1="541.02" y1="269.24" x2="541.02" y2="266.7" width="0.1524" layer="91"/>
+<wire x1="535.94" y1="269.24" x2="508" y2="269.24" width="0.1524" layer="91"/>
+<wire x1="508" y1="269.24" x2="508" y2="335.28" width="0.1524" layer="91"/>
+<junction x="535.94" y="269.24"/>
+<wire x1="508" y1="335.28" x2="500.38" y2="335.28" width="0.1524" layer="91"/>
+<wire x1="500.38" y1="335.28" x2="500.38" y2="342.9" width="0.1524" layer="91"/>
+<junction x="500.38" y="342.9"/>
+<label x="518.16" y="269.24" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO23" class="0">
@@ -6185,16 +6199,6 @@ Rev1.0.1 C34コンデンサ47uF追加、発振器マーキングポイント追�
 <pinref part="U3" gate="G$1" pin="A4"/>
 <wire x1="549.91" y1="233.68" x2="533.4" y2="233.68" width="0.1524" layer="91"/>
 <label x="538.48" y="233.68" size="1.6764" layer="95" font="vector" ratio="14"/>
-</segment>
-</net>
-<net name="N$61" class="0">
-<segment>
-<pinref part="U3" gate="G$1" pin="VCCA"/>
-<wire x1="533.4" y1="254" x2="535.94" y2="254" width="0.1524" layer="91"/>
-<wire x1="535.94" y1="254" x2="535.94" y2="269.24" width="0.1524" layer="91"/>
-<wire x1="535.94" y1="269.24" x2="541.02" y2="269.24" width="0.1524" layer="91"/>
-<pinref part="C13" gate="G$1" pin="2"/>
-<wire x1="541.02" y1="269.24" x2="541.02" y2="266.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SCL" class="0">
