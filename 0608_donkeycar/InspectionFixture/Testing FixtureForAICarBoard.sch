@@ -4061,7 +4061,7 @@ SAR,2.7V~5.5V</text>
 <sheets>
 <sheet>
 <plain>
-<text x="795.02" y="22.86" size="2.54" layer="94" align="bottom-center">1.0.0</text>
+<text x="795.02" y="22.86" size="2.54" layer="94" align="bottom-center">1.0.1</text>
 <text x="160.02" y="228.6" size="1.778" layer="94">1N4148</text>
 <text x="129.54" y="231.14" size="2.54" layer="94">OLED（青色）</text>
 <text x="292.1" y="264.16" size="2.54" layer="94" align="center">シングルボードコンピュータGPIOピン</text>
@@ -4075,7 +4075,7 @@ SAR,2.7V~5.5V</text>
 <wire x1="330.2" y1="289.56" x2="325.12" y2="289.56" width="0.1524" layer="94"/>
 <wire x1="325.12" y1="289.56" x2="327.66" y2="294.64" width="0.1524" layer="94"/>
 <text x="38.1" y="492.76" size="10.16" layer="94">Testing Jig For AI Car Board
-Rev1.0.1 2025/05/19
+Rev1.0.1 2025/05/27
 DKFA-JIG-01</text>
 <text x="703.58" y="195.58" size="1.6764" layer="94" font="vector" ratio="14" align="center">12MHz,10pF</text>
 <text x="617.22" y="106.68" size="2.54" layer="94" align="center">電圧計測</text>
@@ -4084,7 +4084,7 @@ DKFA-JIG-01</text>
 <text x="718.82" y="340.36" size="2.54" layer="94" align="center">BOOT（フラッシュメモリを読み込めない状態にして、
 フラッシュメモリをマストスレージにする）</text>
 <text x="60.96" y="43.18" size="5.08" layer="94">Rev1.0.0 初版
-Rev1.0.1 C34コンデンサ47uF追加、発振器マーキングポイント追加、アナログ系の電源の定数を変更、レベル変換A側電源断線修正</text>
+Rev1.0.1 2025/05/27 C34コンデンサ47uF追加、発振器マーキングポイント追加、アナログ系の電源の定数を変更、レベル変換A側電源断線修正、3.3V配線の見直し</text>
 </plain>
 <instances>
 <instance part="5V1" gate="G$1" x="335.28" y="271.78" smashed="yes">
