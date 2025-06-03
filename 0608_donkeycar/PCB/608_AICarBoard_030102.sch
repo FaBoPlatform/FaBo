@@ -16596,9 +16596,9 @@ HC-SR04</text>
 <text x="287.02" y="383.54" size="1.778" layer="95">U1</text>
 <text x="782.32" y="35.56" size="7.62" layer="94" align="bottom-center">DKFA-05</text>
 <text x="668.02" y="513.08" size="2.54" layer="94">5V DC FAN</text>
-<text x="53.34" y="147.32" size="7.62" layer="94">Rev1.0.0 プロトタイプ
-Rev1.0.1 リリース
-Rev1.0.2 シルクの変更</text>
+<text x="53.34" y="147.32" size="6.35" layer="94">Rev3.0.0 プロトタイプ
+Rev3.0.1 別名でのリリース
+Rev3.0.2 シルクの変更</text>
 </plain>
 <instances>
 <instance part="5V1" gate="G$1" x="444.5" y="335.28" smashed="yes">
