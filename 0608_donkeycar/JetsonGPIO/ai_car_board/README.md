@@ -2,6 +2,7 @@ FaBoPlatform/FaBoレポジトリにあるai_car_boardのファイルのみをダ
 ```bash
 cd ~/notebooks
 git clone --filter=blob:none --no-checkout https://github.com/FaBoPlatform/FaBo.git
+cd FaBo
 git sparse-checkout init --cone
 git sparse-checkout set 0608_donkeycar/JetsonGPIO/ai_car_board
 git checkout master
