@@ -39,6 +39,7 @@ dtc -O dtb -o aicarboard_as_gpio.dtbo aicarboard_as_gpio.dts
 sudo cp aicarboard_as_gpio.dtbo /boot
 sudo /opt/nvidia/jetson-io/jetson-io.py
 ```
+Jetson 40pin HeaderにてConfigure for compatible hardwareを選択し、次にFaBo Ai Car Board with imx219 dual setupを選択、Save pin changesを選び、Save and reboot to reconfigure pinsを実行して一旦、再起動します。
 
 Jetson .GPIOライブラリをインストールします。
 ```bash
@@ -71,7 +72,7 @@ Tegraシステム上のピンが、汎用入出力（GPIO）機能と、I2CやSP
 ### 不必要な変更の回避
 sfselビットを記憶し、条件付きで復元することにより、ドライバーは不必要なレジスタ書き込みを回避するようになりました。ピンのsfsel状態がすでに望ましい状態である場合、レジスタに書き込む必要はありません。この小さくても重要な変更は、冗長な操作を減らすことで効率を向上させ、不必要なレジスタ操作から生じる可能性のある副作用を軽減するのに役立ちます。
 
-要するに、これらの変更により、Tegraのpinctrlドライバーは共有ピンの扱いにおいてより堅牢かつインテリジェントになり、スムーズな移行を保証し、GPIOと他の特殊機能間の意図しない相互作用を防ぎます。
+これらの変更により、Tegraのpinctrlドライバーは共有ピンの扱いにおいてより堅牢かつインテリジェントになり、スムーズな移行を保証し、GPIOと他の特殊機能間の意図しない相互作用を防ぎます。
 
 #FaBo Inc.
 relese date
