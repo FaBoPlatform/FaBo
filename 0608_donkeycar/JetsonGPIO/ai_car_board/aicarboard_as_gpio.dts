@@ -20,7 +20,7 @@
  * --- MODIFICATION HISTORY ---
  *
  * Modified by: Takeo Nagayama/FaBo Inc.
- * Date:        July 13, 2025
+ * Date:        July 14, 2025
  * Description:
  * - HS-SR04超音波センサー用にGPIOピン設定を追加/調整。
  * - TRIG/ECHOピンの役割に合わせてピンmux設定を最適化。
@@ -39,7 +39,7 @@
 
 / {
     jetson-header-name = "Jetson 40pin Header";
-    overlay-name = "FaBo Ai Car Board";
+    overlay-name = "FaBo Ai Car Board with imx219 dual setup";
     compatible = "nvidia,p3768-0000+p3767-0000\0nvidia,p3768-0000+p3767-0001\0nvidia,p3768-0000+p3767-0003\0nvidia,p3768-0000+p3767-0004\0nvidia,p3768-0000+p3767-0005\0nvidia,p3768-0000+p3767-0000-super\0nvidia,p3768-0000+p3767-0001-super\0nvidia,p3768-0000+p3767-0003-super\0nvidia,p3768-0000+p3767-0004-super\0nvidia,p3768-0000+p3767-0005-super\0nvidia,p3509-0000+p3767-0000\0nvidia,p3509-0000+p3767-0001\0nvidia,p3509-0000+p3767-0003\0nvidia,p3509-0000+p3767-0004\0nvidia,p3509-0000+p3767-0005";
 
 
@@ -55,97 +55,97 @@
                         nvidia,pins = "uart1_rts_pr4";
                         nvidia,tristate = <0x1>;
                         nvidia,enable-input = <0x1>;
-                        nvidia,pull = <0x0>;
+                        nvidia,pull = <0x0>;	//No-pull
                     };
                  hdr40-pin12 {
                         nvidia,pins = "soc_gpio41_ph7";
                         nvidia,tristate = <0x0>;
                         nvidia,enable-input = <0x0>;
-                        nvidia,pull = <0x2>;    //none-pull
+                        nvidia,pull = <0x2>;    //Pull-up
                     };
                 hdr40-pin13 {
                         nvidia,pins = "spi3_sck_py0";
                         nvidia,tristate = <0x1>;
                         nvidia,enable-input = <0x1>;
-                        nvidia,pull = <0x0>;
+                        nvidia,pull = <0x0>;	//No-pull
                     };
                 hdr40-pin15 {
                         nvidia,pins = "soc_gpio39_pn1";
                         nvidia,tristate = <0x1>;
                         nvidia,enable-input = <0x1>;
-                        nvidia,pull = <0x0>;
+                        nvidia,pull = <0x0>;	//No-pull
                     };
                 hdr40-pin16 {
                         nvidia,pins = "spi3_cs1_py4";
                         nvidia,tristate = <0x0>;
                         nvidia,enable-input = <0x0>;
-                        nvidia,pull = <0x2>;    //none-pull
+                        nvidia,pull = <0x2>;    //Pull-up
                     }; 
                 hdr40-pin18 {
                         nvidia,pins = "spi3_cs0_py3";
                         nvidia,tristate = <0x0>;
                         nvidia,enable-input = <0x0>;
-                        nvidia,pull = <0x2>;    //none-pull
+                        nvidia,pull = <0x2>;    //Pull-up
                     }; 
                 hdr40-pin22 {
                         nvidia,pins = "spi3_miso_py1";
                         nvidia,tristate = <0x0>;
                         nvidia,enable-input = <0x0>;
-                        nvidia,pull = <0x2>;    //none-pull
+                        nvidia,pull = <0x2>;    //Pull-up
                     }; 
                 hdr40-pin29 {
                         nvidia,pins = "soc_gpio32_pq5";
                         nvidia,tristate = <0x1>;
                         nvidia,enable-input = <0x1>;
-                        nvidia,pull = <0x0>;
+                        nvidia,pull = <0x0>;	//No-pull
                     }; 
                 hdr40-pin31 {
                         nvidia,pins = "soc_gpio33_pq6";
                         nvidia,tristate = <0x1>;
                         nvidia,enable-input = <0x1>;
-                        nvidia,pull = <0x0>;
+                        nvidia,pull = <0x0>;	//No-pull
                     }; 
                 hdr40-pin32 {
                         nvidia,pins = "soc_gpio19_pg6";
                         nvidia,tristate = <0x0>;
                         nvidia,enable-input = <0x0>;
-                        nvidia,pull = <0x2>;    //none-pull
+                        nvidia,pull = <0x2>;    //Pull-up
                     }; 
                 hdr40-pin33 {
                         nvidia,pins = "soc_gpio21_ph0";
                         nvidia,tristate = <0x1>;
                         nvidia,enable-input = <0x1>;
-                        nvidia,pull = <0x0>;
+                        nvidia,pull = <0x0>;	//No-pull
                     }; 
                 hdr40-pin35 {
                         nvidia,pins = "soc_gpio44_pi2";
                         nvidia,tristate = <0x1>;
                         nvidia,enable-input = <0x1>;
-                        nvidia,pull = <0x0>;
+                        nvidia,pull = <0x0>;	//No-pull
                     }; 
                 hdr40-pin36 {
                         nvidia,pins = "uart1_cts_pr5";
                         nvidia,tristate = <0x0>;
                         nvidia,enable-input = <0x0>;
-                        nvidia,pull = <0x2>;    //none-pull
+                        nvidia,pull = <0x2>;    //Pull-up
                     }; 
                 hdr40-pin37 {
                         nvidia,pins = "spi3_mosi_py2";
                         nvidia,tristate = <0x1>;
                         nvidia,enable-input = <0x1>;
-                        nvidia,pull = <0x0>;
+                        nvidia,pull = <0x0>;	//No-pull
                     }; 
                 hdr40-pin38 {
                         nvidia,pins = "soc_gpio43_pi1";
                         nvidia,tristate = <0x0>;
                         nvidia,enable-input = <0x0>;
-                        nvidia,pull = <0x2>;    //none-pull
+                        nvidia,pull = <0x2>;    //Pull-up
                     }; 
                 hdr40-pin40 {
                         nvidia,pins = "soc_gpio42_pi0";
                         nvidia,tristate = <0x0>;
                         nvidia,enable-input = <0x0>;
-                        nvidia,pull = <0x2>;    //none-pull
+                        nvidia,pull = <0x2>;    //Pull-up
                     }; 
 
              };
