@@ -25,10 +25,10 @@
  * - HS-SR04超音波センサー用にGPIOピン設定を追加/調整。
  * - TRIG/ECHOピンの役割に合わせてピンmux設定を最適化。
  * - 具体的な変更内容:
- * - hdr40-pin12,16,18,22,32,36,38,40 (TRIG) を出力として設定し、プルアップ抵抗を追加。
- * - hdr40-pin11,13,15,29,31,33,35,37 (ECHO) を入力として設定。
- * - FaBo AI Car Board（DKFA-05）を対象
- * - CSIカメラはIMX219 Dual設定
+ * - hdr40-pin12,16,18,22,32,36,38,40 (TRIG) を出力として設定し、内部プルアップ抵抗を追加。
+ * - hdr40-pin11,13,15,29,31,33,35,37 (ECHO) を入力として設定、内部プルアップ設定なし。
+ * - ターゲットはFaBo AI Car Board（DKFA-05）を対象。
+ * - GPIO４０ピンヘッダー他に、CSIカメラはIMX219 Dual設定しております。
  * This modified work is also licensed under the GNU General Public License,
  * version 2, as original work.
  */
