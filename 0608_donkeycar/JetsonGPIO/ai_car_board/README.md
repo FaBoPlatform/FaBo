@@ -1,7 +1,7 @@
 FaBoPlatform/FaBoレポジトリにあるai_car_boardのファイルのみをダウンロードします。
 ```bash
 cd ~/notebooks
-git git clone --filter=blob:none --no-checkout https://github.com/FaBoPlatform/FaBo.git
+git clone --filter=blob:none --no-checkout https://github.com/FaBoPlatform/FaBo.git
 git sparse-checkout init --cone
 git sparse-checkout set 0608_donkeycar/JetsonGPIO/ai_car_board
 git checkout master
