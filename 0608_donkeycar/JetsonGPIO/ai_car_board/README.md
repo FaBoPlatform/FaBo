@@ -1,20 +1,33 @@
+FaBoPlatform/FaBoレポジトリにあるai_car_boardのファイルのみをダウンロードします。
+```bash
+cd ~/notebooks
+git git clone --filter=blob:none --no-checkout https://github.com/FaBoPlatform/FaBo.git
+git sparse-checkout init --cone
+git sparse-checkout set 0608_donkeycar/JetsonGPIO/ai_car_board
+git checkout master
+cd 0608_donkeycar/JetsonGPIO/ai_car_board/
+```
 
+DTSファイルをコンパイルします。
 ```bash
 dtc -O dtb -o aicarboard_as_gpio.dtbo aicarboard_as_gpio.dts 
 sudo cp aicarboard_as_gpio.dtbo /boot
 sudo /opt/nvidia/jetson-io/jetson-io.py
 ```
 
+Jetson .GPIOライブラリをインストールします。
 ```bash
 sudo apt update
 sudo apt install python3 python3-pip -y
 sudo pip install --upgrade Jetson.GPIO
 ```
 
+gpio使用を許可します。
 ```bash
 sudo usermod -a -G gpio $USER
 ```
 
+再起動します。
 ```bash
 sudo reboot
 ```
@@ -37,4 +50,4 @@ sfselビットを記憶し、条件付きで復元することにより、ドラ
 
 #FaBo Inc.
 relese date
-2025/07/13
+2025/07/14
