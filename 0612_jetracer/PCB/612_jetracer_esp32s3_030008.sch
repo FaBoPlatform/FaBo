@@ -4287,7 +4287,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <part name="GND50" library="FaBo-Symbol" deviceset="GND" device=""/>
 <part name="U2" library="FaBo-Display" deviceset="ER-OLED0.96-1" device="ER-CON30HT-1"/>
 <part name="C1" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0402" value="10uF"/>
-<part name="C3" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0402" value="20pF"/>
+<part name="C3" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0402" value="10pF"/>
 <part name="GND52" library="FaBo-etc" deviceset="GND" device=""/>
 <part name="C15" library="FaBo-Capacitor" deviceset="CAPACITOR" device="-0603" value="10uF"/>
 <part name="GND53" library="FaBo-Symbol" deviceset="GND" device=""/>
@@ -4366,7 +4366,7 @@ https://creativecommons.org/licenses/by-sa/4.0/</description>
 <text x="76.2" y="317.5" size="3.81" layer="97">I2C</text>
 <text x="229.87" y="346.71" size="1.778" layer="94">1N4148</text>
 <text x="201.93" y="351.79" size="3.81" layer="97">OLED</text>
-<text x="22.86" y="530.86" size="6.4516" layer="94">Rev3.0.8</text>
+<text x="12.7" y="548.64" size="6.4516" layer="94">Rev3.0.8</text>
 <text x="739.14" y="318.77" size="3.81" layer="97">SPI_LED</text>
 <text x="568.96" y="328.93" size="3.81" layer="97">XIAO-ESP32S3</text>
 <text x="491.49" y="177.8" size="1.778" layer="94">SELECT
@@ -4375,16 +4375,16 @@ High:B0-B3
 </text>
 <text x="787.4" y="287.02" size="3.81" layer="97">Bottom Connector</text>
 <text x="732.79" y="443.23" size="1.778" layer="94">Residual measures</text>
-<text x="25.4" y="516.89" size="3.81" layer="94">I2S,SPI,PWM0,PWM1のコネクタ廃止</text>
-<text x="25.4" y="510.54" size="3.81" layer="94">Rev3.0.3回路継承</text>
-<wire x1="21.59" y1="523.24" x2="144.78" y2="523.24" width="0.1524" layer="94"/>
-<wire x1="144.78" y1="523.24" x2="144.78" y2="468.63" width="0.1524" layer="94"/>
-<wire x1="144.78" y1="468.63" x2="21.59" y2="468.63" width="0.1524" layer="94"/>
-<wire x1="21.59" y1="468.63" x2="21.59" y2="523.24" width="0.1524" layer="94"/>
+<text x="15.24" y="534.67" size="3.81" layer="94">I2S,SPI,PWM0,PWM1のコネクタ廃止</text>
+<text x="15.24" y="528.32" size="3.81" layer="94">Rev3.0.3回路継承</text>
+<wire x1="11.43" y1="541.02" x2="134.62" y2="541.02" width="0.1524" layer="94"/>
+<wire x1="134.62" y1="541.02" x2="134.62" y2="471.17" width="0.1524" layer="94"/>
+<wire x1="134.62" y1="471.17" x2="11.43" y2="471.17" width="0.1524" layer="94"/>
+<wire x1="11.43" y1="471.17" x2="11.43" y2="541.02" width="0.1524" layer="94"/>
 <text x="632.46" y="335.28" size="1.778" layer="94">3V3 Supply</text>
 <text x="788.67" y="284.48" size="1.778" layer="94">JST PA 4Pin Side</text>
 <text x="767.08" y="283.21" size="1.778" layer="94">JST PA 4Pin Side</text>
-<text x="22.86" y="524.51" size="3.81" layer="94">主な変更点</text>
+<text x="12.7" y="542.29" size="3.81" layer="94">主な変更点</text>
 <wire x1="480.06" y1="213.36" x2="476.25" y2="214.63" width="0.1524" layer="94"/>
 <wire x1="476.25" y1="214.63" x2="476.25" y2="212.09" width="0.1524" layer="94"/>
 <wire x1="476.25" y1="212.09" x2="480.06" y2="213.36" width="0.1524" layer="94"/>
@@ -4552,9 +4552,9 @@ High:B0-B3
 <wire x1="102.87" y1="436.88" x2="100.33" y2="438.15" width="0.1524" layer="94"/>
 <wire x1="100.33" y1="438.15" x2="100.33" y2="435.61" width="0.1524" layer="94"/>
 <wire x1="100.33" y1="435.61" x2="102.87" y2="436.88" width="0.1524" layer="94"/>
-<text x="25.4" y="504.19" size="3.81" layer="94">マルチプレクサ電源衝突防止のためデジトラ追加</text>
-<text x="25.4" y="496.57" size="3.81" layer="94">マルチプレクサ論理反転のためA,Bスワップ</text>
-<text x="25.4" y="488.95" size="3.81" layer="94">マルチプレクサ空きポート保護抵抗追加</text>
+<text x="15.24" y="521.97" size="3.81" layer="94">マルチプレクサ電源衝突防止のためデジトラ追加</text>
+<text x="15.24" y="514.35" size="3.81" layer="94">マルチプレクサ論理反転のためA,Bスワップ</text>
+<text x="15.24" y="506.73" size="3.81" layer="94">マルチプレクサ空きポート保護抵抗追加</text>
 <wire x1="148.59" y1="535.94" x2="201.93" y2="535.94" width="0.1524" layer="94" style="dashdot"/>
 <wire x1="201.93" y1="535.94" x2="201.93" y2="450.85" width="0.1524" layer="94" style="dashdot"/>
 <wire x1="201.93" y1="450.85" x2="175.26" y2="450.85" width="0.1524" layer="94" style="dashdot"/>
@@ -4569,7 +4569,7 @@ High:B0-B3
 <wire x1="528.32" y1="207.01" x2="552.45" y2="207.01" width="0.1524" layer="94" style="dashdot"/>
 <wire x1="552.45" y1="207.01" x2="552.45" y2="157.48" width="0.1524" layer="94" style="dashdot"/>
 <wire x1="552.45" y1="157.48" x2="528.32" y2="157.48" width="0.1524" layer="94" style="dashdot"/>
-<text x="25.4" y="482.6" size="3.81" layer="94">R 15,R16,R 29,R 27,R 10,R12,14削除</text>
+<text x="15.24" y="500.38" size="3.81" layer="94">R 15,R16,R 29,R 27,R 10,R12,14削除</text>
 <wire x1="214.63" y1="434.34" x2="212.09" y2="435.61" width="0.1524" layer="94" style="dashdot"/>
 <wire x1="212.09" y1="435.61" x2="212.09" y2="433.07" width="0.1524" layer="94" style="dashdot"/>
 <wire x1="212.09" y1="433.07" x2="214.63" y2="434.34" width="0.1524" layer="94" style="dashdot"/>
@@ -4582,7 +4582,7 @@ High:B0-B3
 <wire x1="214.63" y1="426.72" x2="212.09" y2="427.99" width="0.1524" layer="94" style="dashdot"/>
 <wire x1="212.09" y1="427.99" x2="212.09" y2="425.45" width="0.1524" layer="94" style="dashdot"/>
 <wire x1="212.09" y1="425.45" x2="214.63" y2="426.72" width="0.1524" layer="94" style="dashdot"/>
-<text x="63.5" y="530.86" size="3.81" layer="94">2024/11/05,2024/11/20</text>
+<text x="53.34" y="548.64" size="3.81" layer="94">2024/11/05,2024/11/20,2026/04/08</text>
 <wire x1="515.62" y1="203.2" x2="518.16" y2="204.47" width="0.1524" layer="94" style="dashdot"/>
 <wire x1="518.16" y1="204.47" x2="518.16" y2="201.93" width="0.1524" layer="94" style="dashdot"/>
 <wire x1="518.16" y1="201.93" x2="515.62" y2="203.2" width="0.1524" layer="94" style="dashdot"/>
@@ -4617,7 +4617,7 @@ High:B0-B3
 <wire x1="462.28" y1="163.83" x2="462.28" y2="233.68" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="462.28" y1="233.68" x2="490.22" y2="233.68" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="490.22" y1="233.68" x2="490.22" y2="163.83" width="0.1524" layer="94" style="shortdash"/>
-<text x="25.4" y="476.25" size="3.81" layer="94">Jetson Nano 互換（B)</text>
+<text x="15.24" y="494.03" size="3.81" layer="94">Jetson Nano 互換（B)</text>
 <text x="149.86" y="542.29" size="3.81" layer="94">Addtion(PCA9685 OUTPUT Enable and Disable)</text>
 <text x="491.49" y="229.87" size="3.81" layer="94">PinSwap</text>
 <text x="590.55" y="69.85" size="5.08" layer="94">※注釈の領域はRev3.0.3との差分です。</text>
@@ -4701,7 +4701,7 @@ High:B0-B3
 <wire x1="721.36" y1="264.16" x2="721.36" y2="248.92" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="721.36" y1="248.92" x2="688.34" y2="248.92" width="0.1524" layer="94" style="shortdash"/>
 <text x="693.42" y="264.16" size="1.778" layer="94">切断しており接続修正</text>
-<text x="25.4" y="469.9" size="3.81" layer="94">BEC電源が切断されていたので修正（B)</text>
+<text x="15.24" y="487.68" size="3.81" layer="94">BEC電源が切断されていたので修正（B)</text>
 <text x="271.78" y="298.45" size="1.9304" layer="94" rot="R90">I2C Device Address Select</text>
 <text x="632.46" y="129.54" size="3.81" layer="94">For ESD</text>
 <wire x1="464.82" y1="474.98" x2="464.82" y2="485.14" width="0.1524" layer="94" style="shortdash"/>
@@ -4733,6 +4733,14 @@ High:B0-B3
 <text x="637.54" y="207.01" size="1.778" layer="94">RCパワーランプ</text>
 <text x="647.7" y="184.15" size="1.778" layer="94">変更20241214</text>
 <text x="647.7" y="163.83" size="1.778" layer="94">変更20241214</text>
+<text x="15.24" y="480.06" size="3.81" layer="94">C3 20pFから10pFへに修正(2026/04/08)</text>
+<wire x1="152.4" y1="416.56" x2="152.4" y2="429.26" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="152.4" y1="429.26" x2="165.1" y2="429.26" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="165.1" y1="429.26" x2="165.1" y2="416.56" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="165.1" y1="416.56" x2="152.4" y2="416.56" width="0.1524" layer="94" style="shortdash"/>
+<text x="160.02" y="414.02" size="1.778" layer="94">定数変更</text>
+<text x="590.55" y="40.64" size="5.08" layer="94">※Revision 3.0.8(A)はプロトタイプ
+※Revision 3.0.8(B)はリリースバージョン</text>
 </plain>
 <instances>
 <instance part="SUPPLY2" gate="5V" x="716.28" y="449.58" smashed="yes">
